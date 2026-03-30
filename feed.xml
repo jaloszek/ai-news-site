@@ -6,89 +6,110 @@
   <link>https://jaloszek.github.io/ai-news-site</link>
   <atom:link href="https://jaloszek.github.io/ai-news-site/feed.xml" rel="self" type="application/rss+xml"/>
   <language>en</language>
-  <lastBuildDate>Mon, 30 Mar 2026 06:57:38 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 30 Mar 2026 09:39:13 +0000</lastBuildDate>
+  <item>
+    <title>Monday, March 30 — Week of 2026-03-30</title>
+    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-30.md</link>
+    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-30.md#Monday,-March-30</guid>
+    <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<br/>• 🛠 v2.1.87 — Cowork Dispatch Fix — Messages in Cowork Dispatch (the multi-session collaboration feature) were silently dropped; this patch ensures delivery.<br/>• 🛠 v2.1.86 — Session ID Header & Observability — Claude Code now sends an `X-Claude-Code-Session-Id` header on every API request, letting reverse proxies (LiteLLM, Helicone, custom gateways) group all calls from one session without body parsing.<br/>• 🛠 v2.1.86 — JJ/Sapling VCS Support — `.jj` (Jujutsu) and `.sl` (Sapling) directories are now excluded from Grep and file autocomplete, preventing slowdowns for developers using these Git-compatible VCS tools.<br/>• 🛠 v2.1.86 — Read Tool Token Savings — The Read tool now uses a compact line-number format and deduplicates unchanged re-reads, cutting token usage on file-heavy workflows.<br/>• 🛠 v2.1.86 — Prompt Cache Improvements for Bedrock/Vertex/Foundry — Dynamic content removed from tool descriptions, improving cache hit rates for users running Claude Code through Bedrock, Vertex AI, or Azure Foundry.]]></description>
+  </item>
   <item>
     <title>Monday, March 23 — Week of 2026-03-23</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md#Monday,-March-23</guid>
+    <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Computer Use Comes to Claude Code — Claude Code (Pro and Max plans) can now open files, run dev tools, point, click, and navigate your screen with no setup required. Combined with Remote Control, you can send instructions from the Claude mobile app and Claude Code executes desktop operations on your Mac.<br/>• 💜 Claude Now Connects to Your World — Integrations Launch — Claude can now connect to external services and apps via a new integrations framework, letting it pull live data and take actions in connected tools without custom API plumbing.<br/>• 💜 Claude and Productivity Platforms — Claude is now available natively inside major productivity platforms (details in linked post), enabling in-context AI assistance without switching tools.]]></description>
   </item>
   <item>
     <title>Tuesday, March 24 — Week of 2026-03-23</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md#Tuesday,-March-24</guid>
+    <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Claude Code Auto Mode — New middle ground between manual approval and `--dangerously-skip-permissions`: safe actions run automatically while risky ones are blocked and Claude is redirected toward safer alternatives. Anthropic reports 93% of permission prompts were already being approved.<br/>• 🛠 Scheduled Tasks — Background Cloud Jobs — Claude Code can now run recurring tasks on Anthropic-managed infrastructure on a schedule. Give it a prompt, attached repos, a cron schedule, and environment connectors — it runs even when your computer is off.]]></description>
   </item>
   <item>
     <title>Wednesday, March 25 — Week of 2026-03-23</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md#Wednesday,-March-25</guid>
+    <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Claude Can Now Create and Edit Files — Claude can create, edit, and manage files directly in conversations, persisting output beyond the chat window. Works across code files, documents, and structured data.<br/>• 🛠 `--bare` Flag for Scripted Calls — New `--bare` flag for `-p` (non-interactive) invocations skips hooks, LSP, plugin sync, and skill directory walks, making Claude Code faster and more predictable in CI and scripted pipelines.<br/>• 🛠 `--channels` Permission Relay — Channel servers declaring the permission capability can now forward tool approval prompts to your phone, so you can approve/deny Claude's actions remotely while a long task runs.]]></description>
   </item>
   <item>
     <title>Thursday, March 26 — Week of 2026-03-23</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md#Thursday,-March-26</guid>
+    <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🔥 Code with Claude — First Developer Conference — Anthropic announced its first developer conference focused on AI-assisted coding. Sessions cover Claude Code workflows, the API, and building with Claude.<br/>• 💜 Claude Partner Network Launches with $100M Commitment — Anthropic launched the Claude Partner Network with $100M in investment and introduced the first Claude technical certification: "Claude Certified Architect, Foundations."<br/>• 💜 Snowflake × Anthropic $200M Expanded Partnership — Multi-year, $200M agreement making Claude available across Snowflake's 12,600+ global customers via Bedrock, Vertex AI, and Azure.]]></description>
   </item>
   <item>
     <title>Friday, March 27 — Week of 2026-03-23</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md#Friday,-March-27</guid>
+    <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Claude Code v2.1.86 — Ships `X-Claude-Code-Session-Id` header on API requests (enables proxy-side session aggregation for billing/analytics), `.jj` and `.sl` VCS directory exclusion (Jujutsu and Sapling support), and improved scroll performance in large transcripts via a pure TypeScript layout engine.<br/>• 🛠 PowerShell Tool Preview (Windows) — Opt-in preview of a PowerShell tool alongside new `ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS` env vars for third-party provider capability overrides (Bedrock, Vertex, Foundry).]]></description>
   </item>
   <item>
     <title>Saturday, March 28 — Week of 2026-03-23</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md#Saturday,-March-28</guid>
+    <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🔥 Exploring Model Welfare — Anthropic published research on model welfare considerations — what it would mean for Claude to have experiences worth caring about, and how Anthropic is approaching this question in its research.<br/>• 🔥 National Security & Public Sector Advisory Council — Anthropic introduced a dedicated advisory council for national security and public sector use cases, positioning Claude for government and defense contracts.]]></description>
   </item>
   <item>
     <title>Sunday, March 29 — Week of 2026-03-23</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md#Sunday,-March-29</guid>
+    <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Claude Code v2.1.87 — Fixes messages in Cowork Dispatch not getting delivered, resolving a reliability issue for teams using the collaborative multi-agent workspace.<br/>• 🛠 Known Issue: Max Plan Session Window Exhausted Early — Widespread reports (tracked in Issue #38335) of the Claude Max plan 5-hour session window being consumed in 1–2 hours when using the CLI, particularly with computer use enabled.]]></description>
   </item>
   <item>
     <title>Monday, March 16 — Week of 2026-03-16</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Monday,-March-16</guid>
+    <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Claude Code v2.1.68–2.1.75 Releases — Multiple releases shipped this week including transcript search (press `/` in transcript mode, `n`/`N` to step through matches), `StopFailure` hook event, and system-prompt caching improvements with ToolSearch and MCP tools.]]></description>
   </item>
   <item>
     <title>Tuesday, March 17 — Week of 2026-03-16</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Tuesday,-March-17</guid>
+    <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Subprocess Credential Scrubbing — New `CLAUDE_CODE_SUBPROCESS_ENV_SCRUB=1` env var strips credentials from subprocess environments, reducing accidental secret leakage when Claude Code shells out to build tools or scripts.<br/>• 🛠 Session Display Names & Sparse Worktree Paths — Sessions can now have human-readable display names; sparse worktree paths added for large monorepo workflows where checking out a full tree is impractical.]]></description>
   </item>
   <item>
     <title>Wednesday, March 18 — Week of 2026-03-16</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Wednesday,-March-18</guid>
+    <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Custom Auto-Memory Directory & Memory Timestamps — Auto-memory can now be stored in a custom directory (useful for team-shared memory configs), and individual memory files get timestamps so you can tell when Claude learned something.]]></description>
   </item>
   <item>
     <title>Thursday, March 19 — Week of 2026-03-16</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Thursday,-March-19</guid>
+    <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🔥 Web Search & Code Execution Now Generally Available — The web search tool and programmatic tool calling no longer require a beta header in API requests. Code execution is also free when used alongside web search or web fetch.]]></description>
   </item>
   <item>
     <title>Friday, March 20 — Week of 2026-03-16</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Friday,-March-20</guid>
+    <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🔥 Claude Haiku 3 Deprecated — Retiring April 19, 2026 — Haiku 3 is being sunset; Haiku 4.5 is the recommended replacement, offering better performance at a similar price point.<br/>• 🔥 Data Residency Controls Added (`inference_geo` Parameter) — New `inference_geo` API parameter lets you specify where Claude inference runs geographically, supporting GDPR and data sovereignty requirements for EU-based customers.]]></description>
   </item>
   <item>
     <title>Saturday, March 21 — Week of 2026-03-16</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Saturday,-March-21</guid>
+    <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 Bug Fixes: OAuth Token Refresh & Voice Mode — Fixed multiple concurrent sessions requiring repeated re-authentication on OAuth token refresh, and fixed voice mode swallowing retry failures with a misleading "check your network" error.]]></description>
   </item>
   <item>
     <title>Sunday, March 22 — Week of 2026-03-16</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md</link>
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Sunday,-March-22</guid>
+    <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 MCP Elicitation Support — MCP servers can now request additional information from the user mid-execution using the elicitation protocol, enabling interactive multi-step MCP workflows without pre-specifying all inputs.]]></description>
   </item>
 </channel>
