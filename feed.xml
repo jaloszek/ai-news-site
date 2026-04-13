@@ -6,48 +6,20 @@
   <link>https://jaloszek.github.io/ai-news-site</link>
   <atom:link href="https://jaloszek.github.io/ai-news-site/feed.xml" rel="self" type="application/rss+xml"/>
   <language>en</language>
-  <lastBuildDate>Sun, 12 Apr 2026 06:31:39 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 13 Apr 2026 07:24:44 +0000</lastBuildDate>
   <item>
-    <title>Tuesday, April 7 — Week of 2026-04-06</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.md#Tuesday,-April-7</guid>
-    <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🔥 Claude Mythos Preview announced via Project Glasswing — Anthropic quietly announced a research preview of their most capable model yet, described as "strikingly capable at computer security tasks." Rather than a public launch, access is invitation-only through "Project Glasswing," limited to 11 critical-infrastructure partners including Amazon, Google, Apple, Microsoft, Nvidia, and Cisco. The model autonomously finds zero-day vulnerabilities, writes working exploits, and chains multi-step privilege escalations — capabilities Anthropic judged too dangerous for general release.<br/>• 💜 Messages API on Amazon Bedrock (research preview) — The first-party Claude Messages API endpoint (`/anthropic/v1/messages`) is now available on AWS infrastructure in `us-east-1`, using the identical request shape as the direct Claude API. This means code written for `api.anthropic.com` can be pointed at Bedrock with minimal changes, while running on AWS-managed infrastructure with zero operator data access.]]></description>
+    <title>Monday, April 13 (today) — Week of 2026-04-13</title>
+    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-04-13.html</link>
+    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-04-13.md#Monday,-April-13-(today)</guid>
+    <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<br/>• 🎥 Claude Opus 4.7 Leaked, Anthropic Full Stack App, New GPT Model, M2.7, Claude Code Update! AI NEWS — **WorldofAI** — Morning AI news roundup covering: alleged Claude Opus 4.7 benchmark leaks, Anthropic reportedly building a full-stack development app, the latest GPT model update, MiniMax M2.7 release, and recent Claude Code changes. Good one-stop recap of the weekend's stories.]]></description>
   </item>
   <item>
-    <title>Wednesday, April 8 — Week of 2026-04-06</title>
+    <title>Saturday, April 12 — Week of 2026-04-06</title>
     <link>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.md#Wednesday,-April-8</guid>
-    <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🔥 Claude Managed Agents in public beta — Anthropic launched a fully managed agent harness for running Claude as an autonomous agent via API. It provides secure sandboxing, built-in tools (web search, code execution, file access), server-sent event streaming, and session management — effectively removing the need to wire up your own agent loop infrastructure. Use the `managed-agents-2026-04-01` beta header to access all endpoints.<br/>• 🛠 `ant` CLI for the Claude API — A new official command-line client for the Anthropic API that enables faster scripted interaction, native integration with Claude Code sessions, and versioning of API resources (prompts, tools, agents) in YAML files checked into version control. Think of it as `gh` for the Claude API.<br/>• 🛠 CC v2.1.94 + v2.1.96: Amazon Bedrock support + hotfix — v2.1.94 added Amazon Bedrock via Mantle as a backend option and raised the default effort level to "high" for API-key and enterprise users (previously lower), alongside Slack integration improvements. v2.1.96 was a same-day hotfix resolving a `403 Authorization header is missing` error that broke Bedrock requests.]]></description>
-  </item>
-  <item>
-    <title>Thursday, April 9 — Week of 2026-04-06</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.md#Thursday,-April-9</guid>
-    <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🔥 Advisor tool in public beta — A new API feature that pairs a fast "executor" model for bulk token generation with a smarter "advisor" model that provides strategic guidance at key decision points mid-generation. Long-horizon agentic workloads get close to advisor-level quality at executor-model speeds and cost. Requires beta header `advisor-tool-2026-03-01`.<br/>• 🛠 CC v2.1.97 + v2.1.98: Focus view toggle, Vertex AI wizard, subprocess sandboxing — v2.1.97 added a focus view toggle (`Ctrl+O` in no-flicker mode) showing just the prompt and final response without tool-call noise. v2.1.98 introduced an interactive Google Vertex AI setup wizard, subprocess sandboxing with PID namespace isolation on Linux, and a new Monitor tool for streaming events from background processes. Also fixed Bash tool permission vulnerabilities in both versions.<br/>• 🟢 OpenAI releases GPT-5.3 Instant Mini — GPT-5.3 Instant Mini replaces GPT-5 Instant Mini as the fallback model in ChatGPT after users exhaust their primary-tier rate limits. OpenAI says it feels "more natural in conversation, with stronger writing and contextual awareness." Also launched new Pro plan tiers ($100 and $200/month) with adjusted Codex usage allowances.]]></description>
-  </item>
-  <item>
-    <title>Friday, April 10 — Week of 2026-04-06</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.md#Friday,-April-10</guid>
-    <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🛠 CC v2.1.100 + v2.1.101: /team-onboarding command, enterprise TLS fixes — v2.1.101 added `/team-onboarding`, a new command that generates a personalized ramp-up guide for new teammates based on your local Claude Code usage patterns. Also added OS CA certificate store trust by default, fixing TLS proxy issues in enterprise environments that inject their own certificates. Covers reliability fixes for resume context loss, memory leaks in long sessions, and plugin stability.<br/>• 🔧 OpenAI Codex 0.119.0: Realtime voice, MCP Apps, remote workflows — Major Codex CLI update with realtime voice sessions now defaulting to v2 WebRTC path, expanded MCP Apps support (resource reads + custom servers), and remote workflow reliability improvements. TUI starts faster and resume flows are more stable. Positions Codex as a serious CC competitor for teams using OpenAI.]]></description>
-  </item>
-  <item>
-    <title>Saturday, April 11 — Week of 2026-04-06</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.md#Saturday,-April-11</guid>
-    <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• ⚠️ 1M token context window beta retiring April 30 for Claude Sonnet 4.5 and Sonnet 4 — If you're using the `context-1m-2025-08-07` beta header with Sonnet 4.5 or original Sonnet 4, you have until April 30 to migrate. After that date, requests exceeding the standard 200k-token limit will return an error. Claude Sonnet 4.6 and Opus 4.6 already support 1M context natively at standard pricing with no beta header.<br/>• 📰 BNN Bloomberg: Anthropic's Mythos AI "too dangerous to release to public" — The Mythos story went mainstream as Bloomberg published an in-depth piece detailing how Canadian and U.S. financial regulators called emergency meetings after the announcement. Canada's Financial Sector Resiliency Group (Bank of Canada, Dept. of Finance, CDIC, six major banks) held hastily arranged talks about cyberattack risk. The model requires no specialized security expertise to exploit, making it accessible to non-expert attackers.<br/>• 🔧 OpenAI Codex 0.120.0: Realtime V2 background agent streaming — Codex gains background agent streaming via Realtime V2, improved MCP tool type safety, and fixes for Windows sandbox issues and remote TLS connections. The TUI hook status display is also improved, making it easier to monitor running agent tasks.<br/>• 📰 JetBrains: Claude Code ties Cursor at 18% developer adoption — JetBrains' January 2026 AI Pulse survey of 10,000+ developers found Claude Code and Cursor tied for second place at 18% work adoption each, behind GitHub Copilot (29%). Claude Code's adoption grew 6x in 6 months (from ~3% to 18%) and leads all tools in satisfaction: 91% CSAT and 54 NPS. OpenAI Codex already has 60% of Cursor's usage despite launching recently.<br/>• 🎥 Is Mythos Just A Marketing Ploy? — **Matt Wolfe** — Takes a skeptical look at whether Anthropic's Mythos announcement is genuine frontier capability or a well-timed PR move, examining what we actually know vs. what's claimed.]]></description>
-  </item>
-  <item>
-    <title>Sunday, April 12 — Week of 2026-04-06</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.md#Sunday,-April-12</guid>
+    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-04-06.md#Saturday,-April-12</guid>
     <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 📰 Bloomberg: Why Officials Are Worried About Anthropic's New Mythos AI — Bloomberg News video report digging into the regulatory response to Mythos, interviewing officials about the cybersecurity implications. Provides broadcast-level coverage of what had been mostly a tech-media story.<br/>• 🔵 Gemma 4 continues to dominate open-source AI conversation — Google's April 2 Gemma 4 release keeps generating coverage this week. Four sizes (E2B, E4B, 26B MoE, 31B Dense), Apache 2.0 license, multimodal (text+image across all sizes, audio on edge models), 256K context, and strong benchmark numbers — the 31B dense model is outperforming much larger rivals on several benchmarks. Available on Hugging Face, Ollama, Kaggle.<br/>• 🎥 Did Google Just Make The ULTIMATE Edge AI Model? (Gemma 4) — **Better Stack** — Technical review of Gemma 4's architecture and performance, specifically evaluating it as an edge/on-device AI model. Benchmarks the 31B model against larger cloud models and examines whether the MoE efficiency claims hold up.<br/>• 🎥 Why Officials Are Worried About Anthropic's New Mythos AI — **Bloomberg News** — Broadcast news coverage of the Mythos regulatory concerns, featuring interviews with cybersecurity experts and officials about AI models that can autonomously find and exploit zero-day vulnerabilities.]]></description>
+    <description><![CDATA[<br/>• 🔥 Claude Mythos Preview: Anthropic holds back new frontier model, launches Project Glasswing — Anthropic's new Claude Mythos Preview model demonstrates extraordinary cybersecurity capabilities — finding zero-day vulnerabilities in every major OS and browser, including bugs that survived 16–27 years of human review — but will not be made generally available. Instead, Anthropic is deploying it defensively to 12 trusted partners (AWS, Apple, Google, Microsoft, Nvidia, Cisco, CrowdStrike, JPMorganChase, Linux Foundation, Palo Alto Networks, and others) through Project Glasswing, backed by a $100M compute credit pledge and $4M for open-source security organizations.<br/>• 📰 Anthropic hits $30B ARR, overtakes OpenAI in revenue for the first time — Anthropic's annualized revenue reached $30 billion in April 2026, surpassing OpenAI's $25B run rate — the first time Anthropic has led. The company grew from $9B ARR at the end of 2025 in just four months, driven by enterprise adoption: 1,000+ customers now spend $1M+/year (double the count from February's Series G announcement). Growth is fueled by Claude Code, Managed Agents, and API access for agentic workloads.<br/>• 🔵 Google Gemma 4: Byte for byte, the most capable open models — Google DeepMind released Gemma 4 on April 2 under Apache 2.0 (unrestricted commercial use). Four sizes: 2B, 4B, 26B MoE, and 31B Dense. All are natively multimodal (text + images; audio on edge models), 256K context, 140+ languages. The 31B Dense ranks #3 on the Arena AI open-model leaderboard; 26B MoE fits in 14GB and runs at 85 tokens/s on consumer hardware. Fully offline-capable.<br/>• 🔵 Google I/O 2026 announced for May 19–20 — Google confirmed I/O 2026 at Shoreline Amphitheatre, Mountain View; Gemini AI updates and Android 17 are the expected headliners. Gemini 3 Flash is now the default model in the Gemini app, replacing Gemini 2.5 Flash.<br/>• 🟡 MiniMax M2.7 open-sourced with free API key — MiniMax released M2.7, a "self-evolving" agent model: within MiniMax's own RL research workflows, M2.7 handles 30–50% of the pipeline end-to-end. Benchmarks: 56.22% on SWE-Pro (matches GPT-5.3-Codex), 57.0% on Terminal Bench 2, #1 ELO among open-source models on GDPval-AA. Weights on HuggingFace; runs on Ollama; free API available.]]></description>
   </item>
   <item>
     <title>Monday, March 30 — Week of 2026-03-30</title>
@@ -132,55 +104,6 @@
     <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-23.md#Sunday,-March-29</guid>
     <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<br/>• 🛠 CC 2.1.87: Fix Cowork Dispatch message delivery — Critical hotfix for messages sent in Cowork Dispatch sessions not getting delivered. Users could send messages that were received and processed, but replies never appeared in the conversation.<br/>• 🟢 TechCrunch: Why OpenAI really shut down Sora — Deep dive into why OpenAI killed its video generation product: user count collapsed from 1M peak to under 500K while burning ~$1M/day in compute. CEO Altman redirected resources to compete with Claude Code, which was "eating OpenAI's lunch" in the enterprise developer market.<br/>• 📰 Claude API outage: ~4 hours of elevated errors — Claude experienced another significant service disruption on March 29, lasting approximately 3 hours 54 minutes starting around 8:13 PM ET. This marks the 6th major outage in March as part of the Q1 reliability decline (99.04% uptime vs previous >99.9%).<br/>• 📰 Euronews: What is Anthropic's Mythos? — Continuing coverage of the Claude Mythos leak. Anthropic confirms the rollout timeline is "determined by safety evaluation outcomes" rather than a commercial schedule. Polymarket gives 45% odds of public release by June 30.<br/>• 📝 Simon Willison: Python Vulnerability Lookup — Simon built an HTML tool with Claude Code that checks pyproject.toml or requirements.txt files against the OSV.dev vulnerability database. Paste your dependencies, see severity levels, affected versions, and disclosure links instantly.]]></description>
-  </item>
-  <item>
-    <title>Monday, March 16 — Week of 2026-03-16</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Monday,-March-16</guid>
-    <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🛠 Claude Code v2.1.68–2.1.75 Releases — Multiple releases shipped this week including transcript search (press `/` in transcript mode, `n`/`N` to step through matches), `StopFailure` hook event, and system-prompt caching improvements with ToolSearch and MCP tools.]]></description>
-  </item>
-  <item>
-    <title>Tuesday, March 17 — Week of 2026-03-16</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Tuesday,-March-17</guid>
-    <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🛠 Subprocess Credential Scrubbing — New `CLAUDE_CODE_SUBPROCESS_ENV_SCRUB=1` env var strips credentials from subprocess environments, reducing accidental secret leakage when Claude Code shells out to build tools or scripts.<br/>• 🛠 Session Display Names & Sparse Worktree Paths — Sessions can now have human-readable display names; sparse worktree paths added for large monorepo workflows where checking out a full tree is impractical.]]></description>
-  </item>
-  <item>
-    <title>Wednesday, March 18 — Week of 2026-03-16</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Wednesday,-March-18</guid>
-    <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🛠 Custom Auto-Memory Directory & Memory Timestamps — Auto-memory can now be stored in a custom directory (useful for team-shared memory configs), and individual memory files get timestamps so you can tell when Claude learned something.]]></description>
-  </item>
-  <item>
-    <title>Thursday, March 19 — Week of 2026-03-16</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Thursday,-March-19</guid>
-    <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🔥 Web Search & Code Execution Now Generally Available — The web search tool and programmatic tool calling no longer require a beta header in API requests. Code execution is also free when used alongside web search or web fetch.]]></description>
-  </item>
-  <item>
-    <title>Friday, March 20 — Week of 2026-03-16</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Friday,-March-20</guid>
-    <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🔥 Claude Haiku 3 Deprecated — Retiring April 19, 2026 — Haiku 3 is being sunset; Haiku 4.5 is the recommended replacement, offering better performance at a similar price point.<br/>• 🔥 Data Residency Controls Added (`inference_geo` Parameter) — New `inference_geo` API parameter lets you specify where Claude inference runs geographically, supporting GDPR and data sovereignty requirements for EU-based customers.]]></description>
-  </item>
-  <item>
-    <title>Saturday, March 21 — Week of 2026-03-16</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Saturday,-March-21</guid>
-    <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🛠 Bug Fixes: OAuth Token Refresh & Voice Mode — Fixed multiple concurrent sessions requiring repeated re-authentication on OAuth token refresh, and fixed voice mode swallowing retry failures with a misleading "check your network" error.]]></description>
-  </item>
-  <item>
-    <title>Sunday, March 22 — Week of 2026-03-16</title>
-    <link>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.html</link>
-    <guid>https://jaloszek.github.io/ai-news-site/content/week-2026-03-16.md#Sunday,-March-22</guid>
-    <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<br/>• 🛠 MCP Elicitation Support — MCP servers can now request additional information from the user mid-execution using the elicitation protocol, enabling interactive multi-step MCP workflows without pre-specifying all inputs.]]></description>
   </item>
 </channel>
 </rss>
