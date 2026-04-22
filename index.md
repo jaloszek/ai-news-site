@@ -9,6 +9,7 @@ Developer-focused AI news aggregated daily by Claude Code.
 
 [Subscribe via RSS](feed.xml)
 
+- [Wednesday, April 22, 2026](content/2026-04-22.md)
 - [Tuesday, April 21, 2026](content/2026-04-21.md)
 - [Monday, April 20, 2026](content/2026-04-20.md)
 - [AI News: Week of April 13, 2026](content/week-2026-04-13.md)
