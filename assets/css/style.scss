@@ -90,11 +90,12 @@ section.cal-month {
   line-height: 1;
 }
 
-/* Keyword list. Up to 3 items; each item wraps to at most 2 lines with
-   ellipsis — 6 lines max per day. The theme's default `ul { list-style-image:
-   url(bullet.png) }` is killed explicitly (not just by `list-style: none`) so
-   no broken-image request goes out. */
-.cal-kw {
+/* Highlights list — one entry per release (or strong-signal fallback) for the
+   day. Minimum 3 items, no hard cap; each item wraps to at most 2 lines with
+   ellipsis. The theme's default `ul { list-style-image: url(bullet.png) }` is
+   killed explicitly (not just by `list-style: none`) so no broken-image
+   request goes out. */
+.cal-highlights {
   list-style: none;
   list-style-image: none;
   margin: 0;
@@ -102,7 +103,7 @@ section.cal-month {
   font-size: 0.7rem;
   line-height: 1.25;
 }
-.cal-kw li {
+.cal-highlights li {
   margin: 0.22rem 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -120,5 +121,5 @@ section.cal-month {
   .cal-blank { display: none; }
   .cal-empty { display: none; }
   .cal-cell { min-height: 0; }
-  .cal-kw li { -webkit-line-clamp: unset; display: list-item; }
+  .cal-highlights li { -webkit-line-clamp: unset; display: list-item; }
 }
