@@ -48,7 +48,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-04-21.html"><div class="cal-num">21</div></a>
     <a class="cal-cell cal-filled" href="content/2026-04-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🛠 CC v2.1.117</li><li>🟡 Qwen3.6-27B</li><li>🔵 Google TPU 8t/8i</li><li>🔵 Gemini in Chrome</li><li>🔒 Mythos breach</li><li>🔧 SpaceX-Cursor $60B</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-04-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>💰 Anthropic $1T valuation</li><li>🛠 CC /usage + vim visual mode</li><li>🔥 Mythos Firefox bug dispute</li><li>🔧 Ollama Cloud $20</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">24</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-04-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>🔥 CC 3 quality bugs fixed</li><li>🟢 GPT-5.5 launch</li><li>🟡 DeepSeek V4 Apache 2.0</li><li>🛠 CC v2.1.119</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
