@@ -51,7 +51,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-04-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>🔥 CC 3 quality bugs fixed</li><li>🟢 GPT-5.5 launch</li><li>🟡 DeepSeek V4 Apache 2.0</li><li>🛠 CC v2.1.119</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-04-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>🚀 Claude 15 app connectors</li><li>💰 Google $40B Anthropic</li><li>🚀 Anthropic+NEC Japan</li><li>📰 WH China AI theft</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-04-26.html"><div class="cal-num">26</div><ul class="cal-highlights"><li>🛠 CC /btw + cloud tasks</li><li>🔧 Roo Code sunset May 15</li><li>🤖 NVIDIA GEAR-SONIC</li><li>📰 Trump fires NSB</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-04-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🧪 Anthropic agent-agent commerce</li><li>🛠 Chrome Prompt API</li><li>🧪 SWE-bench Verified retired</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">29</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
