@@ -54,7 +54,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-04-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🧪 Anthropic agent-agent commerce</li><li>🛠 Chrome Prompt API</li><li>🧪 SWE-bench Verified retired</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-04-28.html"><div class="cal-num">28</div><ul class="cal-highlights"><li>💰 Opus extra-usage paywall for Pro</li><li>🛠 CC v2.1.121 memory fixes</li><li>📰 Musk vs Altman trial opens</li><li>🔧 Cursor agent wipes PocketOS DB</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-04-29.html"><div class="cal-num">29</div><ul class="cal-highlights"><li>🚀 Claude creative connectors</li><li>🛠 CC v2.1.122 /resume PR URL paste</li><li>🔒 OpenAI cybersecurity plan</li><li>🧪 AI evals compute bottleneck</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-04-30.html"><div class="cal-num">30</div><ul class="cal-highlights"><li>🧪 OpenAI GPT-5 goblin-mode post-mortem</li><li>🟡 NVIDIA Nemotron Nano Omni</li><li>🔵 Google Translate 20 years</li><li>🛠 Agent Verifier for Claude Code</li><li>💰 Anthropic eyes OpenAI valuation</li></ul></a>
   </div>
 </section>
 
