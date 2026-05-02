@@ -28,7 +28,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <div class="cal-cell cal-blank"></div>
     <div class="cal-cell cal-blank"></div>
     <a class="cal-cell cal-filled" href="content/2026-05-01.html"><div class="cal-num">1</div><ul class="cal-highlights"><li>🛠 CC v2.1.126 project purge</li><li>🔒 Claude Security beta</li><li>🟢 OpenAI Advanced Account Security</li><li>🤖 xAI distilled OpenAI models</li></ul></a>
-    <a class="cal-cell cal-filled" href="content/2026-05-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>💜 GameMaker GMRT + Claude Code</li><li>🟢 GPT-5.5-Cyber restricted access</li><li>🔵 Gemini file generation</li><li>💰 Uber burns 2026 AI budget</li></ul></a>
+    <a class="cal-cell cal-filled" href="content/2026-05-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>✨ Claude Jupiter red team</li><li>🚀 Microsoft Agent 365 GA</li><li>🤖 Cloudflare+Stripe agent infra</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">3</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">4</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>
