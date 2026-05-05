@@ -31,7 +31,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>📰 Pentagon freezes out Anthropic</li><li>🟢 GPT-5.5-Cyber gated access</li><li>💬 Anthropic $30B ARR discussion</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-03.html"><div class="cal-num">3</div><ul class="cal-highlights"><li>✨ Mistral Medium 3.5</li><li>🤖 Mistral Vibe agents</li><li>🛠 Code with Claude SF</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-04.html"><div class="cal-num">4</div><ul class="cal-highlights"><li>💰 Anthropic $1.5B enterprise venture</li><li>🛠 Hermes Agent V2.0</li><li>🧪 AI task horizon debate</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-05-05.html"><div class="cal-num">5</div><ul class="cal-highlights"><li>✨ Opus 4.7 GA</li><li>🟢 GPT-5.5 Instant default</li><li>🛠 CC v2.1.128</li><li>🔵 Gemini Webhooks</li><li>📰 iOS 27 multi-AI</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">6</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">7</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">8</div></div>
