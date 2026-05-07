@@ -33,7 +33,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-04.html"><div class="cal-num">4</div><ul class="cal-highlights"><li>💰 Anthropic $1.5B enterprise venture</li><li>🛠 Hermes Agent V2.0</li><li>🧪 AI task horizon debate</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-05.html"><div class="cal-num">5</div><ul class="cal-highlights"><li>✨ Opus 4.7 GA</li><li>🟢 GPT-5.5 Instant default</li><li>🛠 CC v2.1.128</li><li>🔵 Gemini Webhooks</li><li>📰 iOS 27 multi-AI</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-06.html"><div class="cal-num">6</div><ul class="cal-highlights"><li>🛠 CC 2.1.129 --plugin-url</li><li>🛠 Prompt cache 1h TTL fix</li><li>💰 ChatGPT Ads Manager</li><li>📺 Claude Orbit leaked</li></ul></a>
-    <a class="cal-cell cal-filled" href="content/2026-05-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🚀 CC rate limits 2×</li><li>🛠 Code Review GA</li><li>🤖 Managed Agents dreaming/outcomes</li><li>🚀 SpaceX Colossus 300 MW</li></ul></a>
+    <a class="cal-cell cal-filled" href="content/2026-05-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🚀 CC rate limits doubled</li><li>🚀 Finance Agents launch</li><li>✨ Gemini 3.2 Flash</li><li>💰 DeepSeek $45B</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">8</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">9</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">10</div></div>
