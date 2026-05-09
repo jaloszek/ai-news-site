@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-08 -->
+<!-- Last updated: 2026-05-09 -->
 
 # State of AI
 
@@ -34,7 +34,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.133; Code Review GA; CI auto-fix; Remote Agents; Routines; Advisor (5× cost); Finance Agents; `worktree.baseRef`; hooks effort level |
+| Claude Code | Anthropic | v2.1.136; Code Review GA; CI auto-fix; Remote Agents; Routines; Advisor (5× cost); Finance Agents; `hard_deny` override; MCP OAuth race fixed |
 | Claude Managed Agents | Anthropic | broader availability: dreaming (session pattern extraction), outcomes (rubric grading +10pp), parallel subagents on shared FS, webhooks |
 | Codex CLI | OpenAI | 0.128.0, `/goal`; GPT-5.5 recommended default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
@@ -64,7 +64,7 @@
 - **DoD exclusion of Anthropic (2026-05)**: refused weapons autonomy / mass surveillance use; filed lawsuits; White House reconciliation talks underway
 - **Grok Morse injection (2026-05)**: $202K DRB via Morse-encoded X reply → Bankrbot; encoding-agnostic agentic payment exploit
 - **White House Mythos restriction (2026-05)**: blocked Anthropic expanding to 70 orgs; Project Glasswing $100M defensive cybersecurity program
-- **Mythos / Firefox (2026-05)**: 271 vulns found (15yr + 20yr old bugs), all patched in Firefox 150; Mozilla: no category Mythos misses
+- **Mythos METR eval (2026-05-09)**: 32-step simulated network attacks; 73% expert CTF; independently confirmed by UK AISI
 
 ## Community / industry trends
 
@@ -77,6 +77,6 @@
 - iOS 27 model selector: per-function AI choice (Google + Anthropic in testing) — first platform opening AI layer to third-party models
 - DeepSeek nearing $45B valuation (Big Fund + Tencent + Alibaba); earmarked for Huawei-chip compute infra
 - Chrome Prompt API: silently downloaded ~4GB Gemma Nano weights to user machines; privacy backlash across r/LocalLLM
-- OpenAI fine-tuning: retiring fine-tuned deprecated models (gpt-4o and older) by Sept 2026; gpt-4.1/4.1-mini survive
+- Dario Amodei (2026-05-07 CNBC): software-complexity moats "will completely go bust" as AI collapses dev costs
 
 <!-- End of state — keep under 200 lines / 6 KB. -->

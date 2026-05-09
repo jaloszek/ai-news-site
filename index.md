@@ -35,7 +35,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-06.html"><div class="cal-num">6</div><ul class="cal-highlights"><li>🛠 CC 2.1.129 --plugin-url</li><li>🛠 Prompt cache 1h TTL fix</li><li>💰 ChatGPT Ads Manager</li><li>📺 Claude Orbit leaked</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🚀 CC rate limits doubled</li><li>🚀 Finance Agents launch</li><li>✨ Gemini 3.2 Flash</li><li>💰 DeepSeek $45B</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-08.html"><div class="cal-num">8</div><ul class="cal-highlights"><li>🤖 Claude Managed Agents</li><li>🛠 CC 2.1.133 worktree.baseRef</li><li>🚀 AlphaEvolve in production</li><li>✨ GPT-Realtime-2 audio API</li><li>🔒 Mythos finds 271 Firefox vulns</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">9</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-05-09.html"><div class="cal-num">9</div><ul class="cal-highlights"><li>🛠 CC 2.1.136 MCP OAuth fix</li><li>🟢 OpenAI Codex safety</li><li>🟡 AllenAI EMO 14B MoE</li><li>💬 METR Mythos 73% CTF</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">10</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">11</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">12</div></div>
