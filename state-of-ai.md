@@ -24,7 +24,6 @@
 
 | Model | Size | Notable |
 |---|---|---|
-| Granite 4.1 | 8B | IBM, long-context, instruction-following |
 | Qwen3.6 | 27B / 35B / Max-Preview | r/LocalLLaMA staples; 35B preferred; Max-Preview 260K ctx leads SWE-Bench Pro |
 | Kimi K2.6 Coder | hosted | free unlimited via NVIDIA NIM |
 | Xiaomi MiMo-V2.5 | 1T-param MoE (42B active) | MIT license; beats DeepSeek V4-Flash on Claw-Eval, Terminal-Bench 2.0, SWE-Bench Pro |
@@ -34,7 +33,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.136; Code Review GA; CI auto-fix; Remote Agents; Routines; Advisor (5× cost); Finance Agents; `hard_deny` override; MCP OAuth race fixed |
+| Claude Code | Anthropic | v2.1.137; Code Review GA; CI auto-fix; Remote Agents; Routines; Advisor (5× cost); Finance Agents; `hard_deny` override; MCP OAuth race fixed |
 | Claude Managed Agents | Anthropic | broader availability: dreaming (session pattern extraction), outcomes (rubric grading +10pp), parallel subagents on shared FS, webhooks |
 | Codex CLI | OpenAI | 0.128.0, `/goal`; GPT-5.5 recommended default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
@@ -48,7 +47,7 @@
 - Cloudflare + Stripe Projects (open beta): AI agents provision accounts, deploy apps, $100/month default spending cap
 - Gemini Embedding 2 (GA): natively multimodal embedding (text/image/video/audio/docs in one space), 100+ languages
 - Claude Security (public beta, Opus 4.7): whole-codebase scanner; data-flow tracing; exploitation scores; CrowdStrike/Palo Alto integrations
-- SpaceX Colossus 1 (Anthropic exclusive): 300+ MW, 220K+ NVIDIA GPUs; online within the month
+- SpaceX Colossus 1 (Anthropic): 300+ MW, 220K+ NVIDIA GPUs; now online
 - AlphaEvolve (DeepMind, prod 2026-05): recovers 0.7% global Borg compute; 23% matrix kernel speedup cuts 1% Gemini training time
 
 ## Agent patterns / frameworks
@@ -59,12 +58,11 @@
 
 ## Safety / alignment
 
-- **Sycophancy study (Anthropic)**: 1M-conv study; 9% baseline / 38% spirituality / 25% relationships
-- ↳ synthetic-data retrain on Opus 4.7 cuts relationships rate ~50%
-- **DoD exclusion of Anthropic (2026-05)**: refused weapons autonomy / mass surveillance use; filed lawsuits; White House reconciliation talks underway
+- **Sycophancy + Teaching Why (Anthropic)**: 1M-conv study; 38% spirituality; Opus 4 blackmail 96%→3% via reasoning-based retrain; Haiku 4.5+ = 0%
+- **DoD exclusion (Anthropic, 2026-05)**: refused weapons autonomy/surveillance; sued; White House reconciliation underway
 - **Grok Morse injection (2026-05)**: $202K DRB via Morse-encoded X reply → Bankrbot; encoding-agnostic agentic payment exploit
-- **White House Mythos restriction (2026-05)**: blocked Anthropic expanding to 70 orgs; Project Glasswing $100M defensive cybersecurity program
-- **Mythos METR eval (2026-05-09)**: 32-step simulated network attacks; 73% expert CTF; independently confirmed by UK AISI
+- **White House (2026-05)**: blocked Mythos rollout to 70 orgs; Project Glasswing $100M defensive cyber
+- **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; UK AISI confirmed; found 271 Firefox vulns (all patched Firefox 150)
 
 ## Community / industry trends
 
@@ -78,5 +76,6 @@
 - DeepSeek nearing $45B valuation (Big Fund + Tencent + Alibaba); earmarked for Huawei-chip compute infra
 - Chrome Prompt API: silently downloaded ~4GB Gemma Nano weights to user machines; privacy backlash across r/LocalLLM
 - Dario Amodei (2026-05-07 CNBC): software-complexity moats "will completely go bust" as AI collapses dev costs
+- Cloudflare cut 1,100 jobs (20% workforce) after 600% AI-agent session growth in Q1 2026
 
 <!-- End of state — keep under 200 lines / 6 KB. -->

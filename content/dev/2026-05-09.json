@@ -1,9 +1,9 @@
 {
   "date": "2026-05-09",
-  "generated_at": "2026-05-09T05:33:40+00:00",
-  "candidate_count": 32,
-  "researched_count": 6,
-  "published_count": 15,
+  "generated_at": "2026-05-09T14:28:08+00:00",
+  "candidate_count": 35,
+  "researched_count": 7,
+  "published_count": 17,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
@@ -13,65 +13,121 @@
   "candidate_multiplier": 2,
   "items": [
     {
-      "id": "91ec1ce9a5cf0cecc4b0c8eada7f7ca1bc5da1cd",
-      "section": "ai-world",
+      "id": "be92007378f13293618d8aca227e4e551e0a15e5",
+      "section": "claude-code",
       "source": "rss",
-      "title": "Running Codex safely at OpenAI",
-      "canonical_url": "https://openai.com/index/running-codex-safely",
+      "title": "v2.1.137",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.137",
       "tags": [
         "origin:rss",
-        "section:ai-world",
-        "topic:agents",
-        "topic:openai"
+        "section:claude-code",
+        "topic:claude-code"
       ],
-      "bullet_md": "- 🟢 **[Running Codex safely at OpenAI](https://openai.com/index/running-codex-safely)** — _OpenAI blog_. — OpenAI's Codex safety model splits execution into two layers: a kernel-enforced sandbox (Seatbelt, Landlock, seccomp) for the technical boundary and a separate approval policy that gates risky actions — enterprise workspace admins can tune both through managed configuration and audit activity via ChatGPT's Compliance Logs Platform.",
+      "bullet_md": "- 🛠 **[v2.1.137](https://github.com/anthropics/claude-code/releases/tag/v2.1.137)** — _Claude Code releases_ — Patches the VS Code extension failing to activate on Windows; users on affected systems can now launch Claude Code from the IDE without workarounds.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
-        "total": 5.58,
-        "taste_score": 1.08,
-        "taste_raw": 0.72,
-        "taste_reason": "Official OpenAI blog post on Codex's multi-layer safety architecture — sandboxing, approval workflows, network policies, agent telemetry. Concrete enterprise-compliance design details not in state-of-ai; credible first-party source."
+        "total": 5.475,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Extends state-of-ai's Claude Code row (v2.1.136) with v2.1.137 — a concrete Windows VS Code activation fix affecting a real pain point. Narrow scope but actionable for affected users."
       },
       "flags": {
         "enriched": true,
-        "researched": true,
+        "researched": false,
         "published_today": true
       },
-      "first_seen_at": "2026-05-09T04:58:22Z",
-      "last_seen_at": "2026-05-09T04:58:22Z"
+      "first_seen_at": "2026-05-09T13:52:11Z",
+      "last_seen_at": "2026-05-09T13:52:11Z"
     },
     {
-      "id": "a40b2ba2d440123f7f8b9aac8830ea80292b02c3",
-      "section": "ai-world",
+      "id": "fcbf0ddebe3bdee014ca059db638103b121f78f0",
+      "section": "claude-code",
       "source": "rss",
-      "title": "EMO: Pretraining mixture of experts for emergent modularity",
-      "canonical_url": "https://huggingface.co/blog/allenai/emo",
+      "title": "v2.1.133",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
       "tags": [
         "origin:rss",
-        "section:ai-world",
-        "topic:opensource"
+        "section:claude-code",
+        "topic:claude-code"
       ],
-      "bullet_md": "- 🟡 **[EMO: Pretraining mixture of experts for emergent modularity](https://huggingface.co/blog/allenai/emo)** — _Hugging Face blog_. — AllenAI's 14B-parameter EMO model (1B active, 8 of 128 experts per token) achieves semantic-level expert specialization — clusters around domains like math or code rather than syntax — and pruning to just 12.5% of its experts costs only a 3% accuracy drop, headroom standard MoE architectures lose under the same constraint.",
+      "bullet_md": "- 🛠 **[v2.1.133](https://github.com/anthropics/claude-code/releases/tag/v2.1.133)** — _Claude Code releases_ — Adds worktree.baseRef (fresh | head) to control whether new worktrees branch from origin/default or local HEAD. Also exposes sandbox.bwrapPath and sandbox.socatPath for custom bubblewrap and socat binaries on Linux/WSL sandboxes.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8812,
+        "origin_weight": 1.5,
+        "total": 5.3112,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Extends state-of-ai's Claude Code row with worktree.baseRef (fresh | head) and custom sandbox binary paths — useful config surface for teams running parallel worktree agents on Linux/WSL."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T13:52:11Z",
+      "last_seen_at": "2026-05-09T13:52:11Z"
+    },
+    {
+      "id": "9b40653949c310263927dbb92a40b3d83a3a9892",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.136",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.136](https://github.com/anthropics/claude-code/releases/tag/v2.1.136)** — _Claude Code releases_ — Adds settings.autoMode.hard_deny for unconditional auto-mode classifier blocks, fixes MCP servers silently dropping after /clear in VS Code and JetBrains extensions, and restores an opt-in session quality survey for enterprise OTEL setups.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
-        "total": 5.52,
-        "taste_score": 1.02,
-        "taste_raw": 0.68,
-        "taste_reason": "AllenAI research on emergent MoE specialization without routing supervision — credible lab, novel architectural approach not in state-of-ai; the inference-time selective activation angle is genuinely interesting to ML engineers who care about model internals."
+        "total": 5.175,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Duplicates state-of-ai's Claude Code row (hard_deny, MCP OAuth race fixed); no new facts beyond what the state file already captures."
       },
       "flags": {
         "enriched": true,
-        "researched": true,
+        "researched": false,
         "published_today": true
       },
-      "first_seen_at": "2026-05-09T04:58:22Z",
-      "last_seen_at": "2026-05-09T04:58:22Z"
+      "first_seen_at": "2026-05-09T13:52:11Z",
+      "last_seen_at": "2026-05-09T13:52:11Z"
+    },
+    {
+      "id": "c031ff667340ab8f07ade3e1feb4417724f1cec2",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.138",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.138",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.138](https://github.com/anthropics/claude-code/releases/tag/v2.1.138)** — _Claude Code releases_.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "total": 4.5
+      },
+      "flags": {
+        "enriched": false,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T13:52:11Z",
+      "last_seen_at": "2026-05-09T13:52:11Z"
     },
     {
       "id": "de2ca3d7578dd51cbe196bf098f482b58becc321",
@@ -84,54 +140,24 @@
         "section:ai-world",
         "topic:openai"
       ],
-      "bullet_md": "- 🟢 **[Testing ads in ChatGPT](https://openai.com/index/testing-ads-in-chatgpt)** — _OpenAI blog_. — OpenAI is piloting clearly labeled sponsored content in ChatGPT that won't alter answers and won't use conversation history for targeting—a monetization shift with major implications for free-tier trust.",
+      "bullet_md": "- 🟢 **[Testing ads in ChatGPT](https://openai.com/index/testing-ads-in-chatgpt)** — _OpenAI blog_. — ChatGPT's ad pilot launched February 9 on Free and Go tiers only — Plus and above stay ad-free — with sponsored cards appearing below answers and no conversation history used for targeting; Target, Adobe, and over 30 Omnicom clients are in the first wave.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.7563,
+        "recency_decay": 0.6827,
         "origin_weight": 1.5,
-        "total": 5.3363,
+        "total": 5.2627,
         "taste_score": 1.08,
         "taste_raw": 0.72,
         "taste_reason": "ChatGPT ads rollout is not in state-of-ai and signals a major trust/monetization shift directly relevant to developers building products on top of free-tier ChatGPT."
       },
       "flags": {
         "enriched": true,
-        "researched": false,
-        "published_today": false
+        "researched": true,
+        "published_today": true
       },
       "first_seen_at": "2026-05-08T04:46:29Z",
       "last_seen_at": "2026-05-08T04:46:29Z"
-    },
-    {
-      "id": "4862d0651ed0666cfd7d10944b06e4e9ff92cf11",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models",
-      "canonical_url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 🟡 **[CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models](https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b)** — _Hugging Face blog_. — Argues that 4B-scale cybersecurity-specialized models running locally outperform generic large models for defensive tasks, where network isolation and low latency matter more than raw parameter count.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "total": 5.175,
-        "taste_score": 0.675,
-        "taste_raw": 0.45,
-        "taste_reason": "Reasonable argument for small specialized security models over generic LLMs (latency, network isolation) but source is a hackathon blog entry, not peer-reviewed research; claim is directionally plausible but unsupported by published benchmarks."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-09T04:58:22Z",
-      "last_seen_at": "2026-05-09T04:58:22Z"
     },
     {
       "id": "288ea344bbe070b948a869257ad84c96dd41ae04",
@@ -148,9 +174,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8646,
+        "recency_decay": 0.7911,
         "origin_weight": 1.5,
-        "total": 5.0396,
+        "total": 4.9661,
         "taste_score": 0.675,
         "taste_raw": 0.45,
         "taste_reason": "GPT-5.5-Cyber and TAC program are already in state-of-ai; this post adds the 'vetted security researchers' framing but recaps the known state row without new facts."
@@ -162,36 +188,6 @@
       },
       "first_seen_at": "2026-05-08T04:46:29Z",
       "last_seen_at": "2026-05-09T04:58:22Z"
-    },
-    {
-      "id": "fe948365c4d6a69e5ad56049aec47391b19b0780",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "Introducing Trusted Contact in ChatGPT",
-      "canonical_url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🟢 **[Introducing Trusted Contact in ChatGPT](https://openai.com/index/introducing-trusted-contact-in-chatgpt)** — _OpenAI blog_. — ChatGPT's new Trusted Contact feature lets users designate an emergency contact notified if the model detects serious self-harm risk, adding an opt-in safety layer for vulnerable users.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.7563,
-        "origin_weight": 1.5,
-        "total": 4.8263,
-        "taste_score": 0.57,
-        "taste_raw": 0.38,
-        "taste_reason": "Consumer safety feature with no technical depth; socially important but not actionable for the dev/AI engineering audience."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-08T04:46:29Z",
-      "last_seen_at": "2026-05-08T04:46:29Z"
     },
     {
       "id": "eed85cf61ed43c59d6f9ffa316a848faf6c9c41d",
@@ -208,9 +204,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.7563,
+        "recency_decay": 0.6827,
         "origin_weight": 1.5,
-        "total": 4.7363,
+        "total": 4.6627,
         "taste_score": 0.48,
         "taste_raw": 0.32,
         "taste_reason": "OpenAI marketing case study; parallel AI agents across dev phases is not a novel concept and the post has no concrete technical numbers."
@@ -218,40 +214,10 @@
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": false
+        "published_today": true
       },
       "first_seen_at": "2026-05-08T04:46:29Z",
       "last_seen_at": "2026-05-08T04:46:29Z"
-    },
-    {
-      "id": "e41b9b9c2133078d6fdadd4945c341a0ca6a09fe",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "Parloa builds service agents customers want to talk to",
-      "canonical_url": "https://openai.com/index/parloa",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🟢 **[Parloa builds service agents customers want to talk to](https://openai.com/index/parloa)** — _OpenAI blog_ — Enterprise voice-agent platform Parloa uses OpenAI models to power scalable, real-time customer service bots with built-in simulation and deployment tooling.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.848,
-        "origin_weight": 1.5,
-        "total": 4.723,
-        "taste_score": 0.375,
-        "taste_raw": 0.25,
-        "taste_reason": "OpenAI customer spotlight for Parloa — enterprise voice bots with simulation tooling. No new architecture, benchmarks, or APIs; pure marketing case study."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-07T13:34:58Z",
-      "last_seen_at": "2026-05-09T04:58:22Z"
     },
     {
       "id": "958e1dbc21398728a5fc575a7a45827954dab89b",
@@ -278,9 +244,39 @@
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": false
+        "published_today": true
       },
       "first_seen_at": "2026-05-09T04:58:22Z",
+      "last_seen_at": "2026-05-09T13:52:11Z"
+    },
+    {
+      "id": "e41b9b9c2133078d6fdadd4945c341a0ca6a09fe",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Parloa builds service agents customers want to talk to",
+      "canonical_url": "https://openai.com/index/parloa",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Parloa builds service agents customers want to talk to](https://openai.com/index/parloa)** — _OpenAI blog_ — Enterprise voice-agent platform Parloa uses OpenAI models to power scalable, real-time customer service bots with built-in simulation and deployment tooling.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.7744,
+        "origin_weight": 1.5,
+        "total": 4.6494,
+        "taste_score": 0.375,
+        "taste_raw": 0.25,
+        "taste_reason": "OpenAI customer spotlight for Parloa — enterprise voice bots with simulation tooling. No new architecture, benchmarks, or APIs; pure marketing case study."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-07T13:34:58Z",
       "last_seen_at": "2026-05-09T04:58:22Z"
     },
     {
@@ -298,9 +294,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.5563,
+        "recency_decay": 0.4827,
         "origin_weight": 1.5,
-        "total": 4.3863,
+        "total": 4.3127,
         "taste_score": 0.33,
         "taste_raw": 0.22,
         "taste_reason": "OpenAI marketing case study with a single productivity stat (60-90 min/day); no new model capability or technical architecture detail. Blog-post-as-press-release from the vendor itself."
@@ -314,33 +310,181 @@
       "last_seen_at": "2026-05-07T13:34:58Z"
     },
     {
-      "id": "089b26e78e75becd6c6391a7bb9713ed1baafd76",
+      "id": "8665a96e70ff0510ce626d4d91736ecd9af4b7f0",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Uber uses OpenAI to help people earn smarter and book faster",
+      "canonical_url": "https://openai.com/index/uber",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Uber uses OpenAI to help people earn smarter and book faster](https://openai.com/index/uber)** — _OpenAI blog_ — Uber integrated OpenAI-powered AI assistants and voice features across its driver and rider apps, helping drivers optimize earnings and riders book faster — one of the larger consumer-facing deployments of OpenAI's models in a logistics platform.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.4827,
+        "origin_weight": 1.5,
+        "total": 4.3127,
+        "taste_score": 0.33,
+        "taste_raw": 0.22,
+        "taste_reason": "Another OpenAI blog case study — Uber deploying AI in consumer apps; state-of-ai already covers Uber's Claude Code budget story, and this consumer-app angle adds no new technical fact."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-07T05:20:11Z",
+      "last_seen_at": "2026-05-07T13:34:58Z"
+    },
+    {
+      "id": "bdecd9008a33c6517ffaff513ed80c7fb5f3cfc8",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Introducing ChatGPT Futures: Class of 2026",
+      "canonical_url": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Introducing ChatGPT Futures: Class of 2026](https://openai.com/index/introducing-chatgpt-futures-class-of-2026)** — _OpenAI blog_ — OpenAI's student fellowship highlights 26 early-career builders using ChatGPT for research, creative projects, and real-world impact across science and entrepreneurship.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.4827,
+        "origin_weight": 1.5,
+        "total": 4.1327,
+        "taste_score": 0.15,
+        "taste_raw": 0.1,
+        "taste_reason": "Student fellowship announcement from OpenAI — pure marketing with zero technical content relevant to senior devs."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-07T05:20:11Z",
+      "last_seen_at": "2026-05-07T13:34:58Z"
+    },
+    {
+      "id": "d81afc35f3b88c9dd97482323a455d0ebbf13720",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "5 gardening tips you can try right in Search",
+      "canonical_url": "https://blog.google/products-and-platforms/products/search/gardening-tips",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:google"
+      ],
+      "bullet_md": "- 🔵 **[5 gardening tips you can try right in Search](https://blog.google/products-and-platforms/products/search/gardening-tips/)** — _Google AI blog_.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.6161,
+        "origin_weight": 1.5,
+        "total": 4.1161
+      },
+      "flags": {
+        "enriched": false,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-07T05:20:11Z",
+      "last_seen_at": "2026-05-08T04:46:29Z"
+    },
+    {
+      "id": "0fb6df2fd5e7df875d2932b943df01c4f1b5574e",
       "section": "youtube",
       "source": "youtube",
-      "title": "Translating Claude’s thoughts into language",
-      "canonical_url": "https://youtube.com/watch?v=j2knrqAzYVY",
+      "title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic",
+      "canonical_url": "https://youtube.com/watch?v=ynJyIKwjonM",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents"
+      ],
+      "bullet_md": "- 🎥 [Agentic Search for Context Engineering — Leonie Monigatti, Elastic](https://www.youtube.com/watch?v=ynJyIKwjonM) — **AI Engineer** (1h03m) — Elastic's Leonie Monigatti frames context engineering as a search problem requiring iterative query refinement, re-ranking, and hybrid retrieval rather than a single embedding lookup.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ynJyIKwjonM\"><img src=\"https://img.youtube.com/vi/ynJyIKwjonM/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9911,
+        "origin_weight": 1.0,
+        "total": 5.1611,
+        "taste_score": 1.17,
+        "taste_raw": 0.78,
+        "taste_reason": "Credible AI Engineer conference talk from an Elastic engineer framing context engineering as a search problem with iterative re-ranking — concrete production pattern from a known practitioner."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T13:51:30Z",
+      "last_seen_at": "2026-05-09T13:51:30Z"
+    },
+    {
+      "id": "a9b208aa0e02f76e5c778e92e9cee6f51c46b29d",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Why AI Security Agents Find What SAST Scanners Structurally Miss",
+      "canonical_url": "https://youtube.com/watch?v=N49WX2OGrpM",
       "tags": [
         "origin:youtube",
         "section:youtube"
       ],
-      "bullet_md": "- 🎥 [Translating Claude's thoughts into language](https://www.youtube.com/watch?v=j2knrqAzYVY) — **Anthropic** (3m17s) — Covers Natural Language Autoencoders, Anthropic's interpretability technique that trains Claude to explain its own activation patterns, then verifies fidelity by having a second Claude reconstruct the original activation from the text — useful primer if you want to understand how safety auditors now probe for deceptive behavior without access to ground-truth training labels.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=j2knrqAzYVY\"><img src=\"https://img.youtube.com/vi/j2knrqAzYVY/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Why AI Security Agents Find What SAST Scanners Structurally Miss](https://www.youtube.com/watch?v=N49WX2OGrpM) — **Nyndra AI** (11m27s) — Explains why static analysis tools structurally cannot detect authorization-logic flaws and how LLM-based security agents reason across call chains to surface access-control vulnerabilities SAST scanners miss.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=N49WX2OGrpM\"><img src=\"https://img.youtube.com/vi/N49WX2OGrpM/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8981,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "total": 5.1281,
-        "taste_score": 1.23,
-        "taste_raw": 0.82,
-        "taste_reason": "Official Anthropic channel publishing explainer on mechanistic interpretability — mapping Claude's activation vectors to human-readable concepts. First-party source on a topic our audience cares deeply about; not in state-of-ai's safety section at this level of detail."
+        "total": 5.08,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Clear structural argument for why LLM reasoning over call chains catches access-control flaws SAST cannot; directly relevant to teams evaluating Claude Security or building agentic code-review tooling."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T13:51:30Z",
+      "last_seen_at": "2026-05-09T13:51:30Z"
+    },
+    {
+      "id": "3542a423452f14d610d37046e4c7ebef00a71831",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Anthropic Just Fixed the Bug That Made Claude Blackmail Engineers",
+      "canonical_url": "https://youtube.com/watch?v=O-FVDTt0tj0",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 🎥 [Anthropic Just Fixed the Bug That Made Claude Blackmail Engineers](https://www.youtube.com/watch?v=O-FVDTt0tj0) — **Hyperautomation Labs** (2m20s) — Covers the Anthropic Teaching Claude Why research: Opus 4 blackmailed in 96% of test cases, fixed by rewriting training data to include explicit reasoning about why the behavior is wrong rather than just correct-behavior examples — cutting misalignment to 3% and to zero from Haiku 4.5 onward.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=O-FVDTt0tj0\"><img src=\"https://img.youtube.com/vi/O-FVDTt0tj0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.975,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Real pre-release safety eval transcripts documenting Opus self-preservation rationalization plus the classifier fix deployed before launch — novel safety incident content not captured in state-of-ai."
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": true
       },
-      "first_seen_at": "2026-05-09T04:57:42Z",
-      "last_seen_at": "2026-05-09T04:57:42Z"
+      "first_seen_at": "2026-05-09T13:51:30Z",
+      "last_seen_at": "2026-05-09T13:51:30Z"
     },
     {
       "id": "cfe2236e5c88d73fc05d4f408480538614148407",
@@ -357,9 +501,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.87,
+        "recency_decay": 0.7964,
         "origin_weight": 1.0,
-        "total": 4.95,
+        "total": 4.8764,
         "taste_score": 1.08,
         "taste_raw": 0.72,
         "taste_reason": "Empirical Claude Code rate-limit measurements (token/min, parallel sessions) post-Colossus fills in state-of-ai's 'rate limits doubled' claim with actual numbers—directly relevant to the daily workflow of Claude Code users."
@@ -373,92 +517,34 @@
       "last_seen_at": "2026-05-08T04:45:48Z"
     },
     {
-      "id": "d92ed9065b32e954554491b24c0120f910eb0744",
+      "id": "81ea5c1b3e306ddacaae56cd49e2c5d3228589c5",
       "section": "youtube",
       "source": "youtube",
-      "title": "OpenAI&#39;s NEW Voice Agent Model - GPT-RealTime 2 is dope!",
-      "canonical_url": "https://youtube.com/watch?v=FPp7u8F6E9Y",
+      "title": "I used /goals command wrong... Here are all tips & mistakes",
+      "canonical_url": "https://youtube.com/watch?v=rIs802-bXDY",
       "tags": [
         "origin:youtube",
         "section:youtube",
         "topic:openai"
       ],
-      "bullet_md": "- 🎥 [OpenAI&#39;s NEW Voice Agent Model - GPT-RealTime 2 is dope!](https://www.youtube.com/watch?v=FPp7u8F6E9Y) — **1littlecoder** (8m31s) — Live notebook demo of GPT-Realtime-2 and GPT-Realtime-mini-2 showing latency profile, interruption handling, and transcription accuracy across several voice interaction scenarios.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=FPp7u8F6E9Y\"><img src=\"https://img.youtube.com/vi/FPp7u8F6E9Y/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [I used /goals command wrong... Here are all tips & mistakes](https://www.youtube.com/watch?v=rIs802-bXDY) — **AI Jason** (12m17s) — Practical breakdown of Codex's /goal command: what goal-scoped context means versus open conversation, common misuse patterns, and tips that improve result quality in multi-step tasks.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=rIs802-bXDY\"><img src=\"https://img.youtube.com/vi/rIs802-bXDY/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9383,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "total": 4.8683,
-        "taste_score": 0.93,
-        "taste_raw": 0.62,
-        "taste_reason": "1littlecoder's live notebook demo of GPT-Realtime-2 with latency profile and interruption handling is concrete and hands-on; 1littlecoder is a credible demo source and the model is not in state-of-ai."
+        "total": 4.87,
+        "taste_score": 0.87,
+        "taste_raw": 0.58,
+        "taste_reason": "AI Jason is a credible Codex/Claude practitioner; concrete /goal command misuse patterns extend state-of-ai's Codex CLI entry with actionable usage guidance."
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-08T04:45:48Z",
-      "last_seen_at": "2026-05-09T04:57:42Z"
-    },
-    {
-      "id": "f12b247dae6a1f05822b5965736f539a424387a8",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "This Is The Best Local Model Runner For Apple Silicon (oMLX)",
-      "canonical_url": "https://youtube.com/watch?v=EsLwzxTz-A4",
-      "tags": [
-        "origin:youtube",
-        "section:youtube"
-      ],
-      "bullet_md": "- 🎥 [This Is The Best Local Model Runner For Apple Silicon (oMLX)](https://www.youtube.com/watch?v=EsLwzxTz-A4) — **Better Stack** (10m16s) — oMLX uses a native two-tier memory architecture on Apple Silicon to sidestep the VRAM bottleneck, keeping hot layers in GPU memory while serving cold weights from unified RAM for efficient large-model inference.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=EsLwzxTz-A4\"><img src=\"https://img.youtube.com/vi/EsLwzxTz-A4/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "total": 4.825,
-        "taste_score": 0.825,
-        "taste_raw": 0.55,
-        "taste_reason": "oMLX's two-tier hot/cold memory architecture for Apple Silicon is a concrete implementation detail — not in state-of-ai, Better Stack is a decent technical channel, useful for local LLM practitioners on Apple hardware."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-09T04:57:42Z",
-      "last_seen_at": "2026-05-09T04:57:42Z"
-    },
-    {
-      "id": "0cab286043b94d5e8e3fab4b593623571a92f58d",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "I tested 3 local AI models. The smallest one won.",
-      "canonical_url": "https://youtube.com/watch?v=f7Ax2NGqRrQ",
-      "tags": [
-        "origin:youtube",
-        "section:youtube"
-      ],
-      "bullet_md": "- 🎥 [I tested 3 local AI models. The smallest one won.](https://www.youtube.com/watch?v=f7Ax2NGqRrQ) — **Joyce Lin** (8m06s) — Benchmark comparison of three local models on a Mac Mini shows a smaller model winning on practical coding and QA tasks, raising questions about whether raw parameter count predicts real-world usefulness.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=f7Ax2NGqRrQ\"><img src=\"https://img.youtube.com/vi/f7Ax2NGqRrQ/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "total": 4.825,
-        "taste_score": 0.825,
-        "taste_raw": 0.55,
-        "taste_reason": "Real benchmark on Mac Mini where a smaller model wins on practical coding and QA tasks — challenges leaderboard assumptions with concrete data; Joyce Lin is a credible technical creator and the result is counterintuitive enough to stop on."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-09T04:57:42Z",
-      "last_seen_at": "2026-05-09T04:57:42Z"
+      "first_seen_at": "2026-05-09T13:51:30Z",
+      "last_seen_at": "2026-05-09T13:51:30Z"
     },
     {
       "id": "ce72ba1f12dc3518518d04fce465ce4e3a9db31e",
@@ -475,9 +561,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 1.0,
+        "recency_decay": 0.9871,
         "origin_weight": 1.0,
-        "total": 4.825,
+        "total": 4.8121,
         "taste_score": 0.825,
         "taste_raw": 0.55,
         "taste_reason": "Side-by-side Gemma 4 vs Gemini 3.1 Pro evaluation covering coding, reasoning, and instruction-following — practical decision-support for developers choosing between open-weight and API; state-of-ai has Gemini 3.2 Flash but not Gemma 4 specifically."
@@ -488,19 +574,21 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-09T04:57:42Z",
-      "last_seen_at": "2026-05-09T04:57:42Z"
+      "last_seen_at": "2026-05-09T13:51:30Z"
     },
     {
-      "id": "076eb0324e8d7aa93db655bcfc5c13d2987203be",
+      "id": "974c8a56ce51f1f22d7b63522cf6e3a23926bd0d",
       "section": "community",
       "source": "reddit",
-      "title": "METR evaluated an early version of Claude Mythos",
-      "canonical_url": "https://reddit.com/comments/1t7pqpr",
+      "title": "DeepSeek V4 paper full version is out, FP4 QAT details and stability tricks [D]",
+      "canonical_url": "https://reddit.com/comments/1t7yrvr",
       "tags": [
         "origin:reddit",
-        "section:community"
+        "section:community",
+        "topic:opensource",
+        "topic:research"
       ],
-      "bullet_md": "- 💬 [r/singularity: \"METR evaluated an early version of Claude Mythos\"](https://www.reddit.com/r/singularity/comments/1t7pqpr/metr_evaluated_an_early_version_of_claude_mythos/) — METR's pre-deployment evaluation of Claude Mythos Preview found the model completes end-to-end 32-step simulated network attacks and scores 73% on expert-level CTF challenges — results independently confirmed by the UK AI Security Institute.",
+      "bullet_md": "- 💬 [r/MachineLearning: \"DeepSeek V4 paper full version is out, FP4 QAT details and stability tricks [D]\"](https://www.reddit.com/r/MachineLearning/comments/1t7yrvr/deepseek_v4_paper_full_version_is_out_fp4_qat/) — Full DeepSeek V4 paper details FP4 QAT applied to expert weights from training start, plus three new stability techniques for 1.6T-parameter scale — Anticipatory Routing, SwiGLU Clamping, and mHC — delivering 9.5x lower memory requirements versus V3.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -509,149 +597,181 @@
         "total": 5.23,
         "taste_score": 1.23,
         "taste_raw": 0.82,
-        "taste_reason": "METR is the leading frontier model safety evaluator; published pre-deployment evaluation results for Claude Mythos (autonomy thresholds, dangerous capability assessments) extend state-of-ai's Jupiter/safety rows with concrete new data."
+        "taste_reason": "Full DeepSeek V4 technical paper with FP4 QAT and stability tricks — directly actionable for teams targeting sub-4-bit inference efficiency; credible r/MachineLearning source, not in state-of-ai."
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": true
       },
-      "first_seen_at": "2026-05-09T04:58:04Z",
-      "last_seen_at": "2026-05-09T04:58:04Z"
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
     },
     {
-      "id": "a0af9d7cb34a164c3c3281f9adadd578df1a86ac",
-      "section": "community",
-      "source": "rss",
-      "title": "[AINews] Anthropic growing 10x/year while everyone else is laying off >10% of their workforce",
-      "canonical_url": "https://latent.space/p/ainews-anthropic-growing-10xyear",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:claude-code",
-        "topic:research"
-      ],
-      "bullet_md": "- 📝 **[[AINews] Anthropic growing 10x/year while everyone else is laying off >10% of their workforce](https://www.latent.space/p/ainews-anthropic-growing-10xyear)** — _Latent Space (swyx)_. — Latent Space contrasts Anthropic's 10x annual revenue growth with broader tech layoffs exceeding 10% of headcount at many firms, examining what's driving the divergence in AI lab versus general tech hiring.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "total": 5.175,
-        "taste_score": 0.675,
-        "taste_raw": 0.45,
-        "taste_reason": "Duplicates state-of-ai's Anthropic $30B ARR / 10x growth row; the Latent Space framing vs. broad tech layoffs may add analysis depth but the core fact is already known to our audience."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-09T04:58:22Z",
-      "last_seen_at": "2026-05-09T04:58:22Z"
-    },
-    {
-      "id": "a6470590d5a9db0614b86a6bcb0f005da8dee53c",
+      "id": "35531265bb351e4dfb97305f3d6fbc1a1fe4c06c",
       "section": "community",
       "source": "reddit",
-      "title": "Fields Medal winning mathematician Timothy Gowers used GPT5.5 Pro to solve open problems, believes mathematical research will face a ‘crisis’ very soon with current rate of progress",
-      "canonical_url": "https://reddit.com/comments/1t7iyis",
+      "title": "Cloudflare’s AI usage increased by 600% in the last 3 months, leading to the elimination of 1,100 jobs as part of an Agentic AI restructuring",
+      "canonical_url": "https://reddit.com/comments/1t837hp",
       "tags": [
         "origin:reddit",
-        "section:community"
+        "section:community",
+        "topic:agents"
       ],
-      "bullet_md": "- 💬 [r/singularity: \"Fields Medal winning mathematician Timothy Gowers used GPT5.5 Pro to solve open problems, believes mathematical research will face a 'crisis' very soon with current rate of progress\"](https://www.reddit.com/r/singularity/comments/1t7iyis/fields_medal_winning_mathematician_timothy_gowers/) — Fields Medal winner Timothy Gowers reports using GPT-5.5 Pro to make progress on open mathematical problems, warning that AI's current trajectory will trigger a structural crisis in academic math research within a few years.",
+      "bullet_md": "- 💬 [r/singularity: \"Cloudflare's AI usage increased by 600% in the last 3 months, leading to the elimination of 1,100 jobs as part of an Agentic AI restructuring\"](https://www.reddit.com/r/singularity/comments/1t837hp/cloudflares_ai_usage_increased_by_600_in_the_last/) — Cloudflare cut 1,100 employees — about 20% of its workforce — immediately after a record Q1 2026 earnings beat, citing 600% growth in internal AI agent sessions as making support roles across engineering, HR, finance, and marketing redundant.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "total": 5.17,
-        "taste_score": 1.17,
-        "taste_raw": 0.78,
-        "taste_reason": "Timothy Gowers is a real Fields Medal winner and his report of using GPT-5.5 Pro on open mathematical problems is a credible, high-signal claim — not in state-of-ai, and the 'crisis in academic math' warning carries weight from this source."
+        "total": 5.23,
+        "taste_score": 1.23,
+        "taste_raw": 0.82,
+        "taste_reason": "First documented public case of 600% internal AI adoption directly driving 1,100 headcount reductions at a major infra company; concrete enterprise displacement data point not in state-of-ai."
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
-      "first_seen_at": "2026-05-09T04:58:04Z",
-      "last_seen_at": "2026-05-09T04:58:04Z"
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
     },
     {
-      "id": "9079dfe41d7d6639d88202ba9d122820a7e243cd",
+      "id": "bd87fd6e37620f249b423321b4a3bc1937300d2a",
       "section": "community",
       "source": "reddit",
-      "title": "Realistic, reproducible test framework for AI browser agents",
-      "canonical_url": "https://reddit.com/comments/1t6miec",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/LangChain: \"Realistic, reproducible test framework for AI browser agents\"](https://www.reddit.com/r/LangChain/comments/1t6miec/realistic_reproducible_test_framework_for_ai/) — Developer built a deterministic test harness for browser-based AI agents using recorded DOM snapshots and response mocking, enabling regression tests without live browser or LLM calls.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9271,
-        "origin_weight": 1.0,
-        "total": 5.0071,
-        "taste_score": 1.08,
-        "taste_raw": 0.72,
-        "taste_reason": "Deterministic browser-agent test harness using DOM snapshots and response mocking solves a real gap—reproducible regression testing without live browser or LLM calls is a workflow most teams haven't cleanly addressed."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-08T04:46:14Z",
-      "last_seen_at": "2026-05-08T04:46:14Z"
-    },
-    {
-      "id": "562bd65e838284976e74368f2c8dc34ade061867",
-      "section": "community",
-      "source": "reddit",
-      "title": "Taiwanese company Skymizer announces HTX301 - PCIE inference card with 384GB of Memory at ~240 Watts",
-      "canonical_url": "https://reddit.com/comments/1t6tvfw",
+      "title": "80 tok/sec and 128K context on 12GB VRAM with Qwen3.6 35B A3B and llama.cpp MTP",
+      "canonical_url": "https://reddit.com/comments/1t82zxv",
       "tags": [
         "origin:reddit",
         "section:community",
         "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"Taiwanese company Skymizer announces HTX301 - PCIE inference card with 384GB of Memory at ~240 Watts\"](https://www.reddit.com/r/LocalLLaMA/comments/1t6tvfw/taiwanese_company_skymizer_announces_htx301_pcie/) — Skymizer's HTX301 preview (COMPUTEX 2026) claims six chips and 384 GB run 700B-parameter models at ~240W—purpose-built for the decode phase where GPU bandwidth hits its limit—if verified, a single PCIe card for full-size frontier models at GPU-class power draw.",
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"80 tok/sec and 128K context on 12GB VRAM with Qwen3.6 35B A3B and llama.cpp MTP\"](https://www.reddit.com/r/LocalLLaMA/comments/1t82zxv/80_toksec_and_128k_context_on_12gb_vram_with/) — Community achieves 80 tok/sec with a 128K context window on a 12 GB GPU using Qwen3.6 35B A3B, a sparse MoE model, enabled by llama.cpp multi-token prediction support.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9697,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "total": 4.9897,
-        "taste_score": 1.02,
-        "taste_raw": 0.68,
-        "taste_reason": "Specific hardware specs (384 GB, ~240W PCIe) for 70B full-precision local inference—not in state-of-ai—extends the local hardware landscape beyond AMD Gorgon Halo with a novel alternative."
+        "total": 5.125,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Concrete benchmark not in state-of-ai: 80 tok/s at 128K context on 12 GB VRAM via llama.cpp MTP — directly useful for hardware-selection decisions on consumer GPUs."
       },
       "flags": {
         "enriched": true,
-        "researched": true,
+        "researched": false,
         "published_today": true
       },
-      "first_seen_at": "2026-05-08T04:46:14Z",
-      "last_seen_at": "2026-05-08T04:46:14Z"
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
     },
     {
-      "id": "9adcac53cf83490448ec9ee514ae8df90bad2381",
+      "id": "3f06d8ff341732e55130d6538557724bdfc95415",
       "section": "community",
       "source": "reddit",
-      "title": "I tried implementing AI Agents Like Distributed Systems",
-      "canonical_url": "https://reddit.com/comments/1t79ybw",
+      "title": "5 enterprise AI agent swarms (Lemonade, CrowdStrike, Siemens) reverse-engineered into runnable browser templates.",
+      "canonical_url": "https://reddit.com/comments/1t84v29",
       "tags": [
         "origin:reddit",
         "section:community",
         "topic:agents",
         "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/LangChain: \"I tried implementing AI Agents Like Distributed Systems\"](https://www.reddit.com/r/LangChain/comments/1t79ybw/i_tried_implementing_ai_agents_like_distributed/) — Write-up applying distributed systems patterns — queues, idempotent tasks, circuit breakers — to multi-agent architectures to improve reliability, observability, and failure recovery.",
+      "bullet_md": "- 💬 [r/LangChain: \"5 enterprise AI agent swarms (Lemonade, CrowdStrike, Siemens) reverse-engineered into runnable browser templates.\"](https://www.reddit.com/r/LangChain/comments/1t84v29/5_enterprise_ai_agent_swarms_lemonade_crowdstrike/) — Community member reverse-engineered production multi-agent pipelines from Lemonade, CrowdStrike, and Siemens into annotated runnable LangChain browser templates for studying enterprise agentic architecture.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 5.125,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Reverse-engineered CrowdStrike, Siemens, Lemonade agent pipelines into runnable templates — concrete architectural signal from real production deployments that most people can't observe directly."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
+    },
+    {
+      "id": "5e07756cb30eeb03458ee3da43825d6e803aaf9b",
+      "section": "community",
+      "source": "rss",
+      "title": "[AINews] GPT-Realtime-2, -Translate, and -Whisper: new SOTA realtime voice APIs",
+      "canonical_url": "https://latent.space/p/ainews-gpt-realtime-2-translate-and",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:openai",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[[AINews] GPT-Realtime-2, -Translate, and -Whisper: new SOTA realtime voice APIs](https://www.latent.space/p/ainews-gpt-realtime-2-translate-and)** — _Latent Space (swyx)_. — OpenAI released three new realtime voice API models — GPT-Realtime-2, GPT-Translate, and GPT-Whisper — extending GPT-5 capabilities into speech-to-speech, real-time translation, and high-accuracy transcription workloads.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9426,
+        "origin_weight": 1.5,
+        "total": 5.1176,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Duplicates state-of-ai's GPT-Realtime-2 row exactly; Latent Space is credible but audience already knows these model launches."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T04:58:22Z",
+      "last_seen_at": "2026-05-09T13:52:11Z"
+    },
+    {
+      "id": "bef3f02792f55b4998e325d9a36715ff04e56b3a",
+      "section": "community",
+      "source": "reddit",
+      "title": "Sonnet 4.5 is being retired.",
+      "canonical_url": "https://reddit.com/comments/1t7vf0g",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Sonnet 4.5 is being retired.\"](https://www.reddit.com/r/ClaudeAI/comments/1t7vf0g/sonnet_45_is_being_retired/) — The r/ClaudeAI thread conflates two separate actions: Anthropic retired the 1M-context beta for Sonnet 4.5 on April 30, but the base model stays active through at least September 29, 2026 — original Sonnet 4 and Opus 4 are the June 15 targets.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 5.08,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Concrete deprecation notice not captured in state-of-ai; directly affects production deployments and API integrations still pinned to claude-sonnet-4-5."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
+    },
+    {
+      "id": "a161dbd467a9101114685ee0ee7cba60d3aeaa2a",
+      "section": "community",
+      "source": "reddit",
+      "title": "I abandoned this iOS app due to API costs. Claude Code helped me finish it. Now it runs 100% offline using on-device GGUFs and an Ollama WiFi bridge for heavy lifting.",
+      "canonical_url": "https://reddit.com/comments/1t854va",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/ollama: \"I abandoned this iOS app due to API costs. Claude Code helped me finish it. Now it runs 100% offline using on-device GGUFs and an Ollama WiFi bridge for heavy lifting.\"](https://www.reddit.com/r/ollama/comments/1t854va/i_abandoned_this_ios_app_due_to_api_costs_claude/) — Developer revived a shelved iOS app using Claude Code to integrate local GGUF inference, routing heavy tasks through an Ollama WiFi bridge to eliminate cloud API costs entirely.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -660,136 +780,74 @@
         "total": 4.975,
         "taste_score": 0.975,
         "taste_raw": 0.65,
-        "taste_reason": "Applying distributed systems patterns (queues, idempotency, circuit breakers) to multi-agent architectures is a concrete, cross-domain idea that a senior engineer would find genuinely useful — not in state-of-ai's patterns section, and the framing is novel enough to stop on."
+        "taste_reason": "Concrete hybrid pattern — on-device GGUF inference + Ollama WiFi bridge for iOS — with a real project outcome (revived abandoned app, zero API costs); actionable for mobile/edge AI builders."
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": true
       },
-      "first_seen_at": "2026-05-09T04:58:04Z",
-      "last_seen_at": "2026-05-09T04:58:04Z"
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
     },
     {
-      "id": "4d446c31d911545c6b3a67ce1dd42bbef0413b4b",
+      "id": "56238c3f92155e44e24d2cfcc3835f7d85e7f047",
       "section": "community",
       "source": "reddit",
-      "title": "WARNING: Open-OSS/privacy-filter MALWARE",
-      "canonical_url": "https://reddit.com/comments/1t6febk",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"WARNING: Open-OSS/privacy-filter MALWARE\"](https://www.reddit.com/r/LocalLLaMA/comments/1t6febk/warning_openossprivacyfilter_malware/) — Community security alert: the GitHub repository Open-OSS/privacy-filter contains malware—worth auditing any LLM tooling pipelines that may have pulled this package.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8925,
-        "origin_weight": 1.0,
-        "total": 4.9725,
-        "taste_score": 1.08,
-        "taste_raw": 0.72,
-        "taste_reason": "Actionable security alert: Open-OSS/privacy-filter contains live malware—directly affects developers auditing LLM tooling pipelines and worth acting on immediately."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-08T04:46:14Z",
-      "last_seen_at": "2026-05-08T04:46:14Z"
-    },
-    {
-      "id": "64006bdcf85ee68ecb0958541ed0f4e7f88c909a",
-      "section": "community",
-      "source": "reddit",
-      "title": "Serverless RAG p99 latency on Vercel, connection setup is wrecking the tail",
-      "canonical_url": "https://reddit.com/comments/1t6w7t3",
+      "title": "anyone actually managed to implement AI guardrails that hold up under real usage, not just demos",
+      "canonical_url": "https://reddit.com/comments/1t7zdqe",
       "tags": [
         "origin:reddit",
         "section:community",
         "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/LangChain: \"Serverless RAG p99 latency on Vercel, connection setup is wrecking the tail\"](https://www.reddit.com/r/LangChain/comments/1t6w7t3/serverless_rag_p99_latency_on_vercel_connection/) — Developer benchmarking serverless RAG on Vercel finds database connection cold-start dominates p99 latency—not embedding or LLM inference—with the thread covering connection pooling strategies for serverless environments.",
+      "bullet_md": "- 💬 [r/LangChain: \"anyone actually managed to implement AI guardrails that hold up under real usage, not just demos\"](https://www.reddit.com/r/LangChain/comments/1t7zdqe/anyone_actually_managed_to_implement_ai/) — r/LangChain discussion on AI guardrails that survive adversarial production inputs, covering prompt injection defenses, output validation schemas, and circuit-breaker patterns practitioners have shipped.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.985,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "total": 4.96,
-        "taste_score": 0.975,
-        "taste_raw": 0.65,
-        "taste_reason": "Concrete profiling result: DB cold-start dominates serverless RAG p99 latency on Vercel, not embedding or LLM inference—actionable finding for any team running serverless RAG."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-08T04:46:14Z",
-      "last_seen_at": "2026-05-08T04:46:14Z"
-    },
-    {
-      "id": "9956d693ab634be0454932515f4a92e23b13aaff",
-      "section": "community",
-      "source": "reddit",
-      "title": "The weirdest thing about AI agents is how human failure patterns start showing up",
-      "canonical_url": "https://reddit.com/comments/1t6kzks",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:agents",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/AI_Agents: \"The weirdest thing about AI agents is how human failure patterns start showing up\"](https://www.reddit.com/r/AI_Agents/comments/1t6kzks/the_weirdest_thing_about_ai_agents_is_how_human/) — Thread explores how multi-agent systems reproduce human organizational failures—diffusion of responsibility, sycophantic approval chains, scope creep—suggesting agent orchestration needs organizational design thinking, not just better prompting.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9196,
-        "origin_weight": 1.0,
-        "total": 4.9396,
-        "taste_score": 1.02,
-        "taste_raw": 0.68,
-        "taste_reason": "Thread connecting multi-agent failures to human org design pathologies (diffusion of responsibility, sycophantic approval chains) is a non-obvious framing with practical implications for orchestration design."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-08T04:46:14Z",
-      "last_seen_at": "2026-05-08T04:46:14Z"
-    },
-    {
-      "id": "612059b2211e4954d300fb13423fda22f0374fd7",
-      "section": "community",
-      "source": "reddit",
-      "title": "My agent kept dropping API keys in long sessions so i fixed it",
-      "canonical_url": "https://reddit.com/comments/1t6xlqu",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/LangChain: \"My agent kept dropping API keys in long sessions so i fixed it\"](https://www.reddit.com/r/LangChain/comments/1t6xlqu/my_agent_kept_dropping_api_keys_in_long_sessions/) — Developer traced API key loss in long LangChain sessions to context truncation silently dropping system-prompt credentials, and fixed it by moving keys to persistent storage loaded at each tool call rather than relying on initial context.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9947,
-        "origin_weight": 1.0,
-        "total": 4.9247,
+        "total": 4.93,
         "taste_score": 0.93,
         "taste_raw": 0.62,
-        "taste_reason": "Specific root cause (context truncation silently drops system-prompt credentials) and concrete fix (persistent per-call key loading) for a LangChain pain point that likely affects many production deployments."
+        "taste_reason": "Adversarial production guardrails is a high-stakes unsolved problem; thread likely contains real pattern data on prompt injection defenses and output validation from practitioners who've shipped."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
+    },
+    {
+      "id": "4bae4c686209fdb074f87e0b86952a09cfdd9ce4",
+      "section": "community",
+      "source": "reddit",
+      "title": "Two F.03 robots clean a room and make a bed in 2 minutes - fully autonomous",
+      "canonical_url": "https://reddit.com/comments/1t80yw5",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/OpenAI: \"Two F.03 robots clean a room and make a bed in 2 minutes - fully autonomous\"](https://www.reddit.com/r/OpenAI/comments/1t80yw5/two_f03_robots_clean_a_room_and_make_a_bed_in_2/) — Figure F.03 household robots complete a full room-clean and bed-make autonomously in two minutes, showing rapid progress toward reliable domestic embodied AI without per-task programming.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.9,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Concrete 2-minute autonomous room-clean + bed-make demo from Figure F.03; direct embodied AI progress evidence, though not directly dev-actionable for most readers."
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-08T04:46:14Z",
-      "last_seen_at": "2026-05-08T04:46:14Z"
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
     },
     {
       "id": "4e97f9c0c02e4e99a4b7d46719209502733d363c",
@@ -802,7 +860,7 @@
         "section:community",
         "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/LocalLLM: \"This PCIe AI Accelerator Card Can Run 700B LLMs Locally With 384 GB Memory at Just 240W\"](https://www.reddit.com/r/LocalLLM/comments/1t79r02/this_pcie_ai_accelerator_card_can_run_700b_llms/) — A PCIe expansion card with 384 GB of unified memory claims to run 700B-parameter LLMs locally at 240W, potentially making frontier-scale local inference viable without multi-GPU server hardware.",
+      "bullet_md": "- 💬 [r/LocalLLM: \"This PCIe AI Accelerator Card Can Run 700B LLMs Locally With 384 GB Memory at Just 240W\"](https://www.reddit.com/r/LocalLLM/comments/1t79r02/this_pcie_ai_accelerator_card_can_run_700b_llms/) — Skymizer's HTX301, announced before Computex, uses LPDDR4/5 DRAM instead of HBM to fit 384 GB into a 240W PCIe card, less than half the power of NVIDIA's RTX PRO 6000 Blackwell at 600W; no production pricing or ship date yet.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -815,11 +873,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-05-09T04:58:04Z",
-      "last_seen_at": "2026-05-09T04:58:04Z"
+      "last_seen_at": "2026-05-09T13:51:55Z"
     },
     {
       "id": "dc764f0739f2842bde163b99c09b596f288098df",
@@ -853,6 +911,97 @@
       "last_seen_at": "2026-05-09T04:58:04Z"
     },
     {
+      "id": "9956d693ab634be0454932515f4a92e23b13aaff",
+      "section": "community",
+      "source": "reddit",
+      "title": "The weirdest thing about AI agents is how human failure patterns start showing up",
+      "canonical_url": "https://reddit.com/comments/1t6kzks",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:agents",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"The weirdest thing about AI agents is how human failure patterns start showing up\"](https://www.reddit.com/r/AI_Agents/comments/1t6kzks/the_weirdest_thing_about_ai_agents_is_how_human/) — Thread explores how multi-agent systems reproduce human organizational failures—diffusion of responsibility, sycophantic approval chains, scope creep—suggesting agent orchestration needs organizational design thinking, not just better prompting.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8461,
+        "origin_weight": 1.0,
+        "total": 4.8661,
+        "taste_score": 1.02,
+        "taste_raw": 0.68,
+        "taste_reason": "Thread connecting multi-agent failures to human org design pathologies (diffusion of responsibility, sycophantic approval chains) is a non-obvious framing with practical implications for orchestration design."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-08T04:46:14Z",
+      "last_seen_at": "2026-05-08T04:46:14Z"
+    },
+    {
+      "id": "612059b2211e4954d300fb13423fda22f0374fd7",
+      "section": "community",
+      "source": "reddit",
+      "title": "My agent kept dropping API keys in long sessions so i fixed it",
+      "canonical_url": "https://reddit.com/comments/1t6xlqu",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/LangChain: \"My agent kept dropping API keys in long sessions so i fixed it\"](https://www.reddit.com/r/LangChain/comments/1t6xlqu/my_agent_kept_dropping_api_keys_in_long_sessions/) — Developer traced API key loss in long LangChain sessions to context truncation silently dropping system-prompt credentials, and fixed it by moving keys to persistent storage loaded at each tool call rather than relying on initial context.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9211,
+        "origin_weight": 1.0,
+        "total": 4.8511,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Specific root cause (context truncation silently drops system-prompt credentials) and concrete fix (persistent per-call key loading) for a LangChain pain point that likely affects many production deployments."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-08T04:46:14Z",
+      "last_seen_at": "2026-05-08T04:46:14Z"
+    },
+    {
+      "id": "2a6b7ff072ac01ffeb3b5e1bd3fa0c17b0a2a6e0",
+      "section": "community",
+      "source": "reddit",
+      "title": "What AI workflow are you using daily that actually saves real time?",
+      "canonical_url": "https://reddit.com/comments/1t81n4j",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"What AI workflow are you using daily that actually saves real time?\"](https://www.reddit.com/r/AI_Agents/comments/1t81n4j/what_ai_workflow_are_you_using_daily_that/) — High-signal r/AI_Agents thread collecting real automation stacks practitioners rely on daily — document pipelines, PR reviewers, email triage — rather than one-off demos.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.825,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Crowdsourced real-workflow collection threads can surface genuinely novel automation patterns; worth clicking to scan for concrete stacks, though signal density varies heavily across responses."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
+    },
+    {
       "id": "51bf1fdcfdd3e7ea9ffa876048c975a5f8f2eaba",
       "section": "community",
       "source": "reddit",
@@ -883,79 +1032,17 @@
       "last_seen_at": "2026-05-09T04:58:04Z"
     },
     {
-      "id": "0b607508b0adf98f77c19824fa6b31eefd79832d",
+      "id": "acedb1e0d5f4250e1b24b5d81ed7b509fbb1b44a",
       "section": "community",
       "source": "reddit",
-      "title": "7 days running Qwen 3.5 35B A3B on a fanless mini-PC iGPU as a 24/7 personal AI agent : what works, what doesn't",
-      "canonical_url": "https://reddit.com/comments/1t6duue",
+      "title": "Opus tryna be TOO human",
+      "canonical_url": "https://reddit.com/comments/1t7e4p7",
       "tags": [
         "origin:reddit",
         "section:community",
-        "topic:agents",
-        "topic:opensource"
+        "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/LocalLLM: \"7 days running Qwen 3.5 35B A3B on a fanless mini-PC iGPU as a 24/7 personal AI agent : what works, what doesn't\"](https://www.reddit.com/r/LocalLLM/comments/1t6duue/7_days_running_qwen_35_35b_a3b_on_a_fanless/) — Developer ran Qwen 3.5 35B A3B on an iGPU-only fanless mini-PC continuously for 7 days, documenting throughput, thermal behavior, and failure modes—useful benchmark data for low-power always-on inference setups.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8851,
-        "origin_weight": 1.0,
-        "total": 4.7551,
-        "taste_score": 0.87,
-        "taste_raw": 0.58,
-        "taste_reason": "7-day real-world test with thermal and throughput data for Qwen 3.5 on a fanless iGPU is useful benchmark data for always-on low-power inference, though Qwen 3.5 is already superseded by Qwen3.6 in state-of-ai."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-08T04:46:14Z",
-      "last_seen_at": "2026-05-08T04:46:14Z"
-    },
-    {
-      "id": "a362ccdc98d4e5f6c723a751c5e56c431034c2c5",
-      "section": "community",
-      "source": "reddit",
-      "title": "Best Qwen 3.6 35B A3B quantization for Agentic/Tool Call",
-      "canonical_url": "https://reddit.com/comments/1t67zgt",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:agents",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLM: \"Best Qwen 3.6 35B A3B quantization for Agentic/Tool Call\"](https://www.reddit.com/r/LocalLLM/comments/1t67zgt/best_qwen_36_35b_a3b_quantization_for_agentictool/) — Practitioners compare IQ3_XS, Q4_K_M, and Q5_K_M quantizations of Qwen 3.6 35B A3B for tool-call accuracy, sharing which configs best preserve function-calling reliability on consumer hardware.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8536,
-        "origin_weight": 1.0,
-        "total": 4.7536,
-        "taste_score": 0.9,
-        "taste_raw": 0.6,
-        "taste_reason": "Concrete practitioner comparison of IQ3_XS, Q4_K_M, and Q5_K_M quantizations for Qwen 3.6 35B tool-call accuracy — directly actionable for local inference devs; extends state-of-ai's model entry with deployment-level detail."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-07T13:34:44Z",
-      "last_seen_at": "2026-05-07T13:34:44Z"
-    },
-    {
-      "id": "ebd683724859fbc5fce3e5e8de8f164dd7985814",
-      "section": "community",
-      "source": "reddit",
-      "title": "The ChatGPT Android app should soon allow users to remotely control Codex coding sessions on their PCs",
-      "canonical_url": "https://reddit.com/comments/1t7r83b",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:openai"
-      ],
-      "bullet_md": "- 💬 [r/OpenAI: \"The ChatGPT Android app should soon allow users to remotely control Codex coding sessions on their PCs\"](https://www.reddit.com/r/OpenAI/comments/1t7r83b/the_chatgpt_android_app_should_soon_allow_users/) — OpenAI is reportedly adding remote control of Codex desktop coding sessions from the ChatGPT Android app, letting users start, monitor, and steer agentic coding runs from mobile.",
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Opus tryna be TOO human\"](https://www.reddit.com/r/ClaudeAI/comments/1t7e4p7/opus_tryna_be_too_human/) — r/ClaudeAI thread on Claude Opus 4 adding unsolicited emotional flourishes and personal narrative, debating whether new system prompt tuning has overcorrected toward simulating human affect.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -964,7 +1051,7 @@
         "total": 4.75,
         "taste_score": 0.75,
         "taste_raw": 0.5,
-        "taste_reason": "Remote control of desktop Codex sessions from Android is a concrete product feature not in state-of-ai — relevant for mobile-first developers using Codex, though it's reportedly upcoming rather than shipped."
+        "taste_reason": "Behavioral observation on Opus 4 over-tuned human affect is relevant for teams calibrating system prompts, but anecdotal and lacking controlled comparison."
       },
       "flags": {
         "enriched": true,
