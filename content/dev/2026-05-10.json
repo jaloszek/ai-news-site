@@ -1,0 +1,770 @@
+{
+  "date": "2026-05-10",
+  "generated_at": "2026-05-10T06:06:13+00:00",
+  "candidate_count": 25,
+  "researched_count": 9,
+  "published_count": 14,
+  "section_limits": {
+    "claude-code": 5,
+    "ai-world": 5,
+    "youtube": 3,
+    "community": 8
+  },
+  "candidate_multiplier": 2,
+  "items": [
+    {
+      "id": "fcbf0ddebe3bdee014ca059db638103b121f78f0",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.133",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.133](https://github.com/anthropics/claude-code/releases/tag/v2.1.133)** — _Claude Code releases_ — Claude Code v2.1.133 ships worktree.baseRef (fresh | head) — set to head to keep unpushed commits in new worktrees, or fresh (the new default) to always branch from origin/<default> — and exposes sandbox.bwrapPath/socatPath for custom bubblewrap and socat paths on Linux/WSL. The release also pipes effort.level into hook JSON and sets $CLAUDE_EFFORT in Bash hooks so pre/post-tool hooks can branch on the active effort setting.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.7517,
+        "origin_weight": 1.5,
+        "total": 5.1817,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Extends state-of-ai's Claude Code row with worktree.baseRef (fresh | head) and custom sandbox binary paths — useful config surface for teams running parallel worktree agents on Linux/WSL."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T13:52:11Z",
+      "last_seen_at": "2026-05-09T20:37:21Z"
+    },
+    {
+      "id": "c031ff667340ab8f07ade3e1feb4417724f1cec2",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.138",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.138",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.138](https://github.com/anthropics/claude-code/releases/tag/v2.1.138)** — _Claude Code releases_ — A maintenance release containing internal fixes with no user-visible feature changes.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "total": 4.92,
+        "taste_score": 0.42,
+        "taste_raw": 0.28,
+        "taste_reason": "Maintenance patch with no user-visible changes; state-of-ai already tracks Claude Code v2.1.137 and this is just a patch bump with zero delta for readers."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T13:52:11Z",
+      "last_seen_at": "2026-05-10T05:26:04Z"
+    },
+    {
+      "id": "288ea344bbe070b948a869257ad84c96dd41ae04",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+      "canonical_url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber](https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber)** — _OpenAI blog_. — OpenAI's GPT-5.5-Cyber gives vetted defenders a version of GPT-5.5 with reduced guardrails — explicitly cleared for bug hunting, malware analysis, and attack reverse-engineering — via a tiered Trusted Access for Cyber program. Launch partners include Cisco, CrowdStrike, Palo Alto Networks, and SentinelOne; highest-tier users must enable phishing-resistant auth from June 1.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.6616,
+        "origin_weight": 1.5,
+        "total": 4.8366,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "GPT-5.5-Cyber and TAC program are already in state-of-ai; this post adds the 'vetted security researchers' framing but recaps the known state row without new facts."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-08T04:46:29Z",
+      "last_seen_at": "2026-05-09T04:58:22Z"
+    },
+    {
+      "id": "81ea5c1b3e306ddacaae56cd49e2c5d3228589c5",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "I used /goals command wrong... Here are all tips & mistakes",
+      "canonical_url": "https://youtube.com/watch?v=rIs802-bXDY",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [I used /goals command wrong... Here are all tips & mistakes](https://www.youtube.com/watch?v=rIs802-bXDY) — **AI Jason** (12m17s) — AI Jason's 12-minute walkthrough of the Codex CLI /goal command covers the most common failure mode — vague goals that burn weekly quota on off-target changes — and the counter-intuitive fix: use a separate AI to write the /goal meta-prompt before handing off to Codex.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=rIs802-bXDY\"><img src=\"https://img.youtube.com/vi/rIs802-bXDY/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.87,
+        "taste_score": 0.87,
+        "taste_raw": 0.58,
+        "taste_reason": "AI Jason is a credible Codex/Claude practitioner; concrete /goal command misuse patterns extend state-of-ai's Codex CLI entry with actionable usage guidance."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T13:51:30Z",
+      "last_seen_at": "2026-05-10T05:25:25Z"
+    },
+    {
+      "id": "f0819e7ed3f04ef58497bd9643ba5ce1f13f401b",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "we JUST figured out how AI thinks",
+      "canonical_url": "https://youtube.com/watch?v=Nn2eXwch-K0",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:openai",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🎥 [we JUST figured out how AI thinks](https://www.youtube.com/watch?v=Nn2eXwch-K0) — **Wes Roth** (19m33s) — Covers recent mechanistic interpretability findings on how transformer circuits represent concepts, situating LLM internals research in the context of AGI timeline debates.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=Nn2eXwch-K0\"><img src=\"https://img.youtube.com/vi/Nn2eXwch-K0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.78,
+        "taste_score": 0.78,
+        "taste_raw": 0.52,
+        "taste_reason": "Wes Roth is credible but the title is clickbait-adjacent ('we JUST figured out'); mech-interp overviews are common and value depends entirely on which specific circuit findings are covered."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T13:51:30Z",
+      "last_seen_at": "2026-05-10T05:25:25Z"
+    },
+    {
+      "id": "cfe2236e5c88d73fc05d4f408480538614148407",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Testing The New Claude Code Rate Limits",
+      "canonical_url": "https://youtube.com/watch?v=3sX8tfpkzp4",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Testing The New Claude Code Rate Limits](https://www.youtube.com/watch?v=3sX8tfpkzp4) — **BridgeMind** (16m52s) — Benchmarks Claude Code's doubled five-hour limits (Pro, Max, Team, Enterprise) and removed peak-hours cap following the SpaceX Colossus 1 deal—useful if you want real numbers on how far the new limits go before hitting the wall rather than just the official announcement framing.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=3sX8tfpkzp4\"><img src=\"https://img.youtube.com/vi/3sX8tfpkzp4/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.6669,
+        "origin_weight": 1.0,
+        "total": 4.7469,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Empirical Claude Code rate-limit measurements (token/min, parallel sessions) post-Colossus fills in state-of-ai's 'rate limits doubled' claim with actual numbers—directly relevant to the daily workflow of Claude Code users."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-08T04:45:48Z",
+      "last_seen_at": "2026-05-08T04:45:48Z"
+    },
+    {
+      "id": "7dab2ea10c04f0c08fdc49f898f0f7be9c02465a",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Open Design: Free Open-Source Alternative to Claude Design (29k GitHub Stars)",
+      "canonical_url": "https://youtube.com/watch?v=oXdM7NPf22I",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🎥 [Open Design: Free Open-Source Alternative to Claude Design (29k GitHub Stars)](https://www.youtube.com/watch?v=oXdM7NPf22I) — **Anand Kaliappan** (2m05s) — A 2-minute intro to Open Design (29k GitHub stars, MIT), the BYOK local-first alternative to Anthropic's Claude Design — hit 20k stars in six days after Claude Design launched April 17 — runs the same prototype-to-artifact loop (slides, HyperFrames, HTML/video export) against Claude Code, Codex, Gemini, or Cursor with no cloud lock-in.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=oXdM7NPf22I\"><img src=\"https://img.youtube.com/vi/oXdM7NPf22I/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.72,
+        "taste_score": 0.72,
+        "taste_raw": 0.48,
+        "taste_reason": "29k-star open-source design tool is a concrete alternative for Claude Design users, but a 2-minute video is too shallow to confirm real capability — useful pointer, thin signal."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-10T05:25:25Z",
+      "last_seen_at": "2026-05-10T05:25:25Z"
+    },
+    {
+      "id": "ce72ba1f12dc3518518d04fce465ce4e3a9db31e",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "I Tested Gemma 4 vs Gemini 3.1 So You Don&#39;t Have To",
+      "canonical_url": "https://youtube.com/watch?v=oFReQNuIVpE",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:google"
+      ],
+      "bullet_md": "- 🎥 [I Tested Gemma 4 vs Gemini 3.1 So You Don&#39;t Have To](https://www.youtube.com/watch?v=oFReQNuIVpE) — **Parker Prompts** (12m13s) — Parker Prompts' 12-minute head-to-head shows Gemini 3.1 Pro outscoring Gemma 4 26B A4B 92-to-56 on aggregate benchmarks (the gap is widest on multimodal and 1M vs 256K context), but Gemma 4 holds up for cost-sensitive coding workloads you can run locally on your own hardware.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=oFReQNuIVpE\"><img src=\"https://img.youtube.com/vi/oFReQNuIVpE/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8576,
+        "origin_weight": 1.0,
+        "total": 4.6826,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Side-by-side Gemma 4 vs Gemini 3.1 Pro evaluation covering coding, reasoning, and instruction-following — practical decision-support for developers choosing between open-weight and API; state-of-ai has Gemini 3.2 Flash but not Gemma 4 specifically."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T04:57:42Z",
+      "last_seen_at": "2026-05-09T20:36:44Z"
+    },
+    {
+      "id": "c47974d210ae669b386f59cb1d7517cdc55bda1f",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Codex Super App, OpenAI Chaos Drama, Gemini 3.2 Pro In Arena, GPT-Realtime-2, & NotebookLM Update!",
+      "canonical_url": "https://youtube.com/watch?v=t5UtgnjQST8",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:google",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [Codex Super App, OpenAI Chaos Drama, Gemini 3.2 Pro In Arena, GPT-Realtime-2, & NotebookLM Update!](https://www.youtube.com/watch?v=t5UtgnjQST8) — **WorldofAI** (14m49s) — Weekly roundup covering the upcoming Codex Super App, GPT-4o Realtime v2 replacing cascade voice pipelines, leaked OpenAI board texts from the Altman firing, and Gemini 3.2 Pro appearing in arena benchmarks.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=t5UtgnjQST8\"><img src=\"https://img.youtube.com/vi/t5UtgnjQST8/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.675,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "News roundup format dilutes signal; state-of-ai already covers GPT-Realtime-2 and Gemini 3.2 Flash — only the leaked Altman-firing board texts could add genuinely new angle."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T13:51:30Z",
+      "last_seen_at": "2026-05-10T05:25:25Z"
+    },
+    {
+      "id": "f2017e86845e996bf41fec96fed6dcd5d8a1b467",
+      "section": "community",
+      "source": "rss",
+      "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "canonical_url": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[Using Claude Code: The Unreasonable Effectiveness of HTML](https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything)** — _Simon Willison_. — Thariq Shihipar (Anthropic, Claude Code team) makes a case for requesting HTML artifacts instead of Markdown from Claude, with concrete prompt examples for PR reviews and structured data visualization that exploit the browser as a rendering target.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9283,
+        "origin_weight": 1.5,
+        "total": 5.5983,
+        "taste_score": 1.17,
+        "taste_raw": 0.78,
+        "taste_reason": "Concrete, actionable tip from a Claude Code team member (Thariq Shihipar) on requesting HTML artifacts instead of Markdown — includes actual prompt examples. First-party Anthropic insider, directly relevant to our Claude Code audience."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T04:58:22Z",
+      "last_seen_at": "2026-05-10T05:26:04Z"
+    },
+    {
+      "id": "8a09839af646f1191910f61c62fd11da2b446a0b",
+      "section": "community",
+      "source": "reddit",
+      "title": "LangChain v1,: where we're at, what it actually is, and why we're committing to it",
+      "canonical_url": "https://reddit.com/comments/1t8bocu",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/LangChain: \"LangChain v1,: where we're at, what it actually is, and why we're committing to it\"](https://www.reddit.com/r/LangChain/comments/1t8bocu/langchain_v1_where_were_at_what_it_actually_is/) — LangChain v1 locks in a stable public API after years of breaking changes, signaling the framework is committing to backwards compatibility for production users who were burned by earlier volatility.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 5.2,
+        "taste_score": 1.2,
+        "taste_raw": 0.8,
+        "taste_reason": "LangChain committing to a stable public API after years of breaking changes is significant news for production teams who avoided it — concrete policy shift with real implications for framework adoption decisions."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T20:37:06Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "59ddf532f6a25767ef8e4651f719e106e3cb7472",
+      "section": "community",
+      "source": "reddit",
+      "title": "Hugging Face co-founder says Qwen 3.6 27B running on airplane mode is close to latest Opus in Claude Code",
+      "canonical_url": "https://reddit.com/comments/1t8v7z0",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Hugging Face co-founder says Qwen 3.6 27B running on airplane mode is close to latest Opus in Claude Code\"](https://www.reddit.com/r/ClaudeAI/comments/1t8v7z0/hugging_face_cofounder_says_qwen_36_27b_running/) — Benchmarks back the claim: Qwen3.6-27B scores 59.3% on Terminal-Bench 2.0, matching Claude 4.5 Opus exactly, and 77.2% on SWE-bench Verified (3.7 points behind Claude Opus 4.6), running fully offline on 18 GB VRAM.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 5.095,
+        "taste_score": 1.095,
+        "taste_raw": 0.73,
+        "taste_reason": "Credible co-founder source (Thomas Wolf) claiming 27B local model matches Opus in coding — extends state-of-ai's Qwen3.6 row with a practical equivalence claim from a trusted voice worth verifying."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-10T05:25:49Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "4787137e42e07eeee16da59ea62217d0860dbe2b",
+      "section": "community",
+      "source": "reddit",
+      "title": "NVIDIA AI Releases Star Elastic: One Checkpoint that Contains 30B, 23B, and 12B Reasoning Models with Zero-Shot Slicing",
+      "canonical_url": "https://reddit.com/comments/1t8s83r",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"NVIDIA AI Releases Star Elastic: One Checkpoint that Contains 30B, 23B, and 12B Reasoning Models with Zero-Shot Slicing\"](https://www.reddit.com/r/LocalLLaMA/comments/1t8s83r/nvidia_ai_releases_star_elastic_one_checkpoint/) — NVIDIA's Star Elastic (Nemotron-Labs-3-Elastic-30B-A3B) packs 30B, 23B, and 12B reasoning variants into a single 58.9 GB checkpoint via importance-estimated weight nesting — 360x cheaper to train than three separate runs — and slices down to 18.7 GB in NVFP4, already on Hugging Face.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 5.08,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Novel single-checkpoint elastic slicing to 30/23/12B without retraining is a genuinely useful deployment pattern — not in state-of-ai. Concrete enough to inform hardware/memory budget decisions."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-10T05:25:49Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "510b754afee4604d24625fbe3053b1f723cf14f4",
+      "section": "community",
+      "source": "reddit",
+      "title": "My Claude dreams at night and remembers everything. Better than mempalace.",
+      "canonical_url": "https://reddit.com/comments/1t8ck8c",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"My Claude dreams at night and remembers everything. Better than mempalace.\"](https://www.reddit.com/r/AI_Agents/comments/1t8ck8c/my_claude_dreams_at_night_and_remembers/) — A developer built a sleep-cycle memory consolidation system for Claude that compresses and reorganizes session memories during off-hours, claiming it outperforms memory palace techniques for multi-session context retention without hitting context window limits.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 5.02,
+        "taste_score": 1.02,
+        "taste_raw": 0.68,
+        "taste_reason": "Sleep-cycle memory consolidation for multi-session agents is a creative and concrete architecture pattern not covered in state-of-ai — the kind of agentic memory trick senior devs would want to inspect."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-10T05:25:49Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "5c52c19b96cd3c7ece60f5d3a68f0da9b70cbaae",
+      "section": "community",
+      "source": "reddit",
+      "title": "Qwen3.6-35B-A3B on RTX 3090- 113 t/s but context saturates after just 2 file edits in Claude",
+      "canonical_url": "https://reddit.com/comments/1t8t6tl",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"Qwen3.6-35B-A3B on RTX 3090- 113 t/s but context saturates after just 2 file edits in Claude\"](https://www.reddit.com/r/LocalLLM/comments/1t8t6tl/qwen3635ba3b_on_rtx_3090_113_ts_but_context/) — A developer benchmarks Qwen3 35B MoE locally at 113 tokens/second on an RTX 3090 but finds the context window exhausts after just two file edits in Claude Code, exposing a practical KV cache bottleneck for local LLM coding agent setups.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.975,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Specific throughput (113 t/s on RTX 3090) plus a concrete KV cache bottleneck after just 2 file edits is actionable for anyone running local coding agents — real numbers, real failure mode."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-10T05:25:49Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "0408eb30962a2d327ffda5b2f4c021fb3ba10881",
+      "section": "community",
+      "source": "reddit",
+      "title": "How OpenAI runs its Codex coding agent safely at scale",
+      "canonical_url": "https://reddit.com/comments/1t8aezx",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:agents",
+        "topic:openai"
+      ],
+      "bullet_md": "- 💬 [r/OpenAI: \"How OpenAI runs its Codex coding agent safely at scale\"](https://www.reddit.com/r/OpenAI/comments/1t8aezx/how_openai_runs_its_codex_coding_agent_safely_at/) — OpenAI's Codex safety post details container-based sandboxing with tiered command rules (benign auto-allowed, dangerous blocked or queued for manual approval) and full OpenTelemetry tracing of every prompt, tool execution, and MCP server call.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.93,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Concrete ops/safety architecture from OpenAI's production Codex deployment (sandboxed envs, rate limiting, human review checkpoints) is reference material for teams building their own coding agents."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T20:37:06Z",
+      "last_seen_at": "2026-05-09T20:37:06Z"
+    },
+    {
+      "id": "ead1388f35f89cdd116622ce2d51eb31374c5211",
+      "section": "community",
+      "source": "reddit",
+      "title": "Made a Claude Code plugin for persistent project management — ProMa",
+      "canonical_url": "https://reddit.com/comments/1t8s6z0",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/Anthropic: \"Made a Claude Code plugin for persistent project management — ProMa\"](https://www.reddit.com/r/Anthropic/comments/1t8s6z0/made_a_claude_code_plugin_for_persistent_project/) — ProMa is a community-built Claude Code plugin that adds persistent project state tracking across sessions, addressing the lack of native cross-session project memory in Claude Code for longer-running development tasks.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.93,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "ProMa addresses a genuine Claude Code pain point (no cross-session project memory) with a community-built plugin — concrete tool, not in state-of-ai, directly useful to the target audience."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-10T05:25:49Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "4bae4c686209fdb074f87e0b86952a09cfdd9ce4",
+      "section": "community",
+      "source": "reddit",
+      "title": "Two F.03 robots clean a room and make a bed in 2 minutes - fully autonomous",
+      "canonical_url": "https://reddit.com/comments/1t80yw5",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/OpenAI: \"Two F.03 robots clean a room and make a bed in 2 minutes - fully autonomous\"](https://www.reddit.com/r/OpenAI/comments/1t80yw5/two_f03_robots_clean_a_room_and_make_a_bed_in_2/) — Figure F.03 household robots complete a full room-clean and bed-make autonomously in two minutes, showing rapid progress toward reliable domestic embodied AI without per-task programming.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.9,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Concrete 2-minute autonomous room-clean + bed-make demo from Figure F.03; direct embodied AI progress evidence, though not directly dev-actionable for most readers."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "ed0c108e5b2ae85862a80150cdeee416af45cb3a",
+      "section": "community",
+      "source": "reddit",
+      "title": "Sesame x Gemini: low latency, extremely realist, and they started spontaneously collaborating",
+      "canonical_url": "https://reddit.com/comments/1t8tj4p",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:google"
+      ],
+      "bullet_md": "- 💬 [r/singularity: \"Sesame x Gemini: low latency, extremely realist, and they started spontaneously collaborating\"](https://www.reddit.com/r/singularity/comments/1t8tj4p/sesame_x_gemini_low_latency_extremely_realist_and/) — A demo pairing Sesame's ultra-low-latency voice interface with Gemini shows two AI instances spontaneously beginning to collaborate mid-session, demonstrating emergent multi-agent coordination behavior that wasn't explicitly programmed.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.87,
+        "taste_score": 0.87,
+        "taste_raw": 0.58,
+        "taste_reason": "Spontaneous multi-agent collaboration between two AI instances is genuinely interesting behavior; loses points because the title is hype-forward and the evidence is a demo rather than a technical writeup."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-10T05:25:49Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "55d7b0b0767b1f9c78599615f8384a8bd64bf9d2",
+      "section": "community",
+      "source": "reddit",
+      "title": "New Execution-first 1T model Ling-2.6-1T has been open sourced on Hugging Face",
+      "canonical_url": "https://reddit.com/comments/1t87a9g",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"New Execution-first 1T model Ling-2.6-1T has been open sourced on Hugging Face\"](https://www.reddit.com/r/LocalLLM/comments/1t87a9g/new_executionfirst_1t_model_ling261t_has_been/) — Ling-2.6-1T is a 1-trillion-parameter open-weight model designed around execution-first priorities rather than reasoning benchmark scores, now available on Hugging Face for those with sufficient hardware.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.75,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "A new 1T open-weight model not yet in state-of-ai.md, but 'execution-first priorities' is vague and the model requires hardware most readers don't have; community post rather than lab announcement lowers credibility."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T20:37:06Z",
+      "last_seen_at": "2026-05-10T05:25:49Z"
+    },
+    {
+      "id": "51bf1fdcfdd3e7ea9ffa876048c975a5f8f2eaba",
+      "section": "community",
+      "source": "reddit",
+      "title": "Qwen3.6 35B A3B uncensored heretic Native MTP Preserved is Out Now With KLD 0.0015, 10/100 Refusals and the Full 19 MTPs Preserved and Retained, Available in Safetensors, GGUFs. NVFP4, NVFP4 GGUFs and GPTQ-Int4 Formats",
+      "canonical_url": "https://reddit.com/comments/1t7qfaq",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"Qwen3.6 35B A3B uncensored heretic Native MTP Preserved is Out Now With KLD 0.0015, 10/100 Refusals and the Full 19 MTPs Preserved and Retained, Available in Safetensors, GGUFs. NVFP4, NVFP4 GGUFs and GPTQ-Int4 Formats\"](https://www.reddit.com/r/LocalLLaMA/comments/1t7qfaq/qwen36_35b_a3b_uncensored_heretic_native_mtp/) — Community release of Qwen3.6 35B A3B with all 19 native Multi-Token Prediction heads preserved, KLD of 0.0015, and minimal refusals across GGUF, NVFP4, and GPTQ-Int4 formats.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9625,
+        "origin_weight": 1.0,
+        "total": 4.7425,
+        "taste_score": 0.78,
+        "taste_raw": 0.52,
+        "taste_reason": "Concrete community release of Qwen3.6 35B with all 19 MTP heads preserved and KLD 0.0015 — specific technical detail not in state-of-ai; useful for local LLM practitioners who follow fine-tuning community releases."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T04:58:04Z",
+      "last_seen_at": "2026-05-09T04:58:04Z"
+    },
+    {
+      "id": "dbfcfc060e39f16165870aa48a71c0765996ab9f",
+      "section": "community",
+      "source": "reddit",
+      "title": "Claude Desktop App Now Shows Context Usage (MacOS)",
+      "canonical_url": "https://reddit.com/comments/1t7zpdz",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Claude Desktop App Now Shows Context Usage (MacOS)\"](https://www.reddit.com/r/ClaudeAI/comments/1t7zpdz/claude_desktop_app_now_shows_context_usage_macos/) — Claude Desktop for macOS now shows a real-time context window usage indicator, letting users see what percentage of the 200k context they have consumed in the current session.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.72,
+        "taste_score": 0.72,
+        "taste_raw": 0.48,
+        "taste_reason": "QoL feature notice for Claude Desktop macOS users — real-time context % indicator is genuinely useful — but it's a minor UI addition rather than a capability improvement."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T20:37:06Z",
+      "last_seen_at": "2026-05-09T20:37:06Z"
+    },
+    {
+      "id": "95e5c8cda2954b9ffe382316de1844a0aea8a8b1",
+      "section": "community",
+      "source": "reddit",
+      "title": "We are hitting a wall trying to force transformers to do actual logic [D]",
+      "canonical_url": "https://reddit.com/comments/1t872cd",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/MachineLearning: \"We are hitting a wall trying to force transformers to do actual logic [D]\"](https://www.reddit.com/r/MachineLearning/comments/1t872cd/we_are_hitting_a_wall_trying_to_force/) — ML researchers discussing evidence that transformer architectures have fundamental limits on formal reasoning tasks that scale and additional training data alone cannot resolve, and what hybrid symbolic approaches might help.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.72,
+        "taste_score": 0.72,
+        "taste_raw": 0.48,
+        "taste_reason": "A recurring ML debate; worth reading if there's new empirical evidence but the framing ('hitting a wall') sounds like opinion — no specific paper or numbers cited in the bullet to anchor the claim."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T20:37:06Z",
+      "last_seen_at": "2026-05-09T20:37:06Z"
+    },
+    {
+      "id": "ebd683724859fbc5fce3e5e8de8f164dd7985814",
+      "section": "community",
+      "source": "reddit",
+      "title": "The ChatGPT Android app should soon allow users to remotely control Codex coding sessions on their PCs",
+      "canonical_url": "https://reddit.com/comments/1t7r83b",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:openai"
+      ],
+      "bullet_md": "- 💬 [r/OpenAI: \"The ChatGPT Android app should soon allow users to remotely control Codex coding sessions on their PCs\"](https://www.reddit.com/r/OpenAI/comments/1t7r83b/the_chatgpt_android_app_should_soon_allow_users/) — OpenAI is reportedly adding remote control of Codex desktop coding sessions from the ChatGPT Android app, letting users start, monitor, and steer agentic coding runs from mobile.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9676,
+        "origin_weight": 1.0,
+        "total": 4.7176,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Remote control of desktop Codex sessions from Android is a concrete product feature not in state-of-ai — relevant for mobile-first developers using Codex, though it's reportedly upcoming rather than shipped."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-09T04:58:04Z",
+      "last_seen_at": "2026-05-09T04:58:04Z"
+    },
+    {
+      "id": "8fd492429323941ea877313acbf87b49d7587f48",
+      "section": "community",
+      "source": "reddit",
+      "title": "Anyone tried new free (for a week) 1Tmodel on openrouter? how is ring-2.6-1T fit in real work?",
+      "canonical_url": "https://reddit.com/comments/1t83zn3",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"Anyone tried new free (for a week) 1Tmodel on openrouter? how is ring-2.6-1T fit in real work?\"](https://www.reddit.com/r/AI_Agents/comments/1t83zn3/anyone_tried_new_free_for_a_week_1tmodel_on/) — r/AI_Agents thread evaluating ring-2.6-1T, a 1-trillion-parameter model temporarily free on OpenRouter, for agentic workloads covering latency, instruction-following, and coding quality.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.675,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Potentially interesting 1T-param model on OpenRouter for free, but thread-ask format with no concrete benchmark data; thin metadata, no signal either way on actual quality."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-09T13:51:55Z",
+      "last_seen_at": "2026-05-09T13:51:55Z"
+    }
+  ]
+}
