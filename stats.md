@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-05-10 06:06 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-10 11:29 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 1242
-- **Enriched:** 1012 (81%)
-- **Taste-rated:** 553 (44%)
-- **Researched:** 82 (6%)
-- **Status (candidate / rejected / published / duplicate):** 290 / 952 / 0 / 0
-- **Published bullets (all-time):** 287 (last 7d: 172)
+- **Discovery items (all-time):** 1276
+- **Enriched:** 1041 (81%)
+- **Taste-rated:** 582 (45%)
+- **Researched:** 85 (6%)
+- **Status (candidate / rejected / published / duplicate):** 324 / 952 / 0 / 0
+- **Published bullets (all-time):** 301 (last 7d: 186)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,8 +22,8 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-05-10 | 28 | 16 (57%) | 16 (57%) | 3 (10%) |
-| 2026-05-09 | 187 | 147 (78%) | 147 (78%) | 16 (8%) |
+| 2026-05-10 | 62 | 39 (62%) | 39 (62%) | 5 (8%) |
+| 2026-05-09 | 187 | 153 (81%) | 153 (81%) | 17 (9%) |
 | 2026-05-08 | 75 | 70 (93%) | 70 (93%) | 7 (9%) |
 | 2026-05-07 | 143 | 117 (81%) | 117 (81%) | 10 (6%) |
 | 2026-05-06 | 41 | 29 (70%) | 29 (70%) | 3 (7%) |
@@ -38,7 +38,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Claude Code | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
-| 2026-05-10 | 1 | 4 | 3 | 8 | 16 |
+| 2026-05-10 | 2 | 6 | 6 | 16 | 30 |
 | 2026-05-09 | 3 | 11 | 9 | 24 | 47 |
 | 2026-05-08 | 2 | 2 | 3 | 8 | 15 |
 | 2026-05-07 | 4 | 5 | 6 | 12 | 27 |
@@ -54,21 +54,21 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 
 | Creator | Source | Items (30d) |
 |---|---|---:|
-| /r/AI_Agents | `reddit` | 48 |
-| /r/LangChain | `reddit` | 47 |
-| /r/LocalLLaMA | `reddit` | 45 |
-| /r/ollama | `reddit` | 44 |
-| /r/ChatGPT | `reddit` | 43 |
-| /r/singularity | `reddit` | 43 |
+| /r/AI_Agents | `reddit` | 50 |
+| /r/LangChain | `reddit` | 49 |
+| /r/LocalLLaMA | `reddit` | 46 |
+| /r/ollama | `reddit` | 46 |
+| /r/ChatGPT | `reddit` | 44 |
+| /r/singularity | `reddit` | 44 |
+| /r/OpenAI | `reddit` | 43 |
+| /r/Anthropic | `reddit` | 42 |
 | /r/LocalLLM | `reddit` | 41 |
-| /r/OpenAI | `reddit` | 41 |
-| /r/Anthropic | `reddit` | 40 |
-| /r/Artificial | `reddit` | 37 |
-| /r/MachineLearning | `reddit` | 37 |
+| /r/MachineLearning | `reddit` | 39 |
+| /r/Artificial | `reddit` | 38 |
 | /r/ClaudeAI | `reddit` | 36 |
 | Simon Willison | `rss` | 35 |
 | Julian Goldie SEO | `youtube` | 27 |
-| OpenAI blog | `rss` | 23 |
+| /r/ClaudeHomies | `reddit` | 23 |
 
 
 ## Rejection reasons (all-time)

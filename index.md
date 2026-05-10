@@ -36,7 +36,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🚀 CC rate limits doubled</li><li>🚀 Finance Agents launch</li><li>✨ Gemini 3.2 Flash</li><li>💰 DeepSeek $45B</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-08.html"><div class="cal-num">8</div><ul class="cal-highlights"><li>🤖 Claude Managed Agents</li><li>🛠 CC 2.1.133 worktree.baseRef</li><li>🚀 AlphaEvolve in production</li><li>✨ GPT-Realtime-2 audio API</li><li>🔒 Mythos finds 271 Firefox vulns</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-09.html"><div class="cal-num">9</div><ul class="cal-highlights"><li>🛠 CC autoMode.hard_deny</li><li>🟢 Codex safety architecture</li><li>🔒 AI self-replication chain</li><li>🔵 Gemini 3.1 Flash-Lite GA</li></ul></a>
-    <a class="cal-cell cal-filled" href="content/2026-05-10.html"><div class="cal-num">10</div><ul class="cal-highlights"><li>🛠 CC v2.1.133 worktree.baseRef</li><li>🟢 Codex CLI 0.130.0</li><li>🟡 Ling-2.6-1T open-sourced</li></ul></a>
+    <a class="cal-cell cal-filled" href="content/2026-05-10.html"><div class="cal-num">10</div><ul class="cal-highlights"><li>🧪 Teaching Claude Why</li><li>💰 Nvidia $40B AI equity</li><li>🟡 Ling-2.6-1T open sourced</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">11</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">12</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">13</div></div>

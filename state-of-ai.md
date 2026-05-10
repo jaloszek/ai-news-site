@@ -14,21 +14,21 @@
 | Anthropic | Orbit (codename) | 2026-05 leaked | proactive Cowork assistant; auto-briefings Gmail/Slack/GitHub/Calendar/Drive/Figma; tibro flag |
 | Anthropic | Jupiter (codename) | 2026-05 red team | internal pre-launch handle; red-team underway as of May 1 |
 | OpenAI | GPT-5.5 Instant | 2026-05 | ChatGPT default (replaces GPT-5.3 Instant); 52.5% fewer hallucinations; SWE-Bench Pro 58.6% |
-| OpenAI | GPT-5.5-Cyber | 2026-05 | gated TAC program; UK AISI top-ranked; pentest + vuln + malware analysis |
 | OpenAI | GPT-Realtime-2 | 2026-05-08 | GPT-5-class voice reasoning API; also: GPT-4o-Transcribe, GPT-4o-Mini-TTS |
 | Mistral | Medium 3.5 | 2026-05-02 | 128B, 256k ctx, 77.6% SWE-Bench Verified |
 | SpaceXAI | Grok 4.3 | 2026-05-02 | absorbed into SpaceX (Feb-2026, $250B valuation); 1M ctx, $1.25/$2.50/MTok, AAII 53 |
 | Google | Gemini 3.2 Flash | 2026-05-05 | $0.25/M input; coding near 3.1 Pro; pre-formal-launch (I/O 2026-05-19) |
+| Google | Gemini 3.1 Flash-Lite | 2026-05-09 GA | $0.25/M in, $1.50/M out; 2.5× TTFT vs 2.5 Flash; preview EOL May 25 |
 
 ## Open weights / local
 
 | Model | Size | Notable |
 |---|---|---|
 | Qwen3.6 | 27B / 35B / Max-Preview | r/LocalLLaMA staples; 35B preferred; Max-Preview 260K ctx leads SWE-Bench Pro |
-| Kimi K2.6 Coder | hosted | free unlimited via NVIDIA NIM |
 | Xiaomi MiMo-V2.5 | 1T-param MoE (42B active) | MIT license; beats DeepSeek V4-Flash on Claw-Eval, Terminal-Bench 2.0, SWE-Bench Pro |
 | GLM-5.1 (Z.ai) | 744B MoE | topped SWE-Bench Pro at 58.4, above GPT-5.4 and Claude Opus 4.6 |
 | Ling-2.6-1T (inclusionAI) | 1T-param MoE | MIT; MLA+Linear Attn cuts VRAM; SOTA SWE-bench Verified + TAU2-Bench |
+| NVIDIA Star Elastic | 30B/23B/12B | single 58.9 GB ckpt, NVFP4 18.7 GB; 360× cheaper to train than 3 runs |
 
 ## Coding agents / harnesses
 
@@ -45,7 +45,6 @@
 ## Infrastructure / inference
 
 - AMD Gorgon Halo (Ryzen AI Max+ 495): 192 GB LPDDR5X, +10% MT vs Strix Halo, Computex 2026 reveal expected
-- Cloudflare + Stripe Projects (open beta): AI agents provision accounts, deploy apps, $100/month default spending cap
 - Gemini Embedding 2 (GA): natively multimodal embedding (text/image/video/audio/docs in one space), 100+ languages
 - Claude Security (public beta, Opus 4.7): whole-codebase scanner; data-flow tracing; exploitation scores; CrowdStrike/Palo Alto integrations
 - SpaceX Colossus 1 (Anthropic): 300+ MW, 220K+ NVIDIA GPUs; now online
@@ -57,6 +56,7 @@
 - **LangGraph `interrupt()` checkpoint** — pause for HITL approval before remediation; production-pattern for incident-response agents
 - **MCP (Model Context Protocol)** — standard tool-call wrapper across harnesses
 - **Demand-driven KB** — observe agent failures, add only context that failure patterns require; prevents speculative KB bloat
+- **LangChain v1** (2026-05-10): stable public API after years of breaking changes
 
 ## Safety / alignment
 
