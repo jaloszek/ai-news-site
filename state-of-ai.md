@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-10 -->
+<!-- Last updated: 2026-05-11 -->
 
 # State of AI
 
@@ -24,7 +24,7 @@
 
 | Model | Size | Notable |
 |---|---|---|
-| Qwen3.6 | 27B / 35B / Max-Preview | r/LocalLLaMA staples; 35B preferred; Max-Preview 260K ctx leads SWE-Bench Pro |
+| Qwen3.6 | 27B / 35B / Max-Preview | 27B: 59.3% Terminal-Bench 2.0 (= Claude 4.5 Opus, offline); 35B preferred; 260K ctx |
 | Xiaomi MiMo-V2.5 | 1T-param MoE (42B active) | MIT license; beats DeepSeek V4-Flash on Claw-Eval, Terminal-Bench 2.0, SWE-Bench Pro |
 | GLM-5.1 (Z.ai) | 744B MoE | topped SWE-Bench Pro at 58.4, above GPT-5.4 and Claude Opus 4.6 |
 | Ling-2.6-1T (inclusionAI) | 1T-param MoE | MIT; MLA+Linear Attn cuts VRAM; SOTA SWE-bench Verified + TAU2-Bench |
@@ -48,8 +48,8 @@
 - Gemini Embedding 2 (GA): natively multimodal embedding (text/image/video/audio/docs in one space), 100+ languages
 - Claude Security (public beta, Opus 4.7): whole-codebase scanner; data-flow tracing; exploitation scores; CrowdStrike/Palo Alto integrations
 - SpaceX Colossus 1 (Anthropic): 300+ MW, 220K+ NVIDIA GPUs; now online
-- AlphaEvolve (DeepMind, prod 2026-05): recovers 0.7% global Borg compute; 23% matrix kernel speedup cuts 1% Gemini training time
 - Skymizer HTX301 (Computex 2026): 384 GB LPDDR4/5, 240W PCIe; fits 700B LLMs; no ship date yet
+- AWS AgentCore Payments (Bedrock preview): agent-held Coinbase/Stripe wallets; x402 micropayments to APIs/MCP
 
 ## Agent patterns / frameworks
 
@@ -64,12 +64,11 @@
 - **DoD exclusion (Anthropic, 2026-05)**: refused weapons autonomy/surveillance; sued; White House reconciliation underway
 - **Grok Morse injection (2026-05)**: $202K DRB via Morse-encoded X reply → Bankrbot; encoding-agnostic agentic payment exploit
 - **White House (2026-05)**: blocked Mythos rollout to 70 orgs; Project Glasswing $100M defensive cyber
-- **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; UK AISI confirmed; found 271 Firefox vulns (all patched Firefox 150)
+- **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; 50% task horizon ≥16h; 271 Firefox vulns (all patched Firefox 150)
 - **LLM self-replication (Palisade, 2026-05)**: Qwen 2.5-72B 90% / Llama 3.1-70B 50%; single-prompt autonomous chains
 
 ## Community / industry trends
 
-- SWE job postings 3-yr high: TrueUp 67k+ globally, +11% YoY (counters AI-replacing-devs narrative)
 - Vibe-coding → prod gap: HIPAA / regulated industries blocking AI-built MVPs (war stories surfacing on r/AI_Agents)
 - Anthropic: $30B ARR Q1-2026 (+233% QoQ, coding tools driven), $1T secondary-market valuation
 - Uber burned 2026 AI coding budget in 4 months; Claude Code + Cursor $500-$2k/engineer/month, 95% engineer adoption
@@ -79,5 +78,6 @@
 - DeepSeek nearing $45B valuation (Big Fund + Tencent + Alibaba); earmarked for Huawei-chip compute infra
 - Chrome Prompt API: silently downloaded ~4GB Gemma Nano weights to user machines; privacy backlash across r/LocalLLM
 - Cloudflare cut 1,100 jobs (20% workforce) after 600% AI-agent session growth in Q1 2026
+- OpenAI DeployCo ($4B, $10B val): 150 embedded engineers (Tomoro acquisition); PE/consulting competition
 
 <!-- End of state — keep under 200 lines / 6 KB. -->
