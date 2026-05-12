@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-11 -->
+<!-- Last updated: 2026-05-12 -->
 
 # State of AI
 
@@ -18,7 +18,7 @@
 | Mistral | Medium 3.5 | 2026-05-02 | 128B, 256k ctx, 77.6% SWE-Bench Verified |
 | SpaceXAI | Grok 4.3 | 2026-05-02 | absorbed into SpaceX (Feb-2026, $250B valuation); 1M ctx, $1.25/$2.50/MTok, AAII 53 |
 | Google | Gemini 3.2 Flash | 2026-05-05 | $0.25/M input; coding near 3.1 Pro; pre-formal-launch (I/O 2026-05-19) |
-| Google | Gemini 3.1 Flash-Lite | 2026-05-09 GA | $0.25/M in, $1.50/M out; 2.5× TTFT vs 2.5 Flash; preview EOL May 25 |
+| Thinking Machines | TML-Interaction-Small | 2026-05-12 | 276B/12B active; <0.4s voice latency vs 0.57s Gemini, 1.18s GPT-RT-2 |
 
 ## Open weights / local
 
@@ -34,7 +34,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.138; Code Review GA; CI auto-fix; Remote Agents; Routines; `hard_deny`; Finance Agents |
+| Claude Code | Anthropic | v2.1.139; `claude agents` dashboard; `/goal` auto-continue; Code Review GA; CI auto-fix; `hard_deny` |
 | Claude Managed Agents | Anthropic | dreaming, outcomes (+10pp), parallel subagents, webhooks |
 | Codex CLI | OpenAI | 0.130.0; remote-control server; AWS Bedrock auth; /goal; GPT-5.5 default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
