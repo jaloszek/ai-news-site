@@ -11,8 +11,7 @@
 |---|---|---|---|
 | Anthropic | Opus 4.7 | 2026-05 GA | 1M ctx; 70% CursorBench vs 4.6 +12pp; 3× Rakuten-SWE tasks; 2576px image; xhigh effort |
 | Anthropic | Sonnet 4.6 | 2026-Q1 | mid-tier, default for most tools |
-| Anthropic | Orbit (codename) | 2026-05 leaked | proactive Cowork assistant; auto-briefings Gmail/Slack/GitHub/Calendar/Drive/Figma; tibro flag |
-| Anthropic | Jupiter (codename) | 2026-05 red team | internal pre-launch handle; red-team underway as of May 1 |
+| Anthropic | Orbit/Jupiter (codenames) | 2026-05 | Orbit: proactive Cowork (Gmail/Slack/GitHub/Figma); Jupiter: pre-launch red team |
 | OpenAI | GPT-5.5 Instant | 2026-05 | ChatGPT default (replaces GPT-5.3 Instant); 52.5% fewer hallucinations; SWE-Bench Pro 58.6% |
 | OpenAI | GPT-Realtime-2 | 2026-05-08 | GPT-5-class voice reasoning API; also: GPT-4o-Transcribe, GPT-4o-Mini-TTS |
 | Mistral | Medium 3.5 | 2026-05-02 | 128B, 256k ctx, 77.6% SWE-Bench Verified |
@@ -24,6 +23,7 @@
 
 | Model | Size | Notable |
 |---|---|---|
+| Kimi K2.6 (Moonshot) | 1T MoE | 58.6% SWE-Bench Pro; top Chinese open-source as of May 2026 |
 | Qwen3.6 | 27B / 35B / Max-Preview | 27B: 59.3% Terminal-Bench 2.0 (= Claude 4.5 Opus, offline); 35B preferred; 260K ctx |
 | GLM-5.1 (Z.ai) | 744B MoE | topped SWE-Bench Pro at 58.4, above GPT-5.4 and Claude Opus 4.6 |
 | Ling-2.6-1T (inclusionAI) | 1T-param MoE | MIT; MLA+Linear Attn cuts VRAM; SOTA SWE-bench Verified + TAU2-Bench |
@@ -34,11 +34,11 @@
 | Tool | Vendor | Status |
 |---|---|---|
 | Claude Code | Anthropic | v2.1.140; `claude agents` dashboard; `/goal` auto-continue; Code Review GA; CI auto-fix; `hard_deny` |
+| Claude for Legal | Anthropic | GA 2026-05-12; 20+ MCP connectors (Ironclad, Relativity, Thomson Reuters); 12 practice-area plugins; Microsoft 365 |
 | Claude Managed Agents | Anthropic | dreaming, outcomes (+10pp), parallel subagents, webhooks |
 | Codex CLI | OpenAI | 0.130.0; remote-control server; AWS Bedrock auth; /goal; GPT-5.5 default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
 | Vibe agents | Mistral | async cloud sandboxes, GitHub/Linear/Jira/Sentry/Slack/Teams, auto-PR |
-| Creative MCPs | Anthropic | Blender, Adobe CC (50+), Autodesk Fusion, Ableton, SketchUp, Splice — open MCP protocol |
 
 ## Infrastructure / inference
 
@@ -47,7 +47,7 @@
 - Gemini Embedding 2 (GA): natively multimodal embedding (text/image/video/audio/docs in one space), 100+ languages
 - Claude Security (public beta, Opus 4.7): whole-codebase scanner; data-flow tracing; exploitation scores; CrowdStrike/Palo Alto integrations
 - SpaceX Colossus 1 (Anthropic): 300+ MW, 220K+ NVIDIA GPUs; now online
-- Skymizer HTX301 (Computex 2026): 384 GB LPDDR4/5, 240W PCIe; fits 700B LLMs; no ship date
+- Claude Platform on AWS (GA, 2026-05-13): any AWS account; 16+ regions; Managed Agents, Files API, MCP connector; no separate Anthropic credentials
 - AWS AgentCore Payments (Bedrock preview): agent-held Coinbase/Stripe wallets; x402 micropayments to APIs/MCP
 
 ## Agent patterns / frameworks
@@ -70,9 +70,7 @@
 - Anthropic: $30B ARR Q1-2026 (+233% YoY), $1T secondary valuation
 - Uber burned 2026 AI coding budget in 4 months; Claude Code + Cursor $500-$2k/engineer/month, 95% engineer adoption
 - Apple runs on Anthropic (2026-05): CLAUDE.md in Apple Support app; Claude Code at engineering scale
-- iOS 27 model selector: Google + Anthropic in testing; first third-party AI layer
 - DeepSeek nearing $45B valuation (Big Fund + Tencent + Alibaba); earmarked for Huawei-chip compute infra
-- Chrome Prompt API: silently downloaded ~4GB Gemma Nano weights to user machines; privacy backlash across r/LocalLLM
 - Cloudflare cut 1,100 jobs (20% workforce) after 600% AI-agent session growth in Q1 2026
 - OpenAI DeployCo ($4B, $10B val): 150 forward-deployed engineers via Tomoro acquisition
 - **ProgramBench (Meta/Stanford, 2026-05)**: ffmpeg/SQLite/ripgrep from scratch; all frontier models 0% full completion; GPT-5.5 high first
