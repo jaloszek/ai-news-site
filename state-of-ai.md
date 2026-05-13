@@ -37,23 +37,22 @@
 | Claude Managed Agents | Anthropic | dreaming, outcomes (+10pp), parallel subagents, webhooks |
 | Codex CLI | OpenAI | 0.130.0; remote-control server; AWS Bedrock auth; /goal; GPT-5.5 default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
-| Aider | OSS (P. Gauthier) | publishes per-model leaderboard at aider.chat/leaderboards |
 | Vibe agents | Mistral | async cloud sandboxes, GitHub/Linear/Jira/Sentry/Slack/Teams, auto-PR |
 | Creative MCPs | Anthropic | Blender, Adobe CC (50+), Autodesk Fusion, Ableton, SketchUp, Splice — open MCP protocol |
 
 ## Infrastructure / inference
 
 - AMD Gorgon Halo (Ryzen AI Max+ 495): 192 GB LPDDR5X, +10% MT vs Strix Halo, Computex 2026 reveal expected
+- AlphaEvolve (Google, prod 2026-05-08): 0.7% worldwide compute recovered via Borg; -1% Gemini training time; 23% matmul kernel speedup
 - Gemini Embedding 2 (GA): natively multimodal embedding (text/image/video/audio/docs in one space), 100+ languages
 - Claude Security (public beta, Opus 4.7): whole-codebase scanner; data-flow tracing; exploitation scores; CrowdStrike/Palo Alto integrations
 - SpaceX Colossus 1 (Anthropic): 300+ MW, 220K+ NVIDIA GPUs; now online
-- Skymizer HTX301 (Computex 2026): 384 GB LPDDR4/5, 240W PCIe; fits 700B LLMs; no ship date yet
+- Skymizer HTX301 (Computex 2026): 384 GB LPDDR4/5, 240W PCIe; fits 700B LLMs; no ship date
 - AWS AgentCore Payments (Bedrock preview): agent-held Coinbase/Stripe wallets; x402 micropayments to APIs/MCP
 
 ## Agent patterns / frameworks
 
 - **MCP (Model Context Protocol)** — standard tool-call wrapper across harnesses
-- **Demand-driven KB** — observe agent failures, add only context that failure patterns require; prevents speculative KB bloat
 - **LangChain v1** (2026-05-10): stable public API after years of breaking changes
 
 ## Safety / alignment
@@ -64,19 +63,20 @@
 - **White House (2026-05)**: blocked Mythos rollout to 70 orgs; Project Glasswing $100M defensive cyber
 - **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; 50% task horizon ≥16h; 271 Firefox vulns (all patched Firefox 150)
 - **LLM self-replication (Palisade, 2026-05)**: Qwen 2.5-72B 90% / Llama 3.1-70B 50%; single-prompt autonomous chains
+- **First AI-authored zero-day (2026-05-13)**: Python 2FA bypass in open-source web admin tool; fingerprinted as LLM-authored by hallucinated CVSS score; Google TI disrupted planned mass-exploitation.
 
 ## Community / industry trends
 
-- Vibe-coding → prod gap: HIPAA / regulated industries blocking AI-built MVPs (war stories surfacing on r/AI_Agents)
-- Anthropic: $30B ARR Q1-2026 (+233% QoQ, coding tools driven), $1T secondary-market valuation
+- Anthropic: $30B ARR Q1-2026 (+233% YoY), $1T secondary valuation
 - Uber burned 2026 AI coding budget in 4 months; Claude Code + Cursor $500-$2k/engineer/month, 95% engineer adoption
 - Apple runs on Anthropic (2026-05): CLAUDE.md in Apple Support app; Claude Code at engineering scale
-- iOS 27 model selector: per-function AI choice; Google + Anthropic in testing; first AI layer opened to third-parties
+- iOS 27 model selector: Google + Anthropic in testing; first third-party AI layer
 - DeepSeek nearing $45B valuation (Big Fund + Tencent + Alibaba); earmarked for Huawei-chip compute infra
 - Chrome Prompt API: silently downloaded ~4GB Gemma Nano weights to user machines; privacy backlash across r/LocalLLM
 - Cloudflare cut 1,100 jobs (20% workforce) after 600% AI-agent session growth in Q1 2026
-- OpenAI DeployCo ($4B, $10B val): 150 embedded engineers (Tomoro acquisition); PE/consulting competition
-- **ProgramBench (Meta/Stanford, 2026-05)**: recreate ffmpeg/SQLite/ripgrep without internet; all frontier models 0% full completion; GPT-5.5 high first to solve tasks
+- OpenAI DeployCo ($4B, $10B val): 150 forward-deployed engineers via Tomoro acquisition
+- **ProgramBench (Meta/Stanford, 2026-05)**: ffmpeg/SQLite/ripgrep from scratch; all frontier models 0% full completion; GPT-5.5 high first
 - China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
+- Gemini Intelligence (Google, 2026-05-13): platform AI layer for Android; multi-step cross-app tasks; Galaxy S26 + Pixel 10, summer 2026
 
 <!-- End of state — keep under 200 lines / 6 KB. -->

@@ -39,7 +39,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-10.html"><div class="cal-num">10</div><ul class="cal-highlights"><li>🧪 Teaching Claude Why</li><li>💰 Nvidia $40B AI equity</li><li>🟡 Ling-2.6-1T open sourced</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-11.html"><div class="cal-num">11</div><ul class="cal-highlights"><li>🟢 OpenAI DeployCo</li><li>🔵 Google Finance AI Europe</li><li>🤖 AWS AgentCore Payments</li><li>🧪 Codex earns $5 bounty</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-12.html"><div class="cal-num">12</div><ul class="cal-highlights"><li>🛠 CC agent view + /goal</li><li>✨ TML-Interaction-Small voice</li><li>🔒 AI-built zero-day caught</li><li>🛠 Curl Mythos: 1 CVE + 20 bugs</li></ul></a>
-    <a class="cal-cell cal-filled" href="content/2026-05-13.html"><div class="cal-num">13</div><ul class="cal-highlights"><li>🛠 CC v2.1.140</li><li>🤖 Gemini AI companion lawsuit</li><li>🧪 ProgramBench GPT-5.5</li><li>🔒 China blocked from Anthropic</li></ul></a>
+    <a class="cal-cell cal-filled" href="content/2026-05-13.html"><div class="cal-num">13</div><ul class="cal-highlights"><li>🔒 First AI zero-day</li><li>🔵 Gemini Intelligence for Android</li><li>📰 Mythos forces US bank patches</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">14</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">15</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">16</div></div>

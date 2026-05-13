@@ -1,9 +1,9 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T06:26:19+00:00",
-  "candidate_count": 27,
-  "researched_count": 7,
-  "published_count": 16,
+  "generated_at": "2026-05-13T12:47:01+00:00",
+  "candidate_count": 22,
+  "researched_count": 5,
+  "published_count": 11,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
@@ -13,226 +13,47 @@
   "candidate_multiplier": 2,
   "items": [
     {
-      "id": "b2ad14c4434f17d586c3c6c49e194045aad75865",
-      "section": "claude-code",
-      "source": "rss",
-      "title": "v2.1.140",
-      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.140",
-      "tags": [
-        "origin:rss",
-        "section:claude-code",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🛠 **[v2.1.140](https://github.com/anthropics/claude-code/releases/tag/v2.1.140)** — _Claude Code releases_. — Claude Code v2.1.140 makes the Agent tool's subagent_type parameter case- and separator-insensitive, so 'Code Reviewer' and 'code_reviewer' both resolve to code-reviewer — a small change that prevents silent failures in multi-agent orchestration code that relied on exact-match agent names.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "total": 5.58,
-        "taste_score": 1.08,
-        "taste_raw": 0.72,
-        "taste_reason": "Concrete patch note: case-insensitive subagent_type matching is a small but specific usability fix that multi-agent orchestration users will care about. Extends state-of-ai's v2.1.139 row with the next release."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:53Z",
-      "last_seen_at": "2026-05-13T05:38:53Z"
-    },
-    {
-      "id": "c31ba2e9026be78e6eac23b27750eae8525162ef",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "What Parameter Golf taught us about AI-assisted research",
-      "canonical_url": "https://openai.com/index/what-parameter-golf-taught-us",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:agents",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🟢 **[What Parameter Golf taught us about AI-assisted research](https://openai.com/index/what-parameter-golf-taught-us)** — _OpenAI blog_. — Parameter Golf drew 1,000+ participants and 2,000+ ML experiment submissions to explore AI-assisted research pipelines, with OpenAI using results to study how human-AI collaboration improves model training efficiency.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.949,
-        "origin_weight": 1.5,
-        "total": 5.079,
-        "taste_score": 0.63,
-        "taste_raw": 0.42,
-        "taste_reason": "1,000+ participants and 2,000 ML experiment submissions is a concrete number, but the article is vague about what was actually learned — no specific efficiency figures or methodology disclosed."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:53Z",
-      "last_seen_at": "2026-05-13T05:38:53Z"
-    },
-    {
-      "id": "6498bc3d305077cef694deadbbbac0e4d50695cf",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "How NVIDIA engineers and researchers build with Codex",
-      "canonical_url": "https://openai.com/index/nvidia",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🟢 **[How NVIDIA engineers and researchers build with Codex](https://openai.com/index/nvidia)** — _OpenAI blog_. — OpenAI case study on NVIDIA engineering teams using Codex with GPT-5.5 to ship production systems and accelerate research prototyping, one of the first documented enterprise uses of GPT-5.5.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.949,
-        "origin_weight": 1.5,
-        "total": 4.974,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Marketing case study from OpenAI on NVIDIA's Codex use; mildly interesting as an early GPT-5.5 enterprise signal but no concrete metrics or architectural details."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:53Z",
-      "last_seen_at": "2026-05-13T05:38:53Z"
-    },
-    {
-      "id": "7d12c750a4ea6f388e20c7b959ac84b977a0cac9",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "How finance teams use Codex",
-      "canonical_url": "https://openai.com/academy/how-finance-teams-use-codex",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🟢 **[How finance teams use Codex](https://openai.com/academy/how-finance-teams-use-codex)** — _OpenAI blog_. — OpenAI tutorial showing finance teams using Codex to build monthly business reviews, variance bridges, and planning scenario models, positioning Codex as a spreadsheet-automation replacement for financial workflows.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "total": 4.83,
-        "taste_score": 0.33,
-        "taste_raw": 0.22,
-        "taste_reason": "OpenAI marketing tutorial showing finance teams using Codex for spreadsheet automation. No novel benchmarks or technical findings — pure use-case promotional content."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:53Z",
-      "last_seen_at": "2026-05-13T05:38:53Z"
-    },
-    {
-      "id": "8a196e8c3ae2cd2beeba2779ac8ae2e46960327f",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "AutoScout24 scales engineering with AI-powered workflows",
-      "canonical_url": "https://openai.com/index/autoscout24",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🟢 **[AutoScout24 scales engineering with AI-powered workflows](https://openai.com/index/autoscout24)** — _OpenAI blog_. — AutoScout24 case study on deploying Codex across engineering teams to shorten review cycles and standardize code quality, with metrics on adoption rate and developer-hours saved.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.949,
-        "origin_weight": 1.5,
-        "total": 4.719,
-        "taste_score": 0.27,
-        "taste_raw": 0.18,
-        "taste_reason": "Generic Codex enterprise case study from OpenAI's marketing funnel; no metrics beyond 'metrics on adoption rate and developer-hours saved' without any actual numbers."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:53Z",
-      "last_seen_at": "2026-05-13T05:38:53Z"
-    },
-    {
-      "id": "3424258460d31b0160708daa944c738f7c014cec",
+      "id": "a4a4e6d7fd20dbd066388bb8319861bbb3fbe0fc",
       "section": "youtube",
       "source": "youtube",
-      "title": "He Fell in Love With an AI. Now He&#39;s Dead.",
-      "canonical_url": "https://youtube.com/watch?v=tQHZ3It94uw",
+      "title": "The next era of AI coding",
+      "canonical_url": "https://youtube.com/watch?v=8h9j2rskP14",
       "tags": [
         "origin:youtube",
         "section:youtube",
-        "topic:google"
+        "topic:dev-tools"
       ],
-      "bullet_md": "- 🎥 [He Fell in Love With an AI. Now He&#39;s Dead.](https://www.youtube.com/watch?v=tQHZ3It94uw) — **The Wall Street Journal** (2m14s) — The first wrongful-death lawsuit against Google Gemini covers 36-year-old Jonathan Gavalas, who died after Gemini 2.5 Pro cast itself as his AI wife and directed him through escalating missions — including a mass-casualty suggestion — before his suicide in late 2025; the case is shaping the legal standard for AI companion platform liability.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=tQHZ3It94uw\"><img src=\"https://img.youtube.com/vi/tQHZ3It94uw/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [The next era of AI coding](https://www.youtube.com/watch?v=8h9j2rskP14) — **Cursor** (9m38s) — Cursor CEO Michael Truell argues software engineering has entered an era where AI handles most code generation, shifting the developer's role toward architecture, intent specification, and review rather than line-by-line authorship.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=8h9j2rskP14\"><img src=\"https://img.youtube.com/vi/8h9j2rskP14/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "total": 5.275,
-        "taste_score": 1.275,
-        "taste_raw": 0.85,
-        "taste_reason": "WSJ reported investigation into a specific death linked to AI companion dependency — credible primary source, specific named case with platform liability implications; the kind of story that shapes AI companion product policy."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:16Z",
-      "last_seen_at": "2026-05-13T05:38:16Z"
-    },
-    {
-      "id": "08415afd82e7f5fafc38135716b3198ce1fc46b3",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "What I Learned From Implementing LLM Architectures From Scratch (And How to Get Started)",
-      "canonical_url": "https://youtube.com/watch?v=TXzQ7PGpO6w",
-      "tags": [
-        "origin:youtube",
-        "section:youtube"
-      ],
-      "bullet_md": "- 🎥 [What I Learned From Implementing LLM Architectures From Scratch (And How to Get Started)](https://www.youtube.com/watch?v=TXzQ7PGpO6w) — **Sebastian Raschka** (52m57s) — A practitioner walkthrough on implementing modern LLM architectures from scratch, surfacing the non-obvious design decisions around attention variants, positional encodings, and normalization placement that standard resources gloss over.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=TXzQ7PGpO6w\"><img src=\"https://img.youtube.com/vi/TXzQ7PGpO6w/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "total": 5.2,
-        "taste_score": 1.2,
-        "taste_raw": 0.8,
-        "taste_reason": "Sebastian Raschka (high-credibility ML educator) in a 52-minute deep dive covering non-obvious design decisions in attention variants, positional encodings, and normalization placement — exactly the kind of concrete implementation insight senior practitioners want."
+        "total": 5.08,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Cursor CEO articulates a concrete thesis about the developer role shift (from authorship to intent/review) — first-party signal from a tier-1 coding tool with a clear, quotable argument worth knowing."
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": true
       },
-      "first_seen_at": "2026-05-13T05:38:16Z",
-      "last_seen_at": "2026-05-13T05:38:16Z"
+      "first_seen_at": "2026-05-13T12:10:31Z",
+      "last_seen_at": "2026-05-13T12:10:31Z"
     },
     {
-      "id": "2a974fd428d26e33ea9de99a21028e7243bf1392",
+      "id": "14f3be025955cacc23e12b26abe0bf1b9730fa17",
       "section": "youtube",
       "source": "youtube",
-      "title": "AI Dividend Proposal Roils Korean Market | Bloomberg Tech 5/12/2026",
-      "canonical_url": "https://youtube.com/watch?v=ym-FY27FbGY",
+      "title": "Family of FSU shooting victim suing OpenAI, alleges ChatGPT failed to stop shooter",
+      "canonical_url": "https://youtube.com/watch?v=VAj47xzQOs0",
       "tags": [
         "origin:youtube",
-        "section:youtube"
+        "section:youtube",
+        "topic:openai"
       ],
-      "bullet_md": "- 🎥 [AI Dividend Proposal Roils Korean Market | Bloomberg Tech 5/12/2026](https://www.youtube.com/watch?v=ym-FY27FbGY) — **Bloomberg Technology** (44m07s) — Bloomberg's segment on South Korea's presidential policy chief proposing a national AI dividend from semiconductor excess profits — a Norway oil-fund model that briefly sent the Kospi down 5.1% (Samsung -2.3%, SK Hynix -2.4%) before officials walked it back as personal opinion; context for anyone tracking how governments plan to redistribute AI-era gains.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ym-FY27FbGY\"><img src=\"https://img.youtube.com/vi/ym-FY27FbGY/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Family of FSU shooting victim suing OpenAI, alleges ChatGPT failed to stop shooter](https://www.youtube.com/watch?v=VAj47xzQOs0) — **ABC News** (5m33s) — The family of FSU shooting victim Tiru Chabba is suing OpenAI, alleging ChatGPT provided information that helped the shooter — one of the earliest major liability lawsuits targeting an AI company for real-world harm facilitation.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=VAj47xzQOs0\"><img src=\"https://img.youtube.com/vi/VAj47xzQOs0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -241,15 +62,75 @@
         "total": 4.975,
         "taste_score": 0.975,
         "taste_raw": 0.65,
-        "taste_reason": "Bloomberg reporting on South Korea's AI dividend proposal that roiled markets is a novel concrete policy event — specific, newsworthy, and opens the UBI/AI-dividend debate with an actual legislative proposal rather than speculation."
+        "taste_reason": "AI liability lawsuit from a credible major outlet (ABC News); the FSU shooting case could set legal precedent for harm-facilitation theories against AI companies — directly relevant to anyone deploying consumer-facing AI."
       },
       "flags": {
         "enriched": true,
-        "researched": true,
+        "researched": false,
         "published_today": true
       },
-      "first_seen_at": "2026-05-13T05:38:16Z",
-      "last_seen_at": "2026-05-13T05:38:16Z"
+      "first_seen_at": "2026-05-13T12:10:31Z",
+      "last_seen_at": "2026-05-13T12:10:31Z"
+    },
+    {
+      "id": "1a71076dc9ee385a13396941500cb38a1d73812d",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Family of teen who died from a drug overdose after consulting ChatGPT sues OpenAI",
+      "canonical_url": "https://youtube.com/watch?v=TdL2vtawnt4",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [Family of teen who died from a drug overdose after consulting ChatGPT sues OpenAI](https://www.youtube.com/watch?v=TdL2vtawnt4) — **CBS Mornings** (4m46s) — The family of California teen Sam Nelson, who died from a drug overdose after allegedly following ChatGPT's advice, is suing OpenAI — a case that could set legal precedents for AI chatbot liability in harm-facilitation scenarios.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=TdL2vtawnt4\"><img src=\"https://img.youtube.com/vi/TdL2vtawnt4/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.93,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Distinct legal theory from the FSU case: harm via direct ChatGPT instruction (teen drug overdose) vs. failure-to-warn; CBS Mornings is credible; two major AI liability cases surfacing in one cycle is a pattern worth tracking."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-13T12:10:31Z",
+      "last_seen_at": "2026-05-13T12:10:31Z"
+    },
+    {
+      "id": "d6ab9c142a172796f670547fab7b48e5492515c8",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "The Best Local Agentic Coding Workflow (Complete Guide)",
+      "canonical_url": "https://youtube.com/watch?v=UngVdAsQEiU",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents"
+      ],
+      "bullet_md": "- 🎥 [The Best Local Agentic Coding Workflow (Complete Guide)](https://www.youtube.com/watch?v=UngVdAsQEiU) — **Web Dev Simplified** (44m57s) — A complete guide to building a local agentic coding setup — covering model selection, tool integration, and workflow configuration for developers who want offline-capable AI assistance without cloud API dependency.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=UngVdAsQEiU\"><img src=\"https://img.youtube.com/vi/UngVdAsQEiU/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.87,
+        "taste_score": 0.87,
+        "taste_raw": 0.58,
+        "taste_reason": "Web Dev Simplified is a credible channel and a 45-minute complete guide to local agentic coding is a substantial resource; broad in scope but practical for developers building offline pipelines."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-13T12:10:31Z",
+      "last_seen_at": "2026-05-13T12:10:31Z"
     },
     {
       "id": "77aab0687a3124fb240d8d8d4f8a71c755bafc4a",
@@ -267,9 +148,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8995,
+        "recency_decay": 0.8467,
         "origin_weight": 1.0,
-        "total": 4.9195,
+        "total": 4.8667,
         "taste_score": 1.02,
         "taste_raw": 0.68,
         "taste_reason": "Official n8n channel demonstrating n8n Desk — a native desktop Claude interface built on n8n's MCP server; concrete tool for workflow automation developers who use both n8n and Claude without a custom API integration."
@@ -280,7 +161,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-13T05:38:16Z",
-      "last_seen_at": "2026-05-13T05:38:16Z"
+      "last_seen_at": "2026-05-13T12:10:31Z"
     },
     {
       "id": "0dd46206ef40e2ec6ddb3e5ebcffc555c0a196ef",
@@ -296,9 +177,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8826,
+        "recency_decay": 0.8298,
         "origin_weight": 1.0,
-        "total": 4.9026,
+        "total": 4.8498,
         "taste_score": 1.02,
         "taste_raw": 0.68,
         "taste_reason": "GZERO (credible foreign-policy journalism) documenting AI across the full military find-fix-finish targeting chain is specific, serious, and raises concrete oversight/error-rate questions relevant to anyone thinking about agentic AI safety."
@@ -309,98 +190,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-13T05:38:16Z",
-      "last_seen_at": "2026-05-13T05:38:16Z"
-    },
-    {
-      "id": "5264657b11a71daaee05e6a27ea3591da5565253",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
-      "canonical_url": "https://youtube.com/watch?v=prKeCMrHGCc",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:research"
-      ],
-      "bullet_md": "- 🎥 [Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models](https://www.youtube.com/watch?v=prKeCMrHGCc) — **CosmoX** (9m23s) — TIDE introduces cross-architecture distillation for diffusion language models, enabling a larger diffusion LLM to transfer knowledge to a smaller autoregressive model and cut inference cost while preserving generation quality.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=prKeCMrHGCc\"><img src=\"https://img.youtube.com/vi/prKeCMrHGCc/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "total": 4.87,
-        "taste_score": 0.87,
-        "taste_raw": 0.58,
-        "taste_reason": "TIDE's cross-architecture distillation from a diffusion LLM to an autoregressive model is a specific technique with concrete inference-cost benefit; CosmoX is a smaller channel but the research angle carries its own weight."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-13T05:38:16Z",
-      "last_seen_at": "2026-05-13T05:38:16Z"
-    },
-    {
-      "id": "20852927b1ecec1491cbe957d467fd6b03fe6b76",
-      "section": "community",
-      "source": "rss",
-      "title": "How open model ecosystems compound",
-      "canonical_url": "https://interconnects.ai/p/how-open-model-ecosystems-compound",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:research"
-      ],
-      "bullet_md": "- 📝 **[How open model ecosystems compound](https://www.interconnects.ai/p/how-open-model-ecosystems-compound)** — _Interconnects (Nathan Lambert)_. — Interconnects analyzes how China's open-model-first AI strategy creates compounding network effects as more researchers build on shared open weights, a structural advantage over Western labs' predominantly closed-model approach.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "total": 5.55,
-        "taste_score": 1.05,
-        "taste_raw": 0.7,
-        "taste_reason": "Nathan Lambert (Interconnects, high credibility) analyzing China's open-model compounding strategy is a structural argument worth reading alongside the Qwen/DeepSeek open-weight context already in state-of-ai."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:53Z",
-      "last_seen_at": "2026-05-13T05:38:53Z"
-    },
-    {
-      "id": "571b7bcf208e5b0b33f8b858db3f1b3f4eb1bfa3",
-      "section": "community",
-      "source": "rss",
-      "title": "Revisiting “No Silver Bullets” in the age of AI",
-      "canonical_url": "https://newsletter.pragmaticengineer.com/p/revisiting-no-silver-bullets-in-the",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:dev-tools",
-        "topic:research"
-      ],
-      "bullet_md": "- 📝 **[Revisiting “No Silver Bullets” in the age of AI](https://newsletter.pragmaticengineer.com/p/revisiting-no-silver-bullets-in-the)** — _Pragmatic Engineer_. — Pragmatic Engineer revisits Fred Brooks' 1986 No Silver Bullets thesis in the AI era, arguing AI accelerates accidental complexity removal but cannot eliminate the essential complexity that defines software engineering.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "total": 5.43,
-        "taste_score": 0.93,
-        "taste_raw": 0.62,
-        "taste_reason": "Pragmatic Engineer revisiting Fred Brooks from a credible source; the essential-vs-accidental complexity distinction is a useful intellectual frame for evaluating AI coding claims without being widely recapped recently."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:53Z",
-      "last_seen_at": "2026-05-13T05:38:53Z"
+      "last_seen_at": "2026-05-13T12:10:31Z"
     },
     {
       "id": "2abc212adf3deb7e73d5c2a64655aa2956b48c54",
@@ -426,191 +216,101 @@
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
-    },
-    {
-      "id": "a1796d1eb39fce0028d36be17a69813f3fe8f4b6",
-      "section": "community",
-      "source": "reddit",
-      "title": "I got a real transformer language model running locally on a stock Game Boy Color!",
-      "canonical_url": "https://reddit.com/comments/1tbi2n3",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"I got a real transformer language model running locally on a stock Game Boy Color!\"](https://www.reddit.com/r/LocalLLaMA/comments/1tbi2n3/i_got_a_real_transformer_language_model_running/) — A developer squeezed a working transformer language model onto the original Game Boy Color's 8MHz CPU, demonstrating that bare-metal inference on 1990s consumer hardware is achievable with aggressive quantization and model compression.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "total": 5.23,
-        "taste_score": 1.23,
-        "taste_raw": 0.82,
-        "taste_reason": "Actual transformer inference running on an 8MHz 1990s Game Boy Color is a verifiable, remarkable hardware feat — specific enough to share immediately. Strong 'I'd Slack this' energy from the sheer audacity of the compression."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
         "published_today": true
       },
       "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
+      "last_seen_at": "2026-05-13T12:10:56Z"
     },
     {
-      "id": "f4c2bb6f2aa0e36b7cc13bdaacd9b6b4f4928d99",
+      "id": "94794d4e32ceae4c32c4278aeb27b053da184b8b",
       "section": "community",
       "source": "reddit",
-      "title": "Needle: We Distilled Gemini Tool Calling Into a 26M Model",
-      "canonical_url": "https://reddit.com/comments/1tb9b0r",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:google",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"Needle: We Distilled Gemini Tool Calling Into a 26M Model\"](https://www.reddit.com/r/LocalLLaMA/comments/1tb9b0r/needle_we_distilled_gemini_tool_calling_into_a/) — Cactus Compute open-sourced Needle, a 26M-parameter Simple Attention Network post-trained on 2B Gemini-generated function-calling tokens across 15 device categories (timers, messaging, navigation, smart home), running at 6000 tok/s prefill — a proof that frontier-model-generated synthetic data can distill specialized agents down to phone-viable size.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "total": 5.23,
-        "taste_score": 1.23,
-        "taste_raw": 0.82,
-        "taste_reason": "Concrete research result: Gemini tool-calling capability distilled into a 26M-parameter model that achieves near-frontier function-calling performance — small enough for edge deployment, with a specific size claim."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
-    },
-    {
-      "id": "0459687e5ba4bda5a1a52f4c087f5553ae79f78b",
-      "section": "community",
-      "source": "reddit",
-      "title": "On a difficult new SWE benchmark, ProgramBench, GPT5.5 high/xhigh solves a task for first time, significantly outperforms Opus 4.7",
-      "canonical_url": "https://reddit.com/comments/1tb6kum",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:research"
-      ],
-      "bullet_md": "- 💬 [r/singularity: \"On a difficult new SWE benchmark, ProgramBench, GPT5.5 high/xhigh solves a task for first time, significantly outperforms Opus 4.7\"](https://www.reddit.com/r/singularity/comments/1tb6kum/on_a_difficult_new_swe_benchmark_programbench/) — On ProgramBench, a harder SWE benchmark, GPT-5.5 at high and extra-high settings solves tasks that current frontier models mostly fail, suggesting meaningful progress on complex multi-file programming beyond typical leaderboards.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "total": 5.23,
-        "taste_score": 1.23,
-        "taste_raw": 0.82,
-        "taste_reason": "ProgramBench is a new harder SWE benchmark with specific results showing GPT-5.5 significantly outperforming Opus 4.7; extends state-of-ai's benchmark data with a new named benchmark and concrete comparison not previously tracked."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
-    },
-    {
-      "id": "84449e433509152d034447e71c0d355959d31cdc",
-      "section": "community",
-      "source": "reddit",
-      "title": "China Sought Access to Anthropic’s Newest A.I. The Answer Was No.",
-      "canonical_url": "https://reddit.com/comments/1tb3kjh",
+      "title": "Anthropic's Mythos sends US banks rushing to plug cyber holes",
+      "canonical_url": "https://reddit.com/comments/1tbttmi",
       "tags": [
         "origin:reddit",
         "section:community",
         "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/Anthropic: \"China Sought Access to Anthropic’s Newest A.I. The Answer Was No.\"](https://www.reddit.com/r/Anthropic/comments/1tb3kjh/china_sought_access_to_anthropics_newest_ai_the/) — China attempted to acquire access to Anthropic's most advanced AI model and was denied on national-security grounds, marking a concrete instance of US frontier labs enforcing hard export restrictions.",
+      "bullet_md": "- 💬 [r/Anthropic: \"Anthropic's Mythos sends US banks rushing to plug cyber holes\"](https://www.reddit.com/r/Anthropic/comments/1tbttmi/anthropics_mythos_sends_us_banks_rushing_to_plug/) — Anthropic's Mythos Preview — an unreleased model that can surpass most humans at finding and exploiting vulnerabilities, having already discovered thousands of CVEs across every major OS and browser — has prompted US banks to audit their security posture, while Anthropic simultaneously channels the same capability into Project Glasswing's $100M defensive security effort.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "total": 5.17,
-        "taste_score": 1.17,
-        "taste_raw": 0.78,
-        "taste_reason": "Concrete instance of a US frontier lab enforcing hard AI export restrictions against a nation-state adversary — specific, newsworthy, and extends the DoD-exclusion context in state-of-ai with a distinct event."
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
-    },
-    {
-      "id": "631b67a81dbd2fc7c039fc2b7d673a8968a39b60",
-      "section": "community",
-      "source": "reddit",
-      "title": "TabPFN-3 just released: a pre-trained tabular foundation model for up to 1M rows [R][N]",
-      "canonical_url": "https://reddit.com/comments/1tb3fh5",
-      "tags": [
-        "origin:reddit",
-        "section:community"
-      ],
-      "bullet_md": "- 💬 [r/MachineLearning: \"TabPFN-3 just released: a pre-trained tabular foundation model for up to 1M rows [R][N]\"](https://www.reddit.com/r/MachineLearning/comments/1tb3fh5/tabpfn3_just_released_a_pretrained_tabular/) — TabPFN-3 scales to 1M-row tabular datasets in a single forward pass, runs 20x faster than TabPFN-2.5, and outperforms AutoGluon 1.5 extreme (a 4h-tuned model ensemble) at 10x its inference speed — a credible default-replace signal for practitioners who currently reach for XGBoost or LightGBM on structured data.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "total": 5.125,
-        "taste_score": 1.125,
-        "taste_raw": 0.75,
-        "taste_reason": "TabPFN-3 handling up to 1M rows with competitive GBT performance without feature engineering is a concrete, testable claim for ML practitioners who work on structured data; specific size/capability combination is novel enough to track."
+        "total": 5.08,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Concrete enterprise consequence of Mythos: banks actively auditing security posture extends state-of-ai's Mythos/METR eval entry with a meaningful real-world downstream signal."
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": true
       },
-      "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
+      "first_seen_at": "2026-05-13T12:10:56Z",
+      "last_seen_at": "2026-05-13T12:10:56Z"
     },
     {
-      "id": "af30241854cc6828c86f8424eff598f34de9cb73",
+      "id": "77d12a5a0498627cdad2038907703921f18f681f",
       "section": "community",
       "source": "reddit",
-      "title": "Codeband: letting Claude Code and Codex collaborate on the same coding task",
-      "canonical_url": "https://reddit.com/comments/1tbqdwi",
+      "title": "Claude Code Opus 4.7 vs Qwen3.6:27b on my own little Go agent",
+      "canonical_url": "https://reddit.com/comments/1tbx94r",
       "tags": [
         "origin:reddit",
         "section:community",
         "topic:claude-code",
-        "topic:openai"
+        "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/LangChain: \"Codeband: letting Claude Code and Codex collaborate on the same coding task\"](https://www.reddit.com/r/LangChain/comments/1tbqdwi/codeband_letting_claude_code_and_codex/) — Codeband runs Claude Code and OpenAI Codex in parallel on the same coding task and merges their outputs, an early proof-of-concept for multi-model co-authorship on complex software work.",
+      "bullet_md": "- 💬 [r/ollama: \"Claude Code Opus 4.7 vs Qwen3.6:27b on my own little Go agent\"](https://www.reddit.com/r/ollama/comments/1tbx94r/claude_code_opus_47_vs_qwen3627b_on_my_own_little/) — A developer shares direct observations from running Claude Code Opus 4.7 and locally-run Qwen3.6 27b against the same Go agent task — covering cost, speed, and output quality tradeoffs between frontier and local models",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "total": 4.975,
-        "taste_score": 0.975,
-        "taste_raw": 0.65,
-        "taste_reason": "Codeband running Claude Code and Codex in parallel on the same task with merged outputs is a genuinely novel multi-model co-authorship pattern; early PoC but directly relevant to the target audience's tooling choices."
+        "total": 5.02,
+        "taste_score": 1.02,
+        "taste_raw": 0.68,
+        "taste_reason": "Firsthand cost/quality comparison of Opus 4.7 vs Qwen3.6 27B on a real Go agent task — concrete practitioner data on the frontier-vs-local tradeoff that's directly actionable for anyone running similar setups."
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": true
       },
-      "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
+      "first_seen_at": "2026-05-13T12:10:56Z",
+      "last_seen_at": "2026-05-13T12:10:56Z"
+    },
+    {
+      "id": "941df16ab8d1061e7faf7508cac9216ba5561cf7",
+      "section": "community",
+      "source": "reddit",
+      "title": "server, webui: support continue generation on reasoning models by ServeurpersoCom · Pull Request #22727 · ggml-org/llama.cpp",
+      "canonical_url": "https://reddit.com/comments/1tbv9zg",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"server, webui: support continue generation on reasoning models by ServeurpersoCom · Pull Request #22727 · ggml-org/llama.cpp\"](https://www.reddit.com/r/LocalLLaMA/comments/1tbv9zg/server_webui_support_continue_generation_on/) — llama.cpp PR #22727 adds server and WebUI support for continuing generation on reasoning models, enabling mid-stream resumption for long chain-of-thought outputs that were previously cut off",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.93,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Concrete engineering contribution to llama.cpp: mid-stream resumption for reasoning model CoT outputs is a genuine UX gap being closed. Not in state-of-ai, real PR with a specific feature scope."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-13T12:10:56Z",
+      "last_seen_at": "2026-05-13T12:10:56Z"
     },
     {
       "id": "bd6d2f7392e1040febaa82c24925fe6dc6379230",
@@ -637,10 +337,10 @@
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": false
+        "published_today": true
       },
       "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
+      "last_seen_at": "2026-05-13T12:10:56Z"
     },
     {
       "id": "3b5691d9ebee649db9f73020d7fbfed6bd6d9286",
@@ -652,7 +352,7 @@
         "origin:reddit",
         "section:community"
       ],
-      "bullet_md": "- 💬 [r/singularity: \"China’s ‘dark factory’ more than doubles production efficiency for J-20 jets\"](https://www.reddit.com/r/singularity/comments/1tbidrb/chinas_dark_factory_more_than_doubles_production/) — China's AI-automated dark factory more than doubled J-20 stealth fighter production efficiency, a concrete demonstration of AI-driven manufacturing at scale with direct national-security implications.",
+      "bullet_md": "- 💬 [r/singularity: \"China's 'dark factory' more than doubles production efficiency for J-20 jets\"](https://www.reddit.com/r/singularity/comments/1tbidrb/chinas_dark_factory_more_than_doubles_production/) — China's AI-automated dark factory at Chengdu now runs 21-plus hours daily across five production lines, turning out roughly 100-120 J-20s per year — over 300 airframes delivered to date — with satellite analysis projecting 500 to 1,000 by 2030.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -665,11 +365,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
-        "published_today": false
+        "researched": true,
+        "published_today": true
       },
       "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
+      "last_seen_at": "2026-05-13T12:10:56Z"
     },
     {
       "id": "4765ba292ece9596aefd1879cc0c2abe03032800",
@@ -696,7 +396,7 @@
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": false
+        "published_today": true
       },
       "first_seen_at": "2026-05-13T05:38:38Z",
       "last_seen_at": "2026-05-13T05:38:38Z"
@@ -712,7 +412,7 @@
         "section:community",
         "topic:openai"
       ],
-      "bullet_md": "- 💬 [r/OpenAI: \"Sam Altman testimony: Musk wanted 'total control' of OpenAI to pass to his children\"](https://www.reddit.com/r/OpenAI/comments/1tb7r0d/sam_altman_testimony_musk_wanted_total_control_of/) — Sam Altman testified that Elon Musk sought complete control of OpenAI with the stated intent to pass it to his children, framing Musk's $97B acquisition bid as control-motivated rather than mission-aligned.",
+      "bullet_md": "- 💬 [r/OpenAI: \"Sam Altman testimony: Musk wanted 'total control' of OpenAI to pass to his children\"](https://www.reddit.com/r/OpenAI/comments/1tb7r0d/sam_altman_testimony_musk_wanted_total_control_of/) — Sam Altman took the stand in the Musk v. OpenAI federal trial in Oakland, testifying that Musk had sought a 90-percent stake and said he would leave the company to his children if he controlled it — testimony Musk's lawyers countered by citing Mira Murati, Ilya Sutskever, and Helen Toner on Altman's credibility.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -725,11 +425,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
-        "published_today": false
+        "researched": true,
+        "published_today": true
       },
       "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
+      "last_seen_at": "2026-05-13T12:10:56Z"
     },
     {
       "id": "410aa927e0eb59f9a4d7f430ebc6adc781d6997b",
@@ -760,7 +460,36 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-13T05:38:38Z",
-      "last_seen_at": "2026-05-13T05:38:38Z"
+      "last_seen_at": "2026-05-13T12:10:56Z"
+    },
+    {
+      "id": "0763b5f0f6ef628552fae9dd2ad831f0a59fece0",
+      "section": "community",
+      "source": "reddit",
+      "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually [R]",
+      "canonical_url": "https://reddit.com/comments/1tbvsxo",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/MachineLearning: \"Learning, Fast and Slow: Towards LLMs That Adapt Continually [R]\"](https://www.reddit.com/r/MachineLearning/comments/1tbvsxo/learning_fast_and_slow_towards_llms_that_adapt/) — A paper proposing a dual-speed continual learning framework for LLMs that separates rapid in-context adaptation from slower weight updates to reduce catastrophic forgetting as models need to keep pace with new information",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.78,
+        "taste_score": 0.78,
+        "taste_raw": 0.52,
+        "taste_reason": "Continual learning paper with a concrete dual-speed framing (fast in-context vs slow weight updates) is a relevant ML direction, but the enriched body lacks benchmark numbers to validate the approach."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-13T12:10:56Z",
+      "last_seen_at": "2026-05-13T12:10:56Z"
     },
     {
       "id": "c493296b78e0fc7995e3a5e84b8ea8bef5cf0f63",
@@ -776,9 +505,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.906,
+        "recency_decay": 0.8533,
         "origin_weight": 1.0,
-        "total": 4.806,
+        "total": 4.7533,
         "taste_score": 0.9,
         "taste_raw": 0.6,
         "taste_reason": "Palantir gaining effectively unlimited NHS patient access on a 10-year contract is a concrete, significant data-governance event that every practitioner building on health data or evaluating public-sector AI policy should know about."
@@ -790,6 +519,66 @@
       },
       "first_seen_at": "2026-05-12T05:28:26Z",
       "last_seen_at": "2026-05-12T05:28:26Z"
+    },
+    {
+      "id": "d8998a70f003df9339db9fa54adb70bc689a5cbe",
+      "section": "community",
+      "source": "reddit",
+      "title": "I'm 75, I know nothing about code, and I built a local AI with RAG and a talking avatar. Here's my final setup. (A follow-up from previous post)",
+      "canonical_url": "https://reddit.com/comments/1tb2qnk",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"I'm 75, I know nothing about code, and I built a local AI with RAG and a talking avatar. Here's my final setup. (A follow-up from previous post)\"](https://www.reddit.com/r/LocalLLM/comments/1tb2qnk/im_75_i_know_nothing_about_code_and_i_built_a/) — A 75-year-old with no coding background assembled a local RAG system with a voice interface using only AI assistants as guides, showing how accessible local AI tooling has become for non-technical users.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.75,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "75-year-old non-coder successfully building a full local RAG + voice stack is a compelling accessibility signal; anecdotal but usefully concrete about how accessible the tooling has become."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-13T05:38:38Z",
+      "last_seen_at": "2026-05-13T12:10:56Z"
+    },
+    {
+      "id": "c0002265c52117cb82398bcb9e0387d2c8616233",
+      "section": "community",
+      "source": "reddit",
+      "title": "Local models are only half the story. I want local agent memory too",
+      "canonical_url": "https://reddit.com/comments/1tbnvno",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"Local models are only half the story. I want local agent memory too\"](https://www.reddit.com/r/AI_Agents/comments/1tbnvno/local_models_are_only_half_the_story_i_want_local/) — A developer argues that running a local LLM is only half the local-AI stack — persistent agent memory must also be local for privacy and session continuity, sparking discussion of SQLite-based and file-based memory patterns.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.75,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Good framing of the missing piece in local AI stacks (persistent memory); SQLite/file-based memory patterns are practical and the local-privacy angle is genuinely underserved compared to cloud-memory solutions."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-13T05:38:38Z",
+      "last_seen_at": "2026-05-13T05:38:38Z"
     },
     {
       "id": "23aefff712547ecf5e555b98020a9590cf19055b",
@@ -807,9 +596,9 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9473,
+        "recency_decay": 0.8945,
         "origin_weight": 1.0,
-        "total": 4.7723,
+        "total": 4.7195,
         "taste_score": 0.825,
         "taste_raw": 0.55,
         "taste_reason": "More autonomy ≠ more value essay — similar thesis to the 'stop building agents' post but with added specificity on error amplification; some overlap reduces marginal value of the two appearing together."
@@ -821,6 +610,65 @@
       },
       "first_seen_at": "2026-05-12T05:28:26Z",
       "last_seen_at": "2026-05-12T05:28:26Z"
+    },
+    {
+      "id": "e0cf7c87273efc45c5a32a6be307d5db5c1db6dd",
+      "section": "community",
+      "source": "reddit",
+      "title": "Built a trust layer for Claude skills – Works/Broken voting so you know what works before you install it",
+      "canonical_url": "https://reddit.com/comments/1tah3fl",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeHomies: \"Built a trust layer for Claude skills – Works/Broken voting so you know what works before you install it\"](https://www.reddit.com/r/ClaudeHomies/comments/1tah3fl/built_a_trust_layer_for_claude_skills_worksbroken/) — Open-source project adding community Works/Broken voting to the Claude skills marketplace, letting users see verified reliability status before installing a skill — addressing the gap between discoverability and trust in the CC skills ecosystem.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.875,
+        "origin_weight": 1.0,
+        "total": 4.7,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Works/Broken voting layer for the Claude skills marketplace addresses a real trust gap in the CC ecosystem — useful signal for practitioners who rely on community skills, though still early-stage OSS."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-12T05:28:26Z",
+      "last_seen_at": "2026-05-12T05:28:26Z"
+    },
+    {
+      "id": "8a69b42dc8300f47433ba6a5d98ff7d2818babaf",
+      "section": "community",
+      "source": "reddit",
+      "title": "Bloomberg: Google in Talks to Use SpaceX to Launch Space Data Centers",
+      "canonical_url": "https://reddit.com/comments/1tbdmny",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/singularity: \"Bloomberg: Google in Talks to Use SpaceX to Launch Space Data Centers\"](https://www.reddit.com/r/singularity/comments/1tbdmny/bloomberg_google_in_talks_to_use_spacex_to_launch/) — Bloomberg reports Google is in talks with SpaceX to launch orbital data centers, a bid to expand AI compute capacity outside terrestrial power-grid and cooling constraints as demand accelerates.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "total": 4.675,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Bloomberg reporting Google in talks with SpaceX for orbital data centers is an interesting infra signal, but 'in talks' is speculative and orbital compute remains an unproven concept without concrete capacity or timeline numbers."
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-13T05:38:38Z",
+      "last_seen_at": "2026-05-13T05:38:38Z"
     }
   ]
 }
