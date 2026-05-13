@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-12 -->
+<!-- Last updated: 2026-05-13 -->
 
 # State of AI
 
@@ -25,7 +25,6 @@
 | Model | Size | Notable |
 |---|---|---|
 | Qwen3.6 | 27B / 35B / Max-Preview | 27B: 59.3% Terminal-Bench 2.0 (= Claude 4.5 Opus, offline); 35B preferred; 260K ctx |
-| Xiaomi MiMo-V2.5 | 1T-param MoE (42B active) | MIT license; beats DeepSeek V4-Flash on Claw-Eval, Terminal-Bench 2.0, SWE-Bench Pro |
 | GLM-5.1 (Z.ai) | 744B MoE | topped SWE-Bench Pro at 58.4, above GPT-5.4 and Claude Opus 4.6 |
 | Ling-2.6-1T (inclusionAI) | 1T-param MoE | MIT; MLA+Linear Attn cuts VRAM; SOTA SWE-bench Verified + TAU2-Bench |
 | NVIDIA Star Elastic | 30B/23B/12B | single 58.9 GB ckpt, NVFP4 18.7 GB; 360× cheaper to train than 3 runs |
@@ -34,7 +33,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.139; `claude agents` dashboard; `/goal` auto-continue; Code Review GA; CI auto-fix; `hard_deny` |
+| Claude Code | Anthropic | v2.1.140; `claude agents` dashboard; `/goal` auto-continue; Code Review GA; CI auto-fix; `hard_deny` |
 | Claude Managed Agents | Anthropic | dreaming, outcomes (+10pp), parallel subagents, webhooks |
 | Codex CLI | OpenAI | 0.130.0; remote-control server; AWS Bedrock auth; /goal; GPT-5.5 default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
@@ -53,7 +52,6 @@
 
 ## Agent patterns / frameworks
 
-- **LangGraph `interrupt()` checkpoint** — pause for HITL approval before remediation; production-pattern for incident-response agents
 - **MCP (Model Context Protocol)** — standard tool-call wrapper across harnesses
 - **Demand-driven KB** — observe agent failures, add only context that failure patterns require; prevents speculative KB bloat
 - **LangChain v1** (2026-05-10): stable public API after years of breaking changes
@@ -72,12 +70,13 @@
 - Vibe-coding → prod gap: HIPAA / regulated industries blocking AI-built MVPs (war stories surfacing on r/AI_Agents)
 - Anthropic: $30B ARR Q1-2026 (+233% QoQ, coding tools driven), $1T secondary-market valuation
 - Uber burned 2026 AI coding budget in 4 months; Claude Code + Cursor $500-$2k/engineer/month, 95% engineer adoption
-- Anthropic-PE JV ($1.5B, Blackstone + Goldman): Claude engineers embedded in PE-owned portfolio companies
 - Apple runs on Anthropic (2026-05): CLAUDE.md in Apple Support app; Claude Code at engineering scale
 - iOS 27 model selector: per-function AI choice; Google + Anthropic in testing; first AI layer opened to third-parties
 - DeepSeek nearing $45B valuation (Big Fund + Tencent + Alibaba); earmarked for Huawei-chip compute infra
 - Chrome Prompt API: silently downloaded ~4GB Gemma Nano weights to user machines; privacy backlash across r/LocalLLM
 - Cloudflare cut 1,100 jobs (20% workforce) after 600% AI-agent session growth in Q1 2026
 - OpenAI DeployCo ($4B, $10B val): 150 embedded engineers (Tomoro acquisition); PE/consulting competition
+- **ProgramBench (Meta/Stanford, 2026-05)**: recreate ffmpeg/SQLite/ripgrep without internet; all frontier models 0% full completion; GPT-5.5 high first to solve tasks
+- China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
 
 <!-- End of state — keep under 200 lines / 6 KB. -->
