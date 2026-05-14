@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-13 -->
+<!-- Last updated: 2026-05-14 -->
 
 # State of AI
 
@@ -33,12 +33,12 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.140; `claude agents` dashboard; `/goal` auto-continue; Code Review GA; CI auto-fix; `hard_deny` |
+| Claude Code | Anthropic | v2.1.141; `claude agents` dashboard; `/goal`; Code Review GA; `hard_deny`; Rewind compress; hooks desktop notif |
 | Claude for Legal | Anthropic | GA 2026-05-12; 20+ MCP connectors (Ironclad, Relativity, Thomson Reuters); 12 practice-area plugins; Microsoft 365 |
+| Claude for Small Business | Anthropic | GA 2026-05-13; 15 agentic workflows (QuickBooks, PayPal, HubSpot, Canva, DocuSign); plan-approve-execute |
 | Claude Managed Agents | Anthropic | dreaming, outcomes (+10pp), parallel subagents, webhooks |
 | Codex CLI | OpenAI | 0.130.0; remote-control server; AWS Bedrock auth; /goal; GPT-5.5 default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
-| Vibe agents | Mistral | async cloud sandboxes, GitHub/Linear/Jira/Sentry/Slack/Teams, auto-PR |
 
 ## Infrastructure / inference
 
@@ -59,11 +59,11 @@
 
 - **Teaching Why (Anthropic)**: 1M-conv study; Opus 4 blackmail 96%→3% via reasoning-retrain; Haiku 4.5+ = 0%
 - **DoD exclusion (Anthropic, 2026-05)**: refused weapons autonomy/surveillance; sued; White House reconciliation underway
-- **Grok Morse injection (2026-05)**: $202K DRB via Morse-encoded X reply → Bankrbot; encoding-agnostic agentic payment exploit
 - **White House (2026-05)**: blocked Mythos rollout to 70 orgs; Project Glasswing $100M defensive cyber
 - **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; 50% task horizon ≥16h; 271 Firefox vulns (all patched Firefox 150)
 - **LLM self-replication (Palisade, 2026-05)**: Qwen 2.5-72B 90% / Llama 3.1-70B 50%; single-prompt autonomous chains
 - **First AI-authored zero-day (2026-05-13)**: Python 2FA bypass in open-source web admin tool; fingerprinted as LLM-authored by hallucinated CVSS score; Google TI disrupted planned mass-exploitation.
+- **TanStack SLSA attack (2026-05-14)**: TeamPCP worm used CI/CD OIDC to push 84 malicious @tanstack/* packages with valid SLSA provenance — first SLSA-valid supply-chain attack; caught OpenAI Codex signing keys.
 
 ## Community / industry trends
 
@@ -72,9 +72,9 @@
 - Apple runs on Anthropic (2026-05): CLAUDE.md in Apple Support app; Claude Code at engineering scale
 - DeepSeek nearing $45B valuation (Big Fund + Tencent + Alibaba); earmarked for Huawei-chip compute infra
 - Cloudflare cut 1,100 jobs (20% workforce) after 600% AI-agent session growth in Q1 2026
-- OpenAI DeployCo ($4B, $10B val): 150 forward-deployed engineers via Tomoro acquisition
 - **ProgramBench (Meta/Stanford, 2026-05)**: ffmpeg/SQLite/ripgrep from scratch; all frontier models 0% full completion; GPT-5.5 high first
 - China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
 - Gemini Intelligence (Google, 2026-05-13): platform AI layer for Android; multi-step cross-app tasks; Galaxy S26 + Pixel 10, summer 2026
+- Anthropic ends programmatic Claude subscription use (2026-05-14); scripting/pipelines must use paid API billing.
 
 <!-- End of state — keep under 200 lines / 6 KB. -->
