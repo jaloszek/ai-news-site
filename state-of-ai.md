@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-14 -->
+<!-- Last updated: 2026-05-15 -->
 
 # State of AI
 
@@ -33,7 +33,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.141; `claude agents` dashboard; `/goal`; Code Review GA; `hard_deny`; Rewind compress; hooks desktop notif |
+| Claude Code | Anthropic | v2.1.142; 8 new `claude agents` dispatch flags; `/goal`; Code Review GA; `hard_deny`; Fast mode→Opus 4.7 |
 | Claude for Legal | Anthropic | GA 2026-05-12; 20+ MCP connectors (Ironclad, Relativity, Thomson Reuters); 12 practice-area plugins; Microsoft 365 |
 | Claude for Small Business | Anthropic | GA 2026-05-13; 15 agentic workflows (QuickBooks, PayPal, HubSpot, Canva, DocuSign); plan-approve-execute |
 | Claude Managed Agents | Anthropic | dreaming, outcomes (+10pp), parallel subagents, webhooks |
@@ -42,9 +42,7 @@
 
 ## Infrastructure / inference
 
-- AMD Gorgon Halo (Ryzen AI Max+ 495): 192 GB LPDDR5X, +10% MT vs Strix Halo, Computex 2026 reveal expected
 - AlphaEvolve (Google, prod 2026-05-08): 0.7% worldwide compute recovered via Borg; -1% Gemini training time; 23% matmul kernel speedup
-- Gemini Embedding 2 (GA): natively multimodal embedding (text/image/video/audio/docs in one space), 100+ languages
 - Claude Security (public beta, Opus 4.7): whole-codebase scanner; data-flow tracing; exploitation scores; CrowdStrike/Palo Alto integrations
 - SpaceX Colossus 1 (Anthropic): 300+ MW, 220K+ NVIDIA GPUs; now online
 - Claude Platform on AWS (GA, 2026-05-13): any AWS account; 16+ regions; Managed Agents, Files API, MCP connector; no separate Anthropic credentials
@@ -63,7 +61,8 @@
 - **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; 50% task horizon ≥16h; 271 Firefox vulns (all patched Firefox 150)
 - **LLM self-replication (Palisade, 2026-05)**: Qwen 2.5-72B 90% / Llama 3.1-70B 50%; single-prompt autonomous chains
 - **First AI-authored zero-day (2026-05-13)**: Python 2FA bypass in open-source web admin tool; fingerprinted as LLM-authored by hallucinated CVSS score; Google TI disrupted planned mass-exploitation.
-- **TanStack SLSA attack (2026-05-14)**: TeamPCP worm used CI/CD OIDC to push 84 malicious @tanstack/* packages with valid SLSA provenance — first SLSA-valid supply-chain attack; caught OpenAI Codex signing keys.
+- **TanStack SLSA (2026-05-14)**: TeamPCP used CI/CD OIDC to publish 84 malicious @tanstack/* packages with valid SLSA provenance; caught OpenAI Codex signing keys
+- **Mythos macOS exploit (2026-05-15)**: root on Apple M5 in 5 days; two kernel vulns chained; credited in macOS 26.5 security notes
 
 ## Community / industry trends
 
@@ -76,5 +75,6 @@
 - China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
 - Gemini Intelligence (Google, 2026-05-13): platform AI layer for Android; multi-step cross-app tasks; Galaxy S26 + Pixel 10, summer 2026
 - Anthropic ends programmatic Claude subscription use (2026-05-14); scripting/pipelines must use paid API billing.
+- arXiv (2026-05-15): 1-year submission ban for papers with incontrovertible LLM errors; 10x rise in AI-hallucinated citations since 2023
 
 <!-- End of state — keep under 200 lines / 6 KB. -->

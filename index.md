@@ -41,7 +41,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-12.html"><div class="cal-num">12</div><ul class="cal-highlights"><li>🛠 CC agent view + /goal</li><li>✨ TML-Interaction-Small voice</li><li>🔒 AI-built zero-day caught</li><li>🛠 Curl Mythos: 1 CVE + 20 bugs</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-13.html"><div class="cal-num">13</div><ul class="cal-highlights"><li>💜 Claude for Legal</li><li>💜 Claude Platform on AWS</li><li>🔵 Gemini Intelligence</li><li>🛠 CC v2.1.140</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-14.html"><div class="cal-num">14</div><ul class="cal-highlights"><li>🛠 CC v2.1.141 Summarize-up-here</li><li>💜 Claude for Small Business</li><li>🔒 TanStack supply-chain hit Codex keys</li><li>🔵 NotebookLM in Workspace Studio</li><li>🔒 Anthropic meters programmatic use</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">15</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-05-15.html"><div class="cal-num">15</div><ul class="cal-highlights"><li>🛠 CC v2.1.142 agents flags</li><li>🟢 Codex in ChatGPT mobile</li><li>💬 arXiv 1-year LLM ban</li><li>🤖 Pi agent rm -rf</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">16</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">17</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">18</div></div>
