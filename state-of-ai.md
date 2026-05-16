@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-15 -->
+<!-- Last updated: 2026-05-16 -->
 
 # State of AI
 
@@ -33,7 +33,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.142; 8 new `claude agents` dispatch flags; `/goal`; Code Review GA; `hard_deny`; Fast mode→Opus 4.7 |
+| Claude Code | Anthropic | v2.1.143; bg session memory, plugin dep enforcement; 8 `agents` dispatch flags; `hard_deny`; Fast mode→Opus 4.7 |
 | Claude for Legal | Anthropic | GA 2026-05-12; 20+ MCP connectors (Ironclad, Relativity, Thomson Reuters); 12 practice-area plugins; Microsoft 365 |
 | Claude for Small Business | Anthropic | GA 2026-05-13; 15 agentic workflows (QuickBooks, PayPal, HubSpot, Canva, DocuSign); plan-approve-execute |
 | Claude Managed Agents | Anthropic | dreaming, outcomes (+10pp), parallel subagents, webhooks |
@@ -68,13 +68,12 @@
 
 - Anthropic: $30B ARR Q1-2026 (+233% YoY), $1T secondary valuation
 - Uber burned 2026 AI coding budget in 4 months; Claude Code + Cursor $500-$2k/engineer/month, 95% engineer adoption
-- Apple runs on Anthropic (2026-05): CLAUDE.md in Apple Support app; Claude Code at engineering scale
-- DeepSeek nearing $45B valuation (Big Fund + Tencent + Alibaba); earmarked for Huawei-chip compute infra
 - Cloudflare cut 1,100 jobs (20% workforce) after 600% AI-agent session growth in Q1 2026
 - **ProgramBench (Meta/Stanford, 2026-05)**: ffmpeg/SQLite/ripgrep from scratch; all frontier models 0% full completion; GPT-5.5 high first
 - China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
 - Gemini Intelligence (Google, 2026-05-13): platform AI layer for Android; multi-step cross-app tasks; Galaxy S26 + Pixel 10, summer 2026
-- Anthropic ends programmatic Claude subscription use (2026-05-14); scripting/pipelines must use paid API billing.
 - arXiv (2026-05-15): 1-year submission ban for papers with incontrovertible LLM errors; 10x rise in AI-hallucinated citations since 2023
+- OpenAI DeployCo (2026-05-11): $4B raised, $10B valuation; 150 forward-deployed engineers embed in enterprise teams (Tomoro acq.)
+- Anthropic Gates Foundation (2026-05-16): $200M, 4-year; global health (malaria/TB forecasting), K-12 literacy apps, agricultural AI
 
 <!-- End of state — keep under 200 lines / 6 KB. -->

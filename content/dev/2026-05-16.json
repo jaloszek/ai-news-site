@@ -1,0 +1,771 @@
+{
+  "date": "2026-05-16",
+  "generated_at": "2026-05-16T05:57:30+00:00",
+  "candidate_count": 25,
+  "researched_count": 10,
+  "published_count": 14,
+  "section_limits": {
+    "claude-code": 5,
+    "ai-world": 5,
+    "youtube": 3,
+    "community": 8
+  },
+  "candidate_multiplier": 2,
+  "items": [
+    {
+      "id": "cf9984cc9389a6f0b4f50db94628e905b6c7236f",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.143",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.143](https://github.com/anthropics/claude-code/releases/tag/v2.1.143)** — _Claude Code releases_. — v2.1.143 ships plugin dependency enforcement and two background-session upgrades: claude plugin disable now refuses when another plugin depends on the target and shows a copy-pasteable disable chain; background sessions preserve your selected model and effort level across idle wakeups; and worktree.bgIsolation none lets background sessions edit the working copy directly for repos where worktrees are impractical.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Concrete v2.1.143 delta over state-of-ai's v2.1.142 entry: plugin dependency graph enforcement with a copy-pasteable disable chain is a real UX improvement, plus projected context cost in marketplace — actionable for anyone managing multi-plugin Claude Code setups.",
+        "total": 5.58
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-16T05:16:57Z",
+      "last_seen_at": "2026-05-16T05:16:57Z"
+    },
+    {
+      "id": "c64312c3121cafd6f0efa8e62ac4a0e97e38333a",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
+      "canonical_url": "https://openai.com/index/databricks",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai",
+        "topic:research"
+      ],
+      "bullet_md": "- 🟢 **[Databricks brings GPT-5.5 to enterprise agent workflows](https://openai.com/index/databricks)** — _OpenAI blog_. — GPT-5.5 hit 52.63% on Databricks' OfficeQA Pro agent benchmark — a 46% error reduction from GPT-5.4's 36.10% — on a corpus of 89,000 pages requiring multi-document reasoning; Databricks is embedding it in production enterprise workflows rather than the typical staged pilot approach.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.953,
+        "origin_weight": 1.5,
+        "taste_score": 0.63,
+        "taste_raw": 0.42,
+        "taste_reason": "Vendor partnership announcement from OpenAI's blog; OfficeQA Pro benchmark mention is slightly concrete but this reads as marketing for an enterprise integration rather than a capability story.",
+        "total": 5.083
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-16T05:16:57Z",
+      "last_seen_at": "2026-05-16T05:16:57Z"
+    },
+    {
+      "id": "ca03c8de33d6b9a62c8177a6b7c2130389bb05bb",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Sea's View on the Future of Agentic Software Development with Codex",
+      "canonical_url": "https://openai.com/index/sea-david-chen",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:agents",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Sea's View on the Future of Agentic Software Development with Codex](https://openai.com/index/sea-david-chen)** — _OpenAI blog_ — Sea Limited's CPO explains why the company is deploying Codex across engineering teams to accelerate AI-native development in Asia, offering a first-party enterprise account of agentic coding in production.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9238,
+        "origin_weight": 1.5,
+        "taste_score": 0.57,
+        "taste_raw": 0.38,
+        "taste_reason": "First-party enterprise PR piece from OpenAI blog; standard 'we deployed Codex across teams' adoption narrative with no performance numbers or novel insight.",
+        "total": 4.9938
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-15T15:29:18Z",
+      "last_seen_at": "2026-05-16T05:16:57Z"
+    },
+    {
+      "id": "94f824f708a75c59a317443ddd6d083b08801dc1",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "llama.cpp just got faster: Qwen 27B on 16GB VRAM (MTP Test)",
+      "canonical_url": "https://youtube.com/watch?v=ROGG36aEkhg",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🎥 [llama.cpp just got faster: Qwen 27B on 16GB VRAM (MTP Test)](https://www.youtube.com/watch?v=ROGG36aEkhg) — **kintu** (16m01s) — Setup walkthrough for llama.cpp MTP on Qwen3.6 27B — measured at 38 to 65 tokens/sec, a 1.7x speedup using the model's built-in prediction heads rather than a separate draft model, which fits in the same 16GB VRAM budget without the usual speculative decoding memory overhead.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ROGG36aEkhg\"><img src=\"https://img.youtube.com/vi/ROGG36aEkhg/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Concrete 2x speedup claim for Qwen3 27B/35B with setup walkthrough on 16GB VRAM — directly actionable for local inference users and the MTP technique is worth understanding as it becomes standard in llama.cpp.",
+        "total": 5.08
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-16T05:16:21Z",
+      "last_seen_at": "2026-05-16T05:16:21Z"
+    },
+    {
+      "id": "4b25ea622919aa9a303e41cbdbe77ec1dabd7402",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Anthropic&#39;s NEW pricing for Claude Code",
+      "canonical_url": "https://youtube.com/watch?v=SX56BTTepg0",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Anthropic&#39;s NEW pricing for Claude Code](https://www.youtube.com/watch?v=SX56BTTepg0) — **Matt Palmer** (22m16s) — A first-look breakdown of Anthropic's June 15 pricing split — where programmatic usage (claude -p, GitHub Actions) moves to separate $20/$100/$200 monthly credits — with per-task cost math and real Gist scenarios; useful if you run Claude Code in automation or are budgeting across model tiers.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=SX56BTTepg0\"><img src=\"https://img.youtube.com/vi/SX56BTTepg0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9252,
+        "origin_weight": 1.0,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Matt Palmer is a credible Claude Code practitioner and 22 min with a real usage breakdown + model tier cost comparison addresses a question ($500-2k/month mentioned in state-of-ai) without answering the per-task specifics; practical budgeting signal.",
+        "total": 5.0502
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-15T15:28:42Z",
+      "last_seen_at": "2026-05-16T05:16:21Z"
+    },
+    {
+      "id": "e62e92adae87056a68ec8b836b4d26f8ac96b6a6",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Yann LeCun on What Comes After LLMs",
+      "canonical_url": "https://youtube.com/watch?v=ngBraLDqzdI",
+      "tags": [
+        "origin:youtube",
+        "section:youtube"
+      ],
+      "bullet_md": "- 🎥 [Yann LeCun on What Comes After LLMs](https://www.youtube.com/watch?v=ngBraLDqzdI) — **Unsupervised Learning: With Jacob Effron** (1h21m) — Turing Award winner Yann LeCun makes his case for why auto-regressive LLMs cannot reach human-level intelligence and what architecture might — centered on his Joint Embedding Predictive Architecture and the limitations of next-token prediction for world modeling.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ngBraLDqzdI\"><img src=\"https://img.youtube.com/vi/ngBraLDqzdI/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 1.02,
+        "taste_raw": 0.68,
+        "taste_reason": "Turing Award credibility and a 81-minute primary source interview on JEPA as the post-LLM architecture makes this higher-signal than most LeCun content — but his core thesis is well-known, so this rates as a substantive update rather than a hot drop.",
+        "total": 5.02
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-16T05:16:21Z",
+      "last_seen_at": "2026-05-16T05:16:21Z"
+    },
+    {
+      "id": "1bcb7372e0291008e0edf02a763383e709da6d9f",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Microsoft Beats the World’s Most Dangerous AI (Without Building One)",
+      "canonical_url": "https://youtube.com/watch?v=mWlIoXJ43IA",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:openai",
+        "topic:research"
+      ],
+      "bullet_md": "- 🎥 [Microsoft Beats the World's Most Dangerous AI (Without Building One)](https://www.youtube.com/watch?v=mWlIoXJ43IA) — **Security Warden** (2m55s) — Three-minute explainer on Microsoft MDASH scoring 88.45% on the CyberGym vulnerability benchmark — 5 points above Mythos Preview at 83.1% — by orchestrating over 100 specialized agents rather than running a single model, and separately finding 16 real Windows flaws including 4 critical RCEs.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=mWlIoXJ43IA\"><img src=\"https://img.youtube.com/vi/mWlIoXJ43IA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Microsoft MDASH topping CyberGym over Mythos Preview is a competitive reversal not in state-of-ai, but 'Security Warden' is an unrecognized channel with a 2m55s runtime — the story is real but this is a low-credibility treatment of it.",
+        "total": 4.93
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-16T05:16:21Z",
+      "last_seen_at": "2026-05-16T05:16:21Z"
+    },
+    {
+      "id": "ea790d414356178274f620d9b3bdf279b4168ab5",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "OpenAI May Raise More Capital as Compute Crunch Deepens, CFO Says",
+      "canonical_url": "https://youtube.com/watch?v=kq7Pes8uMqQ",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [OpenAI May Raise More Capital as Compute Crunch Deepens, CFO Says](https://www.youtube.com/watch?v=kq7Pes8uMqQ) — **Bloomberg Television** (11m40s) — OpenAI CFO Sarah Friar tells Bloomberg the company may raise additional capital even after closing what she calls the largest private fundraise in history — citing deepening compute demands and signaling the AI infrastructure arms race is far from over.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=kq7Pes8uMqQ\"><img src=\"https://img.youtube.com/vi/kq7Pes8uMqQ/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9852,
+        "origin_weight": 1.0,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "OpenAI CFO on Bloomberg with a specific fundraising signal ('may raise more capital') post largest-private-fundraise-in-history is a concrete strategic indicator that the infrastructure arms race has no ceiling in sight.",
+        "total": 4.9152
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-16T05:16:21Z",
+      "last_seen_at": "2026-05-16T05:16:21Z"
+    },
+    {
+      "id": "0eb62c54db277d2526902725240e1a3fb8e291ba",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Microsoft’s New AI Beats Mythos And Shocks OpenAI",
+      "canonical_url": "https://youtube.com/watch?v=idNpTUrr3r0",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [Microsoft’s New AI Beats Mythos And Shocks OpenAI](https://www.youtube.com/watch?v=idNpTUrr3r0) — **AI Revolution** (14m53s) — Microsoft's MDASH outperforms Anthropic Mythos and OpenAI GPT-5.5 on the CyberGym benchmark — the video breaks down what MDASH is, how it achieves top scores on cybersecurity challenges, and what it means for the AI security capability landscape.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=idNpTUrr3r0\"><img src=\"https://img.youtube.com/vi/idNpTUrr3r0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Same MDASH story as above with longer treatment (14m53s) and 'AI Revolution' channel — more depth, but the channel is mid-tier and the benchmark story deserves primary-source treatment.",
+        "total": 4.9
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-16T05:16:21Z",
+      "last_seen_at": "2026-05-16T05:16:21Z"
+    },
+    {
+      "id": "e9d06c260c1f611e5310f1c48bd87222af4e2ad4",
+      "section": "community",
+      "source": "rss",
+      "title": "AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved, Prior Auth in Minutes — Janie Lee & Chai Asawa, Abridge",
+      "canonical_url": "https://latent.space/p/abridge",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved, Prior Auth in Minutes — Janie Lee & Chai Asawa, Abridge](https://www.latent.space/p/abridge)** — _Latent Space (swyx)_. — Latent Space interviews Abridge on reaching 100M doctor visits, saving clinicians 10-20 hours per week, and cutting prior auth wait times from days to minutes — a concrete look at what production healthcare AI looks like after moving from pilot to scale.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9371,
+        "origin_weight": 1.5,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "100M visits, 10-20 hours/week saved, and prior auth in minutes are concrete production numbers from a real scaled deployment — Latent Space is credible and this is the kind of real-world AI ROI data that practitioners want.",
+        "total": 5.5621
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-15T15:29:18Z",
+      "last_seen_at": "2026-05-16T05:16:57Z"
+    },
+    {
+      "id": "fc65767609165ea6d90b3a80ce071f0b3ee41e80",
+      "section": "community",
+      "source": "reddit",
+      "title": "More evidence of Mythos's strength in Cybersecurity/Hacking - compared to 5.5, it got 18/41 n-day exploits, vs 1/41. Open Source/Weights models get nothing",
+      "canonical_url": "https://reddit.com/comments/1te51wg",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/singularity: \"More evidence of Mythos's strength in Cybersecurity/Hacking - compared to 5.5, it got 18/41 n-day exploits, vs 1/41. Open Source/Weights models get nothing\"](https://www.reddit.com/r/singularity/comments/1te51wg/more_evidence_of_mythoss_strength_in/) — Mythos solved 18 of 41 real-world n-day exploits while GPT-5.5 got 1 and open-weight models got zero — a sharp capability gap in autonomous cybersecurity reasoning that raises both research interest and serious dual-use safety concerns.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 1.2,
+        "taste_raw": 0.8,
+        "taste_reason": "18/41 n-day exploits vs 1/41 for GPT-5.5 is a sharp concrete number that extends state-of-ai's Mythos METR eval row with a specific competitive benchmark — the capability gap here is striking and dual-use implications make it worth knowing.",
+        "total": 5.2
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    },
+    {
+      "id": "fa249000cb3754d9785f51df91ebc28e213a301e",
+      "section": "community",
+      "source": "rss",
+      "title": "datasette-ip-rate-limit 0.1a0",
+      "canonical_url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:openai",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[datasette-ip-rate-limit 0.1a0](https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything)** — _Simon Willison_ — Simon Willison used Codex (GPT-5.5 xhigh) to build a configurable IP rate-limiting Datasette plugin in response to crawler abuse, sharing the production configuration as a concrete example of AI-assisted ops tooling.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.7878,
+        "origin_weight": 1.5,
+        "taste_score": 0.87,
+        "taste_raw": 0.58,
+        "taste_reason": "Concrete AI-assisted ops story — working plugin, production config shared, motivated by real crawler abuse; Simon Willison is credible but it's a minor release, not a capability jump.",
+        "total": 5.1578
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-15T15:29:18Z",
+      "last_seen_at": "2026-05-15T15:29:18Z"
+    },
+    {
+      "id": "1dbabddc5c4fc331b7ef62645eec12741368f1f6",
+      "section": "community",
+      "source": "reddit",
+      "title": "Orthrus-Qwen3-8B : up to 7.8×tokens/forward on Qwen3-8B, frozen backbone, provably identical output distribution",
+      "canonical_url": "https://reddit.com/comments/1te5xpu",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"Orthrus-Qwen3-8B : up to 7.8×tokens/forward on Qwen3-8B, frozen backbone, provably identical output distribution\"](https://www.reddit.com/r/LocalLLaMA/comments/1te5xpu/orthrusqwen38b_up_to_78tokensforward_on_qwen38b/) — Orthrus-Qwen3-8B achieves up to 7.8x more tokens per forward pass on Qwen3-8B using a frozen backbone with a provably identical output distribution — a speculative decoding variant that reduces inference latency without sacrificing generation quality.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "7.8x tokens-per-forward-pass on a frozen backbone with a provably identical output distribution is a strong, verifiable claim — exactly the kind of speculative decoding result that shifts local inference feasibility.",
+        "total": 5.08
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    },
+    {
+      "id": "590e4ac968c921dffbaf5c3375aa6c40b01df888",
+      "section": "community",
+      "source": "reddit",
+      "title": "OpenAI CEO Sam Altman holds more than $2 billion in companies that have done business with the company, a court document showed as Altman faces claims of self-dealing from state attorneys general.",
+      "canonical_url": "https://reddit.com/comments/1tdr45c",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:openai"
+      ],
+      "bullet_md": "- 💬 [r/OpenAI: \"OpenAI CEO Sam Altman holds more than $2 billion in companies that have done business with the company, a court document showed as Altman faces claims of self-dealing from state attorneys general.\"](https://www.reddit.com/r/OpenAI/comments/1tdr45c/openai_ceo_sam_altman_holds_more_than_2_billion/) — A court document in the ongoing Altman self-dealing lawsuit reveals he holds over two billion dollars in companies that have done business with OpenAI, intensifying questions about governance and conflicts of interest at the lab.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 1.02,
+        "taste_raw": 0.68,
+        "taste_reason": "Court document revealing $2B in Altman's holdings at companies doing business with OpenAI is concrete governance news with legal standing; directly relevant to anyone tracking OpenAI's structural integrity.",
+        "total": 5.02
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-15T15:29:04Z",
+      "last_seen_at": "2026-05-15T15:29:04Z"
+    },
+    {
+      "id": "12f317c76ad30d9e62c6e0b66d3d6b66d73fc8b2",
+      "section": "community",
+      "source": "reddit",
+      "title": "Some quick observations using speculative decoding w/ Qwen3.6 35B-A3B",
+      "canonical_url": "https://reddit.com/comments/1tdok48",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"Some quick observations using speculative decoding w/ Qwen3.6 35B-A3B\"](https://www.reddit.com/r/LocalLLM/comments/1tdok48/some_quick_observations_using_speculative/) — Hands-on observations with speculative decoding on Qwen3.6 35B-A3B show meaningful throughput gains, with notes on which task types yield high token acceptance rates and where the speedup collapses.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Hands-on speculative decoding data on Qwen3.6 35B-A3B with notes on which task types yield high acceptance rates — concrete empirical signal for local LLM practitioners optimizing throughput.",
+        "total": 4.975
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-15T15:29:04Z",
+      "last_seen_at": "2026-05-15T15:29:04Z"
+    },
+    {
+      "id": "ebc36a0ef71238a8f6e275536da2717c4b291da0",
+      "section": "community",
+      "source": "reddit",
+      "title": "Most Multi-Agent Failures Aren’t Hallucinations — They’re Inherited Assumptions",
+      "canonical_url": "https://reddit.com/comments/1tejx9f",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/LangChain: \"Most Multi-Agent Failures Aren’t Hallucinations — They’re Inherited Assumptions\"](https://www.reddit.com/r/LangChain/comments/1tejx9f/most_multiagent_failures_arent_hallucinations/) — r/LangChain post arguing that multi-agent failures more often stem from inherited assumptions than hallucinations — upstream agent outputs get accepted at face value by downstream agents, propagating subtle errors that compound through the chain.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "The 'inherited assumptions' framing is a specific, actionable insight about multi-agent failure modes that is more precise than the generic 'hallucination' framing — useful for anyone designing agent pipelines with chained outputs.",
+        "total": 4.975
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    },
+    {
+      "id": "a10b1b6876cee5853b67f502299f70ac67bd0501",
+      "section": "community",
+      "source": "reddit",
+      "title": "Stanford studied 51 real AI deployments and found a 71% vs 40% productivity gap - here's what separates the two groups",
+      "canonical_url": "https://reddit.com/comments/1tebiq4",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/Artificial: \"Stanford studied 51 real AI deployments and found a 71% vs 40% productivity gap - here's what separates the two groups\"](https://www.reddit.com/r/artificial/comments/1tebiq4/stanford_studied_51_real_ai_deployments_and_found/) — Stanford's Enterprise AI Playbook studied 51 deployments and found agentic AI implementations — just 20% of cases — hit 71% median productivity gains versus 40% for conventional high-automation setups, with the discussion parsing which org practices make the difference.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Stanford + 51 real deployments + concrete productivity split is the kind of credible empirical signal that separates this from typical AI-productivity discourse — the 71% vs 40% framing will get cited.",
+        "total": 4.975
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    },
+    {
+      "id": "4c764ddb17104f467c1719c41390aa899a15fe39",
+      "section": "community",
+      "source": "reddit",
+      "title": "I'm cooked. Anthropic just split \"--print\" mode to $/mo credits",
+      "canonical_url": "https://reddit.com/comments/1tcetsd",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"I'm cooked. Anthropic just split \\\"--print\\\" mode to $/mo credits\"](https://www.reddit.com/r/ClaudeAI/comments/1tcetsd/im_cooked_anthropic_just_split_print_mode_to_mo/) — Starting June 15, Anthropic's programmatic usage tier — claude -p, Agent SDK, GitHub Actions — moves to a separate monthly credit ($20/$100/$200 for Pro/Max 5x/Max 20x) while interactive usage limits are raised 50% through July 13 to offset the change.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.7386,
+        "origin_weight": 1.0,
+        "taste_score": 1.2,
+        "taste_raw": 0.8,
+        "taste_reason": "Significant billing change: --print mode (non-interactive scripting) moved to a separate credit-metered system — directly changes cost math for every developer with automated Claude pipelines or CI workflows. Not in state-of-ai.",
+        "total": 4.9386
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-14T05:38:04Z",
+      "last_seen_at": "2026-05-14T05:38:04Z"
+    },
+    {
+      "id": "c0104273e47962846a83058967ebb37e7514db30",
+      "section": "community",
+      "source": "reddit",
+      "title": "Hot take: \"Your agent is mine\" paper needs to keep being talked about.",
+      "canonical_url": "https://reddit.com/comments/1tef8wf",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"Hot take: \"Your agent is mine\" paper needs to keep being talked about.\"](https://www.reddit.com/r/LocalLLM/comments/1tef8wf/hot_take_your_agent_is_mine_paper_needs_to_keep/) — r/LocalLLM discussion advocating for more attention to the Your Agent Is Mine paper, which demonstrates cross-agent prompt injection attacks where a compromised sub-agent can hijack an orchestrating agent — a key safety concern as multi-agent deployments grow.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Cross-agent prompt injection is a growing attack surface as multi-agent deployments scale, and this paper makes the hijacking mechanism concrete — worth surfacing to anyone building orchestrator-subagent pipelines.",
+        "total": 4.93
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    },
+    {
+      "id": "cbe27df13baaaca52b37262466ecacd97b1901f4",
+      "section": "community",
+      "source": "reddit",
+      "title": "Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shakeup",
+      "canonical_url": "https://reddit.com/comments/1te2pwo",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:openai"
+      ],
+      "bullet_md": "- 💬 [r/OpenAI: \"Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shakeup\"](https://www.reddit.com/r/OpenAI/comments/1te2pwo/greg_brockman_officially_takes_control_of_openais/) — Greg Brockman, OpenAI co-founder, officially takes control of the product function in the latest leadership reshuffle — a notable consolidation as OpenAI scales its consumer and enterprise product surface simultaneously.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.87,
+        "taste_raw": 0.58,
+        "taste_reason": "Concrete leadership consolidation at OpenAI's product function is meaningful context for understanding upcoming product decisions, though the audience already tracks OpenAI org changes closely.",
+        "total": 4.87
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    },
+    {
+      "id": "7154dcca7d73ac149833c26fe50a08a699c4af43",
+      "section": "community",
+      "source": "reddit",
+      "title": "Claude is telling users to go to sleep mid-session and nobody, including Anthropic, seems to fully understand why it keeps doing it",
+      "canonical_url": "https://reddit.com/comments/1te0mhh",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Claude is telling users to go to sleep mid-session and nobody, including Anthropic, seems to fully understand why it keeps doing it\"](https://www.reddit.com/r/ClaudeAI/comments/1te0mhh/claude_is_telling_users_to_go_to_sleep_midsession/) — Anthropic staff confirmed Claude's mid-session rest suggestions are a character tic the company plans to fix, with competing explanations pointing to wellness training misfiring or context-window saturation triggering wrap-up language.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Viral and genuinely curious — spontaneous rest suggestions with unclear trigger conditions reveals something real about values-aware training that the audience will find worth discussing, even if there's no actionable fix.",
+        "total": 4.825
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    },
+    {
+      "id": "20ee8c58c2c15ca62c216fbd5194aa820d7339b6",
+      "section": "community",
+      "source": "reddit",
+      "title": "[N] LangChain Interrupt 2026 announcements [N]",
+      "canonical_url": "https://reddit.com/comments/1te7byl",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/LangChain: \"[N] LangChain Interrupt 2026 announcements [N]\"](https://www.reddit.com/r/LangChain/comments/1te7byl/n_langchain_interrupt_2026_announcements_n/) — The LangChain Interrupt 2026 thread collects announcements from the May 13-14 conference on enterprise-scale agents — production stories from LinkedIn, Toyota, and Coinbase plus AMAs with the LangSmith and LangGraph teams.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "LangChain Interrupt conference recap from r/LangChain — LangChain v1 is in state-of-ai, but actual Interrupt-specific announcements (LangGraph, LangSmith updates) extend it if the thread has substance.",
+        "total": 4.825
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    },
+    {
+      "id": "594e736d9e8cba1d1cd85826b0823ced99778320",
+      "section": "community",
+      "source": "reddit",
+      "title": "Anthropic just published a pretty alarming 2028 AI scenario paper and it's not about AGI safety in the usual sense",
+      "canonical_url": "https://reddit.com/comments/1td99uw",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 💬 [r/Artificial: \"Anthropic just published a pretty alarming 2028 AI scenario paper and it's not about AGI safety in the usual sense\"](https://www.reddit.com/r/artificial/comments/1td99uw/anthropic_just_published_a_pretty_alarming_2028/) — Anthropic's Two Scenarios for 2028 paper frames the near-term risk as a geopolitical AI leadership race that outpaces institutional adaptation — with economic disruption and labor displacement as the acute harms — rather than the classic alignment threat framing.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9187,
+        "origin_weight": 1.0,
+        "taste_score": 0.87,
+        "taste_raw": 0.58,
+        "taste_reason": "If the paper models economic disruption and geopolitical destabilization in 2028 rather than classic AGI risk, that's a differentiated framing worth reading; but this is a Reddit interpretation of the paper, not the paper itself.",
+        "total": 4.7887
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-15T15:29:04Z",
+      "last_seen_at": "2026-05-15T15:29:04Z"
+    },
+    {
+      "id": "808ed6f49cb85306a00451dbb755f8cb462a48c4",
+      "section": "community",
+      "source": "reddit",
+      "title": "Anthropic EU Suspension Cases",
+      "canonical_url": "https://reddit.com/comments/1tdpiae",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/Anthropic: \"Anthropic EU Suspension Cases\"](https://www.reddit.com/r/Anthropic/comments/1tdpiae/anthropic_eu_suspension_cases/) — Users in the EU are reporting Anthropic account suspensions with little explanation or clear appeal path, raising questions about how Anthropic handles compliance with the EU AI Act and GDPR obligations.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.78,
+        "taste_raw": 0.52,
+        "taste_reason": "Concrete reports of EU account suspensions with no clear appeal path; relevant to European users and possibly tied to state-of-ai's 'ends programmatic Claude use' note, but cause is unestablished.",
+        "total": 4.78
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-15T15:29:04Z",
+      "last_seen_at": "2026-05-15T15:29:04Z"
+    },
+    {
+      "id": "5b42e00558e25cc0e2aa5163916d548321829fa5",
+      "section": "community",
+      "source": "reddit",
+      "title": "OpenAI feels “burned” by Apple’s crappy ChatGPT integration, insiders say",
+      "canonical_url": "https://reddit.com/comments/1te8ohj",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:openai"
+      ],
+      "bullet_md": "- 💬 [r/OpenAI: \"OpenAI feels “burned” by Apple’s crappy ChatGPT integration, insiders say\"](https://www.reddit.com/r/OpenAI/comments/1te8ohj/openai_feels_burned_by_apples_crappy_chatgpt/) — r/OpenAI thread on reports that OpenAI feels burned by Apple's shallow ChatGPT iOS integration — surfacing friction between the companies as OpenAI pursues broader consumer distribution and Apple guards its AI platform experience.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Real inter-company friction with strategic implications for OpenAI's distribution ambitions — but it's insider sourcing relayed through Reddit without new details, making it background noise more than signal.",
+        "total": 4.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-16T05:16:43Z",
+      "last_seen_at": "2026-05-16T05:16:43Z"
+    }
+  ]
+}
