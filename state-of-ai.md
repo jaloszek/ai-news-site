@@ -15,7 +15,6 @@
 | OpenAI | GPT-5.5 Instant | 2026-05 | ChatGPT default (replaces GPT-5.3 Instant); 52.5% fewer hallucinations; SWE-Bench Pro 58.6% |
 | OpenAI | GPT-Realtime-2 | 2026-05-08 | GPT-5-class voice reasoning API; also: GPT-4o-Transcribe, GPT-4o-Mini-TTS |
 | Mistral | Medium 3.5 | 2026-05-02 | 128B, 256k ctx, 77.6% SWE-Bench Verified |
-| SpaceXAI | Grok 4.3 | 2026-05-02 | absorbed into SpaceX (Feb-2026, $250B valuation); 1M ctx, $1.25/$2.50/MTok, AAII 53 |
 | Google | Gemini 3.2 Flash | 2026-05-05 | $0.25/M input; coding near 3.1 Pro; pre-formal-launch (I/O 2026-05-19) |
 | Thinking Machines | TML-Interaction-Small | 2026-05-12 | 276B/12B active; <0.4s voice latency vs 0.57s Gemini, 1.18s GPT-RT-2 |
 
@@ -28,6 +27,7 @@
 | GLM-5.1 (Z.ai) | 744B MoE | topped SWE-Bench Pro at 58.4, above GPT-5.4 and Claude Opus 4.6 |
 | Ling-2.6-1T (inclusionAI) | 1T-param MoE | MIT; MLA+Linear Attn cuts VRAM; SOTA SWE-bench Verified + TAU2-Bench |
 | NVIDIA Star Elastic | 30B/23B/12B | single 58.9 GB ckpt, NVFP4 18.7 GB; 360× cheaper to train than 3 runs |
+| DeepSeek V4 | 1.6T MoE | FP4 QAT from training start; SwiGLU Clamping+mHC; 9.5x lower VRAM vs V3 |
 
 ## Coding agents / harnesses
 
@@ -36,17 +36,16 @@
 | Claude Code | Anthropic | v2.1.143; bg session memory, plugin dep enforcement; 8 `agents` dispatch flags; `hard_deny`; Fast mode→Opus 4.7 |
 | Claude for Legal | Anthropic | GA 2026-05-12; 20+ MCP connectors (Ironclad, Relativity, Thomson Reuters); 12 practice-area plugins; Microsoft 365 |
 | Claude for Small Business | Anthropic | GA 2026-05-13; 15 agentic workflows (QuickBooks, PayPal, HubSpot, Canva, DocuSign); plan-approve-execute |
-| Claude Managed Agents | Anthropic | dreaming, outcomes (+10pp), parallel subagents, webhooks |
 | Codex CLI | OpenAI | 0.130.0; remote-control server; AWS Bedrock auth; /goal; GPT-5.5 default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
 
 ## Infrastructure / inference
 
 - AlphaEvolve (Google, prod 2026-05-08): 0.7% worldwide compute recovered via Borg; -1% Gemini training time; 23% matmul kernel speedup
-- Claude Security (public beta, Opus 4.7): whole-codebase scanner; data-flow tracing; exploitation scores; CrowdStrike/Palo Alto integrations
-- SpaceX Colossus 1 (Anthropic): 300+ MW, 220K+ NVIDIA GPUs; now online
 - Claude Platform on AWS (GA, 2026-05-13): any AWS account; 16+ regions; Managed Agents, Files API, MCP connector; no separate Anthropic credentials
 - AWS AgentCore Payments (Bedrock preview): agent-held Coinbase/Stripe wallets; x402 micropayments to APIs/MCP
+- Cerebras (2026-05-16): $60B IPO (CBRS closed $280 day one); WSE-3 wafer chips serve OpenAI trillion-param models; largest tech IPO of 2026
+- Nvidia (2026): $40B+ equity in AI infra; $30B OpenAI, $3.2B Corning fiber, $2.1B IREN; locks Vera Rubin into supply chain
 
 ## Agent patterns / frameworks
 
@@ -73,7 +72,8 @@
 - China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
 - Gemini Intelligence (Google, 2026-05-13): platform AI layer for Android; multi-step cross-app tasks; Galaxy S26 + Pixel 10, summer 2026
 - arXiv (2026-05-15): 1-year submission ban for papers with incontrovertible LLM errors; 10x rise in AI-hallucinated citations since 2023
-- OpenAI DeployCo (2026-05-11): $4B raised, $10B valuation; 150 forward-deployed engineers embed in enterprise teams (Tomoro acq.)
 - Anthropic Gates Foundation (2026-05-16): $200M, 4-year; global health (malaria/TB forecasting), K-12 literacy apps, agricultural AI
+- Microsoft cancelled Claude Code for Experiences+Devices (June 30 2026); mandated GitHub Copilot CLI; Foundry API stays
+- Anthropic pricing (June 15 2026): claude -p/CI usage moves to separate $20/$100/$200 credits; Pro stays $20/mo
 
 <!-- End of state — keep under 200 lines / 6 KB. -->

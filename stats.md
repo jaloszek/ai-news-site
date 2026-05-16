@@ -1,19 +1,19 @@
 <!-- date: stats dashboard -->
 
-<div class="daily-nav daily-nav-dev"><a href="index.html">← index</a> &nbsp;·&nbsp; <a href="state-of-ai.html">🌐 state of AI</a></div>
+<div class="daily-nav daily-nav-dev"><a href="index.html">← index</a> &nbsp;·&nbsp; <a href="state-of-ai.html">🌐 state of AI</a> &nbsp;·&nbsp; <a href="sources.html">📚 sources</a></div>
 
 # AI News — Stats
 
-_Generated 2026-05-16 05:57 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-16 22:28 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 1829
-- **Enriched:** 1465 (80%)
-- **Taste-rated:** 1006 (55%)
-- **Researched:** 130 (7%)
-- **Status (candidate / rejected / published / duplicate):** 242 / 1587 / 0 / 0
-- **Published bullets (all-time):** 421 (last 7d: 197)
+- **Discovery items (all-time):** 1897
+- **Enriched:** 1516 (79%)
+- **Taste-rated:** 1057 (55%)
+- **Researched:** 137 (7%)
+- **Status (candidate / rejected / published / duplicate):** 310 / 1587 / 0 / 0
+- **Published bullets (all-time):** 424 (last 7d: 200)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,8 +22,8 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-05-16 | 68 | 37 (54%) | 37 (54%) | 7 (10%) |
-| 2026-05-15 | 107 | 63 (58%) | 63 (58%) | 6 (5%) |
+| 2026-05-16 | 136 | 85 (62%) | 85 (62%) | 14 (10%) |
+| 2026-05-15 | 107 | 66 (61%) | 66 (61%) | 6 (5%) |
 | 2026-05-14 | 67 | 47 (70%) | 47 (70%) | 5 (7%) |
 | 2026-05-13 | 155 | 128 (82%) | 128 (82%) | 14 (9%) |
 | 2026-05-12 | 61 | 53 (86%) | 53 (86%) | 6 (9%) |
@@ -38,7 +38,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Claude Code | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
-| 2026-05-16 | 1 | 3 | 3 | 8 | 15 |
+| 2026-05-16 | 2 | 5 | 3 | 8 | 18 |
 | 2026-05-15 | 1 | 4 | 3 | 7 | 15 |
 | 2026-05-14 | 2 | 3 | 3 | 8 | 16 |
 | 2026-05-13 | 3 | 9 | 9 | 24 | 45 |
@@ -54,21 +54,21 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 
 | Creator | Source | Items (30d) |
 |---|---|---:|
-| /r/AI_Agents | `reddit` | 68 |
-| /r/LangChain | `reddit` | 68 |
-| /r/LocalLLaMA | `reddit` | 64 |
-| /r/ollama | `reddit` | 64 |
-| /r/OpenAI | `reddit` | 63 |
-| /r/ChatGPT | `reddit` | 62 |
-| /r/singularity | `reddit` | 61 |
-| /r/LocalLLM | `reddit` | 59 |
-| /r/Anthropic | `reddit` | 57 |
-| /r/MachineLearning | `reddit` | 57 |
+| /r/AI_Agents | `reddit` | 71 |
+| /r/LangChain | `reddit` | 71 |
+| /r/LocalLLaMA | `reddit` | 67 |
+| /r/ollama | `reddit` | 67 |
+| /r/OpenAI | `reddit` | 66 |
+| /r/ChatGPT | `reddit` | 65 |
+| /r/singularity | `reddit` | 63 |
+| /r/LocalLLM | `reddit` | 62 |
+| /r/Anthropic | `reddit` | 59 |
+| /r/MachineLearning | `reddit` | 59 |
+| /r/Artificial | `reddit` | 57 |
+| /r/ClaudeAI | `reddit` | 57 |
 | Simon Willison | `rss` | 56 |
-| /r/Artificial | `reddit` | 55 |
-| /r/ClaudeAI | `reddit` | 54 |
-| /r/ClaudeHomies | `reddit` | 38 |
-| OpenAI blog | `rss` | 38 |
+| OpenAI blog | `rss` | 42 |
+| /r/ClaudeHomies | `reddit` | 40 |
 
 
 ## Rejection reasons (all-time)
@@ -83,4 +83,4 @@ What got filtered out before reaching the picker. `stale` is the auto-reject for
 
 ---
 
-_Reference pages: [state of AI](state-of-ai.html) · [index](index.html)_
+_Reference pages: [state of AI](state-of-ai.html) · [sources](sources.html) · [index](index.html)_
