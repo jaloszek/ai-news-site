@@ -27,6 +27,7 @@
 | Ling-2.6-1T (inclusionAI) | 1T-param MoE | MIT; MLA+Linear Attn cuts VRAM; SOTA SWE-bench Verified + TAU2-Bench |
 | NVIDIA Star Elastic | 30B/23B/12B | single 58.9 GB ckpt, NVFP4 18.7 GB; 360× cheaper to train than 3 runs |
 | DeepSeek V4 | 1.6T MoE | FP4 QAT from training start; SwiGLU Clamping+mHC; 9.5x lower VRAM vs V3 |
+| Gemma 4 E4B/27B | 4B-27B | Google; KV sharing + mHC arch; E4B ~200ms TTFT on Jetson Orin NX 16GB; routes 65% local coding tasks |
 
 ## Coding agents / harnesses
 
@@ -55,10 +56,10 @@
 
 - **Teaching Why (Anthropic)**: 1M-conv study; Opus 4 blackmail 96%→3% via reasoning-retrain; Haiku 4.5+ = 0%
 - **DoD exclusion (Anthropic, 2026-05)**: refused weapons autonomy/surveillance; sued; White House reconciliation underway
-- **White House (2026-05)**: blocked Mythos rollout to 70 orgs; Project Glasswing $100M defensive cyber
-- **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; 50% task horizon ≥16h; 271 Firefox vulns (all patched Firefox 150)
+- **White House (2026-05)**: blocked Mythos rollout to 70 orgs; $100M Project Glasswing
+- **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; 16h+ task horizon; 271 Firefox vulns patched
 - **LLM self-replication (Palisade, 2026-05)**: Qwen 2.5-72B 90% / Llama 3.1-70B 50%; single-prompt autonomous chains
-- **First AI-authored zero-day (2026-05-13)**: Python 2FA bypass in open-source web admin tool; fingerprinted as LLM-authored by hallucinated CVSS score; Google TI disrupted planned mass-exploitation.
+- **First AI zero-day (2026-05-13)**: LLM-authored Python 2FA bypass in open-source admin tool; Google TI disrupted planned mass exploitation
 - **AI liability (2026-05)**: Gavalas v. Gemini (wrongful death); FSU v. OpenAI (civil + FL AG criminal)
 - **TanStack SLSA (2026-05-14)**: TeamPCP used CI/CD OIDC to publish 84 malicious @tanstack/* packages with valid SLSA provenance; caught OpenAI Codex signing keys
 - **Mythos macOS exploit (2026-05-15)**: root on Apple M5 in 5 days; two kernel vulns chained; credited in macOS 26.5 security notes
@@ -66,12 +67,12 @@
 ## Community / industry trends
 
 - Anthropic: $30B ARR Q1-2026 (+233% YoY), $1T secondary valuation
-- Uber burned 2026 AI coding budget in 4 months; Claude Code + Cursor $500-$2k/engineer/month, 95% engineer adoption
+- Uber burned 2026 AI coding budget in 4 months; Claude Code + Cursor $500-$2k/eng/month, 95% adoption
 - **ProgramBench (Meta/Stanford, 2026-05)**: ffmpeg/SQLite/ripgrep from scratch; all frontier models 0% full completion; GPT-5.5 high first
 - China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
 - Gemini Intelligence (Google, 2026-05-13): platform AI layer for Android; multi-step cross-app tasks; Galaxy S26 + Pixel 10, summer 2026
 - arXiv (2026-05-15): 1-year submission ban for papers with incontrovertible LLM errors; 10x rise in AI-hallucinated citations since 2023
-- Anthropic Gates Foundation (2026-05-16): $200M, 4-year; global health (malaria/TB forecasting), K-12 literacy apps, agricultural AI
+- Anthropic Gates Foundation (2026-05-16): $200M, 4-year; global health (malaria/TB), K-12 literacy, agricultural AI
 - Microsoft cancelled Claude Code for Experiences+Devices (June 30 2026); mandated GitHub Copilot CLI; Foundry API stays
 - Anthropic pricing (June 15 2026): claude -p/CI usage moves to separate $20/$100/$200 credits; Pro stays $20/mo
 - OpenAI personal finance (May 2026): ChatGPT Pro US; bank account linking; AI spending insights

@@ -4,15 +4,15 @@
 
 # AI News — Stats
 
-_Generated 2026-05-17 13:12 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-17 15:52 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 1964
-- **Enriched:** 1627 (82%)
-- **Taste-rated:** 1168 (59%)
-- **Researched:** 147 (7%)
-- **Status (candidate / rejected / published / duplicate):** 310 / 1654 / 0 / 0
+- **Discovery items (all-time):** 1999
+- **Enriched:** 1642 (82%)
+- **Taste-rated:** 1183 (59%)
+- **Researched:** 150 (7%)
+- **Status (candidate / rejected / published / duplicate):** 345 / 1654 / 0 / 0
 - **Published bullets (all-time):** 437 (last 7d: 166)
 
 
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-05-17 | 67 | 51 (76%) | 51 (76%) | 6 (8%) |
+| 2026-05-17 | 102 | 66 (64%) | 66 (64%) | 9 (8%) |
 | 2026-05-16 | 136 | 119 (87%) | 119 (87%) | 18 (13%) |
 | 2026-05-15 | 107 | 92 (85%) | 92 (85%) | 6 (5%) |
 | 2026-05-14 | 67 | 47 (70%) | 47 (70%) | 5 (7%) |
@@ -54,18 +54,18 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 
 | Creator | Source | Items (30d) |
 |---|---|---:|
+| /r/AI_Agents | `reddit` | 76 |
 | /r/LangChain | `reddit` | 76 |
-| /r/AI_Agents | `reddit` | 75 |
 | /r/LocalLLaMA | `reddit` | 71 |
-| /r/ollama | `reddit` | 70 |
-| /r/OpenAI | `reddit` | 69 |
-| /r/ChatGPT | `reddit` | 68 |
+| /r/ollama | `reddit` | 71 |
+| /r/OpenAI | `reddit` | 70 |
+| /r/ChatGPT | `reddit` | 69 |
+| /r/LocalLLM | `reddit` | 68 |
 | /r/singularity | `reddit` | 66 |
-| /r/LocalLLM | `reddit` | 65 |
-| /r/Anthropic | `reddit` | 63 |
-| /r/MachineLearning | `reddit` | 61 |
+| /r/Anthropic | `reddit` | 64 |
+| /r/MachineLearning | `reddit` | 62 |
+| /r/ClaudeAI | `reddit` | 60 |
 | /r/Artificial | `reddit` | 59 |
-| /r/ClaudeAI | `reddit` | 59 |
 | Simon Willison | `rss` | 56 |
 | OpenAI blog | `rss` | 42 |
 | /r/ClaudeHomies | `reddit` | 41 |
