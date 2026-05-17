@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-16 -->
+<!-- Last updated: 2026-05-17 -->
 
 # State of AI
 
@@ -14,7 +14,6 @@
 | Anthropic | Orbit/Jupiter (codenames) | 2026-05 | Orbit: proactive Cowork (Gmail/Slack/GitHub/Figma); Jupiter: pre-launch red team |
 | OpenAI | GPT-5.5 Instant | 2026-05 | ChatGPT default (replaces GPT-5.3 Instant); 52.5% fewer hallucinations; SWE-Bench Pro 58.6% |
 | OpenAI | GPT-Realtime-2 | 2026-05-08 | GPT-5-class voice reasoning API; also: GPT-4o-Transcribe, GPT-4o-Mini-TTS |
-| Mistral | Medium 3.5 | 2026-05-02 | 128B, 256k ctx, 77.6% SWE-Bench Verified |
 | Google | Gemini 3.2 Flash | 2026-05-05 | $0.25/M input; coding near 3.1 Pro; pre-formal-launch (I/O 2026-05-19) |
 | Thinking Machines | TML-Interaction-Small | 2026-05-12 | 276B/12B active; <0.4s voice latency vs 0.57s Gemini, 1.18s GPT-RT-2 |
 
@@ -60,6 +59,7 @@
 - **Mythos METR eval (2026-05-09)**: 32-step network attacks; 73% expert CTF; 50% task horizon ≥16h; 271 Firefox vulns (all patched Firefox 150)
 - **LLM self-replication (Palisade, 2026-05)**: Qwen 2.5-72B 90% / Llama 3.1-70B 50%; single-prompt autonomous chains
 - **First AI-authored zero-day (2026-05-13)**: Python 2FA bypass in open-source web admin tool; fingerprinted as LLM-authored by hallucinated CVSS score; Google TI disrupted planned mass-exploitation.
+- **AI liability (2026-05)**: Gavalas v. Gemini (wrongful death); FSU v. OpenAI (civil + FL AG criminal)
 - **TanStack SLSA (2026-05-14)**: TeamPCP used CI/CD OIDC to publish 84 malicious @tanstack/* packages with valid SLSA provenance; caught OpenAI Codex signing keys
 - **Mythos macOS exploit (2026-05-15)**: root on Apple M5 in 5 days; two kernel vulns chained; credited in macOS 26.5 security notes
 
@@ -67,7 +67,6 @@
 
 - Anthropic: $30B ARR Q1-2026 (+233% YoY), $1T secondary valuation
 - Uber burned 2026 AI coding budget in 4 months; Claude Code + Cursor $500-$2k/engineer/month, 95% engineer adoption
-- Cloudflare cut 1,100 jobs (20% workforce) after 600% AI-agent session growth in Q1 2026
 - **ProgramBench (Meta/Stanford, 2026-05)**: ffmpeg/SQLite/ripgrep from scratch; all frontier models 0% full completion; GPT-5.5 high first
 - China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
 - Gemini Intelligence (Google, 2026-05-13): platform AI layer for Android; multi-step cross-app tasks; Galaxy S26 + Pixel 10, summer 2026
@@ -75,5 +74,6 @@
 - Anthropic Gates Foundation (2026-05-16): $200M, 4-year; global health (malaria/TB forecasting), K-12 literacy apps, agricultural AI
 - Microsoft cancelled Claude Code for Experiences+Devices (June 30 2026); mandated GitHub Copilot CLI; Foundry API stays
 - Anthropic pricing (June 15 2026): claude -p/CI usage moves to separate $20/$100/$200 credits; Pro stays $20/mo
+- OpenAI personal finance (May 2026): ChatGPT Pro US; bank account linking; AI spending insights
 
 <!-- End of state — keep under 200 lines / 6 KB. -->
