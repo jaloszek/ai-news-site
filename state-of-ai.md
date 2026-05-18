@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-17 -->
+<!-- Last updated: 2026-05-18 -->
 
 # State of AI
 
@@ -45,7 +45,6 @@
 - Claude Platform on AWS (GA, 2026-05-13): any AWS account; 16+ regions; Managed Agents, Files API, MCP connector; no separate Anthropic credentials
 - AWS AgentCore Payments (Bedrock preview): agent-held Coinbase/Stripe wallets; x402 micropayments to APIs/MCP
 - Cerebras (2026-05-16): $60B IPO (CBRS closed $280 day one); WSE-3 wafer chips serve OpenAI trillion-param models; largest tech IPO of 2026
-- Nvidia (2026): $40B+ equity in AI infra; $30B OpenAI, $3.2B Corning fiber, $2.1B IREN; locks Vera Rubin into supply chain
 
 ## Agent patterns / frameworks
 
@@ -75,6 +74,7 @@
 - Anthropic Gates Foundation (2026-05-16): $200M, 4-year; global health (malaria/TB), K-12 literacy, agricultural AI
 - Microsoft cancelled Claude Code for Experiences+Devices (June 30 2026); mandated GitHub Copilot CLI; Foundry API stays
 - Anthropic pricing (June 15 2026): claude -p/CI usage moves to separate $20/$100/$200 credits; Pro stays $20/mo
-- OpenAI personal finance (May 2026): ChatGPT Pro US; bank account linking; AI spending insights
+- Datadog 2026 survey: 69% enterprises run 3+ models; Claude +23pp enterprise share; OpenAI still leads at 63%
+- OpenAI DeployCo (GA 2026-05-11): $10B valuation; 150 forward-deployed engineers (acquired Tomoro)
 
 <!-- End of state — keep under 200 lines / 6 KB. -->
