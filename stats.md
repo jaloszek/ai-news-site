@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-05-21 11:01 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-21 11:55 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
 - **Discovery items (all-time):** 2339
-- **Enriched:** 1868 (79%)
-- **Taste-rated:** 1408 (60%)
-- **Researched:** 169 (7%)
+- **Enriched:** 1941 (82%)
+- **Taste-rated:** 1481 (63%)
+- **Researched:** 175 (7%)
 - **Status (candidate / rejected / published / duplicate):** 225 / 2114 / 0 / 0
-- **Published bullets (all-time):** 491 (last 7d: 116)
+- **Published bullets (all-time):** 507 (last 7d: 132)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,8 +22,8 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-05-21 | 147 | 89 (60%) | 89 (60%) | 7 (4%) |
-| 2026-05-19 | 78 | 49 (62%) | 49 (62%) | 7 (8%) |
+| 2026-05-21 | 147 | 138 (93%) | 138 (93%) | 13 (8%) |
+| 2026-05-19 | 78 | 73 (93%) | 73 (93%) | 7 (8%) |
 | 2026-05-18 | 97 | 63 (64%) | 62 (63%) | 2 (2%) |
 | 2026-05-17 | 120 | 90 (75%) | 90 (75%) | 12 (10%) |
 | 2026-05-16 | 136 | 120 (88%) | 120 (88%) | 18 (13%) |
@@ -37,6 +37,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Claude Code | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
+| 2026-05-21 | 0 | 5 | 3 | 8 | 16 |
 | 2026-05-20 | 3 | 5 | 3 | 8 | 19 |
 | 2026-05-19 | 2 | 4 | 3 | 8 | 17 |
 | 2026-05-18 | 0 | 5 | 3 | 8 | 16 |

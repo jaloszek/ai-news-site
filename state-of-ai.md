@@ -13,9 +13,7 @@
 | Anthropic | Sonnet 4.6 | 2026-Q1 | mid-tier, default for most tools |
 | OpenAI | GPT-5.5 Instant | 2026-05 | ChatGPT default (replaces GPT-5.3 Instant); 52.5% fewer hallucinations; SWE-Bench Pro 58.6% |
 | OpenAI | GPT-5.5-Cyber | 2026-05 | Security variant; EU vetted-team preview; Mythos 18/41 n-day exploits vs GPT-5.5 1/41 |
-| OpenAI | GPT-Realtime-2 | 2026-05-08 | GPT-5-class voice reasoning API; also: GPT-4o-Transcribe, GPT-4o-Mini-TTS |
 | Google | Gemini 3.5 Flash/Omni | 2026-05-20 | 76.2% Terminal-Bench 2.1; 4× token speed vs 3.1 Pro; Omni adds physics-aware video gen |
-| Thinking Machines | TML-Interaction-Small | 2026-05-12 | 276B/12B active; <0.4s voice latency vs 0.57s Gemini, 1.18s GPT-RT-2 |
 
 ## Open weights / local
 
@@ -32,7 +30,7 @@
 | Tool | Vendor | Status |
 |---|---|---|
 | Claude Code | Anthropic | v2.1.146; /code-review (effort levels); claude agents --json; bg /resume; Fast mode→Opus 4.7 |
-| Claude for Legal | Anthropic | GA 2026-05-12; 20+ MCP connectors (Ironclad, Relativity, Thomson Reuters); 12 practice-area plugins |
+| Claude Managed Agents | Anthropic | self-hosted sandboxes (beta); MCP tunnels (research preview); Cloudflare/Modal/Vercel backends |
 | Claude for Small Business | Anthropic | GA 2026-05-13; 15 agentic workflows (QuickBooks, PayPal, HubSpot, Canva, DocuSign) |
 | Stainless (acq. Anthropic) | Anthropic | Acquired 2026-05-19; SDK generator behind Anthropic + OpenAI + Google SDKs; hosted service winds down |
 | Codex CLI | OpenAI | 0.130.0; remote-control server; AWS Bedrock auth; /goal; GPT-5.5 default |
@@ -45,12 +43,13 @@
 - AWS AgentCore Payments (Bedrock preview): agent-held Coinbase/Stripe wallets; x402 micropayments to APIs/MCP
 - Cerebras (2026-05-16): $60B IPO (CBRS closed $280 day one); WSE-3 wafer chips serve OpenAI trillion-param models; largest tech IPO of 2026
 - **llama.cpp MTP** (2026-05-17): merged; 1.5×-2.9× throughput on Qwen3.6; built-in heads, no extra VRAM
+- AMD Ryzen AI Halo PC: $3,999/128GB unified memory; holds 70B+ params in RAM for local inference
 
 ## Agent patterns / frameworks
 
 - **MCP (Model Context Protocol)** — standard tool-call wrapper across harnesses
-- **LangChain v1** (2026-05-10): stable public API after years of breaking changes
 - **agentmemory** (OSS): 96.2% LongMemEval; compresses session history into searchable store; reinjects on restart
+- **GitHub Spec Kit** (97K stars, 2026-05): Specify-Plan-Tasks flow before code gen; works with Claude Code, Copilot, Gemini CLI
 
 ## Safety / alignment
 
@@ -65,7 +64,7 @@
 
 ## Community / industry trends
 
-- Anthropic: $30B ARR Q1-2026 (+233% YoY), $1T secondary valuation
+- Anthropic: $30B ARR Q1-2026 (+233% YoY), $1T valuation; first profitable quarter
 - **ProgramBench (Meta/Stanford, 2026-05)**: ffmpeg/SQLite/ripgrep from scratch; all frontier models 0% full completion; GPT-5.5 high first
 - China denied access to Anthropic's newest model on national-security grounds (2026-05-13); first documented hard US export restriction on a frontier lab
 - arXiv (2026-05-15): 1-year submission ban for papers with incontrovertible LLM errors; 10x rise in AI-hallucinated citations since 2023
@@ -75,5 +74,7 @@
 - OpenAI unnamed reasoning model disproves 80-year-old Erdős conjecture (2026-05-20); <$1,000 compute; externally verified
 - KPMG deploys Claude to 276,000 employees via Digital Gateway (2026-05-20); preferred Anthropic partner for PE portfolio
 - OpenAI preparing S-1 IPO filing (2026-05); Bloomberg reports targeting fall 2026 debut
+- Google replaced Vertex AI with Gemini Enterprise Agent Platform at I/O 2026
+- 74% enterprises rolled back live AI agents post-deployment (Sinch survey, 2,527 respondents, 2026-05)
 
 <!-- End of state — keep under 200 lines / 6 KB. -->
