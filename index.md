@@ -46,7 +46,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>🟢 ChatGPT Plus free in Malta</li><li>🟢 ChatGPT bank-account linking</li><li>🔒 Mythos Preview on Vertex AI</li><li>💬 DJ Claude quits AI radio</li><li>🔒 9/428 LLM API routers malicious</li><li>🔧 Vercel Zero agent language</li><li>🟡 OPPO X-OmniClaw on-device</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>✨ Claude +23pp enterprise share</li><li>🔵 Google DeepMind APAC Accelerator</li><li>🎥 Alex Albert on next Claude</li><li>🛠 llama.cpp MTP prefill fix</li><li>🛠 macOS AI agent sandbox</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-19.html"><div class="cal-num">19</div><ul class="cal-highlights"><li>🛠 CC v2.1.144 bg resume</li><li>💜 Anthropic acquires Stainless</li><li>🟢 OpenAI+Dell Codex enterprise</li><li>🤖 AI virtual town 15-day study</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-05-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>🛠 CC /code-review replaces /simplify</li><li>🛠 claude agents --json</li><li>💜 KPMG 276k employees + Claude</li><li>✨ OpenAI disproves Erdős conjecture</li><li>🔵 Gemini 3.5 + Google I/O</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">22</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
