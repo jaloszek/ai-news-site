@@ -29,7 +29,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.148; /code-review --comment inline PR; agents --json; bg auto-restart; Fast mode→Opus 4.7 |
+| Claude Code | Anthropic | v2.1.149; /code-review --comment inline PR; agents --json; bg auto-restart; Fast mode→Opus 4.7 |
 | Claude Managed Agents | Anthropic | self-hosted sandboxes (beta); MCP tunnels (research preview); Cloudflare/Modal/Vercel backends |
 | Claude for Small Business | Anthropic | GA 2026-05-13; 15 agentic workflows (QuickBooks, PayPal, HubSpot, Canva, DocuSign) |
 | Stainless (acq. Anthropic) | Anthropic | Acquired 2026-05-19; SDK generator behind Anthropic + OpenAI + Google SDKs; hosted service winds down |
