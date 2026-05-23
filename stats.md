@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-05-22 09:03 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-23 13:21 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 2433
-- **Enriched:** 2000 (82%)
+- **Discovery items (all-time):** 2441
+- **Enriched:** 2000 (81%)
 - **Taste-rated:** 1540 (63%)
 - **Researched:** 181 (7%)
-- **Status (candidate / rejected / published / duplicate):** 241 / 2192 / 0 / 0
-- **Published bullets (all-time):** 525 (last 7d: 134)
+- **Status (candidate / rejected / published / duplicate):** 249 / 2192 / 0 / 0
+- **Published bullets (all-time):** 525 (last 7d: 119)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,13 +22,13 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
+| 2026-05-23 | 8 | 0 (0%) | 0 (0%) | 0 (0%) |
 | 2026-05-22 | 94 | 59 (62%) | 59 (62%) | 4 (4%) |
 | 2026-05-21 | 147 | 138 (93%) | 138 (93%) | 15 (10%) |
 | 2026-05-19 | 78 | 73 (93%) | 73 (93%) | 7 (8%) |
 | 2026-05-18 | 97 | 63 (64%) | 62 (63%) | 2 (2%) |
 | 2026-05-17 | 120 | 90 (75%) | 90 (75%) | 12 (10%) |
 | 2026-05-16 | 136 | 120 (88%) | 120 (88%) | 18 (13%) |
-| 2026-05-15 | 107 | 92 (85%) | 92 (85%) | 6 (5%) |
 
 
 ## Published (last 7 days)
@@ -44,7 +44,6 @@ What the picker actually shipped to the site, by section.
 | 2026-05-18 | 0 | 5 | 3 | 8 | 16 |
 | 2026-05-17 | 0 | 4 | 3 | 8 | 15 |
 | 2026-05-16 | 2 | 5 | 3 | 8 | 18 |
-| 2026-05-15 | 1 | 4 | 3 | 7 | 15 |
 
 
 ## Top creators (last 30 days)

@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-22 -->
+<!-- Last updated: 2026-05-23 -->
 
 # State of AI
 
