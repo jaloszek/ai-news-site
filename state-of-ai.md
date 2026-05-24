@@ -36,6 +36,7 @@
 | Codex CLI | OpenAI | 0.130.0; remote-control server; AWS Bedrock auth; /goal; GPT-5.5 default |
 | Agent 365 | Microsoft | GA 2026-05; $15/user/month; control plane for AI agents; E7 ($99) bundles Copilot Cowork (with Anthropic) |
 | Antigravity 2.0 | Google | GA 2026-05-20; desktop + Go CLI + SDK; parallel subagent orchestration; AI Ultra $100/mo |
+| Hallmark | OSS | routes UI generation through 22 design themes and 65 anti-pattern quality gates; prevents generic-looking UIs |
 
 ## Infrastructure / inference
 
@@ -50,6 +51,8 @@
 - **MCP (Model Context Protocol)** — standard tool-call wrapper across harnesses
 - **agentmemory** (OSS): 96.2% LongMemEval; compresses session history into searchable store; reinjects on restart
 - **GitHub Spec Kit** (97K stars, 2026-05): Specify-Plan-Tasks flow before code gen; works with Claude Code, Copilot, Gemini CLI
+- **Claude Code Agent Teams**: enables multiple AI agents to collaborate on complex software projects in real-time
+- **MCP Servers with Claude Code**: step-by-step tutorial for building Model Context Protocol servers
 
 ## Safety / alignment
 
