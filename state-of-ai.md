@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-23 -->
+<!-- Last updated: 2026-05-24 -->
 
 # State of AI
 
@@ -29,7 +29,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.149; /code-review --comment inline PR; agents --json; bg auto-restart; Fast mode→Opus 4.7 |
+| Claude Code | Anthropic | v2.1.150; enhanced agent coordination; /code-review --comment inline PR; agents --json; bg auto-restart; Fast mode→Opus 4.7 |
 | Claude Managed Agents | Anthropic | self-hosted sandboxes (beta); MCP tunnels (research preview); Cloudflare/Modal/Vercel backends |
 | Claude for Small Business | Anthropic | GA 2026-05-13; 15 agentic workflows (QuickBooks, PayPal, HubSpot, Canva, DocuSign) |
 | Stainless (acq. Anthropic) | Anthropic | Acquired 2026-05-19; SDK generator behind Anthropic + OpenAI + Google SDKs; hosted service winds down |
@@ -76,5 +76,3 @@
 - Google replaced Vertex AI with Gemini Enterprise Agent Platform at I/O 2026
 - 74% enterprises rolled back live AI agents post-deployment (Sinch survey, 2,527 respondents, 2026-05)
 - Karpathy joined Anthropic 2026-05-19 (pre-training); mission: use Claude to accelerate its own pre-training
-
-<!-- End of state — keep under 200 lines / 6 KB. -->
