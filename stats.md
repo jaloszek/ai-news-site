@@ -4,7 +4,7 @@
 
 # AI News — Stats
 
-_Generated 2026-05-24 07:58 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-24 08:47 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
@@ -13,7 +13,7 @@ _Generated 2026-05-24 07:58 UTC. Snapshot of the daily ingestion + enrichment + 
 - **Taste-rated:** 1540 (60%)
 - **Researched:** 181 (7%)
 - **Status (candidate / rejected / published / duplicate):** 206 / 2339 / 0 / 0
-- **Published bullets (all-time):** 538 (last 7d: 114)
+- **Published bullets (all-time):** 541 (last 7d: 117)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -37,7 +37,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Claude Code | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
-| 2026-05-24 | 1 | 2 | 3 | 7 | 13 |
+| 2026-05-24 | 2 | 4 | 3 | 7 | 16 |
 | 2026-05-22 | 2 | 5 | 3 | 8 | 18 |
 | 2026-05-21 | 0 | 5 | 3 | 8 | 16 |
 | 2026-05-20 | 3 | 5 | 3 | 8 | 19 |
