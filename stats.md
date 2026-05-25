@@ -4,12 +4,12 @@
 
 # AI News — Stats
 
-_Generated 2026-05-25 14:25 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-25 14:47 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
 - **Discovery items (all-time):** 2630
-- **Enriched:** 2187 (83%)
+- **Enriched:** 2200 (83%)
 - **Taste-rated:** 1545 (58%)
 - **Researched:** 356 (13%)
 - **Status (candidate / rejected / published / duplicate):** 197 / 2433 / 0 / 0
@@ -23,7 +23,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
 | 2026-05-25 | 85 | 85 (100%) | 0 (0%) | 81 (95%) |
-| 2026-05-24 | 104 | 91 (87%) | 0 (0%) | 72 (69%) |
+| 2026-05-24 | 104 | 104 (100%) | 0 (0%) | 72 (69%) |
 | 2026-05-23 | 8 | 8 (100%) | 0 (0%) | 8 (100%) |
 | 2026-05-22 | 94 | 62 (65%) | 59 (62%) | 18 (19%) |
 | 2026-05-21 | 147 | 138 (93%) | 138 (93%) | 15 (10%) |
