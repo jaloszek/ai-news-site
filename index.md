@@ -51,7 +51,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🛠 CC /code-review --comment</li><li>🤖 Karpathy joins Anthropic</li><li>💰 Exa/Modal/TurboPuffer</li><li>🧪 MoE routing study</li><li>🔒 Meta vs Heretic</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.148 patch</li><li>✨ ByteDance Lance 3B unified model</li><li>🚀 Google Jules async coding agent</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.148 patch</li><li>📧 Karpathy's neural networks course</li><li>📰 AI alignment flourishing paper</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-05-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>📧 TabPFN-3: Predict anything from structured data</li><li>📧 Meta releases SAM3 open-source</li><li>🎥 Run Qwen 2.5 3B Instruct on Kaggle T4 GPU</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
