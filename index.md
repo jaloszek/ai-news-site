@@ -53,7 +53,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.148 patch</li><li>📧 Karpathy's neural networks course</li><li>📰 AI alignment flourishing paper</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>🛠 CC /usage detailed tracking</li><li>📧 TabPFN-3 structured data</li><li>📧 Meta SAM3 open-source</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
-    <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-05-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🚀 Day 1 | Build Your First AI Agent in 2026</li><li>🎥 Google I/O 2026 Highlights: Gemini AI</li><li>Android XR Glasses</li><li>💬 The Memento problem in AI agents</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">29</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>

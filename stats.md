@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-05-26 21:25 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-27 06:47 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 2810
-- **Enriched:** 2200 (78%)
+- **Discovery items (all-time):** 2857
+- **Enriched:** 2200 (77%)
 - **Taste-rated:** 1545 (54%)
 - **Researched:** 356 (12%)
-- **Status (candidate / rejected / published / duplicate):** 369 / 2441 / 0 / 0
-- **Published bullets (all-time):** 561 (last 7d: 106)
+- **Status (candidate / rejected / published / duplicate):** 312 / 2545 / 0 / 0
+- **Published bullets (all-time):** 572 (last 7d: 100)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,13 +22,13 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
+| 2026-05-27 | 47 | 0 (0%) | 0 (0%) | 0 (0%) |
 | 2026-05-26 | 112 | 0 (0%) | 0 (0%) | 0 (0%) |
 | 2026-05-25 | 153 | 85 (55%) | 0 (0%) | 81 (52%) |
 | 2026-05-24 | 104 | 104 (100%) | 0 (0%) | 72 (69%) |
 | 2026-05-23 | 8 | 8 (100%) | 0 (0%) | 8 (100%) |
 | 2026-05-22 | 94 | 62 (65%) | 59 (62%) | 18 (19%) |
 | 2026-05-21 | 147 | 138 (93%) | 138 (93%) | 15 (10%) |
-| 2026-05-19 | 78 | 73 (93%) | 73 (93%) | 7 (8%) |
 
 
 ## Published (last 7 days)
@@ -37,12 +37,12 @@ What the picker actually shipped to the site, by section.
 
 | Date | Claude Code | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
+| 2026-05-27 | 0 | 0 | 3 | 8 | 11 |
 | 2026-05-25 | 1 | 4 | 3 | 8 | 16 |
 | 2026-05-24 | 3 | 7 | 3 | 7 | 20 |
 | 2026-05-22 | 2 | 5 | 3 | 8 | 18 |
 | 2026-05-21 | 0 | 5 | 3 | 8 | 16 |
 | 2026-05-20 | 3 | 5 | 3 | 8 | 19 |
-| 2026-05-19 | 2 | 4 | 3 | 8 | 17 |
 
 
 ## Top creators (last 30 days)
@@ -51,21 +51,21 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 
 | Creator | Source | Items (30d) |
 |---|---|---:|
-| /r/AI_Agents | `reddit` | 102 |
-| /r/LangChain | `reddit` | 102 |
-| /r/LocalLLaMA | `reddit` | 99 |
+| /r/LangChain | `reddit` | 104 |
+| /r/AI_Agents | `reddit` | 103 |
+| /r/LocalLLaMA | `reddit` | 100 |
+| /r/LocalLLM | `reddit` | 97 |
 | /r/ollama | `reddit` | 97 |
-| /r/LocalLLM | `reddit` | 95 |
-| /r/ChatGPT | `reddit` | 93 |
-| /r/OpenAI | `reddit` | 92 |
-| /r/singularity | `reddit` | 90 |
-| /r/Anthropic | `reddit` | 86 |
-| /r/ClaudeAI | `reddit` | 86 |
-| /r/MachineLearning | `reddit` | 86 |
-| /r/Artificial | `reddit` | 85 |
-| /r/ClaudeHomies | `reddit` | 56 |
+| /r/ChatGPT | `reddit` | 96 |
+| /r/OpenAI | `reddit` | 93 |
+| /r/singularity | `reddit` | 91 |
+| /r/Artificial | `reddit` | 88 |
+| /r/ClaudeAI | `reddit` | 88 |
+| /r/MachineLearning | `reddit` | 88 |
+| /r/Anthropic | `reddit` | 87 |
+| /r/ClaudeHomies | `reddit` | 58 |
 | Simon Willison | `rss` | 56 |
-| OpenAI blog | `rss` | 50 |
+| Julian Goldie SEO | `youtube` | 50 |
 
 
 ## Rejection reasons (all-time)
@@ -74,7 +74,7 @@ What got filtered out before reaching the picker. `stale` is the auto-reject for
 
 | Reason | Count |
 |---|---:|
-| `stale` | 2438 |
+| `stale` | 2542 |
 | `off_topic` | 3 |
 
 
