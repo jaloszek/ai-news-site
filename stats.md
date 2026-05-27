@@ -4,15 +4,15 @@
 
 # AI News — Stats
 
-_Generated 2026-05-27 06:47 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-27 07:37 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 2857
-- **Enriched:** 2200 (77%)
-- **Taste-rated:** 1545 (54%)
+- **Discovery items (all-time):** 2867
+- **Enriched:** 2200 (76%)
+- **Taste-rated:** 1545 (53%)
 - **Researched:** 356 (12%)
-- **Status (candidate / rejected / published / duplicate):** 312 / 2545 / 0 / 0
+- **Status (candidate / rejected / published / duplicate):** 322 / 2545 / 0 / 0
 - **Published bullets (all-time):** 572 (last 7d: 100)
 
 
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-05-27 | 47 | 0 (0%) | 0 (0%) | 0 (0%) |
+| 2026-05-27 | 57 | 0 (0%) | 0 (0%) | 0 (0%) |
 | 2026-05-26 | 112 | 0 (0%) | 0 (0%) | 0 (0%) |
 | 2026-05-25 | 153 | 85 (55%) | 0 (0%) | 81 (52%) |
 | 2026-05-24 | 104 | 104 (100%) | 0 (0%) | 72 (69%) |
@@ -54,8 +54,8 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 | /r/LangChain | `reddit` | 104 |
 | /r/AI_Agents | `reddit` | 103 |
 | /r/LocalLLaMA | `reddit` | 100 |
-| /r/LocalLLM | `reddit` | 97 |
-| /r/ollama | `reddit` | 97 |
+| /r/LocalLLM | `reddit` | 98 |
+| /r/ollama | `reddit` | 98 |
 | /r/ChatGPT | `reddit` | 96 |
 | /r/OpenAI | `reddit` | 93 |
 | /r/singularity | `reddit` | 91 |
