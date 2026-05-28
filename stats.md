@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-05-27 07:37 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-28 06:51 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 2867
-- **Enriched:** 2200 (76%)
-- **Taste-rated:** 1545 (53%)
+- **Discovery items (all-time):** 2966
+- **Enriched:** 2200 (74%)
+- **Taste-rated:** 1545 (52%)
 - **Researched:** 356 (12%)
-- **Status (candidate / rejected / published / duplicate):** 322 / 2545 / 0 / 0
-- **Published bullets (all-time):** 572 (last 7d: 100)
+- **Status (candidate / rejected / published / duplicate):** 268 / 2698 / 0 / 0
+- **Published bullets (all-time):** 572 (last 7d: 81)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,6 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
+| 2026-05-28 | 99 | 0 (0%) | 0 (0%) | 0 (0%) |
 | 2026-05-27 | 57 | 0 (0%) | 0 (0%) | 0 (0%) |
 | 2026-05-26 | 112 | 0 (0%) | 0 (0%) | 0 (0%) |
 | 2026-05-25 | 153 | 85 (55%) | 0 (0%) | 81 (52%) |
@@ -42,7 +43,6 @@ What the picker actually shipped to the site, by section.
 | 2026-05-24 | 3 | 7 | 3 | 7 | 20 |
 | 2026-05-22 | 2 | 5 | 3 | 8 | 18 |
 | 2026-05-21 | 0 | 5 | 3 | 8 | 16 |
-| 2026-05-20 | 3 | 5 | 3 | 8 | 19 |
 
 
 ## Top creators (last 30 days)
@@ -51,21 +51,21 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 
 | Creator | Source | Items (30d) |
 |---|---|---:|
-| /r/LangChain | `reddit` | 104 |
-| /r/AI_Agents | `reddit` | 103 |
-| /r/LocalLLaMA | `reddit` | 100 |
-| /r/LocalLLM | `reddit` | 98 |
-| /r/ollama | `reddit` | 98 |
-| /r/ChatGPT | `reddit` | 96 |
-| /r/OpenAI | `reddit` | 93 |
-| /r/singularity | `reddit` | 91 |
-| /r/Artificial | `reddit` | 88 |
-| /r/ClaudeAI | `reddit` | 88 |
-| /r/MachineLearning | `reddit` | 88 |
-| /r/Anthropic | `reddit` | 87 |
-| /r/ClaudeHomies | `reddit` | 58 |
+| /r/LangChain | `reddit` | 107 |
+| /r/AI_Agents | `reddit` | 106 |
+| /r/LocalLLaMA | `reddit` | 103 |
+| /r/ollama | `reddit` | 101 |
+| /r/LocalLLM | `reddit` | 100 |
+| /r/ChatGPT | `reddit` | 99 |
+| /r/OpenAI | `reddit` | 96 |
+| /r/singularity | `reddit` | 94 |
+| /r/Artificial | `reddit` | 91 |
+| /r/ClaudeAI | `reddit` | 91 |
+| /r/MachineLearning | `reddit` | 91 |
+| /r/Anthropic | `reddit` | 90 |
+| /r/ClaudeHomies | `reddit` | 61 |
 | Simon Willison | `rss` | 56 |
-| Julian Goldie SEO | `youtube` | 50 |
+| OpenAI blog | `rss` | 54 |
 
 
 ## Rejection reasons (all-time)
@@ -74,7 +74,7 @@ What got filtered out before reaching the picker. `stale` is the auto-reject for
 
 | Reason | Count |
 |---|---:|
-| `stale` | 2542 |
+| `stale` | 2695 |
 | `off_topic` | 3 |
 
 
