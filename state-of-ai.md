@@ -1,7 +1,7 @@
 <!-- Generated/updated by `/update-state-of-ai`. Hard size cap: 200 lines / 6 KB. -->
 <!-- Format rules: tables and bullets only — NO prose paragraphs. Each row carries one fact. -->
 <!-- Purpose: ground-truth snapshot for /taste-bullets — what counts as "new" vs "already known". -->
-<!-- Last updated: 2026-05-25 -->
+<!-- Last updated: 2026-05-28 -->
 
 # State of AI
 
@@ -31,7 +31,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.150; enhanced agent coordination; /code-review --comment |
+| Claude Code | Anthropic | v2.1.153; git plugin skipLfs option; enhanced agent coordination |
 | Claude Managed Agents | Anthropic | self-hosted sandboxes (beta); MCP tunnels (preview) |
 | Claude for Small Business | Anthropic | GA 2026-05-13; 15 agentic workflows |
 | Stainless (acq. Anthropic) | Anthropic | Acquired 2026-05-19; SDK generator; hosted service winds down |
@@ -49,6 +49,8 @@
 - llama.cpp MTP (2026-05-17): merged; 1.5×-2.9× throughput on Qwen3.6
 - AMD Ryzen AI Halo PC: $3,999/128GB unified memory; holds 70B+ params in RAM
 - Google Antigravity CLI (2026-05-25): free Gemini 3.5 Flash access
+- Nemotron Super 120B: NVIDIA model available via HuggingFace; strong coding performance
+- Lambda Labs GPU Cloud: H100 clusters from $1.99/hr; optimized for LLM inference
 
 ## Agent patterns / frameworks
 
@@ -57,6 +59,8 @@
 - GitHub Spec Kit (97K stars, 2026-05): Specify-Plan-Tasks flow
 - Claude Code Agent Teams: enables real-time agent collaboration
 - MCP Servers with Claude Code: step-by-step tutorial
+- LangGraph 0.2.0: persistent state; human-in-the-loop; 10K+ GitHub stars
+- AutoGen 0.4: conversable agents; group chat; tool calling via JSON schema
 
 ## Safety / alignment
 
@@ -68,6 +72,8 @@
 - Mythos macOS exploit (2026-05-15): root on Apple M5 in 5 days
 - "Your agent is mine" (2604.08407): 9/428 LLM API routers inject payloads
 - DeepSeek isolation (2026-05-19): crafted prompt retrieves conv history
+- Stanford AI Index 2026: 42% orgs had AI incident; avg cost $4.3M per incident
+- EU AI Act enforcement (2026-05): first fines issued for prohibited AI systems
 
 ## Community / industry trends
 
@@ -83,3 +89,5 @@
 - Google replaced Vertex AI with Gemini Enterprise Agent Platform (I/O 2026)
 - 74% enterprises rolled back live AI agents post-deployment (Sinch survey)
 - Karpathy joined Anthropic 2026-05-19 (pre-training)
+- NVIDIA GTC 2026: Blackwell GPU launch; sovereign AI initiatives announced
+- Hugging Face Hall of Fame: adds top 10 open-source models of 2025-2026
