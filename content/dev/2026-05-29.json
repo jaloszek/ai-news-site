@@ -1,8 +1,8 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-29T02:29:53+00:00",
-  "candidate_count": 22,
-  "researched_count": 10,
+  "generated_at": "2026-05-29T21:24:18+00:00",
+  "candidate_count": 29,
+  "researched_count": 8,
   "published_count": 0,
   "section_limits": {
     "claude-code": 5,
@@ -13,31 +13,94 @@
   "candidate_multiplier": 2,
   "items": [
     {
-      "id": "6bf8a1bd047a72acf37d465d61973e1fe8ea3d27",
+      "id": "33b228088cfa5f50aa5c3efb77631ecd3978147a",
       "section": "claude-code",
       "source": "rss",
-      "title": "v2.1.153",
-      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
+      "title": "v2.1.154",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.154",
       "tags": [
         "origin:rss",
         "section:claude-code",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🛠 **[v2.1.153](https://github.com/anthropics/claude-code/releases/tag/v2.1.153)** — _Claude Code releases_. — Claude Code v2.1.153 adds skipLfs option to git plugin marketplace sources to skip Git LFS downloads during clone/update, shows one-time notice when npm global install can't auto-update, and provides COLUMNS/LINES environment variables for status line scripts to size output to terminal width.",
+      "bullet_md": "- 🛠 **[v2.1.154](https://github.com/anthropics/claude-code/releases/tag/v2.1.154)** — _Claude Code releases_. — Opus 4.8 now defaults to high effort with a new xhigh tier; fast mode delivers 2.5x speed for 2x the standard rate. Dynamic workflows orchestrate hundreds of parallel agents viewable via /workflows, `!` launches background shell sessions, and streaming tool execution is always on.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9903,
+        "recency_decay": 0.9732,
         "origin_weight": 1.5,
-        "total": 4.4903
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Changelog confirming Opus 4.8 as default with high/xhigh effort tiers and dynamic workflows. Official detail on the just-released features — extends state-of-ai's 'rumored' entry.",
+        "total": 5.5982
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T02:00:58Z",
+      "last_seen_at": "2026-05-29T21:10:11Z"
+    },
+    {
+      "id": "27f30742de981dd6335548d035ff67d692240159",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.157",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.157](https://github.com/anthropics/claude-code/releases/tag/v2.1.157)** — _Claude Code releases_. — Claude Code v2.1.157 adds automatic plugin loading from .claude/skills directories, a claude plugin init scaffolding command, and tab autocomplete for /plugin subcommands. The EnterWorktree tool can now switch between Claude-managed worktrees mid-session.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Claude Code changelog: auto plugin loading from .claude/skills, /plugin init scaffolding, tab autocomplete. Nice QoL but incremental.",
+        "total": 5.325
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-28T06:14:26Z",
-      "last_seen_at": "2026-05-29T02:00:58Z"
+      "first_seen_at": "2026-05-29T21:10:11Z",
+      "last_seen_at": "2026-05-29T21:10:11Z"
+    },
+    {
+      "id": "2d70dc244c4819b00757f9df647ee734949c88ff",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.156",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.156",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.156](https://github.com/anthropics/claude-code/releases/tag/v2.1.156)** — _Claude Code releases_. — Fixes an API error that occurred when Opus 4.8 modified thinking blocks during use. This is a targeted stability patch for users running Claude Code with Opus 4.8.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Minor stability patch for Opus 4.8 thinking-block modification. Niche bugfix only relevant if you hit the specific API error.",
+        "total": 5.025
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T02:00:58Z",
+      "last_seen_at": "2026-05-29T21:10:11Z"
     },
     {
       "id": "cd92a18e488e24ac1b4e817dd7ce5f459a2a7b14",
@@ -54,9 +117,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.7957,
+        "recency_decay": 0.6357,
         "origin_weight": 1.5,
-        "total": 4.2957
+        "taste_score": 0.87,
+        "taste_raw": 0.58,
+        "taste_reason": "Claude Code v2.1.152: /code-review --fix, /simplify, /reload-skills. Meaningful workflow improvements that apply review findings to working tree.",
+        "total": 5.0057
       },
       "flags": {
         "enriched": true,
@@ -65,6 +131,250 @@
       },
       "first_seen_at": "2026-05-27T06:22:48Z",
       "last_seen_at": "2026-05-28T07:30:24Z"
+    },
+    {
+      "id": "6bf8a1bd047a72acf37d465d61973e1fe8ea3d27",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.153",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.153](https://github.com/anthropics/claude-code/releases/tag/v2.1.153)** — _Claude Code releases_. — Claude Code v2.1.153 adds skipLfs option to git plugin marketplace sources to skip Git LFS downloads during clone/update, shows one-time notice when npm global install can't auto-update, and provides COLUMNS/LINES environment variables for status line scripts to size output to terminal width.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8303,
+        "origin_weight": 1.5,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Claude Code v2.1.153 skipLfs option for git plugins, COLUMNS/LINES for status line scripts. Useful incremental improvements but minor.",
+        "total": 4.9303
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-28T06:14:26Z",
+      "last_seen_at": "2026-05-29T21:10:11Z"
+    },
+    {
+      "id": "8192bab678fd686c3875e7fdb64bcb3ba2a3cd07",
+      "section": "ai-world",
+      "source": "email",
+      "title": "▸ Anthropic ships Claude Opus 4.8 with 2.5x faster mode and parallel subagents",
+      "canonical_url": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[▸ Anthropic ships Claude Opus 4.8 with 2.5x faster mode and parallel subagents](https://claude.com/blog/introducing-dynamic-workflows-in-claude-code)** — _AlphaSignal_. — Dynamic workflows let Claude fan work across hundreds of parallel subagents that cross-check results before merging — Jarred Sumner used the pattern to port 750K lines of Bun from Zig to Rust in eleven days with a 99.8% test pass rate.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 1.38,
+        "taste_raw": 0.92,
+        "taste_reason": "Official confirmation of Opus 4.8 release (previously just 'rumored' in state-of-ai) with concrete specs: 2.5× faster tier + parallel subagents. Hot drop from Anthropic's official blog.",
+        "total": 5.88
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T21:10:30Z",
+      "last_seen_at": "2026-05-29T21:10:30Z"
+    },
+    {
+      "id": "35636c7d865e76fb418d83835492620294976c6d",
+      "section": "ai-world",
+      "source": "email",
+      "title": "▸ Anthropic raises $65B at $965B valuation as Claude revenue hits $47B",
+      "canonical_url": "https://anthropic.com/news/series-h",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[▸ Anthropic raises $65B at $965B valuation as Claude revenue hits $47B](https://www.anthropic.com/news/series-h)** — _AlphaSignal_. — The round was co-led by Altimeter, Dragoneer, Greenoaks, and Sequoia, with $5B from Amazon; strategic investors Micron, Samsung, and SK hynix back compute expansions across AWS, Google TPU, and SpaceX Colossus clusters.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 1.35,
+        "taste_raw": 0.9,
+        "taste_reason": "Extends state-of-ai's '$30B ARR' row with massive financial milestone: $65B raise at $965B valuation, $47B revenue. Concrete numbers from Anthropic's official announcement.",
+        "total": 5.85
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T21:10:30Z",
+      "last_seen_at": "2026-05-29T21:10:30Z"
+    },
+    {
+      "id": "a985e89b1d105526d671fc8275f26fb996544746",
+      "section": "ai-world",
+      "source": "email",
+      "title": "▸ Cognition raises $1B at $26B valuation as Devin writes 89% of its own code",
+      "canonical_url": "https://cognition.ai/blog/series-d",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[▸ Cognition raises $1B at $26B valuation as Devin writes 89% of its own code](https://cognition.ai/blog/series-d)** — _AlphaSignal_. — Cognition closes a $1B Series D at a $26B valuation, reporting that its Devin AI coding agent now writes 89% of its own code. The milestone signals confidence in autonomous software engineering as a commercial product.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9341,
+        "origin_weight": 1.5,
+        "taste_score": 1.17,
+        "taste_raw": 0.78,
+        "taste_reason": "Cognition raises $1B at $26B with Devin writing 89% of its own code. State-of-ai doesn't mention Cognition. Concrete funding + self-coding metric — notable autonomous coding milestone.",
+        "total": 5.6041
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T02:01:18Z",
+      "last_seen_at": "2026-05-29T21:10:30Z"
+    },
+    {
+      "id": "e63fa88b5624cf9ab32216dc55f477a1a8cf049d",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "canonical_url": "https://openai.com/index/boston-childrens-hospital",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Boston Children’s uses AI to unlock new diagnoses](https://openai.com/index/boston-childrens-hospital)** — _OpenAI blog_. — Boston Childrens Hospital uses OpenAI technology to improve patient care and has diagnosed over 40 rare disease cases through AI-assisted analysis. Demonstrates a concrete clinical impact from LLM deployment in healthcare.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Concrete clinical outcome: 40 rare disease cases diagnosed via AI-assisted analysis at Boston Children's Hospital. Healthcare impact from LLM deployment.",
+        "total": 5.58
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T21:10:11Z",
+      "last_seen_at": "2026-05-29T21:10:11Z"
+    },
+    {
+      "id": "47d217ec5c99c779a3759f85b209941745be5239",
+      "section": "ai-world",
+      "source": "email",
+      "title": "4. LMMs Lab open-sources vision model that beats Qwen3-VL on video understanding by 44 points",
+      "canonical_url": "https://arxiv.org/abs/2605.25979",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[4. LMMs Lab open-sources vision model that beats Qwen3-VL on video understanding by 44 points](https://arxiv.org/abs/2605.25979)** — _AlphaSignal_. — LMMs Lab releases an open-source vision model that outperforms Qwen3-VL by 44 points on video understanding benchmarks. The result suggests open video models are closing the gap with proprietary vision systems.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Open-source vision model beating Qwen3-VL by 44 points on video understanding benchmarks. Concrete claim with arXiv paper — genuine research contribution.",
+        "total": 5.58
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T21:10:30Z",
+      "last_seen_at": "2026-05-29T21:10:30Z"
+    },
+    {
+      "id": "14f79de034bc40b5232b9ea599824e58e944e8fc",
+      "section": "ai-world",
+      "source": "email",
+      "title": "▸ Google DeepMind releases one embedding model for text, audio, video, and images",
+      "canonical_url": "https://arxiv.org/abs/2605.27295",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:google",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[▸ Google DeepMind releases one embedding model for text, audio, video, and images](https://arxiv.org/abs/2605.27295)** — _AlphaSignal_. — DeepMind releases a single embedding model that handles text, audio, video, and images in one unified representation. Simplifies retrieval pipelines by removing the need for modality-specific encoders.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9341,
+        "origin_weight": 1.5,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "DeepMind's unified embedding model handling text, audio, video, and images in one representation. Novel approach that simplifies retrieval pipelines — genuine research.",
+        "total": 5.5591
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T02:01:18Z",
+      "last_seen_at": "2026-05-29T21:10:30Z"
+    },
+    {
+      "id": "c5841114b9c7cfe84424c55f01567f6f57f635a4",
+      "section": "ai-world",
+      "source": "email",
+      "title": "5. Roboflow's object detection model now runs on CPU via tiny 30 MB GGUF weights",
+      "canonical_url": "https://huggingface.co/mudler/rfdetr-cpp-nano",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[5. Roboflow's object detection model now runs on CPU via tiny 30 MB GGUF weights](https://huggingface.co/mudler/rfdetr-cpp-nano)** — _AlphaSignal_. — Roboflow packages its RF-DETR object detection model as 30 MB GGUF weights that run on CPU with no GPU required. Makes production-grade detection accessible for resource-constrained edge deployments.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Roboflow object detection in 30 MB GGUF weights, CPU-only. Concrete numbers on model size and deployment target — practical for edge/embedded use.",
+        "total": 5.475
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T21:10:30Z",
+      "last_seen_at": "2026-05-29T21:10:30Z"
     },
     {
       "id": "885b9f75e7143a8bf187f410819a5ebc61eeaafa",
@@ -83,9 +393,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9275,
+        "recency_decay": 0.7675,
         "origin_weight": 1.5,
-        "total": 4.4275
+        "taste_score": 1.17,
+        "taste_raw": 0.78,
+        "taste_reason": "ITBench-AA benchmark reveals frontier models (GPT-4.1 42%, Opus 4.1 38%) score below 50% on enterprise IT tasks. Genuinely surprising finding from credible sources (Artificial Analysis + IBM) — exposes real-world readiness gaps.",
+        "total": 5.4375
       },
       "flags": {
         "enriched": true,
@@ -96,254 +409,129 @@
       "last_seen_at": "2026-05-29T02:00:58Z"
     },
     {
-      "id": "14ace834df77aadd3dda35a1ad5bfb772931afcc",
+      "id": "eb195e683802c4ba2624fc8a9831e77dc18e8526",
       "section": "ai-world",
       "source": "email",
-      "title": "partner_image",
-      "canonical_url": "https://viktor.com/?dub_id=jGqwt24tiHRWvjRb",
+      "title": "1. Qwen3 8B runs a full coding agent at 20 tok/s on a 10-year-old GPU",
+      "canonical_url": "https://huggingface.co/unsloth/Qwen3-8B-GGUF",
       "tags": [
         "origin:email",
         "section:ai-world",
+        "topic:agents",
+        "topic:opensource",
         "topic:research"
       ],
-      "bullet_md": "- 📧 **[partner_image](https://viktor.com/?utm_source=alphasignal&utm_medium=newsletter&utm_campaign=AlphaSignalAdHoc05272026&dub_id=jGqwt24tiHRWvjRb)** — _AlphaSignal_. — Partner image content from AlphaSignal newsletter - appears to be promotional material or advertisement content.",
+      "bullet_md": "- 📧 **[1. Qwen3 8B runs a full coding agent at 20 tok/s on a 10-year-old GPU](https://huggingface.co/unsloth/Qwen3-8B-GGUF)** — _AlphaSignal_. — Qwen3 8B quantized via Unsloth runs a full coding agent at 20 tokens per second on a decade-old GPU. Demonstrates that capable local AI agents are feasible without expensive hardware.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8941,
+        "recency_decay": 0.9341,
         "origin_weight": 1.5,
-        "total": 4.3941
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Qwen3 8B running full coding agent at 20 tok/s on decade-old GPU. Concrete performance data showing capable local AI is feasible without expensive hardware.",
+        "total": 5.4091
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-28T06:14:46Z",
-      "last_seen_at": "2026-05-28T06:14:46Z"
+      "first_seen_at": "2026-05-29T02:01:18Z",
+      "last_seen_at": "2026-05-29T21:10:30Z"
     },
     {
-      "id": "bbb86fd20743bd0e95c27ffac2b91762c1dc6fbb",
+      "id": "8ad18b6b357c009b3f476511666aa3718f3ede19",
       "section": "ai-world",
       "source": "email",
-      "title": "▸ Bearly AI ships OpenADE with GPT-5.5, Codex, and Claude Code support",
-      "canonical_url": "https://github.com/bearlyai/openade",
+      "title": "4. KAIST's new optimizer trains LLMs 1.5x faster with no learning rate schedule",
+      "canonical_url": "https://arxiv.org/abs/2605.22432",
       "tags": [
         "origin:email",
         "section:ai-world",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[4. KAIST's new optimizer trains LLMs 1.5x faster with no learning rate schedule](https://arxiv.org/abs/2605.22432)** — _AlphaSignal_. — KAIST researchers propose a new optimizer that trains LLMs 1.5x faster by eliminating the learning rate schedule entirely. Could simplify training workflows and reduce wall-clock time for large model runs.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9341,
+        "origin_weight": 1.5,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "KAIST optimizer trains LLMs 1.5x faster with no LR schedule. Concrete training efficiency improvement from a credible research lab.",
+        "total": 5.4091
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T02:01:18Z",
+      "last_seen_at": "2026-05-29T21:10:30Z"
+    },
+    {
+      "id": "4aca4d5189262025337ed6aa894745fcf01a689b",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Opus 4.8 (Fully Tested): Is IT ACTUALLY GOOD?",
+      "canonical_url": "https://youtube.com/watch?v=QHS-CV0V7Do",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
         "topic:claude-code",
-        "topic:openai",
         "topic:research"
       ],
-      "bullet_md": "- 📧 **[▸ Bearly AI ships OpenADE with GPT-5.5, Codex, and Claude Code support](https://github.com/bearlyai/openade)** — _AlphaSignal_. — Bearly AI releases OpenADE with support for GPT-5.5, Codex, and Claude Code, providing developers with an integrated AI development environment that combines multiple leading AI models in one platform.",
+      "bullet_md": "- 🎥 [Opus 4.8 (Fully Tested): Is IT ACTUALLY GOOD?](https://www.youtube.com/watch?v=QHS-CV0V7Do) — **AICodeKing** (15m04s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=QHS-CV0V7Do\"><img src=\"https://img.youtube.com/vi/QHS-CV0V7Do/mqdefault.jpg\" alt=\"thumb\"></a></p> — AICodeKing benchmarks Opus 4.8 across multiple tests and finds it performed much better than expected, particularly on coding and reasoning tasks with strong improvements over Opus 4.7.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8941,
-        "origin_weight": 1.5,
-        "total": 4.3941
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 1.08,
+        "taste_raw": 0.72,
+        "taste_reason": "Benchmark results for Opus 4.8 from a hands-on tester. Concrete coding and reasoning test results on a hot new release. Medium credibility channel but provides actual numbers.",
+        "total": 5.08
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-28T06:14:46Z",
-      "last_seen_at": "2026-05-29T02:01:18Z"
+      "first_seen_at": "2026-05-29T21:09:31Z",
+      "last_seen_at": "2026-05-29T21:09:31Z"
     },
     {
-      "id": "df5017e1346efbbe5521e8871adef39cdbf1c630",
-      "section": "ai-world",
-      "source": "email",
-      "title": "▸ Datacurve releases DeepSWE, a harder coding benchmark built to expose where top models really differ",
-      "canonical_url": "https://github.com/datacurve-ai/deep-swe",
+      "id": "559fecd719c06981db9ac92ead13c2ac4bc17adf",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Claude Opus 4.8: Best AI Model Ever? Powerful, Agentic, and Faster! (Fully Tested)",
+      "canonical_url": "https://youtube.com/watch?v=MkzUPtYjgBY",
       "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[▸ Datacurve releases DeepSWE, a harder coding benchmark built to expose where top models really differ](https://github.com/datacurve-ai/deep-swe)** — _AlphaSignal_. — Datacurve's DeepSWE benchmark features multi-file reasoning tasks and ambiguous requirements that top models like GPT-4.1 and Claude Opus struggle with, exposing limitations in long-context code understanding and task decomposition.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8941,
-        "origin_weight": 1.5,
-        "total": 4.3941
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-28T06:14:46Z",
-      "last_seen_at": "2026-05-29T02:01:18Z"
-    },
-    {
-      "id": "6876e235b5bd7c065320dbb69d2fa76832dcecb6",
-      "section": "ai-world",
-      "source": "email",
-      "title": "1. Figure robots are heading to JCPenney and Brooks Brothers stores",
-      "canonical_url": "https://figure.ai/news/figure-signs-agreement-with-catalyst-brands",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[1. Figure robots are heading to JCPenney and Brooks Brothers stores](https://www.figure.ai/news/figure-signs-agreement-with-catalyst-brands)** — _AlphaSignal_. — Figure robots deployed in JCPenney and Brooks Brothers stores assist customers with product locating and inventory checks, with plans to expand to 50 locations by Q3 2026 for real-time stock monitoring and automated restocking alerts.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8941,
-        "origin_weight": 1.5,
-        "total": 4.3941
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-28T06:14:46Z",
-      "last_seen_at": "2026-05-29T02:01:18Z"
-    },
-    {
-      "id": "d5c3a27d3e1726a8f55746500da4de6bf7b8b938",
-      "section": "ai-world",
-      "source": "email",
-      "title": "3. New 'sleep' trick lets language models compress long context without slowing down",
-      "canonical_url": "https://arxiv.org/abs/2605.26099",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[3. New 'sleep' trick lets language models compress long context without slowing down](https://arxiv.org/abs/2605.26099)** — _AlphaSignal_. — The 'sleep' trick enables language models to compress long context by 8x without performance loss, allowing efficient processing of 128k-token codebases while maintaining accuracy in code generation and debugging tasks.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8941,
-        "origin_weight": 1.5,
-        "total": 4.3941
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-28T06:14:46Z",
-      "last_seen_at": "2026-05-29T02:01:18Z"
-    },
-    {
-      "id": "311f89c2d12d319ed07d77af30e28d6e860f8ee4",
-      "section": "ai-world",
-      "source": "email",
-      "title": "4. Nango open-sources the API integration layer SaaS companies pay $50K a year to rent",
-      "canonical_url": "https://github.com/NangoHQ/nango",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:opensource",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[4. Nango open-sources the API integration layer SaaS companies pay $50K a year to rent](https://github.com/NangoHQ/nango)** — _AlphaSignal_. — Nango's open-source API integration layer provides pre-built connectors for Salesforce, Slack, and Stripe, eliminating the need for custom integration work and offering features like automatic rate limit handling and credential management.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8941,
-        "origin_weight": 1.5,
-        "total": 4.3941
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-28T06:14:46Z",
-      "last_seen_at": "2026-05-29T02:01:18Z"
-    },
-    {
-      "id": "2046f5e50fafe44ab9382efbd7ce4484b55575ee",
-      "section": "ai-world",
-      "source": "email",
-      "title": "5. Free open-source tool forces Claude Code and Cursor to code like a senior dev",
-      "canonical_url": "https://github.com/obra/superpowers",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
         "topic:claude-code",
-        "topic:dev-tools",
-        "topic:opensource",
         "topic:research"
       ],
-      "bullet_md": "- 📧 **[5. Free open-source tool forces Claude Code and Cursor to code like a senior dev](https://github.com/obra/superpowers)** — _AlphaSignal_. — Free open-source tool Superpowers forces Claude Code and Cursor to code like a senior developer by providing AI-powered code suggestions, refactoring assistance, and best practice enforcement directly in the editor.",
+      "bullet_md": "- 🎥 [Claude Opus 4.8: Best AI Model Ever? Powerful, Agentic, and Faster! (Fully Tested)](https://www.youtube.com/watch?v=MkzUPtYjgBY) — **WorldofAI** (14m35s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=MkzUPtYjgBY\"><img src=\"https://img.youtube.com/vi/MkzUPtYjgBY/mqdefault.jpg\" alt=\"thumb\"></a></p> — WorldofAI tests Opus 4.8 across coding, agentic, frontend, game development, and software engineering benchmarks, calling it Anthropics most capable model yet with significant gains across all tested dimensions.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8941,
-        "origin_weight": 1.5,
-        "total": 4.3941
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "WorldofAI benchmarks Opus 4.8 across coding, agentic, game dev, and SWE benchmarks. Reasonably comprehensive testing on a hot release from a known channel.",
+        "total": 5.05
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-28T06:14:46Z",
-      "last_seen_at": "2026-05-29T02:01:18Z"
-    },
-    {
-      "id": "76ae5fab3137aae766e10026f70b5f65d6620168",
-      "section": "ai-world",
-      "source": "email",
-      "title": "6. DeepSeek's infrastructure papers called the biggest open-source AI contribution this century",
-      "canonical_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:opensource",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[6. DeepSeek's infrastructure papers called the biggest open-source AI contribution this century](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** — _AlphaSignal_. — DeepSeek's infrastructure papers introduce FP8 mixed-precision training and optimized attention kernels that reduce training costs by 90%, setting new standards for efficient large-model development adopted by multiple open-source AI projects.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8941,
-        "origin_weight": 1.5,
-        "total": 4.3941
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-28T06:14:46Z",
-      "last_seen_at": "2026-05-29T02:01:18Z"
-    },
-    {
-      "id": "33ad655f28b47fd060b9d011e802f9fa01b108ff",
-      "section": "ai-world",
-      "source": "email",
-      "title": "partner_image",
-      "canonical_url": "https://viktor.com/?dub_id=X3m1FYMjcunY4vo8",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[partner_image](https://viktor.com/?utm_source=alphasignal&utm_medium=newsletter&utm_campaign=AlphaSignalAdHoc05272026&dub_id=X3m1FYMjcunY4vo8)** — _AlphaSignal_. — Partner image content from AlphaSignal newsletter - appears to be promotional material or advertisement content.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8941,
-        "origin_weight": 1.5,
-        "total": 4.3941
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-28T07:30:56Z",
-      "last_seen_at": "2026-05-28T07:30:56Z"
+      "first_seen_at": "2026-05-29T21:09:31Z",
+      "last_seen_at": "2026-05-29T21:09:31Z"
     },
     {
       "id": "5606c136d774e2ba27a53e894c554e6e78193f72",
@@ -360,9 +548,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 1.0,
+        "recency_decay": 0.8825,
         "origin_weight": 1.0,
-        "total": 4.0
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Claude Mythos 1 leak claims 2M context and native code execution. Big if true, but source is a YouTube rumor from WorldofAI — credibility uncertain. State-of-ai notes Mythos was blocked by White House.",
+        "total": 4.7825
       },
       "flags": {
         "enriched": true,
@@ -371,33 +562,6 @@
       },
       "first_seen_at": "2026-05-28T07:29:41Z",
       "last_seen_at": "2026-05-29T02:00:16Z"
-    },
-    {
-      "id": "438b6e3c1870951b338fe0db4a41a85dee891fa5",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Gemini 3.5 Pro X-High, MiniMax M3, DeepSwe, New Claude Models, MiMO-v2.5 Upgrade, & More! AI NEWS",
-      "canonical_url": "https://youtube.com/watch?v=UbzkazAtjv0",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:google"
-      ],
-      "bullet_md": "- 🎥 [Gemini 3.5 Pro X-High, MiniMax M3, DeepSwe, New Claude Models, MiMO-v2.5 Upgrade, & More! AI NEWS](https://www.youtube.com/watch?v=UbzkazAtjv0) — **WorldofAI** (11m46s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=UbzkazAtjv0\"><img src=\"https://img.youtube.com/vi/UbzkazAtjv0/mqdefault.jpg\" alt=\"thumb\"></a></p> — Gemini 3.5 Pro X-High achieves 92% on SWE-bench coding tasks, while new Claude Models show improved reasoning in agentic coding benchmarks, highlighting rapid advances in practical AI software development capabilities.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8432,
-        "origin_weight": 1.0,
-        "total": 3.8432
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-28T06:13:48Z",
-      "last_seen_at": "2026-05-28T07:29:41Z"
     },
     {
       "id": "c80f5b9c6ead0652c90a020bb0bfb0a42f53f593",
@@ -418,9 +582,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.7771,
+        "recency_decay": 0.6171,
         "origin_weight": 1.0,
-        "total": 3.7771
+        "taste_score": 1.02,
+        "taste_raw": 0.68,
+        "taste_reason": "Qwen 3.7 Max achieves 68% SWE-agent vs Opus 4.1's 62%. Concrete benchmark comparison with detail on multi-file code modifications. Credible if the numbers hold.",
+        "total": 4.6371
       },
       "flags": {
         "enriched": true,
@@ -431,31 +598,96 @@
       "last_seen_at": "2026-05-28T07:29:41Z"
     },
     {
-      "id": "af97a8c3898c96a2524f9fa67a7daa6e0518e688",
+      "id": "438b6e3c1870951b338fe0db4a41a85dee891fa5",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Gemini 3.5 Pro X-High, MiniMax M3, DeepSwe, New Claude Models, MiMO-v2.5 Upgrade, & More! AI NEWS",
+      "canonical_url": "https://youtube.com/watch?v=UbzkazAtjv0",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:google"
+      ],
+      "bullet_md": "- 🎥 [Gemini 3.5 Pro X-High, MiniMax M3, DeepSwe, New Claude Models, MiMO-v2.5 Upgrade, & More! AI NEWS](https://www.youtube.com/watch?v=UbzkazAtjv0) — **WorldofAI** (11m46s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=UbzkazAtjv0\"><img src=\"https://img.youtube.com/vi/UbzkazAtjv0/mqdefault.jpg\" alt=\"thumb\"></a></p> — Gemini 3.5 Pro X-High achieves 92% on SWE-bench coding tasks, while new Claude Models show improved reasoning in agentic coding benchmarks, highlighting rapid advances in practical AI software development capabilities.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.6833,
+        "origin_weight": 1.0,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "WorldofAI roundup of multiple news items (Gemini 3.5, MiniMax, DeepSWE, Claude models). Recap format — each item covered in more depth elsewhere.",
+        "total": 4.4333
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-28T06:13:48Z",
+      "last_seen_at": "2026-05-28T07:29:41Z"
+    },
+    {
+      "id": "c75dab672657c9fe72b06c8635536b6a2c3ef6aa",
       "section": "community",
       "source": "rss",
-      "title": "[AINews] Cognition raises $1B in $26B Series D",
-      "canonical_url": "https://latent.space/p/ainews-cognition-raises-1b-in-26b",
+      "title": "Claude Opus 4.8: The System Card",
+      "canonical_url": "https://thezvi.substack.com/p/claude-opus-48-is-honestly-better",
       "tags": [
         "origin:rss",
         "section:community",
+        "topic:claude-code",
         "topic:research"
       ],
-      "bullet_md": "- 📝 **[[AINews] Cognition raises $1B in $26B Series D](https://www.latent.space/p/ainews-cognition-raises-1b-in-26b)** — _Latent Space (swyx)_. — Cognition raises B in B Series D funding, highlighting the massive market potential for AI coding tools as coding represents an uncapped TAM (Total Addressable Market) opportunity for AI-powered development solutions.",
+      "bullet_md": "- 📝 **[Claude Opus 4.8: The System Card](https://thezvi.substack.com/p/claude-opus-48-is-honestly-better)** — _Don't Worry About the Vase (Zvi)_. — Zvi Mowshowitz reviews Opus 4.8 only six weeks after Opus 4.7, noting it is honestly better across reasoning, coding, and agentic tasks with meaningful improvements over a very short release cycle.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
-        "total": 4.5
+        "taste_score": 1.23,
+        "taste_raw": 0.82,
+        "taste_reason": "Zvi's deep-dive review of Opus 4.8 after just 6 weeks from 4.7. Credible technical analysis noting meaningful across-the-board improvement — extends state-of-ai from 'rumored' to detailed assessment.",
+        "total": 5.73
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-28T07:30:24Z",
-      "last_seen_at": "2026-05-29T02:00:58Z"
+      "first_seen_at": "2026-05-29T21:10:11Z",
+      "last_seen_at": "2026-05-29T21:10:11Z"
+    },
+    {
+      "id": "beddc72dedb94cd691f4e374d177f29e1dfbad83",
+      "section": "community",
+      "source": "rss",
+      "title": "[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode",
+      "canonical_url": "https://latent.space/p/ainews-anthropic-raises-965b-series",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode](https://www.latent.space/p/ainews-anthropic-raises-965b-series)** — _Latent Space (swyx)_. — Swyx rounds up the Anthropic news deluge: the $965B Series H raise, Opus 4.8 launch, and the new Dynamic Workflows ultracode feature that lets Claude spawn hundreds of parallel subagents.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "taste_score": 1.17,
+        "taste_raw": 0.78,
+        "taste_reason": "Swyx roundup of today's Anthropic news deluge (raise + Opus 4.8 + ultracode). Good synthesis from credible newsletter but recaps news already covered by direct sources.",
+        "total": 5.67
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T21:10:11Z",
+      "last_seen_at": "2026-05-29T21:10:11Z"
     },
     {
       "id": "ddb0ed19da4a3645c985a11aafbc25ac20f7a4d6",
@@ -472,9 +704,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9174,
+        "recency_decay": 0.7574,
         "origin_weight": 1.5,
-        "total": 4.4174
+        "taste_score": 1.02,
+        "taste_raw": 0.68,
+        "taste_reason": "Pragmatic Engineer interview on OpenCode — honest assessment of AI coding tools' limits (boilerplate good, architectural decisions still hard). Credible source, thoughtful framing.",
+        "total": 5.2774
       },
       "flags": {
         "enriched": true,
@@ -483,6 +718,38 @@
       },
       "first_seen_at": "2026-05-28T06:14:26Z",
       "last_seen_at": "2026-05-29T02:00:58Z"
+    },
+    {
+      "id": "f0e7d30d377e2a62b67c2764d4c1d5cedbd1ebe9",
+      "section": "community",
+      "source": "reddit",
+      "title": "Benchmarked Qwen3.6-35B-A3B on my 3090 against the Claude API in a real agent pipeline. Here's where local wins (and where it doesn't)",
+      "canonical_url": "https://reddit.com/comments/1tq4oyt",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"Benchmarked Qwen3.6-35B-A3B on my 3090 against the Claude API in a real agent pipeline. Here's where local wins (and where it doesn't)\"](https://www.reddit.com/r/LocalLLM/comments/1tq4oyt/benchmarked_qwen3635ba3b_on_my_3090_against_the/) — A Reddit user benchmarks Qwen3.6-35B-A3B on a 3090 against the Claude API in a real agent pipeline, highlighting where local inference wins on latency and cost and where it falls short on capability.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9407,
+        "origin_weight": 1.0,
+        "taste_score": 1.02,
+        "taste_raw": 0.68,
+        "taste_reason": "Real agent pipeline benchmark: Qwen3.6-35B-A3B on 3090 vs Claude API. Concrete numbers on where local wins (latency/cost) and loses (capability) — practical value.",
+        "total": 4.9607
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T02:00:45Z",
+      "last_seen_at": "2026-05-29T02:00:45Z"
     },
     {
       "id": "a2d846eea28b97c05e67e7a19475e143632b3636",
@@ -501,9 +768,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 1.0,
+        "recency_decay": 0.8528,
         "origin_weight": 1.0,
-        "total": 4.0
+        "taste_score": 0.93,
+        "taste_raw": 0.62,
+        "taste_reason": "Qwen 35B at 120+ tok/s on 12GB VRAM, working with Cline for agentic coding. Concrete hardware performance datapoint with practical agentic use case.",
+        "total": 4.7828
       },
       "flags": {
         "enriched": true,
@@ -514,23 +784,26 @@
       "last_seen_at": "2026-05-29T02:00:45Z"
     },
     {
-      "id": "2b27078b555e6843a9c59c5b0bd1965092da5915",
+      "id": "e8c2084faa3bcbc87fa754e2126cf2cba26b1548",
       "section": "community",
       "source": "reddit",
-      "title": "So, Claude helped build a sex requesting app for my wife and I...",
-      "canonical_url": "https://reddit.com/comments/1tps0ak",
+      "title": "Qwen 3.7 Max one shots a 5 slide deck with AI generated images and video",
+      "canonical_url": "https://reddit.com/comments/1tpdya8",
       "tags": [
         "origin:reddit",
         "section:community",
-        "topic:claude-code"
+        "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/ClaudeAI: \"So, Claude helped build a sex requesting app for my wife and I...\"](https://www.reddit.com/r/ClaudeAI/comments/1tps0ak/so_claude_helped_build_a_sex_requesting_app_for/) — Claude helped build a sex requesting app for personal use, illustrating how AI assistants can assist with intimate personal projects while raising questions about appropriate AI use boundaries and ethical considerations in personal relationships.",
+      "bullet_md": "- 💬 [r/ollama: \"Qwen 3.7 Max one shots a 5 slide deck with AI generated images and video\"](https://www.reddit.com/r/ollama/comments/1tpdya8/qwen_37_max_one_shots_a_5_slide_deck_with_ai/) — Qwen 3.7 Max demonstrates capability to generate a complete 5-slide deck with AI-created images and video from a single prompt, showcasing advanced multimodal AI capabilities for automated presentation creation.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 1.0,
+        "recency_decay": 0.7758,
         "origin_weight": 1.0,
-        "total": 4.0
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Qwen 3.7 Max demo of one-shot slide deck generation. Single demo with no rigorous benchmarks — thin signal.",
+        "total": 4.3008
       },
       "flags": {
         "enriched": true,
@@ -555,36 +828,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 1.0,
+        "recency_decay": 0.8656,
         "origin_weight": 1.0,
-        "total": 4.0
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-28T06:14:13Z",
-      "last_seen_at": "2026-05-28T07:30:08Z"
-    },
-    {
-      "id": "e8c2084faa3bcbc87fa754e2126cf2cba26b1548",
-      "section": "community",
-      "source": "reddit",
-      "title": "Qwen 3.7 Max one shots a 5 slide deck with AI generated images and video",
-      "canonical_url": "https://reddit.com/comments/1tpdya8",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/ollama: \"Qwen 3.7 Max one shots a 5 slide deck with AI generated images and video\"](https://www.reddit.com/r/ollama/comments/1tpdya8/qwen_37_max_one_shots_a_5_slide_deck_with_ai/) — Qwen 3.7 Max demonstrates capability to generate a complete 5-slide deck with AI-created images and video from a single prompt, showcasing advanced multimodal AI capabilities for automated presentation creation.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9358,
-        "origin_weight": 1.0,
-        "total": 3.9358
+        "taste_score": 0.3,
+        "taste_raw": 0.2,
+        "taste_reason": "Anecdotal Reddit complaint about Claude feeling 'tired'. No data, no reproducible evidence — low signal user sentiment.",
+        "total": 4.1656
       },
       "flags": {
         "enriched": true,
@@ -609,9 +858,42 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.883,
+        "recency_decay": 0.723,
         "origin_weight": 1.0,
-        "total": 3.883
+        "taste_score": 0.375,
+        "taste_raw": 0.25,
+        "taste_reason": "Philosophical opinion post on Claude personal projects. No data, no technical insight — purely subjective reflection.",
+        "total": 4.098
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-28T06:14:13Z",
+      "last_seen_at": "2026-05-28T07:30:08Z"
+    },
+    {
+      "id": "2b27078b555e6843a9c59c5b0bd1965092da5915",
+      "section": "community",
+      "source": "reddit",
+      "title": "So, Claude helped build a sex requesting app for my wife and I...",
+      "canonical_url": "https://reddit.com/comments/1tps0ak",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"So, Claude helped build a sex requesting app for my wife and I...\"](https://www.reddit.com/r/ClaudeAI/comments/1tps0ak/so_claude_helped_build_a_sex_requesting_app_for/) — Claude helped build a sex requesting app for personal use, illustrating how AI assistants can assist with intimate personal projects while raising questions about appropriate AI use boundaries and ethical considerations in personal relationships.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8537,
+        "origin_weight": 1.0,
+        "taste_score": 0.15,
+        "taste_raw": 0.1,
+        "taste_reason": "Novelty/entertainment Reddit post about building a personal app with Claude. No technical insight or broadly useful information.",
+        "total": 4.0037
       },
       "flags": {
         "enriched": true,
