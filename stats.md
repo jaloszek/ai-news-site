@@ -4,15 +4,15 @@
 
 # AI News — Stats
 
-_Generated 2026-05-30 06:58 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-05-30 09:44 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 3214
-- **Enriched:** 2320 (72%)
+- **Discovery items (all-time):** 3237
+- **Enriched:** 2320 (71%)
 - **Taste-rated:** 1665 (51%)
 - **Researched:** 373 (11%)
-- **Status (candidate / rejected / published / duplicate):** 347 / 2867 / 0 / 0
+- **Status (candidate / rejected / published / duplicate):** 370 / 2867 / 0 / 0
 - **Published bullets (all-time):** 597 (last 7d: 72)
 
 
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-05-30 | 48 | 18 (37%) | 18 (37%) | 0 (0%) |
+| 2026-05-30 | 71 | 18 (25%) | 18 (25%) | 0 (0%) |
 | 2026-05-29 | 188 | 72 (38%) | 72 (38%) | 5 (2%) |
 | 2026-05-28 | 111 | 27 (24%) | 27 (24%) | 11 (9%) |
 | 2026-05-27 | 57 | 3 (5%) | 3 (5%) | 1 (1%) |
@@ -51,19 +51,19 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 
 | Creator | Source | Items (30d) |
 |---|---|---:|
-| /r/LangChain | `reddit` | 113 |
-| /r/AI_Agents | `reddit` | 109 |
+| /r/LangChain | `reddit` | 116 |
+| /r/AI_Agents | `reddit` | 112 |
 | /r/LocalLLaMA | `reddit` | 106 |
 | /r/ollama | `reddit` | 105 |
+| /r/ChatGPT | `reddit` | 104 |
 | /r/LocalLLM | `reddit` | 104 |
-| /r/ChatGPT | `reddit` | 103 |
-| /r/OpenAI | `reddit` | 100 |
-| /r/singularity | `reddit` | 98 |
-| /r/MachineLearning | `reddit` | 97 |
+| /r/OpenAI | `reddit` | 101 |
+| /r/singularity | `reddit` | 99 |
+| /r/MachineLearning | `reddit` | 98 |
+| /r/ClaudeAI | `reddit` | 95 |
 | /r/Anthropic | `reddit` | 94 |
 | /r/Artificial | `reddit` | 94 |
-| /r/ClaudeAI | `reddit` | 94 |
-| /r/ClaudeHomies | `reddit` | 63 |
+| /r/ClaudeHomies | `reddit` | 64 |
 | OpenAI blog | `rss` | 58 |
 | Simon Willison | `rss` | 50 |
 
