@@ -55,7 +55,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-05-26.html"><div class="cal-num">26</div><ul class="cal-highlights"><li>🚀 Claude Code /loop autonomous cycling</li><li>🟢 Cisco-OpenAI Codex partnership</li><li>🔧 CC /code-review --fix and /simplify commands</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🚀 Day 1 | Build Your First AI Agent in 2026</li><li>🎥 Google I/O 2026 Highlights: Gemini AI</li><li>Android XR Glasses</li><li>💬 The Memento problem in AI agents</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-28.html"><div class="cal-num">28</div><ul class="cal-highlights"><li>🛠 CC /loop autonomous cycling</li><li>🛠 CC /code-review --fix</li><li>💰 Cognition $1B raise at $26B</li><li>🟡 Qwen 3.2 open-source</li><li>🟢 GPT-5 reasoning update</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">29</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-05-29.html"><div class="cal-num">29</div><ul class="cal-highlights"><li>✨ Opus 4.8 dynamic workflows</li><li>🛠 CC auto plugin loading</li><li>💰 Anthropic $65B at $965B</li><li>🟢 OpenAI Codex case studies</li><li>🧪 Open-source vision model +44 pts</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-05-30.html"><div class="cal-num">30</div><ul class="cal-highlights"><li>💰 Anthropic $65B Series H</li><li>🛠 CC v2.1.157 auto-plugin loading</li><li>🧪 LMMs Lab open-source video model</li><li>💬 GPT-5.6 leak in Codex</li><li>🔧 CC v2.1.156 Opus 4.8 fix</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">31</div></div>
   </div>
