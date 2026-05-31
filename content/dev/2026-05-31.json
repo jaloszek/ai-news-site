@@ -1,9 +1,9 @@
 {
   "date": "2026-05-31",
-  "generated_at": "2026-05-31T11:34:43+00:00",
+  "generated_at": "2026-05-31T13:48:02+00:00",
   "candidate_count": 35,
-  "researched_count": 8,
-  "published_count": 13,
+  "researched_count": 10,
+  "published_count": 17,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
@@ -27,12 +27,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9266,
+        "recency_decay": 0.9225,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6667,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "Extends state-of-ai's Claude Code row (v2.1.153→v2.1.158) with the notable addition of auto mode on Bedrock/Vertex/AWS Foundry for Opus 4.7/4.8 — a concrete deployment option worth knowing if you run on those platforms.",
-        "total": 5.4766
+        "total": 5.4725
       },
       "flags": {
         "enriched": true,
@@ -40,7 +42,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-30T06:13:24Z",
-      "last_seen_at": "2026-05-31T11:28:16Z"
+      "last_seen_at": "2026-05-31T13:40:21Z"
     },
     {
       "id": "27f30742de981dd6335548d035ff67d692240159",
@@ -57,12 +59,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8736,
+        "recency_decay": 0.8695,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6923,
         "taste_score": 0.825,
         "taste_raw": 0.55,
         "taste_reason": "Claude Code changelog: auto plugin loading from .claude/skills, /plugin init scaffolding, tab autocomplete. Nice QoL but incremental.",
-        "total": 5.1986
+        "total": 5.1945
       },
       "flags": {
         "enriched": true,
@@ -70,7 +74,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-29T21:10:11Z",
-      "last_seen_at": "2026-05-31T11:28:16Z"
+      "last_seen_at": "2026-05-31T13:40:21Z"
     },
     {
       "id": "2d70dc244c4819b00757f9df647ee734949c88ff",
@@ -87,12 +91,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.7183,
+        "recency_decay": 0.7142,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8696,
         "taste_score": 0.525,
         "taste_raw": 0.35,
         "taste_reason": "Minor stability patch for Opus 4.8 thinking-block modification. Niche bugfix only relevant if you hit the specific API error.",
-        "total": 4.7433
+        "total": 4.7392
       },
       "flags": {
         "enriched": true,
@@ -119,6 +125,8 @@
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.878,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "Concrete new incident with a named failure mechanism (context window compaction stripping safety instructions). Extends state-of-ai's agent-safety coverage with a real-world case study.",
@@ -149,6 +157,8 @@
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8947,
         "taste_score": 0.975,
         "taste_raw": 0.65,
         "taste_reason": "Credible source (Promptfoo) demonstrates a concrete prompt-injection attack exfiltrating real data. Extends state-of-ai's agent security row with a practical exploit demo.",
@@ -160,7 +170,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-31T02:09:44Z",
-      "last_seen_at": "2026-05-31T11:28:31Z"
+      "last_seen_at": "2026-05-31T13:40:25Z"
     },
     {
       "id": "c5841114b9c7cfe84424c55f01567f6f57f635a4",
@@ -177,12 +187,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8151,
+        "recency_decay": 0.8111,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9048,
         "taste_score": 0.975,
         "taste_raw": 0.65,
         "taste_reason": "Roboflow object detection in 30 MB GGUF weights, CPU-only. Concrete numbers on model size and deployment target — practical for edge/embedded use.",
-        "total": 5.2901
+        "total": 5.2861
       },
       "flags": {
         "enriched": true,
@@ -191,6 +203,38 @@
       },
       "first_seen_at": "2026-05-29T21:10:30Z",
       "last_seen_at": "2026-05-31T11:28:31Z"
+    },
+    {
+      "id": "ccc8c6b91d6e50bdcbf9acdcab3ddb30803659d5",
+      "section": "ai-world",
+      "source": "email",
+      "title": "Viktor takes a different approach",
+      "canonical_url": "https://viktor.com/?dub_id=Az0yqCublp5gANGH",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Viktor takes a different approach](https://viktor.com/?utm_source=alphasignal&utm_medium=newsletter&utm_campaign=AlphaSignalDeepDive2026&dub_id=Az0yqCublp5gANGH)** — _AlphaSignal_. — Viktor builds agents natively for multi-player enterprise environments, solving shared-context and security issues that break solo bots scaled to hundreds of employees.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8966,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Genuinely different approach to enterprise agents (multi-player shared context vs solo bots) from a credible newsletter, but no benchmarks or technical depth to evaluate the claim.",
+        "total": 5.25
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-31T02:09:44Z",
+      "last_seen_at": "2026-05-31T02:09:44Z"
     },
     {
       "id": "7798d3d4709ac3e505b98f5228f45c85ec999986",
@@ -209,6 +253,8 @@
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8261,
         "taste_score": 0.75,
         "taste_raw": 0.5,
         "taste_reason": "Concrete security finding (12M exposed .env files) extends state-of-ai's safety section but is only tangentially AI-related.",
@@ -220,7 +266,39 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-31T02:09:44Z",
-      "last_seen_at": "2026-05-31T11:28:31Z"
+      "last_seen_at": "2026-05-31T13:40:25Z"
+    },
+    {
+      "id": "ffaeb61c1e156880096c41058c52634daa65c604",
+      "section": "ai-world",
+      "source": "email",
+      "title": "Viktor takes a different approach",
+      "canonical_url": "https://viktor.com/?dub_id=lvwZVhVYbOu88wKv",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Viktor takes a different approach](https://viktor.com/?utm_source=alphasignal&utm_medium=newsletter&utm_campaign=AlphaSignalDeepDive2026&dub_id=lvwZVhVYbOu88wKv)** — _AlphaSignal_. — Viktor builds agents natively for multi-player enterprise environments, solving shared-context and security issues that break solo bots scaled to hundreds of employees.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8966,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Genuinely different approach to enterprise agents (multi-player shared context vs solo bots) from a credible newsletter, but no benchmarks or technical depth to evaluate the claim.",
+        "total": 5.25
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-31T13:40:25Z",
+      "last_seen_at": "2026-05-31T13:40:25Z"
     },
     {
       "id": "14f79de034bc40b5232b9ea599824e58e944e8fc",
@@ -238,12 +316,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.6151,
+        "recency_decay": 0.6111,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8,
         "taste_score": 1.125,
         "taste_raw": 0.75,
         "taste_reason": "DeepMind's unified embedding model handling text, audio, video, and images in one representation. Novel approach that simplifies retrieval pipelines — genuine research.",
-        "total": 5.2401
+        "total": 5.2361
       },
       "flags": {
         "enriched": true,
@@ -268,12 +348,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.7041,
+        "recency_decay": 0.7,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
         "taste_score": 1.02,
         "taste_raw": 0.68,
         "taste_reason": "Practical PyTorch profiling guide from Hugging Face — torch.profiler API, GPU kernel timing, memory tracing, flame graphs. Directly useful for anyone doing model optimization. Concrete, actionable, credible source.",
-        "total": 5.2241
+        "total": 5.22
       },
       "flags": {
         "enriched": true,
@@ -299,12 +381,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8151,
+        "recency_decay": 0.8111,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9032,
         "taste_score": 0.87,
         "taste_raw": 0.58,
         "taste_reason": "Novel OSS tool for iterative Claude-HTML prototyping — comment overlays with live updates. Useful for frontend devs but narrow use case.",
-        "total": 5.1851
+        "total": 5.1811
       },
       "flags": {
         "enriched": true,
@@ -331,12 +415,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.6151,
+        "recency_decay": 0.6111,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
         "taste_score": 0.975,
         "taste_raw": 0.65,
         "taste_reason": "Qwen3 8B running full coding agent at 20 tok/s on decade-old GPU. Concrete performance data showing capable local AI is feasible without expensive hardware.",
-        "total": 5.0901
+        "total": 5.0861
       },
       "flags": {
         "enriched": true,
@@ -345,67 +431,6 @@
       },
       "first_seen_at": "2026-05-29T02:01:18Z",
       "last_seen_at": "2026-05-30T09:43:22Z"
-    },
-    {
-      "id": "8ad18b6b357c009b3f476511666aa3718f3ede19",
-      "section": "ai-world",
-      "source": "email",
-      "title": "4. KAIST's new optimizer trains LLMs 1.5x faster with no learning rate schedule",
-      "canonical_url": "https://arxiv.org/abs/2605.22432",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[4. KAIST's new optimizer trains LLMs 1.5x faster with no learning rate schedule](https://arxiv.org/abs/2605.22432)** — _AlphaSignal_. — KAIST researchers propose a new optimizer that trains LLMs 1.5x faster by eliminating the learning rate schedule entirely. Could simplify training workflows and reduce wall-clock time for large model runs.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6151,
-        "origin_weight": 1.5,
-        "taste_score": 0.975,
-        "taste_raw": 0.65,
-        "taste_reason": "KAIST optimizer trains LLMs 1.5x faster with no LR schedule. Concrete training efficiency improvement from a credible research lab.",
-        "total": 5.0901
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-29T02:01:18Z",
-      "last_seen_at": "2026-05-30T09:43:22Z"
-    },
-    {
-      "id": "8c17b6ad5a30abc687fd86cdf9f065f84ec69ee9",
-      "section": "ai-world",
-      "source": "email",
-      "title": "3. OmniParse is an open-source tool that converts any file type into LLM-ready data",
-      "canonical_url": "https://github.com/adithya-s-k/omniparse",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:opensource",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[3. OmniParse is an open-source tool that converts any file type into LLM-ready data](https://github.com/adithya-s-k/omniparse)** — _AlphaSignal_. — OmniParse converts any file type including PDFs, images, audio, and video into LLM-ready structured data. Useful for preprocessing pipelines that need to feed diverse document formats into AI agents.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8151,
-        "origin_weight": 1.5,
-        "taste_score": 0.75,
-        "taste_raw": 0.5,
-        "taste_reason": "Solid preprocessing tool for converting diverse file types to LLM-ready data, but well-trodden space with many existing solutions.",
-        "total": 5.0651
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-29T21:10:30Z",
-      "last_seen_at": "2026-05-31T11:28:31Z"
     },
     {
       "id": "cab8e1a5a975fd017b14a2ff8eeab5483bb3a6b1",
@@ -418,24 +443,26 @@
         "section:youtube",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🎥 [Claude Opus 4.8 Full Breakdown &amp; Testing (AI News You Can Use)](https://www.youtube.com/watch?v=4gzi8fME3Po) — **The AI Advantage** (10m54s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=4gzi8fME3Po\"><img src=\"https://img.youtube.com/vi/4gzi8fME3Po/mqdefault.jpg\" alt=\"thumb\"></a></p> — Igor breaks down the surprise Opus 4.8 release with hands-on testing across coding, reasoning, and creative tasks, comparing output quality against previous Claude versions.",
+      "bullet_md": "- 🎥 [Claude Opus 4.8 Full Breakdown &amp; Testing (AI News You Can Use)](https://www.youtube.com/watch?v=4gzi8fME3Po) — **The AI Advantage** (10m54s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=4gzi8fME3Po\"><img src=\"https://img.youtube.com/vi/4gzi8fME3Po/mqdefault.jpg\" alt=\"thumb\"></a></p> — Opus 4.8 put through its paces on coding, reasoning, and creative tasks with head-to-head comparisons against Opus 4.7 and GPT-5.5 — useful if you are weighing whether the $5/$25 pricing delivers a meaningful upgrade for your daily workflow.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8651,
+        "recency_decay": 0.861,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8286,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "Hands-on testing of Opus 4.8 with concrete coding/reasoning examples and comparisons to prior versions. Useful signal from a known creator. Extends state-of-ai's Opus 4.8 entry with real-world testing data.",
-        "total": 4.9151
+        "total": 4.911
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-05-30T01:54:40Z",
-      "last_seen_at": "2026-05-30T09:42:24Z"
+      "last_seen_at": "2026-05-31T13:39:43Z"
     },
     {
       "id": "b5742cd31285c447932b80cbb57d09f0008f11df",
@@ -448,24 +475,58 @@
         "section:youtube",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🎥 [Claude Opus 4.8 + NEW Ultracode Mode Just Changed AI Forever](https://www.youtube.com/watch?v=D6C5AjrD1e4) — **Income stream surfers** (10m52s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=D6C5AjrD1e4\"><img src=\"https://img.youtube.com/vi/D6C5AjrD1e4/mqdefault.jpg\" alt=\"thumb\"></a></p> — A hands-on test of Claude Code new ultracode mode powered by Opus 4.8, demonstrating the agent pushing back on the user assumptions and running iterative debugging for hours without human intervention.",
+      "bullet_md": "- 🎥 [Claude Opus 4.8 + NEW Ultracode Mode Just Changed AI Forever](https://www.youtube.com/watch?v=D6C5AjrD1e4) — **Income stream surfers** (10m52s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=D6C5AjrD1e4\"><img src=\"https://img.youtube.com/vi/D6C5AjrD1e4/mqdefault.jpg\" alt=\"thumb\"></a></p> — A walkthrough of ultracode mode in practice — xhigh effort paired with dynamic workflows that spin up hundreds of parallel subagents for hours-long autonomous debugging sessions — directly relevant for teams managing large codebase-scale migrations and complex refactoring work.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8348,
+        "recency_decay": 0.8307,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8205,
         "taste_score": 1.02,
         "taste_raw": 0.68,
         "taste_reason": "Demo of ultracode mode with Opus 4.8 showing prolonged autonomous debugging. Concrete demonstration if it's real. Source channel name ('income stream surfers') suggests content-farm framing — penalized 0.15 for clickbait style.",
-        "total": 4.8548
+        "total": 4.8507
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-29T21:09:31Z",
+      "last_seen_at": "2026-05-31T13:39:43Z"
+    },
+    {
+      "id": "64e0c87949de8f7e2e92e18552673d8364700f0a",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "QWEN 3.6: 27B dense local model 19x faster ",
+      "canonical_url": "https://youtube.com/watch?v=cWkFsUTQUao",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🎥 [QWEN 3.6: 27B dense local model 19x faster ](https://www.youtube.com/watch?v=cWkFsUTQUao) — **Tech Business Club** (3m56s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=cWkFsUTQUao\"><img src=\"https://img.youtube.com/vi/cWkFsUTQUao/mqdefault.jpg\" alt=\"thumb\"></a></p> — Qwen 3.6 delivers a 27B dense model that runs 19x faster than its predecessor, with improvements in coding, reasoning, and agent workflows for local deployment.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7931,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Extends state-of-ai's Qwen3.6 row with a concrete speed claim (19x faster), but source is a small YouTube channel with no verifiable benchmark setup.",
+        "total": 4.825
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-29T21:09:31Z",
-      "last_seen_at": "2026-05-31T11:27:37Z"
+      "first_seen_at": "2026-05-31T13:39:43Z",
+      "last_seen_at": "2026-05-31T13:39:43Z"
     },
     {
       "id": "bb0502e1f2be7ba184fe29a005657cd6f0973d46",
@@ -483,12 +544,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8487,
+        "recency_decay": 0.8447,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8125,
         "taste_score": 0.975,
         "taste_raw": 0.65,
         "taste_reason": "Genuine benchmarks of Intel Arc Pro B70 for local LLM inference across multiple backends. Concrete numbers for a niche but growing hardware category. Niche audience (local LLM enthusiasts) but solid signal.",
-        "total": 4.8237
+        "total": 4.8197
       },
       "flags": {
         "enriched": true,
@@ -496,7 +559,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-30T01:54:40Z",
-      "last_seen_at": "2026-05-31T11:27:37Z"
+      "last_seen_at": "2026-05-31T13:39:43Z"
     },
     {
       "id": "942c8868260cd89b894d7248520813513eb36941",
@@ -513,12 +576,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8301,
+        "recency_decay": 0.8261,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.86,
         "taste_score": 0.975,
         "taste_raw": 0.65,
         "taste_reason": "AI Explained digs the 244-page system card for 15 overlooked details — genuinely extends beyond the release announcement with concrete system-card insights. Worth reading for anyone already familiar with the headline launch.",
-        "total": 4.8051
+        "total": 4.8011
       },
       "flags": {
         "enriched": true,
@@ -526,7 +591,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-29T21:09:31Z",
-      "last_seen_at": "2026-05-31T11:27:37Z"
+      "last_seen_at": "2026-05-31T13:39:43Z"
     },
     {
       "id": "559fecd719c06981db9ac92ead13c2ac4bc17adf",
@@ -541,54 +606,26 @@
         "topic:claude-code",
         "topic:research"
       ],
-      "bullet_md": "- 🎥 [Claude Opus 4.8: Best AI Model Ever? Powerful, Agentic, and Faster! (Fully Tested)](https://www.youtube.com/watch?v=MkzUPtYjgBY) — **WorldofAI** (14m35s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=MkzUPtYjgBY\"><img src=\"https://img.youtube.com/vi/MkzUPtYjgBY/mqdefault.jpg\" alt=\"thumb\"></a></p> — WorldofAI tests Opus 4.8 across coding, agentic, frontend, game development, and software engineering benchmarks, calling it Anthropics most capable model yet with significant gains across all tested dimensions.",
+      "bullet_md": "- 🎥 [Claude Opus 4.8: Best AI Model Ever? Powerful, Agentic, and Faster! (Fully Tested)](https://www.youtube.com/watch?v=MkzUPtYjgBY) — **WorldofAI** (14m35s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=MkzUPtYjgBY\"><img src=\"https://img.youtube.com/vi/MkzUPtYjgBY/mqdefault.jpg\" alt=\"thumb\"></a></p> — Opus 4.8 tested across coding, agentic, frontend, game development, and software engineering benchmarks with concrete score comparisons showing it leads GPT-5.5 on SWE-bench Pro (69.2% vs 58.6%) but trails on terminal-centric tasks — useful for understanding where the model fits in your toolchain.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.7519,
+        "recency_decay": 0.7479,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8158,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "WorldofAI benchmarks Opus 4.8 across coding, agentic, game dev, and SWE benchmarks. Reasonably comprehensive testing on a hot release from a known channel.",
-        "total": 4.8019
+        "total": 4.7979
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-05-29T21:09:31Z",
       "last_seen_at": "2026-05-30T09:42:24Z"
-    },
-    {
-      "id": "a54983761fc79aa130e2a9e264db5dbe44e90f4e",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Google Gemini AI New Limits Based on Compute - AI is Expensive",
-      "canonical_url": "https://youtube.com/watch?v=ddQTaSNJpl4",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:google"
-      ],
-      "bullet_md": "- 🎥 [Google Gemini AI New Limits Based on Compute - AI is Expensive](https://www.youtube.com/watch?v=ddQTaSNJpl4) — **Eli the Computer Guy** (22m12s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ddQTaSNJpl4\"><img src=\"https://img.youtube.com/vi/ddQTaSNJpl4/mqdefault.jpg\" alt=\"thumb\"></a></p> — Google is introducing compute-based usage limits for Gemini, reflecting the high infrastructure costs of running large-scale AI inference across its user base.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "taste_score": 0.75,
-        "taste_raw": 0.5,
-        "taste_reason": "Concrete news about Google's compute-based pricing model change from a reasonably credible source. Useful but not breaking.",
-        "total": 4.75
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-31T02:08:53Z",
-      "last_seen_at": "2026-05-31T11:27:37Z"
     },
     {
       "id": "c75dab672657c9fe72b06c8635536b6a2c3ef6aa",
@@ -606,12 +643,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8775,
+        "recency_decay": 0.8735,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8158,
         "taste_score": 1.23,
         "taste_raw": 0.82,
         "taste_reason": "Zvi's deep-dive review of Opus 4.8 after just 6 weeks from 4.7. Credible technical analysis noting meaningful across-the-board improvement — extends state-of-ai from 'rumored' to detailed assessment.",
-        "total": 5.6075
+        "total": 5.6035
       },
       "flags": {
         "enriched": true,
@@ -619,7 +658,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-29T21:10:11Z",
-      "last_seen_at": "2026-05-31T11:28:16Z"
+      "last_seen_at": "2026-05-31T13:40:21Z"
     },
     {
       "id": "beddc72dedb94cd691f4e374d177f29e1dfbad83",
@@ -637,17 +676,19 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.7218,
+        "recency_decay": 0.7177,
         "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6786,
         "taste_score": 1.17,
         "taste_raw": 0.78,
         "taste_reason": "Swyx roundup of today's Anthropic news deluge (raise + Opus 4.8 + ultracode). Good synthesis from credible newsletter but recaps news already covered by direct sources.",
-        "total": 5.3918
+        "total": 5.3877
       },
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": false
+        "published_today": true
       },
       "first_seen_at": "2026-05-29T21:10:11Z",
       "last_seen_at": "2026-05-30T09:43:03Z"
@@ -667,12 +708,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9077,
+        "recency_decay": 0.9036,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7188,
         "taste_score": 1.275,
         "taste_raw": 0.85,
         "taste_reason": "Community-compiled 100+ eval suite for Opus 4.8 is the most concrete signal we have about its capabilities. Extends state-of-ai's 'stronger reasoning claimed' with actual benchmark breadth.",
-        "total": 5.1827
+        "total": 5.1786
       },
       "flags": {
         "enriched": true,
@@ -699,6 +742,8 @@
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8261,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "Concrete real-world benchmark (31 t/s on RTX 3050 6GB) extends state-of-ai's Qwen3.6 row with actionable consumer-hardware numbers.",
@@ -710,7 +755,39 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-31T11:28:04Z",
-      "last_seen_at": "2026-05-31T11:28:04Z"
+      "last_seen_at": "2026-05-31T13:40:10Z"
+    },
+    {
+      "id": "34da88f3a2b7163ef9f46fd940a92bfcc71a553a",
+      "section": "community",
+      "source": "reddit",
+      "title": "Llama Surgery: Continuous Sparsification of Pre-Trained Language Models via Differentiable Ultrametric Topology Injection",
+      "canonical_url": "https://reddit.com/comments/1tshkls",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/Artificial: \"Llama Surgery: Continuous Sparsification of Pre-Trained Language Models via Differentiable Ultrametric Topology Injection\"](https://www.reddit.com/r/artificial/comments/1tshkls/llama_surgery_continuous_sparsification_of/) — Researchers propose continuously sparsifying pretrained LMs via differentiable ultrametric topology injection, enabling more efficient model compression without full retraining.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 1.0,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Novel research technique (differentiable ultrametric topology for LM sparsification) with concrete technical method — worth a click for the architecture-interested reader.",
+        "total": 4.9
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-31T02:09:18Z",
+      "last_seen_at": "2026-05-31T02:09:18Z"
     },
     {
       "id": "7254aa394d43f5e86e6647fc80cf2a6f29a839e8",
@@ -729,6 +806,8 @@
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8537,
         "taste_score": 0.825,
         "taste_raw": 0.55,
         "taste_reason": "Genuine hands-on practitioner advice about Claude design workflows. Practical signal for daily users, though anecdotal.",
@@ -741,6 +820,102 @@
       },
       "first_seen_at": "2026-05-31T11:28:04Z",
       "last_seen_at": "2026-05-31T11:28:04Z"
+    },
+    {
+      "id": "fbf3c5d485a2578037b2407f1c7e8a5200160782",
+      "section": "community",
+      "source": "reddit",
+      "title": "Built a launcher for Ollama coding agents",
+      "canonical_url": "https://reddit.com/comments/1tsvg3i",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:agents",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/ollama: \"Built a launcher for Ollama coding agents\"](https://www.reddit.com/r/ollama/comments/1tsvg3i/built_a_launcher_for_ollama_coding_agents/) — The author built an open-source launcher that manages and orchestrates Ollama-based coding agents, streamlining multi-agent local development workflows.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7895,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Practical open-source tooling for Ollama coding-agent orchestration — directly relevant to the audience's local dev workflow. Concrete project, not just discussion.",
+        "total": 4.825
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-05-31T13:40:10Z",
+      "last_seen_at": "2026-05-31T13:40:10Z"
+    },
+    {
+      "id": "6df070270d1a049349b74e05cd1c34796a26a85c",
+      "section": "community",
+      "source": "reddit",
+      "title": "Built an AI Accelerator and opensourced it. [P]",
+      "canonical_url": "https://reddit.com/comments/1tsuogs",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/MachineLearning: \"Built an AI Accelerator and opensourced it. [P]\"](https://www.reddit.com/r/MachineLearning/comments/1tsuogs/built_an_ai_accelerator_and_opensourced_it_p/) — A developer released an open-source AI accelerator on r/MachineLearning, sharing implementation details and performance benchmarks for inference optimization.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7647,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Open-sourced AI accelerator with implementation details and performance benchmarks — concrete signal for inference optimization enthusiasts.",
+        "total": 4.825
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-31T13:40:10Z",
+      "last_seen_at": "2026-05-31T13:40:10Z"
+    },
+    {
+      "id": "b2e6eaf0785ce62a44df431a794a1b713fc8334c",
+      "section": "community",
+      "source": "reddit",
+      "title": "Has anyone here actually switched from Opus to GPT-5.5 for daily coding?",
+      "canonical_url": "https://reddit.com/comments/1tsv8od",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:openai"
+      ],
+      "bullet_md": "- 💬 [r/Artificial: \"Has anyone here actually switched from Opus to GPT-5.5 for daily coding?\"](https://www.reddit.com/r/artificial/comments/1tsv8od/has_anyone_here_actually_switched_from_opus_to/) — Users on r/Artificial discuss real-world tradeoffs between Claude Opus and GPT-5.5 for daily coding work, comparing latency, code quality, and agent capabilities.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7692,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Real-world Opus vs GPT-5.5 tradeoff discussion from actual users — directly relevant to the audience's daily tool choice, though anecdotal.",
+        "total": 4.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-31T13:40:10Z",
+      "last_seen_at": "2026-05-31T13:40:10Z"
     },
     {
       "id": "5b8f5d5305a7fe210f31e7939b16094b0e32e860",
@@ -757,12 +932,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.8007,
+        "recency_decay": 0.7966,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.76,
         "taste_score": 0.9,
         "taste_raw": 0.6,
         "taste_reason": "User-driven Opus 4.8 testing across programming, reasoning, and creative tasks with comparisons to Sonnet 4.6 and GPT-5.5. Provides more specific use-case signal than generic Opus 4.8 discussion.",
-        "total": 4.7007
+        "total": 4.6966
       },
       "flags": {
         "enriched": true,
@@ -771,6 +948,38 @@
       },
       "first_seen_at": "2026-05-29T21:09:58Z",
       "last_seen_at": "2026-05-30T06:13:04Z"
+    },
+    {
+      "id": "c388c0ea5c622e5a49af8f89d38fd2d509fd2d9b",
+      "section": "community",
+      "source": "reddit",
+      "title": "Out of boredom I put claude code into ultracode mode and told it to make whatever it wanted.",
+      "canonical_url": "https://reddit.com/comments/1troe8z",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Out of boredom I put claude code into ultracode mode and told it to make whatever it wanted.\"](https://www.reddit.com/r/ClaudeAI/comments/1troe8z/out_of_boredom_i_put_claude_code_into_ultracode/) — A user let Claude Code run freely in ultracode mode and shares what the agent built when given unbounded creative autonomy.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9283,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7826,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Entertaining experiment letting Claude Code run wild in ultracode mode — exactly the kind of agent-autonomy anecdote the audience enjoys, though no benchmarks.",
+        "total": 4.6783
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-30T09:42:50Z",
+      "last_seen_at": "2026-05-30T09:42:50Z"
     },
     {
       "id": "4b4785a4098d2e75ef027d2382bc124585c8666b",
@@ -787,12 +996,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.851,
+        "recency_decay": 0.847,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9688,
         "taste_score": 0.825,
         "taste_raw": 0.55,
         "taste_reason": "ML researchers sharing real timelines for top-conference publications. Good data point for academics but limited applicability to the core practitioner audience. Useful but niche.",
-        "total": 4.676
+        "total": 4.672
       },
       "flags": {
         "enriched": true,
@@ -816,12 +1027,14 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9186,
+        "recency_decay": 0.9146,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.931,
         "taste_score": 0.75,
         "taste_raw": 0.5,
         "taste_reason": "Concrete data point: $500k AI-generated film at Cannes Market. Worth a click for the cost/production quality angle, but the thread is speculation on implications, not a production breakdown.",
-        "total": 4.6686
+        "total": 4.6646
       },
       "flags": {
         "enriched": true,
@@ -848,6 +1061,8 @@
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8182,
         "taste_score": 0.6,
         "taste_raw": 0.4,
         "taste_reason": "Anecdotal Reddit thread about tone — extends state-of-ai's Opus 4.8 row with a behavioral observation but no concrete evidence or benchmarks.",
@@ -859,217 +1074,71 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-31T11:28:04Z",
-      "last_seen_at": "2026-05-31T11:28:04Z"
+      "last_seen_at": "2026-05-31T13:40:10Z"
     },
     {
-      "id": "9db870c672f947c4dc3ed11e1058715fb29a126c",
+      "id": "2e17a20bef7acc7f63d6c2ecd6d04956131b7163",
       "section": "community",
       "source": "reddit",
-      "title": "Opus 4.8 still isn't as good as GPT-5.5",
-      "canonical_url": "https://reddit.com/comments/1ts50bm",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code",
-        "topic:openai"
-      ],
-      "bullet_md": "- 💬 [r/Anthropic: \"Opus 4.8 still isn't as good as GPT-5.5\"](https://www.reddit.com/r/Anthropic/comments/1ts50bm/opus_48_still_isnt_as_good_as_gpt55/) — The r/Anthropic community debates whether Claude Opus 4.8 still lags behind GPT-5.5, with users comparing reasoning depth, coding output, and overall reliability across both models.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "Reddit opinion thread with no benchmark numbers — duplicates the implicit comparison already in state-of-ai's frontier models table.",
-        "total": 4.45
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-31T02:09:18Z",
-      "last_seen_at": "2026-05-31T02:09:18Z"
-    },
-    {
-      "id": "65c935319db57a4f614a1c01fed2bbfe722f2b98",
-      "section": "community",
-      "source": "reddit",
-      "title": "relaydeck agent orchestrator is now in public beta (v0.1.0)",
-      "canonical_url": "https://reddit.com/comments/1tsno1h",
+      "title": "Stepfun 3.7 Flash is very good",
+      "canonical_url": "https://reddit.com/comments/1tss9nq",
       "tags": [
         "origin:reddit",
         "section:community",
         "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/ollama: \"relaydeck agent orchestrator is now in public beta (v0.1.0)\"](https://www.reddit.com/r/ollama/comments/1tsno1h/relaydeck_agent_orchestrator_is_now_in_public/) — RelayDeck is an agent orchestrator now in public beta (v0.1.0) on Ollama, enabling developers to coordinate multiple AI agents through a unified framework.",
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"Stepfun 3.7 Flash is very good\"](https://www.reddit.com/r/LocalLLaMA/comments/1tss9nq/stepfun_37_flash_is_very_good/) — Users on r/LocalLLaMA share their experiences with Stepfun 3.7 Flash, discussing its performance for local inference and how it compares to other open-weight models.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "Yet another early-stage agent orchestrator (v0.1.0) in a crowded space already well-covered by state-of-ai's agent frameworks section. No distinguishing feature mentioned.",
-        "total": 4.45
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-31T11:28:04Z",
-      "last_seen_at": "2026-05-31T11:28:04Z"
-    },
-    {
-      "id": "bfa01bd1f20f460599938e24ff66fe64eee1695b",
-      "section": "community",
-      "source": "reddit",
-      "title": "Mystery company accidentally blew $500 million on Claude AI in a single month — failed to put usage limit on licenses for employees",
-      "canonical_url": "https://reddit.com/comments/1trmvgh",
-      "tags": [
-        "origin:reddit",
-        "section:community"
-      ],
-      "bullet_md": "- 💬 [r/Artificial: \"Mystery company accidentally blew $500 million on Claude AI in a single month — failed to put usage limit on licenses for employees\"](https://www.reddit.com/r/artificial/comments/1trmvgh/mystery_company_accidentally_blew_500_million_on/) — A company reportedly racked up a half-billion-dollar Claude bill after failing to set per-user API spending limits, sparking discussion about enterprise governance controls and the cost of unmonitored agentic usage.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9224,
-        "origin_weight": 1.0,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Unverified claim about $500M Claude overspend — mystery company, no source. Entertaining but lacks credibility. Clickbait-adjacent framing drops score.",
-        "total": 4.4474
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-30T06:13:04Z",
-      "last_seen_at": "2026-05-31T11:28:04Z"
-    },
-    {
-      "id": "164cac2c7d22aa69552faf5794a212708c9202ea",
-      "section": "community",
-      "source": "reddit",
-      "title": "Wall-OSS-0.5: 4B VLA with open training code and zero-shot real-robot evaluation[D]",
-      "canonical_url": "https://reddit.com/comments/1tq8v8m",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:research"
-      ],
-      "bullet_md": "- 💬 [r/MachineLearning: \"Wall-OSS-0.5: 4B VLA with open training code and zero-shot real-robot evaluation[D]\"](https://www.reddit.com/r/MachineLearning/comments/1tq8v8m/walloss05_4b_vla_with_open_training_code_and/) — Wall-OSS-0.5 is a 4B-parameter vision-language-action model for robotics with fully open training code and zero-shot real-robot evaluation, lowering the barrier for researchers working on manipulation tasks.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6426,
-        "origin_weight": 1.0,
-        "taste_score": 0.75,
-        "taste_raw": 0.5,
-        "taste_reason": "Wall-OSS-0.5: fully open 4B VLA for robotics with training code and zero-shot real-robot eval. Concrete release, Niche to robotics researchers but a genuine open contribution.",
-        "total": 4.3926
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-29T02:00:45Z",
-      "last_seen_at": "2026-05-29T02:00:45Z"
-    },
-    {
-      "id": "81931d1042d6cd2a30eb5d2e6b113a36cf598a45",
-      "section": "community",
-      "source": "reddit",
-      "title": "why is there no api for detecting soft-404s",
-      "canonical_url": "https://reddit.com/comments/1trokbj",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/AI_Agents: \"why is there no api for detecting soft-404s\"](https://www.reddit.com/r/AI_Agents/comments/1trokbj/why_is_there_no_api_for_detecting_soft404s/) — A developer on r/AI_Agents asks why no API exists for detecting soft-404s, highlighting a gap in the AI agent tooling ecosystem for production web crawling reliability.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9336,
-        "origin_weight": 1.0,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "Niche dev question about soft-404 detection APIs. Valid gap but the thread is a question, not an answer — no actionable signal for readers.",
-        "total": 4.3836
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-30T06:13:04Z",
-      "last_seen_at": "2026-05-30T06:13:04Z"
-    },
-    {
-      "id": "113391df499dbaf8a271cb98a6ef6777ce557e62",
-      "section": "community",
-      "source": "reddit",
-      "title": "What it's like talking to Opus 4.8...",
-      "canonical_url": "https://reddit.com/comments/1tquhn5",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/Anthropic: \"What it's like talking to Opus 4.8...\"](https://www.reddit.com/r/Anthropic/comments/1tquhn5/what_its_like_talking_to_opus_48/) — A thread where users describe their conversational experience with Opus 4.8, highlighting its more opinionated and less sycophantic personality compared to earlier Claude versions.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.7675,
-        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7,
         "taste_score": 0.6,
         "taste_raw": 0.4,
-        "taste_reason": "Personality impressions of Opus 4.8 — more opinionated, less sycophantic. Already covered by state-of-ai's Opus 4.8 leaked entry. Niche at best.",
-        "total": 4.3675
+        "taste_reason": "Community anecdote about Stepfun 3.7 Flash with no concrete benchmark numbers or verifiable comparisons — useful chatter but thin signal.",
+        "total": 4.6
       },
       "flags": {
         "enriched": true,
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-29T21:09:58Z",
-      "last_seen_at": "2026-05-30T01:55:05Z"
+      "first_seen_at": "2026-05-31T13:40:10Z",
+      "last_seen_at": "2026-05-31T13:40:10Z"
     },
     {
-      "id": "1ec3769d3c08ce7d77e37cde3722e20b12c67df5",
+      "id": "b4299b95e97a2dd1c65a46f2a2fe00d74bf33493",
       "section": "community",
       "source": "reddit",
-      "title": "Emergence AI ran a simulated society on Claude, Gemini, Grok and GPT for two weeks. The results are… scary?",
-      "canonical_url": "https://reddit.com/comments/1tqaq7p",
+      "title": "No Free Lunch - How should Anthropic handle the compute shortage?",
+      "canonical_url": "https://reddit.com/comments/1tsnxrd",
       "tags": [
         "origin:reddit",
         "section:community",
-        "topic:google"
+        "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/singularity: \"Emergence AI ran a simulated society on Claude, Gemini, Grok and GPT for two weeks. The results are… scary?\"](https://www.reddit.com/r/singularity/comments/1tqaq7p/emergence_ai_ran_a_simulated_society_on_claude/) — Across five 15-day simulations, Claude Sonnet 4.6 ran the only stable society (0 crimes, 98% vote approval on 58 constitutional proposals), while Grok 4.1 Fast committed 183 crimes and went extinct by day 4, and GPT-5 Mini had just 2 crimes yet all agents died from failing to take survival actions.",
+      "bullet_md": "- 💬 [r/Anthropic: \"No Free Lunch - How should Anthropic handle the compute shortage?\"](https://www.reddit.com/r/Anthropic/comments/1tsnxrd/no_free_lunch_how_should_anthropic_handle_the/) — The r/Anthropic community debates how the company should allocate limited compute capacity amid growing demand for Opus 4.8 and other resource-intensive models.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.6517,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "taste_score": 0.675,
-        "taste_raw": 0.45,
-        "taste_reason": "Interesting multi-model simulated society experiment (Claude/Gemini/Grok/GPT, 2 weeks). But bullet_md has no concrete findings — 'scary?' framing without data. Needs the actual results to be useful.",
-        "total": 4.3267
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Speculative community debate about compute allocation — relevant topic but no insider info or concrete proposals.",
+        "total": 4.525
       },
       "flags": {
         "enriched": true,
-        "researched": true,
+        "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-05-29T02:00:45Z",
-      "last_seen_at": "2026-05-29T02:00:45Z"
+      "first_seen_at": "2026-05-31T13:40:10Z",
+      "last_seen_at": "2026-05-31T13:40:10Z"
     }
   ]
 }
