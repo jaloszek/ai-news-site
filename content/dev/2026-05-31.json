@@ -1,8 +1,8 @@
 {
   "date": "2026-05-31",
-  "generated_at": "2026-05-31T13:48:02+00:00",
+  "generated_at": "2026-05-31T14:35:55+00:00",
   "candidate_count": 35,
-  "researched_count": 10,
+  "researched_count": 13,
   "published_count": 17,
   "section_limits": {
     "claude-code": 5,
@@ -23,7 +23,7 @@
         "section:claude-code",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🛠 **[v2.1.158](https://github.com/anthropics/claude-code/releases/tag/v2.1.158)** — _Claude Code releases_. — Claude Code v2.1.158 brings auto mode to Bedrock, Vertex AI, and AWS Foundry for Opus 4.7 and 4.8 users, gated behind the CLAUDE_CODE_ENABLE_AUTO_MODE=1 environment variable.",
+      "bullet_md": "- 🛠 **[v2.1.158](https://github.com/anthropics/claude-code/releases/tag/v2.1.158)** — _Claude Code releases_. — Auto mode's classifier-gated execution now works on Bedrock, Vertex AI, and Azure Foundry for Opus 4.7 and 4.8, evaluating every tool call at decision time without per-call prompting — opt in with CLAUDE_CODE_ENABLE_AUTO_MODE=1 and verify with /status.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -38,11 +38,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-05-30T06:13:24Z",
-      "last_seen_at": "2026-05-31T13:40:21Z"
+      "last_seen_at": "2026-05-31T14:29:31Z"
     },
     {
       "id": "27f30742de981dd6335548d035ff67d692240159",
@@ -55,7 +55,7 @@
         "section:claude-code",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🛠 **[v2.1.157](https://github.com/anthropics/claude-code/releases/tag/v2.1.157)** — _Claude Code releases_. — Claude Code v2.1.157 adds automatic plugin loading from .claude/skills directories, a claude plugin init scaffolding command, and tab autocomplete for /plugin subcommands. The EnterWorktree tool can now switch between Claude-managed worktrees mid-session.",
+      "bullet_md": "- 🛠 **[v2.1.157](https://github.com/anthropics/claude-code/releases/tag/v2.1.157)** — _Claude Code releases_. — Plugins dropped into .claude/skills/ load automatically on session start without marketplace registration, and /reload-skills picks up changes mid-session without restarting Claude Code.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -70,11 +70,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-05-29T21:10:11Z",
-      "last_seen_at": "2026-05-31T13:40:21Z"
+      "last_seen_at": "2026-05-31T14:29:31Z"
     },
     {
       "id": "2d70dc244c4819b00757f9df647ee734949c88ff",
@@ -170,7 +170,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-31T02:09:44Z",
-      "last_seen_at": "2026-05-31T13:40:25Z"
+      "last_seen_at": "2026-05-31T14:29:35Z"
     },
     {
       "id": "c5841114b9c7cfe84424c55f01567f6f57f635a4",
@@ -266,7 +266,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-31T02:09:44Z",
-      "last_seen_at": "2026-05-31T13:40:25Z"
+      "last_seen_at": "2026-05-31T14:29:35Z"
     },
     {
       "id": "ffaeb61c1e156880096c41058c52634daa65c604",
@@ -298,7 +298,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-31T13:40:25Z",
-      "last_seen_at": "2026-05-31T13:40:25Z"
+      "last_seen_at": "2026-05-31T14:29:35Z"
     },
     {
       "id": "14f79de034bc40b5232b9ea599824e58e944e8fc",
@@ -450,7 +450,7 @@
         "recency_decay": 0.861,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8286,
+        "novelty_score": 0.7895,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "Hands-on testing of Opus 4.8 with concrete coding/reasoning examples and comparisons to prior versions. Useful signal from a known creator. Extends state-of-ai's Opus 4.8 entry with real-world testing data.",
@@ -482,7 +482,7 @@
         "recency_decay": 0.8307,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8205,
+        "novelty_score": 0.8298,
         "taste_score": 1.02,
         "taste_raw": 0.68,
         "taste_reason": "Demo of ultracode mode with Opus 4.8 showing prolonged autonomous debugging. Concrete demonstration if it's real. Source channel name ('income stream surfers') suggests content-farm framing — penalized 0.15 for clickbait style.",
@@ -494,7 +494,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-29T21:09:31Z",
-      "last_seen_at": "2026-05-31T13:39:43Z"
+      "last_seen_at": "2026-05-31T14:28:48Z"
     },
     {
       "id": "64e0c87949de8f7e2e92e18552673d8364700f0a",
@@ -507,7 +507,7 @@
         "section:youtube",
         "topic:opensource"
       ],
-      "bullet_md": "- 🎥 [QWEN 3.6: 27B dense local model 19x faster ](https://www.youtube.com/watch?v=cWkFsUTQUao) — **Tech Business Club** (3m56s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=cWkFsUTQUao\"><img src=\"https://img.youtube.com/vi/cWkFsUTQUao/mqdefault.jpg\" alt=\"thumb\"></a></p> — Qwen 3.6 delivers a 27B dense model that runs 19x faster than its predecessor, with improvements in coding, reasoning, and agent workflows for local deployment.",
+      "bullet_md": "- 🎥 [QWEN 3.6: 27B dense local model 19x faster ](https://www.youtube.com/watch?v=cWkFsUTQUao) — **Tech Business Club** (3m56s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=cWkFsUTQUao\"><img src=\"https://img.youtube.com/vi/cWkFsUTQUao/mqdefault.jpg\" alt=\"thumb\"></a></p> — Qwen 3.6 27B scores 59.3 on Terminal-Bench 2.0 and 48.2 on SkillsBench — matching models several times its size — with a 262K native context for teams that need local-agent inference without a GPU cluster.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -522,7 +522,7 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-05-31T13:39:43Z",
@@ -559,7 +559,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-30T01:54:40Z",
-      "last_seen_at": "2026-05-31T13:39:43Z"
+      "last_seen_at": "2026-05-31T14:28:48Z"
     },
     {
       "id": "942c8868260cd89b894d7248520813513eb36941",
@@ -591,7 +591,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-29T21:09:31Z",
-      "last_seen_at": "2026-05-31T13:39:43Z"
+      "last_seen_at": "2026-05-31T14:28:48Z"
     },
     {
       "id": "559fecd719c06981db9ac92ead13c2ac4bc17adf",
@@ -613,7 +613,7 @@
         "recency_decay": 0.7479,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8158,
+        "novelty_score": 0.7872,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "WorldofAI benchmarks Opus 4.8 across coding, agentic, game dev, and SWE benchmarks. Reasonably comprehensive testing on a hot release from a known channel.",
@@ -658,7 +658,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-29T21:10:11Z",
-      "last_seen_at": "2026-05-31T13:40:21Z"
+      "last_seen_at": "2026-05-31T14:29:31Z"
     },
     {
       "id": "beddc72dedb94cd691f4e374d177f29e1dfbad83",
@@ -755,7 +755,39 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-31T11:28:04Z",
-      "last_seen_at": "2026-05-31T13:40:10Z"
+      "last_seen_at": "2026-05-31T14:29:14Z"
+    },
+    {
+      "id": "8a8633dd2cb986ff49857bba1617ae533329732d",
+      "section": "community",
+      "source": "reddit",
+      "title": "Asked Claude Code for a \"deep search\" in ultracode mode — it spun up ~70 agents across a 4-phase pipeline on its own",
+      "canonical_url": "https://reddit.com/comments/1tsqezk",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Asked Claude Code for a \"deep search\" in ultracode mode — it spun up ~70 agents across a 4-phase pipeline on its own\"](https://www.reddit.com/r/ClaudeAI/comments/1tsqezk/asked_claude_code_for_a_deep_search_in_ultracode/) — Claude Code in ultracode mode autonomously orchestrated ~70 agents across a 4-phase pipeline to run a deep search, showing how agentic coding tools scale decision-making without human intervention.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.75,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Concrete user report of Claude Code autonomously orchestrating ~70 agents — extends state-of-ai's Agent Teams row with real emergent scaling behavior, but single Reddit anecdote limits reliability.",
+        "total": 4.975
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-31T14:29:14Z",
+      "last_seen_at": "2026-05-31T14:29:14Z"
     },
     {
       "id": "34da88f3a2b7163ef9f46fd940a92bfcc71a553a",
@@ -852,7 +884,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-05-31T13:40:10Z",
-      "last_seen_at": "2026-05-31T13:40:10Z"
+      "last_seen_at": "2026-05-31T14:29:14Z"
     },
     {
       "id": "6df070270d1a049349b74e05cd1c34796a26a85c",
@@ -883,7 +915,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-31T13:40:10Z",
-      "last_seen_at": "2026-05-31T13:40:10Z"
+      "last_seen_at": "2026-05-31T14:29:14Z"
     },
     {
       "id": "b2e6eaf0785ce62a44df431a794a1b713fc8334c",
@@ -915,7 +947,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-31T13:40:10Z",
-      "last_seen_at": "2026-05-31T13:40:10Z"
+      "last_seen_at": "2026-05-31T14:29:14Z"
     },
     {
       "id": "5b8f5d5305a7fe210f31e7939b16094b0e32e860",
@@ -1074,7 +1106,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-31T11:28:04Z",
-      "last_seen_at": "2026-05-31T13:40:10Z"
+      "last_seen_at": "2026-05-31T14:29:14Z"
     },
     {
       "id": "2e17a20bef7acc7f63d6c2ecd6d04956131b7163",
@@ -1106,39 +1138,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-05-31T13:40:10Z",
-      "last_seen_at": "2026-05-31T13:40:10Z"
-    },
-    {
-      "id": "b4299b95e97a2dd1c65a46f2a2fe00d74bf33493",
-      "section": "community",
-      "source": "reddit",
-      "title": "No Free Lunch - How should Anthropic handle the compute shortage?",
-      "canonical_url": "https://reddit.com/comments/1tsnxrd",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/Anthropic: \"No Free Lunch - How should Anthropic handle the compute shortage?\"](https://www.reddit.com/r/Anthropic/comments/1tsnxrd/no_free_lunch_how_should_anthropic_handle_the/) — The r/Anthropic community debates how the company should allocate limited compute capacity amid growing demand for Opus 4.8 and other resource-intensive models.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8333,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Speculative community debate about compute allocation — relevant topic but no insider info or concrete proposals.",
-        "total": 4.525
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-31T13:40:10Z",
-      "last_seen_at": "2026-05-31T13:40:10Z"
+      "last_seen_at": "2026-05-31T14:29:14Z"
     }
   ]
 }
