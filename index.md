@@ -24,7 +24,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <div class="cal-head">SAT</div>
     <div class="cal-head">SUN</div>
     <a class="cal-cell cal-filled" href="content/2026-06-01.html"><div class="cal-num">1</div><ul class="cal-highlights"><li>🔧 Opus 4.8 fabrication bugs</li><li>💰 SoftBank €75B France</li><li>🟡 Step 3.7 Flash open model</li></ul></a>
-    <a class="cal-cell cal-filled" href="content/2026-06-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>🛠 CC v2.1.160</li><li>🟡 NVIDIA Cosmos 3</li><li>🟡 JetBrains Mellum2</li><li>🟢 Codex on AWS</li><li>💬 MiniMax M3</li></ul></a>
+    <a class="cal-cell cal-filled" href="content/2026-06-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>🛠 CC v2.1.160</li><li>🔒 Project Glasswing</li><li>🟡 NVIDIA Cosmos 3</li><li>💰 Anthropic S-1</li><li>🟡 JetBrains Mellum2</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">3</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">4</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>

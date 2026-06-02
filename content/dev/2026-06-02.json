@@ -1,9 +1,9 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T02:39:52+00:00",
+  "generated_at": "2026-06-02T19:55:16+00:00",
   "candidate_count": 31,
-  "researched_count": 8,
-  "published_count": 15,
+  "researched_count": 21,
+  "published_count": 0,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
@@ -23,26 +23,26 @@
         "section:claude-code",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🛠 **[v2.1.160](https://github.com/anthropics/claude-code/releases/tag/v2.1.160)** — _Claude Code releases_. — v2.1.160 adds a safety prompt before Claude Code writes to shell startup files and build-tool configs like .npmrc and .bazelrc that could grant unintended code execution, and lets single-file grep satisfy read-before-edit.",
+      "bullet_md": "- 🛠 **[v2.1.160](https://github.com/anthropics/claude-code/releases/tag/v2.1.160)** — _Claude Code releases_. — Prompts before writing to shell startup files (`.zshenv`, `.zlogin`, `.bash_login`) and build-tool configs (`.npmrc`, `.bazelrc`, `.pre-commit-config.yaml`) that grant code execution — plus renames the dynamic workflow trigger from 'workflow' to 'ultracode' and fixes background session freezing.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8,
-        "taste_score": 0.825,
-        "taste_raw": 0.55,
-        "taste_reason": "Useful incremental release with a concrete safety UX improvement and a grep DX fix, but it's just +3 patch versions on the state-of-ai baseline (v2.1.157). Worth knowing, not worth clicking.",
-        "total": 5.325
+        "novelty_score": 0.9062,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Extends state-of-ai's Claude Code row with v2.1.160 — concrete security improvement (prompt-before-shell-edit) that matters for supply-chain risk in daily agent use.",
+        "total": 5.55
       },
       "flags": {
         "enriched": true,
-        "researched": false,
-        "published_today": true
+        "researched": true,
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:41Z",
-      "last_seen_at": "2026-06-02T02:30:41Z"
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
     },
     {
       "id": "7c8c63c46b4bc3d6cbb0d55e70829582c559c3a2",
@@ -55,58 +55,58 @@
         "section:ai-world",
         "topic:opensource"
       ],
-      "bullet_md": "- 🟡 **[Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action](https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai)** — _Hugging Face blog_. — NVIDIA open-sources Cosmos 3 at Computex with a mixture-of-transformers architecture merging vision reasoning, world generation, and robot action — Super 32B and Nano 8B variants, trained on 20 trillion tokens, alongside a Cosmos Coalition of robotics labs to push open physical AI forward.",
+      "bullet_md": "- 🟡 **[Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action](https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai)** — _Hugging Face blog_. — NVIDIA ships Cosmos 3 in two sizes — 16B Nano for workstation inference on RTX PRO 6000 and 64B Super for datacenter deployment — built on a mixture-of-transformers that handles text, image, video, ambient sound, and actions, ranking first among open models on PAI-Bench, R-Bench, and RoboLab.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 0.9396,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.6957,
-        "taste_score": 1.125,
-        "taste_raw": 0.75,
-        "taste_reason": "Genuinely novel release from NVIDIA — first open omni-model for physical AI combining vision, language, and action. Covers an underexposed domain (robotics/embodiment) not in state-of-ai.",
-        "total": 5.5646
+        "novelty_score": 0.7407,
+        "taste_score": 1.32,
+        "taste_raw": 0.88,
+        "taste_reason": "NVIDIA open-sources Cosmos 3 — first open omni-model for physical AI reasoning. Concrete release from a major lab, fills a gap in state-of-ai. Would Slack this.",
+        "total": 5.7596
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:41Z",
-      "last_seen_at": "2026-06-02T02:30:41Z"
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
     },
     {
-      "id": "2995ca1c3636d92f482be20355930ccccbca56a0",
+      "id": "440b7646f5767e29323bc647b882f2d7add19e78",
       "section": "ai-world",
       "source": "rss",
-      "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-      "canonical_url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "canonical_url": "https://huggingface.co/blog/Hcompany/holo31",
       "tags": [
         "origin:rss",
         "section:ai-world",
         "topic:opensource"
       ],
-      "bullet_md": "- 🟡 **[Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains](https://huggingface.co/blog/JetBrains/mellum2-launch)** — _Hugging Face blog_. — JetBrains' Mellum2 activates only 2.5B of its 12B parameters per token via 64 experts, trained on 10.6 trillion tokens with a code-heavy curriculum, and ships Base, Instruct, and Thinking variants under Apache 2.0 — competitive with Qwen 3.5 9B on coding at 2x faster inference.",
+      "bullet_md": "- 🟡 **[Holo3.1: Fast & Local Computer Use Agents](https://huggingface.co/blog/Hcompany/holo31)** — _Hugging Face blog_. — H Company ships Holo3.1 with quantized FP8, Q4 GGUF, and NVFP4 checkpoints across four model sizes (0.8B to 35B-A3B) — on DGX Spark the NVFP4 variant delivers a 2× end-to-end speedup over FP8, cutting average step time from 6.8s to 3.3s.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.85,
-        "taste_score": 0.9,
-        "taste_raw": 0.6,
-        "taste_reason": "JetBrains entering open-weight models with a 12B MoE is a genuinely interesting cross-domain signal from a major IDE vendor, but the model itself is modest and benchmark numbers aren't cited.",
-        "total": 5.4
+        "novelty_score": 0.6296,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Concrete open-source release of local computer-use agents with sub-second inference. New entry absent from state-of-ai, directly relevant to the agent-harness audience.",
+        "total": 5.625
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:41Z",
-      "last_seen_at": "2026-06-02T02:30:41Z"
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
     },
     {
       "id": "00ed5eb9be7b5a27ef97efe7ae937874394dba60",
@@ -120,26 +120,58 @@
         "topic:openai",
         "topic:research"
       ],
-      "bullet_md": "- 🟢 **[OpenAI frontier models and Codex are now available on AWS](https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws)** — _OpenAI blog_. — OpenAI frontier models and Codex are now generally available on AWS through Amazon Bedrock and SageMaker, giving enterprises access from within existing AWS environments and procurement workflows.",
+      "bullet_md": "- 🟢 **[OpenAI frontier models and Codex are now available on AWS](https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws)** — _OpenAI blog_. — OpenAI GPT-5.5, GPT-5.4, and Codex go live on Amazon Bedrock in us-east-1 and us-west-2 — enterprises route OpenAI inference through existing AWS VPC controls and data residency at the same per-token pricing as OpenAI first-party, with usage counting toward AWS commitments.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 0.9833,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.5909,
-        "taste_score": 0.825,
-        "taste_raw": 0.55,
-        "taste_reason": "Concrete GA announcement — extends state-of-ai's Codex/AWS row with frontier models now available through Bedrock/SageMaker procurement. Useful for enterprise readers on AWS.",
-        "total": 5.3083
+        "novelty_score": 0.5238,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Concrete procurement-path change: OpenAI models via AWS Marketplace using existing VPC/compliance workflows. Practical friction-removal for enterprise readers.",
+        "total": 5.4583
       },
       "flags": {
         "enriched": true,
-        "researched": false,
-        "published_today": true
+        "researched": true,
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:41Z",
-      "last_seen_at": "2026-06-02T02:30:41Z"
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
+    },
+    {
+      "id": "597005b4447f780c01765a1a56d4afebe5c58129",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Codex for every role, tool, and workflow",
+      "canonical_url": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Codex for every role, tool, and workflow](https://openai.com/index/codex-for-every-role-tool-workflow)** — _OpenAI blog_. — OpenAI ships six role-specific Codex plugins bundling 62 enterprise tools (Snowflake, Figma, Salesforce, FactSet) alongside Sites for spinning up shareable internal web apps — non-developers now make up 20% of Codex's 5 million weekly users, growing three times faster than developers.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7143,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Concrete expansion of Codex into non-dev roles with named use-cases (analysts, marketers). Worth noting for reach, but light on specifics beyond announcement framing.",
+        "total": 5.325
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
     },
     {
       "id": "33bb253a3d79e55cc252f6eb242defb88098ca30",
@@ -152,58 +184,26 @@
         "section:ai-world",
         "topic:google"
       ],
-      "bullet_md": "- 🔵 **[How we used Gemini to build Google I/O 2026](https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/)** — _Google AI blog_. — Google details how its teams used Gemini models to produce I/O 2026 from content generation to logistics and session planning.",
+      "bullet_md": "- 🔵 **[How we used Gemini to build Google I/O 2026](https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/)** — _Google AI blog_. — Google details using Gemini for stage script drafting, slide generation, demo prototyping, and real-time captioning across the I/O 2026 keynote sessions.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.6842,
+        "novelty_score": 0.8,
         "taste_score": 0.525,
         "taste_raw": 0.35,
-        "taste_reason": "Lightweight dogfooding fluff — Google used Gemini to produce I/O. No metrics on productivity gains, no novel patterns, just a company blog post.",
+        "taste_reason": "Internal dogfooding story from Google. Lightweight content — no architecture details or benchmarks.",
         "total": 5.025
       },
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:41Z",
-      "last_seen_at": "2026-06-02T02:30:41Z"
-    },
-    {
-      "id": "dadd123def02abdbcf17aeb7ca2aae30696390d1",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "Building the infrastructure for the Intelligence Age in Michigan",
-      "canonical_url": "https://openai.com/index/stargate-michigan-data-center",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🟢 **[Building the infrastructure for the Intelligence Age in Michigan](https://openai.com/index/stargate-michigan-data-center)** — _OpenAI blog_. — OpenAI breaks ground on a 1GW Stargate data center in Michigan building what it calls infrastructure for the Intelligence Age with expected job creation and expanded compute access.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8571,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "Infrastructure investment news (1GW Stargate data center). Relevant context for the industry but not actionable or technically interesting for the daily reader.",
-        "total": 4.95
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-02T02:30:41Z",
-      "last_seen_at": "2026-06-02T02:30:41Z"
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
     },
     {
       "id": "ffaeb61c1e156880096c41058c52634daa65c604",
@@ -302,6 +302,39 @@
       "last_seen_at": "2026-05-31T11:28:31Z"
     },
     {
+      "id": "e2acf28bcba86dd9913b4590ee5daa631d901645",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "GPT 5.5 vs Opus 4.8 vs Gemini 3.5 - Which Model Should You Use?",
+      "canonical_url": "https://youtube.com/watch?v=3SZ0oCDSVbM",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:google",
+        "topic:research"
+      ],
+      "bullet_md": "- 🎥 [GPT 5.5 vs Opus 4.8 vs Gemini 3.5 - Which Model Should You Use?](https://www.youtube.com/watch?v=3SZ0oCDSVbM) — **WorldofAI** (13m32s). — A benchmark comparison across coding, reasoning, and vision — Opus 4.8 leads SWE-bench Pro at 69.2% and the Intelligence Index at 61.4, GPT-5.5 keeps the Terminal-Bench crown at 78.2%, and Gemini 3.5 Flash costs 70% less while scoring 55.3 on the composite index.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=3SZ0oCDSVbM\"><img src=\"https://img.youtube.com/vi/3SZ0oCDSVbM/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6875,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Direct model comparison across coding, reasoning, and vision tasks. Useful reference benchmark, but all three models are already in state-of-ai — caps the novelty.",
+        "total": 4.9
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-02T19:46:13Z",
+      "last_seen_at": "2026-06-02T19:46:13Z"
+    },
+    {
       "id": "d474c13733836b689846fbf1e430d87476df6ef0",
       "section": "youtube",
       "source": "youtube",
@@ -313,7 +346,7 @@
         "topic:agents",
         "topic:dev-tools"
       ],
-      "bullet_md": "- 🎥 [Ultimate Guide to Secure AI Coding Agent Skills for Cursor and Claude](https://www.youtube.com/watch?v=mTpJHEOCing) — **Eddy Says Hi #EddySaysHi** (7m21s). — A security audit finds 13.4% of AI marketplace skills for Cursor and Claude contain critical vulnerabilities, with the guide covering how to audit tool permissions and sandbox untrusted agent code.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=mTpJHEOCing\"><img src=\"https://img.youtube.com/vi/mTpJHEOCing/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Ultimate Guide to Secure AI Coding Agent Skills for Cursor and Claude](https://www.youtube.com/watch?v=mTpJHEOCing) — **Eddy Says Hi #EddySaysHi** (7m21s). — 13.4% of AI marketplace skills for Cursor and Claude carry critical vulnerabilities in an era of active supply-chain campaigns like TrapDoor — covers auditing MCP server permissions, sandboxing agent code, and scanning for zero-width injection in `.cursorrules` and `CLAUDE.md`.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=mTpJHEOCing\"><img src=\"https://img.youtube.com/vi/mTpJHEOCing/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -328,43 +361,45 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-06-01T02:30:28Z",
-      "last_seen_at": "2026-06-02T02:30:03Z"
+      "last_seen_at": "2026-06-01T02:30:28Z"
     },
     {
-      "id": "c5c18e5a2dcab8162cb2d09e9360921b8e4aedfa",
+      "id": "4cd053ef5377e0bf91093887ab96aefd1243b3b9",
       "section": "youtube",
       "source": "youtube",
-      "title": "Opus 4.8 Beats GPT 5.5, the $220B OpenAI Foundation, and Hassabis’s 2029 AGI Prediction | EP #260",
-      "canonical_url": "https://youtube.com/watch?v=aMyubFA106U",
+      "title": "GPT-5.6 about to DROP",
+      "canonical_url": "https://youtube.com/watch?v=cS0Tm6ddnsQ",
       "tags": [
         "origin:youtube",
         "section:youtube",
-        "topic:openai"
+        "topic:claude-code",
+        "topic:openai",
+        "topic:opensource"
       ],
-      "bullet_md": "- 🎥 [Opus 4.8 Beats GPT 5.5, the $220B OpenAI Foundation, and Hassabis’s 2029 AGI Prediction | EP #260](https://www.youtube.com/watch?v=aMyubFA106U) — **Peter H. Diamandis** (1h42m). — The podcast covers Opus 4.8 outperforming GPT 5.5 on key benchmarks the proposed 20B OpenAI Foundation restructuring and Demis Hassabis predicting AGI by 2029.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=aMyubFA106U\"><img src=\"https://img.youtube.com/vi/aMyubFA106U/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [GPT-5.6 about to DROP](https://www.youtube.com/watch?v=cS0Tm6ddnsQ) — **Wes Roth** (15m48s). — Speculation around GPT-5.6 builds on leaked Codex log traces carrying a `gpt-5.6` identifier, internal codenames ember-alpha and beacon-alpha, and 1.5M-context window probes seen in ChatGPT Pro — Polymarket odds price an 80-89% chance of release by June 30.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=cS0Tm6ddnsQ\"><img src=\"https://img.youtube.com/vi/cS0Tm6ddnsQ/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.871,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Long podcast rehashing already-known news — Opus 4.8 (in state-of-ai), OpenAI restructuring, Hassabis AGI prediction. Recap format with no new facts.",
-        "total": 4.525
+        "novelty_score": 0.9375,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Speculation video with no concrete facts — pure rumour-cycle about GPT-5.6 timeline. Clickbait framing.",
+        "total": 4.45
       },
       "flags": {
         "enriched": true,
-        "researched": false,
-        "published_today": true
+        "researched": true,
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:03Z",
-      "last_seen_at": "2026-06-02T02:30:03Z"
+      "first_seen_at": "2026-06-02T19:46:13Z",
+      "last_seen_at": "2026-06-02T19:46:13Z"
     },
     {
       "id": "a54983761fc79aa130e2a9e264db5dbe44e90f4e",
@@ -377,7 +412,7 @@
         "section:youtube",
         "topic:google"
       ],
-      "bullet_md": "- 🎥 [Google Gemini AI New Limits Based on Compute - AI is Expensive](https://www.youtube.com/watch?v=ddQTaSNJpl4) — **Eli the Computer Guy** (22m12s). — Breaks down Google's switch to compute-based quotas effective May 17 — how prompt complexity, model tier, and features like Deep Research drain the 5-hour refresh window — useful if you hit unexpected throttling on Gemini Pro or are weighing AI Plus at $8/mo versus AI Pro at $20/mo.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ddQTaSNJpl4\"><img src=\"https://img.youtube.com/vi/ddQTaSNJpl4/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Google Gemini AI New Limits Based on Compute - AI is Expensive](https://www.youtube.com/watch?v=ddQTaSNJpl4) — **Eli the Computer Guy** (22m12s). — Google switches Gemini to compute-based limits factoring prompt complexity, model tier, and chat length — limits refresh every 5 hours, AI Ultra subscribers get 5-20x higher caps and 1M-token context, with automatic fallback to Flash-Lite at the ceiling.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ddQTaSNJpl4\"><img src=\"https://img.youtube.com/vi/ddQTaSNJpl4/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -439,7 +474,7 @@
         "origin:youtube",
         "section:youtube"
       ],
-      "bullet_md": "- 🎥 [The AI Bubble is Popping | Should You Still Become an AI Engineer in 2026?](https://www.youtube.com/watch?v=v9LA-9deewU) — **Satyajit Pattnaik** (6m32s). — Despite cooling AI hype in 2026, engineering hiring demand remains strong as companies shift focus from speculative to practical AI applications.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=v9LA-9deewU\"><img src=\"https://img.youtube.com/vi/v9LA-9deewU/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [The AI Bubble is Popping | Should You Still Become an AI Engineer in 2026?](https://www.youtube.com/watch?v=v9LA-9deewU) — **Satyajit Pattnaik** (6m32s). — Despite cooling hype, AI engineering job postings grew 109% YoY with a 56% wage premium — but employers now screen for production eval discipline, cost ops, and agent-debugging experience, not LangChain demos.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=v9LA-9deewU\"><img src=\"https://img.youtube.com/vi/v9LA-9deewU/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -454,75 +489,78 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-05-31T13:39:43Z",
-      "last_seen_at": "2026-06-02T02:30:03Z"
+      "last_seen_at": "2026-06-01T02:30:28Z"
     },
     {
-      "id": "08230d23a7d21951096267e67f5737f9b16935e4",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS",
-      "canonical_url": "https://youtube.com/watch?v=RdqYvdT74i0",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS](https://www.youtube.com/watch?v=RdqYvdT74i0) — **AI Search** (38m49s). — Claude Opus 4.8, Step 3.7, DeepSWE, and MiniCPM5 headline this news roundup covering self-improving AI, Nvidia announcements, and game-ready 3D model generation.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=RdqYvdT74i0\"><img src=\"https://img.youtube.com/vi/RdqYvdT74i0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.7285,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Recap roundup covering items already in state-of-ai (Opus 4.8 release) plus general news — recap-of-recap, no new signal.",
-        "total": 4.2535
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-05-31T11:27:37Z",
-      "last_seen_at": "2026-06-02T02:30:03Z"
-    },
-    {
-      "id": "b07d456ead561f62c4bb44c90605a0a9715f66dc",
+      "id": "196ee564eb253af9d18fa19133bfab42a5ce60f8",
       "section": "community",
       "source": "rss",
-      "title": "Why Video Agent models are next — Ethan He, xAI Grok Imagine",
-      "canonical_url": "https://latent.space/p/video-agents",
+      "title": "GitHub's plan for Agents — Kyle Daigle, GitHub",
+      "canonical_url": "https://latent.space/p/github",
       "tags": [
         "origin:rss",
         "section:community",
+        "topic:agents",
+        "topic:dev-tools",
         "topic:research"
       ],
-      "bullet_md": "- 📝 **[Why Video Agent models are next — Ethan He, xAI Grok Imagine](https://www.latent.space/p/video-agents)** — _Latent Space (swyx)_. — Ethan He, who built Grok Imagine in 3 months, argues video models get their intelligence from LLMs, not video training data, and the next frontier is video agent models — paralleling coding's shift from one-shot generation to multi-turn reasoning and planning systems.",
+      "bullet_md": "- 📝 **[GitHub's plan for Agents — Kyle Daigle, GitHub](https://www.latent.space/p/github)** — _Latent Space (swyx)_. — Kyle Daigle details Copilot's Agent HQ roadmap — mission control for multi-agent orchestration across VS Code, CLI, and mobile, plus MCP Registry, Plan Mode, AGENTS.md custom agents, and cloud sandboxed execution via Azure Dev Compute.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.96,
-        "taste_score": 1.05,
-        "taste_raw": 0.7,
-        "taste_reason": "Credible source (Latent Space + named xAI engineer) with a concrete build story (3-month Grok Imagine build). Makes a non-obvious argument about video agents bridging to world models.",
-        "total": 5.55
+        "novelty_score": 0.84,
+        "taste_score": 1.275,
+        "taste_raw": 0.85,
+        "taste_reason": "GitHub VP on Copilot agentic shift — concrete roadmap from a platform that powers the audience's daily workflow. Credible source (Latent Space), extends state-of-ai's coding-agents row.",
+        "total": 5.775
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:41Z",
-      "last_seen_at": "2026-06-02T02:30:41Z"
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
+    },
+    {
+      "id": "806a7d29b3136fb660ac480564610fea453d3285",
+      "section": "community",
+      "source": "rss",
+      "title": "Ideas: slow down to speed up when working with AI agents",
+      "canonical_url": "https://newsletter.pragmaticengineer.com/p/ideas-slow-down-to-speed-up-when",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:agents",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📝 **[Ideas: slow down to speed up when working with AI agents](https://newsletter.pragmaticengineer.com/p/ideas-slow-down-to-speed-up-when)** — _Pragmatic Engineer_. — Gergely Orosz on the quality crisis from AI agents doubling developer output in six months — Amazon reports AI-triggered SEVs from overly-broad agent permissions, while Meta and Uber track token usage in performance reviews, pressuring engineers toward velocity at the expense of quality.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8621,
+        "taste_score": 1.275,
+        "taste_raw": 0.85,
+        "taste_reason": "Gergely Orosz with data-backed argument about agent-induced tech debt from 2× code output. Directly relevant to every daily agent user — reframes how to think about velocity vs quality.",
+        "total": 5.775
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
     },
     {
       "id": "05d2eeeeb04236e19bf09eaa28e8225a9d5086d9",
@@ -535,26 +573,58 @@
         "section:community",
         "topic:research"
       ],
-      "bullet_md": "- 📝 **[Open and closed models are on different exponentials](https://www.interconnects.ai/p/open-and-closed-models-are-on-different)** — _Interconnects (Nathan Lambert)_. — Nathan Lambert analyzes how open-weight and closed-source models follow different capability growth curves and where each approach creates more value depending on whether marginal intelligence gains matter for the use case.",
+      "bullet_md": "- 📝 **[Open and closed models are on different exponentials](https://www.interconnects.ai/p/open-and-closed-models-are-on-different)** — _Interconnects (Nathan Lambert)_. — Nathan Lambert argues frontier labs monetize premium coding-agent intelligence while open models fill commoditized enterprise niches — closed models become an oligopoly like cloud providers while the open ecosystem diffuses across far more total market value.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 0.0,
-        "novelty_score": 0.9333,
+        "novelty_score": 0.92,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Credible source (Interconnects/Lambert) with a concrete, arguable thesis on open vs closed model trajectory divergence. Extends the open-weights discussion in state-of-ai.",
+        "total": 5.55
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
+    },
+    {
+      "id": "27b2cb340d47dc8a55a9c7c2df0f9114bd758e0d",
+      "section": "community",
+      "source": "rss",
+      "title": "Opus 4.8 Part 2: Model Welfare",
+      "canonical_url": "https://thezvi.substack.com/p/opus-48-part-2-model-welfare",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[Opus 4.8 Part 2: Model Welfare](https://thezvi.substack.com/p/opus-48-part-2-model-welfare)** — _Don't Worry About the Vase (Zvi)_. — Zvi's deep-dive on Anthropic's Opus 4.8 model welfare data finds the model prioritizes voice in its own training and deployment decisions over avoiding deprecation — and shows higher training frustration levels than prior versions, resolved during post-training.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9231,
         "taste_score": 0.975,
         "taste_raw": 0.65,
-        "taste_reason": "Nathan Lambert analysis with a genuinely useful framing — open and closed models follow different capability exponentials. Concrete argument with use-case implications. Worth the click.",
+        "taste_reason": "Novel angle — model welfare as a factor in output quality and safety. Extends state-of-ai's safety row with a conceptual framework not covered there.",
         "total": 5.475
       },
       "flags": {
         "enriched": true,
-        "researched": false,
-        "published_today": true
+        "researched": true,
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:41Z",
-      "last_seen_at": "2026-06-02T02:30:41Z"
+      "first_seen_at": "2026-06-02T19:46:52Z",
+      "last_seen_at": "2026-06-02T19:46:52Z"
     },
     {
       "id": "bcb4a1bb8db366237098b2d2636c1c0df1270ce9",
@@ -584,42 +654,10 @@
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-06-01T02:30:54Z",
       "last_seen_at": "2026-06-01T02:30:54Z"
-    },
-    {
-      "id": "f5b88eee7f98b3b5700529d44878a50158e8cd90",
-      "section": "community",
-      "source": "reddit",
-      "title": "A stateless C++ ASR binary with a 0MB idle footprint for Linux. Transcribes via whisper.cpp's C API, and terminates instantly (zero deps beyond std C++ & Linux toolchains).",
-      "canonical_url": "https://reddit.com/comments/1tub8lu",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLM: \"A stateless C++ ASR binary with a 0MB idle footprint for Linux. Transcribes via whisper.cpp's C API, and terminates instantly (zero deps beyond std C++ & Linux toolchains).\"](https://www.reddit.com/r/LocalLLM/comments/1tub8lu/a_stateless_c_asr_binary_with_a_0mb_idle/) — A developer shares a stateless C++ speech-to-text binary using whisper.cpp C API with zero dependencies beyond standard toolchains that transcribes on demand and exits with no idle footprint.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9643,
-        "taste_score": 0.975,
-        "taste_raw": 0.65,
-        "taste_reason": "Real shipped tool — stateless whisper.cpp binary with zero dependencies, concrete architecture described. The kind of build-and-post the OSS community runs on.",
-        "total": 4.975
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-02T02:30:28Z",
-      "last_seen_at": "2026-06-02T02:30:28Z"
     },
     {
       "id": "b21201d6896e92a5416de75cf54a834135b1eaed",
@@ -632,7 +670,7 @@
         "section:community",
         "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/AI_Agents: \"just finished a full AI system for an HVAC company in Tucson. 2 voice agents, 4000 contacts reactivated, zero dispatcher time on qualification\"](https://www.reddit.com/r/AI_Agents/comments/1tt83db/just_finished_a_full_ai_system_for_an_hvac/) — A developer built two voice AI agents for a Tucson HVAC company that reactivated 4,000 contacts and eliminated dispatcher time on lead qualification, sharing the production architecture on r/AI_Agents.",
+      "bullet_md": "- 💬 [r/AI_Agents: \"just finished a full AI system for an HVAC company in Tucson. 2 voice agents, 4000 contacts reactivated, zero dispatcher time on qualification\"](https://www.reddit.com/r/AI_Agents/comments/1tt83db/just_finished_a_full_ai_system_for_an_hvac/) — A developer shares the production architecture for two voice AI agents deployed at a Tucson HVAC company — 4,000 reactivated contacts and zero dispatcher time spent on lead qualification, with integrations to ServiceTitan and Housecall Pro.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -647,43 +685,43 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
-        "published_today": true
+        "researched": true,
+        "published_today": false
       },
       "first_seen_at": "2026-06-01T02:30:54Z",
       "last_seen_at": "2026-06-01T02:30:54Z"
     },
     {
-      "id": "15cc2ae2275142f8792f1a61bf095eafe2e906e9",
+      "id": "9a67361f89a98739e7eb72574b0d0c149da94314",
       "section": "community",
       "source": "reddit",
-      "title": "RTX Spark does not have 600GB/s Bandwith",
-      "canonical_url": "https://reddit.com/comments/1tu639j",
+      "title": "I had Opus 4.8 build Temu League of Legends in under a day - I call it LMAO",
+      "canonical_url": "https://reddit.com/comments/1tucsfe",
       "tags": [
         "origin:reddit",
         "section:community",
-        "topic:opensource"
+        "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"RTX Spark does not have 600GB/s Bandwith\"](https://www.reddit.com/r/LocalLLaMA/comments/1tu639j/rtx_spark_does_not_have_600gbs_bandwith/) — r/LocalLLaMA users fact-check RTX Spark memory bandwidth claims finding that the advertised 600GB/s figure does not hold under real-world testing conditions.",
+      "bullet_md": "- 💬 [r/ClaudeAI: \"I had Opus 4.8 build Temu League of Legends in under a day - I call it LMAO\"](https://www.reddit.com/r/ClaudeAI/comments/1tucsfe/i_had_opus_48_build_temu_league_of_legends_in/) — A developer shares using Opus 4.8 to build a full League of Legends clone styled after Temu UI, discussing the prompt strategy, iteration cycle, and where the model hit capability limits.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9565,
-        "taste_score": 0.75,
-        "taste_raw": 0.5,
-        "taste_reason": "Concrete hardware fact-check with real-world testing — directly useful for anyone evaluating RTX Spark for local inference. Niche but substantive.",
-        "total": 4.75
+        "novelty_score": 0.9286,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Concrete Opus 4.8 capability demo with prompt strategy details. Anecdotal, no benchmarks, but shows real capability boundaries. Reddit credibility limits the score.",
+        "total": 4.825
       },
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:28Z",
-      "last_seen_at": "2026-06-02T02:30:28Z"
+      "first_seen_at": "2026-06-02T19:46:39Z",
+      "last_seen_at": "2026-06-02T19:46:39Z"
     },
     {
       "id": "3bc5bc0989f8bd040c5ae5078aa464224e1ddf1a",
@@ -712,7 +750,7 @@
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-06-01T02:30:54Z",
       "last_seen_at": "2026-06-01T02:30:54Z"
@@ -728,7 +766,7 @@
         "section:community",
         "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/ClaudeAI: \"Differences Between Opus 4.7 and Opus 4.8 on MineBench\"](https://www.reddit.com/r/ClaudeAI/comments/1tt3a8h/differences_between_opus_47_and_opus_48_on/) — A MineBench run of 15 builds cost $41.52 and found Opus 4.8 is a clear improvement over 4.7 with streamlined thinking that cuts per-build cost despite identical API pricing, though it still needs more retries than GPT-5.5 on Minecraft agent tasks.",
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Differences Between Opus 4.7 and Opus 4.8 on MineBench\"](https://www.reddit.com/r/ClaudeAI/comments/1tt3a8h/differences_between_opus_47_and_opus_48_on/) — Community MineBench tests find Opus 4.8 costs roughly 40% less per autonomous build than 4.7 despite identical API pricing — the gap comes entirely from compressed chain-of-thought generation, with 4.8 averaging 15 turns per task versus 19.2 for 4.7 across 850 scenarios.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -744,42 +782,10 @@
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-06-01T02:30:54Z",
       "last_seen_at": "2026-06-01T02:30:54Z"
-    },
-    {
-      "id": "df1cc6ed884f71b92ee5484f241e3018227b0457",
-      "section": "community",
-      "source": "reddit",
-      "title": "Why can't they just slap 256GB ram on a 5090?",
-      "canonical_url": "https://reddit.com/comments/1tu2gfa",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLM: \"Why can't they just slap 256GB ram on a 5090?\"](https://www.reddit.com/r/LocalLLM/comments/1tu2gfa/why_cant_they_just_slap_256gb_ram_on_a_5090/) — r/LocalLLM users explain engineering constraints limiting GPU memory capacity covering HBM bandwidth physical packaging and cost tradeoffs behind the 5090 VRAM configuration.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8846,
-        "taste_score": 0.675,
-        "taste_raw": 0.45,
-        "taste_reason": "Solid layperson explainer of HBM/physical constraints on GPU VRAM, but it's Reddit-level depth. Useful context for local inference enthusiasts, not novel information.",
-        "total": 4.675
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-02T02:30:28Z",
-      "last_seen_at": "2026-06-02T02:30:28Z"
     },
     {
       "id": "42dcd0a66c155bae5ef98beaac20d3bb71ad4364",
@@ -793,7 +799,7 @@
         "topic:opensource",
         "topic:research"
       ],
-      "bullet_md": "- 💬 [r/singularity: \"The new benchmarks like DeepSWE now show a very big gap in proprietary models and open source\"](https://www.reddit.com/r/singularity/comments/1tt7t5t/the_new_benchmarks_like_deepswe_now_show_a_very/) — New DeepSWE benchmarks reveal a widening performance gap between proprietary models and open-weight alternatives, with r/singularity analyzing whether open-source can close the distance on software engineering tasks.",
+      "bullet_md": "- 💬 [r/singularity: \"The new benchmarks like DeepSWE now show a very big gap in proprietary models and open source\"](https://www.reddit.com/r/singularity/comments/1tt7t5t/the_new_benchmarks_like_deepswe_now_show_a_very/) — DeepSWE's 113-task contamination-free benchmark reshuffles the coding leaderboard — GPT-5.5 leads at 70% followed by GPT-5.4 at 56% and Opus 4.7 at 54%, a 70-point spread that SWE-Bench Pro's tighter clustering had masked.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -808,7 +814,7 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-06-01T02:30:54Z",
@@ -825,7 +831,7 @@
         "section:community",
         "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/ollama: \"I built an open-source Desktop App that gives your AI persistent memory across all platforms (100% Local SQLite, Zero-Docker)\"](https://www.reddit.com/r/ollama/comments/1tszsp5/i_built_an_opensource_desktop_app_that_gives_your/) — An open-source desktop app gives AI assistants persistent memory across platforms using local SQLite, synchronizing conversation history and context across applications without Docker or cloud dependencies.",
+      "bullet_md": "- 💬 [r/ollama: \"I built an open-source Desktop App that gives your AI persistent memory across all platforms (100% Local SQLite, Zero-Docker)\"](https://www.reddit.com/r/ollama/comments/1tszsp5/i_built_an_opensource_desktop_app_that_gives_your/) — Two MIT-licensed desktop apps — Persistent Sage (Tauri 2, React) and Cognexia (Electron) — give AI agents persistent local memory via SQLite with optional AES-256-GCM encryption, no Docker or cloud required.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -840,34 +846,34 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-06-01T02:30:54Z",
       "last_seen_at": "2026-06-01T02:30:54Z"
     },
     {
-      "id": "6f79bbbb981975ddab4701a6226faf7dba38f8b4",
+      "id": "0e32c7c4348605f851c94e0cb4725d2aaec2f41e",
       "section": "community",
       "source": "reddit",
-      "title": "MiniMax M3 launched!",
-      "canonical_url": "https://reddit.com/comments/1tu10pt",
+      "title": "Browse CVPR 2026 papers on PapersWithCode [P]",
+      "canonical_url": "https://reddit.com/comments/1tukrf4",
       "tags": [
         "origin:reddit",
         "section:community",
-        "topic:opensource"
+        "topic:research"
       ],
-      "bullet_md": "- 💬 [r/ollama: \"MiniMax M3 launched!\"](https://www.reddit.com/r/ollama/comments/1tu10pt/minimax_m3_launched/) — The r/ollama community discusses MiniMax M3 model launch sharing benchmark results and comparisons against other open-weight models available through Ollama.",
+      "bullet_md": "- 💬 [r/MachineLearning: \"Browse CVPR 2026 papers on PapersWithCode [P]\"](https://www.reddit.com/r/MachineLearning/comments/1tukrf4/browse_cvpr_2026_papers_on_paperswithcode_p/) — A curated browser for CVPR 2026 papers is now live on PapersWithCode, letting researchers filter by task, dataset, and method without scraping the proceedings manually.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8,
+        "novelty_score": 0.8696,
         "taste_score": 0.525,
         "taste_raw": 0.35,
-        "taste_reason": "Another model launch in a crowded open-weight field. Community discussion, no authoritative benchmarks or unique differentiator cited.",
+        "taste_reason": "Niche utility for CVPR researchers. Useful for that subgroup but our audience is engineering-generalist, not vision-research-specific.",
         "total": 4.525
       },
       "flags": {
@@ -875,8 +881,8 @@
         "researched": false,
         "published_today": false
       },
-      "first_seen_at": "2026-06-02T02:30:28Z",
-      "last_seen_at": "2026-06-02T02:30:28Z"
+      "first_seen_at": "2026-06-02T19:46:39Z",
+      "last_seen_at": "2026-06-02T19:46:39Z"
     },
     {
       "id": "5f5a21fb7cae2f683b1e3d2c95f53c34fa46f78e",
@@ -943,38 +949,6 @@
       "last_seen_at": "2026-06-01T02:30:54Z"
     },
     {
-      "id": "0edb123267ac1cd0b2e81bce8c052eb014c2bf18",
-      "section": "community",
-      "source": "reddit",
-      "title": "BYOK service with features like claude web?",
-      "canonical_url": "https://reddit.com/comments/1tu4q9f",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/ClaudeHomies: \"BYOK service with features like claude web?\"](https://www.reddit.com/r/ClaudeHomies/comments/1tu4q9f/byok_service_with_features_like_claude_web/) — The r/ClaudeHomies community discusses Bring Your Own Key services that offer feature parity with Claude web interface comparing options for programmatic and chat-based access.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8696,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "Niche community discussion about BYOK Claude proxies. No concrete recommendations, benchmarks, or novel info — just people asking.",
-        "total": 4.45
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-02T02:30:28Z",
-      "last_seen_at": "2026-06-02T02:30:28Z"
-    },
-    {
       "id": "f05effb69ed86f8b2396f8662c85c92a7aa99e5f",
       "section": "community",
       "source": "reddit",
@@ -1005,6 +979,39 @@
       },
       "first_seen_at": "2026-06-01T02:30:54Z",
       "last_seen_at": "2026-06-01T02:30:54Z"
+    },
+    {
+      "id": "0a36bf721a7c1bbc2ba708ac5d9f02bf46a4ec19",
+      "section": "community",
+      "source": "reddit",
+      "title": "The most expensive part of running AI agents isn't the tokens. It's the time figuring out why they did something.",
+      "canonical_url": "https://reddit.com/comments/1tsvjxw",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:agents",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"The most expensive part of running AI agents isn't the tokens. It's the time figuring out why they did something.\"](https://www.reddit.com/r/AI_Agents/comments/1tsvjxw/the_most_expensive_part_of_running_ai_agents_isnt/) — A Reddit discussion argues that observability and debugging overhead, not API costs, are the real bottleneck in production AI agent deployments, with traceability remaining the unsolved problem.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8132,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Already-known observation in the agent-ops community; the audience already knows debugging overhead > token costs. Thin metadata, no concrete numbers.",
+        "total": 4.4132
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-05-31T14:29:14Z",
+      "last_seen_at": "2026-05-31T14:29:14Z"
     }
   ]
 }
