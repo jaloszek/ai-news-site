@@ -22,6 +22,9 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Source | URL | Topic | Why |
 |---|---|---|---|
 | Claude Code releases | <https://github.com/anthropics/claude-code/releases.atom> | claude-code | One entry per published version — structured release notes (CHANGELOG.md still drives the feature-first curation in `/ai-news` step 2a). |
+| Aider blog | <https://aider.chat/feed.xml> | dev-tools | Coding-agent changelog — benchmark posts + release notes from a direct Claude Code competitor. Canonical feed is /feed.xml (the doc's /blog/feed.xml 404s). |
+| Continue.dev blog | <https://blog.continue.dev/feed.xml> | dev-tools | Open-source AI coding assistant — release notes + agent-workflow posts. Canonical feed is /feed.xml (the doc's /rss/ 404s). |
+| GitHub AI blog | <https://github.blog/ai-and-ml/feed/> | dev-tools | Copilot updates + GitHub AI/agent features — squarely on the coding-agent beat. |
 
 ### AI World
 
@@ -31,6 +34,7 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Google AI blog | <https://blog.google/technology/ai/rss/> | google | Product-side AI announcements from Google. |
 | Google DeepMind | <https://blog.google/technology/google-deepmind/rss/> | google | DeepMind research + frontier-model launches. |
 | Hugging Face blog | <https://huggingface.co/blog/feed.xml> | opensource | Open-weights releases, library updates, community models. |
+| Together AI blog | <https://www.together.ai/blog/rss.xml> | opensource | Inference platform — lots on open-weight model serving + launches. |
 
 ### Community — Tier S (top long-form authors)
 
@@ -53,6 +57,14 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Cognition (Devin) | <https://cognition.ai/rss.xml> | agents | First-party updates from the Devin team. |
 | One Useful Thing (Ethan Mollick) | <https://www.oneusefulthing.org/feed> | research | Applied LLM use; non-technical audience bridging. |
 | Don't Worry About the Vase (Zvi) | <https://thezvi.substack.com/feed> | research | Weekly AI news roundups + alignment commentary. |
+
+### Community — Tier R (primary research + aggregators)
+
+| Source | URL | Topic | Why |
+|---|---|---|---|
+| arXiv cs.CL | <https://rss.arxiv.org/rss/cs.CL> | research | arXiv Computation & Language new-submissions feed — rankable primary abstracts (NLP/LLM), replaces low-signal research paraphrases. Official rss.arxiv.org endpoint. |
+| arXiv cs.AI | <https://rss.arxiv.org/rss/cs.AI> | research | arXiv Artificial Intelligence new-submissions feed — primary abstracts for agents / RL / reasoning work. |
+| Hacker News (ai/llm/claude) | <https://hnrss.org/frontpage?q=ai+OR+llm+OR+claude> | dev-tools | Hacker News front-page items matching ai / llm / claude — cross-source-consensus signal that also feeds cross_source_count. |
 
 ## YouTube channels
 
@@ -94,11 +106,14 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 |---|
 | Andrej Karpathy |
 | Lex Fridman |
+| Yannic Kilcher |
+| bycloud |
 
 ### AI company channels
 
 | Channel |
 |---|
+| Anthropic |
 | Google DeepMind |
 
 ### YouTube search keywords
@@ -112,11 +127,11 @@ breaking content from creators not yet in the registry.
 | OpenAI GPT |
 | Gemini Google AI |
 | AI agents 2026 |
-| large language model |
+| Claude Code |
 | AI coding assistant |
 | open source LLM |
-| AI news |
-| machine learning tutorial |
+| MCP server |
+| coding agent |
 | AI Engineer |
 
 ## Reddit subreddits
@@ -141,6 +156,10 @@ scored by upvotes + comments + recency.
 | r/Anthropic | `claude_coding` |
 | r/AI_Agents | `claude_coding` |
 | r/LangChain | `claude_coding` |
+| r/mcp | `claude_coding` |
+| r/ChatGPTCoding | `claude_coding` |
+| r/cursor | `claude_coding` |
+| r/OpenWebUI | `claude_coding` |
 
 ### AI World — general AI news, hottest topics, broad discourse
 
