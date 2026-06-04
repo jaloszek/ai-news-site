@@ -4,15 +4,15 @@
 
 # AI News — Stats
 
-_Generated 2026-06-04 17:34 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-06-04 18:30 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 4384
-- **Enriched:** 2484 (56%)
-- **Taste-rated:** 1828 (41%)
-- **Researched:** 413 (9%)
-- **Status (candidate / rejected / published / duplicate):** 938 / 3446 / 0 / 0
+- **Discovery items (all-time):** 4405
+- **Enriched:** 2497 (56%)
+- **Taste-rated:** 1842 (41%)
+- **Researched:** 417 (9%)
+- **Status (candidate / rejected / published / duplicate):** 959 / 3446 / 0 / 0
 - **Published bullets (all-time):** 729 (last 7d: 133)
 
 
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-06-04 | 712 | 44 (6%) | 43 (6%) | 4 (0%) |
+| 2026-06-04 | 733 | 57 (7%) | 57 (7%) | 8 (1%) |
 | 2026-06-03 | 32 | 5 (15%) | 5 (15%) | 1 (3%) |
 | 2026-06-02 | 194 | 53 (27%) | 53 (27%) | 15 (7%) |
 | 2026-06-01 | 60 | 19 (31%) | 19 (31%) | 5 (8%) |
@@ -55,19 +55,19 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 |---|---|---:|
 | arXiv cs.AI | `rss` | 293 |
 | arXiv cs.CL | `rss` | 223 |
-| /r/LangChain | `reddit` | 115 |
+| /r/LangChain | `reddit` | 116 |
 | /r/AI_Agents | `reddit` | 109 |
+| /r/ChatGPT | `reddit` | 109 |
 | /r/LocalLLM | `reddit` | 109 |
-| /r/ChatGPT | `reddit` | 108 |
 | /r/ollama | `reddit` | 108 |
 | /r/LocalLLaMA | `reddit` | 107 |
 | /r/MachineLearning | `reddit` | 102 |
+| /r/singularity | `reddit` | 102 |
 | /r/OpenAI | `reddit` | 101 |
-| /r/singularity | `reddit` | 101 |
 | /r/ClaudeAI | `reddit` | 100 |
 | /r/Anthropic | `reddit` | 98 |
 | /r/Artificial | `reddit` | 96 |
-| /r/ClaudeHomies | `reddit` | 69 |
+| /r/ClaudeHomies | `reddit` | 70 |
 
 
 ## Rejection reasons (all-time)

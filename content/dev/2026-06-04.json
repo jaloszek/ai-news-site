@@ -1,9 +1,9 @@
 {
   "date": "2026-06-04",
-  "generated_at": "2026-06-04T17:34:25+00:00",
+  "generated_at": "2026-06-04T18:30:48+00:00",
   "candidate_count": 33,
-  "researched_count": 10,
-  "published_count": 19,
+  "researched_count": 13,
+  "published_count": 18,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
@@ -23,7 +23,7 @@
         "section:claude-code",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🛠 **[v2.1.162](https://github.com/anthropics/claude-code/releases/tag/v2.1.162)** — _Claude Code releases_. — v2.1.162 adds waitingFor to claude agents --json to show blocked sessions, exposes Grep/Glob as explicit --tools options on native builds, and prevents /effort level ambiguity with a confirmation message.",
+      "bullet_md": "- 🛠 **[v2.1.162](https://github.com/anthropics/claude-code/releases/tag/v2.1.162)** — _Claude Code releases_. — Claude Code 2.1.162 adds waitingFor to agent --json output for viewing blocked sessions and restores Grep/Glob as explicit --allowedTools options on native builds — though the opt-in only works from CLI args, not from settings.json permission rules, so teams cannot persist the preference across projects without shell wrappers.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -38,11 +38,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:18Z",
-      "last_seen_at": "2026-06-04T17:27:36Z"
+      "last_seen_at": "2026-06-04T18:22:56Z"
     },
     {
       "id": "597005b4447f780c01765a1a56d4afebe5c58129",
@@ -106,7 +106,40 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:18Z",
-      "last_seen_at": "2026-06-04T17:27:36Z"
+      "last_seen_at": "2026-06-04T18:22:56Z"
+    },
+    {
+      "id": "733e435524c436947e233a9b34779e7827ac7232",
+      "section": "ai-world",
+      "source": "email",
+      "title": "NVIDIA ships open-weights text-to-image model as part of Cosmos 3 release",
+      "canonical_url": "https://huggingface.co/nvidia/Cosmos3-Super-Text2Image",
+      "tags": [
+        "origin:email",
+        "section:ai-world",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[NVIDIA ships open-weights text-to-image model as part of Cosmos 3 release](https://huggingface.co/nvidia/Cosmos3-Super-Text2Image)** — _AlphaSignal_. — Cosmos3-Super-Text2Image generates images from text prompts under permissive open weights on Hugging Face, joining NVIDIAs Cosmos 3 family of world foundation models for physical-world simulation.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8148,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "NVIDIA open-weights a T2I model in the Cosmos world-model family; concrete HF download, credible lab, fills a gap not covered in state-of-ai's open-weights section.",
+        "total": 5.55
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-04T18:23:27Z",
+      "last_seen_at": "2026-06-04T18:23:27Z"
     },
     {
       "id": "098fa5a10f220811a6ab70f02341f7c03c17b5d9",
@@ -171,7 +204,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:18Z",
-      "last_seen_at": "2026-06-04T17:27:36Z"
+      "last_seen_at": "2026-06-04T18:22:56Z"
     },
     {
       "id": "34b9d40a0a20b72a84efd4619777a038e9434ba1",
@@ -301,7 +334,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-06-04T08:49:18Z",
-      "last_seen_at": "2026-06-04T17:27:36Z"
+      "last_seen_at": "2026-06-04T18:22:56Z"
     },
     {
       "id": "9bd2458bc0e8da1f4e4c66585411e589f74f4824",
@@ -330,38 +363,6 @@
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-02T20:46:23Z",
-      "last_seen_at": "2026-06-04T08:49:47Z"
-    },
-    {
-      "id": "98b44cd67e2f7e53e05c33c62ca0f93555d94443",
-      "section": "ai-world",
-      "source": "email",
-      "title": "AEON-7 ships uncensored 198B vision model but warns low-bit quants produce garbled output",
-      "canonical_url": "https://huggingface.co/AEON-7/Step-3.7-Flash-AEON-Ultimate-Abliterated-GGUF",
-      "tags": [
-        "origin:email",
-        "section:ai-world",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[AEON-7 ships uncensored 198B vision model but warns low-bit quants produce garbled output](https://huggingface.co/AEON-7/Step-3.7-Flash-AEON-Ultimate-Abliterated-GGUF)** — _AlphaSignal_. — AEON-7 releases an abliterated uncensored version of Step-3.7-Flash at 198B parameters, but cautions that 2-bit and 3-bit quantization levels degrade output quality noticeably.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8111,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9643,
-        "taste_score": 0.6,
-        "taste_raw": 0.4,
-        "taste_reason": "Abliterated model release is niche; the low-bit quantization quality warning is useful but the overall signal is thin.",
-        "total": 4.9111
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
         "published_today": false
       },
       "first_seen_at": "2026-06-02T20:46:23Z",
@@ -584,7 +585,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9167,
+        "novelty_score": 0.7727,
         "taste_score": 1.275,
         "taste_raw": 0.85,
         "taste_reason": "Anthropic filing an S-1 for IPO is a major corporate milestone that extends state-of-ai's Company row with concrete SEC action — the first credible signal of a timeline for the highest-profile AI IPO.",
@@ -610,7 +611,7 @@
         "topic:opensource",
         "topic:research"
       ],
-      "bullet_md": "- 📧 **[Datalab releases Surya, a 650M open-source OCR model beating rivals under 3B params](https://github.com/datalab-to/surya)** — _AlphaSignal_. — Surya is a 650M-parameter OCR model that outperforms larger alternatives under 3B parameters, making high-accuracy text extraction feasible on consumer hardware.",
+      "bullet_md": "- 📧 **[Datalab releases Surya, a 650M open-source OCR model beating rivals under 3B params](https://github.com/datalab-to/surya)** — _AlphaSignal_. — Surya 2 scores 83.3% on olmOCR-bench (best in class under 3B params) and 87.2% across 91 languages, handling OCR, layout, and table recognition in one 650M model served by vllm or llama.cpp at 5 pages/s on an RTX 5090.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -625,11 +626,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:47Z",
-      "last_seen_at": "2026-06-04T17:27:59Z"
+      "last_seen_at": "2026-06-04T18:23:27Z"
     },
     {
       "id": "821fec7c617e28f57ee0fe48695e64469ada1934",
@@ -661,7 +662,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:47Z",
-      "last_seen_at": "2026-06-04T17:27:59Z"
+      "last_seen_at": "2026-06-04T18:23:27Z"
     },
     {
       "id": "f42471fe7bdade2b58a6c35ca50e41abe97d9488",
@@ -674,7 +675,7 @@
         "section:community",
         "topic:research"
       ],
-      "bullet_md": "- 🧪 **[Off-Distribution Voices: Fanfiction Subgenres as Universal Vernacular Jailbreaks for Aligned LLMs](https://arxiv.org/abs/2606.04483)** — _arXiv cs.CL_. — Demonstrates that real fanfiction subgenres serve as universal jailbreak carriers for aligned LLMs by exploiting a creative-writing register that safety training fails to cover.",
+      "bullet_md": "- 🧪 **[Off-Distribution Voices: Fanfiction Subgenres as Universal Vernacular Jailbreaks for Aligned LLMs](https://arxiv.org/abs/2606.04483)** — _arXiv cs.CL_. — The paper reports mean ASR of 0.731 across eight models using twelve AO3 subgenres as carriers — tripling existing baselines — with the four-turn Saga-A4 pipeline reaching 0.924, and finds that two active defenses widen the vulnerability gap rather than close it.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -689,11 +690,75 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-04T17:27:36Z",
-      "last_seen_at": "2026-06-04T17:27:36Z"
+      "last_seen_at": "2026-06-04T18:22:56Z"
+    },
+    {
+      "id": "e537a593c76a54d17fa4e088edff9d5471c50c1e",
+      "section": "community",
+      "source": "email",
+      "title": "Unsloth releases dynamic compression to run Gemma 4 12B more efficiently",
+      "canonical_url": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
+      "tags": [
+        "origin:email",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Unsloth releases dynamic compression to run Gemma 4 12B more efficiently](https://huggingface.co/unsloth/gemma-4-12b-it-GGUF)** — _AlphaSignal_. — Unsloth released a dynamic-compression GGUF for Gemma 4 12B that cuts inference memory without retuning, letting the model fit on consumer GPUs with minimal quality loss.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Unsloth is a credible OSS player delivering a practical memory reduction for Gemma 4 on consumer GPUs — actionable for local devs, extends the open-weights row in state-of-ai.",
+        "total": 5.4
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-04T18:23:27Z",
+      "last_seen_at": "2026-06-04T18:23:27Z"
+    },
+    {
+      "id": "2896ce82d529e3159a79ebe69e2831eded53f4e5",
+      "section": "community",
+      "source": "email",
+      "title": "0xSero releases pruned 519B Kimi-K2.6 model optimized for code, math, and tool use",
+      "canonical_url": "https://huggingface.co/0xSero/Kimi-K2.6-519B-NVFP4",
+      "tags": [
+        "origin:email",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[0xSero releases pruned 519B Kimi-K2.6 model optimized for code, math, and tool use](https://huggingface.co/0xSero/Kimi-K2.6-519B-NVFP4)** — _AlphaSignal_. — 0xSero pruned Kimi-K2.6 to a 519B NVFP4 model that retains strong code, math, and tool-use performance at roughly half the memory footprint of the full-precision version.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.75,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Extends state-of-ai's Kimi K2.6 row with a concrete half-memory pruned variant (NVFP4); specific and actionable for those running open models locally.",
+        "total": 5.4
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-04T18:23:27Z",
+      "last_seen_at": "2026-06-04T18:23:27Z"
     },
     {
       "id": "6eb9237520d1dfde31b7ef008217680cb582df98",
@@ -725,7 +790,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:47Z",
-      "last_seen_at": "2026-06-04T17:27:59Z"
+      "last_seen_at": "2026-06-04T18:23:27Z"
     },
     {
       "id": "8044871dc61f769b115f8fb8680b8c6284229077",
@@ -739,7 +804,7 @@
         "topic:opensource",
         "topic:research"
       ],
-      "bullet_md": "- 📧 **[ByteDance open-sources Bernini, a video generation and editing model that rivals top closed-source tools](https://huggingface.co/ByteDance/Bernini-R)** — _AlphaSignal_. — Bernini-R is ByteDance's open-source video generation and editing model that competes with proprietary tools like Runway and Pika, released on Hugging Face.",
+      "bullet_md": "- 📧 **[ByteDance open-sources Bernini, a video generation and editing model that rivals top closed-source tools](https://huggingface.co/ByteDance/Bernini-R)** — _AlphaSignal_. — Bernini combines an MLLM-based semantic planner with a DiT renderer, scoring 4.04 overall on OpenVE-Bench ahead of Kling O3 and competitive with Wan2.7 — the weights ship on Hugging Face as a diffusers-format package built on Wan2.2.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -754,11 +819,43 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:47Z",
-      "last_seen_at": "2026-06-04T17:27:59Z"
+      "last_seen_at": "2026-06-04T18:23:27Z"
+    },
+    {
+      "id": "ea49361b05df8f976cb8ea554ca99f18a7ceac3a",
+      "section": "community",
+      "source": "email",
+      "title": "New robot planner runs 19x faster and cuts jerky movement by 38%",
+      "canonical_url": "https://arxiv.org/abs/2603.13733",
+      "tags": [
+        "origin:email",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[New robot planner runs 19x faster and cuts jerky movement by 38%](https://arxiv.org/abs/2603.13733)** — _AlphaSignal_. — A new motion planning algorithm on arXiv achieves 19x faster planning and 38% reduction in jerk over prior methods, making smooth real-time robotic movement feasible on cheaper hardware.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9286,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Concrete speed (19×) and smoothness (38%) numbers on arXiv, but motion planning is tangential to the core LLM/agent focus of the audience.",
+        "total": 5.325
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-04T18:23:27Z",
+      "last_seen_at": "2026-06-04T18:23:27Z"
     },
     {
       "id": "e301b59b21f15e4a140303ee51f12c289c81e273",
@@ -790,7 +887,105 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:47Z",
-      "last_seen_at": "2026-06-04T17:27:59Z"
+      "last_seen_at": "2026-06-04T18:23:27Z"
+    },
+    {
+      "id": "8898dc1fb352feb74bc1d4ed3953354a1dd7997d",
+      "section": "community",
+      "source": "email",
+      "title": "HeyGen ships frame.md, a spec that teaches AI agents to make branded videos",
+      "canonical_url": "https://github.com/heygen-com/hyperframes",
+      "tags": [
+        "origin:email",
+        "section:community",
+        "topic:agents",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[HeyGen ships frame.md, a spec that teaches AI agents to make branded videos](https://github.com/heygen-com/hyperframes)** — _AlphaSignal_. — frame.md is a markdown spec from HeyGen that defines scene composition, brand assets, and voice parameters so AI agents can produce consistent branded videos programmatically from a single config file.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.9286,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Novel markdown spec for programmatic branded video, but narrow use case — most of the audience won't need to produce branded video from agents.",
+        "total": 5.25
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-04T18:23:27Z",
+      "last_seen_at": "2026-06-04T18:23:27Z"
+    },
+    {
+      "id": "0f12164ae978ba3fcb4f1c4f77f8e10a9b0c428c",
+      "section": "community",
+      "source": "email",
+      "title": "Aoden Teo open-sources an 8B text-to-speech model with 110ms latency",
+      "canonical_url": "https://github.com/MisoLabsAI/MisoTTS",
+      "tags": [
+        "origin:email",
+        "section:community",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Aoden Teo open-sources an 8B text-to-speech model with 110ms latency](https://github.com/MisoLabsAI/MisoTTS)** — _AlphaSignal_. — MisoTTS is an 8B-parameter text-to-speech model that achieves 110ms latency on consumer GPUs, now available on GitHub under an open-source license for developers to self-host.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8571,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Concrete 110ms latency and 8B params for an open TTS model is useful for self-hosters, but TTS is a secondary concern for most of the audience.",
+        "total": 5.25
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-04T18:23:27Z",
+      "last_seen_at": "2026-06-04T18:23:27Z"
+    },
+    {
+      "id": "c134174c72395d4eb9358dd7ab2cd3ad9b52a763",
+      "section": "community",
+      "source": "email",
+      "title": "Mooncake Store integrates with vLLM to share KV cache across nodes for faster agents",
+      "canonical_url": "https://github.com/PrimeIntellect-ai/prime-rl",
+      "tags": [
+        "origin:email",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Mooncake Store integrates with vLLM to share KV cache across nodes for faster agents](https://github.com/PrimeIntellect-ai/prime-rl)** — _AlphaSignal_. — Mooncake Store ships a cross-node KV cache sharing plugin for vLLM that reuses cached key-value pairs across distributed inference workers, reducing inter-agent latency and memory waste.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8387,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Cross-node KV cache sharing for vLLM is a genuine infra improvement, but the specific mooncake/vLLM plugin integration is an implementation detail most readers won't act on.",
+        "total": 5.25
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-04T18:23:27Z",
+      "last_seen_at": "2026-06-04T18:23:27Z"
     },
     {
       "id": "c152af09387e564f3be9d14c5715c2f4c0747bae",
@@ -822,7 +1017,40 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-04T08:49:47Z",
-      "last_seen_at": "2026-06-04T17:27:59Z"
+      "last_seen_at": "2026-06-04T18:23:27Z"
+    },
+    {
+      "id": "e8d93b68c90df4e7d9e8c7951c7b560c9553a55b",
+      "section": "community",
+      "source": "email",
+      "title": "Open-source hiring tool scores resumes by parsing PDFs and pulling GitHub signals",
+      "canonical_url": "https://github.com/interviewstreet/hiring-agent",
+      "tags": [
+        "origin:email",
+        "section:community",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Open-source hiring tool scores resumes by parsing PDFs and pulling GitHub signals](https://github.com/interviewstreet/hiring-agent)** — _AlphaSignal_. — Hiring Agent from InterviewStreet is an open-source tool that extracts structured skills from PDF resumes and cross-references them against GitHub contribution history to produce scored hiring shortlists.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8148,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Practical OSS tool but generic premise (resume parser + GitHub lookup); no novel AI technique, low ceiling for the senior-dev audience.",
+        "total": 5.1
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-04T18:23:27Z",
+      "last_seen_at": "2026-06-04T18:23:27Z"
     },
     {
       "id": "d4d5be8e73667186a7d6de31f33b089c2e6b0fdd",
@@ -855,234 +1083,6 @@
       },
       "first_seen_at": "2026-06-02T20:46:01Z",
       "last_seen_at": "2026-06-04T08:49:18Z"
-    },
-    {
-      "id": "7184675025de20dc8ad20c5c84bd9dc82c647e95",
-      "section": "community",
-      "source": "reddit",
-      "title": "What is the TPS for Qwen 3.6 27B Q4 on Mac Mini?",
-      "canonical_url": "https://reddit.com/comments/1twh954",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLM: \"What is the TPS for Qwen 3.6 27B Q4 on Mac Mini?\"](https://www.reddit.com/r/LocalLLM/comments/1twh954/what_is_the_tps_for_qwen_36_27b_q4_on_mac_mini/) — A LocalLLaMA discussion benchmarks Qwen 3.6 27B Q4 inference speed on Apple Silicon, with users sharing real-world tokens-per-second measurements on Mac Mini hardware.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8,
-        "taste_score": 0.675,
-        "taste_raw": 0.45,
-        "taste_reason": "Niche Reddit thread with real-world Qwen 3.6 inference benchmarks on Mac Mini. Useful organic perf data but only relevant if you're running this specific model on Apple Silicon.",
-        "total": 4.675
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-04T08:49:06Z",
-      "last_seen_at": "2026-06-04T08:49:06Z"
-    },
-    {
-      "id": "19884b148c726a55e6964d3c03666ca779cfbffe",
-      "section": "community",
-      "source": "rss",
-      "title": "[AINews] Microsoft Build: MAI-Thinking-1 and MAI Family models",
-      "canonical_url": "https://latent.space/p/ainews-microsoft-build-mai-thinking",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:research"
-      ],
-      "bullet_md": "- 📝 **[[AINews] Microsoft Build: MAI-Thinking-1 and MAI Family models](https://www.latent.space/p/ainews-microsoft-build-mai-thinking)** — _Latent Space (swyx)_. — Microsoft unveiled the MAI-Thinking-1 reasoning model alongside its broader MAI model family at Build, with technical details on architecture and training methodology.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9485,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 0.0,
-        "novelty_score": 0.85,
-        "taste_score": 1.05,
-        "taste_raw": 0.7,
-        "taste_reason": "Concrete MAI-Thinking-1 reasoning model announcement extending state-of-ai's Microsoft row. Microsoft's dedicated reasoning model strategy is directly relevant to the AI engineering audience.",
-        "total": 4.4985,
-        "cooldown_penalty": -1.0
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-04T08:49:18Z",
-      "last_seen_at": "2026-06-04T17:27:36Z"
-    },
-    {
-      "id": "df5ccc6bf9f85f5009d58c133a9c56f3badc7f2e",
-      "section": "community",
-      "source": "rss",
-      "title": "Trump Signs Executive Order For AI Testing Prior To Frontier Model Releases",
-      "canonical_url": "https://thezvi.substack.com/p/trump-signs-executive-order-for-ai",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:research"
-      ],
-      "bullet_md": "- 📝 **[Trump Signs Executive Order For AI Testing Prior To Frontier Model Releases](https://thezvi.substack.com/p/trump-signs-executive-order-for-ai)** — _Don't Worry About the Vase (Zvi)_. — The EO signed June 2 creates a voluntary pre-release framework — developers can share early access up to 30 days before launch — rather than the mandatory testing regime that was originally debated.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 0.0,
-        "novelty_score": 0.92,
-        "taste_score": 0.975,
-        "taste_raw": 0.65,
-        "taste_reason": "Executive order mandating pre-release frontier AI testing extends state-of-ai's Safety row — a concrete regulatory development affecting all labs. Zvi is a credible AI policy commentator.",
-        "total": 4.475,
-        "cooldown_penalty": -1.0
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-04T08:49:18Z",
-      "last_seen_at": "2026-06-04T17:27:36Z"
-    },
-    {
-      "id": "df1cc6ed884f71b92ee5484f241e3018227b0457",
-      "section": "community",
-      "source": "reddit",
-      "title": "Why can't they just slap 256GB ram on a 5090?",
-      "canonical_url": "https://reddit.com/comments/1tu2gfa",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLM: \"Why can't they just slap 256GB ram on a 5090?\"](https://www.reddit.com/r/LocalLLM/comments/1tu2gfa/why_cant_they_just_slap_256gb_ram_on_a_5090/) — r/LocalLLM users explain engineering constraints limiting GPU memory capacity covering HBM bandwidth physical packaging and cost tradeoffs behind the 5090 VRAM configuration.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6598,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8846,
-        "taste_score": 0.675,
-        "taste_raw": 0.45,
-        "taste_reason": "Solid layperson explainer of HBM/physical constraints on GPU VRAM, but it's Reddit-level depth. Useful context for local inference enthusiasts, not novel information.",
-        "total": 4.3348
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-02T02:30:28Z",
-      "last_seen_at": "2026-06-02T02:30:28Z"
-    },
-    {
-      "id": "53cd4387079a76fded0613b10b941d2d98a7946e",
-      "section": "community",
-      "source": "rss",
-      "title": "Kubernetes and retiring at the top with Kelsey Hightower",
-      "canonical_url": "https://newsletter.pragmaticengineer.com/p/kubernetes-and-retiring-at-the-top",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:dev-tools",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 📝 **[Kubernetes and retiring at the top with Kelsey Hightower](https://newsletter.pragmaticengineer.com/p/kubernetes-and-retiring-at-the-top)** — _Pragmatic Engineer_. — Kelsey Hightower reflects on his journey from self-taught technician to Google Distinguished Engineer, sharing insights on open source, Kubernetes, AI, and knowing when to step away.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9091,
-        "taste_score": 0.75,
-        "taste_raw": 0.5,
-        "taste_reason": "Kelsey Hightower retrospective with career/OSS insights — valuable perspective but not breaking news. Skim-worthy, not urgent.",
-        "total": 4.25,
-        "cooldown_penalty": -1.0
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-04T08:49:18Z",
-      "last_seen_at": "2026-06-04T17:27:36Z"
-    },
-    {
-      "id": "6f79bbbb981975ddab4701a6226faf7dba38f8b4",
-      "section": "community",
-      "source": "reddit",
-      "title": "MiniMax M3 launched!",
-      "canonical_url": "https://reddit.com/comments/1tu10pt",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/ollama: \"MiniMax M3 launched!\"](https://www.reddit.com/r/ollama/comments/1tu10pt/minimax_m3_launched/) — The r/ollama community discusses MiniMax M3 model launch sharing benchmark results and comparisons against other open-weight models available through Ollama.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6533,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Another model launch in a crowded open-weight field. Community discussion, no authoritative benchmarks or unique differentiator cited.",
-        "total": 4.1783
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-02T02:30:28Z",
-      "last_seen_at": "2026-06-02T02:30:28Z"
-    },
-    {
-      "id": "a3c3c83c6ee4cfcb87feaa4b0fe4ba8c19d50eb0",
-      "section": "community",
-      "source": "reddit",
-      "title": "What happened to Claude?",
-      "canonical_url": "https://reddit.com/comments/1tukwj7",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/ClaudeHomies: \"What happened to Claude?\"](https://www.reddit.com/r/ClaudeHomies/comments/1tukwj7/what_happened_to_claude/) — Community members report degraded response quality and reasoning depth, speculating about recent infrastructure changes or model routing adjustments at Anthropic.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.7723,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8261,
-        "taste_score": 0.375,
-        "taste_raw": 0.25,
-        "taste_reason": "Anecdotal complaints about response quality with no concrete data, reproducibility, or evidence.",
-        "total": 4.1473
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-02T20:45:49Z",
-      "last_seen_at": "2026-06-03T02:36:32Z"
     }
   ]
 }
