@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-06-04 19:47 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-06-04 20:48 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 4424
-- **Enriched:** 2525 (57%)
-- **Taste-rated:** 1870 (42%)
-- **Researched:** 418 (9%)
-- **Status (candidate / rejected / published / duplicate):** 978 / 3446 / 0 / 0
-- **Published bullets (all-time):** 731 (last 7d: 135)
+- **Discovery items (all-time):** 4443
+- **Enriched:** 2551 (57%)
+- **Taste-rated:** 1896 (42%)
+- **Researched:** 420 (9%)
+- **Status (candidate / rejected / published / duplicate):** 997 / 3446 / 0 / 0
+- **Published bullets (all-time):** 733 (last 7d: 137)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-06-04 | 752 | 85 (11%) | 85 (11%) | 9 (1%) |
+| 2026-06-04 | 771 | 111 (14%) | 111 (14%) | 11 (1%) |
 | 2026-06-03 | 32 | 5 (15%) | 5 (15%) | 1 (3%) |
 | 2026-06-02 | 194 | 53 (27%) | 53 (27%) | 15 (7%) |
 | 2026-06-01 | 60 | 19 (31%) | 19 (31%) | 5 (8%) |
@@ -38,7 +38,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Claude Code | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
-| 2026-06-04 | 4 | 5 | 3 | 12 | 24 |
+| 2026-06-04 | 4 | 6 | 3 | 13 | 26 |
 | 2026-06-03 | 1 | 4 | 3 | 8 | 16 |
 | 2026-06-02 | 2 | 5 | 3 | 8 | 18 |
 | 2026-05-31 | 4 | 6 | 3 | 8 | 21 |
@@ -55,17 +55,17 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 |---|---|---:|
 | arXiv cs.AI | `rss` | 293 |
 | arXiv cs.CL | `rss` | 223 |
-| /r/LangChain | `reddit` | 116 |
-| /r/ChatGPT | `reddit` | 110 |
-| /r/AI_Agents | `reddit` | 109 |
+| /r/LangChain | `reddit` | 117 |
+| /r/AI_Agents | `reddit` | 111 |
+| /r/ChatGPT | `reddit` | 111 |
 | /r/LocalLLM | `reddit` | 109 |
+| /r/LocalLLaMA | `reddit` | 108 |
 | /r/ollama | `reddit` | 108 |
-| /r/LocalLLaMA | `reddit` | 107 |
+| /r/singularity | `reddit` | 103 |
 | /r/MachineLearning | `reddit` | 102 |
 | /r/OpenAI | `reddit` | 102 |
-| /r/singularity | `reddit` | 102 |
 | /r/ClaudeAI | `reddit` | 101 |
-| /r/Anthropic | `reddit` | 99 |
+| /r/Anthropic | `reddit` | 100 |
 | /r/Artificial | `reddit` | 97 |
 | /r/ClaudeHomies | `reddit` | 70 |
 
