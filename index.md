@@ -27,7 +27,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-06-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>🛠 CC v2.1.160</li><li>🔒 Project Glasswing</li><li>🟡 NVIDIA Cosmos 3</li><li>💰 Anthropic S-1</li><li>🟡 JetBrains Mellum2</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-03.html"><div class="cal-num">3</div><ul class="cal-highlights"><li>🛠 CC v2.1.161 parallel fix</li><li>🔧 Cursor auto-review mode</li><li>🟡 Holo3.1 local agents</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-04.html"><div class="cal-num">4</div><ul class="cal-highlights"><li>🛠 CC v2.1.162</li><li>💰 Anthropic S-1 filing</li><li>🚀 Codex role plugins</li><li>✨ Mellum2 12B coding MoE</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-06-05.html"><div class="cal-num">5</div><ul class="cal-highlights"><li>🛠 CC v2.1.163</li><li>✨ ChatGPT Dreaming</li><li>🚀 EVA-Bench 2.0</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">6</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">7</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">8</div></div>
