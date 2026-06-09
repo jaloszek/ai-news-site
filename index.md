@@ -31,7 +31,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-06-06.html"><div class="cal-num">6</div><ul class="cal-highlights"><li>🛠 CC v2.1.166</li><li>✨ Nemotron 3 Ultra</li><li>🛠 hf CLI agent mode</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>✨ Gemini 3.5 Flash</li><li>🛠 Hermes Agent 0.16</li><li>🧪 Gemma 4 12B QAT</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-08.html"><div class="cal-num">8</div><ul class="cal-highlights"><li>🛠 CC v2.1.168</li><li>🛠 Espressif MCP Server</li><li>🤖 Antigravity 3.0</li><li>🧪 MIT shipping study</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">9</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-06-09.html"><div class="cal-num">9</div><ul class="cal-highlights"><li>🛠 CC v2.1.169</li><li>🚀 OpenAI S-1 filing</li><li>✨ Opus 4.7 chemistry</li><li>🛠 Cursor Design Mode</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">10</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">11</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">12</div></div>
