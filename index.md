@@ -34,7 +34,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-06-09.html"><div class="cal-num">9</div><ul class="cal-highlights"><li>🛠 CC v2.1.169</li><li>🚀 OpenAI S-1 filing</li><li>✨ Opus 4.7 chemistry</li><li>🛠 Cursor Design Mode</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-10.html"><div class="cal-num">10</div><ul class="cal-highlights"><li>🛠 CC v2.1.170 / Fable 5</li><li>🟡 Cohere North Mini Code</li><li>🧪 FrontierCode benchmark</li><li>📺 Anthropic pause proposal</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-11.html"><div class="cal-num">11</div><ul class="cal-highlights"><li>🛠 CC v2.1.172</li><li>🛠 Copilot CLI LSP</li><li>🤖 Google Agents CLI</li><li>🧪 LLM-as-Judge study</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">12</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-06-12.html"><div class="cal-num">12</div><ul class="cal-highlights"><li>🚀 OpenAI acquires Ona</li><li>🛠 CC v2.1.174</li><li>🛠 GitHub secret scanning LLM</li><li>💬 Fable restrictions boost Codex</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">13</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">14</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">15</div></div>
