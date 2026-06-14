@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-06-13 15:00 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-06-14 07:55 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 7944
-- **Enriched:** 2851 (35%)
-- **Taste-rated:** 2196 (27%)
-- **Researched:** 447 (5%)
-- **Status (candidate / rejected / published / duplicate):** 1128 / 6816 / 0 / 0
-- **Published bullets (all-time):** 867 (last 7d: 118)
+- **Discovery items (all-time):** 7989
+- **Enriched:** 2895 (36%)
+- **Taste-rated:** 2240 (28%)
+- **Researched:** 453 (5%)
+- **Status (candidate / rejected / published / duplicate):** 612 / 7377 / 0 / 0
+- **Published bullets (all-time):** 880 (last 7d: 114)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,14 +22,14 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-06-13 | 85 | 20 (23%) | 20 (23%) | 2 (2%) |
-| 2026-06-12 | 482 | 36 (7%) | 36 (7%) | 5 (1%) |
+| 2026-06-14 | 45 | 16 (35%) | 16 (35%) | 3 (6%) |
+| 2026-06-13 | 85 | 21 (24%) | 21 (24%) | 4 (4%) |
+| 2026-06-12 | 482 | 63 (13%) | 63 (13%) | 6 (1%) |
 | 2026-06-11 | 561 | 28 (4%) | 28 (4%) | 1 (0%) |
 | 2026-06-10 | 1040 | 48 (4%) | 48 (4%) | 4 (0%) |
 | 2026-06-09 | 462 | 44 (9%) | 44 (9%) | 5 (1%) |
 | 2026-06-08 | 91 | 22 (24%) | 22 (24%) | 2 (2%) |
 | 2026-06-07 | 93 | 16 (17%) | 16 (17%) | 1 (1%) |
-| 2026-06-06 | 94 | 26 (27%) | 26 (27%) | 4 (4%) |
 
 
 ## Published (last 7 days)
@@ -38,6 +38,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Claude Code | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
+| 2026-06-14 | 1 | 1 | 3 | 8 | 13 |
 | 2026-06-13 | 3 | 4 | 3 | 8 | 18 |
 | 2026-06-12 | 3 | 3 | 3 | 2 | 11 |
 | 2026-06-11 | 2 | 5 | 3 | 2 | 12 |
@@ -45,7 +46,6 @@ What the picker actually shipped to the site, by section.
 | 2026-06-09 | 1 | 3 | 3 | 8 | 15 |
 | 2026-06-08 | 2 | 1 | 3 | 8 | 14 |
 | 2026-06-07 | 0 | 3 | 3 | 8 | 14 |
-| 2026-06-06 | 1 | 5 | 3 | 8 | 17 |
 
 
 ## Top creators (last 30 days)
@@ -58,15 +58,15 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 | arXiv cs.CL | `rss` | 1267 |
 | /r/LocalLLM | `reddit` | 102 |
 | /r/LocalLLaMA | `reddit` | 102 |
-| /r/AI_Agents | `reddit` | 101 |
 | /r/LangChain | `reddit` | 101 |
 | /r/ChatGPT | `reddit` | 99 |
-| /r/ollama | `reddit` | 96 |
+| /r/AI_Agents | `reddit` | 98 |
 | /r/Anthropic | `reddit` | 94 |
-| /r/ClaudeAI | `reddit` | 94 |
-| /r/OpenAI | `reddit` | 94 |
+| /r/ollama | `reddit` | 94 |
 | /r/Artificial | `reddit` | 93 |
-| /r/singularity | `reddit` | 93 |
+| /r/ClaudeAI | `reddit` | 91 |
+| /r/OpenAI | `reddit` | 91 |
+| /r/singularity | `reddit` | 90 |
 | /r/MachineLearning | `reddit` | 89 |
 | /r/ClaudeHomies | `reddit` | 67 |
 
@@ -77,7 +77,7 @@ What got filtered out before reaching the picker. `stale` is the auto-reject for
 
 | Reason | Count |
 |---|---:|
-| `stale` | 6813 |
+| `stale` | 7374 |
 | `off_topic` | 3 |
 
 
