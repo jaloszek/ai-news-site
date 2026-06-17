@@ -1,9 +1,9 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T09:09:08+00:00",
-  "candidate_count": 25,
-  "researched_count": 3,
-  "published_count": 20,
+  "generated_at": "2026-06-17T10:06:38+00:00",
+  "candidate_count": 38,
+  "researched_count": 23,
+  "published_count": 21,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
@@ -23,7 +23,7 @@
         "section:claude-code",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🛠 **[v2.1.179](https://github.com/anthropics/claude-code/releases/tag/v2.1.179)** — _Claude Code releases_. — Fixes mid-stream connection drops that previously showed raw errors, corrects mouse-wheel scrolling in WSL2, and prevents sandbox denyRead/allowRead glob patterns from ballooning the Bash tool description on large directory trees.",
+      "bullet_md": "- 🛠 **[v2.1.179](https://github.com/anthropics/claude-code/releases/tag/v2.1.179)** — _Claude Code releases_. — Claude Code 2.1.179 fixes mid-stream connection drops (partial responses preserved, spinner no longer stuck on \"running tool\"), WSL2 mouse-scroll regression from 2.1.172, and sandbox glob bloat on large directories plus five more bug fixes — picks up on restart.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -38,11 +38,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T02:40:37Z",
-      "last_seen_at": "2026-06-17T09:01:57Z"
+      "last_seen_at": "2026-06-17T09:54:34Z"
     },
     {
       "id": "163e43a1c26db43a91f47c145b726cf8b3fd27a7",
@@ -55,7 +55,7 @@
         "section:claude-code",
         "topic:dev-tools"
       ],
-      "bullet_md": "- 🛠 **[What are git worktrees, and why should I use them?](https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/)** — _GitHub AI blog_. — Git worktrees let you check out multiple branches simultaneously without switching directories or stashing, useful for parallel feature work and context-switching without clone duplication.",
+      "bullet_md": "- 🛠 **[What are git worktrees, and why should I use them?](https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/)** — _GitHub AI blog_. — Git worktrees — now the default isolation mechanism in the GitHub Copilot app — let each parallel agent session operate in its own checked-out folder, eliminating stash conflicts and editor disruption when switching between branches.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -70,11 +70,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T02:40:37Z",
-      "last_seen_at": "2026-06-17T09:01:57Z"
+      "last_seen_at": "2026-06-17T09:54:34Z"
     },
     {
       "id": "a0a0e0166090d35a3a39d4ae37c122fd51543d00",
@@ -88,7 +88,7 @@
         "topic:agents",
         "topic:dev-tools"
       ],
-      "bullet_md": "- 🛠 **[GitHub Copilot CLI for Beginners: Overview of common slash commands](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands/)** — _GitHub AI blog_. — Covers the slash command interface for GitHub Copilot CLI, explaining how explain, suggest, and setup commands let developers control their terminal AI agent without leaving the command line.",
+      "bullet_md": "- 🛠 **[GitHub Copilot CLI for Beginners: Overview of common slash commands](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands/)** — _GitHub AI blog_. — Covers the core Copilot CLI slash commands — /model for model selection (with capability and cost info), /context and /compact for token-budget management, /resume to rejoin past sessions, /diff to inspect changes, and /cwd to switch working directories — all without leaving the terminal.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -103,11 +103,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-16T02:43:20Z",
-      "last_seen_at": "2026-06-17T09:01:57Z"
+      "last_seen_at": "2026-06-17T09:54:34Z"
     },
     {
       "id": "b387731f4f83720dfe4394e2dac385ef5730d12b",
@@ -140,7 +140,39 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-17T02:40:37Z",
-      "last_seen_at": "2026-06-17T09:01:57Z"
+      "last_seen_at": "2026-06-17T09:54:34Z"
+    },
+    {
+      "id": "64d6b4cbeaac616aa45a152bf5ef666667407b0f",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "GLM-5.2: Built for Long-Horizon Tasks",
+      "canonical_url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[GLM-5.2: Built for Long-Horizon Tasks](https://huggingface.co/blog/zai-org/glm-52-blog)** — _Hugging Face blog_. — Zhipu AI's open-weight GLM-5.2 matches Opus 4.8 within 1% on long-horizon coding (FrontierSWE: 74.4% vs 75.1%) while costing a fraction of the proprietary rate, with a 1M-token context window under an unrestricted MIT license.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.75,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Extends state-of-ai's GLM-5.1 row with a new version focused on long-horizon tasks, but bullet lacks concrete benchmark numbers or novel architectural detail.",
+        "total": 5.25
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-17T09:54:34Z",
+      "last_seen_at": "2026-06-17T09:54:34Z"
     },
     {
       "id": "6d49c5a8c8ec6495a4c9237d85f814d205336cd6",
@@ -173,7 +205,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-17T07:24:11Z",
-      "last_seen_at": "2026-06-17T08:54:47Z"
+      "last_seen_at": "2026-06-17T09:47:21Z"
     },
     {
       "id": "24ece9366e349d4ae0dcaa40542941c9c0402347",
@@ -186,7 +218,7 @@
         "section:youtube",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🎥 [US Blocks Anthropic AI Access for Foreign Nationals, India Faces New AI Challenge](https://www.youtube.com/watch?v=yWMFuxuuKVw) — **NEWS9 Live** (2m57s). — The United States has reportedly directed Anthropic to restrict access to its most advanced AI models for foreign nationals, escalating geopolitical tensions in the AI race.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=yWMFuxuuKVw\"><img src=\"https://img.youtube.com/vi/yWMFuxuuKVw/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [US Blocks Anthropic AI Access for Foreign Nationals, India Faces New AI Challenge](https://www.youtube.com/watch?v=yWMFuxuuKVw) — **NEWS9 Live** (2m57s). — The US Commerce Department ordered Anthropic to disable Fable 5 and Mythos 5 globally — an export-control first that shifted AI restrictions from chips to model access itself, with direct impact on any non-US developer relying on frontier AI.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=yWMFuxuuKVw\"><img src=\"https://img.youtube.com/vi/yWMFuxuuKVw/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -201,7 +233,7 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T08:54:47Z",
@@ -218,7 +250,7 @@
         "section:youtube",
         "topic:opensource"
       ],
-      "bullet_md": "- 🎥 [GLM 5.2 Is INSANE: 1 Million Context Window and Open Source!](https://www.youtube.com/watch?v=95xaONJhKTA) — **Codedigipt** (12m46s). — Covers Z.ai GLM 5.2 open-weight coding model with a 1M-token context window and advanced reasoning modes, demonstrating its capabilities on coding benchmarks.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=95xaONJhKTA\"><img src=\"https://img.youtube.com/vi/95xaONJhKTA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [GLM 5.2 Is INSANE: 1 Million Context Window and Open Source!](https://www.youtube.com/watch?v=95xaONJhKTA) — **Codedigipt** (12m46s). — GLM 5.2's 1M-token context and open-weight pricing approach Opus 4.8 on long-horizon coding (FrontierSWE: 74.4% vs 75.1%) at roughly a sixth of the cost — useful if you need an open model that can hold a full repo in one pass without breaking the budget.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=95xaONJhKTA\"><img src=\"https://img.youtube.com/vi/95xaONJhKTA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -233,11 +265,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T07:24:11Z",
-      "last_seen_at": "2026-06-17T07:24:11Z"
+      "last_seen_at": "2026-06-17T09:47:21Z"
     },
     {
       "id": "a0f8bd188003b34445e17d5d76e8672bd6a09431",
@@ -251,7 +283,7 @@
         "topic:claude-code",
         "topic:openai"
       ],
-      "bullet_md": "- 🎥 [Introducing /visual-plan - rich plans for Claude Code + Codex](https://www.youtube.com/watch?v=NE0aBuQF0HA) — **Steve (Builder.io)** (4m26s). — Steve from Builder.io demonstrates /visual-plan, a skill that generates rich visual plans for Claude Code and Codex using an MDX-based visual editor with live preview.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=NE0aBuQF0HA\"><img src=\"https://img.youtube.com/vi/NE0aBuQF0HA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Introducing /visual-plan - rich plans for Claude Code + Codex](https://www.youtube.com/watch?v=NE0aBuQF0HA) — **Steve (Builder.io)** (4m26s). — A demo of /visual-plan, a BuilderIO skill that turns Claude Code and Codex text plans into rich MDX-based visuals with diagrams, wireframes, and architecture maps — useful when your agent's plain-text plan is hard to review or share with stakeholders.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=NE0aBuQF0HA\"><img src=\"https://img.youtube.com/vi/NE0aBuQF0HA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -266,11 +298,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-06-17T08:54:47Z",
-      "last_seen_at": "2026-06-17T08:54:47Z"
+      "last_seen_at": "2026-06-17T09:47:21Z"
     },
     {
       "id": "93afffec590e040b62b3d684ab2b69324181e32c",
@@ -302,7 +334,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-17T02:33:12Z",
-      "last_seen_at": "2026-06-17T08:54:47Z"
+      "last_seen_at": "2026-06-17T09:47:21Z"
     },
     {
       "id": "57e960b2423de3fbec5eaf8e5d50799e67853036",
@@ -315,7 +347,7 @@
         "section:youtube",
         "topic:opensource"
       ],
-      "bullet_md": "- 🎥 [New #1 open-source AI model is here!](https://www.youtube.com/watch?v=6d__WOpZswY) — **AI Search** (29m57s). — Reviews GLM 5.2 as the new top open-source AI model, covering benchmark results and comparisons against other open-weight models.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=6d__WOpZswY\"><img src=\"https://img.youtube.com/vi/6d__WOpZswY/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [New #1 open-source AI model is here!](https://www.youtube.com/watch?v=6d__WOpZswY) — **AI Search** (29m57s). — A deep-dive review of GLM 5.2 as the top open-source model — 1M-token context, FrontierSWE near Opus 4.8 (74.4% vs 75.1%), ranking #3 overall on Code v3 behind only GPT-5.5 and Opus 4.8 — useful for weighing open-weight alternatives against proprietary flagships.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=6d__WOpZswY\"><img src=\"https://img.youtube.com/vi/6d__WOpZswY/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -330,11 +362,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-06-17T07:24:11Z",
-      "last_seen_at": "2026-06-17T08:54:47Z"
+      "last_seen_at": "2026-06-17T09:47:21Z"
     },
     {
       "id": "7f7764b7b8efb52c0acc8c8a2c92a646f5f8dc91",
@@ -347,7 +379,7 @@
         "section:youtube",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🎥 [Turn Figma Designs into Websites with AI (MCP Tutorial)](https://www.youtube.com/watch?v=BjUAuvi7eHs) — **PGTECH** (5m39s). — A tutorial that explains the Model Context Protocol by demonstrating how to convert Figma designs into functioning websites using AI tools.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=BjUAuvi7eHs\"><img src=\"https://img.youtube.com/vi/BjUAuvi7eHs/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Turn Figma Designs into Websites with AI (MCP Tutorial)](https://www.youtube.com/watch?v=BjUAuvi7eHs) — **PGTECH** (5m39s). — A tutorial on Figma's MCP server for design-to-code conversion — connecting AI coding tools directly to Figma files so agents generate production-ready HTML and CSS from designs without manual inspection — useful for front-end developers using AI for UI implementation.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=BjUAuvi7eHs\"><img src=\"https://img.youtube.com/vi/BjUAuvi7eHs/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -362,11 +394,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-06-17T08:54:47Z",
-      "last_seen_at": "2026-06-17T08:54:47Z"
+      "last_seen_at": "2026-06-17T09:47:21Z"
     },
     {
       "id": "e83c7019f98e621b4ccbf63b3c877338b74f98e6",
@@ -378,7 +410,7 @@
         "origin:youtube",
         "section:youtube"
       ],
-      "bullet_md": "- 🎥 [Scikit-LLM: Run LLMs Inside Scikit-Learn — 100% Local on an RTX 4090](https://www.youtube.com/watch?v=MlBGQYF0FU8) — **Omar Kamal** (5m15s). — Scikit-LLM wraps LLMs in scikit-learns fit/predict API, enabling zero-shot text classification and NER entirely locally on an RTX 4090 without external API calls.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=MlBGQYF0FU8\"><img src=\"https://img.youtube.com/vi/MlBGQYF0FU8/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Scikit-LLM: Run LLMs Inside Scikit-Learn — 100% Local on an RTX 4090](https://www.youtube.com/watch?v=MlBGQYF0FU8) — **Omar Kamal** (5m15s). — Scikit-LLM wraps LLMs in scikit-learn's fit/predict API for zero-shot text classification and NER, routing requests to local models through Ollama — useful for ML engineers who want language understanding in sklearn pipelines without paid API calls.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=MlBGQYF0FU8\"><img src=\"https://img.youtube.com/vi/MlBGQYF0FU8/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -393,11 +425,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": false
       },
       "first_seen_at": "2026-06-17T08:54:47Z",
-      "last_seen_at": "2026-06-17T08:54:47Z"
+      "last_seen_at": "2026-06-17T09:47:21Z"
     },
     {
       "id": "a5597f6e3c0ed04992ef20a02168603d589548f3",
@@ -410,7 +442,7 @@
         "section:youtube",
         "topic:agents"
       ],
-      "bullet_md": "- 🎥 [Building the Future of AI Agents | Keynote, Slack Dev Day 2026](https://www.youtube.com/watch?v=AD1fsM-1NKQ) — **Slack** (57m36s). — The Slack Dev Day 2026 keynote argues the AI race has moved past model quality to agent infrastructure, covering where agents live and how people interact with them in workplace contexts.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=AD1fsM-1NKQ\"><img src=\"https://img.youtube.com/vi/AD1fsM-1NKQ/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Building the Future of AI Agents | Keynote, Slack Dev Day 2026](https://www.youtube.com/watch?v=AD1fsM-1NKQ) — **Slack** (57m36s). — Slack Dev Day keynote arguing the AI race has moved past model quality to agent infrastructure, showcasing Slack's MCP Server and Real-time Search API that let agents securely search messages and take action inside workplace conversations — relevant if you are building AI agents that need to live where work happens.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=AD1fsM-1NKQ\"><img src=\"https://img.youtube.com/vi/AD1fsM-1NKQ/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -425,7 +457,7 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T02:33:12Z",
@@ -442,7 +474,7 @@
         "section:community",
         "topic:dev-tools"
       ],
-      "bullet_md": "- 📝 **[Why is Meta destroying its engineering organization?](https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering)** — _Pragmatic Engineer_. — Reports on Meta leadership accelerating AI-driven restructuring of its engineering org, cutting layers and shifting priorities amid what the newsletter describes as an AI-fueled reorganization.",
+      "bullet_md": "- 📝 **[Why is Meta destroying its engineering organization?](https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering)** — _Pragmatic Engineer_. — Gergely Orosz reports Meta's AI-driven engineering culture collapse — keystroke tracking, 30-50% forced reassignment to data labeling, 10% layoffs despite record revenue, and a catastrophic Instagram hack traced to AI-reviewed code — marking the end of Meta's two-decade engineering culture.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -457,11 +489,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T02:40:37Z",
-      "last_seen_at": "2026-06-17T09:01:57Z"
+      "last_seen_at": "2026-06-17T09:54:34Z"
     },
     {
       "id": "e46cb685b456206a0f846c2e3263686f0add6c54",
@@ -493,7 +525,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-17T02:40:37Z",
-      "last_seen_at": "2026-06-17T09:01:57Z"
+      "last_seen_at": "2026-06-17T09:54:34Z"
     },
     {
       "id": "9be7a8729cc7f2b75968e545525bc83eb0dc118b",
@@ -506,7 +538,7 @@
         "section:community",
         "topic:openai"
       ],
-      "bullet_md": "- 💬 [r/OpenAI: \"OpenAI's market share falls below 50%\"](https://www.reddit.com/r/OpenAI/comments/1u7vjkv/openais_market_share_falls_below_50/) — OpenAI share of the AI market has dipped below 50 percent for the first time as competition from open-source models and alternative providers continues to erode its dominance.",
+      "bullet_md": "- 💬 [r/OpenAI: \"OpenAI's market share falls below 50%\"](https://www.reddit.com/r/OpenAI/comments/1u7vjkv/openais_market_share_falls_below_50/) — r/OpenAI discusses Sensor Tower data showing OpenAI and ChatGPT's global AI assistant share dipping to 46.4% by May 2026, as Gemini (27.7%) and Claude (10.3%) erode the lead amid user concerns over the OpenAI-DoD partnership.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -521,7 +553,7 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T09:01:15Z",
@@ -538,7 +570,7 @@
         "section:community",
         "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"GLM-5.2 (max) is currently the third best model available, across both open and proprietary.\"](https://www.reddit.com/r/LocalLLaMA/comments/1u832oh/glm52_max_is_currently_the_third_best_model/) — The r/LocalLLaMA community ranks GLM-5.2 max as the third-best model overall among both open and proprietary systems, based on aggregated benchmark results.",
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"GLM-5.2 (max) is currently the third best model available, across both open and proprietary.\"](https://www.reddit.com/r/LocalLLaMA/comments/1u832oh/glm52_max_is_currently_the_third_best_model/) — r/LocalLLaMA ranks GLM-5.2 max as #3 overall on the LLM Benchmark Dashboard for Code v3, behind only GPT-5.5 and Claude Opus 4.8, with a 1M-token context and MIT license making it the top open-weight option.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -553,11 +585,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T09:01:15Z",
-      "last_seen_at": "2026-06-17T09:01:15Z"
+      "last_seen_at": "2026-06-17T09:54:03Z"
     },
     {
       "id": "beae0b2e508014122470354149c45db7d3b033c2",
@@ -570,7 +602,7 @@
         "section:community",
         "topic:openai"
       ],
-      "bullet_md": "- 💬 [r/OpenAI: \"ChatGPT's market share slips below 50% for first time\"](https://www.reddit.com/r/OpenAI/comments/1u7kt5i/chatgpts_market_share_slips_below_50_for_first/) — ChatGPT market share has slipped below 50 percent for the first time as users diversify across competing AI assistants and open-source alternatives.",
+      "bullet_md": "- 💬 [r/OpenAI: \"ChatGPT's market share slips below 50% for first time\"](https://www.reddit.com/r/OpenAI/comments/1u7kt5i/chatgpts_market_share_slips_below_50_for_first/) — r/OpenAI discusses the same Sensor Tower State of AI 2026 report — ChatGPT at 46.4%, Gemini 27.7%, Claude 10.3%, with Claude's US share rising from 5% to 14% since December as users diversify across assistants.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -585,7 +617,39 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:01:15Z"
+    },
+    {
+      "id": "8851b70375e0bf81e5ead7c21b7b2c923c3e8637",
+      "section": "community",
+      "source": "reddit",
+      "title": "https://github.com/open-webui/computer eh?",
+      "canonical_url": "https://reddit.com/comments/1u758tj",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/OpenWebUI: \"https://github.com/open-webui/computer eh?\"](https://www.reddit.com/r/OpenWebUI/comments/1u758tj/httpsgithubcomopenwebuicomputer_eh/) — r/OpenWebUI discusses open-computer-use, an MCP server that gives any LLM an isolated Docker sandbox with live browser, terminal, code execution, and Claude Code as a sub-agent — container-per-session isolation for self-hosted computer-use tasks.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.951,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9444,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Concrete open-source computer-use agent capability landing in OpenWebUI; directly relevant to the agent-curious audience.",
+        "total": 4.776
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T09:01:15Z",
@@ -602,7 +666,7 @@
         "section:community",
         "topic:research"
       ],
-      "bullet_md": "- 📝 **[[AINews] GLM-5.2: the top Frontend Coding model in the world, IndexShare for Speculative Decoding](https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding)** — _Latent Space (swyx)_. — GLM-5.2 claims the top spot on Frontend Coding benchmarks and introduces IndexShare, a method that shares indexing state between draft and target models to accelerate speculative decoding.",
+      "bullet_md": "- 📝 **[[AINews] GLM-5.2: the top Frontend Coding model in the world, IndexShare for Speculative Decoding](https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding)** — _Latent Space (swyx)_. — Latent Space covers GLM-5.2's IndexShare architecture (reusing indexers across sparse attention layers for 2.9x FLOP reduction at 1M context), its #1 Frontend Coding ranking, and the impact of MIT-licensed open weights on the AI landscape.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -618,11 +682,11 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T07:31:42Z",
-      "last_seen_at": "2026-06-17T09:01:57Z"
+      "last_seen_at": "2026-06-17T09:54:34Z"
     },
     {
       "id": "a2c430b4559844a0582a199f2c9f678bb645d01b",
@@ -635,7 +699,7 @@
         "section:community",
         "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/ollama: \"Built a desktop AI IDE for Ollama (Windows/Mac/Linux) - fleet parallel sessions, scheduled loops, git automation, Monaco editor, terminal, live preview. Free.\"](https://www.reddit.com/r/ollama/comments/1u7ixlz/built_a_desktop_ai_ide_for_ollama_windowsmaclinux/) — A free cross-platform desktop IDE for Ollama that supports fleet parallel sessions, scheduled loops, git automation, a Monaco editor, terminal, and live preview.",
+      "bullet_md": "- 💬 [r/ollama: \"Built a desktop AI IDE for Ollama (Windows/Mac/Linux) - fleet parallel sessions, scheduled loops, git automation, Monaco editor, terminal, live preview. Free.\"](https://www.reddit.com/r/ollama/comments/1u7ixlz/built_a_desktop_ai_ide_for_ollama_windowsmaclinux/) — r/ollama discusses a free cross-platform desktop AI IDE that orchestrates multiple Ollama models with fleet parallel sessions, scheduled automation loops, git integration, and a Monaco editor — fully local, no telemetry.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -650,11 +714,107 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T09:01:15Z",
       "last_seen_at": "2026-06-17T09:01:15Z"
+    },
+    {
+      "id": "215dcf174fa87ad75ca0c8583acb1000d014b7d2",
+      "section": "community",
+      "source": "reddit",
+      "title": "Claude refuses to research Reddit now, am i the only one?",
+      "canonical_url": "https://reddit.com/comments/1u803tq",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeHomies: \"Claude refuses to research Reddit now, am i the only one?\"](https://www.reddit.com/r/ClaudeHomies/comments/1u803tq/claude_refuses_to_research_reddit_now_am_i_the/) — Users on r/ClaudeHomies report Claude refusing to research Reddit content, discussing possible safety alignment changes or policy restrictions behind the behavior.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8261,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Anecdotal but potentially notable — if Claude's tool-use policy changed to restrict Reddit research, that's relevant to daily users.",
+        "total": 4.675
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:01:15Z"
+    },
+    {
+      "id": "6f334f6386e070a10611a4a5315eab1e08668344",
+      "section": "community",
+      "source": "reddit",
+      "title": "Understanding what everyone is actually using Claude really for",
+      "canonical_url": "https://reddit.com/comments/1u7fwsk",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeHomies: \"Understanding what everyone is actually using Claude really for\"](https://www.reddit.com/r/ClaudeHomies/comments/1u7fwsk/understanding_what_everyone_is_actually_using/) — r/ClaudeHomies discusses the gap between marketed Claude use cases and what users actually rely on the model for in daily work.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9474,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Interesting meta-discussion of the gap between marketed and actual Claude usage, but anecdotal without survey data.",
+        "total": 4.6
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:01:15Z"
+    },
+    {
+      "id": "e01932f22c895758c435c962bdb908c48540bf9a",
+      "section": "community",
+      "source": "reddit",
+      "title": "I released Inflect-Nano, an ultra-extreme tiny 4.63m parameter TTS model.",
+      "canonical_url": "https://reddit.com/comments/1u82cq8",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"I released Inflect-Nano, an ultra-extreme tiny 4.63m parameter TTS model.\"](https://www.reddit.com/r/LocalLLM/comments/1u82cq8/i_released_inflectnano_an_ultraextreme_tiny_463m/) — r/LocalLLM discusses Inflect-Nano, a 4.63M-parameter TTS model optimized for extreme parameter efficiency and on-device inference, continuing the trend of compact speech models running on CPU.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 1.0,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Tiny 4.63M TTS model is a neat open-source efficiency demo, but too niche for a general AI news reader to stop on.",
+        "total": 4.6
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:54:03Z",
+      "last_seen_at": "2026-06-17T09:54:03Z"
     },
     {
       "id": "4b0d0afcfd19d2b689f00cefcc5adbd350fad2b6",
@@ -674,7 +834,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8889,
+        "novelty_score": 0.9231,
         "taste_score": 0.525,
         "taste_raw": 0.35,
         "taste_reason": "Generic cost-sharing discussion thread, no concrete numbers or novel strategies to cap AI API spend.",
@@ -689,6 +849,37 @@
       "last_seen_at": "2026-06-17T09:01:15Z"
     },
     {
+      "id": "7a2058e8d4e58a5bd836d16e41483264ad598295",
+      "section": "community",
+      "source": "reddit",
+      "title": "AI made me more productive, but somehow more tired",
+      "canonical_url": "https://reddit.com/comments/1u82hpd",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/Artificial: \"AI made me more productive, but somehow more tired\"](https://www.reddit.com/r/artificial/comments/1u82hpd/ai_made_me_more_productive_but_somehow_more_tired/)",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 1.0,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Relatable sentiment about AI productivity paradox but no novel insight or data backing it.",
+        "total": 4.525
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:54:03Z"
+    },
+    {
       "id": "0d192b110a4598afa1f2379a0606f7d7ca2401aa",
       "section": "community",
       "source": "rss",
@@ -700,7 +891,7 @@
         "topic:agents",
         "topic:research"
       ],
-      "bullet_md": "- 🧪 **[Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning](https://arxiv.org/abs/2606.15007)** — _arXiv cs.CL_. — NVIDIA releases a 550B total (55B active) MoE hybrid Mamba-Transformer model trained on 20 trillion tokens with 1M context length, using SFT, RL, and multi-teacher on-policy distillation for agentic reasoning tasks.",
+      "bullet_md": "- 🧪 **[Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning](https://arxiv.org/abs/2606.15007)** — _arXiv cs.CL_. — NVIDIA's Nemotron 3 Ultra (550B total, 55B active) uses a hybrid Mamba-Transformer MoE with LatentMoE and MTP, trained on 20T tokens in NVFP4, achieving 5.9x throughput vs GLM-5.1 on long-context inference with on-par accuracy — released fully open with weights, data, and recipes.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -716,11 +907,43 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-17T02:40:37Z",
-      "last_seen_at": "2026-06-17T09:01:57Z"
+      "last_seen_at": "2026-06-17T09:54:34Z"
+    },
+    {
+      "id": "4b6fc42d24d07bb7129cb6c3c6deae4b181f74ad",
+      "section": "community",
+      "source": "reddit",
+      "title": "glm-5.2",
+      "canonical_url": "https://reddit.com/comments/1u7msd3",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/ollama: \"glm-5.2\"](https://www.reddit.com/r/ollama/comments/1u7msd3/glm52/) — r/ollama discusses GLM-5.2, Zhipu AI's openly available model designed for long-horizon reasoning tasks and extended context windows.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7778,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Reddit discussion duplicating the GLM-5.2 RSS topic without adding benchmarks or signal.",
+        "total": 4.45
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:01:15Z"
     },
     {
       "id": "e250cc9bb80455182333a03c4d783a65ab62a835",
@@ -755,36 +978,225 @@
       "last_seen_at": "2026-06-17T09:01:15Z"
     },
     {
-      "id": "361620d2e0eaf5a17b7a94fbf00ee6d7ef1a35a4",
+      "id": "afe1e416b46cc7518fef8160fd6d980baf596efb",
       "section": "community",
       "source": "reddit",
-      "title": "Nex claims Rio 3.5 is Nex 2.5 PRO in trench coat",
-      "canonical_url": "https://reddit.com/comments/1u5pkg1",
+      "title": "Next-Latent Prediction Transformers [R]",
+      "canonical_url": "https://reddit.com/comments/1u84mio",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/MachineLearning: \"Next-Latent Prediction Transformers [R]\"](https://www.reddit.com/r/MachineLearning/comments/1u84mio/nextlatent_prediction_transformers_r/) — Discusses next-latent prediction transformers, a research direction that shifts from predicting token-level outputs to predicting latent representations directly.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 1.0,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Research discussion thread on next-latent prediction with no concrete results, architecture details, or experimental data.",
+        "total": 4.45
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:54:03Z",
+      "last_seen_at": "2026-06-17T09:54:03Z"
+    },
+    {
+      "id": "5beb9eed4d403c60f9065b44424d960a193529b7",
+      "section": "community",
+      "source": "reddit",
+      "title": "What is Speculative Decoding? (trending on paperswithco.de) [R]",
+      "canonical_url": "https://reddit.com/comments/1u83kzt",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 💬 [r/MachineLearning: \"What is Speculative Decoding? (trending on paperswithco.de) [R]\"](https://www.reddit.com/r/MachineLearning/comments/1u83kzt/what_is_speculative_decoding_trending_on/)",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.913,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Explainer of speculative decoding, a well-known inference technique — recap material for the target audience.",
+        "total": 4.45
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:54:03Z",
+      "last_seen_at": "2026-06-17T09:54:03Z"
+    },
+    {
+      "id": "18b13b4825831ecbd2cb302d4a4a6fb78f9e7d6d",
+      "section": "community",
+      "source": "reddit",
+      "title": "Making a model of myself.",
+      "canonical_url": "https://reddit.com/comments/1u7jlop",
       "tags": [
         "origin:reddit",
         "section:community",
         "topic:opensource"
       ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"Nex claims Rio 3.5 is Nex 2.5 PRO in trench coat\"](https://www.reddit.com/r/LocalLLaMA/comments/1u5pkg1/nex_claims_rio_35_is_nex_25_pro_in_trench_coat/) — Nex faces accusations on r/LocalLLaMA that Rio 3.5 is simply a rebadged Nex 2.5 PRO, sparking debate over transparency in model versioning.",
+      "bullet_md": "- 💬 [r/ollama: \"Making a model of myself.\"](https://www.reddit.com/r/ollama/comments/1u7jlop/making_a_model_of_myself/) — A user on r/ollama discusses creating a personalized AI model fine-tuned on their own conversational data to replicate their personality.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.6368,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 1.0,
-        "taste_score": 0.3,
-        "taste_raw": 0.2,
-        "taste_reason": "Unsubstantiated Reddit drama accusing Nex of rebadging with no evidence in the metadata — pure rumor.",
-        "total": 3.9368
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.9412,
+        "taste_score": 0.375,
+        "taste_raw": 0.25,
+        "taste_reason": "Niche personal fine-tuning project, no broader signal or reproducible technique.",
+        "total": 4.375
       },
       "flags": {
         "enriched": true,
         "researched": false,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-06-15T02:40:19Z",
-      "last_seen_at": "2026-06-15T02:40:19Z"
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:01:15Z"
+    },
+    {
+      "id": "e9b3d5829c164bb49b74d4de23c5d48a7db41e54",
+      "section": "community",
+      "source": "reddit",
+      "title": "Your company is probably spending more on coffee than AI",
+      "canonical_url": "https://reddit.com/comments/1u7ta74",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/Artificial: \"Your company is probably spending more on coffee than AI\"](https://www.reddit.com/r/artificial/comments/1u7ta74/your_company_is_probably_spending_more_on_coffee/)",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.913,
+        "taste_score": 0.375,
+        "taste_raw": 0.25,
+        "taste_reason": "Opinion take comparing coffee budget to AI spend, no new data or analysis.",
+        "total": 4.375
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:54:03Z"
+    },
+    {
+      "id": "2346a0a78b0ffa61dcad9a702e38187124e71a4f",
+      "section": "community",
+      "source": "reddit",
+      "title": "How people generate images in OpenWebUI using remote models?",
+      "canonical_url": "https://reddit.com/comments/1u7rq3p",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/OpenWebUI: \"How people generate images in OpenWebUI using remote models?\"](https://www.reddit.com/r/OpenWebUI/comments/1u7rq3p/how_people_generate_images_in_openwebui_using/) — Discusses strategies for generating images through remote models in OpenWebUI, covering API configuration and model routing approaches.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.9444,
+        "taste_score": 0.3,
+        "taste_raw": 0.2,
+        "taste_reason": "Technical Q&A thread about OpenWebUI image generation config, too niche.",
+        "total": 4.3
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:01:15Z"
+    },
+    {
+      "id": "e1414faf5219a352a9998a8115450cec7cc91adf",
+      "section": "community",
+      "source": "reddit",
+      "title": "LLM only cites Source ID instead of actual filename in Knowledge Base",
+      "canonical_url": "https://reddit.com/comments/1u7aq2m",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/OpenWebUI: \"LLM only cites Source ID instead of actual filename in Knowledge Base\"](https://www.reddit.com/r/OpenWebUI/comments/1u7aq2m/llm_only_cites_source_id_instead_of_actual/) — Discusses a quirk where LLMs in OpenWebUI cite knowledge base sources by internal source ID rather than the actual filename, creating usability friction.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9948,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.92,
+        "taste_score": 0.3,
+        "taste_raw": 0.2,
+        "taste_reason": "Minor UX bug report about source ID labels in OpenWebUI, low signal.",
+        "total": 4.2948
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:01:15Z"
+    },
+    {
+      "id": "3c84c5c20523170c8c9799f4fdc68448510bf59b",
+      "section": "community",
+      "source": "reddit",
+      "title": "Pentagon used Elon Musk’s Grok AI to fire 2,000 missiles at Iran, official says",
+      "canonical_url": "https://reddit.com/comments/1u80x1z",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/OpenAI: \"Pentagon used Elon Musk’s Grok AI to fire 2,000 missiles at Iran, official says\"](https://www.reddit.com/r/OpenAI/comments/1u80x1z/pentagon_used_elon_musks_grok_ai_to_fire_2000/) — A circulating report alleges the Pentagon used xAI's Grok to coordinate firing 2,000 missiles at Iran, discussed skeptically on r/OpenAI.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.92,
+        "taste_score": 0.225,
+        "taste_raw": 0.15,
+        "taste_reason": "Unsubstantiated rumour discussed skeptically on Reddit; no credible reporting or verifiable detail.",
+        "total": 4.225
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-17T09:01:15Z",
+      "last_seen_at": "2026-06-17T09:01:15Z"
     },
     {
       "id": "4f0af1420964af77440d09c6904f4e48a1bdfd0a",
@@ -803,16 +1215,12 @@
         "cross_score": 2.0,
         "recency_decay": 0.6182,
         "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8636,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.875,
         "taste_score": 0.525,
         "taste_raw": 0.35,
         "taste_reason": "Practical hardware discussion for a $5k LLM server but no definitive answers in the metadata; useful as a datapoint.",
-        "ungrounded_penalty": -1.5,
-        "ungrounded_terms": [
-          "000"
-        ],
-        "total": 2.6432
+        "total": 4.1432
       },
       "flags": {
         "enriched": true,
