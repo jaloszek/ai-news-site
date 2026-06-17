@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-06-17 07:37 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-06-17 09:09 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 9626
-- **Enriched:** 3048 (31%)
-- **Taste-rated:** 2393 (24%)
+- **Discovery items (all-time):** 9653
+- **Enriched:** 3087 (31%)
+- **Taste-rated:** 2432 (25%)
 - **Researched:** 466 (4%)
-- **Status (candidate / rejected / published / duplicate):** 1637 / 7989 / 0 / 0
-- **Published bullets (all-time):** 920 (last 7d: 111)
+- **Status (candidate / rejected / published / duplicate):** 1664 / 7989 / 0 / 0
+- **Published bullets (all-time):** 927 (last 7d: 118)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-06-17 | 1173 | 70 (5%) | 70 (5%) | 3 (0%) |
+| 2026-06-17 | 1200 | 109 (9%) | 109 (9%) | 3 (0%) |
 | 2026-06-16 | 403 | 49 (12%) | 49 (12%) | 3 (0%) |
 | 2026-06-15 | 61 | 24 (39%) | 24 (39%) | 6 (9%) |
 | 2026-06-14 | 45 | 20 (44%) | 20 (44%) | 4 (8%) |
@@ -38,7 +38,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Claude Code | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
-| 2026-06-17 | 3 | 1 | 5 | 5 | 14 |
+| 2026-06-17 | 3 | 1 | 6 | 11 | 21 |
 | 2026-06-16 | 2 | 1 | 3 | 8 | 14 |
 | 2026-06-15 | 0 | 1 | 3 | 8 | 12 |
 | 2026-06-14 | 1 | 1 | 3 | 8 | 13 |
@@ -56,19 +56,19 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 |---|---|---:|
 | arXiv cs.AI | `rss` | 2924 |
 | arXiv cs.CL | `rss` | 1656 |
+| /r/LocalLLaMA | `reddit` | 100 |
 | /r/LangChain | `reddit` | 99 |
-| /r/LocalLLaMA | `reddit` | 99 |
 | /r/ChatGPT | `reddit` | 96 |
 | /r/LocalLLM | `reddit` | 92 |
 | /r/Anthropic | `reddit` | 91 |
+| /r/AI_Agents | `reddit` | 87 |
+| /r/Artificial | `reddit` | 86 |
 | /r/MachineLearning | `reddit` | 85 |
-| /r/AI_Agents | `reddit` | 84 |
 | /r/ClaudeAI | `reddit` | 84 |
-| /r/Artificial | `reddit` | 83 |
+| /r/ollama | `reddit` | 82 |
 | /r/singularity | `reddit` | 82 |
-| /r/ollama | `reddit` | 79 |
-| /r/OpenAI | `reddit` | 78 |
-| /r/ClaudeHomies | `reddit` | 58 |
+| /r/OpenAI | `reddit` | 81 |
+| /r/ClaudeHomies | `reddit` | 61 |
 
 
 ## Rejection reasons (all-time)
