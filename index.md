@@ -41,7 +41,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-06-16.html"><div class="cal-num">16</div><ul class="cal-highlights"><li>🛠 CC v2.1.178</li><li>✨ Kimi K2.7 Code</li><li>🤖 Omnigent meta-harness</li><li>🧪 CacheRL agents</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>🛠 CC v2.1.179</li><li>✨ GLM-5.2</li><li>🧪 Deployment Sim</li><li>🛠 UE 5.8 MCP</li><li>💬 OpenAI &lt;50% share</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🛠 CC v2.1.181</li><li>✨ AI Chemist</li><li>🧪 KV Cache Prefill</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">19</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-06-19.html"><div class="cal-num">19</div><ul class="cal-highlights"><li>🛠 CC v2.1.183</li><li>🟢 OpenAI rare disease diagnoses</li><li>🧪 DeepSeek-V4 1M context</li><li>📰 US bans Anthropic Fable</li><li>🤖 GLM-5.2 Z-Code</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">22</div></div>
