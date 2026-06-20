@@ -1,9 +1,9 @@
 {
   "date": "2026-06-20",
-  "generated_at": "2026-06-20T02:26:26+00:00",
-  "candidate_count": 16,
-  "researched_count": 16,
-  "published_count": 11,
+  "generated_at": "2026-06-20T10:54:39+00:00",
+  "candidate_count": 32,
+  "researched_count": 26,
+  "published_count": 20,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
@@ -31,7 +31,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8696,
+        "novelty_score": 0.8529,
         "taste_score": 0.9,
         "taste_raw": 0.6,
         "taste_reason": "Concrete engineering writeup from GitHub's blog on building a Copilot-powered internal analytics agent; useful pattern reference for teams doing similar work but not surprising.",
@@ -43,7 +43,39 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-20T02:14:34Z",
-      "last_seen_at": "2026-06-20T02:14:34Z"
+      "last_seen_at": "2026-06-20T10:39:37Z"
+    },
+    {
+      "id": "e9b8182dcfcc0d626537d0888806b00d8b892c1c",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "MosaicLeaks: Can your research agent keep a secret?",
+      "canonical_url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[MosaicLeaks: Can your research agent keep a secret?](https://huggingface.co/blog/ServiceNow/mosaicleaks)** — _Hugging Face blog_. — ServiceNow Research's MosaicLeaks benchmark shows that training deep-research agents purely for task accuracy makes them leak more, while their PA-DR reward scheme cut leakage to 9.9% without sacrificing performance, proving you cannot prompt privacy in, you have to train it in.",
+      "score_components": {
+        "cross_source_count": 2,
+        "cross_score": 4.0,
+        "recency_decay": 0.8518,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8261,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Novel research benchmarking agent confidentiality; credible source (ServiceNow Research on HuggingFace), timely safety topic.",
+        "total": 7.3268
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-19T07:56:20Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
     },
     {
       "id": "33383567514a4fc878384c06d079128ba5835d2a",
@@ -59,16 +91,16 @@
       ],
       "bullet_md": "- 🟢 **[Improving health intelligence in ChatGPT](https://openai.com/index/improving-health-intelligence-in-chatgpt)** — _OpenAI blog_. — GPT-5.5 Instant now matches OpenAI's expensive Thinking models on health evaluations, with physician reviewers rating its responses higher than doctor-written answers across accuracy, clarity, and completeness — flagged factuality errors dropped 71% in two months, and the upgrade is live for all free users.",
       "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
+        "cross_source_count": 2,
+        "cross_score": 4.0,
         "recency_decay": 0.7917,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.7083,
+        "novelty_score": 0.8108,
         "taste_score": 0.45,
         "taste_raw": 0.3,
         "taste_reason": "Niche health-domain improvement to already-known GPT-5.5 Instant (listed in state-of-ai). No new capability, just a vertical application note.",
-        "total": 4.7417
+        "total": 6.7417
       },
       "flags": {
         "enriched": true,
@@ -76,7 +108,41 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-19T07:56:20Z",
-      "last_seen_at": "2026-06-20T02:14:34Z"
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "d44bbcfdf323272f26f8025fb1690758aee5812c",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+      "canonical_url": "https://huggingface.co/blog/is-it-agentic-enough",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:agents",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 🟡 **[Is it agentic enough? Benchmarking open models on your own tooling](https://huggingface.co/blog/is-it-agentic-enough)** — _Hugging Face blog_. — Hugging Face's new agent-eval harness measures what it actually costs an agent to use a library — not just final accuracy but tokens, turns, and errors — and caught a counterintuitive result on transformers: the same CLI + Skill that cut large model effort also dropped Qwen3-14B's accuracy from 100% to 0% on sentiment classification, because the model tried to call the CLI as an agent tool rather than run it from a shell.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.7,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.6842,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Practical methodology for benchmarking open agent models on custom tooling; directly useful for practitioners evaluating agent frameworks.",
+        "total": 5.025
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-19T07:56:20Z",
+      "last_seen_at": "2026-06-19T07:56:20Z"
     },
     {
       "id": "1a8f25e9c3f1b0c35603dfc721b315d7cf54e795",
@@ -98,7 +164,7 @@
         "recency_decay": 0.9833,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8,
+        "novelty_score": 0.84,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "ego lite gives Claude Code and Codex a dedicated browser workspace for web automation — concrete, well-described tooling a daily agent user could immediately evaluate.",
@@ -110,7 +176,40 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-20T02:07:13Z",
-      "last_seen_at": "2026-06-20T02:07:13Z"
+      "last_seen_at": "2026-06-20T10:32:08Z"
+    },
+    {
+      "id": "55dc8d49619ce163ecf6d333af9b6124dba360a2",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "This MCP Server Cuts AI Agent Tokens By 99%",
+      "canonical_url": "https://youtube.com/watch?v=eo6fSQBMo4Q",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [This MCP Server Cuts AI Agent Tokens By 99%](https://www.youtube.com/watch?v=eo6fSQBMo4Q) — **Prism Labs** (6m56s). — A walkthrough of DeusData's codebase-memory-mcp — a tree-sitter MCP server that cuts token consumption by 120x by replacing grep-and-read exploration with SQLite-backed structural queries, indexing the 28M-line Linux kernel in under 3 minutes.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=eo6fSQBMo4Q\"><img src=\"https://img.youtube.com/vi/eo6fSQBMo4Q/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8485,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Promising tool concept (repo indexing to avoid sequential reads) but the 99% claim needs verification; worth a look for token-burn pain.",
+        "total": 4.825
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-20T10:32:08Z",
+      "last_seen_at": "2026-06-20T10:32:08Z"
     },
     {
       "id": "89a8b196028dedd481629c05b5c32c929d626eef",
@@ -132,7 +231,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.7714,
+        "novelty_score": 0.7561,
         "taste_score": 0.75,
         "taste_raw": 0.5,
         "taste_reason": "Walrus Memory as a cross-tool encrypted memory layer is genuinely useful, but the all-caps clickbait title caps the score and the demo format lacks depth.",
@@ -144,7 +243,40 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-20T02:07:13Z",
-      "last_seen_at": "2026-06-20T02:07:13Z"
+      "last_seen_at": "2026-06-20T10:32:08Z"
+    },
+    {
+      "id": "a0d41608ee3b780004d2754e79c9e31e3e7b5aab",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "This Claude Code Plugin Writes 94% Less Code (ponytail)",
+      "canonical_url": "https://youtube.com/watch?v=2xuFcmUAQUc",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [This Claude Code Plugin Writes 94% Less Code (ponytail)](https://www.youtube.com/watch?v=2xuFcmUAQUc) — **Better Stack** (10m07s). — A walkthrough of Ponytail — DietrichGebert's open-source skill that installs across 14 agent platforms and enforces a six-rung laziness ladder before writing code, averaging 54% less code (up to 94% on overbuilt tasks like date pickers) while keeping full safety on adversarial tests.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=2xuFcmUAQUc\"><img src=\"https://img.youtube.com/vi/2xuFcmUAQUc/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8182,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Interesting Claude Code plugin demo but the '94% less code' claim sounds exaggerated; useful enough for a quick watch.",
+        "total": 4.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:32:08Z",
+      "last_seen_at": "2026-06-20T10:32:08Z"
     },
     {
       "id": "e77d465c02d8555e7faafe03fe08a590046dde86",
@@ -164,7 +296,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8889,
+        "novelty_score": 0.878,
         "taste_score": 0.525,
         "taste_raw": 0.35,
         "taste_reason": "Fireship covers Turso rewriting SQLite in Rust, but the story is mostly recap of known work (libSQL/Limbo) in a lightweight short format; surface-level entertainment.",
@@ -176,7 +308,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-20T02:07:13Z",
-      "last_seen_at": "2026-06-20T02:07:13Z"
+      "last_seen_at": "2026-06-20T10:32:08Z"
     },
     {
       "id": "1bf496958ef836a217379153c6caf9a64852640e",
@@ -242,6 +374,39 @@
       "last_seen_at": "2026-06-18T02:30:31Z"
     },
     {
+      "id": "f14dbcdafa591c5e7fedf166ca3b6789c3626abe",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Google AI Agents Capstone 2026 | Badge, Certificate & Recognition",
+      "canonical_url": "https://youtube.com/watch?v=X6eGCO_5KOA",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:google"
+      ],
+      "bullet_md": "- 🎥 [Google AI Agents Capstone 2026 | Badge, Certificate & Recognition](https://www.youtube.com/watch?v=X6eGCO_5KOA) — **RK Tech Edge** (12m46s). — A guide to the capstone project for the five-day Google AI Agents Intensive course walks through earning the completion badge and certificate.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=X6eGCO_5KOA\"><img src=\"https://img.youtube.com/vi/X6eGCO_5KOA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.875,
+        "taste_score": 0.225,
+        "taste_raw": 0.15,
+        "taste_reason": "Course walkthrough video about earning a badge; no news or technical depth, pure how-to content.",
+        "total": 4.225
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:32:08Z",
+      "last_seen_at": "2026-06-20T10:32:08Z"
+    },
+    {
       "id": "f86a5d66bcc3322a9b15d7d3c84445367c0fe732",
       "section": "youtube",
       "source": "youtube",
@@ -260,7 +425,7 @@
         "recency_decay": 0.6374,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9286,
+        "novelty_score": 0.95,
         "taste_score": 0.45,
         "taste_raw": 0.3,
         "taste_reason": "Fireship overview of classic CS papers; education content not AI news, no actionable signal.",
@@ -275,68 +440,37 @@
       "last_seen_at": "2026-06-19T07:49:35Z"
     },
     {
-      "id": "795827b23ca459ac632816c2ecc73dbc3a4f3a32",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "How to use the systeme.io MCP server (Model Context Protocol) | systeme.io tutorials",
-      "canonical_url": "https://youtube.com/watch?v=zkojx6W8Lxo",
+      "id": "d5ea50af72e7cc987dbefff254eed126214d4b94",
+      "section": "community",
+      "source": "rss",
+      "title": "[AINews] GLM > GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December",
+      "canonical_url": "https://latent.space/p/ainews-glm-gpt-glm-52-passes-vibe",
       "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
+        "origin:rss",
+        "section:community",
+        "topic:research"
       ],
-      "bullet_md": "- 🎥 [How to use the systeme.io MCP server (Model Context Protocol) | systeme.io tutorials](https://www.youtube.com/watch?v=zkojx6W8Lxo) — **Systeme.io: The world's easiest marketing platform** (2m46s). — A quick tutorial on connecting systeme.io's all-in-one marketing platform to Claude or ChatGPT via MCP — currently limited to contact and newsletter management, with 90-day key expiry and OAuth on the roadmap.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=zkojx6W8Lxo\"><img src=\"https://img.youtube.com/vi/zkojx6W8Lxo/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 📝 **[[AINews] GLM > GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December](https://www.latent.space/p/ainews-glm-gpt-glm-52-passes-vibe)** — _Latent Space (swyx)_. — GLM-5.2 is clearing community \"daily driver\" bars from multiple practitioners (Jeremy Howard, Mat Velloso), scoring above GPT-5.5 on the new AA-Briefcase knowledge-work benchmark at one-sixth the cost, while Z.ai hints an open Fable-class model by December.",
       "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6695,
-        "origin_weight": 1.0,
+        "cross_source_count": 2,
+        "cross_score": 4.0,
+        "recency_decay": 0.9492,
+        "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.7857,
-        "taste_score": 0.3,
-        "taste_raw": 0.2,
-        "taste_reason": "Marketing-platform MCP tutorial; niche vendor content with no broader engineering insight.",
-        "total": 3.9695
+        "novelty_score": 0.8684,
+        "taste_score": 1.2,
+        "taste_raw": 0.8,
+        "taste_reason": "GLM-5.2 passing community vibe checks plus Z.ai's forecast of open Fable by December — extends state-of-ai's open-weights row with concrete model progress and a dated forecast from a credible source.",
+        "total": 6.6492,
+        "cooldown_penalty": -1.0
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": false
+        "published_today": true
       },
-      "first_seen_at": "2026-06-18T02:30:31Z",
-      "last_seen_at": "2026-06-18T02:30:31Z"
-    },
-    {
-      "id": "721eb6a41b0e72b095c5f8dfda261e6c9151da4a",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Claude Code SEO: I Should Be SELLING This Method (INSANE)",
-      "canonical_url": "https://youtube.com/watch?v=vm37cyjf_-w",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [Claude Code SEO: I Should Be SELLING This Method (INSANE)](https://www.youtube.com/watch?v=vm37cyjf_-w) — **Income stream surfers** (12m00s). — A walkthrough of using Claude Code with Semrush MCP and Google Ads Keyword Planner to run competitor keyword-gap analysis and auto-build landing pages — useful if you run affiliate sites and want to see the Claude Code plus SEO pipeline in practice.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=vm37cyjf_-w\"><img src=\"https://img.youtube.com/vi/vm37cyjf_-w/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6469,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9286,
-        "taste_score": 0.3,
-        "taste_raw": 0.2,
-        "taste_reason": "Clickbait SEO tutorial capitalised INSANE in title; low-credibility source and grift-adjacent framing.",
-        "total": 3.9469
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-18T02:30:31Z",
-      "last_seen_at": "2026-06-18T02:30:31Z"
+      "first_seen_at": "2026-06-19T07:56:20Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
     },
     {
       "id": "11d98c132aff3553e2441bddb90907933ddd40fa",
@@ -357,7 +491,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.7917,
+        "novelty_score": 0.8824,
         "taste_score": 1.275,
         "taste_raw": 0.85,
         "taste_reason": "Zvi's analysis of Fable 5 capabilities and the US government takedown after a jailbreak; extends state-of-ai's safety row with concrete model-specific facts and a real policy enforcement event.",
@@ -369,106 +503,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-20T02:14:34Z",
-      "last_seen_at": "2026-06-20T02:14:34Z"
-    },
-    {
-      "id": "2cd08cbf15fe4f3b1ac0a2c23e90c724239770e2",
-      "section": "community",
-      "source": "rss",
-      "title": "Banning Open Source AI Would Be A Mistake",
-      "canonical_url": "https://interconnects.ai/p/banning-open-source-ai-would-be-a",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:opensource",
-        "topic:research"
-      ],
-      "bullet_md": "- 📝 **[Banning Open Source AI Would Be A Mistake](https://www.interconnects.ai/p/banning-open-source-ai-would-be-a)** — _Interconnects (Nathan Lambert)_. — An op-ed covering the stakes of the open-source AI debate in light of the Fable 5 takedown, arguing that regulating open models would further entrench the Anthropic-OpenAI duopoly while pushing the global ecosystem toward Chinese alternatives.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 0.0,
-        "novelty_score": 0.9524,
-        "taste_score": 0.6,
-        "taste_raw": 0.4,
-        "taste_reason": "Op-ed arguing against banning open-source AI, written for non-technical audience; Lambert is credible but the piece lacks new facts and covers well-trodden ground.",
-        "total": 5.1
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-20T02:14:34Z",
-      "last_seen_at": "2026-06-20T02:14:34Z"
-    },
-    {
-      "id": "d5ea50af72e7cc987dbefff254eed126214d4b94",
-      "section": "community",
-      "source": "rss",
-      "title": "[AINews] GLM > GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December",
-      "canonical_url": "https://latent.space/p/ainews-glm-gpt-glm-52-passes-vibe",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:research"
-      ],
-      "bullet_md": "- 📝 **[[AINews] GLM > GPT? GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December](https://www.latent.space/p/ainews-glm-gpt-glm-52-passes-vibe)** — _Latent Space (swyx)_. — GLM-5.2 is clearing community \"daily driver\" bars from multiple practitioners (Jeremy Howard, Mat Velloso), scoring above GPT-5.5 on the new AA-Briefcase knowledge-work benchmark at one-sixth the cost, while Z.ai hints an open Fable-class model by December.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9492,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.84,
-        "taste_score": 1.2,
-        "taste_raw": 0.8,
-        "taste_reason": "GLM-5.2 passing community vibe checks plus Z.ai's forecast of open Fable by December — extends state-of-ai's open-weights row with concrete model progress and a dated forecast from a credible source.",
-        "total": 4.6492,
-        "cooldown_penalty": -1.0
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-19T07:56:20Z",
-      "last_seen_at": "2026-06-20T02:14:34Z"
-    },
-    {
-      "id": "caa9518ba52dbb37b8d3b0e466f15b88caab3029",
-      "section": "community",
-      "source": "rss",
-      "title": "Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias",
-      "canonical_url": "https://arxiv.org/abs/2606.19544",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:research"
-      ],
-      "bullet_md": "- 🧪 **[Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias](https://arxiv.org/abs/2606.19544)** — _arXiv cs.CL_. — Across 21 judges, 9 providers, and 541,000 judgments, the study finds universal kappa deflation (a substantial gap between exact-match agreement and Cohen's κ), judge rankings shifting by 14 positions across benchmarks, and a consistency-bias paradox where high test-retest reliability masks severe position bias in two production judges.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9333,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9655,
-        "taste_score": 1.05,
-        "taste_raw": 0.7,
-        "taste_reason": "Systematic eval of 21 LLM-as-Judge models across 3 benchmarks — concrete methodology finding that exact-match agreement overstates discriminative ability. Directly relevant to anyone using LLM-as-judge.",
-        "total": 4.4833,
-        "cooldown_penalty": -1.0
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-19T07:56:20Z",
-      "last_seen_at": "2026-06-20T02:14:34Z"
+      "last_seen_at": "2026-06-20T10:39:37Z"
     },
     {
       "id": "ce5dd2870ed812d476eb73daab9777e0d818ae77",
@@ -488,16 +523,11 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9048,
+        "novelty_score": 0.95,
         "taste_score": 0.825,
         "taste_raw": 0.55,
         "taste_reason": "Norway's near-total AI ban in elementary schools is a concrete regulatory data point with significant HN discussion; relevant policy signal but single-country scope limits urgency.",
-        "ungrounded_penalty": -1.5,
-        "ungrounded_terms": [
-          "300",
-          "450"
-        ],
-        "total": 3.825
+        "total": 5.325
       },
       "flags": {
         "enriched": true,
@@ -505,7 +535,204 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-20T02:14:34Z",
-      "last_seen_at": "2026-06-20T02:14:34Z"
+      "last_seen_at": "2026-06-20T10:39:37Z"
+    },
+    {
+      "id": "3f1c20df95e1995a7fefacfa2ab43b456663c287",
+      "section": "community",
+      "source": "reddit",
+      "title": "Nobel Winner John Jumper to Leave Google DeepMind for Anthropic",
+      "canonical_url": "https://reddit.com/comments/1uan1cq",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code",
+        "topic:google"
+      ],
+      "bullet_md": "- 💬 [r/Anthropic: \"Nobel Winner John Jumper to Leave Google DeepMind for Anthropic\"](https://www.reddit.com/r/Anthropic/comments/1uan1cq/nobel_winner_john_jumper_to_leave_google_deepmind/) — Nobel laureate John Jumper — youngest chemistry Nobel winner in 70 years and AlphaFold co-creator — leaves DeepMind after nine years for Anthropic's life sciences division, the second major Google AI departure this week after Noam Shazeer's exit to OpenAI.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9091,
+        "taste_score": 1.275,
+        "taste_raw": 0.85,
+        "taste_reason": "Nobel winner John Jumper leaving DeepMind for Anthropic is a major talent acquisition; concrete names, high credibility, I'd Slack this to a coworker.",
+        "total": 5.275
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-20T10:39:20Z",
+      "last_seen_at": "2026-06-20T10:39:20Z"
+    },
+    {
+      "id": "2cd08cbf15fe4f3b1ac0a2c23e90c724239770e2",
+      "section": "community",
+      "source": "rss",
+      "title": "Banning Open Source AI Would Be A Mistake",
+      "canonical_url": "https://interconnects.ai/p/banning-open-source-ai-would-be-a",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[Banning Open Source AI Would Be A Mistake](https://www.interconnects.ai/p/banning-open-source-ai-would-be-a)** — _Interconnects (Nathan Lambert)_. — An op-ed covering the stakes of the open-source AI debate in light of the Fable 5 takedown, arguing that regulating open models would further entrench the Anthropic-OpenAI duopoly while pushing the global ecosystem toward Chinese alternatives.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9062,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Op-ed arguing against banning open-source AI, written for non-technical audience; Lambert is credible but the piece lacks new facts and covers well-trodden ground.",
+        "total": 5.1
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-20T02:14:34Z",
+      "last_seen_at": "2026-06-20T10:39:37Z"
+    },
+    {
+      "id": "975dbcb4aba49b464caef1f1bf1c5a74a7f589af",
+      "section": "community",
+      "source": "reddit",
+      "title": "GLM 5.2: 98% of max level intelligence with less than half of tokens usage",
+      "canonical_url": "https://reddit.com/comments/1uar4e2",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"GLM 5.2: 98% of max level intelligence with less than half of tokens usage\"](https://www.reddit.com/r/LocalLLaMA/comments/1uar4e2/glm_52_98_of_max_level_intelligence_with_less/) — r/LocalLLaMA discusses GLM-5.2 — Zhipu AI's 744B-param open-weights MoE model with 1M context — that tops the open-weights AI Intelligence Index at 51 points, ahead of DeepSeek V4 Pro and MiniMax-M3, at roughly one-sixth the cost of proprietary frontier models.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9565,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Extends state-of-ai's GLM-5.1 row with a new version and concrete efficiency claim (98% performance at half tokens); Reddit source reduces credibility.",
+        "total": 4.975
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-20T10:39:20Z",
+      "last_seen_at": "2026-06-20T10:39:20Z"
+    },
+    {
+      "id": "db56029d5aab6874ebb16ea6b60e62754eccb0e5",
+      "section": "community",
+      "source": "reddit",
+      "title": "I reverse engineered Windows Copilot into a free OpenAI compatible API (GPT-4o, no API key, no billing)",
+      "canonical_url": "https://reddit.com/comments/1uaqlu2",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:dev-tools",
+        "topic:openai",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"I reverse engineered Windows Copilot into a free OpenAI compatible API (GPT-4o, no API key, no billing)\"](https://www.reddit.com/r/LocalLLM/comments/1uaqlu2/i_reverse_engineered_windows_copilot_into_a_free/) — A developer reverse-engineered Windows Copilot to expose GPT-4o through an OpenAI-compatible API that requires no API key or billing.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8571,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Clever reverse-engineering project with practical utility (free GPT-4o via Copilot API); likely short-lived and limited reliability.",
+        "total": 4.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-20T10:39:20Z",
+      "last_seen_at": "2026-06-20T10:39:20Z"
+    },
+    {
+      "id": "caa9518ba52dbb37b8d3b0e466f15b88caab3029",
+      "section": "community",
+      "source": "rss",
+      "title": "Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias",
+      "canonical_url": "https://arxiv.org/abs/2606.19544",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 🧪 **[Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias](https://arxiv.org/abs/2606.19544)** — _arXiv cs.CL_. — Across 21 judges, 9 providers, and 541,000 judgments, the study finds universal kappa deflation (a substantial gap between exact-match agreement and Cohen's κ), judge rankings shifting by 14 positions across benchmarks, and a consistency-bias paradox where high test-retest reliability masks severe position bias in two production judges.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9333,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9302,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Systematic eval of 21 LLM-as-Judge models across 3 benchmarks — concrete methodology finding that exact-match agreement overstates discriminative ability. Directly relevant to anyone using LLM-as-judge.",
+        "total": 4.4833,
+        "cooldown_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-19T07:56:20Z",
+      "last_seen_at": "2026-06-20T10:39:37Z"
+    },
+    {
+      "id": "f33fbfc951e52376ed8d7c775dac38e519f89c75",
+      "section": "community",
+      "source": "reddit",
+      "title": "Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!",
+      "canonical_url": "https://reddit.com/comments/1uanu23",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/Anthropic: \"Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!\"](https://www.reddit.com/r/Anthropic/comments/1uanu23/update_weve_gone_ahead_and_reset_5hour_and_weekly/) — Anthropic temporarily reset usage limits across all plans for the weekend, removing the 5-hour and weekly caps that normally restrict access.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9615,
+        "taste_score": 0.3,
+        "taste_raw": 0.2,
+        "taste_reason": "Ephemeral weekend notice about lifted usage limits; no lasting value, pure community-service announcement.",
+        "total": 4.3
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:39:20Z",
+      "last_seen_at": "2026-06-20T10:39:20Z"
     },
     {
       "id": "fd6c44580fa4af3c3caf2b01382c00d65e53c43d",
@@ -525,7 +752,7 @@
         "recency_decay": 0.639,
         "origin_weight": 1.5,
         "has_concrete_fact": 0.0,
-        "novelty_score": 1.0,
+        "novelty_score": 0.95,
         "taste_score": 0.525,
         "taste_raw": 0.35,
         "taste_reason": "Broad devops podcast summary on K8s/GitOps/AI-in-CI; no specific AI insight to stop a senior AI engineer.",
@@ -539,6 +766,339 @@
       },
       "first_seen_at": "2026-06-18T02:37:44Z",
       "last_seen_at": "2026-06-19T07:56:20Z"
+    },
+    {
+      "id": "6cd28c156a1c38ff55ebfbcb5d5f45dc94cadc18",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Claude Code now supports artifacts (5 minute read)",
+      "canonical_url": "https://claude.com/blog/artifacts-in-claude-code",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[Claude Code now supports artifacts (5 minute read)](https://claude.com/blog/artifacts-in-claude-code?utm_source=tldrai)** — _TLDR · Jun 19_. — Claude Code can now generate shareable artifacts that persist across sessions, including diagrams, documents, and other reusable outputs alongside code.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9231,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Official Claude Code feature launch: shareable artifacts across sessions. Concrete capabilities (diagrams, documents). Directly useful for daily users.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "19"
+        ],
+        "total": 4.05
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "93ec6dc86859263ffb1080cc634ccd79b8ce5bba",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Anthropic study of 400K Claude Code sessions shows task value grew 27% in six months",
+      "canonical_url": "https://app.alphasignal.ai/c?uid=o2AX8e0tOygDkfTZ&cid=b5138d299a112d42&lid=38i0dUHSxcedCGUq&mid=b3f302d9-a529-4482-a31c-7533949a740e",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Anthropic study of 400K Claude Code sessions shows task value grew 27% in six months](https://app.alphasignal.ai/c?uid=o2AX8e0tOygDkfTZ&cid=b5138d299a112d42&lid=38i0dUHSxcedCGUq&mid=b3f302d9-a529-4482-a31c-7533949a740e)** — _AlphaSignal · Jun 19_. — Anthropic's study of 400,000 Claude Code sessions (Oct 2025–Apr 2026) found average task value rose 27% and debugging time nearly halved, with domain expertise mattering more than coding background — users make 70% of planning decisions while Claude handles most execution.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8667,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Concrete data from 400K Claude Code sessions showing 27% task value growth; credible internal study directly relevant to the audience.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "19",
+          "400000"
+        ],
+        "total": 4.05
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "789baed22e874e6ef4e53a8e4c3242ddcf88c900",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Inside Claude Managed Agents: Reverse Engineering the Security Boundaries of Anthropic's Hosted Agent Runtime (12…",
+      "canonical_url": "https://pluto.security/blog/inside-claude-managed-agents",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[Inside Claude Managed Agents: Reverse Engineering the Security Boundaries of Anthropic's Hosted Agent Runtime (12…](https://pluto.security/blog/inside-claude-managed-agents/?utm_source=tldrinfosec)** — _TLDR · Jun 18_. — Pluto Security reverse-engineers Claude Managed Agents to map security boundaries of the hosted runtime, identifying sandboxing and data isolation mechanisms.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8123,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6923,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Novel security research from a credible firm reverse-engineering Anthropic's managed agent sandboxing; directly useful for Claude Code users evaluating managed agents.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "18"
+        ],
+        "total": 3.9373
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "95a26897674b89e0d9a32984b5190df84d900ac4",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Anthropic ships major Claude Design overhaul with design system imports, code round-trips, and a fix for its…",
+      "canonical_url": "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[Anthropic ships major Claude Design overhaul with design system imports, code round-trips, and a fix for its…](https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem?utm_source=tldrnewsletter)** — _TLDR · Jun 18_. — The Claude Design overhaul adds design system imports for consistent branding and code round-trips that sync visual edits to source files.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.7896,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7917,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Concrete Claude Code feature launch with specific capabilities (design imports, code round-trips, token burn fix); directly relevant to daily Claude users.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "18"
+        ],
+        "total": 3.8396
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "97d44a6bef7a4e901acc0323656faa85a14bea13",
+      "section": "newsletters",
+      "source": "email",
+      "title": "OpenAI prepares GPT-5.6 models for the upcoming release (2 minute read)",
+      "canonical_url": "https://testingcatalog.com/openai-prepares-gpt-5-6-models-for-the-upcoming-release",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:dev-tools",
+        "topic:openai"
+      ],
+      "bullet_md": "- 📧 **[OpenAI prepares GPT-5.6 models for the upcoming release (2 minute read)](https://www.testingcatalog.com/openai-prepares-gpt-5-6-models-for-the-upcoming-release/?utm_source=tldrai)** — _TLDR · Jun 19_. — TestingCatalog reports OpenAI is readying GPT-5.6 models for release, suggesting a new model iteration is approaching launch.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9474,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Speculative leak about GPT-5.6 from TestingCatalog; concrete if true but source credibility is moderate and lacks detail.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "19"
+        ],
+        "total": 3.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "984e472a0be92cdaf336a093c377481aa48a7332",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Mobileye is entering the US robotaxi market with standalone service (2 minute read)",
+      "canonical_url": "https://arstechnica.com/cars/2026/06/mobileye-is-entering-the-us-robotaxi-market-with-standalone-service",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[Mobileye is entering the US robotaxi market with standalone service (2 minute read)](https://arstechnica.com/cars/2026/06/mobileye-is-entering-the-us-robotaxi-market-with-standalone-service/?utm_source=tldrnewsletter)** — _TLDR · Jun 18_. — Mobileye announced plans to launch a standalone robotaxi service in the US, competing with Waymo and Cruise using its own autonomous driving technology.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.7896,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8462,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Concrete competitor announcement from a credible tech outlet; adjacent to the AI/dev reader's interests in autonomous systems.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "18"
+        ],
+        "total": 3.6896
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "97266c3cc54c25a8fcb858d1be708fb2302f1572",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Anthropic launches Claude Design to build UIs using your real design system",
+      "canonical_url": "https://app.alphasignal.ai/c?uid=o2AX8e0tOygDkfTZ&cid=5a512074041fb2d4&lid=idB5oqk6zEE14WSd&mid=d33efd38-61ea-4246-aa96-4f7ad0ea335d",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Anthropic launches Claude Design to build UIs using your real design system](https://app.alphasignal.ai/c?uid=o2AX8e0tOygDkfTZ&cid=5a512074041fb2d4&lid=idB5oqk6zEE14WSd&mid=d33efd38-61ea-4246-aa96-4f7ad0ea335d)** — _AlphaSignal · Jun 18_.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8597,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7857,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Duplicates the Claude Design launch covered by VentureBeat (item 3); different source, same feature, slightly less useful as second coverage.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "18"
+        ],
+        "total": 3.6847
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "1ec342878f973afc91442eca7bd4c9f25a328c3d",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Mistral AI to get Code and Apps features on Vibe (2 minute read)",
+      "canonical_url": "https://testingcatalog.com/mistral-ai-to-get-code-and-apps-features-on-vibe",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:dev-tools",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 📧 **[Mistral AI to get Code and Apps features on Vibe (2 minute read)](https://www.testingcatalog.com/mistral-ai-to-get-code-and-apps-features-on-vibe/?utm_source=tldrai)** — _TLDR · Jun 19_.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9167,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Mistral expanding Vibe to code generation is directionally interesting but lacks specific details on capabilities or release timeline.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "19"
+        ],
+        "total": 3.675
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
+    },
+    {
+      "id": "52171bb25611dac85a373e70b14d92668dd7603d",
+      "section": "newsletters",
+      "source": "email",
+      "title": "AgentDeck plugin turns Stream Deck+ into a Claude Code control panel",
+      "canonical_url": "https://github.com/asheshgoplani/agent-deck",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[AgentDeck plugin turns Stream Deck+ into a Claude Code control panel](https://github.com/asheshgoplani/agent-deck)** — _AlphaSignal · Jun 19_.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Creative hardware integration for Claude Code but extremely niche; interesting proof-of-concept, limited daily utility.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "19"
+        ],
+        "total": 3.675
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-20T10:41:39Z",
+      "last_seen_at": "2026-06-20T10:41:39Z"
     }
   ]
 }
