@@ -45,7 +45,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-06-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>✨ GLM-5.2</li><li>💰 John Jumper→Anthropic</li><li>🛠 CC artifacts</li><li>🧪 400K CC study</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-21.html"><div class="cal-num">21</div><ul class="cal-highlights"><li>🛠 Enterprise MCP Auth</li><li>🛠 Ponytail</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🚀 Samsung ChatGPT Enterprise</li><li>🛠 Recall – local CC memory</li><li>🚀 GLM-5.2 tops DeepSWE</li><li>🧪 Microsoft SkillOpt</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-06-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>🛠 CC v2.1.186</li><li>🟢 OpenAI Daybreak</li><li>💰 DeepSeek $7.4B raise</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">24</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
