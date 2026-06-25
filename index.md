@@ -47,7 +47,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-06-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🚀 Samsung ChatGPT Enterprise</li><li>🛠 Recall – local CC memory</li><li>🚀 GLM-5.2 tops DeepSWE</li><li>🧪 Microsoft SkillOpt</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>🛠 CC v2.1.186</li><li>🟢 OpenAI Daybreak</li><li>💰 DeepSeek $7.4B raise</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>🛠 CC v2.1.187</li><li>🧪 ParallelKernelBench</li><li>🟢 GPT-5 immunology solve</li><li>🚀 Cursor Compile 26</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-06-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>🚀 OpenAI Jalapeño chip</li><li>🛠 CC v2.1.193</li><li>🤖 Gemini 3.5 Flash computer use</li><li>✨ Kimi K2.7 Code</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
