@@ -50,7 +50,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-06-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>🚀 OpenAI Jalapeño chip</li><li>🛠 CC v2.1.193</li><li>🤖 Gemini 3.5 Flash computer use</li><li>✨ Kimi K2.7 Code</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-26.html"><div class="cal-num">26</div><ul class="cal-highlights"><li>✨ Ornith-1.0</li><li>🛠 GitHub Copilot eval</li><li>💬 OpenAI Codex 56x</li><li>💰 Apple M7 chips</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>✨ GPT-5.6 Sol</li><li>🛠 CC v2.1.195</li><li>🛠 Gemini 3.5 Flash CU</li><li>🧪 Qwen AgentWorld</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-06-28.html"><div class="cal-num">28</div><ul class="cal-highlights"><li>✨ GPT-5.6 Sol/Terra/Luna</li><li>🧪 DSpark speculative decoding</li><li>🔒 Fable 5 expected return</li><li>💰 Asian Mythos clones</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">29</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
   </div>
