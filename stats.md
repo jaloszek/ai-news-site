@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-06-30 02:44 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-06-30 14:25 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 14965
-- **Enriched:** 3547 (23%)
-- **Taste-rated:** 2892 (19%)
-- **Researched:** 743 (4%)
-- **Status (candidate / rejected / published / duplicate):** 916 / 14049 / 0 / 0
-- **Published bullets (all-time):** 1150 (last 7d: 138)
+- **Discovery items (all-time):** 15499
+- **Enriched:** 3578 (23%)
+- **Taste-rated:** 2923 (18%)
+- **Researched:** 753 (4%)
+- **Status (candidate / rejected / published / duplicate):** 1450 / 14049 / 0 / 0
+- **Published bullets (all-time):** 1160 (last 7d: 148)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-06-30 | 470 | 25 (5%) | 25 (5%) | 12 (2%) |
+| 2026-06-30 | 1004 | 56 (5%) | 56 (5%) | 22 (2%) |
 | 2026-06-29 | 91 | 30 (32%) | 30 (32%) | 28 (30%) |
 | 2026-06-28 | 192 | 29 (15%) | 29 (15%) | 24 (12%) |
 | 2026-06-27 | 574 | 19 (3%) | 19 (3%) | 14 (2%) |
@@ -36,9 +36,9 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 What the picker actually shipped to the site, by section.
 
-| Date | Claude Code | AI World | YouTube | Community | Total |
+| Date | Coding Agents | AI World | YouTube | Community | Total |
 |---|---:|---:|---:|---:|---:|
-| 2026-06-30 | 1 | 2 | 3 | 8 | 17 |
+| 2026-06-30 | 5 | 4 | 6 | 9 | 27 |
 | 2026-06-29 | 0 | 1 | 3 | 8 | 15 |
 | 2026-06-28 | 0 | 0 | 3 | 8 | 14 |
 | 2026-06-27 | 1 | 2 | 3 | 4 | 13 |
@@ -55,8 +55,8 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 | Creator | Source | Items (30d) |
 |---|---|---:|
 | arXiv cs.AI | `rss` | 4362 |
-| arXiv cs.CL | `rss` | 2520 |
-| /r/LocalLLaMA | `reddit` | 100 |
+| arXiv cs.CL | `rss` | 2784 |
+| /r/LocalLLaMA | `reddit` | 102 |
 | /r/LocalLLM | `reddit` | 85 |
 | /r/ChatGPT | `reddit` | 84 |
 | /r/Anthropic | `reddit` | 83 |
@@ -64,11 +64,11 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 | /r/MachineLearning | `reddit` | 72 |
 | Hacker News (ai/llm/claude) | `rss` | 71 |
 | /r/Artificial | `reddit` | 66 |
-| /r/OpenAI | `reddit` | 61 |
-| /r/singularity | `reddit` | 59 |
-| /r/AI_Agents | `reddit` | 57 |
-| /r/ClaudeAI | `reddit` | 55 |
-| /r/ollama | `reddit` | 52 |
+| /r/OpenAI | `reddit` | 64 |
+| /r/singularity | `reddit` | 62 |
+| /r/AI_Agents | `reddit` | 60 |
+| /r/ClaudeAI | `reddit` | 58 |
+| /r/ollama | `reddit` | 55 |
 
 
 ## Rejection reasons (all-time)

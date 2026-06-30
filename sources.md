@@ -17,11 +17,18 @@ sponsor/ad filtering. See [roadmap](https://github.com/jaloszek/ai-news/blob/mai
 Driven by `data/rss_feeds.txt`. The picker scores items by cross-source
 coverage + recency + origin weight (see `scripts/db/pick.py`).
 
-### Claude Code
+### Coding Agents
 
 | Source | URL | Topic | Why |
 |---|---|---|---|
 | Claude Code releases | <https://github.com/anthropics/claude-code/releases.atom> | claude-code | One entry per published version — structured release notes (CHANGELOG.md still drives the feature-first curation in `/ai-news` step 2a). |
+| Codex releases | <https://github.com/openai/codex/releases.atom> | dev-tools | OpenAI's terminal coding agent. `releases.atom` is high-volume (alpha tags daily) — the picker's recency + cross-source weighting surfaces the meaningful versions. |
+| OpenCode releases | <https://github.com/anomalyco/opencode/releases.atom> | dev-tools | OpenCode — the open-source terminal coding agent (repo moved sst → anomalyco; the project's own opencode harness). releases.atom carries per-version notes. |
+| Hermes Agent releases | <https://github.com/NousResearch/hermes-agent/releases.atom> | agents | Hermes Agent (Nous Research) — persistent-memory agent harness. Low release cadence; releases.atom is sparse but on-beat. |
+| Cline releases | <https://github.com/cline/cline/releases.atom> | dev-tools | Cline — most-installed open-source VS Code coding agent (direct CC competitor); high cadence, structured per-version releases.atom. |
+| Goose releases | <https://github.com/block/goose/releases.atom> | agents | Goose (Block) — extensible open-source agent under the Linux Foundation Agentic AI Foundation; ~weekly, one clean entry per version. |
+| OpenHands releases | <https://github.com/OpenHands/OpenHands/releases.atom> | agents | OpenHands (formerly OpenDevin) — open-source autonomous SWE-agent platform; frequent structured releases. |
+| Kilo Code releases | <https://github.com/Kilo-Org/kilocode/releases.atom> | dev-tools | Kilo Code — fast-growing open-source VS Code/JetBrains agent (Roo/Cline lineage); active multi-version cadence. |
 | Aider blog | <https://aider.chat/feed.xml> | dev-tools | Coding-agent changelog — benchmark posts + release notes from a direct Claude Code competitor. Canonical feed is /feed.xml (the doc's /blog/feed.xml 404s). |
 | Continue.dev blog | <https://blog.continue.dev/feed.xml> | dev-tools | Open-source AI coding assistant — release notes + agent-workflow posts. Canonical feed is /feed.xml (the doc's /rss/ 404s). |
 | GitHub AI blog | <https://github.blog/ai-and-ml/feed/> | dev-tools | Copilot updates + GitHub AI/agent features — squarely on the coding-agent beat. |
@@ -35,6 +42,9 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Google DeepMind | <https://blog.google/technology/google-deepmind/rss/> | google | DeepMind research + frontier-model launches. |
 | Hugging Face blog | <https://huggingface.co/blog/feed.xml> | opensource | Open-weights releases, library updates, community models. |
 | Together AI blog | <https://www.together.ai/blog/rss.xml> | opensource | Inference platform — lots on open-weight model serving + launches. |
+| The Decoder | <https://the-decoder.com/feed/> | industry | AI-specific newsroom — frontier-model launches, research, daily cadence. Verified fresh 2026-06-30. |
+| TechCrunch AI | <https://techcrunch.com/category/artificial-intelligence/feed/> | industry | TechCrunch AI category — frontier launches + industry/funding/policy, daily cadence. Verified fresh 2026-06-30. |
+| MIT Tech Review AI | <https://www.technologyreview.com/topic/artificial-intelligence/feed/> | industry | MIT Technology Review AI topic — high-editorial-quality frontier/industry analysis, daily-ish. Verified fresh 2026-06-30. |
 
 ### Community — Tier S (top long-form authors)
 
