@@ -52,7 +52,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-06-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>✨ GPT-5.6 Sol</li><li>🛠 CC v2.1.195</li><li>🛠 Gemini 3.5 Flash CU</li><li>🧪 Qwen AgentWorld</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-28.html"><div class="cal-num">28</div><ul class="cal-highlights"><li>✨ GPT-5.6 Sol/Terra/Luna</li><li>🧪 DSpark speculative decoding</li><li>🔒 Fable 5 expected return</li><li>💰 Asian Mythos clones</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-06-29.html"><div class="cal-num">29</div><ul class="cal-highlights"><li>✨ GLM 5.2 benchmarks</li><li>🔧 Sophon PFG-1 AI ASIC</li><li>🧪 GPT-5.6 system card</li><li>🚀 HP-Frontier partnership</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-06-30.html"><div class="cal-num">30</div><ul class="cal-highlights"><li>✨ GPT-5.6 Sol</li><li>🛠 Claude Code v2.1.196</li><li>🛠 Gemini 3.5 Flash computer use</li></ul></a>
   </div>
 </section>
 
