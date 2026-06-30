@@ -1,9 +1,9 @@
 {
   "date": "2026-06-30",
-  "generated_at": "2026-06-30T14:25:23+00:00",
-  "candidate_count": 43,
+  "generated_at": "2026-06-30T16:51:06+00:00",
+  "candidate_count": 41,
   "researched_count": 41,
-  "published_count": 25,
+  "published_count": 30,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
@@ -43,7 +43,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T02:12:21Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "last_seen_at": "2026-06-30T16:16:45Z"
     },
     {
       "id": "d7ecb1c03784b35b3c3afefd8ed53cc9ca4208ca",
@@ -64,7 +64,7 @@
         "recency_decay": 0.9353,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8636,
+        "novelty_score": 0.9286,
         "taste_score": 0.75,
         "taste_raw": 0.5,
         "taste_reason": "The xhigh reasoning-effort knob for DeepSeek thinking models is a real lever a Cline+DeepSeek user would notice; the rest is housekeeping.",
@@ -76,7 +76,39 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T13:31:26Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "last_seen_at": "2026-06-30T16:16:45Z"
+    },
+    {
+      "id": "beab27018a415615a54ada7baa4716f96bf4e6ea",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v7.3.63 (pre-release)",
+      "canonical_url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.3.63",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[v7.3.63 (pre-release)](https://github.com/Kilo-Org/kilocode/releases/tag/v7.3.63)** — _Kilo Code releases_. — Kilo Code v7.3.63 connects to local Anaconda Desktop text-generation model servers (CLI or VS Code), adds NVIDIA Parakeet TDT 0.6B v3 as a speech-to-text input, and lets Agent Manager discover models and reasoning variants by name — routing to the current default's provider and falling back to the Kilo Gateway.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Kilo Code pre-release with concrete feature additions (Anaconda Desktop, Parakeet speech-to-text, Agent Manager routing). Niche but substantive for Kilo users.",
+        "total": 5.175
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T13:31:26Z",
+      "last_seen_at": "2026-06-30T16:16:45Z"
     },
     {
       "id": "fdab84e9748355f1f403e0aa35da9e9afc06aa08",
@@ -89,7 +121,7 @@
         "section:claude-code",
         "topic:dev-tools"
       ],
-      "bullet_md": "- 🛠 **[v4.0.4](https://github.com/cline/cline/releases/tag/v4.0.4)** — _Cline releases_. — Cline 4.0.4 removes the ClinePass feature flag so the ClinePass provider shows up everywhere in the UI, including onboarding, settings, the welcome promo banner, and the credit-limit switch action.",
+      "bullet_md": "- 🛠 **[v4.0.4](https://github.com/cline/cline/releases/tag/v4.0.4)** — _Cline releases_. — Cline 4.0.4 fully removes the ClinePass feature flag — the provider now shows everywhere, including onboarding, settings, the welcome promo banner, and the credit-limit Switch to ClinePass action.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -104,11 +136,43 @@
       },
       "flags": {
         "enriched": true,
-        "researched": false,
+        "researched": true,
         "published_today": true
       },
       "first_seen_at": "2026-06-30T13:31:26Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "last_seen_at": "2026-06-30T16:16:45Z"
+    },
+    {
+      "id": "4c02a9e123661d029732cb6b3cec2f4181bf1152",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "CLI v3.0.34",
+      "canonical_url": "https://github.com/cline/cline/releases/tag/cli-v3.0.34",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[CLI v3.0.34](https://github.com/cline/cline/releases/tag/cli-v3.0.34)** — _Cline releases_. — CLI v3.0.34 fixes the ClinePass upgrade notice firing right after onboarding, improves the ClinePass onboarding step wording, and merges the provider picker's subscription and usage/billing options into one — also removing the credits link.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9583,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Minor Cline CLI patch — bug fixes and UI polish. Only relevant to active Cline users, no substantive new capability.",
+        "total": 5.025
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T13:31:26Z",
+      "last_seen_at": "2026-06-30T16:16:45Z"
     },
     {
       "id": "e3f1d8f552c112372871c281c0c14ee0faba8bef",
@@ -128,7 +192,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8333,
+        "novelty_score": 0.875,
         "taste_score": 0.45,
         "taste_raw": 0.3,
         "taste_reason": "Same ClinePass flag-flip as v4.0.4 but older and now superseded, so it adds nothing a reader wouldn't get from the newer release.",
@@ -140,7 +204,71 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T13:31:26Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "last_seen_at": "2026-06-30T16:16:45Z"
+    },
+    {
+      "id": "4c4d91d3ce63907b68d16b4af8b23825b8ac8986",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "canonical_url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Core dump epidemiology: fixing an 18-year-old bug](https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug)** — _OpenAI blog_. — OpenAI's postmortem on rare Rockset crash dumps turned out to be two bugs at once — silent hardware corruption on one Azure host, and an 18-year-old single-instruction race in GNU libunwind's exception unwinder exposed by Rockset's frequent SIGUSR2 sampling; ships an upstream reproducer and fix, with libgcc's unwinder as the immediate mitigation.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.88,
+        "taste_score": 1.275,
+        "taste_raw": 0.85,
+        "taste_reason": "First-person engineering deep-dive into analyzing thousands of core dumps, finding both a hardware fault and an 18-year-old software bug. Concrete methodology, two root causes — exactly the kind of infrastructure story senior devs click on.",
+        "total": 5.775
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T16:16:45Z",
+      "last_seen_at": "2026-06-30T16:16:45Z"
+    },
+    {
+      "id": "47e6282a2e8f5e23b6a1b9647cbae10cbc5c00c0",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Meituan's LongCat-2.0 shows China can train massive AI models without Nvidia",
+      "canonical_url": "https://the-decoder.com/meituans-longcat-2-0-shows-china-can-train-massive-ai-models-without-nvidia",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:industry"
+      ],
+      "bullet_md": "- 📰 **[Meituan's LongCat-2.0 shows China can train massive AI models without Nvidia](https://the-decoder.com/meituans-longcat-2-0-shows-china-can-train-massive-ai-models-without-nvidia/)** — _The Decoder_. — Meituan trained LongCat-2.0 — a 1.6 trillion parameter model — on more than 50,000 domestic AI ASICs across 35 trillion tokens with no Nvidia hardware, beating Gemini 3.1 Pro and GPT-5.5 on SWE-bench Pro (59.5) and Multilingual (77.3) while trailing Claude Opus 4.7/4.8; a LongCat team that only formed in 2023, and not yet on HuggingFace for independent verification.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
+        "taste_score": 1.275,
+        "taste_raw": 0.85,
+        "taste_reason": "1.6T parameter model trained entirely on Chinese chips with specific numbers — concrete proof point in the China supply-chain story. Extends state-of-ai's China-denied-access narrative with real capability data.",
+        "total": 5.775
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T16:16:45Z",
+      "last_seen_at": "2026-06-30T16:16:45Z"
     },
     {
       "id": "683f5fd47871e03e3d570d72b67b9530e83fc463",
@@ -161,7 +289,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8,
+        "novelty_score": 0.8163,
         "taste_score": 1.2,
         "taste_raw": 0.8,
         "taste_reason": "A named speculative-decoding-style technique with hard 60-85% speedup numbers from a credible lab; directly extends the open-weights/export-controls story the audience tracks.",
@@ -173,74 +301,106 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T13:31:26Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "last_seen_at": "2026-06-30T16:16:45Z"
     },
     {
-      "id": "d329ba0cd547110d226b02fc7bdba7298428bfb6",
+      "id": "6562069998acb7ad4e6ead1ad9ed179879211369",
       "section": "ai-world",
       "source": "rss",
-      "title": "Meta restricts use of Claude Code and Codex to keep rival AI out of its training data",
-      "canonical_url": "https://the-decoder.com/meta-restricts-use-of-claude-code-and-codex-to-keep-rival-ai-out-of-its-training-data",
+      "title": "Amazon launches new $1 billion FDE org, following OpenAI and Anthropic",
+      "canonical_url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic",
       "tags": [
         "origin:rss",
         "section:ai-world",
         "topic:claude-code",
-        "topic:dev-tools",
         "topic:industry",
         "topic:openai"
       ],
-      "bullet_md": "- 📰 **[Meta restricts use of Claude Code and Codex to keep rival AI out of its training data](https://the-decoder.com/meta-restricts-use-of-claude-code-and-codex-to-keep-rival-ai-out-of-its-training-data/)** — _The Decoder_. — Meta is throttling internal use of Claude Code and OpenAI Codex so their outputs do not leak into its own training data — an anti-distillation stance that mirrors the terms OpenAI, Anthropic, and Google already enforce, and a hedge while it builds its own coding assistant, MetaCode, to cut an internal AI bill running into the billions this year.",
+      "bullet_md": "- 📰 **[Amazon launches new $1 billion FDE org, following OpenAI and Anthropic](https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/)** — _TechCrunch AI_. — AWS is committing $1 billion of internal resources — not a joint venture — to a new Field Deployment Engineering org that embeds engineers at customer sites to build purpose-built AI agents, trailing OpenAI's $4 billion and Anthropic's $1.5 billion FDE joint ventures in a model Palantir pioneered.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.6522,
-        "taste_score": 1.2,
-        "taste_raw": 0.8,
-        "taste_reason": "A major lab blocking the exact tools the audience uses daily, with a clear training-data-contamination rationale; novel and directly relevant.",
-        "total": 5.7
+        "novelty_score": 0.8462,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "$1B investment and concrete org structure (FDE engineers at customer sites), following the OpenAI/Anthropic pattern. Significant industry signal with real dollars attached.",
+        "total": 5.625
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": true
       },
-      "first_seen_at": "2026-06-30T13:31:26Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "first_seen_at": "2026-06-30T16:16:45Z",
+      "last_seen_at": "2026-06-30T16:16:45Z"
     },
     {
-      "id": "5b79476b114204dfe57ef8bf97ddea09c2e8f24d",
+      "id": "8d037d18f15842f7b903fe373c9f8fe6bcda0baa",
       "section": "ai-world",
       "source": "rss",
-      "title": "Mapping Europe’s AI Workforce Opportunity",
-      "canonical_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "title": "X now offers an MCP server to make its platform easier for AI tools to use",
+      "canonical_url": "https://techcrunch.com/2026/06/30/x-now-offers-an-mcp-server-to-make-its-platform-easier-for-ai-tools-to-use",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:industry"
+      ],
+      "bullet_md": "- 📰 **[X now offers an MCP server to make its platform easier for AI tools to use](https://techcrunch.com/2026/06/30/x-now-offers-an-mcp-server-to-make-its-platform-easier-for-ai-tools-to-use/)** — _TechCrunch AI_. — X joined the official-MCP-server club alongside GitHub, Slack, and Stripe — a hosted endpoint that lets Claude, Cursor, and Grok Build hit the X API through your own account permissions, killing the old roll-your-own-server step without adding any new API capabilities.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7391,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "X launching an official MCP server extends state-of-ai's MCP row with a concrete platform adoption signal. Timely and relevant for anyone building MCP integrations.",
+        "total": 5.55
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T16:16:45Z",
+      "last_seen_at": "2026-06-30T16:16:45Z"
+    },
+    {
+      "id": "fb435a036a32d4b887831901912e1f14db00b2cd",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "How ChatGPT adoption has expanded",
+      "canonical_url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
       "tags": [
         "origin:rss",
         "section:ai-world",
         "topic:openai"
       ],
-      "bullet_md": "- 🟢 **[Mapping Europe’s AI Workforce Opportunity](https://openai.com/index/mapping-ai-jobs-transition-eu)** — _OpenAI blog_. — OpenAI's AI Jobs Transition Framework lands in Europe with a less-dire picture than its US counterpart — just 14% of EU employment faces near-term automation risk, while 12% may see job growth, and 27% will likely reorganise around AI assistance.",
+      "bullet_md": "- 🟢 **[How ChatGPT adoption has expanded](https://openai.com/index/how-chatgpt-adoption-has-expanded)** — _OpenAI blog_. — OpenAI's Signals data shows Individual-plan users send 50% more daily messages six months in and have doubled the range of tasks they try — and growth is now fastest in Africa, Asia, and lower-HDI countries, with non-English users (led by Spanish, Portuguese, and Arabic) now over half the active base.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9583,
+        "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9355,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "OpenAI EU workforce projection report; policy framing with no technical depth. Skim material for this audience.",
-        "total": 4.9083
+        "novelty_score": 0.8261,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "OpenAI's own adoption data is useful signal, credible source, but the body lacks specific numbers — says 'accelerating globally' without hard stats.",
+        "total": 5.4
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-06-30T02:12:21Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "first_seen_at": "2026-06-30T16:16:45Z",
+      "last_seen_at": "2026-06-30T16:16:45Z"
     },
     {
       "id": "f1de547afb629a58db1ef235f2198a6d89e272a1",
@@ -272,7 +432,40 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T02:12:21Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "last_seen_at": "2026-06-30T16:16:45Z"
+    },
+    {
+      "id": "d3e2bad61eaeb7ccdb5512f3b12424f2946699f8",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Could Open Source AI be Banned?",
+      "canonical_url": "https://youtube.com/watch?v=AgpeggCsRH4",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🎥 [Could Open Source AI be Banned?](https://www.youtube.com/watch?v=AgpeggCsRH4) — **sentdex** (48m13s). — Sentdex examines the push to restrict open source and Chinese AI models, covering Anthropic's lobbying in Washington and the NSA compromise disclosure that reignited the security debate.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=AgpeggCsRH4\"><img src=\"https://img.youtube.com/vi/AgpeggCsRH4/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8667,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Sentdex (credible creator) covering open-source-AI regulation with specifics — Anthropic lobbying, NSA compromise disclosure. Timely policy story with concrete details.",
+        "total": 5.125
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-30T16:09:23Z",
+      "last_seen_at": "2026-06-30T16:09:23Z"
     },
     {
       "id": "46a5bcbf3bc633b4df5eda0c2ce4b8f277727b45",
@@ -293,7 +486,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8611,
+        "novelty_score": 0.875,
         "taste_score": 1.05,
         "taste_raw": 0.7,
         "taste_reason": "Concrete, novel MCP tool that closes a real gap — coding agents generating tests without coverage signals — and is immediately actionable for the MCP-using slice of the audience; credible source (Qt Group).",
@@ -306,6 +499,39 @@
       },
       "first_seen_at": "2026-06-30T13:23:52Z",
       "last_seen_at": "2026-06-30T13:23:52Z"
+    },
+    {
+      "id": "147779bbc6fca51042b87acacc37489b37a0b192",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Giving AI agents visibility into SQL Server with MCP | Data Exposed MVP Edition",
+      "canonical_url": "https://youtube.com/watch?v=tLAfkruOOWo",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Giving AI agents visibility into SQL Server with MCP | Data Exposed MVP Edition](https://www.youtube.com/watch?v=tLAfkruOOWo) — **Microsoft Developer** (22m48s). — Microsoft engineers demonstrate exposing SQL Server to AI agents through MCP, enabling natural-language queries and agent-driven database access.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=tLAfkruOOWo\"><img src=\"https://img.youtube.com/vi/tLAfkruOOWo/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9032,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Official Microsoft engineering content showing SQL Server + MCP integration — practical, credible, relevant for enterprise devs using MCP agents.",
+        "total": 4.975
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-30T16:09:23Z",
+      "last_seen_at": "2026-06-30T16:09:23Z"
     },
     {
       "id": "c308edf95647a3e8e4b0e74db4508b042944598d",
@@ -325,7 +551,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8788,
+        "novelty_score": 0.807,
         "taste_score": 0.9,
         "taste_raw": 0.6,
         "taste_reason": "Genuinely extends state-of-ai's open-weights row — a new 1.6T MoE entrant from Meituan, a player not yet on the board — but the 'looks CRAZY!' clickbait title caps it well below what the substance alone would earn.",
@@ -337,7 +563,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T13:23:52Z",
-      "last_seen_at": "2026-06-30T13:23:52Z"
+      "last_seen_at": "2026-06-30T16:09:23Z"
     },
     {
       "id": "7cc8bbcc3a8b6e1471a374670765ce02c9c695b9",
@@ -359,7 +585,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.7586,
+        "novelty_score": 0.7561,
         "taste_score": 0.825,
         "taste_raw": 0.55,
         "taste_reason": "A concrete free/local alternative (Pi agent + Ollama) that speaks to the open-weights and no-paid-subscription interest; the 'I Replaced Claude Code' framing is mild clickbait that holds it below the useful-itself score.",
@@ -371,199 +597,39 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T13:23:52Z",
-      "last_seen_at": "2026-06-30T13:23:52Z"
+      "last_seen_at": "2026-06-30T16:09:23Z"
     },
     {
-      "id": "05f2bcaf8a109fec52f6e4532779b6f3418f289d",
+      "id": "368b46d76e92abbe5e239a00956071f24aa9a1de",
       "section": "youtube",
       "source": "youtube",
-      "title": "US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
-      "canonical_url": "https://youtube.com/watch?v=-H7J_-zr7pA",
+      "title": "Coding on Glasses is Unreal",
+      "canonical_url": "https://youtube.com/watch?v=RG0ppccMJ8w",
       "tags": [
         "origin:youtube",
         "section:youtube",
-        "topic:openai"
+        "topic:agents"
       ],
-      "bullet_md": "- 🎥 [US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267](https://www.youtube.com/watch?v=-H7J_-zr7pA) — **Peter H. Diamandis** (2h17m). — Roundtable dissecting three converging stories — GPT-5.6's government-restricted rollout (Sol flagship at $5/$30 per M tokens), Alibaba reportedly deploying 25,000 cloned Claude accounts behind an IP proxy, and OpenAI's decision to push its $1T IPO to 2027 — useful for anyone watching how US-China AI competition is reshaping market access.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=-H7J_-zr7pA\"><img src=\"https://img.youtube.com/vi/-H7J_-zr7pA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Coding on Glasses is Unreal](https://www.youtube.com/watch?v=RG0ppccMJ8w) — **Marko** (7m22s). — Marko test-drove Even Realities G2 glasses in terminal mode with an AI coding agent, showing how lightweight smart glasses can serve as a portable coding setup.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=RG0ppccMJ8w\"><img src=\"https://img.youtube.com/vi/RG0ppccMJ8w/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9375,
-        "taste_score": 0.6,
-        "taste_raw": 0.4,
-        "taste_reason": "Long-format news roundup covering GPT-5.6 restrictions and OpenAI IPO; Diamandis is credible but 2h+ podcast format is low-density signal overlapping with the GPT-5.6 Sol item.",
-        "total": 4.6
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-30T02:05:19Z",
-      "last_seen_at": "2026-06-30T13:23:52Z"
-    },
-    {
-      "id": "c2da3e4ef5e4bd037c3d939e84d587fe7edcf81f",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "GLM-5.2 + Z-Code (Ultra Mode - Free Tier): FABLE LEVEL PERFORMANCE!",
-      "canonical_url": "https://youtube.com/watch?v=HarkkqC9hpA",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [GLM-5.2 + Z-Code (Ultra Mode - Free Tier): FABLE LEVEL PERFORMANCE!](https://www.youtube.com/watch?v=HarkkqC9hpA) — **AICodeKing** (16m27s). — A practical guide to running Z.ai's 1M-context GLM-5.2 in the official Z Code harness on the free tier — KingMode, planning skills, verification workflows, MCPs, and Goal Mode narrow the gap to Claude Fable-level coding without a paid subscription.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=HarkkqC9hpA\"><img src=\"https://img.youtube.com/vi/HarkkqC9hpA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.9771,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.7727,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Clickbait title caps score; demos GLM 5.2 config on free tier extending state-of-ai's GLM-5.1 row. Small YouTube creator with thin specifics.",
-        "total": 4.5021
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-30T02:05:19Z",
-      "last_seen_at": "2026-06-30T13:23:52Z"
-    },
-    {
-      "id": "1b81ec813b6ec056c639c4776f6ca0bf7606f396",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "IRL at AI Engineer World's Fair in SF",
-      "canonical_url": "https://youtube.com/watch?v=0JaDGb8ZwuU",
-      "tags": [
-        "origin:youtube",
-        "section:youtube"
-      ],
-      "bullet_md": "- 🎥 [IRL at AI Engineer World's Fair in SF](https://www.youtube.com/watch?v=0JaDGb8ZwuU) — **Ray Fernando**. — Floor tour and attendee interviews from opening day of the AI Engineer World's Fair — for anyone wanting a boots-on-the-ground sense of the largest AI engineering conference and what its builders cared about.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=0JaDGb8ZwuU\"><img src=\"https://img.youtube.com/vi/0JaDGb8ZwuU/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 0.0,
-        "novelty_score": 1.0,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "On-the-ground coverage of AI Engineer World's Fair in SF; contextually relevant but a basic floor walkthrough with no deep technical analysis.",
-        "total": 4.45
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-06-30T02:05:19Z",
-      "last_seen_at": "2026-06-30T02:05:19Z"
-    },
-    {
-      "id": "2dfcef9a01da4603baecd0865e532832e34b04c7",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "How I Set Up Python for Professional AI Development",
-      "canonical_url": "https://youtube.com/watch?v=PHICGGjN5Pc",
-      "tags": [
-        "origin:youtube",
-        "section:youtube"
-      ],
-      "bullet_md": "- 🎥 [How I Set Up Python for Professional AI Development](https://www.youtube.com/watch?v=PHICGGjN5Pc) — **Tech With Tim** (35m12s). — A walkthrough of a professional Python setup for serious AI development, on the premise that vibe coding gets you started but a real toolchain keeps you going.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=PHICGGjN5Pc\"><img src=\"https://img.youtube.com/vi/PHICGGjN5Pc/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9286,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "Generic Python-toolchain walkthrough for 'professional AI development'; the senior audience this targets already has their setup, so there's near-zero delta.",
-        "total": 4.45
+        "novelty_score": 0.8214,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Novel concept — AI coding agent on Even Realities G2 smart glasses. Concrete product demo but more novelty than practical must-read.",
+        "total": 4.825
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": false
       },
-      "first_seen_at": "2026-06-30T13:23:52Z",
-      "last_seen_at": "2026-06-30T13:23:52Z"
-    },
-    {
-      "id": "47efa14ae8b65f46a6671b0ee63807869c25d4b8",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Every 3D Artist Must Use Claude Code (My Setup Reveal)",
-      "canonical_url": "https://youtube.com/watch?v=d1UKzCq0dw0",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:agents",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [Every 3D Artist Must Use Claude Code (My Setup Reveal)](https://www.youtube.com/watch?v=d1UKzCq0dw0) — **Stefan 3D AI** (15m53s). — A Claude Code setup aimed at 3D artists, on the premise that most 3D artists overlook AI agents because they think the tools are built only for programmers.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=d1UKzCq0dw0\"><img src=\"https://img.youtube.com/vi/d1UKzCq0dw0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8125,
-        "taste_score": 0.45,
-        "taste_raw": 0.3,
-        "taste_reason": "Claude Code setup retargeted at 3D artists — off-audience for the dev/AI-engineer core, and the imperative 'Every 3D Artist Must Use' framing is mild clickbait.",
-        "total": 4.45
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-30T13:23:52Z",
-      "last_seen_at": "2026-06-30T13:23:52Z"
-    },
-    {
-      "id": "9a08fa10d19ffce460aab1c8708f85bf46a060e3",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Claude Code Explained | The AI Coding Agent That Changes Software Development",
-      "canonical_url": "https://youtube.com/watch?v=4HuWbbT2MQc",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:agents",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [Claude Code Explained | The AI Coding Agent That Changes Software Development](https://www.youtube.com/watch?v=4HuWbbT2MQc) — **Micro Learning** (9m44s). — A concise overview of Claude Code's agentic capabilities — planning multi-step tasks, editing across files, and running terminal commands autonomously — for developers new to AI coding agents.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=4HuWbbT2MQc\"><img src=\"https://img.youtube.com/vi/4HuWbbT2MQc/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8543,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8158,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Basic Claude Code explainer video; audience already uses coding agents, no new info.",
-        "total": 4.3793
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-29T02:10:44Z",
-      "last_seen_at": "2026-06-30T02:05:19Z"
+      "first_seen_at": "2026-06-30T16:09:23Z",
+      "last_seen_at": "2026-06-30T16:09:23Z"
     },
     {
       "id": "57b6422507565f882cd1fdb1640a941459841558",
@@ -583,7 +649,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9259,
+        "novelty_score": 0.8864,
         "taste_score": 0.975,
         "taste_raw": 0.65,
         "taste_reason": "Surprising, well-controlled result (21 matched 60M recipes) that static Fibonacci spacing beats learned dilation and extrapolates where dense attention fails; a concrete architecture datapoint for anyone tuning attention sparsity.",
@@ -595,7 +661,71 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T13:31:26Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "last_seen_at": "2026-06-30T16:16:45Z"
+    },
+    {
+      "id": "22d75d0c32bd1395fd8bb9eea75e0849e31b2405",
+      "section": "community",
+      "source": "reddit",
+      "title": "Huawei open-sources OpenPangu-2.0-Flash - 92B total,6B active",
+      "canonical_url": "https://reddit.com/comments/1ujn5u3",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"Huawei open-sources OpenPangu-2.0-Flash - 92B total,6B active\"](https://www.reddit.com/r/LocalLLaMA/comments/1ujn5u3/huawei_opensources_openpangu20flash_92b_total6b/) — r/LocalLLaMA is weighing Huawei's open-sourced OpenPangu-2.0-Flash (92B total, 6B active, 512K context) — early benchmarks put it behind Qwen3.6-27B, though one commenter argues the real story is it being trained fully on Huawei chips as a hedge against a TSMC embargo.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 1.0,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Huawei open-sourcing a 92B MoE (6B active) that runs on consumer hardware — concrete specs, extends the open-weights landscape, relevant to the OSS/local crowd.",
+        "total": 5.125
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T16:16:01Z",
+      "last_seen_at": "2026-06-30T16:16:01Z"
+    },
+    {
+      "id": "7384c7a2cfee234f5429e06ba6464a0aa294e19a",
+      "section": "community",
+      "source": "reddit",
+      "title": "753B model (GLM-5.2) wrote Pac-Man and is playing its own game — 2× M5 Max, ~18 tok/s [video]",
+      "canonical_url": "https://reddit.com/comments/1ujryl2",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"753B model (GLM-5.2) wrote Pac-Man and is playing its own game — 2× M5 Max, ~18 tok/s [video]\"](https://www.reddit.com/r/LocalLLM/comments/1ujryl2/753b_model_glm52_wrote_pacman_and_is_playing_its/) — r/LocalLLM is reacting to a user running the full 753B GLM-5.2 MoE (~40B active, Unsloth IQ1_S at ~1.6-bit, 202GB on disk) across two M5 Max laptops pooled over Thunderbolt 5 at ~18 tok/s to write and play Pac-Man, with commenters split between impressed and skeptical — one noting the gameplay does not match how Pac-Man actually works and another pegging the RAM spend around $11k.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9231,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Impressive demo of running full 753B GLM-5.2 across two M5 Max machines at 18 tok/s writing playable Pac-Man — concrete specs and a striking capability demonstration for the local-LLM crowd.",
+        "total": 5.05
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T16:16:01Z",
+      "last_seen_at": "2026-06-30T16:16:01Z"
     },
     {
       "id": "77e625f953f8cccdb3546eaf6f34db9ec562e60c",
@@ -694,6 +824,38 @@
       "last_seen_at": "2026-06-29T02:18:06Z"
     },
     {
+      "id": "740352fba34159a5fb444716a705f886dda6e905",
+      "section": "community",
+      "source": "reddit",
+      "title": "A map of the latest 11 million papers split by semantic similarity and time slices [P]",
+      "canonical_url": "https://reddit.com/comments/1ujn3u5",
+      "tags": [
+        "origin:reddit",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 💬 [r/MachineLearning: \"A map of the latest 11 million papers split by semantic similarity and time slices [P]\"](https://www.reddit.com/r/MachineLearning/comments/1ujn3u5/a_map_of_the_latest_11_million_papers_split_by/) — A Reddit user published an interactive map of 11 million research papers organized by semantic similarity and publication time, making it easier to spot trends across scientific literature.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8889,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Interactive map of 11M papers by semantic similarity — clever project but niche, more of a tool showcase than a must-read story.",
+        "total": 4.6
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-30T16:16:01Z",
+      "last_seen_at": "2026-06-30T16:16:01Z"
+    },
+    {
       "id": "85295ded70ef7b627f7873163cc19d60b84c4103",
       "section": "community",
       "source": "rss",
@@ -725,7 +887,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-06-30T02:12:21Z",
-      "last_seen_at": "2026-06-30T13:31:26Z"
+      "last_seen_at": "2026-06-30T16:16:45Z"
     },
     {
       "id": "1235d1fbc854b9f137309f09bece552922c9ac80",
@@ -790,6 +952,37 @@
       },
       "first_seen_at": "2026-06-29T02:17:38Z",
       "last_seen_at": "2026-06-29T02:17:38Z"
+    },
+    {
+      "id": "e5eb23d437231355a48070416bdcbcdf118a666c",
+      "section": "community",
+      "source": "reddit",
+      "title": "Update on CVIL: the free CV interview prep checklist after landing my internship... just added Segmentation, OCR, and VLM sections [D]",
+      "canonical_url": "https://reddit.com/comments/1ujlmy2",
+      "tags": [
+        "origin:reddit",
+        "section:community"
+      ],
+      "bullet_md": "- 💬 [r/MachineLearning: \"Update on CVIL: the free CV interview prep checklist after landing my internship... just added Segmentation, OCR, and VLM sections [D]\"](https://www.reddit.com/r/MachineLearning/comments/1ujlmy2/update_on_cvil_the_free_cv_interview_prep/) — A free computer vision interview prep checklist was expanded with segmentation, OCR, and vision-language model sections by someone who landed an internship using the resource.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.9231,
+        "taste_score": 0.3,
+        "taste_raw": 0.2,
+        "taste_reason": "Self-promotional CV interview checklist update — narrow audience (CV job seekers), no AI-model or tooling substance.",
+        "total": 4.3
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-06-30T16:16:01Z",
+      "last_seen_at": "2026-06-30T16:16:01Z"
     },
     {
       "id": "38e5f4388b5b3a1a4d5f8f96413a8d8e192426ee",
@@ -955,171 +1148,6 @@
       "last_seen_at": "2026-06-28T02:17:03Z"
     },
     {
-      "id": "fae9fa9acce3742f0db28e6b4a52eb064780db57",
-      "section": "community",
-      "source": "reddit",
-      "title": "What happens when you give an AI a budget?",
-      "canonical_url": "https://reddit.com/comments/1ui48g3",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/ollama: \"What happens when you give an AI a budget?\"](https://www.reddit.com/r/ollama/comments/1ui48g3/what_happens_when_you_give_an_ai_a_budget/) — An experiment exploring how LLM agents behave when given a limited compute or API budget examining trade-offs in resource allocation and task prioritization.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8511,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9524,
-        "taste_score": 0.6,
-        "taste_raw": 0.4,
-        "taste_reason": "Interesting experiment framing but no concrete results or methodology described; thin metadata.",
-        "fetch_fail_penalty": -1.0,
-        "total": 3.4511
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-29T02:17:38Z",
-      "last_seen_at": "2026-06-29T02:17:38Z"
-    },
-    {
-      "id": "8c9f6417e24693c4cc7049e8232e1feca4cd88ce",
-      "section": "community",
-      "source": "reddit",
-      "title": "Ollama integration into Chainything",
-      "canonical_url": "https://reddit.com/comments/1ui8e7z",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/ollama: \"Ollama integration into Chainything\"](https://www.reddit.com/r/ollama/comments/1ui8e7z/ollama_integration_into_chainything/) — Chainything adds Ollama support enabling local LLM inference as a backend for the no-code AI workflow builder alongside cloud model providers.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8736,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 0.0,
-        "novelty_score": 0.7895,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Minor no-code platform adds Ollama backend; routine integration announcement.",
-        "fetch_fail_penalty": -1.0,
-        "total": 3.3986
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-29T02:17:38Z",
-      "last_seen_at": "2026-06-29T02:17:38Z"
-    },
-    {
-      "id": "74ab1e8d8ccd38615a78250f3e53f31eb7f63e2f",
-      "section": "community",
-      "source": "reddit",
-      "title": "langsmith dataset eval has been useless for catching our actual prod regressions, anyone running continuous eval on prod traces?",
-      "canonical_url": "https://reddit.com/comments/1ugwrse",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/LangChain: \"langsmith dataset eval has been useless for catching our actual prod regressions, anyone running continuous eval on prod traces?\"](https://www.reddit.com/r/LangChain/comments/1ugwrse/langsmith_dataset_eval_has_been_useless_for/) — A LangChain user reports that LangSmith dataset evaluation fails to catch production regressions, asking about continuous evaluation on live traces.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.5669,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 0.0,
-        "novelty_score": 0.8929,
-        "taste_score": 0.825,
-        "taste_raw": 0.55,
-        "taste_reason": "Genuine practitioner pain point — LangSmith eval missing prod regressions — with a concrete ask about continuous eval on live traces. Relatable for LangChain users.",
-        "fetch_fail_penalty": -1.0,
-        "total": 3.3919
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-28T02:17:03Z",
-      "last_seen_at": "2026-06-28T02:17:03Z"
-    },
-    {
-      "id": "03bbef3e3ccba736ba6186e43d94ae83bc3a39ee",
-      "section": "community",
-      "source": "reddit",
-      "title": "Even Google still believes in small models for coding.",
-      "canonical_url": "https://reddit.com/comments/1uh8ir7",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"Even Google still believes in small models for coding.\"](https://www.reddit.com/r/LocalLLaMA/comments/1uh8ir7/even_google_still_believes_in_small_models_for_coding/) — r/LocalLLaMA discusses how Google's Gemma 4 12B launch signals that small locally-run coding agents remain viable even as the industry pushes toward larger frontier models.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6451,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.6923,
-        "taste_score": 0.675,
-        "taste_raw": 0.45,
-        "taste_reason": "Vague discussion about Google's small-model preference. No specific model names, benchmarks, or quotes — thin signal.",
-        "fetch_fail_penalty": -1.0,
-        "total": 3.3201
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-28T02:17:03Z",
-      "last_seen_at": "2026-06-28T02:17:03Z"
-    },
-    {
-      "id": "8cce0acfc6aab2dcea27d2c9276621b60ddf15d7",
-      "section": "community",
-      "source": "reddit",
-      "title": "Deploy agent in sandbox VS Decoupling",
-      "canonical_url": "https://reddit.com/comments/1uhjy94",
-      "tags": [
-        "origin:reddit",
-        "section:community",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/LangChain: \"Deploy agent in sandbox VS Decoupling\"](https://www.reddit.com/r/LangChain/comments/1uhjy94/deploy_agent_in_sandbox_vs_decoupling/) — A LangChain discussion compares deploying agents in a sandbox versus decoupling agent components for production.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.7128,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.875,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Generic architecture-discussion reddit post. No concrete comparison data, no code — just a question.",
-        "fetch_fail_penalty": -1.0,
-        "total": 3.2378
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-28T02:17:03Z",
-      "last_seen_at": "2026-06-28T02:17:03Z"
-    },
-    {
       "id": "eca640c47d5b9ba7e27732c1b431b2744ebc579b",
       "section": "newsletters",
       "source": "email",
@@ -1155,6 +1183,79 @@
       },
       "first_seen_at": "2026-06-30T02:13:24Z",
       "last_seen_at": "2026-06-30T02:13:24Z"
+    },
+    {
+      "id": "78f90780fb21dfda5c59d4551e570fca7249bd69",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Anthropic brings Claude Opus 4.8 to Azure with native billing and prompt caching",
+      "canonical_url": "https://claude.com/blog/claude-in-microsoft-foundry",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Anthropic brings Claude Opus 4.8 to Azure with native billing and prompt caching](https://claude.com/blog/claude-in-microsoft-foundry)** — _AlphaSignal · Jun 30_. — Anthropic made Claude Opus 4.8 available on Azure with native billing and prompt caching, streamlining enterprise deployment through Microsoft's cloud.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6364,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Claude Opus 4.8 on Azure with native billing and prompt caching extends state-of-ai's Opus 4.8 row with concrete deployment detail. Relevant for enterprise Claude Code users.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "30"
+        ],
+        "total": 3.975
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T13:36:42Z",
+      "last_seen_at": "2026-06-30T16:18:41Z"
+    },
+    {
+      "id": "7a6e6d575049824300218b5f78a101f202c5bf44",
+      "section": "newsletters",
+      "source": "email",
+      "title": "[JMG1]",
+      "canonical_url": "https://ibm.com/new/product-blog/novacomp-simplifying-a-complex-modernization-with-ibm-bob",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[[JMG1]](https://www.ibm.com/new/product-blog/novacomp-simplifying-a-complex-modernization-with-ibm-bob)** — _TLDR · Jun 30_. — IBM featured Novacomp using its tools to modernize a business-critical Java REST API in two days rather than the expected weeks, demonstrating AI-assisted legacy migration.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.913,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Concrete case study (Java REST API migration in 2 days vs weeks) but it's an IBM product blog post — marketing-adjacent even with real numbers.",
+        "ungrounded_penalty": -1.5,
+        "ungrounded_terms": [
+          "30"
+        ],
+        "total": 3.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-06-30T16:18:41Z",
+      "last_seen_at": "2026-06-30T16:18:41Z"
     },
     {
       "id": "d73055798692a93f8f208427c37bec5af5b84297",
@@ -1265,188 +1366,6 @@
       },
       "first_seen_at": "2026-06-29T02:18:48Z",
       "last_seen_at": "2026-06-29T02:18:48Z"
-    },
-    {
-      "id": "668880f8f60e728ac0c21a073f2c022328b1de0b",
-      "section": "newsletters",
-      "source": "email",
-      "title": "Advanced Claude Code Cost Tracking: How to Save 30% on Token Spend",
-      "canonical_url": "https://substack.com/redirect/3745e9a2-aea3-4b0d-a0c9-02720ecb21e6?j=eyJ1IjoiOGl0anNvIn0.ggqjyMrUlKV2A9RprtiOaUAPCpAa4kVZ3sANu1tO87w",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:claude-code",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[Advanced Claude Code Cost Tracking: How to Save 30% on Token Spend](https://substack.com/redirect/3745e9a2-aea3-4b0d-a0c9-02720ecb21e6?j=eyJ1IjoiOGl0anNvIn0.ggqjyMrUlKV2A9RprtiOaUAPCpAa4kVZ3sANu1tO87w)** — _Deep Learning Weekly · Jun 26_. — Practical strategies for monitoring and reducing Claude Code token consumption with techniques that can cut API costs by 30 percent through smarter caching and prompt design.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.4253,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.7931,
-        "taste_score": 0.975,
-        "taste_raw": 0.65,
-        "taste_reason": "Actionable Claude Code cost strategies with concrete 30% savings claim; direct relevance to daily users.",
-        "ungrounded_penalty": -1.5,
-        "ungrounded_terms": [
-          "26"
-        ],
-        "total": 3.4003
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-27T02:08:57Z",
-      "last_seen_at": "2026-06-28T02:18:56Z"
-    },
-    {
-      "id": "b5437df3a97d57dffc016b07d6c686eff67aca70",
-      "section": "newsletters",
-      "source": "email",
-      "title": "AI engineer Zachary Proser",
-      "canonical_url": "https://zackproser.com/blog/wisprflow-review",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:openai",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[AI engineer Zachary Proser](https://zackproser.com/blog/wisprflow-review)** — _AlphaSignal · Jun 27_. — Developer Zachary Proser reviewed Wispr Flow, with one developer reporting 10x more ChatGPT context in half the time and writing code above 170 words per minute.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6215,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8261,
-        "taste_score": 0.75,
-        "taste_raw": 0.5,
-        "taste_reason": "Slightly more concrete than the generic Wispr item — named reviewer and a specific 170+wpm claim — but still a single anecdote.",
-        "ungrounded_penalty": -1.5,
-        "ungrounded_terms": [
-          "27"
-        ],
-        "total": 3.3715
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-28T02:18:56Z",
-      "last_seen_at": "2026-06-29T02:18:48Z"
-    },
-    {
-      "id": "6f43d1da8f98abe43a225a2a95df186ff2b4a771",
-      "section": "newsletters",
-      "source": "email",
-      "title": "@mondaydotcom",
-      "canonical_url": "https://substack.com/redirect/ca35c4e8-1370-4eb2-aaed-88984b43c68c?j=eyJ1IjoiOGl0anNvIn0.ggqjyMrUlKV2A9RprtiOaUAPCpAa4kVZ3sANu1tO87w",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[@mondaydotcom](https://substack.com/redirect/ca35c4e8-1370-4eb2-aaed-88984b43c68c?j=eyJ1IjoiOGl0anNvIn0.ggqjyMrUlKV2A9RprtiOaUAPCpAa4kVZ3sANu1tO87w)** — _AINews · Jun 27_. — Monday.com rebuilt its Sidekick AI agent after the system struggled with over 200 tools causing context pollution refactoring to a more focused tool architecture.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.5449,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8333,
-        "taste_score": 0.825,
-        "taste_raw": 0.55,
-        "taste_reason": "Honest engineering post-mortem on 200-tool context pollution refactoring; useful but specific to one platform.",
-        "ungrounded_penalty": -1.5,
-        "ungrounded_terms": [
-          "27"
-        ],
-        "total": 3.3699
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-29T02:18:48Z",
-      "last_seen_at": "2026-06-29T02:18:48Z"
-    },
-    {
-      "id": "bd23aa9c4b7e49dd7fbf28c7804094b3cca2864b",
-      "section": "newsletters",
-      "source": "email",
-      "title": "Wispr Flow is the voice input layer for your AI workflow.",
-      "canonical_url": "https://wisprflow.ai/?dub_id=t175DXrC7G3ZZKq7",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[Wispr Flow is the voice input layer for your AI workflow.](https://wisprflow.ai/?utm_source=alphasignal&utm_medium=newsletter&utm_campaign=SundayIssue06282026&dub_id=t175DXrC7G3ZZKq7)** — _AlphaSignal · Jun 28_.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8215,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9333,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Same Wispr Flow pitch as the previous item, duplicate signal.",
-        "ungrounded_penalty": -1.5,
-        "ungrounded_terms": [
-          "28"
-        ],
-        "total": 3.3465
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-29T02:18:48Z",
-      "last_seen_at": "2026-06-29T02:18:48Z"
-    },
-    {
-      "id": "a2202c22fa66d755411b12602b3970d2e3bd2f49",
-      "section": "newsletters",
-      "source": "email",
-      "title": "Wispr Flow",
-      "canonical_url": "https://wisprflow.ai/?dub_id=vl5ssAYwh0aiwWs9",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[Wispr Flow](https://wisprflow.ai/?utm_source=alphasignal&utm_medium=newsletter&utm_campaign=DeepDive06112026&dub_id=vl5ssAYwh0aiwWs9)** — _AlphaSignal · Jun 27_. — Wispr Flow lets developers use voice input at four times the speed of typing, matching communication speed to thinking speed.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6215,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.913,
-        "taste_score": 0.675,
-        "taste_raw": 0.45,
-        "taste_reason": "Neat concept (voice input for devs at 4x typing speed) but thin metadata — no benchmarks, no adoption numbers, one developer anecdote only.",
-        "ungrounded_penalty": -1.5,
-        "ungrounded_terms": [
-          "27"
-        ],
-        "total": 3.2965
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-06-28T02:18:56Z",
-      "last_seen_at": "2026-06-28T02:18:56Z"
     }
   ]
 }
