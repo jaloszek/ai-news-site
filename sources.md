@@ -93,7 +93,6 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 
 | Channel |
 |---|
-| Matthew Berman |
 | Wes Roth |
 | Matt Wolfe |
 | AI Explained |
@@ -104,7 +103,6 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 | Channel |
 |---|
 | AI Jason |
-| All About AI |
 | WorldofAI |
 | Tech With Tim |
 | Two Minute Papers |
