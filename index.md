@@ -27,7 +27,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <div class="cal-cell cal-blank"></div>
     <a class="cal-cell cal-filled" href="content/2026-07-01.html"><div class="cal-num">1</div><ul class="cal-highlights"><li>✨ Sonnet 5</li><li>🛠 Claude Science</li><li>🚀 Mythos/Fable restored</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.198</li><li>💰 Together AI $800M</li><li>🛠 Hermes Agent v0.18.0</li><li>🛠 OpenCode v1.17.13</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">3</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-07-03.html"><div class="cal-num">3</div><ul class="cal-highlights"><li>🛠 CC v2.1.199</li><li>💰 Microsoft $2.5B Frontier</li><li>🛠 Anthropic 80% prompt cut</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">4</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">6</div></div>
