@@ -1,16 +1,229 @@
 ---
 ---
-@import "{{ site.theme }}";
+/* ── AI News Daily — custom design (ux/redesign-preview) ──────────────────
+   Replaces jekyll-theme-midnight's stylesheet entirely (the theme stays in
+   _config.yml only so its _includes keep resolving). Dark-first with an
+   automatic light mode. Section identity comes from one accent color per
+   section + per-harness icons injected by assets/js/harness-icons.js. */
 
-/* Widen the theme's 650px wrapper so the calendar can breathe. The theme also
-   hard-codes `section { max-width: 650px }`, which we override below — that
-   override is what actually frees the calendar from the theme's narrow column. */
-.wrapper { max-width: 1400px; }
-section { max-width: none; }
-section.cal-month {
-  padding: 0;
+:root {
+  --bg: #14161b;
+  --surface: #1d2026;
+  --surface-2: #23262e;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e6e8ec;
+  --muted: #9aa1ab;
+  --link: #8ab4f8;
+  --link-visited: #b39ddb;
+  --brand: #d97757;            /* Anthropic-ish terracotta — the wordmark   */
+  --acc-coding-agents: #d97757;
+  --acc-ai-world: #5c9cf5;
+  --acc-youtube: #e5484d;
+  --acc-community: #4cae5d;
+  --acc-newsletters: #a06ee8;
+  --acc-gossip: #e54d8b;
+  --radius: 12px;
+  --content-width: 880px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f7f5;
+    --surface: #ffffff;
+    --surface-2: #f0f0ee;
+    --border: rgba(0, 0, 0, 0.10);
+    --text: #22252a;
+    --muted: #6a7076;
+    --link: #1a5dc8;
+    --link-visited: #6d4bb5;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
   margin: 0;
-  margin-top: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+code, pre {
+  font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--surface-2);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+pre { padding: 0.8em 1em; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+img { max-width: 100%; }
+
+table { border-collapse: collapse; margin: 1rem 0; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--border); padding: 0.4rem 0.7rem; text-align: left; }
+th { background: var(--surface-2); }
+
+/* ── Header / footer ───────────────────────────────────────────────────── */
+
+.site-header {
+  background: color-mix(in srgb, var(--bg) 85%, black);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+.site-header-inner {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0.65rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.site-brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.site-brand:hover { text-decoration: none; color: var(--brand); }
+.site-brand-mark { margin-right: 0.25rem; }
+.site-nav { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+.site-nav a { color: var(--muted); font-size: 0.9rem; }
+.site-nav a:hover { color: var(--text); text-decoration: none; }
+
+.page {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+/* ── Headings ──────────────────────────────────────────────────────────── */
+
+h1 {
+  font-size: 1.9rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 1rem 0 0.5rem;
+}
+h2 { font-size: 1.35rem; letter-spacing: -0.01em; }
+
+/* Day-page section headers become card headers via harness-icons.js; this
+   is the no-JS fallback so bare h3s still read as section separators. */
+h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin: 2rem 0 0.5rem;
+}
+
+/* ── Day page: section cards ───────────────────────────────────────────── */
+
+.news-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--acc, var(--border));
+  border-radius: var(--radius);
+  padding: 1rem 1.4rem 1.1rem;
+  margin: 1.25rem 0;
+}
+.news-section > h3 { margin: 0.15rem 0 0.75rem; color: var(--acc, var(--muted)); }
+.news-section[data-section="claude-code"]  { --acc: var(--acc-coding-agents); }
+.news-section[data-section="ai-world"]     { --acc: var(--acc-ai-world); }
+.news-section[data-section="youtube"]      { --acc: var(--acc-youtube); }
+.news-section[data-section="community"]    { --acc: var(--acc-community); }
+.news-section[data-section="newsletters"]  { --acc: var(--acc-newsletters); }
+.news-section[data-section="gossip"]       { --acc: var(--acc-gossip); }
+
+.news-section .sec-count {
+  display: inline-block;
+  background: var(--surface-2);
+  color: var(--muted);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 0;
+  padding: 0.05rem 0.55rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.news-section-empty { display: none; }   /* empty-allowed sections vanish  */
+
+.news-section ul { list-style: none; margin: 0; padding: 0; }
+.news-section li {
+  margin: 0;
+  padding: 0.65rem 0;
+  border-top: 1px solid var(--border);
+}
+.news-section li:first-child { border-top: 0; }
+.news-section li > ul li { border-top: 0; padding: 0.2rem 0; }
+
+/* Headline link (the bold **[title](url)**) reads as the item title */
+.news-section li > strong:first-of-type a,
+.news-section li > a:first-of-type { font-weight: 650; color: var(--text); }
+.news-section li > strong:first-of-type a:hover,
+.news-section li > a:first-of-type:hover { color: var(--acc, var(--link)); text-decoration: none; }
+
+/* Source attribution (_The Decoder_ / _TLDR · Jul 6_) */
+.news-section em { color: var(--muted); font-style: normal; font-size: 0.88em; }
+
+/* Community group labels (**Reddit — Local AI**) */
+.news-section > p > strong {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+/* Harness icons (Coding Agents) */
+.harness-ico {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  vertical-align: -3px;
+  margin-right: 0.45rem;
+  background: #fff;
+}
+
+/* YouTube items: text left, thumbnail right */
+.yt-item { display: flex; gap: 1rem; align-items: flex-start; }
+.yt-item .yt-text { flex: 1 1 auto; min-width: 0; }
+.yt-item .yt-thumb { flex: 0 0 auto; margin: 0; }
+.yt-item .yt-thumb img {
+  width: 168px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  border: 1px solid var(--border);
+}
+@media (max-width: 560px) {
+  .yt-item { flex-direction: column; }
+  .yt-item .yt-thumb img { width: 100%; }
 }
 
 /* ── Day-page top/bottom nav ───────────────────────────────────────────── */
@@ -20,89 +233,82 @@ section.cal-month {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin: 1.25rem 0;
-  padding: 0.6rem 0;
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #444;
-  font-size: 0.95rem;
+  margin: 1.1rem 0;
+  padding: 0.45rem 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
 }
 .daily-nav a { text-decoration: none; }
-.daily-nav .nav-disabled { color: #666; }
+.daily-nav .nav-disabled { color: var(--muted); opacity: 0.6; }
+.daily-nav-dev { justify-content: center; gap: 0.25rem; background: transparent; border-style: dashed; }
 
 /* ── Calendar index ────────────────────────────────────────────────────── */
 
-.calendar {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 1rem;
-}
+.calendar { display: flex; flex-direction: column; gap: 2.25rem; margin-top: 1rem; }
+section.cal-month { padding: 0; margin: 0; }
 .cal-month-label {
-  color: #ff8266;
+  color: var(--muted);
   letter-spacing: 0.18em;
-  margin: 0 0 0.5rem 0;
-  font-size: 1rem;
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  border: 0;
-  padding: 0;
 }
 .cal-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
+  gap: 6px;
 }
 .cal-head {
-  font-size: 0.65rem;
-  color: #888;
+  font-size: 0.62rem;
+  color: var(--muted);
   letter-spacing: 0.15em;
   padding: 0.2rem 0.4rem 0.4rem;
-  text-align: left;
 }
 .cal-cell {
-  min-height: 120px;
-  padding: 0.5rem 0.55rem;
-  border-radius: 4px;
-  background: #2a2a2a;
+  min-height: 118px;
+  padding: 0.55rem 0.6rem;
+  border-radius: 10px;
+  background: var(--surface-2);
+  border: 1px solid transparent;
   color: inherit;
   text-decoration: none;
   display: block;
   overflow: hidden;
 }
-.cal-blank {
-  background: transparent;
-  min-height: 0;
-}
-.cal-empty {
-  opacity: 0.4;
-  background: transparent;
-}
-.cal-empty .cal-num { color: #666; }
+.cal-blank { background: transparent; min-height: 0; }
+.cal-empty { background: transparent; border: 1px dashed var(--border); opacity: 0.5; }
+.cal-empty .cal-num { color: var(--muted); }
 .cal-filled {
-  background: #c45a3e;
-  color: #fff;
-  transition: background 0.15s ease;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--brand);
+  transition: transform 0.12s ease, border-color 0.12s ease;
 }
-.cal-filled:hover { background: #d86d50; color: #fff; }
+.cal-filled:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand);
+  text-decoration: none;
+  color: inherit;
+}
 .cal-num {
   font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 0.35rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
   line-height: 1;
+  color: var(--brand);
 }
-
-/* Highlights list — one entry per release (or strong-signal fallback) for the
-   day. Minimum 3 items, no hard cap; each item wraps to at most 2 lines with
-   ellipsis. The theme's default `ul { list-style-image: url(bullet.png) }` is
-   killed explicitly (not just by `list-style: none`) so no broken-image
-   request goes out. */
+.cal-empty .cal-num, .cal-blank .cal-num { color: var(--muted); }
 .cal-highlights {
   list-style: none;
-  list-style-image: none;
   margin: 0;
   padding: 0;
   font-size: 0.7rem;
-  line-height: 1.25;
+  line-height: 1.3;
+  color: var(--muted);
 }
+.cal-filled .cal-highlights { color: var(--text); }
 .cal-highlights li {
   margin: 0.22rem 0;
   overflow: hidden;
@@ -113,13 +319,9 @@ section.cal-month {
   word-break: break-word;
 }
 
-/* ── Mobile: stack calendar vertically; drop empty placeholders ────────── */
-
 @media (max-width: 700px) {
   .cal-grid { grid-template-columns: 1fr; gap: 6px; }
-  .cal-head { display: none; }
-  .cal-blank { display: none; }
-  .cal-empty { display: none; }
+  .cal-head, .cal-blank, .cal-empty { display: none; }
   .cal-cell { min-height: 0; }
   .cal-highlights li { -webkit-line-clamp: unset; display: list-item; }
 }
