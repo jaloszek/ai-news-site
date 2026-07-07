@@ -1,35 +1,78 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" data-ui="modern">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
 {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>">
+    <!-- Two templates, one build: both stylesheets ship; the inline script
+         below enables exactly one BEFORE first paint. Switch via the header
+         toggle, or ?ui=classic / ?ui=modern (persisted to localStorage). -->
+    <link rel="stylesheet" id="css-modern" href="{{ '/assets/css/modern.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" id="css-classic" href="{{ '/assets/css/classic.css?v=' | append: site.github.build_revision | relative_url }}" disabled>
+    <script>
+      (function () {
+        var q = new URLSearchParams(location.search).get("ui");
+        var ui = q || localStorage.getItem("ui") || "modern";
+        if (ui !== "classic") ui = "modern";
+        try { localStorage.setItem("ui", ui); } catch (e) {}
+        document.documentElement.setAttribute("data-ui", ui);
+        document.getElementById("css-modern").disabled = ui !== "modern";
+        document.getElementById("css-classic").disabled = ui !== "classic";
+      })();
+    </script>
     {% include head-custom.html %}
   </head>
   <body>
-    <div class="wrapper">
+    <header class="site-header ui-modern">
+      <div class="site-header-inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}">
+          <span class="site-brand-mark">📰</span> AI&nbsp;News&nbsp;Daily
+        </a>
+        <nav class="site-nav">
+          <a href="{{ '/' | relative_url }}">Archive</a>
+          <a href="{{ '/stats.html' | relative_url }}">Stats</a>
+          <a href="{{ '/sources.html' | relative_url }}">Sources</a>
+          <a href="{{ '/state-of-ai.html' | relative_url }}">State&nbsp;of&nbsp;AI</a>
+          <a href="{{ '/feed.xml' | relative_url }}" title="Subscribe via RSS">RSS</a>
+          <a href="#" data-ui-toggle title="Switch to the classic template">Classic&nbsp;UI</a>
+        </nav>
+      </div>
+    </header>
 
+    <div class="wrapper">
       <section>
-        <div id="title">
+        <div id="title" class="ui-classic">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
+          <p><a href="#" data-ui-toggle>Switch to the new UI →</a></p>
         </div>
 
-        {{ content }}
-
+        <main class="page">
+          {{ content }}
+        </main>
       </section>
-
     </div>
+
+    <footer class="site-footer ui-modern">
+      <p>{{ site.description }} · <a href="{{ '/feed.xml' | relative_url }}">RSS</a> · <a href="{{ '/slides/how-it-works/' | relative_url }}">How it works</a> · <a href="#" data-ui-toggle>Classic UI</a></p>
+    </footer>
+
+    <script>
+      (function () {
+        function flip(e) {
+          e.preventDefault();
+          var next = document.documentElement.getAttribute("data-ui") === "modern" ? "classic" : "modern";
+          try { localStorage.setItem("ui", next); } catch (err) {}
+          var url = new URL(location.href);
+          url.searchParams.delete("ui");
+          location.href = url.toString();
+        }
+        var links = document.querySelectorAll("[data-ui-toggle]");
+        for (var i = 0; i < links.length; i++) links[i].addEventListener("click", flip);
+      })();
+    </script>
+    <script src="{{ '/assets/js/harness-icons.js' | relative_url }}" data-root="{{ '/' | relative_url }}" defer></script>
   </body>
 </html>

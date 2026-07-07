@@ -2,6 +2,12 @@
 ---
 @import "{{ site.theme }}";
 
+/* Classic template (pre-2026-07 midnight look). Active when
+   html[data-ui="classic"] — see the ui-switch script in default.html.
+   Hides the modern chrome; the enhancement JS also no-ops in classic. */
+.ui-modern { display: none; }
+main.page { display: block; }
+
 /* Widen the theme's 650px wrapper so the calendar can breathe. The theme also
    hard-codes `section { max-width: 650px }`, which we override below — that
    override is what actually frees the calendar from the theme's narrow column. */

@@ -1,0 +1,395 @@
+---
+---
+/* ── AI News Daily — custom design (ux/redesign-preview) ──────────────────
+   Replaces jekyll-theme-midnight's stylesheet entirely (the theme stays in
+   _config.yml only so its _includes keep resolving). Dark-first with an
+   automatic light mode. Section identity comes from one accent color per
+   section + per-harness icons injected by assets/js/harness-icons.js. */
+
+:root {
+  --bg: #14161b;
+  --surface: #1d2026;
+  --surface-2: #23262e;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e6e8ec;
+  --muted: #9aa1ab;
+  --link: #8ab4f8;
+  --link-visited: #b39ddb;
+  --brand: #d97757;            /* Anthropic-ish terracotta — the wordmark   */
+  --acc-coding-agents: #d97757;
+  --acc-ai-world: #5c9cf5;
+  --acc-youtube: #e5484d;
+  --acc-community: #4cae5d;
+  --acc-newsletters: #a06ee8;
+  --acc-gossip: #e54d8b;
+  --radius: 12px;
+  --content-width: 880px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f7f5;
+    --surface: #ffffff;
+    --surface-2: #f0f0ee;
+    --border: rgba(0, 0, 0, 0.10);
+    --text: #22252a;
+    --muted: #6a7076;
+    --link: #1a5dc8;
+    --link-visited: #6d4bb5;
+  }
+}
+
+/* hide the classic chrome (the old giant title block) */
+.ui-classic { display: none; }
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+code, pre {
+  font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--surface-2);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+pre { padding: 0.8em 1em; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+img { max-width: 100%; }
+
+table { border-collapse: collapse; margin: 1rem 0; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--border); padding: 0.4rem 0.7rem; text-align: left; }
+th { background: var(--surface-2); }
+
+/* ── Header / footer ───────────────────────────────────────────────────── */
+
+.site-header {
+  background: color-mix(in srgb, var(--bg) 85%, black);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+.site-header-inner {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0.65rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.site-brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.site-brand:hover { text-decoration: none; color: var(--brand); }
+.site-brand-mark { margin-right: 0.25rem; }
+.site-nav { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+.site-nav a { color: var(--muted); font-size: 0.9rem; }
+.site-nav a:hover { color: var(--text); text-decoration: none; }
+
+.page {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+/* ── Headings ──────────────────────────────────────────────────────────── */
+
+h1 {
+  font-size: 1.9rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 1rem 0 0.5rem;
+}
+h2 { font-size: 1.35rem; letter-spacing: -0.01em; }
+
+/* Day-page section headers become card headers via harness-icons.js; this
+   is the no-JS fallback so bare h3s still read as section separators. */
+h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin: 2rem 0 0.5rem;
+}
+
+/* ── Day page: section cards ───────────────────────────────────────────── */
+
+.news-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--acc, var(--border));
+  border-radius: var(--radius);
+  padding: 1rem 1.4rem 1.1rem;
+  margin: 1.25rem 0;
+}
+.news-section > h3 { margin: 0.15rem 0 0.75rem; color: var(--acc, var(--muted)); }
+.news-section[data-section="claude-code"]  { --acc: var(--acc-coding-agents); }
+.news-section[data-section="ai-world"]     { --acc: var(--acc-ai-world); }
+.news-section[data-section="youtube"]      { --acc: var(--acc-youtube); }
+.news-section[data-section="community"]    { --acc: var(--acc-community); }
+.news-section[data-section="newsletters"]  { --acc: var(--acc-newsletters); }
+.news-section[data-section="gossip"]       { --acc: var(--acc-gossip); }
+
+.news-section .sec-count {
+  display: inline-block;
+  background: var(--surface-2);
+  color: var(--muted);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 0;
+  padding: 0.05rem 0.55rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.news-section-empty { display: none; }   /* empty-allowed sections vanish  */
+
+.news-section ul { list-style: none; margin: 0; padding: 0; }
+.news-section li {
+  margin: 0;
+  padding: 0.65rem 0;
+  border-top: 1px solid var(--border);
+}
+.news-section li:first-child { border-top: 0; }
+.news-section li > ul li { border-top: 0; padding: 0.2rem 0; }
+
+/* Headline link (the bold **[title](url)**) reads as the item title */
+.news-section li > strong:first-of-type a,
+.news-section li > a:first-of-type { font-weight: 650; color: var(--text); }
+.news-section li > strong:first-of-type a:hover,
+.news-section li > a:first-of-type:hover { color: var(--acc, var(--link)); text-decoration: none; }
+
+/* Source attribution (_The Decoder_ / _TLDR · Jul 6_) */
+.news-section em { color: var(--muted); font-style: normal; font-size: 0.88em; }
+
+/* Community group labels (**Reddit — Local AI**) */
+.news-section > p > strong {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+/* ── Restructured items (harness-icons.js) ──────────────────────────────
+   title left · source right, body on its own line, media rail on the
+   right (harness logo / video thumbnail / source favicon). */
+
+li.news-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48px;
+  grid-template-rows: auto auto;
+  gap: 0.3rem 1.1rem;
+  align-items: start;
+}
+li.news-item-video { grid-template-columns: minmax(0, 1fr) 168px; }
+
+/* No flex-wrap: the source is pinned top-right on the first title line
+   regardless of how many lines the title wraps to — a wrapping head row
+   made the source's position depend on title length (ragged). */
+.item-head {
+  grid-column: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+.item-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+  font-weight: 650;
+  color: var(--text);
+  line-height: 1.35;
+}
+.item-title:hover { color: var(--acc, var(--link)); text-decoration: none; }
+.item-src {
+  flex: 0 0 auto;
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.item-body {
+  grid-column: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.92;
+}
+.item-media {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+.item-media .harness-logo,
+.item-media .src-fav {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fff;
+  object-fit: contain;
+  border: 1px solid var(--border);
+}
+.item-media .src-fav { padding: 5px; }
+.item-media .yt-thumb { margin: 0; }
+.item-media .yt-thumb img {
+  width: 168px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 560px) {
+  li.news-item { grid-template-columns: minmax(0, 1fr) 40px; }
+  li.news-item-video { grid-template-columns: 1fr; }
+  li.news-item-video .item-media { grid-column: 1; grid-row: auto; justify-content: flex-start; }
+  li.news-item-video .item-media .yt-thumb img { width: 100%; }
+  .item-media .harness-logo, .item-media .src-fav { width: 32px; height: 32px; }
+  /* phones: source becomes a small byline under the title (left-aligned) —
+     a lone right-aligned label under a wrapped title reads as floating */
+  .item-head { flex-wrap: wrap; gap: 0.1rem 1rem; }
+  .item-title { flex-basis: 100%; }
+  .item-src {
+    flex: 1 1 100%;
+    max-width: none;
+    white-space: normal;
+    text-align: left;
+  }
+}
+
+/* ── Day-page top/bottom nav ───────────────────────────────────────────── */
+
+.daily-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.1rem 0;
+  padding: 0.45rem 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+.daily-nav a { text-decoration: none; }
+.daily-nav .nav-disabled { color: var(--muted); opacity: 0.6; }
+.daily-nav-dev { justify-content: center; gap: 0.25rem; background: transparent; border-style: dashed; }
+
+/* ── Calendar index ────────────────────────────────────────────────────── */
+
+.calendar { display: flex; flex-direction: column; gap: 2.25rem; margin-top: 1rem; }
+section.cal-month { padding: 0; margin: 0; }
+.cal-month-label {
+  color: var(--muted);
+  letter-spacing: 0.18em;
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.cal-head {
+  font-size: 0.62rem;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  padding: 0.2rem 0.4rem 0.4rem;
+}
+.cal-cell {
+  min-height: 118px;
+  padding: 0.55rem 0.6rem;
+  border-radius: 10px;
+  background: var(--surface-2);
+  border: 1px solid transparent;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+}
+.cal-blank { background: transparent; min-height: 0; }
+.cal-empty { background: transparent; border: 1px dashed var(--border); opacity: 0.5; }
+.cal-empty .cal-num { color: var(--muted); }
+.cal-filled {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--brand);
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+.cal-filled:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand);
+  text-decoration: none;
+  color: inherit;
+}
+.cal-num {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  line-height: 1;
+  color: var(--brand);
+}
+.cal-empty .cal-num, .cal-blank .cal-num { color: var(--muted); }
+.cal-highlights {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  color: var(--muted);
+}
+.cal-filled .cal-highlights { color: var(--text); }
+.cal-highlights li {
+  margin: 0.22rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+@media (max-width: 700px) {
+  .cal-grid { grid-template-columns: 1fr; gap: 6px; }
+  .cal-head, .cal-blank, .cal-empty { display: none; }
+  .cal-cell { min-height: 0; }
+  .cal-highlights li { -webkit-line-clamp: unset; display: list-item; }
+}
