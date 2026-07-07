@@ -213,21 +213,33 @@ li.news-item {
 }
 li.news-item-video { grid-template-columns: minmax(0, 1fr) 168px; }
 
+/* No flex-wrap: the source is pinned top-right on the first title line
+   regardless of how many lines the title wraps to — a wrapping head row
+   made the source's position depend on title length (ragged). */
 .item-head {
   grid-column: 1;
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
-  gap: 0.4rem 1rem;
-  flex-wrap: wrap;
+  gap: 1rem;
 }
-.item-title { font-weight: 650; color: var(--text); line-height: 1.35; }
+.item-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+  font-weight: 650;
+  color: var(--text);
+  line-height: 1.35;
+}
 .item-title:hover { color: var(--acc, var(--link)); text-decoration: none; }
 .item-src {
+  flex: 0 0 auto;
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
   color: var(--muted);
   font-size: 0.78rem;
-  white-space: nowrap;
-  margin-left: auto;
 }
 .item-body {
   grid-column: 1;
@@ -267,6 +279,16 @@ li.news-item-video { grid-template-columns: minmax(0, 1fr) 168px; }
   li.news-item-video .item-media { grid-column: 1; grid-row: auto; justify-content: flex-start; }
   li.news-item-video .item-media .yt-thumb img { width: 100%; }
   .item-media .harness-logo, .item-media .src-fav { width: 32px; height: 32px; }
+  /* phones: source becomes a small byline under the title (left-aligned) —
+     a lone right-aligned label under a wrapped title reads as floating */
+  .item-head { flex-wrap: wrap; gap: 0.1rem 1rem; }
+  .item-title { flex-basis: 100%; }
+  .item-src {
+    flex: 1 1 100%;
+    max-width: none;
+    white-space: normal;
+    text-align: left;
+  }
 }
 
 /* ── Day-page top/bottom nav ───────────────────────────────────────────── */
