@@ -233,6 +233,9 @@
     );
   }
 
+  /* classic template = untouched markdown rendering (see default.html) */
+  if (document.documentElement.getAttribute("data-ui") === "classic") return;
+
   var main = document.querySelector("main.page");
   if (!main || !main.querySelector(".daily-nav")) return; // day pages only
   sectionize(main);

@@ -1,0 +1,131 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Classic template (pre-2026-07 midnight look). Active when
+   html[data-ui="classic"] — see the ui-switch script in default.html.
+   Hides the modern chrome; the enhancement JS also no-ops in classic. */
+.ui-modern { display: none; }
+main.page { display: block; }
+
+/* Widen the theme's 650px wrapper so the calendar can breathe. The theme also
+   hard-codes `section { max-width: 650px }`, which we override below — that
+   override is what actually frees the calendar from the theme's narrow column. */
+.wrapper { max-width: 1400px; }
+section { max-width: none; }
+section.cal-month {
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+}
+
+/* ── Day-page top/bottom nav ───────────────────────────────────────────── */
+
+.daily-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.25rem 0;
+  padding: 0.6rem 0;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  font-size: 0.95rem;
+}
+.daily-nav a { text-decoration: none; }
+.daily-nav .nav-disabled { color: #666; }
+
+/* ── Calendar index ────────────────────────────────────────────────────── */
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.cal-month-label {
+  color: #ff8266;
+  letter-spacing: 0.18em;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0;
+  padding: 0;
+}
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+.cal-head {
+  font-size: 0.65rem;
+  color: #888;
+  letter-spacing: 0.15em;
+  padding: 0.2rem 0.4rem 0.4rem;
+  text-align: left;
+}
+.cal-cell {
+  min-height: 120px;
+  padding: 0.5rem 0.55rem;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+}
+.cal-blank {
+  background: transparent;
+  min-height: 0;
+}
+.cal-empty {
+  opacity: 0.4;
+  background: transparent;
+}
+.cal-empty .cal-num { color: #666; }
+.cal-filled {
+  background: #c45a3e;
+  color: #fff;
+  transition: background 0.15s ease;
+}
+.cal-filled:hover { background: #d86d50; color: #fff; }
+.cal-num {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  line-height: 1;
+}
+
+/* Highlights list — one entry per release (or strong-signal fallback) for the
+   day. Minimum 3 items, no hard cap; each item wraps to at most 2 lines with
+   ellipsis. The theme's default `ul { list-style-image: url(bullet.png) }` is
+   killed explicitly (not just by `list-style: none`) so no broken-image
+   request goes out. */
+.cal-highlights {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+  line-height: 1.25;
+}
+.cal-highlights li {
+  margin: 0.22rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+/* ── Mobile: stack calendar vertically; drop empty placeholders ────────── */
+
+@media (max-width: 700px) {
+  .cal-grid { grid-template-columns: 1fr; gap: 6px; }
+  .cal-head { display: none; }
+  .cal-blank { display: none; }
+  .cal-empty { display: none; }
+  .cal-cell { min-height: 0; }
+  .cal-highlights li { -webkit-line-clamp: unset; display: list-item; }
+}
