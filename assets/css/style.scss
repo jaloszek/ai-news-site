@@ -200,30 +200,73 @@ h3 {
   margin-top: 0.5rem;
 }
 
-/* Harness icons (Coding Agents) */
-.harness-ico {
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  vertical-align: -3px;
-  margin-right: 0.45rem;
-  background: #fff;
-}
+/* ── Restructured items (harness-icons.js) ──────────────────────────────
+   title left · source right, body on its own line, media rail on the
+   right (harness logo / video thumbnail / source favicon). */
 
-/* YouTube items: text left, thumbnail right */
-.yt-item { display: flex; gap: 1rem; align-items: flex-start; }
-.yt-item .yt-text { flex: 1 1 auto; min-width: 0; }
-.yt-item .yt-thumb { flex: 0 0 auto; margin: 0; }
-.yt-item .yt-thumb img {
+li.news-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48px;
+  grid-template-rows: auto auto;
+  gap: 0.3rem 1.1rem;
+  align-items: start;
+}
+li.news-item-video { grid-template-columns: minmax(0, 1fr) 168px; }
+
+.item-head {
+  grid-column: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.4rem 1rem;
+  flex-wrap: wrap;
+}
+.item-title { font-weight: 650; color: var(--text); line-height: 1.35; }
+.item-title:hover { color: var(--acc, var(--link)); text-decoration: none; }
+.item-src {
+  color: var(--muted);
+  font-size: 0.78rem;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.item-body {
+  grid-column: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.92;
+}
+.item-media {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+.item-media .harness-logo,
+.item-media .src-fav {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fff;
+  object-fit: contain;
+  border: 1px solid var(--border);
+}
+.item-media .src-fav { padding: 5px; }
+.item-media .yt-thumb { margin: 0; }
+.item-media .yt-thumb img {
   width: 168px;
   height: auto;
   border-radius: 8px;
   display: block;
   border: 1px solid var(--border);
 }
+
 @media (max-width: 560px) {
-  .yt-item { flex-direction: column; }
-  .yt-item .yt-thumb img { width: 100%; }
+  li.news-item { grid-template-columns: minmax(0, 1fr) 40px; }
+  li.news-item-video { grid-template-columns: 1fr; }
+  li.news-item-video .item-media { grid-column: 1; grid-row: auto; justify-content: flex-start; }
+  li.news-item-video .item-media .yt-thumb img { width: 100%; }
+  .item-media .harness-logo, .item-media .src-fav { width: 32px; height: 32px; }
 }
 
 /* ── Day-page top/bottom nav ───────────────────────────────────────────── */
