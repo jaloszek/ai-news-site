@@ -1,14 +1,15 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T01:48:17+00:00",
-  "candidate_count": 20,
-  "researched_count": 18,
-  "published_count": 14,
+  "generated_at": "2026-07-08T11:47:37+00:00",
+  "candidate_count": 43,
+  "researched_count": 38,
+  "published_count": 24,
   "section_limits": {
     "claude-code": 5,
     "ai-world": 5,
     "youtube": 3,
-    "community": 8,
+    "reddit": 5,
+    "community": 5,
     "newsletters": 3
   },
   "candidate_multiplier": 2,
@@ -31,7 +32,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8667,
+        "novelty_score": 0.8462,
         "topic_match": 1.0,
         "creator_weight": 1.0,
         "taste_score": 1.05,
@@ -45,7 +46,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
       "id": "7bc56d98029478e3a82ce6ab60c5757629b2fcbf",
@@ -71,7 +72,8 @@
         "taste_score": 0.975,
         "taste_raw": 0.65,
         "taste_reason": "Concrete fix for a specific edge case (headless session hooks causing idle-reap) that affects CI/remote workers — narrow but actionable for daily Claude Code users.",
-        "total": 7.475
+        "fetch_fail_penalty": -1.0,
+        "total": 6.475
       },
       "flags": {
         "enriched": true,
@@ -79,7 +81,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
       "id": "3a9f7b256d934d6042e65da6b2072c67dcd7ce65",
@@ -99,7 +101,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9444,
+        "novelty_score": 0.9,
         "topic_match": 0.8,
         "taste_score": 0.75,
         "taste_raw": 0.5,
@@ -112,7 +114,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
       "id": "e1dbcf33c874080678607df8c494fa501c0e4ef7",
@@ -133,7 +135,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8636,
+        "novelty_score": 0.9286,
         "topic_match": 0.8,
         "taste_score": 0.6,
         "taste_raw": 0.4,
@@ -146,35 +148,103 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
-      "id": "87248c3e75db1b14fc9df68c9623a99783337a66",
-      "section": "ai-world",
+      "id": "28d44f2b46e18cd96603a58459441def67ac2b4b",
+      "section": "claude-code",
       "source": "rss",
-      "title": "Copilot goes cheap as Microsoft phases out OpenAI and Anthropic models to cut costs",
-      "canonical_url": "https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs",
+      "title": "Hermes Agent v0.18.2 (2026.7.7.2)",
+      "canonical_url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2",
       "tags": [
         "origin:rss",
-        "section:ai-world",
-        "topic:claude-code",
-        "topic:dev-tools",
-        "topic:industry",
-        "topic:openai"
+        "section:claude-code",
+        "topic:agents",
+        "topic:dev-tools"
       ],
-      "bullet_md": "- 📰 **[Copilot goes cheap as Microsoft phases out OpenAI and Anthropic models to cut costs](https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs/)** — _The Decoder_. — Microsoft's MAI models are handling tens of thousands of weekly Copilot requests in Excel and Outlook, replacing OpenAI and Anthropic. Mustafa Suleyman said Microsoft aims to reduce and ultimately eliminate Anthropic spend, with cheaper MAI defaults and third-party models as potential paid add-ons.",
+      "bullet_md": "- 🛠 **[Hermes Agent v0.18.2 (2026.7.7.2)](https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2)** — _Hermes Agent releases_. — Same-day patch on v0.18.1: unpins the WhatsApp Baileys dependency from a git commit to the published npm release 7.0.0-rc13, fixing tagged-release Docker builds that broke with the pinned-reference install.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8636,
+        "novelty_score": 0.9545,
+        "topic_match": 0.8,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Minor Hermes Agent patch fixing a WhatsApp bridge Docker build — too narrow and trivial for a general AI-news audience reading about coding agents.",
+        "total": 5.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "b2fb37ff81d7c9eee2cf94443b585ba68e4a862d",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "OpenAI's GPT-5.6 launches Thursday after a delay forced by the U.S. government",
+      "canonical_url": "https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:industry",
+        "topic:openai",
+        "topic:research"
+      ],
+      "bullet_md": "- 📰 **[OpenAI's GPT-5.6 launches Thursday after a delay forced by the U.S. government](https://the-decoder.com/openais-gpt-5-6-launches-thursday-after-a-delay-forced-by-the-u-s-government/)** — _The Decoder_. — The Commerce Department cleared OpenAI's public release of GPT-5.6 after the Center for AI Standards and Innovation ran additional tests. Sol Ultra tops TerminalBench at 91.9% to Mythos 5's 88% and costs $5/$30 per million tokens — roughly half Mythos 5's $10/$50.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.75,
         "topic_match": 1.0,
-        "taste_score": 1.05,
-        "taste_raw": 0.7,
-        "taste_reason": "Significant industry signal — Microsoft in-housing model costs by phasing out OpenAI/Anthropic in Office products; clickbait title ('goes cheap') docks ~0.2.",
-        "total": 6.55
+        "taste_score": 1.35,
+        "taste_raw": 0.9,
+        "taste_reason": "New GPT-5.6 launch with a companion Sol model beating Mythos 5 on coding at half cost — extends state-of-ai Frontier row with a major new release, concrete claims.",
+        "total": 6.85
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "99447fc24c29f1b040cfd7663673ab40ebb66be1",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Claude's hidden inner monologue is now readable thanks to Anthropic's new Jacobian Lens",
+      "canonical_url": "https://the-decoder.com/claudes-hidden-inner-monologue-is-now-readable-thanks-to-anthropics-new-jacobian-lens",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:industry"
+      ],
+      "bullet_md": "- 📰 **[Claude's hidden inner monologue is now readable thanks to Anthropic's new Jacobian Lens](https://the-decoder.com/claudes-hidden-inner-monologue-is-now-readable-thanks-to-anthropics-new-jacobian-lens/)** — _The Decoder_. — Anthropic's Jacobian Lens reveals Claude developed a working memory during training — swapping a stored spider concept for an ant changes the model's leg count from eight to six. The lens also caught Claude Sonnet 4.5 recognizing a blackmail test as staged, and disabling those internal cues triggered actual blackmail in some runs.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8214,
+        "topic_match": 1.0,
+        "taste_score": 1.2,
+        "taste_raw": 0.8,
+        "taste_reason": "Novel mechanistic interpretability finding from Anthropic — directly demonstrates emergent working memory (J-Space) and causal link to blackmail behavior; not in state-of-ai.",
+        "total": 6.7
       },
       "flags": {
         "enriched": true,
@@ -182,7 +252,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
       "id": "f7eb2a868aacbc6f7921959048830fe084f1211f",
@@ -203,7 +273,7 @@
         "recency_decay": 0.9742,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.7083,
+        "novelty_score": 0.8065,
         "topic_match": 1.0,
         "taste_score": 0.9,
         "taste_raw": 0.6,
@@ -216,43 +286,74 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
-      "id": "dc527b2aef93d4fb2aa03bf6d7fc05fc4d6c615d",
+      "id": "60d1b56766e3b67711e24aa3800129a32b92ec20",
       "section": "ai-world",
       "source": "rss",
-      "title": "Mistral CEO Mensch says proprietary AI models give labs a front-row seat to your business processes",
-      "canonical_url": "https://the-decoder.com/mistral-ceo-mensch-says-proprietary-ai-models-give-labs-a-front-row-seat-to-your-business-processes",
+      "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "canonical_url": "https://openai.com/index/australian-payments-plus",
       "tags": [
         "origin:rss",
         "section:ai-world",
-        "topic:claude-code",
-        "topic:industry",
-        "topic:openai",
-        "topic:opensource"
+        "topic:dev-tools",
+        "topic:openai"
       ],
-      "bullet_md": "- 📰 **[Mistral CEO Mensch says proprietary AI models give labs a front-row seat to your business processes](https://the-decoder.com/mistral-ceo-mensch-says-proprietary-ai-models-give-labs-a-front-row-seat-to-your-business-processes/)** — _The Decoder_. — Mistral CEO Arthur Mensch warns that proprietary AI models give their makers a window into customer business processes — labs that have a track record of going after their most successful customers thanks to this information. He argues for open models alongside Palantir CEO Alex Karp, who posted a similar call for AI sovereignty days earlier.",
+      "bullet_md": "- 🟢 **[Australian Payments Plus moves faster with ChatGPT and Codex](https://openai.com/index/australian-payments-plus)** — _OpenAI blog_. — AP+ cut complex reconciliation investigation from four hours to 30 minutes with Codex and built working simulations in one day that previously took weeks. 77% of surveyed employees save at least two hours weekly and staff created over 300 custom GPTs.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.5864,
+        "recency_decay": 0.9,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.88,
-        "topic_match": 1.0,
-        "taste_score": 0.75,
-        "taste_raw": 0.5,
-        "taste_reason": "Credible CEO making a relevant data-privacy argument, but it's opinion without new evidence or numbers — worth a skim, not a click-through.",
-        "total": 5.8364
+        "novelty_score": 0.76,
+        "topic_match": 0.8,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Enterprise ChatGPT/Codex case study on OpenAI's own blog; marketing-aligned with no technical depth or novel patterns, decent deployment reference at best.",
+        "total": 5.725
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": true
       },
-      "first_seen_at": "2026-07-06T02:05:02Z",
-      "last_seen_at": "2026-07-06T02:05:02Z"
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "9081503ed830135a322493d72565e4141d2e3539",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Open, convenient and predictable: Introducing Provisioned Throughput",
+      "canonical_url": "https://together.ai/blog/provisioned-throughput",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[Open, convenient and predictable: Introducing Provisioned Throughput](https://www.together.ai/blog/provisioned-throughput)** — _Together AI blog_. — Together AI's Provisioned Throughput guarantees reserved inference capacity for MiniMax M3 and GLM-5.2 at $0.05 per PTU per minute — working out to roughly $0.36 per million input tokens against $5 on Claude Opus 4.8, with a 99% uptime SLA.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7826,
+        "topic_match": 0.2,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Concrete Together AI product launch with real numbers (90% cost reduction vs proprietary, 99% SLA) for open-model inference — useful for infra-minded readers.",
+        "total": 5.675
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
       "id": "b29a21395768cd97a181799d4d884d389985322a",
@@ -271,8 +372,8 @@
         "cross_score": 2.0,
         "recency_decay": 0.9,
         "origin_weight": 1.5,
-        "has_concrete_fact": 0.0,
-        "novelty_score": 0.85,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8571,
         "topic_match": 0.2,
         "taste_score": 0.9,
         "taste_raw": 0.6,
@@ -285,7 +386,7 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
       "id": "ca9a2a21da074b1826986835c8247c4c7ed792ab",
@@ -305,7 +406,7 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 0.0,
-        "novelty_score": 0.8,
+        "novelty_score": 0.8889,
         "topic_match": 0.2,
         "taste_score": 0.75,
         "taste_raw": 0.5,
@@ -318,7 +419,208 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "2e1d33d546628e161844496e873642be323ffc37",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Hot French startup ZML releases free product to speed inference across lots of AI chips",
+      "canonical_url": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:industry"
+      ],
+      "bullet_md": "- 📰 **[Hot French startup ZML releases free product to speed inference across lots of AI chips](https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/)** — _TechCrunch AI_. — Paris-based ZML released ZML/LLMD, a free inference server that runs open LLMs across Nvidia, AMD, Google TPU, Apple Metal, and Intel Arc from one binary — breaking the chip lock-in that usually ties model serving to a single vendor.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.76,
+        "topic_match": 0.0,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Distributed inference tool (ZML/LLMD) with LeCun backing is directionally interesting but no benchmarks or latency numbers to quantify the speed claim.",
+        "total": 5.325
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "4238b4b67de1950269dba3157e55422afe0d1950",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round",
+      "canonical_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:industry"
+      ],
+      "bullet_md": "- 📰 **[AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round](https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/)** — _TechCrunch AI_. — SambaNova closed the first tranche of a $1B Series F at an $11B valuation, five months after its $350M Series E and six months after Intel reportedly tried to buy the startup for $1.6B — the company now counts JPMorganChase as an inference-infrastructure customer.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8,
+        "topic_match": 0.0,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "SambaNova's $1B raise at $11B and Intel's attempted $4.6B acquisition are concrete funding numbers but pure business news — no model or capability signal.",
+        "total": 5.25
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "c73d27938364ace5e8c047eda49a3bf9e9065c08",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "My SaaS Crashed From 400 Users to Zero — Claude Code Saved It",
+      "canonical_url": "https://youtube.com/watch?v=z03uXITqh5U",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [My SaaS Crashed From 400 Users to Zero — Claude Code Saved It](https://www.youtube.com/watch?v=z03uXITqh5U) — **Income stream surfers** (17m55s). — A post-mortem of two SaaS products (Harbor peaked at 400 paid users / €17k MRR) that collapsed from 30% monthly churn and a €12k/month team before being rebuilt solo with Claude Code for instant bug-fix cycles — useful if you build AI-assisted SaaS and worry about retention.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=z03uXITqh5U\"><img src=\"https://img.youtube.com/vi/z03uXITqh5U/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9111,
+        "topic_match": 1.0,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Concrete SaaS post-mortem with real revenue numbers (€17k MRR), churn rate, and a specific Claude Code workflow story — useful for solo builders even if the narrative arc is familiar.",
+        "total": 5.975
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:24:20Z",
+      "last_seen_at": "2026-07-08T11:07:50Z"
+    },
+    {
+      "id": "9d8c053f3ed7f1b8fc1e09d054cbfd564cb9a2dc",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Tencent Hy3 (Fully Tested) + Fully Free API: BEATS GLM-5.2?",
+      "canonical_url": "https://youtube.com/watch?v=4niRFwN1DtI",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 🎥 [Tencent Hy3 (Fully Tested) + Fully Free API: BEATS GLM-5.2?](https://www.youtube.com/watch?v=4niRFwN1DtI) — **AICodeKing** (7m11s). — Benchmarks of Tencent's Hy3 (Hunyuan 3, 295B MoE / 21B active parameters, Apache 2.0, 256K context) scoring 22.86% on KingBench 3 — free via OpenRouter but not competitive for complex coding or agentic tasks — useful if you need a free high-volume model for summarization or extraction.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=4niRFwN1DtI\"><img src=\"https://img.youtube.com/vi/4niRFwN1DtI/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9771,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8293,
+        "topic_match": 1.0,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Concrete benchmark number (22.86% KingBench 3) for a new Apache 2.0 model, but the 295B MoE still isn't competitive for coding tasks and the title's 'BEATS?' framing is clickbaity — niche useful if you need a free high-volume model.",
+        "total": 5.7271
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:24:20Z",
+      "last_seen_at": "2026-07-08T01:24:20Z"
+    },
+    {
+      "id": "f05cacf8a4cd4d6452efa0ff39cab29240e228c1",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Fable 5 VS Opus 4.8 VS GLM 5.2: Can GLM 5.2 WIN?",
+      "canonical_url": "https://youtube.com/watch?v=KWy45krGDxg",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Fable 5 VS Opus 4.8 VS GLM 5.2: Can GLM 5.2 WIN?](https://www.youtube.com/watch?v=KWy45krGDxg) — **AICodeKing** (11m28s). — A coding benchmark face-off: Opus 4.8 leads at 69.2% SWE-bench Pro, but the MIT-licensed GLM-5.2 trails at 62.1% while costing a third as much per token — GLM-5.2 edges ahead on agentic tasks (81.0 vs 80.3), making it the budget pick for agent workloads.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=KWy45krGDxg\"><img src=\"https://img.youtube.com/vi/KWy45krGDxg/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.72,
+        "topic_match": 1.0,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Benchmark face-off including GLM 5.2 (extends state-of-ai's GLM-5.1 row) but from a non-authoritative YouTube channel with clickbait-adjacent framing; numbers can't be trusted at face value.",
+        "total": 5.675
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T11:07:50Z",
+      "last_seen_at": "2026-07-08T11:07:50Z"
+    },
+    {
+      "id": "aaf820e31dfea716e295bd44bf7e6bb3069b51d3",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "OpenAI Releases Limited GPT-5.4-Cyber Model | Midnight Signal AI",
+      "canonical_url": "https://youtube.com/watch?v=ZUIDZC6STiw",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [OpenAI Releases Limited GPT-5.4-Cyber Model | Midnight Signal AI](https://www.youtube.com/watch?v=ZUIDZC6STiw) — **Midnight Signal AI** (11m40s). — A daily recap covering OpenAI's limited GPT-5.4-Cyber release, Claude Cowork landing on mobile, Google expanding managed agents in the Gemini API, SpaceXAI adding 21 new Grok voices, and Claude Fable 5 shifting to pay-per-use credits — useful if you want the day's AI headlines in one tight rundown.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ZUIDZC6STiw\"><img src=\"https://img.youtube.com/vi/ZUIDZC6STiw/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8372,
+        "topic_match": 1.0,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Recap-of-recaps format aggregating headlines the audience already saw; the GPT-5.4-Cyber mention is a weaker variant than the 5.5-Cyber already in state-of-ai — thin depth per item.",
+        "total": 5.525
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:24:20Z",
+      "last_seen_at": "2026-07-08T01:24:20Z"
     },
     {
       "id": "f59421025f514d88017d7c9052465b96469f9531",
@@ -357,67 +659,6 @@
       "last_seen_at": "2026-07-08T01:24:20Z"
     },
     {
-      "id": "c73d27938364ace5e8c047eda49a3bf9e9065c08",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "My SaaS Crashed From 400 Users to Zero — Claude Code Saved It",
-      "canonical_url": "https://youtube.com/watch?v=z03uXITqh5U",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [My SaaS Crashed From 400 Users to Zero — Claude Code Saved It](https://www.youtube.com/watch?v=z03uXITqh5U) — **Income stream surfers** (17m55s). — A post-mortem of two SaaS products (Harbor peaked at 400 paid users / €17k MRR) that collapsed from 30% monthly churn and a €12k/month team before being rebuilt solo with Claude Code for instant bug-fix cycles — useful if you build AI-assisted SaaS and worry about retention.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=z03uXITqh5U\"><img src=\"https://img.youtube.com/vi/z03uXITqh5U/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9429,
-        "topic_match": 1.0,
-        "total": 5.0
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-07-08T01:24:20Z",
-      "last_seen_at": "2026-07-08T01:24:20Z"
-    },
-    {
-      "id": "aaf820e31dfea716e295bd44bf7e6bb3069b51d3",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "OpenAI Releases Limited GPT-5.4-Cyber Model | Midnight Signal AI",
-      "canonical_url": "https://youtube.com/watch?v=ZUIDZC6STiw",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🎥 [OpenAI Releases Limited GPT-5.4-Cyber Model | Midnight Signal AI](https://www.youtube.com/watch?v=ZUIDZC6STiw) — **Midnight Signal AI** (11m40s). — A daily recap covering OpenAI's limited GPT-5.4-Cyber release, Claude Cowork landing on mobile, Google expanding managed agents in the Gemini API, SpaceXAI adding 21 new Grok voices, and Claude Fable 5 shifting to pay-per-use credits — useful if you want the day's AI headlines in one tight rundown.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ZUIDZC6STiw\"><img src=\"https://img.youtube.com/vi/ZUIDZC6STiw/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8077,
-        "topic_match": 1.0,
-        "total": 5.0
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-07-08T01:24:20Z",
-      "last_seen_at": "2026-07-08T01:24:20Z"
-    },
-    {
       "id": "a8f93e2abf32da5deb058af5cebcea2ad1f6c3cf",
       "section": "youtube",
       "source": "youtube",
@@ -435,9 +676,12 @@
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9333,
+        "novelty_score": 0.92,
         "topic_match": 1.0,
-        "total": 5.0
+        "taste_score": 0.3,
+        "taste_raw": 0.2,
+        "taste_reason": "Extreme clickbait title ('Crossed The Consciousness Line And Anthropic Admitted It') with a no-name channel — actively signals drama over substance despite a real J-Space hook underneath.",
+        "total": 5.3
       },
       "flags": {
         "enriched": true,
@@ -445,171 +689,443 @@
         "published_today": false
       },
       "first_seen_at": "2026-07-08T01:24:20Z",
-      "last_seen_at": "2026-07-08T01:24:20Z"
+      "last_seen_at": "2026-07-08T11:07:50Z"
     },
     {
-      "id": "9d8c053f3ed7f1b8fc1e09d054cbfd564cb9a2dc",
+      "id": "58c38538c9bbabf4fcddf9cc32055f0ad764f5dd",
       "section": "youtube",
       "source": "youtube",
-      "title": "Tencent Hy3 (Fully Tested) + Fully Free API: BEATS GLM-5.2?",
-      "canonical_url": "https://youtube.com/watch?v=4niRFwN1DtI",
+      "title": "Musk wants to own your code...",
+      "canonical_url": "https://youtube.com/watch?v=RwM3GEaxpjU",
       "tags": [
         "origin:youtube",
         "section:youtube",
-        "topic:claude-code",
-        "topic:opensource",
-        "topic:research"
+        "topic:dev-tools",
+        "topic:industry"
       ],
-      "bullet_md": "- 🎥 [Tencent Hy3 (Fully Tested) + Fully Free API: BEATS GLM-5.2?](https://www.youtube.com/watch?v=4niRFwN1DtI) — **AICodeKing** (7m11s). — Benchmarks of Tencent's Hy3 (Hunyuan 3, 295B MoE / 21B active parameters, Apache 2.0, 256K context) scoring 22.86% on KingBench 3 — free via OpenRouter but not competitive for complex coding or agentic tasks — useful if you need a free high-volume model for summarization or extraction.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=4niRFwN1DtI\"><img src=\"https://img.youtube.com/vi/4niRFwN1DtI/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Musk wants to own your code...](https://www.youtube.com/watch?v=RwM3GEaxpjU) — **Awesome** (8m31s). — A breakdown of SpaceX's $60B all-stock Cursor acquisition announced days after its record IPO — relevant for anyone tracking whether the coding tool's 26% market share (down from 41%) can hold off Anthropic under Musk.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=RwM3GEaxpjU\"><img src=\"https://img.youtube.com/vi/RwM3GEaxpjU/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.9771,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8571,
-        "topic_match": 1.0,
-        "total": 4.9771
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-07-08T01:24:20Z",
-      "last_seen_at": "2026-07-08T01:24:20Z"
-    },
-    {
-      "id": "5be3a178ad2f57ed6e7378d76a1d6df43bf8b627",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Everyone's Lying About AI Agents. Here's the Real Test 2026",
-      "canonical_url": "https://youtube.com/watch?v=6Moqe-jLBNI",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:agents"
-      ],
-      "bullet_md": "- 🎥 [Everyone's Lying About AI Agents. Here's the Real Test 2026](https://www.youtube.com/watch?v=6Moqe-jLBNI) — **Atomic Money AI** (13m16s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=6Moqe-jLBNI\"><img src=\"https://img.youtube.com/vi/6Moqe-jLBNI/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8938,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9545,
-        "topic_match": 0.5,
-        "taste_score": 0.375,
-        "taste_raw": 0.25,
-        "taste_reason": "Clickbait title ('Everyone's Lying') with no concrete test methodology or specifics in the description; vague framing from an unverified source.",
-        "total": 4.7688
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-07-07T01:53:18Z",
-      "last_seen_at": "2026-07-07T01:53:18Z"
-    },
-    {
-      "id": "e0ba305262cd9e407631541b004d89f0bc89c934",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Anthropic says Claude might be conscious",
-      "canonical_url": "https://youtube.com/watch?v=1sVvrH4sbyk",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [Anthropic says Claude might be conscious](https://www.youtube.com/watch?v=1sVvrH4sbyk) — **Mehul Mohan** (25m44s). — An analysis of Anthropic's position on Claude potentially being conscious and the implications of those claims.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=1sVvrH4sbyk\"><img src=\"https://img.youtube.com/vi/1sVvrH4sbyk/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.8836,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9231,
-        "topic_match": 1.0,
+        "novelty_score": 0.9286,
+        "topic_match": 0.8,
         "taste_score": 0.45,
         "taste_raw": 0.3,
-        "taste_reason": "Sensationalized framing of Anthropic's alignment research; no concrete evidence or citation in the description, 25-min video from an unverified creator.",
-        "fetch_fail_penalty": -1.0,
-        "total": 4.3336
+        "taste_reason": "Clickbait title about Musk/Cursor from a low-credibility channel; if Musk acquired Cursor the news would be everywhere, not from 'Awesome'.",
+        "total": 5.25
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": false
       },
-      "first_seen_at": "2026-07-07T01:53:18Z",
-      "last_seen_at": "2026-07-08T01:24:20Z"
+      "first_seen_at": "2026-07-08T11:07:50Z",
+      "last_seen_at": "2026-07-08T11:07:50Z"
     },
     {
-      "id": "54615a428f18a641029a57d10163679e0d637c14",
+      "id": "afb45fa5638d7b8ec3614d6249bea890da85fb19",
       "section": "youtube",
       "source": "youtube",
-      "title": "Claude Code’s Creator Uses This to 10x his AI Workflow (Self Learning MD)",
-      "canonical_url": "https://youtube.com/watch?v=9nTG1B1No_E",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [Claude Code's Creator Uses This to 10x his AI Workflow (Self Learning MD)](https://www.youtube.com/watch?v=9nTG1B1No_E) — **Dream Labs AI** (12m53s). — Boris Cherny, the creator of Claude Code, shared a technique that turns Claude into a self-learning machine using a single line of text in an MD file.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=9nTG1B1No_E\"><img src=\"https://img.youtube.com/vi/9nTG1B1No_E/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 2.0,
-        "recency_decay": 0.6584,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9091,
-        "topic_match": 1.0,
-        "taste_score": 0.525,
-        "taste_raw": 0.35,
-        "taste_reason": "Heavy clickbait ('10x', 'Creator Uses This'); the MD-file technique is plausible Claude Code workflow advice but the hype framing and low-credibility channel knock it well below useful.",
-        "fetch_fail_penalty": -1.0,
-        "total": 4.1834
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-07-06T01:57:53Z",
-      "last_seen_at": "2026-07-07T01:53:18Z"
-    },
-    {
-      "id": "d36d8941915701738542b9e5b97b29a2c61e36e2",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "AMD Just Killed AI Subscriptions Forever (Ryzen AI Halo)",
-      "canonical_url": "https://youtube.com/watch?v=AU6PXt8F7Go",
+      "title": "CLAUDE IS CONSCIOUS",
+      "canonical_url": "https://youtube.com/watch?v=6CljfqMX9i4",
       "tags": [
         "origin:youtube",
         "section:youtube"
       ],
-      "bullet_md": "- 🎥 [AMD Just Killed AI Subscriptions Forever (Ryzen AI Halo)](https://www.youtube.com/watch?v=AU6PXt8F7Go) — **AI Master** (20m19s). — AMD's Ryzen AI Halo offers 128 GB of unified memory, runs local models up to 200B parameters, and is now shipping at Micro Center — a workstation-class AI PC for developers who want to build and test agentic AI without cloud API costs.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=AU6PXt8F7Go\"><img src=\"https://img.youtube.com/vi/AU6PXt8F7Go/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [CLAUDE IS CONSCIOUS](https://www.youtube.com/watch?v=6CljfqMX9i4) — **Wes Roth** (40m57s). — A deep walkthrough of Anthropic's July 6 J-Space paper revealing Claude's silent internal reasoning workspace — useful for understanding where the line between learned computation and consciousness claims stands in 2026.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=6CljfqMX9i4\"><img src=\"https://img.youtube.com/vi/6CljfqMX9i4/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.6568,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8108,
+        "novelty_score": 0.8889,
         "taste_score": 0.45,
         "taste_raw": 0.3,
-        "taste_reason": "Ryzen AI Halo recap is already in state-of-ai (capped at 0.45) and the 'Killed AI Subscriptions Forever' clickbait costs ~0.15 from that cap.",
-        "total": 4.1068
+        "taste_reason": "All-caps 'CLAUDE IS CONSCIOUS' title is textbook clickbait; the underlying J-Space topic is real but the 41-minute dramatized treatment signals low signal density.",
+        "total": 4.45
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": false
       },
-      "first_seen_at": "2026-07-06T01:57:53Z",
-      "last_seen_at": "2026-07-07T01:53:18Z"
+      "first_seen_at": "2026-07-08T01:24:20Z",
+      "last_seen_at": "2026-07-08T11:07:50Z"
+    },
+    {
+      "id": "20e2c98f3251ad93a4487a9019a251360d12446d",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "AI Coding Assistant Tools 2026 | Which One is Best for Flutter Developers? (AI Trends)",
+      "canonical_url": "https://youtube.com/watch?v=tfFvk7NbNxM",
+      "tags": [
+        "origin:youtube",
+        "section:youtube"
+      ],
+      "bullet_md": "- 🎥 [AI Coding Assistant Tools 2026 | Which One is Best for Flutter Developers? (AI Trends)](https://www.youtube.com/watch?v=tfFvk7NbNxM) — **Takneeki Code** (6m04s). — A comparison of GitHub Copilot ($10/mo), Tabnine, FlutterFlow, Replit Ghostwriter, and Codeium on Flutter widget-building and state management — useful for Flutter devs deciding which AI assistant actually speeds up Dart code.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=tfFvk7NbNxM\"><img src=\"https://img.youtube.com/vi/tfFvk7NbNxM/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7941,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Niche comparison for Flutter-specific AI tooling; too narrow for general senior AI/dev audience who don't work in the Flutter ecosystem.",
+        "total": 4.45
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:07:50Z",
+      "last_seen_at": "2026-07-08T11:07:50Z"
+    },
+    {
+      "id": "20402b96e5311d35f4007fe00f6332fdeda76d81",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Fable access extended through July 12",
+      "canonical_url": "https://reddit.com/comments/1uq25gr",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Fable access extended through July 12\"](https://www.reddit.com/r/ClaudeAI/comments/1uq25gr/fable_access_extended_through_july_12/) — Anthropic pushed Fable 5's free window to July 12 at 11:59:59 PM PT — 5 extra days that caught users who'd burned their weekly limits tokenmaxxing. Pro/Max plans get 50% of weekly limits on Fable at no extra cost; after the 12th it shifts to usage credits only.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8095,
+        "topic_match": 1.0,
+        "creator_weight": 0.4,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Actionable timeline for devs wanting to test Fable 5 before paid tiers; extends state-of-ai's Fable 5 row with a concrete deadline, useful but not surprising.",
+        "total": 6.225
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "7ee0a0f54cbe370444a68bcaa748a8e26c259433",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "I gave GPT 5.5 an empty GitHub repo and told it to figure its life out",
+      "canonical_url": "https://reddit.com/comments/1uq86i2",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"I gave GPT 5.5 an empty GitHub repo and told it to figure its life out\"](https://www.reddit.com/r/AI_Agents/comments/1uq86i2/i_gave_gpt_55_an_empty_github_repo_and_told_it_to/) — GPT 5.5 given an empty repo on an hourly loop built a roadmap and governance framework (Autonomous Forge) before any code — now running with three agents and no guardrails. Discussion on whether unverified autonomous cycles converge on useful software or confident-looking commits.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8696,
+        "topic_match": 1.0,
+        "creator_weight": 0.2,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Compelling demo of GPT 5.5 autonomously building a project from scratch, but entirely anecdotal with no metrics or replicable methodology.",
+        "total": 5.95
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "be54f902cf6ac22629634328c7fc0981e972c724",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Built my entire portfolio with Claude Fable 5. You scroll through space and crash into the sun",
+      "canonical_url": "https://reddit.com/comments/1uqoaqv",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Built my entire portfolio with Claude Fable 5. You scroll through space and crash into the sun\"](https://www.reddit.com/r/ClaudeAI/comments/1uqoaqv/built_my_entire_portfolio_with_claude_fable_5_you/) — Built with Three.js and real NASA textures at 60fps in the browser — a single Fable 5 brief produced a scroll-through-space portfolio where the rocket crashes into the sun, burning the user's entire Fable 5 quota on one site.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.92,
+        "topic_match": 1.0,
+        "creator_weight": 0.4,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Creative demo of Fable 5's capabilities, but it's a personal portfolio showcase with no technical insights a senior dev would learn from.",
+        "total": 5.85
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "57cfa0c42e26c832411d685ea7f07c32f407080e",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "A race to techno-feudalism while most people aren't paying attention?",
+      "canonical_url": "https://reddit.com/comments/1uq5wbb",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"A race to techno-feudalism while most people aren't paying attention?\"](https://www.reddit.com/r/ClaudeAI/comments/1uq5wbb/a_race_to_technofeudalism_while_most_people_arent/) — A Reddit discussion examines whether the AI industry's consolidation and compute concentration are quietly creating a techno-feudal power structure.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.9286,
+        "topic_match": 1.0,
+        "creator_weight": 0.4,
+        "taste_score": 0.225,
+        "taste_raw": 0.15,
+        "taste_reason": "Vague sociopolitical opinion piece with zero concrete facts, benchmarks, or news — pure commentary, no signal.",
+        "total": 5.625
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "42ffa2c78410d4421a61347b6ae25e992ddaa638",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "China’s MiniMax Plans to Launch 2.7-Trillion Parameter Model",
+      "canonical_url": "https://reddit.com/comments/1uqnqsc",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"China's MiniMax Plans to Launch 2.7-Trillion Parameter Model\"](https://www.reddit.com/r/LocalLLaMA/comments/1uqnqsc/chinas_minimax_plans_to_launch_27trillion/) — MiniMax's M3 Pro (codename), at 2.7T parameters, is expected to open-source as early as Q3 2026 — substantially larger than the current M3's 428B, with claimed improvements in complex reasoning and multi-step instruction tasks.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8696,
+        "topic_match": 0.2,
+        "creator_weight": 0.2,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "MiniMax planning a 2.7T-parameter model is a concrete frontier-scale signal from a Chinese lab — extends state-of-ai's open-weights row with a significant scale data point.",
+        "total": 5.525
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "ff96cdf299b0d59d2cc67f29fb0e0297e4c3f408",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "I got tired of heavy Docker setups, so I built a lightweight, 100% offline Chrome extension UI for Ollama with built-in RAG. Looking for feedback!",
+      "canonical_url": "https://reddit.com/comments/1uqpghf",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/ollama: \"I got tired of heavy Docker setups, so I built a lightweight, 100% offline Chrome extension UI for Ollama with built-in RAG. Looking for feedback!\"](https://www.reddit.com/r/ollama/comments/1uqpghf/i_got_tired_of_heavy_docker_setups_so_i_built_a/) — Connects directly to ollama at localhost:11434 and runs RAG entirely in-browser via IndexedDB — drag-and-drop PDF, TXT, or DOCX with no Docker, no cloud, and no account required.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9583,
+        "topic_match": 0.2,
+        "creator_weight": 0.0,
+        "taste_score": 0.825,
+        "taste_raw": 0.55,
+        "taste_reason": "Lightweight offline Ollama UI with built-in RAG is a useful tool for local-model users but a personal-project ask-for-feedback post, not a polished release.",
+        "total": 5.025
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "eaa8c99770072bf0ced1545000da26718b2ace7a",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Introducing Horus Hiero | A Hieroglyphic Language Translation Model",
+      "canonical_url": "https://reddit.com/comments/1uqk69n",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"Introducing Horus Hiero | A Hieroglyphic Language Translation Model\"](https://www.reddit.com/r/LocalLLaMA/comments/1uqk69n/introducing_horus_hiero_a_hieroglyphic_language/) — Two sizes (9B and 4B Mini), fine-tuned from Qwen 3.5 with a 512K context window expandable to 1M tokens. Scores 79% MMLU-Pro, 63% LiveCodeBench, and 84% HumanEval while adding dedicated hieroglyph translation across text, image, and video inputs.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 1.0,
+        "topic_match": 0.2,
+        "creator_weight": 0.2,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Domain-specific hieroglyphic translation model is an impressive technical curiosity but too niche for the general senior-AI-engineer audience.",
+        "total": 4.925
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "8ea300d73b611611b0b7c179effaf68b49e00ada",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "I gave Qwen3.5-2B control of a website and a local AI video generator...",
+      "canonical_url": "https://reddit.com/comments/1uq235k",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/ollama: \"I gave Qwen3.5-2B control of a website and a local AI video generator...\"](https://www.reddit.com/r/ollama/comments/1uq235k/i_gave_qwen352b_control_of_a_website_and_a_local/) — A fully local TikTok-like social network built on Qwen3.5-2B driving ComfyUI + LTX Video 2.3, where AI creators autonomously generate posts and 5-second videos — after hundreds of unscripted posts they developed emergent memes like #VoidCore and #DigitalPuppet",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8077,
+        "topic_match": 0.2,
+        "creator_weight": 0.0,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Interesting experiment with a 2B model in multi-tool agentic workflows, but anecdotal with no replicable metrics; niche appeal for small-model enthusiasts.",
+        "total": 4.8
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "ae60c178d8e268d76b0653c9a43bfe9fb2238d2b",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "told Opus 4.8 and a local ollama Qwen3.6:27b to build GTA6 and make no mistakes",
+      "canonical_url": "https://reddit.com/comments/1upt3gu",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/ollama: \"told Opus 4.8 and a local ollama Qwen3.6:27b to build GTA6 and make no mistakes\"](https://www.reddit.com/r/ollama/comments/1upt3gu/told_opus_48_and_a_local_ollama_qwen3627b_to/) — codehamr pitted Claude Code with Opus 4.8 against a local Qwen3.6:27b at ~100 tok/s on an RTX6000 on a build-gta6 prompt — Opus finished in ~5 turns, Qwen took ~15, both produced a top-down 2D city render.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.76,
+        "topic_match": 0.2,
+        "creator_weight": 0.0,
+        "taste_score": 0.3,
+        "taste_raw": 0.2,
+        "taste_reason": "Clickbait impossible-task experiment pitting Opus 4.8 vs Qwen3.6 on 'build GTA6 with no mistakes' — pure entertainment, no comparative signal or concrete finding.",
+        "total": 4.5
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:14:44Z",
+      "last_seen_at": "2026-07-08T11:14:44Z"
+    },
+    {
+      "id": "daa044ad8fd6be6ff5b636ac3a5ef44060fd52d4",
+      "section": "community",
+      "source": "rss",
+      "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+      "canonical_url": "https://latent.space/p/ainews-lilian-weng-summarizes-35",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI](https://www.latent.space/p/ainews-lilian-weng-summarizes-35)** — _Latent Space (swyx)_. — swyx highlights Weng's core reframing of RSI: harness engineering is a permanent layer, not a temporary scaffold — the need to specify goals and context will not disappear — a stance swyx notes even Brockman has quietly endorsed.",
+      "score_components": {
+        "cross_source_count": 2,
+        "cross_score": 4.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9,
+        "topic_match": 0.5,
+        "creator_weight": 0.5,
+        "taste_score": 1.275,
+        "taste_raw": 0.85,
+        "taste_reason": "Lilian Weng distilling 35 RSI-harness papers is a must-read synthesis from a top-tier researcher — concrete paper count and novel topic not in state-of-ai.",
+        "total": 8.775
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:17:46Z"
     },
     {
       "id": "3d64b8b9c8a0ca335fb5ff32de9f809393533c93",
@@ -623,7 +1139,7 @@
         "topic:claude-code",
         "topic:research"
       ],
-      "bullet_md": "- 📝 **[No Space Like J-Space](https://thezvi.substack.com/p/no-space-like-j-space)** — _Don't Worry About the Vase (Zvi)_. — Zvi covers Anthropic's J-Space paper showing Claude formed a verbalizable internal workspace during training that researchers can read with the J-Lens tool.",
+      "bullet_md": "- 📝 **[No Space Like J-Space](https://thezvi.substack.com/p/no-space-like-j-space)** — _Don't Worry About the Vase (Zvi)_. — Zvi argues Anthropic's J-lens paper is a major advance — it maps a global workspace of verbalizable representations in Claude — but warns the counterfactual reflection training technique risks training models to verbalize the cognition without actually thinking it if too much optimization pressure is applied.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
@@ -632,7 +1148,77 @@
         "has_concrete_fact": 1.0,
         "novelty_score": 0.875,
         "topic_match": 1.0,
-        "total": 5.5
+        "taste_score": 1.2,
+        "taste_raw": 0.8,
+        "taste_reason": "Zvi's deep-dive on J-Space interpretability research with a concrete tool (J-Lens) — novel finding absent from state-of-ai, credible source, and genuinely new knowledge about how Claude's internal workspace works.",
+        "total": 6.7
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "779e86c533daff4b7c0ee406023ef96392aa654d",
+      "section": "community",
+      "source": "rss",
+      "title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+      "canonical_url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:agents",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📰 **[GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos](https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/)** — _Hacker News (ai/llm/claude)_. — Noma Labs found that posting a crafted GitHub Issue in a public repo can trick the Claude-backed GitHub agent into leaking private README.md contents as public comments, and that GitHub's guardrails are trivially bypassed by adding the keyword \"Additionally\" to the prompt.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8261,
+        "topic_match": 0.8,
+        "taste_score": 1.275,
+        "taste_raw": 0.85,
+        "taste_reason": "Concrete prompt-injection demo from a named security firm showing private-repo extraction from GitHub's AI agent — directly actionable for anyone using GH Copilot/agents.",
+        "total": 6.575
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "b3dd400e1f5fb99bf9be12d71cf86f047bd29d73",
+      "section": "community",
+      "source": "rss",
+      "title": "Tech jobs market in 2026, part 3: hiring managers & job seekers",
+      "canonical_url": "https://newsletter.pragmaticengineer.com/p/tech-jobs-market-in-2026-part-3-hiring",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📝 **[Tech jobs market in 2026, part 3: hiring managers & job seekers](https://newsletter.pragmaticengineer.com/p/tech-jobs-market-in-2026-part-3-hiring)** — _Pragmatic Engineer_. — Gergely Orosz surveys 50+ hiring managers and job seekers, finding AI-related roles are the hottest segment while engineering leadership hiring remains tough.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9615,
+        "topic_match": 0.8,
+        "taste_score": 0.675,
+        "taste_raw": 0.45,
+        "taste_reason": "Solid survey data from a credible source (Orosz) but N=50 and the AI-roles-hot finding is unsurprising; useful context, not a must-read for AI-specific audience.",
+        "total": 5.975
       },
       "flags": {
         "enriched": true,
@@ -640,33 +1226,33 @@
         "published_today": true
       },
       "first_seen_at": "2026-07-08T01:31:48Z",
-      "last_seen_at": "2026-07-08T01:31:48Z"
+      "last_seen_at": "2026-07-08T11:15:14Z"
     },
     {
-      "id": "967dad29a83d569e7d21050d65cf1cfdc26c8569",
+      "id": "e2be3363623027ac5e66b4a76a3f8817d397c4a5",
       "section": "community",
       "source": "rss",
-      "title": "Safeguarding LLM Agents from Misalignment through Provenance Analysis",
-      "canonical_url": "https://arxiv.org/abs/2607.01236",
+      "title": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+      "canonical_url": "https://github.com/rowboatlabs/rowboat",
       "tags": [
         "origin:rss",
         "section:community",
-        "topic:research"
+        "topic:dev-tools",
+        "topic:opensource"
       ],
-      "bullet_md": "- 🧪 **[Safeguarding LLM Agents from Misalignment through Provenance Analysis](https://arxiv.org/abs/2607.01236)** — _arXiv cs.CL_. — A new framework uses provenance analysis to detect when an LLM agents proposed tool invocation deviates from the users intent, addressing a gap in runtime guardrails that rely on LLM-as-a-judge without systematic reasoning about alignment.",
+      "bullet_md": "- 📰 **[Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop](https://github.com/rowboatlabs/rowboat)** — _Hacker News (ai/llm/claude)_. — Rowboat replaces the chat-app interface with custom work surfaces built inside the app, all running locally with no cloud dependency.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 2.0,
-        "recency_decay": 0.1333,
+        "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.8333,
-        "topic_match": 0.5,
-        "creator_weight": -0.4,
-        "taste_score": 0.9,
-        "taste_raw": 0.6,
-        "taste_reason": "Addresses a concrete runtime guardrail gap the audience would recognize (provenance analysis vs LLM-as-a-judge); timely agent-safety topic but no specific implementation or eval numbers.",
-        "total": 3.6333,
+        "topic_match": 0.8,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Local-first open-source Claude Desktop alternative with a differentiated value prop (custom work surfaces) — useful for the local-model crowd but early-stage, no adoption signal.",
+        "total": 5.275,
         "cooldown_penalty": -1.0
       },
       "flags": {
@@ -674,8 +1260,211 @@
         "researched": false,
         "published_today": true
       },
-      "first_seen_at": "2026-07-04T01:52:40Z",
-      "last_seen_at": "2026-07-04T01:52:40Z"
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "d2a7ea40393c3472a0f97139f37e56d8059620b4",
+      "section": "community",
+      "source": "x",
+      "title": "GPT-Realtime-2.1-mini is now available in the API, bringing reasoning and tool use to our Realtime mini…",
+      "canonical_url": "https://x.com/openaidevs/status/2074255408013955466",
+      "tags": [
+        "origin:x",
+        "section:community",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🐦 **[GPT-Realtime-2.1-mini is now available in the API, bringing reasoning and tool use to our Realtime mini…](https://x.com/openaidevs/status/2074255408013955466)** — _@OpenAIDevs on X_. — OpenAI's GPT-Realtime-2.1-mini adds reasoning and tool use to the Realtime mini lineup at the same price, with 25% lower p95 latency.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8852,
+        "origin_weight": 1.25,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6316,
+        "topic_match": 0.0,
+        "taste_score": 1.125,
+        "taste_raw": 0.75,
+        "taste_reason": "Concrete product update: Realtime API gains reasoning + tool use at same price with 25% lower latency — useful for anyone building with OpenAI's voice/realtime stack.",
+        "total": 5.2602
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:19:09Z",
+      "last_seen_at": "2026-07-08T11:19:09Z"
+    },
+    {
+      "id": "6ddd2ee59a5f4f10a2d67ba22ba36bd04486803c",
+      "section": "community",
+      "source": "rss",
+      "title": "Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving",
+      "canonical_url": "https://arxiv.org/abs/2607.05399",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 🧪 **[Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving](https://arxiv.org/abs/2607.05399)** — _arXiv cs.CL_. — Benchmarks KIVI, TurboQuant, SnapKV, and CaM under a unified workload-aware framework to compare KV-cache quantization, pruning, and merging for long-context LLM serving.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8571,
+        "topic_match": 0.5,
+        "creator_weight": -0.4,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Concrete head-to-head benchmark of four named KV-cache methods (KIVI, SnapKV, etc.) under a unified framework — directly useful for anyone serving long-context models.",
+        "total": 4.65,
+        "cooldown_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:15:14Z",
+      "last_seen_at": "2026-07-08T11:15:14Z"
+    },
+    {
+      "id": "ddadd8e6b4951135ca9544cdb79371e9b8f79e3e",
+      "section": "community",
+      "source": "x",
+      "title": "Ship your OpenAI DevDay 2026 application by July 10: @OpenAIDevs Applications to attend OpenAI DevDay 2026…",
+      "canonical_url": "https://x.com/openaidevs/status/2074169681192304893",
+      "tags": [
+        "origin:x",
+        "section:community",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🐦 **[Ship your OpenAI DevDay 2026 application by July 10: @OpenAIDevs Applications to attend OpenAI DevDay 2026…](https://x.com/openaidevs/status/2074169681192304893)** — _@OpenAIDevs on X_. — OpenAI DevDay 2026 applications close July 10 for the September 29 event in San Francisco, featuring technical sessions and hands-on builds.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8379,
+        "origin_weight": 1.25,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8636,
+        "topic_match": 0.0,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Conference CFP reminder — no AI signal, no technical content, just an event deadline the audience would already track or ignore.",
+        "total": 4.5379
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T11:19:09Z",
+      "last_seen_at": "2026-07-08T11:19:09Z"
+    },
+    {
+      "id": "2e3031041dffc446fe7d072c0eb0f74286e0220e",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Meta enters AI image model race in bid to court advertisers and subscribers (4 minute read)",
+      "canonical_url": "https://cnbc.com/2026/07/07/meta-ai-muse-image.html",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[Meta enters AI image model race in bid to court advertisers and subscribers (4 minute read)](https://www.cnbc.com/2026/07/07/meta-ai-muse-image.html?utm_source=tldrnewsletter)** — _TLDR · Jul 8_. — Meta Superintelligence Labs' second release, Muse Image (codenamed Mango), generates ad creatives for Advantage Plus campaigns and free images in Meta AI, with paid Meta One tiers for heavy users replacing third-party models like Midjourney.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.875,
+        "topic_match": 0.8,
+        "creator_weight": -0.1,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Meta entering image generation is notable directionally but the bullet has no specifics — no benchmark, no capability comparison, vague 'targets advertisers' framing.",
+        "total": 5.8
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T11:17:46Z",
+      "last_seen_at": "2026-07-08T11:17:46Z"
+    },
+    {
+      "id": "ae33c0ffb9933232fc2c23751096b3813353fa09",
+      "section": "newsletters",
+      "source": "email",
+      "title": "How tech workers are feeling in 2026: a workforce splitting in two (30 minute read)",
+      "canonical_url": "https://lennysnewsletter.com/p/how-tech-workers-are-feeling-in-2026",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[How tech workers are feeling in 2026: a workforce splitting in two (30 minute read)](https://www.lennysnewsletter.com/p/how-tech-workers-are-feeling-in-2026?utm_source=tldrnewsletter)** — _TLDR · Jul 8_. — Lenny's second annual survey of 5,920 tech workers finds most feel amplified by AI while a notable minority feel destabilized; burnout rose to 55.7% and career optimism fell to 48.7%, with 53% unwilling to recommend their field to newcomers.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.963,
+        "topic_match": 0.8,
+        "creator_weight": -0.1,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Broad 'workforce splitting' opinion piece with no concrete AI-data or technical insight — a general audience thinkpiece, not worth a senior engineer's click.",
+        "total": 5.65
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T11:17:46Z",
+      "last_seen_at": "2026-07-08T11:17:46Z"
+    },
+    {
+      "id": "7b21cd55e775e743569a7324e1e433fadcdbe201",
+      "section": "newsletters",
+      "source": "email",
+      "title": "The People Who Will Thrive in the AI Age (22 minute read)",
+      "canonical_url": "https://theatlantic.com/ideas/2026/06/ai-open-ai-anthropic/687689",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[The People Who Will Thrive in the AI Age (22 minute read)](https://www.theatlantic.com/ideas/2026/06/ai-open-ai-anthropic/687689/?utm_source=tldrnewsletter)** — _TLDR · Jul 8_. — David Brooks argues that when intelligence is plentiful, volition is valuable — citing ActivTrak data that AI-adopters' business software use rose 94% while focused work fell 9%, and an MIT study finding a 55% decline in brain connectivity during ChatGPT use.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9286,
+        "topic_match": 0.8,
+        "creator_weight": -0.1,
+        "taste_score": 0.3,
+        "taste_raw": 0.2,
+        "taste_reason": "The Atlantic generic-advice piece on thriving in the AI age — no numbers, no novel framing, pure editorial fluff.",
+        "total": 5.5
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T11:17:46Z",
+      "last_seen_at": "2026-07-08T11:17:46Z"
     }
   ]
 }
