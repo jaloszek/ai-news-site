@@ -32,7 +32,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-07-05.html"><div class="cal-num">5</div><ul class="cal-highlights"><li>🔒 Alibaba bans Claude Code</li><li>✨ NVIDIA Nemotron 3 Ultra</li><li>🛠 pxpipe token hack</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-06.html"><div class="cal-num">6</div><ul class="cal-highlights"><li>🚀 Claude Code C&amp;C Port</li><li>🛠 LangChain CC Clone</li><li>🧪 BPE Safety Bypass</li><li>🤖 Shepherd Agent VCS</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🛠 CC v2.1.202</li><li>🚀 Zhipu ZCode</li><li>✨ Tencent Hy3</li><li>🛠 OpenCode v1.17.14</li></ul></a>
-    <a class="cal-cell cal-filled" href="content/2026-07-08.html"><div class="cal-num">8</div><ul class="cal-highlights"><li>🚀 GPT-5.6</li><li>🧪 Jacobian Lens</li><li>🛠 CC v2.1.203</li><li>🤖 Gemini Agents</li><li>🔒 GitLost</li></ul></a>
+    <a class="cal-cell cal-filled" href="content/2026-07-08.html"><div class="cal-num">8</div><ul class="cal-highlights"><li>🚀 GPT-5.6</li><li>🛠 CC v2.1.203/204</li><li>🔵 Gemini Managed Agents</li><li>🧪 Jacobian Lens</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">9</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">10</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">11</div></div>
