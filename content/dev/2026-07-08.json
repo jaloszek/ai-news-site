@@ -1,0 +1,681 @@
+{
+  "date": "2026-07-08",
+  "generated_at": "2026-07-08T01:48:17+00:00",
+  "candidate_count": 20,
+  "researched_count": 18,
+  "published_count": 14,
+  "section_limits": {
+    "claude-code": 5,
+    "ai-world": 5,
+    "youtube": 3,
+    "community": 8,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 2,
+  "items": [
+    {
+      "id": "54184f3bf815e44c6688ff7088af051f205cb6ef",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.203",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.203](https://github.com/anthropics/claude-code/releases/tag/v2.1.203)** — _Claude Code releases_. — Warns before login expiry so background sessions aren't interrupted, fixes the 15–20 s macOS stall on opening background agents (regression in 2.1.196), and recovers sessions whose daemon token goes stale instead of leaving them permanently unresponsive. Binary size drops ~7 MB from lazy-loaded dependencies.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8667,
+        "topic_match": 1.0,
+        "creator_weight": 1.0,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Three concrete changes including a named 15-20s macOS stall fix that affects many daily users; login-expiry warning is also practically useful for background sessions.",
+        "total": 7.55
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "7bc56d98029478e3a82ce6ab60c5757629b2fcbf",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v2.1.204",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🛠 **[v2.1.204](https://github.com/anthropics/claude-code/releases/tag/v2.1.204)** — _Claude Code releases_. — Fixes hook events not streaming during SessionStart hooks in headless sessions, which could cause remote workers to be idle-reaped mid-hook.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9167,
+        "topic_match": 1.0,
+        "creator_weight": 1.0,
+        "taste_score": 0.975,
+        "taste_raw": 0.65,
+        "taste_reason": "Concrete fix for a specific edge case (headless session hooks causing idle-reap) that affects CI/remote workers — narrow but actionable for daily Claude Code users.",
+        "total": 7.475
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "3a9f7b256d934d6042e65da6b2072c67dcd7ce65",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v1.17.15",
+      "canonical_url": "https://github.com/anomalyco/opencode/releases/tag/v1.17.15",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[v1.17.15](https://github.com/anomalyco/opencode/releases/tag/v1.17.15)** — _OpenCode releases_. — Z.ai context-window overflows now surface the correct failure mode instead of a generic error, and model-details tooltips are restored in the model picker.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9444,
+        "topic_match": 0.8,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Minor error-handling improvements in a niche harness — solid but most readers will skim past.",
+        "total": 6.05
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "e1dbcf33c874080678607df8c494fa501c0e4ef7",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "Hermes Agent v0.18.1 (2026.7.7)",
+      "canonical_url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:agents",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[Hermes Agent v0.18.1 (2026.7.7)](https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7)** — _Hermes Agent releases_. — Rolls up ~667 commits across ~990 files (+89.5k/−10.4k lines) since v0.18.0, including Windows installer self-healing, WhatsApp dashboard pairing, and MCP/provider fixes.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8636,
+        "topic_match": 0.8,
+        "taste_score": 0.6,
+        "taste_raw": 0.4,
+        "taste_reason": "Commit-count rollup with zero feature-specific detail — a packaging release with nothing for the reader to learn.",
+        "total": 5.9
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "87248c3e75db1b14fc9df68c9623a99783337a66",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Copilot goes cheap as Microsoft phases out OpenAI and Anthropic models to cut costs",
+      "canonical_url": "https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:dev-tools",
+        "topic:industry",
+        "topic:openai"
+      ],
+      "bullet_md": "- 📰 **[Copilot goes cheap as Microsoft phases out OpenAI and Anthropic models to cut costs](https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs/)** — _The Decoder_. — Microsoft's MAI models are handling tens of thousands of weekly Copilot requests in Excel and Outlook, replacing OpenAI and Anthropic. Mustafa Suleyman said Microsoft aims to reduce and ultimately eliminate Anthropic spend, with cheaper MAI defaults and third-party models as potential paid add-ons.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8636,
+        "topic_match": 1.0,
+        "taste_score": 1.05,
+        "taste_raw": 0.7,
+        "taste_reason": "Significant industry signal — Microsoft in-housing model costs by phasing out OpenAI/Anthropic in Office products; clickbait title ('goes cheap') docks ~0.2.",
+        "total": 6.55
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "f7eb2a868aacbc6f7921959048830fe084f1211f",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
+      "canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:google"
+      ],
+      "bullet_md": "- 🔵 **[Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more](https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/)** — _Google AI blog_. — Google's Managed Agents in the Gemini API add background execution with a polling ID for async workflows and direct remote MCP server connections — turning them from a synchronous sandbox into something closer to a worker agent.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9742,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7083,
+        "topic_match": 1.0,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Concrete feature additions (background tasks, remote MCP) to Google's managed agent platform — useful but not surprising for anyone following Gemini API.",
+        "total": 6.3742
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "dc527b2aef93d4fb2aa03bf6d7fc05fc4d6c615d",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Mistral CEO Mensch says proprietary AI models give labs a front-row seat to your business processes",
+      "canonical_url": "https://the-decoder.com/mistral-ceo-mensch-says-proprietary-ai-models-give-labs-a-front-row-seat-to-your-business-processes",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:industry",
+        "topic:openai",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 📰 **[Mistral CEO Mensch says proprietary AI models give labs a front-row seat to your business processes](https://the-decoder.com/mistral-ceo-mensch-says-proprietary-ai-models-give-labs-a-front-row-seat-to-your-business-processes/)** — _The Decoder_. — Mistral CEO Arthur Mensch warns that proprietary AI models give their makers a window into customer business processes — labs that have a track record of going after their most successful customers thanks to this information. He argues for open models alongside Palantir CEO Alex Karp, who posted a similar call for AI sovereignty days earlier.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.5864,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.88,
+        "topic_match": 1.0,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "Credible CEO making a relevant data-privacy argument, but it's opinion without new evidence or numbers — worth a skim, not a click-through.",
+        "total": 5.8364
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-06T02:05:02Z",
+      "last_seen_at": "2026-07-06T02:05:02Z"
+    },
+    {
+      "id": "b29a21395768cd97a181799d4d884d389985322a",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot",
+      "canonical_url": "https://huggingface.co/blog/skypilot-hf-storage",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot](https://huggingface.co/blog/skypilot-hf-storage)** — _Hugging Face blog_. — Hugging Face Storage is now a first-class SkyPilot backend — mount any Hub repo or bucket with a single hf:// URL and run compute on any of 20+ cloud providers with zero egress on reads. At $12-18/TB/month versus S3's $23/TB plus egress, it removes the cost penalty that usually pins AI workloads to wherever the data lives.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.85,
+        "topic_match": 0.2,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Zero-egress cross-cloud storage is a concrete cost-saving feature with practical multi-cloud value.",
+        "total": 5.5
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "ca9a2a21da074b1826986835c8247c4c7ed792ab",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "From Hugging Face to Amazon SageMaker Studio in one click",
+      "canonical_url": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[From Hugging Face to Amazon SageMaker Studio in one click](https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio)** — _Hugging Face blog_. — Hugging Face models now deep-link into Amazon SageMaker Studio — one click lands on a pre-configured fine-tuning or deployment page with IAM permissions already set and GPU quota shown in the instance picker, skipping the usual multi-step AWS Console setup.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8,
+        "topic_match": 0.2,
+        "taste_score": 0.75,
+        "taste_raw": 0.5,
+        "taste_reason": "One-click deployment integration — a convenience feature for AWS practitioners, no novel capability.",
+        "total": 5.45
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "f59421025f514d88017d7c9052465b96469f9531",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "FULLY FREE Fable 5 & Sonnet 5 API + OpenCode: IT'S ACTUALLY REAL!",
+      "canonical_url": "https://youtube.com/watch?v=E0gEIoHdHiw",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:dev-tools",
+        "topic:google",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [FULLY FREE Fable 5 & Sonnet 5 API + OpenCode: IT'S ACTUALLY REAL!](https://www.youtube.com/watch?v=E0gEIoHdHiw) — **AICodeKing** (5m59s). — Free access to Claude Fable 5, Sonnet 5, and other frontier models through ZenMux and Verdent — for developers who want to try top-tier models without a paid subscription.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=E0gEIoHdHiw\"><img src=\"https://img.youtube.com/vi/E0gEIoHdHiw/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.7771,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8182,
+        "topic_match": 1.0,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Clickbait ALL-CAPS title from a low-credibility channel; 'Fable 5' and 'Sonnet 5' are not recognized model names in the known baseline, making the core claim suspect.",
+        "total": 5.3021
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-07T01:53:18Z",
+      "last_seen_at": "2026-07-08T01:24:20Z"
+    },
+    {
+      "id": "c73d27938364ace5e8c047eda49a3bf9e9065c08",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "My SaaS Crashed From 400 Users to Zero — Claude Code Saved It",
+      "canonical_url": "https://youtube.com/watch?v=z03uXITqh5U",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [My SaaS Crashed From 400 Users to Zero — Claude Code Saved It](https://www.youtube.com/watch?v=z03uXITqh5U) — **Income stream surfers** (17m55s). — A post-mortem of two SaaS products (Harbor peaked at 400 paid users / €17k MRR) that collapsed from 30% monthly churn and a €12k/month team before being rebuilt solo with Claude Code for instant bug-fix cycles — useful if you build AI-assisted SaaS and worry about retention.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=z03uXITqh5U\"><img src=\"https://img.youtube.com/vi/z03uXITqh5U/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9429,
+        "topic_match": 1.0,
+        "total": 5.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:24:20Z",
+      "last_seen_at": "2026-07-08T01:24:20Z"
+    },
+    {
+      "id": "aaf820e31dfea716e295bd44bf7e6bb3069b51d3",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "OpenAI Releases Limited GPT-5.4-Cyber Model | Midnight Signal AI",
+      "canonical_url": "https://youtube.com/watch?v=ZUIDZC6STiw",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [OpenAI Releases Limited GPT-5.4-Cyber Model | Midnight Signal AI](https://www.youtube.com/watch?v=ZUIDZC6STiw) — **Midnight Signal AI** (11m40s). — A daily recap covering OpenAI's limited GPT-5.4-Cyber release, Claude Cowork landing on mobile, Google expanding managed agents in the Gemini API, SpaceXAI adding 21 new Grok voices, and Claude Fable 5 shifting to pay-per-use credits — useful if you want the day's AI headlines in one tight rundown.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ZUIDZC6STiw\"><img src=\"https://img.youtube.com/vi/ZUIDZC6STiw/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8077,
+        "topic_match": 1.0,
+        "total": 5.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:24:20Z",
+      "last_seen_at": "2026-07-08T01:24:20Z"
+    },
+    {
+      "id": "a8f93e2abf32da5deb058af5cebcea2ad1f6c3cf",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Claude Just Crossed The Consciousness Line And Anthropic Admitted It",
+      "canonical_url": "https://youtube.com/watch?v=M5-3c6mzq0U",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Claude Just Crossed The Consciousness Line And Anthropic Admitted It](https://www.youtube.com/watch?v=M5-3c6mzq0U) — **AI Revolution** (15m13s). — A walkthrough of Anthropic's J-Space paper (July 2026) describing a hidden internal workspace where Claude silently reasons before speaking — detectable via the Jacobian lens technique and editable by swapping internal patterns — useful if you follow AI interpretability research and want to understand how Claude thinks without saying it.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=M5-3c6mzq0U\"><img src=\"https://img.youtube.com/vi/M5-3c6mzq0U/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9333,
+        "topic_match": 1.0,
+        "total": 5.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T01:24:20Z",
+      "last_seen_at": "2026-07-08T01:24:20Z"
+    },
+    {
+      "id": "9d8c053f3ed7f1b8fc1e09d054cbfd564cb9a2dc",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Tencent Hy3 (Fully Tested) + Fully Free API: BEATS GLM-5.2?",
+      "canonical_url": "https://youtube.com/watch?v=4niRFwN1DtI",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 🎥 [Tencent Hy3 (Fully Tested) + Fully Free API: BEATS GLM-5.2?](https://www.youtube.com/watch?v=4niRFwN1DtI) — **AICodeKing** (7m11s). — Benchmarks of Tencent's Hy3 (Hunyuan 3, 295B MoE / 21B active parameters, Apache 2.0, 256K context) scoring 22.86% on KingBench 3 — free via OpenRouter but not competitive for complex coding or agentic tasks — useful if you need a free high-volume model for summarization or extraction.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=4niRFwN1DtI\"><img src=\"https://img.youtube.com/vi/4niRFwN1DtI/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.9771,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8571,
+        "topic_match": 1.0,
+        "total": 4.9771
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-08T01:24:20Z",
+      "last_seen_at": "2026-07-08T01:24:20Z"
+    },
+    {
+      "id": "5be3a178ad2f57ed6e7378d76a1d6df43bf8b627",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Everyone's Lying About AI Agents. Here's the Real Test 2026",
+      "canonical_url": "https://youtube.com/watch?v=6Moqe-jLBNI",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents"
+      ],
+      "bullet_md": "- 🎥 [Everyone's Lying About AI Agents. Here's the Real Test 2026](https://www.youtube.com/watch?v=6Moqe-jLBNI) — **Atomic Money AI** (13m16s).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=6Moqe-jLBNI\"><img src=\"https://img.youtube.com/vi/6Moqe-jLBNI/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8938,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9545,
+        "topic_match": 0.5,
+        "taste_score": 0.375,
+        "taste_raw": 0.25,
+        "taste_reason": "Clickbait title ('Everyone's Lying') with no concrete test methodology or specifics in the description; vague framing from an unverified source.",
+        "total": 4.7688
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-07T01:53:18Z",
+      "last_seen_at": "2026-07-07T01:53:18Z"
+    },
+    {
+      "id": "e0ba305262cd9e407631541b004d89f0bc89c934",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Anthropic says Claude might be conscious",
+      "canonical_url": "https://youtube.com/watch?v=1sVvrH4sbyk",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Anthropic says Claude might be conscious](https://www.youtube.com/watch?v=1sVvrH4sbyk) — **Mehul Mohan** (25m44s). — An analysis of Anthropic's position on Claude potentially being conscious and the implications of those claims.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=1sVvrH4sbyk\"><img src=\"https://img.youtube.com/vi/1sVvrH4sbyk/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.8836,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9231,
+        "topic_match": 1.0,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Sensationalized framing of Anthropic's alignment research; no concrete evidence or citation in the description, 25-min video from an unverified creator.",
+        "fetch_fail_penalty": -1.0,
+        "total": 4.3336
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-07T01:53:18Z",
+      "last_seen_at": "2026-07-08T01:24:20Z"
+    },
+    {
+      "id": "54615a428f18a641029a57d10163679e0d637c14",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Claude Code’s Creator Uses This to 10x his AI Workflow (Self Learning MD)",
+      "canonical_url": "https://youtube.com/watch?v=9nTG1B1No_E",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Claude Code's Creator Uses This to 10x his AI Workflow (Self Learning MD)](https://www.youtube.com/watch?v=9nTG1B1No_E) — **Dream Labs AI** (12m53s). — Boris Cherny, the creator of Claude Code, shared a technique that turns Claude into a self-learning machine using a single line of text in an MD file.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=9nTG1B1No_E\"><img src=\"https://img.youtube.com/vi/9nTG1B1No_E/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.6584,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9091,
+        "topic_match": 1.0,
+        "taste_score": 0.525,
+        "taste_raw": 0.35,
+        "taste_reason": "Heavy clickbait ('10x', 'Creator Uses This'); the MD-file technique is plausible Claude Code workflow advice but the hype framing and low-credibility channel knock it well below useful.",
+        "fetch_fail_penalty": -1.0,
+        "total": 4.1834
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-06T01:57:53Z",
+      "last_seen_at": "2026-07-07T01:53:18Z"
+    },
+    {
+      "id": "d36d8941915701738542b9e5b97b29a2c61e36e2",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "AMD Just Killed AI Subscriptions Forever (Ryzen AI Halo)",
+      "canonical_url": "https://youtube.com/watch?v=AU6PXt8F7Go",
+      "tags": [
+        "origin:youtube",
+        "section:youtube"
+      ],
+      "bullet_md": "- 🎥 [AMD Just Killed AI Subscriptions Forever (Ryzen AI Halo)](https://www.youtube.com/watch?v=AU6PXt8F7Go) — **AI Master** (20m19s). — AMD's Ryzen AI Halo offers 128 GB of unified memory, runs local models up to 200B parameters, and is now shipping at Micro Center — a workstation-class AI PC for developers who want to build and test agentic AI without cloud API costs.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=AU6PXt8F7Go\"><img src=\"https://img.youtube.com/vi/AU6PXt8F7Go/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.6568,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8108,
+        "taste_score": 0.45,
+        "taste_raw": 0.3,
+        "taste_reason": "Ryzen AI Halo recap is already in state-of-ai (capped at 0.45) and the 'Killed AI Subscriptions Forever' clickbait costs ~0.15 from that cap.",
+        "total": 4.1068
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-07-06T01:57:53Z",
+      "last_seen_at": "2026-07-07T01:53:18Z"
+    },
+    {
+      "id": "3d64b8b9c8a0ca335fb5ff32de9f809393533c93",
+      "section": "community",
+      "source": "rss",
+      "title": "No Space Like J-Space",
+      "canonical_url": "https://thezvi.substack.com/p/no-space-like-j-space",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:claude-code",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[No Space Like J-Space](https://thezvi.substack.com/p/no-space-like-j-space)** — _Don't Worry About the Vase (Zvi)_. — Zvi covers Anthropic's J-Space paper showing Claude formed a verbalizable internal workspace during training that researchers can read with the J-Lens tool.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.875,
+        "topic_match": 1.0,
+        "total": 5.5
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-08T01:31:48Z",
+      "last_seen_at": "2026-07-08T01:31:48Z"
+    },
+    {
+      "id": "967dad29a83d569e7d21050d65cf1cfdc26c8569",
+      "section": "community",
+      "source": "rss",
+      "title": "Safeguarding LLM Agents from Misalignment through Provenance Analysis",
+      "canonical_url": "https://arxiv.org/abs/2607.01236",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 🧪 **[Safeguarding LLM Agents from Misalignment through Provenance Analysis](https://arxiv.org/abs/2607.01236)** — _arXiv cs.CL_. — A new framework uses provenance analysis to detect when an LLM agents proposed tool invocation deviates from the users intent, addressing a gap in runtime guardrails that rely on LLM-as-a-judge without systematic reasoning about alignment.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 2.0,
+        "recency_decay": 0.1333,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
+        "topic_match": 0.5,
+        "creator_weight": -0.4,
+        "taste_score": 0.9,
+        "taste_raw": 0.6,
+        "taste_reason": "Addresses a concrete runtime guardrail gap the audience would recognize (provenance analysis vs LLM-as-a-judge); timely agent-safety topic but no specific implementation or eval numbers.",
+        "total": 3.6333,
+        "cooldown_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-07-04T01:52:40Z",
+      "last_seen_at": "2026-07-04T01:52:40Z"
+    }
+  ]
+}
