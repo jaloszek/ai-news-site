@@ -19,6 +19,7 @@
   --acc-coding-agents: #d97757;
   --acc-ai-world: #5c9cf5;
   --acc-youtube: #e5484d;
+  --acc-reddit: #ff4500;       /* Reddit brand orange */
   --acc-community: #4cae5d;
   --acc-newsletters: #a06ee8;
   --acc-gossip: #e54d8b;
@@ -158,6 +159,7 @@ h3 {
 .news-section[data-section="claude-code"]  { --acc: var(--acc-coding-agents); }
 .news-section[data-section="ai-world"]     { --acc: var(--acc-ai-world); }
 .news-section[data-section="youtube"]      { --acc: var(--acc-youtube); }
+.news-section[data-section="reddit"]       { --acc: var(--acc-reddit); }
 .news-section[data-section="community"]    { --acc: var(--acc-community); }
 .news-section[data-section="newsletters"]  { --acc: var(--acc-newsletters); }
 .news-section[data-section="gossip"]       { --acc: var(--acc-gossip); }
@@ -193,7 +195,7 @@ h3 {
 /* Source attribution (_The Decoder_ / _TLDR · Jul 6_) */
 .news-section em { color: var(--muted); font-style: normal; font-size: 0.88em; }
 
-/* Community group labels (**Reddit — Local AI**) */
+/* Reddit group labels (**Local AI** / **Claude & Coding** / **AI World**) */
 .news-section > p > strong {
   display: inline-block;
   font-size: 0.75rem;

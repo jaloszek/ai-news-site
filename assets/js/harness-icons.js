@@ -23,6 +23,7 @@
     "claude code": "claude-code",
     "ai world": "ai-world",
     "youtube": "youtube",
+    "reddit": "reddit",
     "community": "community",
     "newsletters": "newsletters",
     "gossip": "gossip"
