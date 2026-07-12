@@ -32,6 +32,10 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Aider blog | <https://aider.chat/feed.xml> | dev-tools | Coding-agent changelog — benchmark posts + release notes from a direct Claude Code competitor. Canonical feed is /feed.xml (the doc's /blog/feed.xml 404s). |
 | Continue.dev blog | <https://blog.continue.dev/feed.xml> | dev-tools | Open-source AI coding assistant — release notes + agent-workflow posts. Canonical feed is /feed.xml (the doc's /rss/ 404s). |
 | GitHub AI blog | <https://github.blog/ai-and-ml/feed/> | dev-tools | Copilot updates + GitHub AI/agent features — squarely on the coding-agent beat. |
+| Cursor changelog | <https://www.cursor.com/changelog/rss.xml> | dev-tools | Cursor changelog — top coding-agent competitor, previously only reachable via r/cursor. Verified fresh 2026-07-12 (redirects www.cursor.com -> cursor.com, resolves to valid RSS). |
+| Gemini CLI releases | <https://github.com/google-gemini/gemini-cli/releases.atom> | dev-tools | Gemini CLI releases — Google's terminal coding agent, one entry per version. Verified fresh 2026-07-12. |
+| Qwen Code releases | <https://github.com/QwenLM/qwen-code/releases.atom> | dev-tools | Qwen Code releases — Alibaba's open-source coding agent CLI. Verified fresh 2026-07-12. |
+| Crush releases | <https://github.com/charmbracelet/crush/releases.atom> | dev-tools | Crush (charmbracelet) — terminal AI coding agent, structured per-version releases.atom. Verified fresh 2026-07-12. |
 
 ### AI World
 
@@ -45,6 +49,8 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | The Decoder | <https://the-decoder.com/feed/> | industry | AI-specific newsroom — frontier-model launches, research, daily cadence. Verified fresh 2026-06-30. |
 | TechCrunch AI | <https://techcrunch.com/category/artificial-intelligence/feed/> | industry | TechCrunch AI category — frontier launches + industry/funding/policy, daily cadence. Verified fresh 2026-06-30. |
 | MIT Tech Review AI | <https://www.technologyreview.com/topic/artificial-intelligence/feed/> | industry | MIT Technology Review AI topic — high-editorial-quality frontier/industry analysis, daily-ish. Verified fresh 2026-06-30. |
+| Ollama blog | <https://ollama.com/blog/rss.xml> | opensource | Ollama — local-model launch news; Ollama already appears in the Reddit list & tagger keywords but had no feed until now. Verified fresh 2026-07-12. |
+| Mistral news | <https://mistral.ai/rss.xml> | opensource | Mistral news — round-2 correction: an earlier pass (2026-06) tested `mistral.ai/news/rss.xml` (404) and concluded no RSS existed; `/rss.xml` (no `/news/` prefix) works. Verified fresh 2026-07-12. |
 
 ### Community — Tier S (top long-form authors)
 
