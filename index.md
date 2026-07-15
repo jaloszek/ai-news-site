@@ -39,7 +39,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-07-12.html"><div class="cal-num">12</div><ul class="cal-highlights"><li>🛠 Claude Code browser</li><li>✨ GPT-5.6 Sol/Terra/Luna</li><li>✨ Muse Spark 1.1</li><li>🛠 CC v2.1.206</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-13.html"><div class="cal-num">13</div><ul class="cal-highlights"><li>✨ GPT-5.6 Sol</li><li>💰 Muse Spark 1.1 pricing</li><li>🧪 AgenticSTS memory agents</li><li>🛠 Adaptive Recall MCP</li><li>📰 Apple sues OpenAI</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-14.html"><div class="cal-num">14</div><ul class="cal-highlights"><li>🛠 CC v2.1.208</li><li>🛠 OpenCode v1.17.19</li><li>💰 Nous Research $1.5B</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">15</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-07-15.html"><div class="cal-num">15</div><ul class="cal-highlights"><li>🛠 CC v2.1.210</li><li>🚀 Claude for Teachers</li><li>🧪 Claude values study</li><li>🛠 OpenCode v1.18.0</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">16</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">17</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">18</div></div>
