@@ -42,7 +42,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-07-15.html"><div class="cal-num">15</div><ul class="cal-highlights"><li>🛠 CC v2.1.210</li><li>🚀 Claude for Teachers</li><li>🧪 Claude values study</li><li>🛠 OpenCode v1.18.0</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-16.html"><div class="cal-num">16</div><ul class="cal-highlights"><li>🧪 GPT-Red</li><li>🛠 OpenCode v1.18.2</li><li>🤖 Vercel Eve</li><li>🟡 Inkling</li><li>🛠 CC v2.1.211</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>🛠 CC v2.1.212</li><li>✨ Kimi K3</li><li>📝 Thinky Inkling</li><li>💬 Grok CLI leak</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">18</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-07-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🧪 Anthropic agentic misalignment</li><li>🛠 CC v2.1.214</li><li>📰 Anthropic-Meta compute</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">19</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>
