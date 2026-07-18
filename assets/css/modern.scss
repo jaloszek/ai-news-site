@@ -2,9 +2,11 @@
 ---
 /* ── AI News Daily — custom design (ux/redesign-preview) ──────────────────
    Replaces jekyll-theme-midnight's stylesheet entirely (the theme stays in
-   _config.yml only so its _includes keep resolving). Dark-first with an
-   automatic light mode. Section identity comes from one accent color per
-   section + per-harness icons injected by assets/js/harness-icons.js. */
+   _config.yml only so its _includes keep resolving). Always dark — no
+   prefers-color-scheme light override: embedded webviews (e.g. Messenger
+   on Android) report light and used to flip the site white. Section
+   identity comes from one accent color per section + per-harness icons
+   injected by assets/js/harness-icons.js. */
 
 :root {
   --bg: #14161b;
@@ -25,19 +27,6 @@
   --acc-gossip: #e54d8b;
   --radius: 12px;
   --content-width: 880px;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #f7f7f5;
-    --surface: #ffffff;
-    --surface-2: #f0f0ee;
-    --border: rgba(0, 0, 0, 0.10);
-    --text: #22252a;
-    --muted: #6a7076;
-    --link: #1a5dc8;
-    --link-visited: #6d4bb5;
-  }
 }
 
 /* hide the classic chrome (the old giant title block) */
