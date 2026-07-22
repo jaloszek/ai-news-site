@@ -72,6 +72,27 @@
         var links = document.querySelectorAll("[data-ui-toggle]");
         for (var i = 0; i < links.length; i++) links[i].addEventListener("click", flip);
       })();
+      (function () {
+        // Language mode (en|pl), persisted like the ui mode above. The
+        // injected daily-nav carries [data-lang-switch] links: "pl" on a
+        // daily that has a Prasówka sibling, "en" on a Prasówka page.
+        // Clicking one records the choice; landing on an EN daily while in
+        // pl mode auto-forwards to that day's Prasówka when one exists (a
+        // page with no pl link — index, calendar, Prasówka itself, or a day
+        // without one — is never redirected, so there is no loop).
+        var sw = document.querySelectorAll("[data-lang-switch]");
+        for (var i = 0; i < sw.length; i++) {
+          sw[i].addEventListener("click", function () {
+            try { localStorage.setItem("lang", this.getAttribute("data-lang-switch")); } catch (err) {}
+          });
+        }
+        var lang = null;
+        try { lang = localStorage.getItem("lang"); } catch (err) {}
+        if (lang === "pl") {
+          var pl = document.querySelector('a[data-lang-switch="pl"]');
+          if (pl) location.replace(pl.href);
+        }
+      })();
     </script>
     <script src="{{ '/assets/js/harness-icons.js' | relative_url }}" data-root="{{ '/' | relative_url }}" defer></script>
   </body>
