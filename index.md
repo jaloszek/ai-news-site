@@ -46,7 +46,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-07-19.html"><div class="cal-num">19</div><ul class="cal-highlights"><li>✨ Kimi K3 2.8T-A50B</li><li>🛠 UltraReview tiered review</li><li>🛠 CC v2.1.215 no-auto</li><li>✨ Nemotron 3 Embed #1 RTEB</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>✨ Qwen 3.8</li><li>🛠 Cline SDK v0.0.65</li><li>🛠 Qwen Code v0.20.0</li><li>✨ Inkling AA leader</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-21.html"><div class="cal-num">21</div><ul class="cal-highlights"><li>🛠 CC v2.1.216</li><li>🛠 OpenCode v1.18.4</li><li>🛠 Hermes Agent v0.19</li><li>🚀 Inkling open-weights</li><li>🧪 Fable 5 Jacobian proof</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">22</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-07-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🛠 CC v2.1.217</li><li>✨ Gemini 3.6 Flash</li><li>🚀 Codex 0.145.0</li><li>🤖 Claude Cowork skills</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">24</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
