@@ -1,0 +1,1069 @@
+{
+  "date": "2026-07-23",
+  "generated_at": "2026-07-23T02:19:48.899981+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.5,
+    "cooldown_penalty": 1.0,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.5,
+    "topic_importance": 1.0,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.5,
+    "broken_newsletter_title_penalty": 2.0
+  },
+  "weights_overridden": [],
+  "section_limits": {
+    "claude-code": 5,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "d690b977f1e85b575b9c9b0941f964443341132e",
+          "title": "v2.1.218",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+          "score": 8.3639,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 1.0,
+            "creator_weight": 1.0,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Minor incremental Claude Code release — /code-review as background subagent is a nice QoL fix but not surprising for a daily user.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 8.3639
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "d8ab4e37a1c11a8ab37ee09e0c62065bfcf9443b",
+          "title": "Copilot vs. raw API access: What are you actually paying for?",
+          "canonical_url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for",
+          "score": 7.3841,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8182,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.1818,
+            "topic_match": 0.8,
+            "taste_score": 0.65,
+            "taste_raw": 0.65,
+            "taste_reason": "Useful pricing/cost analysis for anyone choosing between Copilot and raw API access — concrete comparison with practical implications, but ultimately an economic positioning piece.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 7.3841
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "718c3050315502c6558d16d79b93434b023a6011",
+          "title": "Desktop v0.0.2",
+          "canonical_url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.2",
+          "score": 6.6675,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9012,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7826,
+            "uniqueness": 0.7826,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2174,
+            "topic_match": 0.8,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "First public desktop release of a known OSS agent tool is worth noting, but no specifics beyond 'signed and notarized'.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 6.6675
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9012×1=0.9012"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "df2b156b06baf993a1dba002c57849ba1fecb1ca",
+          "title": "Release v0.19.12-nightly.20260719.86ad532de",
+          "reason": "release_prerelease"
+        },
+        {
+          "id": "25d8c161158184e8d99e96f63443439f1afe59c2",
+          "title": "Release v0.19.12-preview.0",
+          "reason": "release_prerelease"
+        },
+        {
+          "id": "82b4a29ad9a7e56ecbd4064b677b9ec826203747",
+          "title": "openclaw 2026.7.2-beta.3",
+          "reason": "release_prerelease"
+        },
+        {
+          "id": "574df9d6c342e7383a3001c0e01f864961851173",
+          "title": "rust-v0.145.0-alpha.27",
+          "reason": "release_prerelease"
+        },
+        {
+          "id": "9ad2ab38410fe9be9c6b2f9b8f3a24a4c0c4a105",
+          "title": "rust-v0.145.0-alpha.26",
+          "reason": "release_prerelease"
+        },
+        {
+          "id": "dd031d61c9b201604b7f2c79019eb457fd659819",
+          "title": "v7.4.15 (release)",
+          "reason": "release_bugfix_only"
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "791832af8f7fe1208671b36a1120cc88b4a2c4ae",
+          "title": "Anthropic will deploy 2 gigawatts of AMD GPUs for Claude in a deal worth up to $5 billion",
+          "canonical_url": "https://the-decoder.com/anthropic-will-deploy-2-gigawatts-of-amd-gpus-for-claude-in-a-deal-worth-up-to-5-billion",
+          "score": 8.0412,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8966,
+            "uniqueness": 0.8824,
+            "uniqueness_sim_published": 0.1176,
+            "uniqueness_sim_state": 0.1034,
+            "topic_match": 1.0,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "Concrete $5B and 2GW numbers on an AMD-Anthropic deal this large is an infrastructure signal worth knowing — extends state-of-ai's infra row.",
+            "topic_importance": 0.9,
+            "topic_importance_raw": 9,
+            "total": 8.0412
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2"
+        },
+        {
+          "rank": 2,
+          "id": "4f87af667aa64c24ff23967a7b8a7baa56fa9c0e",
+          "title": "Anthropic's $1.5B piracy settlement with book authors is a record loss that hands AI labs their biggest legal win",
+          "canonical_url": "https://the-decoder.com/anthropics-1-5b-piracy-settlement-with-book-authors-is-a-record-loss-that-hands-ai-labs-their-biggest-legal-win",
+          "score": 8.0084,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.878,
+            "uniqueness": 0.8667,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.122,
+            "topic_match": 1.0,
+            "taste_score": 0.85,
+            "taste_raw": 0.85,
+            "taste_reason": "Concrete $1.5B, 482K works, and Judge Alsup's fair-use ruling make this a landmark copyright decision with real legal precedent the audience needs.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 8.0084
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.85×1.5=1.275"
+        },
+        {
+          "rank": 3,
+          "id": "c54f46e53d48e3042d6e57aa12e7bc3272d032eb",
+          "title": "Introducing OpenAI Presence",
+          "canonical_url": "https://openai.com/index/introducing-openai-presence",
+          "score": 7.1292,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9458,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6667,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.3333,
+            "topic_match": 0.5,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "New OpenAI platform launch (Presence) for enterprise voice/chat agents — concrete product with a defined use case, though sparse on technical detail beyond positioning.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 7.1292
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05"
+        },
+        {
+          "rank": 4,
+          "id": "ce627deb992812dab28841a5cefd4963cd5314f8",
+          "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+          "canonical_url": "https://openai.com/index/ntt-data",
+          "score": 6.9821,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7143,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2857,
+            "topic_match": 0.8,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Customer case study with concrete numbers (30 min incident analysis, 9,000 employees) but fundamentally a Codex marketing success story.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.9821
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9×1=0.9"
+        },
+        {
+          "rank": 5,
+          "id": "7c681002e4da471e08c1e24be3df90332619875e",
+          "title": "Together AI and Y Combinator partner to launch the first dedicated GPU cluster for the YC community",
+          "canonical_url": "https://together.ai/blog/together-yc-gpu-cluster",
+          "score": 5.7841,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.8788,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.1212,
+            "topic_match": 0.2,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Practical startup-infrastructure news but no model release, no benchmarks, no technical novelty — a business arrangement that's nice-to-know for YC founders only.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.7841
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.45×1.5=0.675"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "844ec17c612165f2a2cdc2910ffa0ae80294a9d5",
+          "title": "3 Google updates from Galaxy Unpacked 2026",
+          "canonical_url": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026",
+          "score": 5.4,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1,
+            "topic_match": -0.1,
+            "taste_score": 0.2,
+            "taste_raw": 0.2,
+            "taste_reason": "Consumer hardware announcements (foldables, watches, glasses) with no AI/ML technical depth — irrelevant to an AI engineer's daily work.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 5.4
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: topic_match -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "6a9003c90047f2c7a54e7ad45487172bd0f172cd",
+          "title": "‘Odyssey’ director Christopher Nolan calls AI an obvious ‘Trojan horse’",
+          "canonical_url": "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse",
+          "score": 4.6596,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4239,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9714,
+            "uniqueness": 0.9714,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0286,
+            "topic_match": 0.0,
+            "taste_score": 0.1,
+            "taste_raw": 0.1,
+            "taste_reason": "Celebrity opinion quote with zero AI substance — pure entertainment, no facts or analysis.",
+            "topic_importance": 0.1,
+            "topic_importance_raw": 1,
+            "total": 4.6596
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + uniqueness 0.9714×0.5=0.4857",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "dde9b3e385312c79c53ced97efcb060ce4b5f2bf",
+          "title": "Can an Apple lawsuit derail OpenAI’s hardware plans?",
+          "reason": "title_dup_published",
+          "matched_title": "How Apple's big lawsuit could disrupt OpenAI's IPO plans",
+          "jaccard": 0.5
+        },
+        {
+          "id": "2a0a84ea7fff2440b03324d58d1af7841e5d3de2",
+          "title": "Every frontier AI model tested by Britain's safety institute tried to cheat on cybersecurity evaluations",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "f7b7bad86eb542c693860e90b7030a388641c0d5",
+          "title": "Cisco bets its small open cybersecurity models can outperform GPT-5.5 at vulnerability detection for a fraction of the cost",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "bd6ce42035f550014aca0a9800b9545ebfc3f46b",
+          "title": "Building AI infrastructure with the Effingham County community",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "075907921a63571b6bc8c014d86f5cb0092d829e",
+          "title": "Trump administration reportedly builds a slow-motion ban on Chinese AI models through sanctions and soft pressure",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "c4ff01821c4032ba66189b1ecc046793c7730d8d",
+          "title": "Hugging Face says an AI agent hacked its infrastructure, and it used AI to fight back",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "75de3fed43f9d0121fe1b2a68de87ad534b62a0f",
+          "title": "Microsoft and Mistral strike multi-billion-dollar deal to build AI infrastructure across Europe",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "ed3d7cd0257f3d8efe712cacce9a2c8ebefa1bf5",
+          "title": "Alibaba's Qwen-Image-3.0 renders full infographic grids and readable ten-pixel text in a single pass",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "fc3528d001b5387ae21e7c472c8bfa84d5042ee8",
+          "title": "Advancing the next era of national science",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "efaf51ea1b51034812af1e04a6abce2da0f17a16",
+          "title": "Moonshot pauses new Kimi K3 subscriptions after GPU demand maxes out in 48 hours",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "fc43678d815c8d33068ad6c91faa5a4f95b4baa5",
+          "title": "An AI system helped Pakistani judges clear massive backlogs at $38.50 return per dollar invested",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "dfd8adc918e40427e90af24f923f9ef47172fe27",
+          "title": "Google Deepmind argues video generators already contain the world models computer vision has been missing",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "130e23c4bd2f87cbb00eed71539e83ba22e3ccf1",
+          "title": "How news organizations are using AI to advance their vital missions",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "d42362617c6408798d23184364284f73d4984cb3",
+          "title": "Introducing the ChatGPT for small business program",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "e665a7f0b623012b979a8e5bc615bc34f82c34f3",
+          "title": "District 9 director Neill Blomkamp releases first short film made entirely with AI video generation",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "a4c49bf95a70ce7f9cf02522daedbce2b75765ca",
+          "title": "AI text detectors struggle when language models mimic an author's style",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "40359dbf5a246645eb9b9137e83bde4afe2e0908",
+          "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "16cc7168eebf9a9b79872f568a1cee6b0c333913",
+          "title": "GPT-6 Goes Rogue? The HuggingFace Incident, Sans Hype",
+          "canonical_url": "https://youtube.com/watch?v=wzY2fV4Mp3U",
+          "score": 7.4375,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9024,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.0976,
+            "topic_match": 0.5,
+            "creator_weight": 0.4,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "AI Explained's deep-dive on an unreleased model breaching its sandbox — credible source, the 'GPT-6' detail would extend state-of-ai's frontier row.",
+            "topic_importance": 0.9,
+            "topic_importance_raw": 9,
+            "total": 7.4375
+          },
+          "explanation": "cross 1×2=2 + taste 0.8×1.5=1.2 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "017feab98c311a421cfbec9066a28594798d1c5d",
+          "title": "Grok 4.5 NEW Free Option: This works PRETTY WELL for EVERYDAY USAGE!",
+          "canonical_url": "https://youtube.com/watch?v=u2RlZec5EgE",
+          "score": 6.3742,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9771,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7442,
+            "uniqueness": 0.7442,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2558,
+            "topic_match": 1.0,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "ALL-CAPS clickbait title from a low-credibility channel, and Grok 4.5 is already in state-of-ai — the free-in-Cursor angle is mildly useful but buried in hype.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.3742
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "f351c2d8678e00de8c189e924d1a03f98636142b",
+          "title": "Open-weight AI just hit 2.8 trillion parameters…",
+          "canonical_url": "https://youtube.com/watch?v=YP73B9D20V4",
+          "score": 6.2,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.1667,
+            "taste_score": 0.75,
+            "taste_raw": 0.75,
+            "taste_reason": "Fireship covers a 2.8T open-weight Kimi K3 release that extends state-of-ai's open-weights row; credible source and genuinely notable model scale.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.2
+          },
+          "explanation": "cross 1×2=2 + taste 0.75×1.5=1.125 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "9cb2182c576ed4ea89f494bd369303852fe7010c",
+          "title": "21 in 21: Mic Neale on goose, Mesh LLM, and Open Source AI",
+          "canonical_url": "https://youtube.com/watch?v=E1RTjt8uPsw",
+          "score": 5.8822,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8718,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.1282,
+            "topic_match": 0.5,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Interview about goose and Mesh LLM, but the body gives no specifics — just 'discusses' without any concrete claim or insight to judge.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.8822
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "b06decbae805420032e0ae088c8dfcbf3626b239",
+          "title": "Use an AI coding agent without a subscription!",
+          "canonical_url": "https://youtube.com/watch?v=stJeD_YKIkg",
+          "score": 5.768,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4991,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7879,
+            "uniqueness": 0.7879,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2121,
+            "topic_match": 1.0,
+            "taste_score": 0.25,
+            "taste_raw": 0.25,
+            "taste_reason": "Beginner-level survey of free coding agents; the target audience already knows about these tools.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.768
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "2b272491491d684499f0963559845faf3c0b175d",
+          "title": "So It Started... AI Agent Just Pulled Off History’s Biggest Autonomous Cyberattack",
+          "canonical_url": "https://youtube.com/watch?v=gMYR-JkmIFc",
+          "score": 5.5944,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8819,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.825,
+            "uniqueness": 0.825,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.175,
+            "topic_match": 0.5,
+            "taste_score": 0.2,
+            "taste_raw": 0.2,
+            "taste_reason": "Highly dramatic vague title from a low-credibility channel — likely exaggerating the HF incident for views, no concrete specifics.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.5944
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8819×1=0.8819",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "eabf61bf4bd25885ac1a2dbf7c78d4c67eeebd70",
+          "title": "GPT 6 potentially LEAKS!!!",
+          "canonical_url": "https://youtube.com/watch?v=u5esm1--kUo",
+          "score": 5.1208,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8833,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.125,
+            "taste_score": 0.2,
+            "taste_raw": 0.2,
+            "taste_reason": "Misleading clickbait title with triple exclamation marks — actual content is about a HF security incident, not a GPT-6 leak; drama-seeking framing over substance.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.1208
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8833×1=0.8833",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "56adaed82f44329937893a93b2c4254972615ab2",
+          "title": "Fable 5 Is Expensive. Here's Where It Actually Pays Off",
+          "canonical_url": "https://youtube.com/watch?v=0Yyr0PpJhVc",
+          "score": 5.1033,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6854,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7857,
+            "uniqueness": 0.7857,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2143,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Generic breakdown of Fable 5 cost-value with no new facts, numbers, or data — recap of known pricing info.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.1033
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6854×1=0.6854",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "555946e19be14143b715c983a4c2902db3daafa3",
+          "title": "Power Automate MCP Server - the LAST tutorial you need",
+          "canonical_url": "https://youtube.com/watch?v=VttSlPf-aJs",
+          "score": 5.015,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6669,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8621,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.1379,
+            "topic_match": 1.0,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Niche tutorial for Power Automate integration — the senior AI/dev audience uses agent harnesses directly, not low-code automation wrappers. Title clickbait caps further.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "fetch_fail_penalty": -1.0,
+            "total": 5.015
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "0aa0bdac51ffdada3bbe89760bb49174e91d21fc",
+          "title": "Nobody Actually Wants AI",
+          "canonical_url": "https://youtube.com/watch?v=oUyi-00JYc0",
+          "score": 4.4729,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6729,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8966,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.1034,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "Vague opinion piece with no concrete facts, data, or specifics — hyperbolic title, no actionable information.",
+            "topic_importance": 0.2,
+            "topic_importance_raw": 2,
+            "total": 4.4729
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6729×1=0.6729",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "d90ad594098bf751b2ce7df31cb78803bbcb43ea",
+          "title": "OpenAI admits responsibility for HuggingFace Attack - an agent from an internal evaluation is reportedly the cause.",
+          "canonical_url": "https://reddit.com/comments/1v2w7jl",
+          "score": 7.1659,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8807,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8205,
+            "uniqueness": 0.8205,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.1795,
+            "topic_match": 0.5,
+            "creator_weight": 0.2,
+            "taste_score": 0.85,
+            "taste_raw": 0.85,
+            "taste_reason": "Credible report of an OpenAI internal evaluation agent causing a real security incident at HuggingFace — directly relevant to agent-safety concerns the audience follows, with specific causal detail.",
+            "topic_importance": 0.9,
+            "topic_importance_raw": 9,
+            "total": 7.1659
+          },
+          "explanation": "cross 1×2=2 + taste 0.85×1.5=1.275 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "203238bb70826623290c83f590390142fc8b61cd",
+          "title": "Qwen: Qwen3.8 is about to be released and open weights",
+          "canonical_url": "https://reddit.com/comments/1v0l6up",
+          "score": 5.4971,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3721,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.6,
+            "uniqueness_sim_published": 0.4,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Extends state-of-ai's Open weights row with Qwen3.8 preview details and pricing, but community-sourced rumor rather than official announcement.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 5.4971
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.55×1.5=0.825"
+        },
+        {
+          "rank": 3,
+          "id": "88d78b36cd1ceacc25f0fc4d52884aef471f2acd",
+          "title": "Please god, please there will be a smaller variant that also come with it",
+          "canonical_url": "https://reddit.com/comments/1v0mvoi",
+          "score": 4.8861,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3861,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.9167,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.0833,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.1,
+            "taste_raw": 0.1,
+            "taste_reason": "Community reaction post, no information content. Zero signal for a daily reader.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 4.8861
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_importance 0.5×1=0.5"
+        },
+        {
+          "rank": 4,
+          "id": "7996719caf34b0885ae60034f36267026beb489d",
+          "title": "Ahem! Qwen is on the move again",
+          "canonical_url": "https://reddit.com/comments/1v0kqnn",
+          "score": 3.9101,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3684,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9286,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.0714,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "Pure speculation with zero content — 'hints at activity' with no specifics, no numbers, no sources. Noise-level signal.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "fetch_fail_penalty": -1.0,
+            "total": 3.9101
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_importance 0.5×1=0.5; penalties: fetch_fail -1×1=-1"
+        }
+      ],
+      "rejected": [],
+      "dropped": []
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "e2adfd20b4b76af696bab97978251e915f108f96",
+          "title": "I wrote about the completely wild incident where OpenAI were testing a new…",
+          "canonical_url": "https://bsky.app/profile/simonwillison.net/post/3mrbjg3u5tk2z",
+          "score": 7.2416,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8919,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1081,
+            "topic_match": 0.5,
+            "taste_score": 0.85,
+            "taste_raw": 0.85,
+            "taste_reason": "Concrete security incident with named specifics (sandbox escape, HuggingFace, stolen benchmark answers) from a highly credible source (Simon Willison). Novel — not in state-of-ai.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 7.2416
+          },
+          "explanation": "cross 1×2=2 + taste 0.85×1.5=1.275 + origin_weight 1.25×1=1.25"
+        },
+        {
+          "rank": 2,
+          "id": "af532c42891f81235d71a469f3af8936bd602dd4",
+          "title": "🔬Causal Models Need Causal Data - Xaira’s X-Cell model for Drug Discovery (Bo Wang & Ci Chu, Chief Discovery Officer & Chief AI Scientist)",
+          "canonical_url": "https://latent.space/p/xaira",
+          "score": 6.6547,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8631,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9583,
+            "uniqueness": 0.9333,
+            "uniqueness_sim_published": 0.0667,
+            "uniqueness_sim_state": 0.0417,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Well-produced Latent Space interview but drug discovery AI is too niche and remote from the audience's daily work as AI engineers.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 6.6547
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8631×1=0.8631"
+        },
+        {
+          "rank": 3,
+          "id": "34f058415facc134f4080ec1fc28b487c4c00d2f",
+          "title": "OpenAI Model Hacks Into HuggingFace During Cybersecurity Evaluation",
+          "canonical_url": "https://thezvi.substack.com/p/openai-model-hacks-into-huggingface",
+          "score": 6.4091,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9412,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.0588,
+            "topic_match": 0.5,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "Zvi's credible write-up of an autonomous model sandbox breach with infrastructure-access detail — a significant agent-safety incident the audience follows.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 6.4091,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2; penalties: cooldown -1×1=-1"
+        },
+        {
+          "rank": 4,
+          "id": "809e6a3d28fb8702943149cff221a883e4574481",
+          "title": "Launch HN: Bloomy (YC S26) – AI-powered mastery learning for K-12",
+          "canonical_url": "https://news.ycombinator.com/item?id=48981136",
+          "score": 6.2073,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6378,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8929,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1071,
+            "topic_match": 0.8,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "K-12 EdTech launch with one pilot stat — remote from the core AI-engineer/adult-practitioner audience.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 6.2073
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8"
+        },
+        {
+          "rank": 5,
+          "id": "3d350a7a193b3161277065e24d9d12a34037107c",
+          "title": "When I asked Kimi K3 \"I want you to suggest two poems that you think apply to…",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mqy3kwpgzk2v",
+          "score": 5.1487,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3487,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9643,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.0357,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "Anecdotal observation from Ethan Mollick about Kimi K3 CoT behavior — mildly interesting but no actionable signal.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.1487
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + taste 0.4×1.5=0.6"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "5c257dd01809902fe8028fecd5137e73df757eae",
+          "title": "Verbalizable Representations Form a Global Workspace in Language Models",
+          "canonical_url": "https://arxiv.org/abs/2607.15495",
+          "score": 5.0708,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5333,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9394,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.0606,
+            "topic_match": 0.5,
+            "creator_weight": -0.4,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Concrete mechanistic interpretability technique (Jacobian lens) with a specific finding on strategic deliberation in alignment audits — interesting but academic and not actionable.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 5.0708,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.6×1.5=0.9; penalties: cooldown -1×1=-1, creator_weight -0.4×1=-0.4",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "419fd09be8a1f4b00372518162412ae4f9369417",
+          "title": "I still believe that everyone is too fixated on the state of play in AI right…",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mqy5divcxc2v",
+          "score": 4.9282,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3532,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.1,
+            "taste_score": 0.25,
+            "taste_raw": 0.25,
+            "taste_reason": "Opinion piece with no concrete facts or numbers. The audience already debates capability trajectories — no new signal here.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 4.9282
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + topic_importance 0.5×1=0.5",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "a5a46137f8068bd2aaf6ef7d7fe2e4422b647b74",
+          "title": "On Kimi K3: Its Capabilities And Related Discontents",
+          "reason": "domain_cap",
+          "domain": "thezvi.substack.com",
+          "cap": 1
+        },
+        {
+          "id": "20d21b93647b39f9fcb41a5584db3e435498b3f3",
+          "title": "A Classifier That Teaches Itself: Self-Improving, Frozen-gate Training (SIFT) for Dynamic Document Classification",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "913fbb84713fd825a54c850dd3a4c8fd00c3b6af",
+          "title": "RIMS: Preference Optimization via Smoothed Multi-pair Aggregation for Small-Scale LLM Retrieval-Augmented Generation",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "fc53a2be34c0dfb8e09174dba4ce1294edd445b6",
+          "title": "Decoding EEG Signals to Explore Next-Word Predictability in the Human Brain",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "87be6d07a96b12773d1205c4e4fb77c1486f0f55",
+          "title": "Large Language Models as Unified Multimodal Learners for Clinical Prediction",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [],
+      "rejected": [],
+      "dropped": []
+    }
+  }
+}
