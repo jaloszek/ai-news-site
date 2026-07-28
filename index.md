@@ -52,7 +52,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-07-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>✨ Opus 5 default CC</li><li>🛠 Cline Opus 5 1M</li><li>💰 Cognition buys Poke</li><li>🧪 Kimi K3 vs Fable</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-26.html"><div class="cal-num">26</div><ul class="cal-highlights"><li>✨ Opus 5</li><li>🛠 Claude 5 context guide</li><li>💬 Google backs open-weights</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-07-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🛠 CC 80% prompt cut</li><li>🛠 Cursor swarm</li><li>🚀 Kimi K3</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-07-28.html"><div class="cal-num">28</div><ul class="cal-highlights"><li>✨ Opus 5 tops AI Index at 61</li><li>🤖 Kimi K3 2.8T MoE released</li><li>🔒 Galaxy hack details</li><li>💰 Prentis $100M raise</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">29</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">31</div></div>
