@@ -37,6 +37,11 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Gemini CLI releases | <https://github.com/google-gemini/gemini-cli/releases.atom> | dev-tools | Gemini CLI releases — Google's terminal coding agent, one entry per version. Verified fresh 2026-07-12. |
 | Qwen Code releases | <https://github.com/QwenLM/qwen-code/releases.atom> | dev-tools | Qwen Code releases — Alibaba's open-source coding agent CLI. Verified fresh 2026-07-12. |
 | Crush releases | <https://github.com/charmbracelet/crush/releases.atom> | dev-tools | Crush (charmbracelet) — terminal AI coding agent, structured per-version releases.atom. Verified fresh 2026-07-12. |
+| Roo Code releases | <https://github.com/RooCodeInc/Roo-Code/releases.atom> | dev-tools | Roo Code — popular Cline-lineage VS Code agent (v3.5x line active); one entry per version. Verified 2026-07-30. |
+| Copilot CLI releases | <https://github.com/github/copilot-cli/releases.atom> | dev-tools | GitHub Copilot CLI — GitHub's terminal coding agent, direct CC competitor; active per-version releases.atom. Verified fresh 2026-07-30. |
+| Amp news | <https://ampcode.com/news.rss> | dev-tools | Amp (Sourcegraph) — agentic coding tool from the Sourcegraph team; news feed carries release notes + engineering posts. Verified fresh 2026-07-30. |
+| Zed blog | <https://zed.dev/blog.rss> | dev-tools | Zed — high-performance editor with native agentic editing; blog covers agent features + editor AI. Low cadence. Verified 2026-07-30. |
+| JetBrains AI blog | <https://blog.jetbrains.com/ai/feed/> | dev-tools | JetBrains AI blog — Junie agent + AI Assistant updates for the IDE ecosystem half of the audience. Verified fresh 2026-07-30. |
 
 ### AI World
 
@@ -52,6 +57,8 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | MIT Tech Review AI | <https://www.technologyreview.com/topic/artificial-intelligence/feed/> | industry | MIT Technology Review AI topic — high-editorial-quality frontier/industry analysis, daily-ish. Verified fresh 2026-06-30. |
 | Ollama blog | <https://ollama.com/blog/rss.xml> | opensource | Ollama — local-model launch news; Ollama already appears in the Reddit list & tagger keywords but had no feed until now. Verified fresh 2026-07-12. |
 | Mistral news | <https://mistral.ai/rss.xml> | opensource | Mistral news — round-2 correction: an earlier pass (2026-06) tested `mistral.ai/news/rss.xml` (404) and concluded no RSS existed; `/rss.xml` (no `/news/` prefix) works. Verified fresh 2026-07-12. |
+| The Verge AI | <https://www.theverge.com/rss/ai-artificial-intelligence/index.xml> | industry | The Verge AI section — consumer/industry AI coverage with strong original reporting; daily cadence. Verified fresh 2026-07-30. |
+| Ars Technica AI | <https://arstechnica.com/ai/feed/> | industry | Ars Technica AI section — deeper technical journalism than the general AI press; daily cadence. Verified fresh 2026-07-30. |
 
 ### Community — Tier S (top long-form authors)
 
@@ -62,6 +69,13 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Ahead of AI (Sebastian Raschka) | <https://magazine.sebastianraschka.com/feed> | research | LLM internals, training techniques, paper digests. |
 | Eugene Yan | <https://eugeneyan.com/rss/> | dev-tools | ML system design, evals, applied LLM patterns. |
 | Hamel Husain | <https://hamel.dev/index.xml> | dev-tools | LLM evals, fine-tuning, production AI engineering. |
+| AI Hero (Matt Pocock) | <https://www.aihero.dev/rss.xml> | dev-tools | Matt Pocock's AI-engineering site (ex-Total TypeScript) — agentic-coding and LLM-app patterns for working devs. Slow cadence (last post 2026-05 at add time). Verified 2026-07-30. |
+| Import AI | <https://importai.substack.com/feed> | research | Jack Clark's (Anthropic co-founder) weekly frontier-capability / policy digest — the RSS route in, since the email subscription was never activated (see email_sources.txt). Existing creator-weight boost applies by name. Verified fresh 2026-07-30. |
+| Chain of Thought (Every) | <https://every.to/chain-of-thought/feed> | research | Dwarkesh-adjacent essay tier: Dan Shipper's AI-and-work essays + LLM-app build notes. Verified fresh 2026-07-30. |
+| Understanding AI | <https://www.understandingai.org/feed> | research | Timothy B. Lee — careful, technically-literate AI reporting/analysis (agents, robotics, economics). Verified fresh 2026-07-30. |
+| AI Snake Oil | <https://www.aisnakeoil.com/feed> | research | Narayanan & Kapoor (Princeton) — evidence-first skeptical analysis; counterweight to launch-hype sources. Verified fresh 2026-07-30. |
+| Gary Marcus | <https://garymarcus.substack.com/feed> | research | Gary Marcus — the loyal-opposition voice on frontier-AI claims; posts near-daily. Verified fresh 2026-07-30. |
+| The Gradient | <https://thegradient.pub/rss/> | research | The Gradient — long-form ML research essays; low cadence, high quality. Verified 2026-07-30. |
 
 ### Community — Tier A (high-quality regulars)
 
@@ -95,6 +109,18 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 | AICodeKing |
 | Cole Medin |
 | Income Stream Surfers |
+| IndyDevDan |
+| Matt Pocock |
+| Prompt Engineering |
+| Dave Ebbelaar |
+
+### Dev commentary & ecosystem
+
+| Channel |
+|---|
+| Theo — t3.gg |
+| ThePrimeagen |
+| Alex Ziskind |
 
 ### Top AI news & analysis
 
@@ -104,6 +130,8 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 | Matt Wolfe |
 | AI Explained |
 | Fireship |
+| Nate B Jones |
+| The AI Daily Brief |
 
 ### AI dev tools & tutorials
 
@@ -114,6 +142,8 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 | Tech With Tim |
 | Two Minute Papers |
 | sentdex |
+| David Ondrej |
+| Sam Witteveen |
 
 ### Researchers
 
@@ -123,6 +153,10 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 | Lex Fridman |
 | Yannic Kilcher |
 | bycloud |
+| Dwarkesh Patel |
+| Machine Learning Street Talk |
+| AI Engineer |
+| Welch Labs |
 
 ### AI company channels
 
@@ -130,6 +164,7 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 |---|
 | Anthropic |
 | Google DeepMind |
+| OpenAI |
 
 ### YouTube search keywords
 
