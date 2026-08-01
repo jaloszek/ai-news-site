@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-08-01 02:17 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-08-01 08:49 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (all-time):** 30397
-- **Enriched:** 4728 (15%)
-- **Taste-rated:** 4073 (13%)
-- **Researched:** 1493 (4%)
-- **Status (candidate / rejected / published / duplicate):** 2547 / 27850 / 0 / 0
-- **Published bullets (all-time):** 1885 (last 7d: 170)
+- **Discovery items (all-time):** 30442
+- **Enriched:** 4764 (15%)
+- **Taste-rated:** 4108 (13%)
+- **Researched:** 1510 (4%)
+- **Status (candidate / rejected / published / duplicate):** 2592 / 27850 / 0 / 0
+- **Published bullets (all-time):** 1890 (last 7d: 175)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-08-01 | 420 | 41 (9%) | 41 (9%) | 26 (6%) |
+| 2026-08-01 | 465 | 77 (16%) | 76 (16%) | 43 (9%) |
 | 2026-07-31 | 562 | 27 (4%) | 27 (4%) | 16 (2%) |
 | 2026-07-30 | 617 | 32 (5%) | 32 (5%) | 19 (3%) |
 | 2026-07-29 | 449 | 30 (6%) | 30 (6%) | 14 (3%) |
@@ -38,7 +38,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Coding Agents | AI World | YouTube | Reddit | Community | Newsletters | Total |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 2026-08-01 | 1 | 5 | 3 | 5 | 5 | 0 | 19 |
+| 2026-08-01 | 2 | 6 | 4 | 6 | 6 | 0 | 24 |
 | 2026-07-31 | 0 | 5 | 3 | 4 | 5 | 1 | 18 |
 | 2026-07-30 | 3 | 5 | 3 | 3 | 5 | 3 | 22 |
 | 2026-07-29 | 4 | 5 | 3 | 5 | 5 | 3 | 25 |
@@ -58,17 +58,17 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 | arXiv cs.CL | `rss` | 2501 |
 | TechCrunch AI | `rss` | 258 |
 | The Decoder | `rss` | 197 |
-| Cline releases | `rss` | 119 |
-| /r/LocalLLaMA | `reddit` | 98 |
+| Cline releases | `rss` | 124 |
+| /r/LocalLLaMA | `reddit` | 99 |
 | Codex releases | `rss` | 79 |
 | Hacker News (ai/llm/claude) | `rss` | 79 |
-| /r/Artificial | `reddit` | 73 |
+| /r/Artificial | `reddit` | 76 |
 | /r/LangChain | `reddit` | 66 |
 | /r/LocalLLM | `reddit` | 64 |
 | /r/MachineLearning | `reddit` | 60 |
-| /r/OpenWebUI | `reddit` | 50 |
-| Qwen Code releases | `rss` | 49 |
-| /r/ClaudeHomies | `reddit` | 42 |
+| /r/OpenWebUI | `reddit` | 53 |
+| Qwen Code releases | `rss` | 50 |
+| /r/ClaudeHomies | `reddit` | 45 |
 
 
 ## Rejection reasons (all-time)
