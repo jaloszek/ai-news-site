@@ -85,7 +85,6 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Lilian Weng | <https://lilianweng.github.io/index.xml> | research | Long-form research deep dives. |
 | Andrej Karpathy | <https://karpathy.github.io/feed.xml> | research | Foundational LLM education + research notes. |
 | Pragmatic Engineer | <https://newsletter.pragmaticengineer.com/feed> | dev-tools | Tech-org practices; covers AI tooling adoption. |
-| Cognition (Devin) | <https://cognition.ai/rss.xml> | agents | First-party updates from the Devin team. |
 | One Useful Thing (Ethan Mollick) | <https://www.oneusefulthing.org/feed> | research | Applied LLM use; non-technical audience bridging. |
 | Don't Worry About the Vase (Zvi) | <https://thezvi.substack.com/feed> | research | Weekly AI news roundups + alignment commentary. |
 
