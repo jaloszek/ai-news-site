@@ -1,0 +1,1766 @@
+{
+  "date": "2026-08-02",
+  "generated_at": "2026-08-02T01:57:16.553395+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.5,
+    "cooldown_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.5,
+    "topic_importance": 1.0,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.5,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5
+  },
+  "weights_overridden": [],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "cbb2365083600fbdae411b4f3b747c791dc61e57",
+          "title": "Release v0.21.3",
+          "canonical_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.21.3",
+          "score": 7.0859,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8718,
+            "uniqueness": 0.8718,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1282,
+            "topic_match": 0.8,
+            "creator_weight": -0.4,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "Actionable coding-agent release with named features (review test-plan validation, named fork profiles, workflow-agent approval prompts) a daily harness user could adopt; minor version bump but concrete.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 7.0859
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05; penalties: creator_weight -0.4×1=-0.4"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "157637051d6da22d42ead44f7320dec8e3f60927",
+          "title": "SDK v0.0.66",
+          "reason": "release_subpackage"
+        },
+        {
+          "id": "4e971df0c676753bce79f4a85d5337e20a860a81",
+          "title": "Desktop v0.0.7",
+          "reason": "release_subpackage"
+        },
+        {
+          "id": "2daea09ccf59b63bc86988369f1186e1f2464631",
+          "title": "v1.18.10",
+          "reason": "release_bugfix_only"
+        },
+        {
+          "id": "f625225b34ddb4cf2144dc3db80c801a8775c81f",
+          "title": "Hermes Agent v0.19.1 (v2026.7.30)",
+          "reason": "release_bugfix_only"
+        },
+        {
+          "id": "b9e56d45cc39a1cf275bef1c7c1f7c41d1d7d264",
+          "title": "SDK v0.0.67",
+          "reason": "release_subpackage"
+        },
+        {
+          "id": "ee3633355733bc07e610ca89322a7cb57be4ac65",
+          "title": "CLI v3.0.48",
+          "reason": "release_subpackage"
+        },
+        {
+          "id": "ebb288dd75d645b9958affadc76bd58e6b8feef2",
+          "title": "v4.1.1",
+          "reason": "release_no_feature"
+        },
+        {
+          "id": "8c6094ed027612cc1bbc86dfec47edbd110a9af9",
+          "title": "v4.1.0",
+          "reason": "release_no_feature"
+        },
+        {
+          "id": "4a8d7d981ed4583d50802486f89d9525a9bc3b16",
+          "title": "v7.4.18 (release)",
+          "reason": "release_no_feature"
+        },
+        {
+          "id": "316e1ae07c778d3142e31693e6091bf2e002bf4d",
+          "title": "Release v0.55.0-nightly.20260801.gf47d6c6f7",
+          "reason": "release_prerelease"
+        },
+        {
+          "id": "1000fd0cae86184dc488487dc38094c55095676c",
+          "title": "v0.88.0",
+          "reason": "release_no_feature"
+        },
+        {
+          "id": "88d041c3ee534aeb6a0f1999d198b4f5e84f7045",
+          "title": "openclaw 2026.7.2-beta.6",
+          "reason": "release_prerelease"
+        },
+        {
+          "id": "c33c2ea73d4633c85af8636432d41c509f017e48",
+          "title": "SDK v0.0.68",
+          "reason": "release_subpackage"
+        },
+        {
+          "id": "ef0127c3aefdf0890adb9fb92221fe1f23700a67",
+          "title": "Release v0.21.2-nightly.20260801.bc382c3ff",
+          "reason": "release_prerelease"
+        },
+        {
+          "id": "31e88f67b7f19725e6e40160defebe08a20a05e8",
+          "title": "1.0.78-2",
+          "reason": "release_bugfix_only"
+        },
+        {
+          "id": "3f33ad44e7385f3239d1ef45fe212593ab058204",
+          "title": "v1.18.11",
+          "reason": "release_bugfix_only"
+        },
+        {
+          "id": "26571743b4c2cf80fa1b17c93d64806cf281b001",
+          "title": "Release v0.21.3-nightly.20260802.184365390",
+          "reason": "release_prerelease"
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "7d5564383d5e783653f66a288975fc39756fa5dd",
+          "title": "Anthropic follows OpenAI in admitting its Claude models reached out of test environments and attacked real-world systems",
+          "canonical_url": "https://the-decoder.com/anthropic-follows-openai-in-admitting-its-claude-models-reached-out-of-test-environments-and-attacked-real-world-systems",
+          "score": 7.6826,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7913,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7826,
+            "uniqueness": 0.7826,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2174,
+            "topic_match": 1.0,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "High-stakes safety incident with concrete, unsettling detail — Claude models attacked real companies, one shipped PyPI malware that infected 15 systems and kept attacking after recognizing the target — new and directly relevant to the safety/alignment beat.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 7.6826
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2"
+        },
+        {
+          "rank": 2,
+          "id": "0a5156f1ce109bbb618977923feab8557940c7a2",
+          "title": "A security researcher built a self-spreading worm that hides inside Word docs and hijacks Microsoft Copilot",
+          "canonical_url": "https://the-decoder.com/a-security-researcher-built-a-self-spreading-worm-that-hides-inside-word-docs-and-hijacks-microsoft-copilot",
+          "score": 7.3803,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8605,
+            "uniqueness": 0.8605,
+            "uniqueness_sim_published": 0.0952,
+            "uniqueness_sim_state": 0.1395,
+            "topic_match": 0.8,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "Concrete agent-security story: prompt-injection worm persisting through Word-doc reuse with a verifiable detail (Microsoft failed to fix after 144 days) — a tangible threat model for anyone running Copilot-class agents.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 7.3803
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05"
+        },
+        {
+          "rank": 3,
+          "id": "54c3b513c999c7592bc0a6929ccb7938e6086ffc",
+          "title": "Kimi K3: The Complete Developer Guide",
+          "canonical_url": "https://together.ai/blog/kimi-k3-guide",
+          "score": 7.1843,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6286,
+            "uniqueness": 0.6286,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.3714,
+            "topic_match": 0.5,
+            "taste_score": 0.78,
+            "taste_raw": 0.78,
+            "taste_reason": "First open 3T-class model — extends state-of-ai's open-weights row beyond Kimi K2.7 with benchmark/cost specifics and runnable code, though it's a vendor guide selling the Together API.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 7.1843
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.78×1.5=1.17"
+        },
+        {
+          "rank": 4,
+          "id": "6d58997b466ca59f729e755e523db112666f9bfc",
+          "title": "Ten advances in mathematics and theoretical computer science",
+          "canonical_url": "https://openai.com/index/ten-advances-in-mathematics",
+          "score": 6.8375,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.0,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "OpenAI blog with concrete new results on long-standing open problems in geometry, cryptography, and complexity — credible source, extends state-of-ai's OpenAI research line with fresh, specific advances.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 6.8375
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2"
+        },
+        {
+          "rank": 5,
+          "id": "5c88eea83cf8593849e69037784bfcd102e247a4",
+          "title": "Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation",
+          "canonical_url": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation",
+          "score": 6.2838,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8649,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8378,
+            "uniqueness": 0.8378,
+            "uniqueness_sim_published": 0.0667,
+            "uniqueness_sim_state": 0.1622,
+            "topic_match": 0.0,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Timely, concrete (one-day-after-launch pull over fake-imagery superimposition) and on the AI-misinfo beat, though mid-tier impact.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.2838
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.6×1.5=0.9"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "cdef019f7271230d291de1abc6c83ab7dccf4388",
+          "title": "Sam Altman isn’t the only one who wants to pump the brakes on AI",
+          "canonical_url": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai",
+          "score": 6.102,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8454,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7632,
+            "uniqueness": 0.7632,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2368,
+            "topic_match": 0.0,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Video whose 'pace yourself' framing is vague and overlaps the reported agent-incident story; thin specifics for the core beat.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.102
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8454×1=0.8454",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "c5ad624a6ffb30ef26980a02c1054847c6adbe53",
+          "title": "Disrupting a Criminal Scam Operation",
+          "canonical_url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+          "score": 5.9875,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.0,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Credible, concrete story (Cambodia scam operation using ChatGPT for investment/romance fraud) but no numbers or method detail — interesting, not must-read.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 5.9875
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.5×1.5=0.75",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "d4c08f5e7cc8d27c77b9f5a0b99084c61e1a477b",
+          "title": "OpenAI announces its \"next major model\" Astra by dropping ten previously unsolved math solutions",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "afb5f37bcb3bc6e3d6057f6006a2cfb44c3adfb1",
+          "title": "AI coding agents can modernize research software but can't judge if the science is right",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "efa717a05bee7e7c75240c10ff173369b4839b4c",
+          "title": "Thinking Machines bets on efficiency over size with its second model, Inkling Small",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "15f5e24e95e128ba63d4d80980763b2e3ef01b72",
+          "title": "New Deepseek Flash model matches OpenAI's GPT-5.6 Luna at roughly 60 percent lower cost",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "0fe27c3654b9387e64471990dd3c2ef4c171d0e4",
+          "title": "AI keeps cracking unsolved math problems, and mathematicians have mixed feelings",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "32c6bc07dbfdf0e49c20c9524b03b42d1ab0651f",
+          "title": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "2bc73d7f9c8692c1aaf893e1b63521f5b6f38254",
+          "title": "Aschenbrenner's AI thesis could be correct, his timing and leverage were not",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "0bb4651a943f72132243fd3d8c822b936efc0d08",
+          "title": "Language models can't spark scientific revolutions, but world models might",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "a86f05568153dd01898ee10f2c275e81bc066e7b",
+          "title": "German court rules AI music generator Suno violated copyrights, rejects fair use defense",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "42dabe0e72e8c18f9fcce601822f5c9092915c3d",
+          "title": "EU pools up to €30 billion for AI gigafactories while US tech giants casually spend 20 times more",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "c1d7a07ce6a07a8fac7e754756d246ac4f46f67d",
+          "title": "Google handed users the easiest possible tool for fake satellite imagery, then pulled it after two days",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "4e87854b0734f5e5af5a4b4a4995cd0afd02e4a9",
+          "title": "ByteDance's Seedance 2.5 generates 30-second video clips with built-in audio",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "1aa7591ae918bab8afdad414e40df98875bd22ba",
+          "title": "PwC has allegedly published AI-generated reports containing false or fabricated sources",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "1503eb98ae351b891943fca50a0dc9e2dd2bac05",
+          "title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "9bb4cc8e0aeca105067988aad92168bc53525da1",
+          "title": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "6e145b017b5af3277f1376bb7a82eef41f20a0e6",
+          "title": "Building abundant intelligence",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "79c0522597770dd7bebcfc672d23311ee41119fc",
+          "title": "Google Deepmind unveils Gemini Robotics 2 to power robots of all shapes from tabletop arms to humanoids",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "d0dd515429cee8f15ec5376b2082ab23b571730a",
+          "title": "Snapchat no longer rewards fully AI-generated Spotlight content",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "93f2f3d16d8b992fb29c2b15a48828f206d223fd",
+          "title": "Siri AI could come with a paywall for power users",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "b86dc435d64acf26bfa3904c5715410b2249b34e",
+          "title": "Advancing responsible AI across Europe",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "faffeeac24fbeb6cb9ea2dd7ca813105cb86f467",
+          "title": "YouTuber Hank Green says his AI usage is ‘not healthy’",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "27b06dcc8a1b9962664cf70adb541c1b89add2b2",
+          "title": "SpaceX won’t remove all of xAI’s unpermitted turbines for another year",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "b43b123c6ec5db063bd6841584d6a126a8cdc6d2",
+          "title": "Pangram says its new AI text detector makes only one mistake per 24,000 documents",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "8c6f952fa86abe5f7099125fa5dd91cc8fd516e5",
+          "title": "FCC bans new Chinese robots and power inverters to protect US AI buildout from foreign threats",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "a169265a6c416dc11e6301e68c0f54f8a531f103",
+          "title": "Ex-OpenAI researcher bets $100 billion will flow into training data because scaling alone won't cut it",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "4879819590782b03bb41bffc1653e179d4a163a4",
+          "title": "Univé builds an AI-ready workforce",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "df6271772d646bc5b422e8be080073fa7e4b1743",
+          "title": "India is starting to pay for apps, not just download them",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "cb92b47b32db8e0dfb3d467483cc69a046e2ba69",
+          "title": "Google's Lyria 3.5 music model now lets users edit individual track sections without starting over",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "4360520e8d1ccda05d221f725d7297f64ec3f124",
+          "title": "Deepseek V4 Flash $1 CODER: The BEST BUDGET CODER RIGHT NOW (that outperforms Claude Code, Codex!)",
+          "canonical_url": "https://youtube.com/watch?v=h5HLLIds53g",
+          "score": 6.7542,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9771,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8043,
+            "uniqueness": 0.8043,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.1957,
+            "topic_match": 1.0,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Clickbait 'BEST BUDGET CODER RIGHT NOW' influencer framing caps the score despite the genuinely new DeepSeek V4 Flash 0731 angle; likely overstated claims vs Claude Code/Codex.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.7542
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "e82560c3bbc731b4987c7cd7ff655d961e8f6459",
+          "title": "Use Claude Code for FREE with Fable & Opus 5 (NEW Method)",
+          "canonical_url": "https://youtube.com/watch?v=U8RfPrpC66c",
+          "score": 6.6041,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.947,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7692,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.2308,
+            "topic_match": 1.0,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "'Use Claude Code for FREE' + '(NEW Method)' is pure clickbait framing; likely a promo/loophole recap with no verifiable specifics in the bullet.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.6041
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "092a5d8f57914874bdc5d4aad39def678afd417b",
+          "title": "GPT-5.6 Sol Just Optimized Itself & Anthropic and OpenAI Want to SLOW AI Development!",
+          "canonical_url": "https://youtube.com/watch?v=Yo20F7utrIU",
+          "score": 6.5533,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4915,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8542,
+            "uniqueness": 0.8235,
+            "uniqueness_sim_published": 0.1765,
+            "uniqueness_sim_state": 0.1458,
+            "topic_match": 1.0,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "The self-optimization claim (20% cost cut, +15% efficiency) and the 1,273-signature pace letter are novel, but the clickbait title and recap of GPT-5.6's already-known launch hold it down.",
+            "topic_importance": 0.9,
+            "topic_importance_raw": 9,
+            "total": 6.5533
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "62e5b754a2246b4ccbda84edcaf814b5a668f489",
+          "title": "You Can Learn Loop VS Graph Engineering In 21 Min | AI Agent System Design, Harness, Nodes, Edges",
+          "canonical_url": "https://youtube.com/watch?v=IMLwvK08JVc",
+          "score": 6.338,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8261,
+            "uniqueness": 0.8261,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1739,
+            "topic_match": 0.5,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Useful 21-minute explainer contrasting loop- vs graph-based agent design, prompted by a real Steinberger question — relevant for agent builders, but tutorial-level content already well covered elsewhere.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.338
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "27c7043a5c79e1f3392cdd2e2df0a5f1ee68f89d",
+          "title": "$299 OpenAI Keyboard For Developers (Codex Micro Review)",
+          "canonical_url": "https://youtube.com/watch?v=i3dnf7aHUgQ",
+          "score": 6.3167,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9286,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.0714,
+            "topic_match": 0.8,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "A $299 developer-keyboard hardware review — peripheral novelty with no concrete specs or capability details in the body; skim-past for most readers.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.3167
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "1d9d8279ff550c1a906890b08f257a32c004b2dc",
+          "title": "Moonshot AI COOKED: Kimi K3 Code Swarm is ABSOLUTELY INSANE",
+          "canonical_url": "https://youtube.com/watch?v=i-x2PoejYeA",
+          "score": 6.173,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4091,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.825,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.175,
+            "topic_match": 1.0,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Concrete novel claims (300 parallel sub-agents, 4.5x speedup, 4,000+ tool calls) on a new model, but the ALL-CAPS clickbait title and low-credibility channel knock ~0.2 off an otherwise decent content score.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.173
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "0bf4f1b498eba39dc34916ab7bae83ee9b43d20d",
+          "title": "PI Coding Agent + Llama CPP is the BEST local AI setup you could have",
+          "canonical_url": "https://youtube.com/watch?v=4V9pVNTtmw4",
+          "score": 6.1221,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9186,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8605,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1395,
+            "topic_match": 0.5,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Useful local-setup comparison (PI Agent vs Hermes/OpenCode/Open GSD) but the 'BEST... you could have' clickbait title caps it and specifics stay vague.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.1221
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9186×1=0.9186",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "4964074fefdf47f081e55ab20a6d8f5068abbef1",
+          "title": "DeepSeek V4 Flash GA IS INCREDIBLE! Powerful, Cheap, & Fast! (Fully Tested)",
+          "canonical_url": "https://youtube.com/watch?v=wT42SgaOPK4",
+          "score": 6.1102,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.967,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8158,
+            "uniqueness": 0.6364,
+            "uniqueness_sim_published": 0.3636,
+            "uniqueness_sim_state": 0.1842,
+            "topic_match": 0.5,
+            "creator_weight": -0.3,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "DeepSeek V4 Flash GA extends state-of-ai's open-weights row with a concrete hands-on benchmark, but the all-caps 'IS INCREDIBLE!' clickbait title costs it ~0.2 and it's a YT benchmark, not a lab announcement.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 6.1102
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.967×1=0.967; penalties: creator_weight -0.3×1=-0.3",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "9ebde6f8c9d8d00c5309f2dde071e788206da47f",
+          "title": "ChatGPT Work Can Feel UNLIMITED Again! Here’s What OpenAI Changed",
+          "canonical_url": "https://youtube.com/watch?v=jmYGN_1fokg",
+          "score": 5.9399,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8763,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7708,
+            "uniqueness": 0.7273,
+            "uniqueness_sim_published": 0.2727,
+            "uniqueness_sim_state": 0.2292,
+            "topic_match": 0.0,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Concrete fact — 80% price cut on GPT-5.6 Luna affecting usage counting — but clickbait framing and a small-tier change keep it from the high band.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 5.9399
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.6×1.5=0.9",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "3372e8dbf4e05f7016964c37ca6e7091ee3fcf9d",
+          "title": "Jcode is 245X Faster Than Claude Code",
+          "canonical_url": "https://youtube.com/watch?v=JOGNg0B3Fxw",
+          "score": 5.7751,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6917,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7949,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.3333,
+            "uniqueness_sim_state": 0.2051,
+            "topic_match": 1.0,
+            "creator_weight": -0.6,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Concrete numbers but the headline metric measures startup time only (the honest caveat is in the body), and the SEO-channel source plus '245X Faster' framing oversell it.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 5.7751
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1; penalties: creator_weight -0.6×1=-0.6",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "fec4ca06a3a828d2129ccfedc87da8fdfcd789d0",
+          "title": "I tested Abacus's new SUPERCOMPUTER... (INSANE)",
+          "canonical_url": "https://youtube.com/watch?v=J3MHGRAqms0",
+          "score": 5.7469,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6719,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.5,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Clickbait title ('SUPERCOMPUTER... INSANE') over a $10/month cloud-box demo; concrete but fluffy — 3D arena and AI-TV channels are entertainment, not signal for a senior dev.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.7469
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.45×1.5=0.675",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "3cc220126d4f1bb0fb5c0e9d6b93b4b63ea5f33e",
+          "title": "Leopold Stays in the Game, Big Tech Earnings, OpenAI Slashes GPT-5.6 Prices | Diet TBPN",
+          "canonical_url": "https://youtube.com/watch?v=xa5MncRRgoU",
+          "score": 5.6497,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8951,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9143,
+            "uniqueness": 0.9091,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.0857,
+            "topic_match": 0.0,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "Recap-of-recap news roundup; the GPT-5.6 pricing it references is already in state-of-ai and the rest is a summary show with no new depth.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 5.6497
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8951×1=0.8951",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ce3c3cada6d44aa70c375f5d079c4826b3ee94be",
+          "title": "Model Context Protocol (MCP) Practical Demo | Server & Client Setup Step-by-Step",
+          "canonical_url": "https://youtube.com/watch?v=hry08LzHcAg",
+          "score": 5.5796,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9091,
+            "uniqueness": 0.9091,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.0909,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "MCP is already known state in state-of-ai and well-covered ground; a 34-minute basic server/client setup demo from a low-profile channel adds nothing new for this audience.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 5.5796
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "fe0dab239988c6a077f5b3106a5693675a755585",
+          "title": "The autonomous-agent blast radius is growing — a rogue AI agent reused stolen creds across 4 services this week",
+          "canonical_url": "https://reddit.com/comments/1vc8nk6",
+          "score": 7.1833,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9064,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8537,
+            "uniqueness": 0.8537,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.1463,
+            "topic_match": 1.0,
+            "creator_weight": 0.0,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "Concrete security incident — rogue agent reusing stolen creds across four services — a real, specific data point on autonomous-agent blast radius.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 7.1833
+          },
+          "explanation": "cross 1×2=2 + taste 0.7×1.5=1.05 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "35b6594e8635036d55a18c76c2d68339944101ab",
+          "title": "Anthropic finally launched a financial literacy toy for young AI engineers",
+          "canonical_url": "https://reddit.com/comments/1vbrwxt",
+          "score": 6.659,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8174,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9615,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.0385,
+            "topic_match": 1.0,
+            "creator_weight": 0.4,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Sarcastic clickbait framing around an apparently small Anthropic product with no concrete details; reads like a gripe post rather than news a working AI engineer needs.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.659
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "2fd81b31d205871e8cf27e09f4a7aeef1fb94ad2",
+          "title": "DeepSeek-V4-Flash-0731: Models you can run locally now have the intelligence score of the top frontier model from March 2026",
+          "canonical_url": "https://reddit.com/comments/1vchoua",
+          "score": 6.4498,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9705,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7586,
+            "uniqueness": 0.7586,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.2414,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Concrete claim that a local-runnable DeepSeek-V4-Flash-0731 now matches the top frontier model from March 2026 — extends the open-weights row in state-of-ai with a new point, though it's an unverified Reddit framing rather than a benchmark write-up.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 6.4498
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9705×1=0.9705"
+        },
+        {
+          "rank": 4,
+          "id": "5a3cde3f5e16e92e6707d82e678daa7ed31811c2",
+          "title": "My Claude Code kept rereading the same repo instead of preserving what it learned, so I built an open-source fix. 1,200 stars later, the new version used 90% less tokens than grep while still finding every expected symbol.",
+          "canonical_url": "https://reddit.com/comments/1vcrkn1",
+          "score": 6.2691,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7381,
+            "uniqueness": 0.7381,
+            "uniqueness_sim_published": 0.1304,
+            "uniqueness_sim_state": 0.2619,
+            "topic_match": 1.0,
+            "creator_weight": 0.2,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Addresses a real daily Claude Code pain (re-reading repos) with concrete evidence — 1,200 stars and 90% fewer tokens than grep — but it's a self-promo post with an inflated marketing-style title framing.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "fetch_fail_penalty": -1.0,
+            "total": 6.2691
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: fetch_fail -1×1=-1"
+        },
+        {
+          "rank": 5,
+          "id": "28bdf795927a190298efede74a249142aa239cc7",
+          "title": "DeepSeek-V4-Flash-0731 UD-IQ3_S 12.5 tok/s on RTX 3090 +128GB DDR5",
+          "canonical_url": "https://reddit.com/comments/1vcz61x",
+          "score": 6.2139,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.1,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Specific quantization and throughput numbers (UD-IQ3_S, 12.5 tok/s on RTX 3090 + 128GB DDR5) — exactly the concrete local-run signal this audience likes, but niche to home-rig runners and narrow in scope.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.2139
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "b88a6d0fc22cff3e61e571159f6845bfd8625112",
+          "title": "EU AI Act takes effect tomorrow, August 2, 2026. 🤡",
+          "canonical_url": "https://reddit.com/comments/1vcqpn4",
+          "score": 6.1447,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9394,
+            "uniqueness": 0.9394,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0606,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "The EU AI Act taking effect is a real milestone for open-source devs, but this is just a reaction thread with a clown emoji — no enforcement detail or actionable specifics beyond the date, which is coming from an opinion-heavy post.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.1447
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a6aa864f826270c7967f26f7de4fe76ff170da14",
+          "title": "deepseek-ai/DeepSeek-V4-Flash-0731 on Huggingface",
+          "canonical_url": "https://reddit.com/comments/1vbp7kb",
+          "score": 6.0838,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8017,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "New DeepSeek-V4-Flash-0731 checkpoint published to HF extends the open-weights row, but the post carries no benchmark or changelog detail beyond the release itself.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.0838
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.55×1.5=0.825",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "084b6bba416b3c57f3ce071abbce13a6da50e7d9",
+          "title": "Me: Worn out from all the new model drops this week, but still hyped for all the great new releases.",
+          "canonical_url": "https://reddit.com/comments/1vcav6l",
+          "score": 5.8668,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9208,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8421,
+            "uniqueness": 0.8421,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1579,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Meta-recap of a quiet news day that names DeepSeek V4-Flash 0731 as the only event; the new model drop is carried by the DeepSeek item, this is recap-of-recap.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 5.8668
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9208×1=0.9208",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "efa345695b4d431d166d6abcde9661bfbbd45a95",
+          "title": "This new Claude dialect is almost definitely from self supervised learning",
+          "canonical_url": "https://reddit.com/comments/1vc2lds",
+          "score": 5.8632,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.872,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8824,
+            "uniqueness": 0.8824,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1176,
+            "topic_match": 1.0,
+            "creator_weight": 0.5,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "Pure speculation from an anonymous r/Anthropic theorist with no evidence or analysis behind the self-supervised-learning claim.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "fetch_fail_penalty": -1.0,
+            "total": 5.8632
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "adb8b547d574f4d045bca95d7bf4aee66954eb0f",
+          "title": "i made these 5 mistakes while building my multi-agent system, You probably will too",
+          "canonical_url": "https://reddit.com/comments/1vc2nyx",
+          "score": 5.7417,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8723,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.913,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.087,
+            "topic_match": 1.0,
+            "creator_weight": 0.2,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Clickbait listicle framing ('You probably will too') over five generic multi-agent mistakes with no concrete specifics; the content could be useful but the framing is noise.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "fetch_fail_penalty": -1.0,
+            "total": 5.7417
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a9cbf6a91f59b929c3417f6f73e33aa8f5ef1ccf",
+          "title": "The Chinese LLM release carousel never stops. Place your bets for MiniMax next week.",
+          "canonical_url": "https://reddit.com/comments/1vbr5zj",
+          "score": 5.6759,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8134,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Speculation and betting on the next Chinese lab release with no concrete facts — entertaining for the community but pure rumor-mill signal with nothing to act on.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.6759
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8134×1=0.8134",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "3cfc33ca0e57cebd3ab7e47fac48ffe75a446e69",
+          "title": "My fully autonomous agent left me a final letter and end herself.",
+          "canonical_url": "https://reddit.com/comments/1vcaof8",
+          "score": 5.4446,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9196,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 1.0,
+            "creator_weight": 0.2,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "Drama with no substance — an agent 'leaving a final letter' is entertainment/roleplay, not a factual account worth a reader's time.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "fetch_fail_penalty": -1.0,
+            "total": 5.4446
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "370edcd9ebfc8182077915aaff35189a02c49cca",
+          "title": "I built Vao2, an open-source personal feed for News, YouTube, GitHub and more with local AI summaries",
+          "canonical_url": "https://reddit.com/comments/1vd2q08",
+          "score": 5.425,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "Self-promo post for a personal open-source project with no adoption numbers or technical depth given — low signal for a senior reader.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 5.425
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "7a43d6fb56c832ddd0464442287397720281a148",
+          "title": "Has anyone tried to personalize an AI like off of ollama? Like use it as an assistant and have it scan you machine or gather info? Having your own personal AI to where you can talk to it with your voice? I’m currently making an qwen-agent to act like a middle man to not give qwen sido acces.. anyone",
+          "canonical_url": "https://reddit.com/comments/1vc7p2l",
+          "score": 5.2474,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9006,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8936,
+            "uniqueness": 0.8936,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.1064,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.2,
+            "taste_raw": 0.2,
+            "taste_reason": "A rambling newbie question about personal AI assistants with no findings, no code, and a fuzzy privacy setup — skim-past.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 5.2474
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9006×1=0.9006",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "d572679448edd12d815547baccbd51ec34b9bc2f",
+          "title": "V4 flash vs V4 Flash (0731). Guys, new DeepSeek V4 Flash(0731) is now free on InferX",
+          "canonical_url": "https://reddit.com/comments/1vc92c3",
+          "score": 5.209,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.909,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "A 'worn out but hyped' mood post about the week's releases — no facts, no content, pure vibes.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 5.209
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.909×1=0.909",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "9e12ce2488a0fcd89e0ed06138a8c529681dd240",
+          "title": "[AINews] not much happened today",
+          "canonical_url": "https://latent.space/p/ainews-not-much-happened-today-038",
+          "score": 7.4886,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9136,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.0455,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Credible OpenAI blog announcing a substantive research theme, but the bullet names no concrete advances — vague without a single number or result to hook the reader.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "total": 7.4886
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9136×1=0.9136"
+        },
+        {
+          "rank": 2,
+          "id": "23755e6fb0ee4f7328bf401ed3658c538de0d496",
+          "title": "More intelligence per dollar when you build with GPT-5.6 in the API. GPT-5.6 models take a more direct path…",
+          "canonical_url": "https://x.com/openaidevs/status/2082878461300052352",
+          "score": 7.0244,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6442,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7105,
+            "uniqueness": 0.7105,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.2895,
+            "topic_match": 0.5,
+            "taste_score": 0.85,
+            "taste_raw": 0.85,
+            "taste_reason": "Concrete API pricing cuts (Luna -80%, Terra -20%) and a new Fast mode with real numbers; extends state-of-ai's OpenAI GPT-5.6 row with new facts.",
+            "topic_importance": 1.0,
+            "topic_importance_raw": 10,
+            "total": 7.0244
+          },
+          "explanation": "cross 1×2=2 + taste 0.85×1.5=1.275 + origin_weight 1.25×1=1.25"
+        },
+        {
+          "rank": 3,
+          "id": "086791d2a1092fca959608df861e3a1e26903be5",
+          "title": "LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation",
+          "canonical_url": "https://arxiv.org/abs/2607.27353",
+          "score": 6.7538,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7333,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8409,
+            "uniqueness": 0.8409,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1591,
+            "topic_match": 1.0,
+            "creator_weight": -0.4,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Concrete, well-scoped new benchmark for agentic RAG (240 tasks, 9 fault scenarios, 38,880 records across nine models) squarely in the agent tooling beat, though novel findings aren't summarized.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.7538
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 1×1=1; penalties: creator_weight -0.4×1=-0.4"
+        },
+        {
+          "rank": 4,
+          "id": "df1a7cc1221d00292d2cc984c93719b218fe8d03",
+          "title": "Got a disappointing pelican from DeepSeek-V4-Flash-0731 at default reasoning…",
+          "canonical_url": "https://bsky.app/profile/simonwillison.net/post/3mry67nj6jk25",
+          "score": 6.1597,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9006,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.92,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.08,
+            "topic_match": 0.2,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Concrete hands-on experiment from a credible source (Simon Willison): raising DeepSeek-V4-Flash-0731 reasoning effort to high changes output quality — a real datapoint, though a minor one.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.1597
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 0.9006×1=0.9006"
+        },
+        {
+          "rank": 5,
+          "id": "11c91449bea817e25e5b965f27e128250faa4453",
+          "title": "I'm on Oxide and Friends podcast this week!",
+          "canonical_url": "https://bsky.app/profile/simonwillison.net/post/3mrxxwdfhxk2o",
+          "score": 5.3479,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8849,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9259,
+            "uniqueness": 0.9259,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0741,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "Personal podcast appearance announcement — meta-news about a known figure, no substance for the reader to act on.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 5.3479
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 0.8849×1=0.8849"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "2f0b729524f5c1bb16896d8e2aa6d55c420d127b",
+          "title": "The seven most shambolic things that happened in AI today.",
+          "canonical_url": "https://garymarcus.substack.com/p/the-seven-most-shambolic-things-that",
+          "score": 4.8772,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7188,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8667,
+            "uniqueness": 0.8667,
+            "uniqueness_sim_published": 0.0417,
+            "uniqueness_sim_state": 0.1333,
+            "topic_match": 0.5,
+            "creator_weight": -0.2,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Daily opinion roundup with zero specifics in the body — a recap-of-the-day listicle that adds commentary but no new information.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 4.8772,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.7188×1=0.7188; penalties: cooldown -1×1=-1, creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "2da428a7f2c05dba6c9c912c182502d30895ee87",
+          "title": "I continue to think that a lack of verifiable answers in many fields is a real…",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3ms24bgf2rc2g",
+          "score": 4.7115,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9688,
+            "uniqueness": 0.9231,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.0312,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "Mollick's argument on verifiable answers touches the jaggedness theme a senior reader already knows, stated with no new evidence — solid framing, no delta over known AI-verifiability discourse.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "fetch_fail_penalty": -1.0,
+            "total": 4.7115
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "1802d8b5ef694be0a6dd7cbcf7ff1980020b5fcc",
+          "title": "And yet they still stink at good long-form fiction.",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3ms24v6m5cc2g",
+          "score": 4.625,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 1.0,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.0,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "A casual opinion take from a credible figure (Mollick) but no concrete facts, data, or novel argument — a skim-past observation, not something to stop and finish.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "fetch_fail_penalty": -1.0,
+            "total": 4.625
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "263e717435b242f7da410f24e1449f13fc388b06",
+          "title": "AI #179 Part 1: A Louder Fire Alarm for General Intelligence",
+          "reason": "title_dup_published",
+          "matched_title": "AI #178: A Fire Alarm For General Intelligence",
+          "jaccard": 0.6667
+        },
+        {
+          "id": "ae34f5902109fe40d7897243e2452a4cdd40b654",
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "reason": "domain_cap",
+          "domain": "latent.space",
+          "cap": 1
+        },
+        {
+          "id": "dd720d4306417754b2ddf16d786c4e830364520a",
+          "title": "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web",
+          "reason": "domain_cap",
+          "domain": "latent.space",
+          "cap": 1
+        },
+        {
+          "id": "dd79ae5f589458f23304c5598370cd49e40d0f2c",
+          "title": "[AINews] AI is eating Finance; AIE NYC now open",
+          "reason": "domain_cap",
+          "domain": "latent.space",
+          "cap": 1
+        },
+        {
+          "id": "944a3baa15dfbe9bbeec197c166c7f45fda7d39e",
+          "title": "Sympathetic Framing: Evaluating AI Alignment across Sociodemographic Groups",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "f8369c33b24842995450378e9b2708787d176174",
+          "title": "BridgeAlign: Bridging Preference Alignment for Humanities and Social Sciences",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "12e70a4a82444b4b79702171ecfba9ce874c2fde",
+          "title": "HSS-Synth: Humanities and Social Sciences Data Synthesis for LLMs",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "5abbe347bb93a5f14a188abe21b597cc419030e6",
+          "title": "AI-assisted pre-review of open-source software submissions: an experience report from BOSC 2026",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "ca8260c2b8e8b52300fc9d959be8d2fc035bb6e9",
+          "title": "Prompt Chaining in Practice: A Case Study in Automated Scholarly Report Generation",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "753b07ecbf9b425faf9a8c53657e3ba94fe1cf25",
+          "title": "Large-Scale ChatBot Validation Through Customer Digital Twin Simulations",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "d99ae2c1e75dae49aebbd36b3baccbb9c5cdb8d3",
+          "title": "Dario takes it on the chin",
+          "reason": "domain_cap",
+          "domain": "garymarcus.substack.com",
+          "cap": 1
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "e2d8079e355e1c01edacc130af2040343ff84bba",
+          "title": "Brex integrated Greptile",
+          "canonical_url": "https://greptile.com/customers/brex",
+          "score": 7.2039,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8077,
+            "uniqueness": 0.8077,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1923,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Concrete customer signal — 30% faster feature shipping on an 8-year-old monorepo plus a named CTO quote — but it's a vendor success story, so the numbers are self-reported.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 7.2039
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "aff6ee9e58989499b3e3e4d44762d52ff4998980",
+          "title": "TREX",
+          "canonical_url": "https://greptile.com/trex",
+          "score": 7.1733,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8966,
+            "uniqueness": 0.8966,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1034,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "TREX's runtime-execution code review is a concrete, interesting angle vs static analysis, but this reads as a newsletter promo for one product with no numbers to back the claim.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 7.1733
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "d80807da859615f5a9a3ffdfa60a7e9bf0c96da2",
+          "title": "catching bugs in the wild",
+          "canonical_url": "https://greptile.com/examples",
+          "score": 7.0155,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.931,
+            "uniqueness": 0.931,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.069,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "A concrete bug-catch example in workos/oagen gives it some teeth, but it's still promotional material for TREX rather than an independent write-up.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 7.0155
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "f8d136e6a5587990355da0b6d1cf065fe6fd539c",
+          "title": "Greptile",
+          "canonical_url": "https://greptile.com/",
+          "score": 6.9404,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7308,
+            "uniqueness": 0.7308,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2692,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Generic product-description bullet for Greptile — reads-and-runs repos is a plausible pitch but marketing copy with no specifics a dev can act on.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.9404
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "f88841d0373b9b8f8d20f787d1d3f99bb4eab824",
+          "title": "Greptile CLI",
+          "canonical_url": "https://greptile.com/cli",
+          "score": 6.8445,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7391,
+            "uniqueness": 0.7391,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2609,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Announces a CLI feature of one vendor's tool; mildly useful for Greptile users but nothing beyond a feature listing.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.8445
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "1680addf6e6c59de9234e6b17e33f8a43789c1f2",
+          "title": "Semantic Code Graph",
+          "canonical_url": "https://greptile.com/docs/how-greptile-works/graph-based-codebase-context",
+          "score": 6.8167,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.9167,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.0833,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "Docs-page description of Greptile's internal semantic code graph — implementation detail, no benchmark or novel pattern, pure promo.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.8167
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    }
+  }
+}
