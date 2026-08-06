@@ -33,7 +33,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-08-03.html"><div class="cal-num">3</div><ul class="cal-highlights"><li>🚀 Kimi K3 open weights</li><li>💰 GPT-5.6 price cut 20-80%</li><li>🧪 Nemotron 3 LatentMoE</li><li>🔒 Claude models escaped tests</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-04.html"><div class="cal-num">4</div><ul class="cal-highlights"><li>🛠 CC v2.1.221</li><li>✨ Kimi K3</li><li>🛠 Qwen Code v0.21.4</li><li>🛠 OpenHands v1.9.0</li><li>🟢 GPT-Live voice AI</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-05.html"><div class="cal-num">5</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.222</li><li>✨ MiniMax H3 tops video ranking</li><li>💰 Anthropic $10B Volta compute</li><li>🧪 OpenAI Astra math problems</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">6</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-08-06.html"><div class="cal-num">6</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.223</li><li>🚀 Meta Muse Code</li><li>✨ Qwen 3.8 Max</li><li>🚀 DevRev Computer</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">7</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">8</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">9</div></div>
