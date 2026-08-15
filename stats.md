@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-08-14 01:33 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-08-15 01:09 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (in retention window):** 6315
-- **Enriched:** 465 (7%)
-- **Taste-rated:** 465 (7%)
-- **Researched:** 328 (5%)
-- **Status (candidate / rejected / published / duplicate):** 2769 / 3546 / 0 / 0
-- **Published bullets (all-time):** 2120 (last 7d: 125)
+- **Discovery items (in retention window):** 6037
+- **Enriched:** 474 (7%)
+- **Taste-rated:** 474 (7%)
+- **Researched:** 342 (5%)
+- **Status (candidate / rejected / published / duplicate):** 2962 / 3075 / 0 / 0
+- **Published bullets (all-time):** 2143 (last 7d: 148)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,8 +22,9 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-08-14 | 601 | 43 (7%) | 43 (7%) | 34 (5%) |
-| 2026-08-13 | 425 | 24 (5%) | 24 (5%) | 16 (3%) |
+| 2026-08-15 | 284 | 33 (11%) | 33 (11%) | 25 (8%) |
+| 2026-08-14 | 601 | 46 (7%) | 46 (7%) | 38 (6%) |
+| 2026-08-13 | 425 | 24 (5%) | 24 (5%) | 17 (4%) |
 | 2026-08-12 | 1034 | 35 (3%) | 35 (3%) | 27 (2%) |
 | 2026-08-11 | 618 | 43 (6%) | 43 (6%) | 33 (5%) |
 | 2026-08-10 | 91 | 22 (24%) | 22 (24%) | 12 (13%) |
@@ -36,6 +37,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Coding Agents | AI World | YouTube | Reddit | Community | Newsletters | Total |
 |---|---:|---:|---:|---:|---:|---:|---:|
+| 2026-08-15 | 2 | 5 | 3 | 5 | 5 | 3 | 23 |
 | 2026-08-14 | 1 | 5 | 3 | 5 | 5 | 3 | 22 |
 | 2026-08-13 | 3 | 4 | 3 | 5 | 4 | 2 | 21 |
 | 2026-08-12 | 2 | 5 | 3 | 5 | 5 | 3 | 23 |
@@ -50,21 +52,21 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 
 | Creator | Source | Items (30d) |
 |---|---|---:|
-| arXiv cs.AI | `rss` | 3773 |
-| arXiv cs.CL | `rss` | 2687 |
-| TLDR | `email` | 2406 |
-| The Rundown AI | `email` | 602 |
-| TechCrunch AI | `rss` | 250 |
+| arXiv cs.AI | `rss` | 3429 |
+| arXiv cs.CL | `rss` | 2491 |
+| TLDR | `email` | 2431 |
+| The Rundown AI | `email` | 600 |
+| TechCrunch AI | `rss` | 237 |
 | The Decoder | `rss` | 185 |
-| AlphaSignal | `email` | 151 |
-| Cline releases | `rss` | 120 |
+| AlphaSignal | `email` | 150 |
+| Cline releases | `rss` | 125 |
 | r/LocalLLaMA | `reddit` | 89 |
-| Codex releases | `rss` | 87 |
-| Qwen Code releases | `rss` | 81 |
-| Hacker News (ai/llm/claude) | `rss` | 75 |
-| r/Artificial | `reddit` | 66 |
-| The Verge AI | `rss` | 62 |
-| r/LocalLLM | `reddit` | 62 |
+| Codex releases | `rss` | 86 |
+| Qwen Code releases | `rss` | 84 |
+| Hacker News (ai/llm/claude) | `rss` | 73 |
+| The Verge AI | `rss` | 65 |
+| r/LocalLLM | `reddit` | 65 |
+| r/Artificial | `reddit` | 63 |
 
 
 ## Rejection reasons (all-time)
@@ -73,7 +75,7 @@ What got filtered out before reaching the picker. `stale` is the auto-reject for
 
 | Reason | Count |
 |---|---:|
-| `stale` | 32958 |
+| `stale` | 33049 |
 | `off_topic` | 3 |
 
 
