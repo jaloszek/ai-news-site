@@ -45,7 +45,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-08-15.html"><div class="cal-num">15</div><ul class="cal-highlights"><li>✨ GPT-5.6 Sol (14× speed)</li><li>🚀 Qwen3.8-27B</li><li>✨ GLM-5.3</li><li>🛠 Claude watermark API</li><li>🤖 CC 46% auto-merge</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-16.html"><div class="cal-num">16</div><ul class="cal-highlights"><li>✨ Grok 4.6</li><li>✨ Meta Muse Glimmer</li><li>🛠 Claude Code v2.1.231</li><li>🛠 Sheets canvas</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>💰 Stripe buys OpenRouter for $7B</li><li>✨ Qwen 3.8 27B</li><li>🔒 Anthropic bio-weapons filter down</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">18</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-08-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🛠 CC v2.1.234</li><li>🚀 Cursor Origin hosting</li><li>💰 OpenAI $105B Ohio lease</li><li>🧪 GPU scheduling +33%</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">19</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>
