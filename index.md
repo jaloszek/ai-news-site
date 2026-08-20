@@ -47,7 +47,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-08-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>💰 Stripe buys OpenRouter for $7B</li><li>✨ Qwen 3.8 27B</li><li>🔒 Anthropic bio-weapons filter down</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🛠 CC v2.1.234</li><li>🚀 Cursor Origin hosting</li><li>💰 OpenAI $105B Ohio lease</li><li>🧪 GPU scheduling +33%</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-19.html"><div class="cal-num">19</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.235</li><li>🛠 Codex 0.148.0</li><li>🛠 OpenHands v1.14.0</li><li>✨ DeepSeek V4 Pro 0813</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-08-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>💰 Stripe buys OpenRouter for $7B</li><li>🛠 Claude Code v2.1.236</li><li>🚀 Mojo is now open source</li><li>✨ GLM-5.3 tops open-model rankings</li><li>🤖 DeepSeek coding agent hits 165K stars</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">22</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
