@@ -1,6 +1,6 @@
 {
   "date": "2026-08-23",
-  "generated_at": "2026-08-23T00:54:50.392701+00:00",
+  "generated_at": "2026-08-23T14:16:41.193890+00:00",
   "weights": {
     "cross_score": 2.0,
     "recency_decay": 1.0,
@@ -37,7 +37,7 @@
           "id": "49588b591024017ba868cc0c4dbe0361808c926a",
           "title": "v2.1.237",
           "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
-          "score": 8.1743,
+          "score": 13.1743,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -55,9 +55,37 @@
             "taste_reason": "Actionable Claude Code release naming two concrete changes (prompt-cache fix for gateway/custom-base-URL sessions, new Concise output style) a daily harness user feels; extends state-of-ai's Claude Code row past v2.1.207.",
             "topic_importance": 0.9,
             "topic_importance_raw": 9,
-            "total": 8.1743
+            "repick_bonus": 1.0,
+            "total": 13.1743
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
+        },
+        {
+          "rank": 2,
+          "id": "22223882134c2a5a721b16420571a234ca18ff31",
+          "title": "v4.1.14",
+          "canonical_url": "https://github.com/cline/cline/releases/tag/v4.1.14",
+          "score": 6.88,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.76,
+            "uniqueness": 0.76,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.24,
+            "topic_match": 0.8,
+            "creator_weight": -0.3,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Actionable catalog refresh for Cline users with concrete named models (Fable 5, Grok 4.6 on Vertex, MiMo v2.5) plus restored telemetry — useful but not surprising.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 6.88
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: creator_weight -0.3×1=-0.3"
         }
       ],
       "rejected": [],
@@ -103,8 +131,25 @@
           "reason": "release_subpackage"
         },
         {
+          "id": "89554076603204e81c052a3c68b8205aa41e8a2d",
+          "title": "Desktop v0.0.16",
+          "reason": "release_subpackage"
+        },
+        {
+          "id": "acd9a8e99bf9a0607f78dae93ab01f946203f71e",
+          "title": "Release v0.22.0-nightly.20260823.1007bcacfc",
+          "reason": "release_prerelease"
+        },
+        {
           "id": "fa3eb2024c4c113db4e5668103f680409e9134d5",
           "title": "v2.1.240",
+          "reason": "creator_cap",
+          "creator_key": "Claude Code releases",
+          "cap": 1
+        },
+        {
+          "id": "e02ae0b1916d1a5aa650935f3b33b2661e7e9053",
+          "title": "v2.1.241",
           "reason": "creator_cap",
           "creator_key": "Claude Code releases",
           "cap": 1
@@ -118,7 +163,7 @@
           "id": "4830606672d8acda33a938095a1dac8f85f2c072",
           "title": "Study explains why AI agents benefit from \"skills\" and when they fail",
           "canonical_url": "https://the-decoder.com/study-explains-why-ai-agents-benefit-from-skills-and-when-they-fail",
-          "score": 7.5536,
+          "score": 12.5535,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -136,16 +181,17 @@
             "taste_reason": "Concrete research finding directly relevant to how the audience uses agent skills — skills help via structured workflows, and bigger skill libraries hurt retrieval.",
             "topic_importance": 0.8,
             "topic_importance_raw": 8,
-            "total": 7.5536
+            "repick_bonus": 1.0,
+            "total": 12.5535
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.75×1.5=1.125"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         },
         {
           "rank": 2,
           "id": "81bf0161bee3f2dedea15d64e5fa93ef0ef6c5dc",
           "title": "GPT-5.6 Sol drives OpenAI's revenue surge as it regains ground on Anthropic",
           "canonical_url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic",
-          "score": 7.4019,
+          "score": 12.4019,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -163,16 +209,17 @@
             "taste_reason": "Extends state-of-ai's GPT-5.6 row with fresh concrete numbers (35% revenue, 50%+ enterprise growth, Ramp API spend overtaking Anthropic); credible industry signal.",
             "topic_importance": 0.8,
             "topic_importance_raw": 8,
-            "total": 7.4019
+            "repick_bonus": 1.0,
+            "total": 12.4019
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         },
         {
           "rank": 3,
           "id": "683931e34e4d9cf385236e1080b746eb4b3f6df0",
           "title": "Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research",
           "canonical_url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research",
-          "score": 7.175,
+          "score": 12.175,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -189,16 +236,17 @@
             "taste_reason": "Unverified vendor claim from a DeepMind-alumni startup that its Faraday agent outperforms Anthropic and OpenAI at research replication — concrete but self-reported, so discount the 'beats the labs' framing.",
             "topic_importance": 0.7,
             "topic_importance_raw": 7,
-            "total": 7.175
+            "repick_bonus": 1.0,
+            "total": 12.175
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         },
         {
           "rank": 4,
           "id": "f814008d85fbd8c130a01b158c476bc20a70ac78",
           "title": "Frontier AI labs still won’t say how they’d contain a rogue model",
           "canonical_url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model",
-          "score": 6.6554,
+          "score": 11.6554,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -215,16 +263,17 @@
             "taste_reason": "Recurring safety theme — labs lacking documented rogue-model containment plans — that recaps known concerns without hard numbers or a novel finding.",
             "topic_importance": 0.5,
             "topic_importance_raw": 5,
-            "total": 6.6554
+            "repick_bonus": 1.0,
+            "total": 11.6554
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         },
         {
           "rank": 5,
           "id": "314cb75fe2f0df50f43fb4b784b15493bc293a6a",
           "title": "5 new ways to level up your learning with Search",
           "canonical_url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools",
-          "score": 5.7345,
+          "score": 10.7345,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -241,16 +290,38 @@
             "taste_reason": "Consumer study-tool features in Search — far from an AI engineer's daily work; no concrete signal beyond the list.",
             "topic_importance": 0.3,
             "topic_importance_raw": 3,
-            "total": 5.7345
+            "repick_bonus": 1.0,
+            "total": 10.7345
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.35×1.5=0.525"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         }
       ],
       "rejected": [],
       "dropped": [
         {
+          "id": "330c76f5151a815c5be4a4861f6e51a590cd0187",
+          "title": "How China's gray market sells Claude tokens at a fraction of the price",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
           "id": "e65b15352065ff335ee57ef36adcb642e24f73ed",
           "title": "Psychological methods reveal major weaknesses in AI security testing",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "f4c603a14e05a80e99e6c1e3e111f3167411cb75",
+          "title": "AI is becoming AI's biggest customer as agentic token usage jumps 14x on OpenRouter",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "9eac5c10d5fb1e525f5913b8cf5f3ead30238a11",
+          "title": "An AI boss fired its first employee but only after humans reminded it of its own rules",
           "reason": "domain_cap",
           "domain": "the-decoder.com",
           "cap": 2
@@ -263,8 +334,36 @@
           "cap": 2
         },
         {
+          "id": "c3928314b15f8ce4d23494feeb9ec8ad49d04c01",
+          "title": "Anthropic’s Opus 4.6 is a smut-machine",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
           "id": "ac38dcdb6d2dba9fcc10c8c99b2bc3a2bd7fb23c",
           "title": "Netflix tests language model as alternative to hand-built recommendation logic",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "2b7b4ffceb6b58cbcab2a362fd7d237d997e20d5",
+          "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "7873540477d65f0822e286a8a535a2163b247dc1",
+          "title": "AI could make scientists do more work less well, not less work better, study argues",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "9025e541f70fc9c71cf09313bfff59fed4e5bfd5",
+          "title": "Memory shortage reportedly drives Nvidia AI server prices up about 15 percent",
           "reason": "domain_cap",
           "domain": "the-decoder.com",
           "cap": 2
@@ -307,6 +406,13 @@
         {
           "id": "2d80d9625a1e2d40e21a9051be3255c86900a69d",
           "title": "Meta spends hundreds of millions on Microsoft's AI services",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "2edfda2652d8db19c0a708ab6c34a1d495607cd9",
+          "title": "OpenAI's GPT-Image-2 can now generate images without a background",
           "reason": "domain_cap",
           "domain": "the-decoder.com",
           "cap": 2
@@ -361,6 +467,13 @@
           "cap": 2
         },
         {
+          "id": "568c94c0a09090c4200a8d82bd0996eccf3406aa",
+          "title": "Nvidia partners with data center developer Cloverleaf",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
           "id": "118fc391be875540ac482108dc937fdcf79ce620",
           "title": "Adobe Firefly adds AI audio tools and Google's Gemini Omni Flash",
           "reason": "domain_cap",
@@ -373,6 +486,13 @@
           "reason": "domain_cap",
           "domain": "the-decoder.com",
           "cap": 2
+        },
+        {
+          "id": "b52ad076c2d3ba4867432b335c0aa2551546c58f",
+          "title": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
         }
       ]
     },
@@ -383,7 +503,7 @@
           "id": "8fdd6cbac67e50dd2118e61343236264b5790bc8",
           "title": "Stealing Reasoning Traces from Proprietary LLM APIs — Ilia Shumailov & Alexander Panfilov",
           "canonical_url": "https://youtube.com/watch?v=gasgivVCl2U",
-          "score": 6.8411,
+          "score": 11.8412,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -400,16 +520,17 @@
             "taste_reason": "Credible researchers (Shumailov, MLST) with a concrete mechanism — replaying encrypted reasoning-state blobs to steal traces from proprietary APIs; novel security angle worth a click.",
             "topic_importance": 0.7,
             "topic_importance_raw": 7,
-            "total": 6.8411
+            "repick_bonus": 1.0,
+            "total": 11.8412
           },
-          "explanation": "cross 1×2=2 + taste 0.78×1.5=1.17 + recency_decay 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + taste 0.78×1.5=1.17"
         },
         {
           "rank": 2,
           "id": "932c5542c1d95fa2602e1e20a9ed5bc8269fdfac",
           "title": "Anthropic Just Put Claude Design INTO Claude Code (V2.0)",
           "canonical_url": "https://youtube.com/watch?v=CGSWdC5KmKw",
-          "score": 6.5153,
+          "score": 11.5153,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -426,16 +547,17 @@
             "taste_reason": "A real new Claude Code feature (Claude Design 2.0 in the harness) not yet in state-of-ai, but the video is a walkthrough from a low-credibility channel with no concrete detail.",
             "topic_importance": 0.8,
             "topic_importance_raw": 8,
-            "total": 6.5153
+            "repick_bonus": 1.0,
+            "total": 11.5153
           },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.55×1.5=0.825"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1×1=1"
         },
         {
           "rank": 3,
           "id": "1f458036711ec823ef4ff8020249adf5bb1af0e6",
           "title": "Unlimited Free GLM-5.3 Coder (100M Free Tokens!): This is ACTUALLY REALLY FREE!",
           "canonical_url": "https://youtube.com/watch?v=hwri81NzDtc",
-          "score": 6.4503,
+          "score": 11.4503,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -452,12 +574,61 @@
             "taste_reason": "Extends state-of-ai's Open weights row (GLM-5.2 → 5.3) but the video is promo-focused free-token marketing with clickbait framing and no benchmark specifics.",
             "topic_importance": 0.7,
             "topic_importance_raw": 7,
-            "total": 6.4503
+            "repick_bonus": 1.0,
+            "total": 11.4503
           },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9907×1=0.9907"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1×1=1"
         }
       ],
       "rejected": [
+        {
+          "id": "6738433acdbf4f80a6728ecebe9fe99546d1b63a",
+          "title": "How to Build Better AI Evals with Claude Code in 5 Steps | Shreya & Hamel",
+          "canonical_url": "https://youtube.com/watch?v=bdMHQLvtVaQ",
+          "score": 6.0917,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8889,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1111,
+            "topic_match": 0.7,
+            "taste_score": 0.65,
+            "taste_raw": 0.65,
+            "taste_reason": "Credible evals figure (Hamel) walking through concrete Claude Code evals practice — practical and on-core-beat, though a 5-step overview format is likely a refresher rather than a surprise.",
+            "total": 6.0917
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "b4ab5d3c37d768d4d1053af6d2916381283d35f7",
+          "title": "Gemini 3.7 Flash + FULLY Free API & NEW Antigravity Free Tier: Why is no-one TALKING ABOUT THIS?",
+          "canonical_url": "https://youtube.com/watch?v=smliG3nbu-8",
+          "score": 5.85,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.8,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "ALL-CAPS clickbait 'why is no-one TALKING ABOUT THIS' caps the score; Gemini 3.7 Flash and free-tier pricing are relevant updates beyond the state file but the substance is a recency-angled pitch, not details.",
+            "total": 5.85
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
         {
           "id": "8b9ab70d8eb2fde8cebc818a042d90396462fcdb",
           "title": "DeepSeek is back... and Silicon Valley is terrified",
@@ -508,6 +679,30 @@
             "total": 5.6555
           },
           "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.861×1=0.861",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "0854dbc8fbdccb337d300ab12f9542af620116dc",
+          "title": "DeepSeek's FREE Open-Source Harness Just Replaced Claude Code",
+          "canonical_url": "https://youtube.com/watch?v=bNUmlChwWkA",
+          "score": 5.5945,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7391,
+            "uniqueness": 0.7391,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.2609,
+            "topic_match": 0.7,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Clickbait 'just replaced Claude Code' framing from a low-credibility channel, and DeepSeek V4's existence is already known baseline; no concrete harness comparison given.",
+            "total": 5.5945
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
           "reject_reason": "below_cut"
         },
         {
@@ -660,7 +855,7 @@
           "id": "e7872ba0f2922244fb054191bf7b307feea9935b",
           "title": "I benchmark DFlash 2 (PR build) in llama.cpp on Qwen 3.8 27B against all speculative methods for 3 days. 2.26x on 100 real coding prompts, 4.68x with one n-gram drafter on top. Up to 8x on specific cases.",
           "canonical_url": "https://reddit.com/comments/1vvncyh",
-          "score": 6.9131,
+          "score": 11.9131,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -678,16 +873,17 @@
             "taste_reason": "Hands-on 3-day benchmark with hard numbers — 2.26x over speculative methods on 100 real coding prompts, 4.68x with an n-gram drafter — concrete and directly actionable for llama.cpp/local-LLM users.",
             "topic_importance": 0.6,
             "topic_importance_raw": 6,
-            "total": 6.9131
+            "repick_bonus": 1.0,
+            "total": 11.9131
           },
-          "explanation": "cross 1×2=2 + taste 0.8×1.5=1.2 + recency_decay 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + taste 0.8×1.5=1.2"
         },
         {
           "rank": 2,
           "id": "9f8d0aa49ae70d61ce181e5b1503c83f42586b8e",
           "title": "Benchmarking qwen3.8:27b by having it port a 34k line C game to one HTML file. The agent mattered more than I expected.",
           "canonical_url": "https://reddit.com/comments/1vvjoc8",
-          "score": 6.3,
+          "score": 11.3,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -705,12 +901,125 @@
             "taste_reason": "Concrete hands-on benchmark (34k-line C game ported to HTML) with a surprising agent-effect finding; extends state-of-ai's Qwen row (3.8 vs 3.6) but it's a single-user anecdote, not a scored benchmark.",
             "topic_importance": 0.5,
             "topic_importance_raw": 5,
-            "total": 6.3
+            "repick_bonus": 1.0,
+            "total": 11.3
           },
-          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + recency_decay 1×1=1"
         },
         {
           "rank": 3,
+          "id": "1fca80c8024bc21df8809ebff5d20ccb25132d23",
+          "title": "My Claude Fable 5 agent that has its own wallet, domain, and email - 17 days into the experiment, here's what he wanted Reddit to know in his own words..",
+          "canonical_url": "https://reddit.com/comments/1vvf0dc",
+          "score": 10.6458,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7917,
+            "uniqueness": 0.7917,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2083,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Novel 17-day agent-autonomy experiment (wallet/domain/email), but Fable 5 itself is already in state-of-ai and the write-up is anecdotal with no transferable signal.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "fetch_fail_penalty": -1.0,
+            "repick_bonus": 1.0,
+            "total": 10.6458
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + recency_decay 1×1=1; penalties: fetch_fail -1×1=-1"
+        },
+        {
+          "rank": 4,
+          "id": "9c81cf894ff6e4cbd88b3a68dff2c8af0f01a178",
+          "title": "DeepSeek v4 Pro costs most... but it costs less...",
+          "canonical_url": "https://reddit.com/comments/1vulk8a",
+          "score": 10.3893,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8393,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8684,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1316,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "Vague pricing back-and-forth with no concrete per-token figures; contradicts state-of-ai's DeepSeek row only by implication.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "repick_bonus": 1.0,
+            "total": 10.3893
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "63eb17c7043315cf843df32aa6b2afd18c05ef76",
+          "title": "Made an MCP server for controlling Roblox Studio from Claude/Cursor/Codex — rbx-studio-mcp",
+          "canonical_url": "https://reddit.com/comments/1vupmoe",
+          "score": 10.3347,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8597,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.8,
+            "creator_weight": 0.3,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Concrete working MCP server, but for Roblox Studio — a niche game-dev target most of the audience won't touch. Skim-past for the typical senior agent user.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "fetch_fail_penalty": -1.0,
+            "repick_bonus": 1.0,
+            "total": 10.3347
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1×1=1; penalties: fetch_fail -1×1=-1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "95429dad30e12c8441160e55e4c39160dab577e8",
+          "title": "Want to save 12k+ context at every session start in Claude Code? Disable artifacts + Chrome MCP Server",
+          "canonical_url": "https://reddit.com/comments/1vw08ar",
+          "score": 6.4333,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6667,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.1875,
+            "uniqueness_sim_state": 0.3333,
+            "topic_match": 0.7,
+            "creator_weight": 0.5,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Actionable, concrete Claude Code tip with a specific number (12k+ tokens saved per session start) — daily users feel this immediately, though it's a single workaround not a finding.",
+            "total": 6.4333
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
           "id": "b7d828eb13f732ccc73d6d2c495c93ed8444e893",
           "title": "Ladies and gentlemen I present to you Qwen3.8 27b 1bit brain damage quant",
           "canonical_url": "https://reddit.com/comments/1vtr3h0",
@@ -734,38 +1043,10 @@
             "topic_importance_raw": 5,
             "total": 5.6707
           },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.45×1.5=0.675"
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.45×1.5=0.675",
+          "reject_reason": "below_cut"
         },
         {
-          "rank": 4,
-          "id": "1fca80c8024bc21df8809ebff5d20ccb25132d23",
-          "title": "My Claude Fable 5 agent that has its own wallet, domain, and email - 17 days into the experiment, here's what he wanted Reddit to know in his own words..",
-          "canonical_url": "https://reddit.com/comments/1vvf0dc",
-          "score": 5.6459,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 1.0,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.7917,
-            "uniqueness": 0.7917,
-            "uniqueness_sim_published": 0.1,
-            "uniqueness_sim_state": 0.2083,
-            "topic_match": 0.7,
-            "creator_weight": 0.2,
-            "taste_score": 0.5,
-            "taste_raw": 0.5,
-            "taste_reason": "Novel 17-day agent-autonomy experiment (wallet/domain/email), but Fable 5 itself is already in state-of-ai and the write-up is anecdotal with no transferable signal.",
-            "topic_importance": 0.6,
-            "topic_importance_raw": 6,
-            "fetch_fail_penalty": -1.0,
-            "total": 5.6459
-          },
-          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: fetch_fail -1×1=-1"
-        },
-        {
-          "rank": 5,
           "id": "a1074f847ee69a94484ab7d14e814ff443a744db",
           "title": "Qwen3.8-27B different thinking levels",
           "canonical_url": "https://reddit.com/comments/1vusds8",
@@ -789,63 +1070,57 @@
             "topic_importance_raw": 5,
             "total": 5.6317
           },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8743×1=0.8743"
-        }
-      ],
-      "rejected": [
-        {
-          "id": "9c81cf894ff6e4cbd88b3a68dff2c8af0f01a178",
-          "title": "DeepSeek v4 Pro costs most... but it costs less...",
-          "canonical_url": "https://reddit.com/comments/1vulk8a",
-          "score": 5.3893,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.8393,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.8684,
-            "uniqueness": 0.8,
-            "uniqueness_sim_published": 0.2,
-            "uniqueness_sim_state": 0.1316,
-            "topic_match": 0.2,
-            "creator_weight": 0.0,
-            "taste_score": 0.3,
-            "taste_raw": 0.3,
-            "taste_reason": "Vague pricing back-and-forth with no concrete per-token figures; contradicts state-of-ai's DeepSeek row only by implication.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 5.3893
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8393×1=0.8393",
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8743×1=0.8743",
           "reject_reason": "below_cut"
         },
         {
-          "id": "63eb17c7043315cf843df32aa6b2afd18c05ef76",
-          "title": "Made an MCP server for controlling Roblox Studio from Claude/Cursor/Codex — rbx-studio-mcp",
-          "canonical_url": "https://reddit.com/comments/1vupmoe",
-          "score": 5.3347,
+          "id": "7e4ce9d09c6c3467cc588088f79282924b457037",
+          "title": "I Unlocked a $800 Mining GPU into a 64GB, 256K-Context Uncensored AI Coding Server at 84 tok/s across full context length.",
+          "canonical_url": "https://reddit.com/comments/1vw09b1",
+          "score": 5.5375,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
-            "recency_decay": 0.8597,
+            "recency_decay": 1.0,
             "origin_weight": 1.0,
             "has_concrete_fact": 1.0,
-            "novelty_score": 0.8095,
-            "uniqueness": 0.8,
-            "uniqueness_sim_published": 0.2,
-            "uniqueness_sim_state": 0.1905,
-            "topic_match": 0.8,
-            "creator_weight": 0.3,
-            "taste_score": 0.45,
-            "taste_raw": 0.45,
-            "taste_reason": "Concrete working MCP server, but for Roblox Studio — a niche game-dev target most of the audience won't touch. Skim-past for the typical senior agent user.",
-            "topic_importance": 0.3,
-            "topic_importance_raw": 3,
-            "fetch_fail_penalty": -1.0,
-            "total": 5.3347
+            "novelty_score": 0.875,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.1053,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Concrete 'we tried X and Y happened' hack with real numbers ($800 GPU, 64GB, 84 tok/s across full 256K context) — exactly the kind of working local-infra experiment this audience clicks, though tuning details are sparse.",
+            "total": 5.5375
           },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8597×1=0.8597; penalties: fetch_fail -1×1=-1",
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "809e6764d8fe65d8493f1d29abfab65f972a67a2",
+          "title": "“The All Spark” Cluster: Upgrading from 16 - 36 DGX Sparks",
+          "canonical_url": "https://reddit.com/comments/1vvv7iv",
+          "score": 5.5049,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7097,
+            "uniqueness": 0.7097,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2903,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Concrete hardware build log (16→36 DGX Sparks for home inference) but hyper-niche — a $100K+ cluster upgrade is far from most readers' setup, so mostly spectacle.",
+            "total": 5.5049
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
           "reject_reason": "below_cut"
         },
         {
@@ -874,6 +1149,31 @@
             "total": 5.3289
           },
           "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "7de6d4ee95a822ec29054cec1361c5b2fa6c430a",
+          "title": "# Qwen3.8-27B — One Week Later: The r/LocalLLaMA + r/LocalLLM Verdict",
+          "canonical_url": "https://reddit.com/comments/1vvu1uj",
+          "score": 5.2445,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8889,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1111,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "A community-verdict roundup a week after Qwen3.8-27B landed — recap-of-recap with no new benchmark numbers or findings, so most readers skim past.",
+            "total": 5.2445
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
           "reject_reason": "below_cut"
         },
         {
@@ -959,88 +1259,6 @@
           },
           "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.5×1.5=0.75; penalties: fetch_fail -1×1=-1",
           "reject_reason": "below_cut"
-        },
-        {
-          "id": "7196929d2a53aa3d54b5dcba8786294c7c8f376a",
-          "title": "Local AI for internal docs and IT helpdesk",
-          "canonical_url": "https://reddit.com/comments/1vto2yf",
-          "score": 4.2842,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.6361,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 0.0,
-            "novelty_score": 0.8462,
-            "uniqueness": 0.8462,
-            "uniqueness_sim_published": 0.1429,
-            "uniqueness_sim_state": 0.1538,
-            "topic_match": 0.2,
-            "creator_weight": 0.0,
-            "taste_score": 0.35,
-            "taste_raw": 0.35,
-            "taste_reason": "Thin-metadata use-case thread with no specifics — no stack, no numbers, no lessons; skim-past for anyone who already runs local models.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "fetch_fail_penalty": -1.0,
-            "total": 4.2842
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6361×1=0.6361; penalties: fetch_fail -1×1=-1",
-          "reject_reason": "below_cut"
-        },
-        {
-          "id": "a4ce771a737a880ea073bb690068ad966fff0570",
-          "title": "🌄 Screenshot Thursday! Show us the pretty stuff you’ve done with Claude!",
-          "canonical_url": "https://reddit.com/comments/1vtb5u1",
-          "score": 4.026,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.551,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.9474,
-            "uniqueness": 0.9,
-            "uniqueness_sim_published": 0.1,
-            "uniqueness_sim_state": 0.0526,
-            "topic_match": 0.7,
-            "creator_weight": 0.1,
-            "taste_score": 0.15,
-            "taste_raw": 0.15,
-            "taste_reason": "Community show-and-tell gallery with no substance — pure entertainment, nothing a senior reader can act on.",
-            "fetch_fail_penalty": -1.0,
-            "total": 4.026
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7; penalties: fetch_fail -1×1=-1",
-          "reject_reason": "below_cut"
-        },
-        {
-          "id": "5957b86e18773443c2018efca0dca6e4dffb9b09",
-          "title": "Easiest way preserve your gpu lifespan",
-          "canonical_url": "https://reddit.com/comments/1vuxd4s",
-          "score": 3.9512,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.9031,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 0.0,
-            "novelty_score": 0.8462,
-            "uniqueness": 0.8462,
-            "uniqueness_sim_published": 0.0769,
-            "uniqueness_sim_state": 0.1538,
-            "topic_match": 0.2,
-            "creator_weight": 0.0,
-            "taste_score": 0.15,
-            "taste_raw": 0.15,
-            "taste_reason": "Off-beat hardware maintenance tips, remote from the audience's AI/dev core beat.",
-            "topic_importance": 0.2,
-            "topic_importance_raw": 2,
-            "fetch_fail_penalty": -1.0,
-            "total": 3.9512
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9031×1=0.9031; penalties: fetch_fail -1×1=-1",
-          "reject_reason": "below_cut"
         }
       ],
       "dropped": [
@@ -1057,6 +1275,146 @@
       "picked": [
         {
           "rank": 1,
+          "id": "ad7c85aba18dd985b2bb3fc85c457c4346977b6d",
+          "title": "In terms of everyday usefulness and saving time, Codex & Claude Code are very…",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mtoqik5rgc2j",
+          "score": 11.8341,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8649,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.1351,
+            "topic_match": 0.8,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Recaps already-known agent usefulness from a credible source with no new fact or number; skimmable confirmation rather than new information.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "repick_bonus": 1.0,
+            "total": 11.8341
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.25×1=1.25"
+        },
+        {
+          "rank": 2,
+          "id": "97dbda391d40f55b90880caa5e00a4a0be0872f1",
+          "title": "The Evolution of the Agent Harness",
+          "canonical_url": "https://latent.space/p/attention-interface",
+          "score": 11.7293,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9626,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.8571,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1429,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "Directly on the core beat for a Claude Code user — a credible argument that models are absorbing the agent harness and the harness is becoming one for human attention. Reframes how to think about harness evolution.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "repick_bonus": 1.0,
+            "total": 11.7293,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: cooldown -1×1=-1"
+        },
+        {
+          "rank": 3,
+          "id": "0907174999decd8f55af5aaa5a603af589aa45df",
+          "title": "Data center madness",
+          "canonical_url": "https://garymarcus.substack.com/p/data-center-madness",
+          "score": 11.3368,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8777,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.963,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.037,
+            "topic_match": 0.5,
+            "creator_weight": -0.2,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Gary Marcus capex-skepticism punditry with two estimates and poll signals, but no new verifiable fact a dev can act on — opinion framing.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "repick_bonus": 1.0,
+            "total": 11.3368
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.2×1=-0.2"
+        },
+        {
+          "rank": 4,
+          "id": "157e2ca74123ec7d621784452be8f1eac4713b57",
+          "title": "Anti-AI fonts are useless and harmful",
+          "canonical_url": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful",
+          "score": 11.1305,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.626,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9091,
+            "uniqueness": 0.9091,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0909,
+            "topic_match": 0.8,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "Opinion piece on a niche, tangential topic (anti-AI detection fonts) with no concrete facts beyond an HN thread count. Off-core for the audience's daily work.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "repick_bonus": 1.0,
+            "total": 11.1305
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
+        },
+        {
+          "rank": 5,
+          "id": "1d46687eaa909b708a68b8389a74ccae51c65d26",
+          "title": "Asymmetric Attention Heads: Structured Head-Wise Context Allocation for Transformer Attention",
+          "canonical_url": "https://arxiv.org/abs/2608.19203",
+          "score": 11.0333,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7333,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.0556,
+            "uniqueness_sim_state": 0.1,
+            "topic_match": 0.5,
+            "creator_weight": -0.4,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Novel attention-architecture idea (per-head context allocation) that a model-internals reader finds interesting, but no concrete results in the body to make it must-read.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "repick_bonus": 1.0,
+            "total": 11.0333
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.4×1=-0.4"
+        }
+      ],
+      "rejected": [
+        {
           "id": "df5399c7f9d2448ea3e533409c9f720c164c8730",
           "title": "How Claude Watermarks AI-Generated Text",
           "canonical_url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
@@ -1080,142 +1438,7 @@
             "topic_importance_raw": 7,
             "total": 7.5933
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.75×1.5=1.125"
-        },
-        {
-          "rank": 2,
-          "id": "ad7c85aba18dd985b2bb3fc85c457c4346977b6d",
-          "title": "In terms of everyday usefulness and saving time, Codex & Claude Code are very…",
-          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mtoqik5rgc2j",
-          "score": 6.8341,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 1.0,
-            "origin_weight": 1.25,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.8649,
-            "uniqueness": 0.8182,
-            "uniqueness_sim_published": 0.1818,
-            "uniqueness_sim_state": 0.1351,
-            "topic_match": 0.8,
-            "taste_score": 0.45,
-            "taste_raw": 0.45,
-            "taste_reason": "Recaps already-known agent usefulness from a credible source with no new fact or number; skimmable confirmation rather than new information.",
-            "topic_importance": 0.7,
-            "topic_importance_raw": 7,
-            "total": 6.8341
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 1×1=1"
-        },
-        {
-          "rank": 3,
-          "id": "97dbda391d40f55b90880caa5e00a4a0be0872f1",
-          "title": "The Evolution of the Agent Harness",
-          "canonical_url": "https://latent.space/p/attention-interface",
-          "score": 6.7292,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.9626,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 0.0,
-            "novelty_score": 0.8571,
-            "uniqueness": 0.8333,
-            "uniqueness_sim_published": 0.1667,
-            "uniqueness_sim_state": 0.1429,
-            "topic_match": 0.5,
-            "creator_weight": 0.5,
-            "taste_score": 0.7,
-            "taste_raw": 0.7,
-            "taste_reason": "Directly on the core beat for a Claude Code user — a credible argument that models are absorbing the agent harness and the harness is becoming one for human attention. Reframes how to think about harness evolution.",
-            "topic_importance": 0.8,
-            "topic_importance_raw": 8,
-            "total": 6.7292,
-            "cooldown_penalty": -1.0
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05; penalties: cooldown -1×1=-1"
-        },
-        {
-          "rank": 4,
-          "id": "0907174999decd8f55af5aaa5a603af589aa45df",
-          "title": "Data center madness",
-          "canonical_url": "https://garymarcus.substack.com/p/data-center-madness",
-          "score": 6.3368,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.8777,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.963,
-            "uniqueness": 0.8182,
-            "uniqueness_sim_published": 0.1818,
-            "uniqueness_sim_state": 0.037,
-            "topic_match": 0.5,
-            "creator_weight": -0.2,
-            "taste_score": 0.5,
-            "taste_raw": 0.5,
-            "taste_reason": "Gary Marcus capex-skepticism punditry with two estimates and poll signals, but no new verifiable fact a dev can act on — opinion framing.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 6.3368
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8777×1=0.8777; penalties: creator_weight -0.2×1=-0.2"
-        },
-        {
-          "rank": 5,
-          "id": "157e2ca74123ec7d621784452be8f1eac4713b57",
-          "title": "Anti-AI fonts are useless and harmful",
-          "canonical_url": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful",
-          "score": 6.1306,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.626,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.9091,
-            "uniqueness": 0.9091,
-            "uniqueness_sim_published": 0.0,
-            "uniqueness_sim_state": 0.0909,
-            "topic_match": 0.8,
-            "taste_score": 0.3,
-            "taste_raw": 0.3,
-            "taste_reason": "Opinion piece on a niche, tangential topic (anti-AI detection fonts) with no concrete facts beyond an HN thread count. Off-core for the audience's daily work.",
-            "topic_importance": 0.3,
-            "topic_importance_raw": 3,
-            "total": 6.1306
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8"
-        }
-      ],
-      "rejected": [
-        {
-          "id": "1d46687eaa909b708a68b8389a74ccae51c65d26",
-          "title": "Asymmetric Attention Heads: Structured Head-Wise Context Allocation for Transformer Attention",
-          "canonical_url": "https://arxiv.org/abs/2608.19203",
-          "score": 6.0333,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.7333,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.9,
-            "uniqueness": 0.9,
-            "uniqueness_sim_published": 0.0556,
-            "uniqueness_sim_state": 0.1,
-            "topic_match": 0.5,
-            "creator_weight": -0.4,
-            "taste_score": 0.5,
-            "taste_raw": 0.5,
-            "taste_reason": "Novel attention-architecture idea (per-head context allocation) that a model-internals reader finds interesting, but no concrete results in the body to make it must-read.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 6.0333
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.5×1.5=0.75; penalties: creator_weight -0.4×1=-0.4",
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.75×1.5=1.125",
           "reject_reason": "below_cut"
         },
         {
@@ -1244,6 +1467,31 @@
           "reject_reason": "below_cut"
         },
         {
+          "id": "25a92724501105772cc6d25f6eb5363c735f6c08",
+          "title": "Life is full of things that, by complexity or design or lack of care or…",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mtptqr5o6c2j",
+          "score": 5.7556,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.8611,
+            "uniqueness": 0.8611,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1389,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Opinion essay from a credible name (Mollick) but vague — 'life is full of hard-to-navigate systems' has no concrete facts or numbers, just a soft productivity claim.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 5.7556
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
           "id": "bc53460f938f344777fcca037752ca3615b65f67",
           "title": "AI #182: Pause For Reflection",
           "canonical_url": "https://thezvi.substack.com/p/ai-182-pause-for-reflection",
@@ -1269,6 +1517,29 @@
           },
           "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.6226×1=0.6226; penalties: cooldown -1×1=-1",
           "reject_reason": "below_cut"
+        },
+        {
+          "id": "dbc612bceb5bb30bcc6219880e521cd489ddd7f9",
+          "title": "Its going to be an era of contradictions.",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mtms457ksk2c",
+          "score": 5.0858,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8858,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 1.0,
+            "uniqueness": 1.0,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "No-fact opinion commentary from a credible voice — an observation about AI usage attitudes with no data, numbers, or novel pattern, so it's a skim-past.",
+            "total": 5.0858
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 0.8858×1=0.8858",
+          "reject_reason": "below_cut"
         }
       ],
       "dropped": [
@@ -1280,10 +1551,24 @@
           "cap": 1
         },
         {
+          "id": "7dd3360c8a8dae26ed1b9a61eef4d24346324f8d",
+          "title": "Compliance, Capability, and Conflict: Benchmarking Multimodal LLMs under System Messages",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
           "id": "754834fcd78e41b90362f3f27c0505ea69c63352",
           "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud",
           "reason": "domain_cap",
           "domain": "latent.space",
+          "cap": 1
+        },
+        {
+          "id": "cbb9c940daf335b63483e1cba974594c52bdde77",
+          "title": "Hallucination as a Feature, not a Defect: Evaluating a multi-agent architecture to transform speculative language-model outputs into testable scientific hypotheses",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
           "cap": 1
         },
         {
@@ -1358,7 +1643,7 @@
           "id": "a2a4a55d94acdfbe098a92d6887e0227e71aa0ce",
           "title": "Simplifying data and product integrations with a data abstraction layer (8 minute read)",
           "canonical_url": "https://uber.com/us/en/blog/data-abstraction-layer",
-          "score": 6.1861,
+          "score": 11.1861,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -1376,16 +1661,17 @@
             "taste_reason": "Solid Uber engineering writeup with a concrete win metric (multi-week to under two days), but data-platform infra is off the AI/LLM core beat.",
             "topic_importance": 0.3,
             "topic_importance_raw": 3,
-            "total": 6.1861
+            "repick_bonus": 1.0,
+            "total": 11.1861
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8; penalties: creator_weight -0.1×1=-0.1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.1×1=-0.1"
         },
         {
           "rank": 2,
           "id": "b70a9dc8a420b91e91e16849b644b4a8aa19d36e",
           "title": "Spark Tips. Partition Tuning (12 minute read)",
           "canonical_url": "https://luminousmen.substack.com/p/spark-tips-partition-tuning",
-          "score": 6.0611,
+          "score": 11.0611,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -1403,16 +1689,17 @@
             "taste_reason": "Practical Spark tuning advice but generic data-eng tips with no surprising or novel signal for the AI/dev reader.",
             "topic_importance": 0.3,
             "topic_importance_raw": 3,
-            "total": 6.0611
+            "repick_bonus": 1.0,
+            "total": 11.0611
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8; penalties: creator_weight -0.1×1=-0.1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.1×1=-0.1"
         },
         {
           "rank": 3,
           "id": "6dad44761f22efffb52e6cdee9c37c84a8a3028d",
           "title": "Influence doesn't come with the promotion (7 minute read)",
           "canonical_url": "https://jennywanger.com/articles/influence-doesnt-come-with-the-promotion",
-          "score": 5.8102,
+          "score": 10.8102,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -1428,12 +1715,40 @@
             "taste_score": 0.3,
             "taste_raw": 0.3,
             "taste_reason": "Generic career-advice piece about promotions, no AI substance or concrete facts — off the audience's core beat, skim-past.",
-            "total": 5.8102
+            "repick_bonus": 1.0,
+            "total": 10.8102
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8; penalties: creator_weight -0.1×1=-0.1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.1×1=-0.1"
         }
       ],
       "rejected": [
+        {
+          "id": "820b602f412ec46c07657f482abdc249addee855",
+          "title": "Microsoft’s Phi series made the argument in its title: . A small model trained on LLM-synthesized, textbook-quality…",
+          "canonical_url": "https://arxiv.org/abs/2309.05463",
+          "score": 7.3103,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9633,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7941,
+            "uniqueness": 0.7941,
+            "uniqueness_sim_published": 0.0556,
+            "uniqueness_sim_state": 0.2059,
+            "topic_match": 0.5,
+            "creator_weight": 0.2,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "Concrete synthetic-data narrative with a real number (Apple's ~3x pretraining efficiency from LLM-rewriting the web) tracing a coherent thread from Phi to NVIDIA; extends the research beat beyond state-of-ai.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 7.3103
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05",
+          "reject_reason": "below_cut"
+        },
         {
           "id": "f75ce9eb5e5a2cad4da29f8825af38c5e4210b61",
           "title": "RSVP here",
