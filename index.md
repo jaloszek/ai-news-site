@@ -50,7 +50,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-08-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>💰 Stripe buys OpenRouter for $7B</li><li>🛠 Claude Code v2.1.236</li><li>🚀 Mojo is now open source</li><li>✨ GLM-5.3 tops open-model rankings</li><li>🤖 DeepSeek coding agent hits 165K stars</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-21.html"><div class="cal-num">21</div><ul class="cal-highlights"><li>🛠 CC v2.1.238</li><li>🛠 OpenCode v1.18.19</li><li>🚀 Zed Delta</li><li>🛠 Qwen3.8-27B GGUFs</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🛠 CC v2.1.239</li><li>✨ Claude Mythos 5</li><li>🟢 ChatGPT Ads Europe</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-08-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>🛠 CC v2.1.237</li><li>🎨 Claude Design in CC</li><li>✨ GPT-5.6 Sol</li><li>✨ GLM-5.3 Coder</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">24</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
