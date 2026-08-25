@@ -52,7 +52,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-08-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🛠 CC v2.1.239</li><li>✨ Claude Mythos 5</li><li>🟢 ChatGPT Ads Europe</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>🛠 Claude Design 2.0</li><li>✨ GLM-5.3 Coder</li><li>💰 GPT-5.6 Sol</li><li>🛠 Cline v4.1.14</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>✨ DeepSeek V4-Flash-Vision-Exp</li><li>✨ Gemini 3.7 Flash</li><li>🔒 Opus 4.6 jailbreak</li><li>💰 Poolside $12B to NVIDIA</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-08-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>🚀 GPT-5.6 in Kiro</li><li>🛠 Claude Code v2.1.243</li><li>🤖 Qwen 3.8 27B 9th on Code Arena</li><li>💰 Thomson Reuters $40M Qwen model</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
