@@ -57,7 +57,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-08-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>✨ Qwen3.8-Flash-Next</li><li>💰 Nvidia buys HuggingFace</li><li>🛠 CC v2.1.247</li><li>🤖 Altman AGI-by-2026</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-28.html"><div class="cal-num">28</div><ul class="cal-highlights"><li>🛠 CC v2.1.248 --restricted</li><li>✨ GLM 5.3 Flash</li><li>🚀 Anthropic Model Hardware Standard</li><li>💰 Anthropic $45B Nscale deal</li><li>💰 Nvidia–Hugging Face talks</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-08-29.html"><div class="cal-num">29</div><ul class="cal-highlights"><li>🛠 CC v2.1.251 hook events</li><li>✨ GLM-5.3 open weights</li><li>🤖 Codex persistent mode</li><li>💰 OpenAI cuts Cursor models</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-08-30.html"><div class="cal-num">30</div><ul class="cal-highlights"><li>🛠 Codex 0.151.0</li><li>🛠 Qwen Code v0.22.3</li><li>🧪 LAION 10M-hour video dataset</li><li>✨ Hy4-preview 200GB GGUF</li><li>📰 Sony/Warner sue Anthropic</li><li>💰 OpenAI cuts off Cursor</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">31</div></div>
   </div>
 </section>
