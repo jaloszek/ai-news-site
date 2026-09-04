@@ -27,7 +27,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-01.html"><div class="cal-num">1</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.252</li><li>🛠 Codex 0.152.0</li><li>💰 ChatGPT ads pass $1B</li><li>📰 OpenAI ends Cursor deal</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.258</li><li>✨ Fable 5.1 + Mythos 5.1</li><li>🛠 HF WebGPU kernels</li><li>✨ GLM-5.3-Flash reveal</li><li>💰 OpenAI outcome-based pricing</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-03.html"><div class="cal-num">3</div><ul class="cal-highlights"><li>✨ Claude Fable 5.1</li><li>🛠 CC v2.1.259</li><li>✨ Gemini 3.8 Flash</li><li>✨ Astra</li><li>🛠 Codex 0.153.0</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">4</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-04.html"><div class="cal-num">4</div><ul class="cal-highlights"><li>✨ GPT-6 Astra</li><li>🚀 Google Pics</li><li>🛠 CC v2.1.260</li><li>🛠 HF funes memory</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">6</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">7</div></div>
