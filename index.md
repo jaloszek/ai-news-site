@@ -29,7 +29,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-03.html"><div class="cal-num">3</div><ul class="cal-highlights"><li>✨ Claude Fable 5.1</li><li>🛠 CC v2.1.259</li><li>✨ Gemini 3.8 Flash</li><li>✨ Astra</li><li>🛠 Codex 0.153.0</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-04.html"><div class="cal-num">4</div><ul class="cal-highlights"><li>✨ GPT-6 Astra</li><li>🚀 Google Pics</li><li>🛠 CC v2.1.260</li><li>🛠 HF funes memory</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-05.html"><div class="cal-num">5</div><ul class="cal-highlights"><li>💰 NVIDIA acquires Hugging Face</li><li>🛠 Claude Code v2.1.261</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">6</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-06.html"><div class="cal-num">6</div><ul class="cal-highlights"><li>✨ Opus 5</li><li>✨ GPT-6 Astra safety</li><li>💰 OpenAI Daybreak $1B</li><li>🧪 AA Index v4.2</li><li>🛠 openclaw 2026.9.2</li><li>🛠 CC v2.1.257</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">7</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">8</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">9</div></div>
