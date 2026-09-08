@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-07 -->
+<!-- Last updated: 2026-09-08 -->
 
 # State of AI
 
@@ -48,7 +48,7 @@
 - Nvidia is buying Hugging Face for $12.93B _(as of 2026-09-07)_
 - Stripe is buying OpenRouter for $7B+, 5x its $1.3B May Series B _(as of 2026-09-07)_
 - OpenAI Jalapeno, its first in-house inference chip: 1.5-1.9x work/watt, 1.7-3.6x lower latency, deploying by year-end _(as of 2026-09-07)_
-- Anthropic compute: AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B/133MW Norway, Riot $9.1B/191MW Texas _(as of 2026-09-07)_
+- Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-09-08)_
 - OpenAI Ohio: 8GW on a 20-year lease; Nvidia's guarantee cut from $250B to under $120B _(as of 2026-09-07)_
 - Apple M5 Ultra Mac Studio: 512GB unified memory at 1.2TB/s; Mac mini M6 and M5 Pro at 64GB/307GB/s _(as of 2026-09-07)_
 - llama.cpp DFlash 2: 2.26x on Qwen3.8-27B, 4.68x with an n-gram drafter on top _(as of 2026-09-07)_
