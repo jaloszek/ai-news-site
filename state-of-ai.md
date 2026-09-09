@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-08 -->
+<!-- Last updated: 2026-09-09 -->
 
 # State of AI
 
@@ -36,12 +36,12 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.261; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage; self-hosted runners _(as of 2026-09-07)_ |
+| Claude Code | Anthropic | v2.1.265; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage; self-hosted runners _(as of 2026-09-09)_ |
 | Codex CLI | OpenAI | v0.153.3; GPT-6 Astra via API and Bedrock; /export, plugin CLI; a Persistent always-on mode in testing _(as of 2026-09-07)_ |
 | OpenCode | anomalyco | v1.18.29; free opencode/* tier with built-in Exa websearch; adaptive thinking for Kimi and Claude _(as of 2026-09-07)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
 | Muse Code | Meta | Beta terminal agent that fans work out to parallel subagents in isolated worktrees _(as of 2026-09-07)_ |
-| Also current | various | Cline 4.1.17, Qwen Code 0.22.3, OpenHands 1.14, Goose 1.45, Gemini CLI 0.57, OpenClaw 2026.9.2, Hermes 0.19 _(as of 2026-09-07)_ |
+| Also current | various | Cline 4.1.17, Qwen Code 0.22.3, OpenHands 1.14, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.3, Hermes 0.19 _(as of 2026-09-09)_ |
 
 ## Infrastructure / inference
 
