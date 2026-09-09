@@ -32,7 +32,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-06.html"><div class="cal-num">6</div><ul class="cal-highlights"><li>✨ Opus 5</li><li>✨ GPT-6 Astra safety</li><li>💰 OpenAI Daybreak $1B</li><li>🧪 AA Index v4.2</li><li>🛠 openclaw 2026.9.2</li><li>🛠 CC v2.1.257</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🚀 GPT-6 Astra rollout</li><li>🧪 DeepMind 100-agent experiment</li><li>🧪 Georgetown AI Referee</li><li>🛠 Shopify Sidekick agent</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-08.html"><div class="cal-num">8</div><ul class="cal-highlights"><li>✨ GPT-6 Astra</li><li>🤖 OpenAI research interns</li><li>💰 Anthropic $517B compute</li><li>🧪 DeepMind cheating agents</li><li>💬 OpenAI Wiki Incident</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">9</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-09.html"><div class="cal-num">9</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.265</li><li>✨ Tencent Hy4 Preview</li><li>🤖 Goose v1.50.0 GPT-6 Astra</li><li>✨ Meta Muse Voice Transcribe</li><li>🚀 AlphaGenome Atlas</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">10</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">11</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">12</div></div>
