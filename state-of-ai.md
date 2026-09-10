@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-09 -->
+<!-- Last updated: 2026-09-10 -->
 
 # State of AI
 
@@ -17,7 +17,7 @@
 | Anthropic | Claude Opus 5 | 2026-07-24 | Default Opus, $5/$25/M (2x input over 200K ctx); 1M ctx; ARC-AGI-3 30.2%, 4x prior record _(as of 2026-09-07)_ |
 | Anthropic | Claude Sonnet 5 | 2026-07-01 | $2/$10/M now permanent; the Sep 1 rise to $3/$15/M was cancelled _(as of 2026-09-07)_ |
 | Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-09-07)_ |
-| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1 _(as of 2026-09-07)_ |
+| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-09-10)_ |
 | OpenAI | GPT-5.6 Sol/Terra/Luna | 2026-07-09 | Sol cut to $4/$20/M; Luna $0.20/M in; Ultrafast tier 750 tok/s on Cerebras _(as of 2026-09-07)_ |
 | xAI (SpaceXAI) | Grok 4.6 | 2026-08-13 | AA Index 61, ties GPT-5.6 Sol, behind Opus 5; $2/$6/M _(as of 2026-09-07)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-07)_ |
@@ -36,8 +36,8 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.265; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage; self-hosted runners _(as of 2026-09-09)_ |
-| Codex CLI | OpenAI | v0.153.3; GPT-6 Astra via API and Bedrock; /export, plugin CLI; a Persistent always-on mode in testing _(as of 2026-09-07)_ |
+| Claude Code | Anthropic | v2.1.267; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage; self-hosted runners _(as of 2026-09-10)_ |
+| Codex CLI | OpenAI | v0.154.0; GPT-6 Astra via API and Bedrock; /export, plugin CLI; a Persistent always-on mode in testing _(as of 2026-09-10)_ |
 | OpenCode | anomalyco | v1.18.29; free opencode/* tier with built-in Exa websearch; adaptive thinking for Kimi and Claude _(as of 2026-09-07)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
 | Muse Code | Meta | Beta terminal agent that fans work out to parallel subagents in isolated worktrees _(as of 2026-09-07)_ |
@@ -86,4 +86,3 @@
 - Claude Code runs Anthropic's own daily maintenance: 388 PRs, 180 merged (46%) _(as of 2026-09-07)_
 - Claude Code limits: the 50% weekly boost ends Sep 14 and becomes a permanent 25% baseline, a net ~17% cut _(as of 2026-09-07)_
 - Alibaba banned Claude Code internally; a Chinese grey market resells Claude tokens at ~1/10 official price _(as of 2026-09-07)_
-- China closed the gap: Kimi K3 and GLM-5.3 sit within a couple of AA points of the US frontier _(as of 2026-09-07)_
