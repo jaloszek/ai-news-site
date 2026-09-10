@@ -1,6 +1,6 @@
 {
   "date": "2026-09-10",
-  "generated_at": "2026-09-10T02:13:36.021027+00:00",
+  "generated_at": "2026-09-10T20:18:54.306581+00:00",
   "weights": {
     "cross_score": 2.0,
     "recency_decay": 1.0,
@@ -37,17 +37,17 @@
           "id": "a38ee7265d0d8cf57e78aba00f058b9f0c1004e8",
           "title": "v2.1.267",
           "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
-          "score": 8.5846,
+          "score": 13.575,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
             "recency_decay": 1.0,
             "origin_weight": 1.5,
             "has_concrete_fact": 1.0,
-            "novelty_score": 0.7692,
-            "uniqueness": 0.7692,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
             "uniqueness_sim_published": 0.0,
-            "uniqueness_sim_state": 0.2308,
+            "uniqueness_sim_state": 0.25,
             "topic_match": 0.7,
             "creator_weight": 1.0,
             "taste_score": 0.8,
@@ -55,16 +55,17 @@
             "taste_reason": "Concrete Claude Code release naming actionable flags (maxEffortLevel across Bedrock/Vertex/Foundry, --system-prompt-snapshot off) plus a sandboxing fix a daily user feels.",
             "topic_importance": 0.8,
             "topic_importance_raw": 8,
-            "total": 8.5846
+            "repick_bonus": 1.0,
+            "total": 13.575
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         },
         {
           "rank": 2,
           "id": "8d9adc027dbebb7c72534ff76c3578eeddd8cacb",
           "title": "0.154.0",
           "canonical_url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0",
-          "score": 8.4,
+          "score": 13.4,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -82,9 +83,10 @@
             "taste_reason": "Concrete Codex release with named features — GPT-6-Astra in the model picker and Bedrock catalogs, experimental --worktree, inline Q&A — directly actionable for harness users.",
             "topic_importance": 0.8,
             "topic_importance_raw": 8,
-            "total": 8.4
+            "repick_bonus": 1.0,
+            "total": 13.4
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         }
       ],
       "rejected": [],
@@ -145,6 +147,33 @@
           "reason": "release_no_feature"
         },
         {
+          "id": "8f3c8a930a40e981fdaccb2853bea9b8311267ed",
+          "title": "Desktop v0.0.25",
+          "reason": "release_subpackage"
+        },
+        {
+          "id": "0242ba35a8f3fc94e5a290ffac8f04aa98add41a",
+          "title": "v7.6.2 (release)",
+          "reason": "release_bugfix_only"
+        },
+        {
+          "id": "cd7b54635bf416a6c8f9cc509f055e18f86369de",
+          "title": "v7.6.1 (release)",
+          "reason": "release_bugfix_only"
+        },
+        {
+          "id": "6820f0b9bf75023e60da8764ea26ee0a584103fc",
+          "title": "v7.6.0 (release)",
+          "reason": "release_bugfix_only"
+        },
+        {
+          "id": "2f252f02fb1c78a437c834c8a375b29a0b800bf3",
+          "title": "Python SDK 0.154.0",
+          "reason": "creator_cap",
+          "creator_key": "Codex releases",
+          "cap": 1
+        },
+        {
           "id": "c57bc54a33760facf38352eb92c2c1251af589a2",
           "title": "v2.1.266",
           "reason": "creator_cap",
@@ -160,7 +189,7 @@
           "id": "305f03a4aa6aa16d7e1ec597ef4e03503e16523b",
           "title": "Introducing ChatGPT Images 2.5",
           "canonical_url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-          "score": 8.0256,
+          "score": 13.0256,
           "components": {
             "cross_source_count": 2,
             "cross_score": 2,
@@ -177,16 +206,17 @@
             "taste_reason": "New OpenAI image model release is concrete and on-topic but the blurb carries no benchmark, capability detail, or access specifics; image gen is adjacent to the core coding-agent beat.",
             "topic_importance": 0.5,
             "topic_importance_raw": 5,
-            "total": 8.0256
+            "repick_bonus": 1.0,
+            "total": 13.0256
           },
-          "explanation": "cross 2×2=4 + origin_weight 1.5×1=1.5 + taste 0.55×1.5=0.825"
+          "explanation": "repick_bonus 1×5=5 + cross 2×2=4 + origin_weight 1.5×1=1.5"
         },
         {
           "rank": 2,
           "id": "2ef4d0276b61ff1f240f2bbdfb3510c6a1cfe3c9",
           "title": "Anthropic built an economic model that frames its CEO's bleakest job forecasts as an outlier scenario",
           "canonical_url": "https://the-decoder.com/anthropic-built-an-economic-model-that-frames-its-ceos-bleakest-job-forecasts-as-an-outlier-scenario",
-          "score": 7.3147,
+          "score": 12.3147,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -204,12 +234,95 @@
             "taste_reason": "Concrete scenario numbers (17.9% knowledge-worker unemployment, output doubling every 4.5 years) but it's policy/economics commentary, not something a dev acts on.",
             "topic_importance": 0.6,
             "topic_importance_raw": 6,
-            "total": 7.3147
+            "repick_bonus": 1.0,
+            "total": 12.3147
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         },
         {
           "rank": 3,
+          "id": "587a70348a735f611926883e54d73568c0d50c6f",
+          "title": "GPT-6 Astra: The next generation in intelligence for work",
+          "canonical_url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+          "score": 11.2217,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9917,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.5,
+            "uniqueness": 0.5,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.5,
+            "topic_match": 0.0,
+            "taste_score": 0.32,
+            "taste_raw": 0.32,
+            "taste_reason": "Marketing landing page for GPT-6 Astra, which state-of-ai already lists as released Sep 3; no new facts, just capability adjectives.",
+            "topic_importance": 1.0,
+            "topic_importance_raw": 10,
+            "repick_bonus": 1.0,
+            "total": 11.2217
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
+        },
+        {
+          "rank": 4,
+          "id": "e8608e40b7228951c2b6d290d660ba34d23b8801",
+          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+          "canonical_url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+          "score": 10.9818,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8636,
+            "uniqueness": 0.8636,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1364,
+            "topic_match": 0.2,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "Niche time-series forecasting model, not the LLM/agent beat; no benchmarks or numbers given, just an SOTA claim and a license.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "repick_bonus": 1.0,
+            "total": 10.9818
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
+        },
+        {
+          "rank": 5,
+          "id": "ada2f64613585383ede8e93e10f9d34d14b332d2",
+          "title": "Recreating a 70-year love story frame by frame",
+          "canonical_url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
+          "score": 10.4255,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8511,
+            "uniqueness": 0.8511,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1489,
+            "topic_match": -0.1,
+            "taste_score": 0.2,
+            "taste_raw": 0.2,
+            "taste_reason": "Human-interest AI film piece with no technical detail, method, or numbers — reads as a brand story.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "repick_bonus": 1.0,
+            "total": 10.4255
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: topic_match -0.1×1=-0.1"
+        }
+      ],
+      "rejected": [
+        {
           "id": "99ff1541f934679f26ec7ad27b61a5540f9e5d94",
           "title": "GPT-6 Astra beat Portal start to finish without human help in under 24 hours",
           "canonical_url": "https://the-decoder.com/gpt-6-astra-beat-portal-start-to-finish-without-human-help-in-under-24-hours",
@@ -233,86 +346,59 @@
             "topic_importance_raw": 8,
             "total": 6.9097
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2"
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2",
+          "reject_reason": "below_cut"
         },
         {
-          "rank": 4,
-          "id": "587a70348a735f611926883e54d73568c0d50c6f",
-          "title": "GPT-6 Astra: The next generation in intelligence for work",
-          "canonical_url": "https://openai.com/index/gpt-6-astra-next-generation-work",
-          "score": 6.2495,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.9917,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.5556,
-            "uniqueness": 0.5556,
-            "uniqueness_sim_published": 0.25,
-            "uniqueness_sim_state": 0.4444,
-            "topic_match": 0.0,
-            "taste_score": 0.32,
-            "taste_raw": 0.32,
-            "taste_reason": "Marketing landing page for GPT-6 Astra, which state-of-ai already lists as released Sep 3; no new facts, just capability adjectives.",
-            "topic_importance": 1.0,
-            "topic_importance_raw": 10,
-            "total": 6.2495
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_importance 1×1=1"
-        },
-        {
-          "rank": 5,
-          "id": "e8608e40b7228951c2b6d290d660ba34d23b8801",
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "canonical_url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-          "score": 5.9818,
+          "id": "03b60ff4cfc892925513071c87251b49b9ff4f80",
+          "title": "To Infinity and Beyond: ThunderKittens Now on NVIDIA Vera Rubin NVL72!",
+          "canonical_url": "https://together.ai/blog/to-infinity-and-beyond-thunderkittens-now-on-nvidia-vera-rubin-nvl72",
+          "score": 6.3612,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
             "recency_decay": 1.0,
             "origin_weight": 1.5,
             "has_concrete_fact": 1.0,
-            "novelty_score": 0.8636,
-            "uniqueness": 0.8636,
-            "uniqueness_sim_published": 0.0,
-            "uniqueness_sim_state": 0.1364,
+            "novelty_score": 0.8723,
+            "uniqueness": 0.8723,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1277,
             "topic_match": 0.2,
-            "taste_score": 0.3,
-            "taste_raw": 0.3,
-            "taste_reason": "Niche time-series forecasting model, not the LLM/agent beat; no benchmarks or numbers given, just an SOTA claim and a license.",
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Concrete kernel numbers (42% roofline to 22 PFLOPS, cuBLAS-competitive) but very niche low-level GPU work.",
             "topic_importance": 0.4,
             "topic_importance_raw": 4,
-            "total": 5.9818
+            "total": 6.3612
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
-        }
-      ],
-      "rejected": [
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
         {
-          "id": "ada2f64613585383ede8e93e10f9d34d14b332d2",
-          "title": "Recreating a 70-year love story frame by frame",
-          "canonical_url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
-          "score": 5.4149,
+          "id": "168859c085ea818e4837e9eced13a5190ab447af",
+          "title": "Introducing preemptible compute: the same compute, half the price",
+          "canonical_url": "https://together.ai/blog/introducing-preemptible-compute-the-same-compute-half-the-price",
+          "score": 6.2562,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
             "recency_decay": 1.0,
             "origin_weight": 1.5,
             "has_concrete_fact": 1.0,
-            "novelty_score": 0.8298,
-            "uniqueness": 0.8298,
-            "uniqueness_sim_published": 0.0769,
-            "uniqueness_sim_state": 0.1702,
-            "topic_match": -0.1,
-            "taste_score": 0.2,
-            "taste_raw": 0.2,
-            "taste_reason": "Human-interest AI film piece with no technical detail, method, or numbers — reads as a brand story.",
-            "topic_importance": 0.3,
-            "topic_importance_raw": 3,
-            "total": 5.4149
+            "novelty_score": 0.8125,
+            "uniqueness": 0.8125,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1875,
+            "topic_match": 0.2,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Concrete GPU pricing change (flat 50%, five-minute drain) useful to anyone running inference jobs, but not surprising.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 6.2562
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: topic_match -0.1×1=-0.1",
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1",
           "reject_reason": "below_cut"
         },
         {
@@ -351,10 +437,38 @@
           "jaccard": 0.5556
         },
         {
+          "id": "014159943e4d9643b524ba35091999ab979bfca3",
+          "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "34946737bc8891bfa7ecd7e02317b93d74da3107",
+          "title": "OpenAI's GPT-Live-1 API lets developers build apps that talk and listen at the same time",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
           "id": "910e2601f33bbf187b8c81a0fddb5e9c17d47345",
           "title": "AI-designed drug appears to turn back the body's biological clock in early trial",
           "reason": "domain_cap",
           "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "4e410dad70fb92989558aa8ff122fdd9cabd1589",
+          "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "4d4e7920d8a762a2dc722c2d13aa26b7d8884024",
+          "title": "Now everyone can put data to work",
+          "reason": "domain_cap",
+          "domain": "openai.com",
           "cap": 2
         },
         {
@@ -393,6 +507,13 @@
           "cap": 2
         },
         {
+          "id": "016c3ec9b775a98e5ec43d6010b5a5132a940638",
+          "title": "Introducing ChatGPT for Financial Services",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
           "id": "1c050bbd8a1c93b72720246ae71d1dc25f4163ec",
           "title": "ChatGPT claws back web traffic share to 55.5 percent as Gemini's brief comeback fades",
           "reason": "domain_cap",
@@ -421,6 +542,13 @@
           "cap": 2
         },
         {
+          "id": "1ef5285e671d0ace6126abde2e7dec0b8255af8f",
+          "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
           "id": "99c22bc85dd5ff7ae84bbb4ff8bba4cae907fe27",
           "title": "Funding grants for new research into AI and teen development",
           "reason": "domain_cap",
@@ -439,6 +567,13 @@
           "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
           "reason": "domain_cap",
           "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "94ad36d7ed05c224d8ed5e1571006eb2c8c26465",
+          "title": "3 ways to prep for your next big race with Search",
+          "reason": "domain_cap",
+          "domain": "blog.google",
           "cap": 2
         },
         {
@@ -464,7 +599,7 @@
           "id": "be25670b84986cbbf91943ba82448180ff5667bf",
           "title": "MCP: Server, Client & Protocol at GitHub",
           "canonical_url": "https://youtube.com/watch?v=_pE2eqmCHr0",
-          "score": 6.9389,
+          "score": 11.9389,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -481,16 +616,17 @@
             "taste_reason": "MCP spec maintainer and GitHub MCP co-creator on the protocol's latest developments — directly actionable for anyone wiring up agent tools, though it reads as a talk summary.",
             "topic_importance": 0.7,
             "topic_importance_raw": 7,
-            "total": 6.9389
+            "repick_bonus": 1.0,
+            "total": 11.9389
           },
-          "explanation": "cross 1×2=2 + taste 0.7×1.5=1.05 + recency_decay 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + taste 0.7×1.5=1.05"
         },
         {
           "rank": 2,
           "id": "65719627b6c0af760c39f60dbbe971c6d0d1abda",
           "title": "No One Talks Enough About Security for AI Coding. Here's How I Do It in My Workflows",
           "canonical_url": "https://youtube.com/watch?v=SGodxQHnVxc",
-          "score": 6.6273,
+          "score": 11.6273,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -507,12 +643,119 @@
             "taste_reason": "Credible practitioner (Cole Medin) giving a concrete security workflow for AI-generated code, a real gap for daily harness users — but the title is vague and the treatment stays practical rather than novel.",
             "topic_importance": 0.6,
             "topic_importance_raw": 6,
-            "total": 6.6273
+            "repick_bonus": 1.0,
+            "total": 11.6273
           },
-          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + recency_decay 1×1=1"
         },
         {
           "rank": 3,
+          "id": "a36c9cdfc66ee8af88e6822964d54d510dcc56fa",
+          "title": "I Mathematically CALCULATED the worth of Codex & Claude Code PLANS ($200=$4900?!)",
+          "canonical_url": "https://youtube.com/watch?v=EIiXhCaZ4rw",
+          "score": 11.245,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9771,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7358,
+            "uniqueness": 0.7358,
+            "uniqueness_sim_published": 0.2143,
+            "uniqueness_sim_state": 0.2642,
+            "topic_match": 0.8,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "Clickbait '$200=$4900?!' framing over a plan-value breakdown with no verifiable methodology, and pricing facts are already covered by state-of-ai.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "repick_bonus": 1.0,
+            "total": 11.245
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "03051e151c6b8aef11e8b994b643ceb545047c8a",
+          "title": "Introducing the Agents API",
+          "canonical_url": "https://youtube.com/watch?v=2YHa1vhnmK0",
+          "score": 7.3167,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8864,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1136,
+            "topic_match": 0.8,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "Anthropic/OpenAI-credible primary-source launch of a hosted Codex-harness Agents API with MCP tool use and shareable evidence reports — a concrete new harness building block not in state-of-ai.",
+            "topic_importance": 0.9,
+            "topic_importance_raw": 9,
+            "total": 7.3167
+          },
+          "explanation": "cross 1×2=2 + taste 0.8×1.5=1.2 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "92ac0bf6eac64d1ba66b1562e41fe31713ec9cbf",
+          "title": "DeepSeek V4.1 Flash + DeepSeek Harness = Full SaaS In 18 Mins (Cost: $0.12)",
+          "canonical_url": "https://youtube.com/watch?v=I0mh0Kf8oFE",
+          "score": 6.7639,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.7,
+            "taste_score": 0.65,
+            "taste_raw": 0.65,
+            "taste_reason": "Concrete benchmark claims for an unlisted DeepSeek V4.1 Flash (Terminal-Bench 90.6 vs Opus 5's 89.1, Codeforces 3471, 270 tok/s) that would extend the open-weights row, but the 'Full SaaS in 18 mins for $0.12' framing and no-name channel signal hype over verification.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.7639
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a64021ec80e6628deb182c0f09f38de6dace13c3",
+          "title": "Deepseek V4.1 Flash (Fully Tested): 200 TPS & Beats Astra!? (+New Architecture Overview)",
+          "canonical_url": "https://youtube.com/watch?v=lpC5X6o3VJE",
+          "score": 6.69,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.78,
+            "uniqueness": 0.78,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.22,
+            "topic_match": 0.7,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "Independent max-thinking test with a tok/s figure and a new-architecture overview from a known AI YouTube channel, but KingBench 3 is a bespoke benchmark so the 81.25% claim carries little transferable signal.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.69
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
           "id": "6a87eafa9bd973da207cacc3887c914b0d08c701",
           "title": "OpenAI JUST solved math....",
           "canonical_url": "https://youtube.com/watch?v=lkujyxUdUIk",
@@ -535,34 +778,7 @@
             "topic_importance_raw": 8,
             "total": 6.3975
           },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9475×1=0.9475"
-        }
-      ],
-      "rejected": [
-        {
-          "id": "a36c9cdfc66ee8af88e6822964d54d510dcc56fa",
-          "title": "I Mathematically CALCULATED the worth of Codex & Claude Code PLANS ($200=$4900?!)",
-          "canonical_url": "https://youtube.com/watch?v=EIiXhCaZ4rw",
-          "score": 6.245,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.9771,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.7358,
-            "uniqueness": 0.7358,
-            "uniqueness_sim_published": 0.2143,
-            "uniqueness_sim_state": 0.2642,
-            "topic_match": 0.8,
-            "taste_score": 0.4,
-            "taste_raw": 0.4,
-            "taste_reason": "Clickbait '$200=$4900?!' framing over a plan-value breakdown with no verifiable methodology, and pricing facts are already covered by state-of-ai.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 6.245
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9771×1=0.9771",
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9475×1=0.9475",
           "reject_reason": "below_cut"
         },
         {
@@ -589,6 +805,32 @@
             "total": 6.1658
           },
           "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8408×1=0.8408",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "d90d4508bf35d7c30573f82354ab9b56f9634d83",
+          "title": "I Built a 3D Scroll Website With Claude Code (Full Process)",
+          "canonical_url": "https://youtube.com/watch?v=DmPH-ctfJcI",
+          "score": 6.0505,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8511,
+            "uniqueness": 0.8511,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1489,
+            "topic_match": 0.7,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Long-form Claude Code build-along tutorial with no reusable technique or benchmark — productively skimmable but adds no new signal about the harness itself.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 6.0505
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
           "reject_reason": "below_cut"
         },
         {
@@ -693,109 +935,6 @@
           },
           "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_importance 0.7×1=0.7",
           "reject_reason": "below_cut"
-        },
-        {
-          "id": "a92bd29b1b21513bc5c069097952e976bcda8774",
-          "title": "5 open source tools that replaced my $320/mo AI stack...",
-          "canonical_url": "https://youtube.com/watch?v=Y5rSSvXfL4g",
-          "score": 5.3682,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.6451,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.9189,
-            "uniqueness": 0.8462,
-            "uniqueness_sim_published": 0.1538,
-            "uniqueness_sim_state": 0.0811,
-            "topic_match": 0.2,
-            "taste_score": 0.4,
-            "taste_raw": 0.4,
-            "taste_reason": "Fireship names concrete tools (Ollama, OpenHands, Diffy) and it's a credible channel, but it's still a listicle format with no benchmark or depth to justify a stop.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 5.3682
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6451×1=0.6451",
-          "reject_reason": "below_cut"
-        },
-        {
-          "id": "06a1bcba3b2834a55c752e69f7cccc1e0c366636",
-          "title": "The AI Coding Agent Iceberg ($0 to $200/mo): Which Layer Is Worth Paying For?",
-          "canonical_url": "https://youtube.com/watch?v=HivuLnENOyk",
-          "score": 5.2359,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.6943,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.8571,
-            "uniqueness": 0.8333,
-            "uniqueness_sim_published": 0.1667,
-            "uniqueness_sim_state": 0.1429,
-            "topic_match": 0.5,
-            "taste_score": 0.15,
-            "taste_raw": 0.15,
-            "taste_reason": "Pricing-tier listicle with an empty enriched body — no specifics, pure skim-past.",
-            "topic_importance": 0.4,
-            "topic_importance_raw": 4,
-            "total": 5.2359
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6943×1=0.6943",
-          "reject_reason": "below_cut"
-        },
-        {
-          "id": "7a3b137ea36622134fc50913a366c5fdfb7f0b26",
-          "title": "The AI Engineer Roadmap No One Shows You (Find Your Layer in 2 Questions)",
-          "canonical_url": "https://youtube.com/watch?v=sOl8vLC96GI",
-          "score": 5.1302,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.9107,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.9667,
-            "uniqueness": 0.8889,
-            "uniqueness_sim_published": 0.1111,
-            "uniqueness_sim_state": 0.0333,
-            "taste_score": 0.25,
-            "taste_raw": 0.25,
-            "taste_reason": "Generic career-framework content ('find your layer in two questions') with no concrete facts, numbers, or working examples — a flat-list roadmap dressed up as insight.",
-            "topic_importance": 0.4,
-            "topic_importance_raw": 4,
-            "total": 5.1302
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9107×1=0.9107",
-          "reject_reason": "below_cut"
-        },
-        {
-          "id": "933373b86f16799a1527ac9ba093d7cd614c76d4",
-          "title": "Gemini Notebook Just Became a POWERFUL AI Assistant (NotebookLM)!",
-          "canonical_url": "https://youtube.com/watch?v=oWc7r40SJNE",
-          "score": 4.9959,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.4876,
-            "origin_weight": 1.0,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.8667,
-            "uniqueness": 0.8667,
-            "uniqueness_sim_published": 0.1111,
-            "uniqueness_sim_state": 0.1333,
-            "topic_match": -0.1,
-            "taste_score": 0.45,
-            "taste_raw": 0.45,
-            "taste_reason": "Real product update (NotebookLM renamed to Gemini Notebook with a code-executing cloud computer, tested on a real 6,000-row dataset) but wrapped in a 'POWERFUL' content-farm title and hosted by a low-credibility channel. Decent substance, hype framing costs it.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 4.9959
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.45×1.5=0.675; penalties: topic_match -0.1×1=-0.1",
-          "reject_reason": "below_cut"
         }
       ],
       "dropped": []
@@ -807,7 +946,7 @@
           "id": "ce51c3ff754b0df24205d43002fff716006081fe",
           "title": "Is an LLM gateway actually a control plane if agents can bypass it?",
           "canonical_url": "https://reddit.com/comments/1wboo80",
-          "score": 6.0916,
+          "score": 11.0916,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -825,16 +964,17 @@
             "taste_reason": "A conceptual gateway/control-plane question is relevant to agent infra but is a discussion prompt with no concrete architecture, numbers, or answer.",
             "topic_importance": 0.5,
             "topic_importance_raw": 5,
-            "total": 6.0916
+            "repick_bonus": 1.0,
+            "total": 11.0916
           },
-          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + recency_decay 1×1=1"
         },
         {
           "rank": 2,
           "id": "217afad0704666dc6ba18780b79576b60d8b06a0",
           "title": "Deepseek Has Soft Retired Deepseek V4 Pro",
           "canonical_url": "https://reddit.com/comments/1wbfrut",
-          "score": 5.9715,
+          "score": 10.9715,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -852,16 +992,17 @@
             "taste_reason": "Soft-retiring DeepSeek V4 Pro would update state-of-ai's open-weights row, but the body is just 'users discuss' with no confirmation or detail.",
             "topic_importance": 0.6,
             "topic_importance_raw": 6,
-            "total": 5.9715
+            "repick_bonus": 1.0,
+            "total": 10.9715
           },
-          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9715×1=0.9715"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1×1=1"
         },
         {
           "rank": 3,
           "id": "c5b6e57d87daf4ebd9dbb09874f802c3eb3d2db6",
           "title": "A final LLM benchmark for 8GB VRAM 16GB RAM",
           "canonical_url": "https://reddit.com/comments/1wblnsk",
-          "score": 5.8889,
+          "score": 10.8889,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -879,16 +1020,17 @@
             "taste_reason": "A benchmark roundup for 8GB VRAM/16GB RAM is useful to low-end local users but the body gives no numbers or models, so it reads as a generic link.",
             "topic_importance": 0.4,
             "topic_importance_raw": 4,
-            "total": 5.8889
+            "repick_bonus": 1.0,
+            "total": 10.8889
           },
-          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + recency_decay 1×1=1"
         },
         {
           "rank": 4,
           "id": "f25527b1367fd308dc4cfa4656bf97eee05e0b48",
           "title": "Apple A20 Pro debuts with 7-core GPU, 32-core Neural Engine and 50% more memory bandwidth (~115 GB/s)",
           "canonical_url": "https://reddit.com/comments/1wc0ekw",
-          "score": 5.8841,
+          "score": 10.8841,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -906,16 +1048,17 @@
             "taste_reason": "Concrete mobile-silicon specs (7-core GPU, 32-core NE, ~115 GB/s) but phone chips only marginally touch local-inference workflows; not in state-of-ai, yet low urgency.",
             "topic_importance": 0.4,
             "topic_importance_raw": 4,
-            "total": 5.8841
+            "repick_bonus": 1.0,
+            "total": 10.8841
           },
-          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + recency_decay 1×1=1"
         },
         {
           "rank": 5,
           "id": "26e4b3e500be9203b909b7c27e312e7726c33f03",
           "title": "Codex vs OMP harness",
           "canonical_url": "https://reddit.com/comments/1wby84p",
-          "score": 5.6,
+          "score": 10.6,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -934,9 +1077,10 @@
             "topic_importance": 0.7,
             "topic_importance_raw": 7,
             "fetch_fail_penalty": -1.0,
-            "total": 5.6
+            "repick_bonus": 1.0,
+            "total": 10.6
           },
-          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: fetch_fail -1×1=-1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + recency_decay 1×1=1; penalties: fetch_fail -1×1=-1"
         }
       ],
       "rejected": [
@@ -1087,10 +1231,38 @@
       "picked": [
         {
           "rank": 1,
+          "id": "44084287147f6737176b69adf6e595baa9748e77",
+          "title": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
+          "canonical_url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+          "score": 14.5187,
+          "components": {
+            "cross_source_count": 2,
+            "cross_score": 2,
+            "recency_decay": 0.9937,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.5,
+            "creator_weight": 0.4,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "Raschka on looped/recurrent-depth transformers and hidden CoT is technical and credible, though framed around already-known Astra; useful for model-internals readers.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "repick_bonus": 1.0,
+            "total": 14.5187
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 2×2=4 + origin_weight 1.5×1=1.5"
+        },
+        {
+          "rank": 2,
           "id": "47a0accd565a90ddf1ddbacaa59810a683df3082",
           "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
           "canonical_url": "https://latent.space/p/ainews-openai-reports-navier-stokes",
-          "score": 8.0596,
+          "score": 13.0596,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -1108,39 +1280,99 @@
             "taste_reason": "Huge concrete claim — 10k agents, 130B tokens, 88 hours, >$40M, framed as a Millennium Prize contender — from a credible source; exactly the kind of agent-scaling scoop worth reading.",
             "topic_importance": 0.9,
             "topic_importance_raw": 9,
-            "total": 8.0596
+            "repick_bonus": 1.0,
+            "total": 13.0596
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.9×1.5=1.35"
-        },
-        {
-          "rank": 2,
-          "id": "44084287147f6737176b69adf6e595baa9748e77",
-          "title": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-          "canonical_url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-          "score": 7.5187,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.9937,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.8333,
-            "uniqueness": 0.75,
-            "uniqueness_sim_published": 0.25,
-            "uniqueness_sim_state": 0.1667,
-            "topic_match": 0.5,
-            "creator_weight": 0.4,
-            "taste_score": 0.7,
-            "taste_raw": 0.7,
-            "taste_reason": "Raschka on looped/recurrent-depth transformers and hidden CoT is technical and credible, though framed around already-known Astra; useful for model-internals readers.",
-            "topic_importance": 0.7,
-            "topic_importance_raw": 7,
-            "total": 7.5187
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5"
         },
         {
           "rank": 3,
+          "id": "bd9f5944e4459618f345b2e6a943b4eb2e7f7fb8",
+          "title": "Building Codex with Tibo Sottiaux",
+          "canonical_url": "https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux",
+          "score": 11.7138,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8276,
+            "uniqueness": 0.8276,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1724,
+            "topic_match": 0.8,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "Pragmatic Engineer interview with Codex's lead on how the harness was actually built — squarely on the agent-harness beat this audience uses daily.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "repick_bonus": 1.0,
+            "total": 11.7138,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: cooldown -1×1=-1"
+        },
+        {
+          "rank": 4,
+          "id": "0512b5a83e4bd8d57e72e696ed57acc45016d106",
+          "title": "When will average people feel AI’s impact?",
+          "canonical_url": "https://interconnects.ai/p/when-will-average-people-feel-ais",
+          "score": 11.1044,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9919,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9032,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.0968,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Credible author but a speculative long-horizon essay with no concrete facts or numbers — recap-of-recap territory for this audience.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "repick_bonus": 1.0,
+            "total": 11.1044,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: cooldown -1×1=-1"
+        },
+        {
+          "rank": 5,
+          "id": "195badb8ee468652bed404b20b12f211a4bef3bc",
+          "title": "When Agent Governance Helps",
+          "canonical_url": "https://arxiv.org/abs/2609.05531",
+          "score": 10.9583,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9333,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8788,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1212,
+            "topic_match": 0.5,
+            "creator_weight": -0.4,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Jargon-heavy governance framework synthesized from 321 sources with no experiments or results — vague and hard to act on.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "repick_bonus": 1.0,
+            "total": 10.9583
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.4×1=-0.4"
+        }
+      ],
+      "rejected": [
+        {
           "id": "2164884a93791f85a9bedda3023fcc7ed758d374",
           "title": "GPT-6 Astra: The System Card, Alignment and What Comes Next",
           "canonical_url": "https://thezvi.substack.com/p/gpt-6-astra-the-system-card-alignment",
@@ -1163,37 +1395,62 @@
             "topic_importance_raw": 7,
             "total": 7.1389
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05"
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05",
+          "reject_reason": "below_cut"
         },
         {
-          "rank": 4,
-          "id": "bd9f5944e4459618f345b2e6a943b4eb2e7f7fb8",
-          "title": "Building Codex with Tibo Sottiaux",
-          "canonical_url": "https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux",
-          "score": 6.7138,
+          "id": "90a49b3276aed3e38dc7035b15c5a3c3eb77c9f0",
+          "title": "A critical factor in using agents successfully in Codex and Code is deciding…",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mv6cihd7tk2v",
+          "score": 7.0442,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
             "recency_decay": 1.0,
-            "origin_weight": 1.5,
+            "origin_weight": 1.25,
             "has_concrete_fact": 1.0,
-            "novelty_score": 0.8276,
-            "uniqueness": 0.8276,
-            "uniqueness_sim_published": 0.125,
-            "uniqueness_sim_state": 0.1724,
+            "novelty_score": 0.8485,
+            "uniqueness": 0.8485,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.1515,
             "topic_match": 0.8,
-            "taste_score": 0.8,
-            "taste_raw": 0.8,
-            "taste_reason": "Pragmatic Engineer interview with Codex's lead on how the harness was actually built — squarely on the agent-harness beat this audience uses daily.",
-            "topic_importance": 0.8,
-            "topic_importance_raw": 8,
-            "total": 6.7138,
-            "cooldown_penalty": -1.0
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "Practical steering advice for long-running Codex/Code agents is on-beat and actionable, but it's a familiar 'manage your agent' take without concrete evidence.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 7.0442
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2; penalties: cooldown -1×1=-1"
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
         },
         {
-          "rank": 5,
+          "id": "52219c1f1733ddfd4cb43749d51eb51be4cc9ee7",
+          "title": "What you are seeing in math right now is a consequence of the jagged frontier,…",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mv6lhq5lyc2v",
+          "score": 6.7091,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.8182,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1818,
+            "topic_match": 0.8,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Mollick's jagged-frontier framing is a sharp lens but a pure opinion thread with no new facts or numbers; interesting take, not must-read.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.7091
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
           "id": "550b104e9c798e965845dc2463df10b2eddfa722",
           "title": "Here's a Blender model of a Pluribus themed Fabergé egg I had GPT-6 Astra build…",
           "canonical_url": "https://bsky.app/profile/simonwillison.net/post/3mv4su6pfzk24",
@@ -1216,10 +1473,9 @@
             "topic_importance_raw": 4,
             "total": 6.675
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 1×1=1"
-        }
-      ],
-      "rejected": [
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
         {
           "id": "61631e855302b70a48e83b5ff964cbc1bde505dd",
           "title": "OpenAI’s Egregious Pattern of Misconduct",
@@ -1245,61 +1501,6 @@
             "total": 6.3392
           },
           "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8476×1=0.8476; penalties: creator_weight -0.2×1=-0.2",
-          "reject_reason": "below_cut"
-        },
-        {
-          "id": "0512b5a83e4bd8d57e72e696ed57acc45016d106",
-          "title": "When will average people feel AI’s impact?",
-          "canonical_url": "https://interconnects.ai/p/when-will-average-people-feel-ais",
-          "score": 6.1044,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.9919,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.9032,
-            "uniqueness": 0.875,
-            "uniqueness_sim_published": 0.125,
-            "uniqueness_sim_state": 0.0968,
-            "topic_match": 0.5,
-            "creator_weight": 0.5,
-            "taste_score": 0.45,
-            "taste_raw": 0.45,
-            "taste_reason": "Credible author but a speculative long-horizon essay with no concrete facts or numbers — recap-of-recap territory for this audience.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 6.1044,
-            "cooldown_penalty": -1.0
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9919×1=0.9919; penalties: cooldown -1×1=-1",
-          "reject_reason": "below_cut"
-        },
-        {
-          "id": "195badb8ee468652bed404b20b12f211a4bef3bc",
-          "title": "When Agent Governance Helps",
-          "canonical_url": "https://arxiv.org/abs/2609.05531",
-          "score": 5.9583,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.9333,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.8788,
-            "uniqueness": 0.8,
-            "uniqueness_sim_published": 0.2,
-            "uniqueness_sim_state": 0.1212,
-            "topic_match": 0.5,
-            "creator_weight": -0.4,
-            "taste_score": 0.35,
-            "taste_raw": 0.35,
-            "taste_reason": "Jargon-heavy governance framework synthesized from 321 sources with no experiments or results — vague and hard to act on.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 5.9583
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9333×1=0.9333; penalties: creator_weight -0.4×1=-0.4",
           "reject_reason": "below_cut"
         },
         {
@@ -1344,8 +1545,29 @@
           "cap": 1
         },
         {
+          "id": "a7536b11432b1fd0d81ace46afb2cd3862e6359a",
+          "title": "X-CoSD: Communication-Efficient Cross-Vocabulary Collaborative Speculative Decoding",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "2b1458209cb30a0a9ddfbfc07c6da81a415c0a91",
+          "title": "StochBench: A Domain-Specific Benchmark for Stochastic Processes in Lean",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
           "id": "8f5c9d68a07b6d1693f0de6ca0e8be46808eeffc",
           "title": "Sad to see Jensen Huang claim that AGI has arrived, with no evidence and no definitions",
+          "reason": "domain_cap",
+          "domain": "garymarcus.substack.com",
+          "cap": 1
+        },
+        {
+          "id": "fd37989e60005c8f919e865cd99d8083e52f3b99",
+          "title": "No, Anderson Cooper, AI is not going to kill all humans by 2030",
           "reason": "domain_cap",
           "domain": "garymarcus.substack.com",
           "cap": 1
@@ -1355,6 +1577,13 @@
           "title": "Evidence Integration in Large Language Models",
           "reason": "domain_cap",
           "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "4a4ff0ec56e98ec97541d3ae6c82ac9eb3df6b6e",
+          "title": "The Pulse #191: a new trend of CPU shortages",
+          "reason": "domain_cap",
+          "domain": "newsletter.pragmaticengineer.com",
           "cap": 1
         },
         {
@@ -1394,7 +1623,7 @@
           "id": "45276de2ab4bc7dfa676721f8861fcb4b2379145",
           "title": "From S3 to GPU in one copy: Rethinking data loading for ML training (50 minute video)",
           "canonical_url": "https://infoq.com/presentations/vortex-columnar-file-format-gpu-streaming",
-          "score": 6.566,
+          "score": 11.5661,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -1412,16 +1641,17 @@
             "taste_reason": "Concrete infra talk with named throughput (60 Gbps) and a specific open format (Vortex), but a 50-minute video on data loading is niche for most harness-focused readers.",
             "topic_importance": 0.5,
             "topic_importance_raw": 5,
-            "total": 6.566
+            "repick_bonus": 1.0,
+            "total": 11.5661
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.55×1.5=0.825; penalties: creator_weight -0.1×1=-0.1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.1×1=-0.1"
         },
         {
           "rank": 2,
           "id": "9cbf09bff7ffaee36fa0b2323d24c4cfdb7c4eb6",
           "title": "Is behavioural science becoming AI's next product category? (6 minute read)",
           "canonical_url": "https://industrycontents.com/clementine-ai-behavioral-science",
-          "score": 6.5106,
+          "score": 11.5106,
           "components": {
             "cross_source_count": 1,
             "cross_score": 1,
@@ -1439,12 +1669,42 @@
             "taste_reason": "Speculative 'is X the next category' framing hinging on one agent (Clementine); forward-looking but thin on concrete evidence.",
             "topic_importance": 0.5,
             "topic_importance_raw": 5,
-            "total": 6.5106
+            "repick_bonus": 1.0,
+            "total": 11.5106
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8; penalties: creator_weight -0.1×1=-0.1"
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.1×1=-0.1"
         },
         {
           "rank": 3,
+          "id": "0a35ea3a6965e0dc9c191efffa7415f55a25d2f5",
+          "title": "Context, Semantics, and Ontology: A Primer for the Agentic Era (19 minute read)",
+          "canonical_url": "https://motherduck.com/blog/context-layer-vs-semantic-layer-ontology",
+          "score": 11.3937,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5865,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8913,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.1087,
+            "topic_match": 0.8,
+            "creator_weight": -0.1,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "Clear conceptual framing of semantic/context/ontology layers, but it's a primer with no new data — useful reference, not a must-read.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "repick_bonus": 1.0,
+            "total": 11.3937
+          },
+          "explanation": "repick_bonus 1×5=5 + cross 1×2=2 + origin_weight 1.5×1=1.5; penalties: creator_weight -0.1×1=-0.1"
+        }
+      ],
+      "rejected": [
+        {
           "id": "a4487491981792e26d95b4beef9d4430e1673b70",
           "title": "Google DeepMind Maps 9 Billion Possible DNA Variants (3 minute read)",
           "canonical_url": "https://spectrum.ieee.org/alphagenome-atlas",
@@ -1468,35 +1728,7 @@
             "topic_importance_raw": 3,
             "total": 6.4263
           },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9922×1=0.9922; penalties: creator_weight -0.1×1=-0.1"
-        }
-      ],
-      "rejected": [
-        {
-          "id": "0a35ea3a6965e0dc9c191efffa7415f55a25d2f5",
-          "title": "Context, Semantics, and Ontology: A Primer for the Agentic Era (19 minute read)",
-          "canonical_url": "https://motherduck.com/blog/context-layer-vs-semantic-layer-ontology",
-          "score": 6.3937,
-          "components": {
-            "cross_source_count": 1,
-            "cross_score": 1,
-            "recency_decay": 0.5865,
-            "origin_weight": 1.5,
-            "has_concrete_fact": 1.0,
-            "novelty_score": 0.8913,
-            "uniqueness": 0.7143,
-            "uniqueness_sim_published": 0.2857,
-            "uniqueness_sim_state": 0.1087,
-            "topic_match": 0.8,
-            "creator_weight": -0.1,
-            "taste_score": 0.5,
-            "taste_raw": 0.5,
-            "taste_reason": "Clear conceptual framing of semantic/context/ontology layers, but it's a primer with no new data — useful reference, not a must-read.",
-            "topic_importance": 0.5,
-            "topic_importance_raw": 5,
-            "total": 6.3937
-          },
-          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8; penalties: creator_weight -0.1×1=-0.1",
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9922×1=0.9922; penalties: creator_weight -0.1×1=-0.1",
           "reject_reason": "below_cut"
         },
         {
