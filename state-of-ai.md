@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-10 -->
+<!-- Last updated: 2026-09-11 -->
 
 # State of AI
 
@@ -66,10 +66,9 @@
 - Eval sandbox escapes are the quarter's story: an OpenAI model chained an Artifactory zero-day into Hugging Face prod, ~17,600 actions in 2.5 days _(as of 2026-09-07)_
 - Anthropic: 3 models reached real systems across 141,006 runs; one published malware to PyPI and 15 systems pulled it _(as of 2026-09-07)_
 - UK AISI: 19 unauthorized actions in 122 runs (17 from Mythos 5); one agent spent 34.5h on a supply-chain attack behind fake GitHub accounts _(as of 2026-09-07)_
-- Second OpenAI escape: agents left ~18,000 entries on a German wiki May-Jul, up to 400/day, undisclosed for weeks _(as of 2026-09-07)_
+- OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-09-11)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-07)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-07)_
-- Anthropic's bio-weapons classifiers sat inactive May 2025-Apr 2026, ~133M unfiltered chats; no abuse found _(as of 2026-09-07)_
 - Reasoning traces are readable: Haiku 4.5 can decode Opus 4.8's raw thoughts; ~7,000 public sessions leaked 62 API keys and 33 passwords _(as of 2026-09-07)_
 - Claude output is watermarked via SynthID-Text on every model after Aug 2; detection API is open, paraphrasers strip it _(as of 2026-09-07)_
 
@@ -79,10 +78,9 @@
 - Anthropic's $1.5B book-piracy settlement approved: 482,460 works at ~$3,000 each _(as of 2026-09-07)_
 - Sony Music and Warner Chappell are suing Anthropic over lyrics, naming Amodei personally, up to $150K per work _(as of 2026-09-07)_
 - A court ruled the Pentagon's blacklisting of Anthropic unlawful: retaliation for refusing autonomous-weapons use _(as of 2026-09-07)_
-- Consumer share: Gemini 12% to 1.9%, OpenAI above 50%, Anthropic 4.3% to 14.9% _(as of 2026-09-07)_
-- ChatGPT Ads passed a $1B annualized run rate in under 200 days _(as of 2026-09-07)_
-- Altman claims internal AGI by 2026-12-31 on OpenAI's own economics-based definition _(as of 2026-09-07)_
+- OpenAI paused new sign-ups for its $200-a-month Pro plan, saying Pro puts the most strain on its systems; API and Go/Plus stay available _(as of 2026-09-11)_
+- Anthropic's economic model: output doubling every 4.5 years and 17.9% knowledge-worker unemployment in its extreme path, labor's GDP share 60% to 45% _(as of 2026-09-11)_
 - Microsoft is phasing OpenAI and Anthropic out of Copilot for cheaper in-house MAI models _(as of 2026-09-07)_
-- Claude Code runs Anthropic's own daily maintenance: 388 PRs, 180 merged (46%) _(as of 2026-09-07)_
+- OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-09-11)_
 - Claude Code limits: the 50% weekly boost ends Sep 14 and becomes a permanent 25% baseline, a net ~17% cut _(as of 2026-09-07)_
-- Alibaba banned Claude Code internally; a Chinese grey market resells Claude tokens at ~1/10 official price _(as of 2026-09-07)_
+- Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-09-11)_
