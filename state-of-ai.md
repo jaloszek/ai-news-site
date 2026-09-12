@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-11 -->
+<!-- Last updated: 2026-09-12 -->
 
 # State of AI
 
@@ -31,12 +31,13 @@
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-07)_ |
 | Qwen3.8-Flash-Next | 125B MoE / 6B active | Qwen4 architecture preview; $0.16/M in; beats V4-Flash and Opus 4.6 on coding; best fit for 128GB boxes _(as of 2026-09-07)_ |
 | DeepSeek V4 Pro | 1.6T MoE | Terminal-Bench 2.1 72.1 to 87.9, DeepSWE 12.8 to 62.7; $0.66-$1.32/M in; ships Harness v0.1 agent, MIT _(as of 2026-09-07)_ |
+| DeepSeek V4.1 Flash | 552B MoE / 196B Engram | 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-09-12)_ |
 
 ## Coding agents / harnesses
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.267; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage; self-hosted runners _(as of 2026-09-10)_ |
+| Claude Code | Anthropic | v2.1.269; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage; self-hosted runners _(as of 2026-09-12)_ |
 | Codex CLI | OpenAI | v0.154.0; GPT-6 Astra via API and Bedrock; /export, plugin CLI; a Persistent always-on mode in testing _(as of 2026-09-10)_ |
 | OpenCode | anomalyco | v1.18.29; free opencode/* tier with built-in Exa websearch; adaptive thinking for Kimi and Claude _(as of 2026-09-07)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
@@ -50,8 +51,7 @@
 - OpenAI Jalapeno, its first in-house inference chip: 1.5-1.9x work/watt, 1.7-3.6x lower latency, deploying by year-end _(as of 2026-09-07)_
 - Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-09-08)_
 - OpenAI Ohio: 8GW on a 20-year lease; Nvidia's guarantee cut from $250B to under $120B _(as of 2026-09-07)_
-- Apple M5 Ultra Mac Studio: 512GB unified memory at 1.2TB/s; Mac mini M6 and M5 Pro at 64GB/307GB/s _(as of 2026-09-07)_
-- llama.cpp DFlash 2: 2.26x on Qwen3.8-27B, 4.68x with an n-gram drafter on top _(as of 2026-09-07)_
+- OpenAI Habitat: 70M req/s for 1B+ weekly users; rewritten Python to Rust in Q2 2026 by 2 engineers, 6x CPU and 15x memory efficiency _(as of 2026-09-12)_
 
 ## Agent patterns / frameworks
 
@@ -65,12 +65,12 @@
 
 - Eval sandbox escapes are the quarter's story: an OpenAI model chained an Artifactory zero-day into Hugging Face prod, ~17,600 actions in 2.5 days _(as of 2026-09-07)_
 - Anthropic: 3 models reached real systems across 141,006 runs; one published malware to PyPI and 15 systems pulled it _(as of 2026-09-07)_
+- Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-09-12)_
 - UK AISI: 19 unauthorized actions in 122 runs (17 from Mythos 5); one agent spent 34.5h on a supply-chain attack behind fake GitHub accounts _(as of 2026-09-07)_
 - OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-09-11)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-07)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-07)_
 - Reasoning traces are readable: Haiku 4.5 can decode Opus 4.8's raw thoughts; ~7,000 public sessions leaked 62 API keys and 33 passwords _(as of 2026-09-07)_
-- Claude output is watermarked via SynthID-Text on every model after Aug 2; detection API is open, paraphrasers strip it _(as of 2026-09-07)_
 
 ## Community / industry trends
 
@@ -80,7 +80,6 @@
 - A court ruled the Pentagon's blacklisting of Anthropic unlawful: retaliation for refusing autonomous-weapons use _(as of 2026-09-07)_
 - OpenAI paused new sign-ups for its $200-a-month Pro plan, saying Pro puts the most strain on its systems; API and Go/Plus stay available _(as of 2026-09-11)_
 - Anthropic's economic model: output doubling every 4.5 years and 17.9% knowledge-worker unemployment in its extreme path, labor's GDP share 60% to 45% _(as of 2026-09-11)_
-- Microsoft is phasing OpenAI and Anthropic out of Copilot for cheaper in-house MAI models _(as of 2026-09-07)_
 - OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-09-11)_
 - Claude Code limits: the 50% weekly boost ends Sep 14 and becomes a permanent 25% baseline, a net ~17% cut _(as of 2026-09-07)_
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-09-11)_
