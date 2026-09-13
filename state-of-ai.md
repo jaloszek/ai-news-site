@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-12 -->
+<!-- Last updated: 2026-09-13 -->
 
 # State of AI
 
@@ -18,6 +18,7 @@
 | Anthropic | Claude Sonnet 5 | 2026-07-01 | $2/$10/M now permanent; the Sep 1 rise to $3/$15/M was cancelled _(as of 2026-09-07)_ |
 | Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-09-07)_ |
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-09-10)_ |
+| OpenAI | GPT-Live-1 | 2026-09-10 | Full-duplex voice API, $0.05/min; hands hard questions to Astra; +30 pts vs Realtime on Full Duplex Bench _(as of 2026-09-13)_ |
 | OpenAI | GPT-5.6 Sol/Terra/Luna | 2026-07-09 | Sol cut to $4/$20/M; Luna $0.20/M in; Ultrafast tier 750 tok/s on Cerebras _(as of 2026-09-07)_ |
 | xAI (SpaceXAI) | Grok 4.6 | 2026-08-13 | AA Index 61, ties GPT-5.6 Sol, behind Opus 5; $2/$6/M _(as of 2026-09-07)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-07)_ |
@@ -31,17 +32,16 @@
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-07)_ |
 | Qwen3.8-Flash-Next | 125B MoE / 6B active | Qwen4 architecture preview; $0.16/M in; beats V4-Flash and Opus 4.6 on coding; best fit for 128GB boxes _(as of 2026-09-07)_ |
 | DeepSeek V4 Pro | 1.6T MoE | Terminal-Bench 2.1 72.1 to 87.9, DeepSWE 12.8 to 62.7; $0.66-$1.32/M in; ships Harness v0.1 agent, MIT _(as of 2026-09-07)_ |
-| DeepSeek V4.1 Flash | 552B MoE / 196B Engram | 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-09-12)_ |
+| DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-09-13)_ |
 
 ## Coding agents / harnesses
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.269; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage; self-hosted runners _(as of 2026-09-12)_ |
+| Claude Code | Anthropic | v2.1.270; plugin eval, /output-style; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage; self-hosted runners _(as of 2026-09-13)_ |
 | Codex CLI | OpenAI | v0.154.0; GPT-6 Astra via API and Bedrock; /export, plugin CLI; a Persistent always-on mode in testing _(as of 2026-09-10)_ |
 | OpenCode | anomalyco | v1.18.29; free opencode/* tier with built-in Exa websearch; adaptive thinking for Kimi and Claude _(as of 2026-09-07)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
-| Muse Code | Meta | Beta terminal agent that fans work out to parallel subagents in isolated worktrees _(as of 2026-09-07)_ |
 | Also current | various | Cline 4.1.17, Qwen Code 0.22.3, OpenHands 1.14, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.3, Hermes 0.19 _(as of 2026-09-09)_ |
 
 ## Infrastructure / inference
@@ -50,8 +50,8 @@
 - Stripe is buying OpenRouter for $7B+, 5x its $1.3B May Series B _(as of 2026-09-07)_
 - OpenAI Jalapeno, its first in-house inference chip: 1.5-1.9x work/watt, 1.7-3.6x lower latency, deploying by year-end _(as of 2026-09-07)_
 - Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-09-08)_
-- OpenAI Ohio: 8GW on a 20-year lease; Nvidia's guarantee cut from $250B to under $120B _(as of 2026-09-07)_
 - OpenAI Habitat: 70M req/s for 1B+ weekly users; rewritten Python to Rust in Q2 2026 by 2 engineers, 6x CPU and 15x memory efficiency _(as of 2026-09-12)_
+- Nvidia in talks to anchor Anthropic's IPO with up to $10B; raise up to $100B near a $2T valuation, the largest listing ever, before November's midterms _(as of 2026-09-13)_
 
 ## Agent patterns / frameworks
 
@@ -70,7 +70,6 @@
 - OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-09-11)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-07)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-07)_
-- Reasoning traces are readable: Haiku 4.5 can decode Opus 4.8's raw thoughts; ~7,000 public sessions leaked 62 API keys and 33 passwords _(as of 2026-09-07)_
 
 ## Community / industry trends
 
