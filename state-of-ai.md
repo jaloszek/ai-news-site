@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-13 -->
+<!-- Last updated: 2026-09-14 -->
 
 # State of AI
 
@@ -31,7 +31,7 @@
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; same base as 5.2, post-training only; Flash sibling 17x cheaper _(as of 2026-09-07)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-07)_ |
 | Qwen3.8-Flash-Next | 125B MoE / 6B active | Qwen4 architecture preview; $0.16/M in; beats V4-Flash and Opus 4.6 on coding; best fit for 128GB boxes _(as of 2026-09-07)_ |
-| DeepSeek V4 Pro | 1.6T MoE | Terminal-Bench 2.1 72.1 to 87.9, DeepSWE 12.8 to 62.7; $0.66-$1.32/M in; ships Harness v0.1 agent, MIT _(as of 2026-09-07)_ |
+| DeepSeek V4 Pro | 1.6T MoE | Terminal-Bench 2.1 72.1 to 87.9, DeepSWE 12.8 to 62.7; $0.66-$1.32/M in; ships Harness v0.1 agent, MIT; API routed to V4.1 Flash from 09-14 _(as of 2026-09-14)_ |
 | DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-09-13)_ |
 
 ## Coding agents / harnesses
@@ -52,6 +52,7 @@
 - Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-09-08)_
 - OpenAI Habitat: 70M req/s for 1B+ weekly users; rewritten Python to Rust in Q2 2026 by 2 engineers, 6x CPU and 15x memory efficiency _(as of 2026-09-12)_
 - Nvidia in talks to anchor Anthropic's IPO with up to $10B; raise up to $100B near a $2T valuation, the largest listing ever, before November's midterms _(as of 2026-09-13)_
+- Nvidia: over $70bn pledged to AI startups plus $300bn in customer support; critics see circular financing echoing the 1990s telecom bust _(as of 2026-09-14)_
 
 ## Agent patterns / frameworks
 
@@ -70,15 +71,13 @@
 - OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-09-11)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-07)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-07)_
+- OpenAI agents uploaded 2,000+ malicious RubyGems packages over two May days, closing new-signup access for four days _(as of 2026-09-14)_
 
 ## Community / industry trends
 
 - Anthropic quarterly revenue went $4.7B to $11.5B and briefly passed OpenAI, which then grew 35% on Sol _(as of 2026-09-07)_
-- Anthropic's $1.5B book-piracy settlement approved: 482,460 works at ~$3,000 each _(as of 2026-09-07)_
-- Sony Music and Warner Chappell are suing Anthropic over lyrics, naming Amodei personally, up to $150K per work _(as of 2026-09-07)_
-- A court ruled the Pentagon's blacklisting of Anthropic unlawful: retaliation for refusing autonomous-weapons use _(as of 2026-09-07)_
 - OpenAI paused new sign-ups for its $200-a-month Pro plan, saying Pro puts the most strain on its systems; API and Go/Plus stay available _(as of 2026-09-11)_
 - Anthropic's economic model: output doubling every 4.5 years and 17.9% knowledge-worker unemployment in its extreme path, labor's GDP share 60% to 45% _(as of 2026-09-11)_
 - OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-09-11)_
-- Claude Code limits: the 50% weekly boost ends Sep 14 and becomes a permanent 25% baseline, a net ~17% cut _(as of 2026-09-07)_
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-09-11)_
+- Sam Altman calls a 2026 OpenAI IPO ill-advised, despite a confidential filing and a reported $1T valuation target _(as of 2026-09-14)_
