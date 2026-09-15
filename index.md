@@ -38,7 +38,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-12.html"><div class="cal-num">12</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.269</li><li>✨ GPT-6 Astra</li><li>🟢 OpenAI Habitat storage</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-13.html"><div class="cal-num">13</div><ul class="cal-highlights"><li>🛠 CC v2.1.270</li><li>🛠 Codex Python SDK 0.154.0</li><li>✨ GPT-Live-1 in the API</li><li>🚀 ChatGPT for Financial Services</li><li>💰 Nvidia's $10B Anthropic IPO</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-14.html"><div class="cal-num">14</div><ul class="cal-highlights"><li>✨ DeepSeek V4.1 Flash</li><li>✨ GPT-6 Astra</li><li>🚀 ChatGPT Work Data agent</li><li>🛠 Together AI fine-tuning</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">15</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-15.html"><div class="cal-num">15</div><ul class="cal-highlights"><li>🛠 Claude Code Fast mode</li><li>🛠 OpenCode v1.18.31</li><li>✨ Qwen3.8 27B</li><li>🤖 Siri AI Claude swap</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">16</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">17</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">18</div></div>
