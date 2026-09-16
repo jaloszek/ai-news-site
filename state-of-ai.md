@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-15 -->
+<!-- Last updated: 2026-09-16 -->
 
 # State of AI
 
@@ -38,7 +38,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.271; Fast mode on Remote sessions; plugin eval, /output-style; Auto mode default since Aug 14; fork subagents default; cross-session SendMessage _(as of 2026-09-15)_ |
+| Claude Code | Anthropic | v2.1.273; gateway hint headers, /mcp disconnect notice, remote-control background forks; Auto mode default since Aug 14; cross-session SendMessage _(as of 2026-09-16)_ |
 | Codex CLI | OpenAI | v0.154.0; GPT-6 Astra via API and Bedrock; /export, plugin CLI; a Persistent always-on mode in testing _(as of 2026-09-10)_ |
 | OpenCode | anomalyco | v1.18.31; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-15)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
