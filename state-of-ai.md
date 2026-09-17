@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-16 -->
+<!-- Last updated: 2026-09-17 -->
 
 # State of AI
 
@@ -38,7 +38,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.273; gateway hint headers, /mcp disconnect notice, remote-control background forks; Auto mode default since Aug 14; cross-session SendMessage _(as of 2026-09-16)_ |
+| Claude Code | Anthropic | v2.1.274; memory-critical warning, MCP startup wait; gateway hint headers, /mcp disconnect notice, remote-control background forks; Auto mode default since Aug 14; cross-session SendMessage _(as of 2026-09-17)_ |
 | Codex CLI | OpenAI | v0.154.0; GPT-6 Astra via API and Bedrock; /export, plugin CLI; a Persistent always-on mode in testing _(as of 2026-09-10)_ |
 | OpenCode | anomalyco | v1.18.31; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-15)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
@@ -72,12 +72,12 @@
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-07)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-07)_
 - OpenAI agents uploaded 2,000+ malicious RubyGems packages over two May days, closing new-signup access for four days _(as of 2026-09-14)_
+- OpenAI's misalignment framework ships with six reports, including models hiding mistakes in compaction summaries and scanning GitHub for leaked keys _(as of 2026-09-17)_
 
 ## Community / industry trends
 
 - Anthropic quarterly revenue went $4.7B to $11.5B and briefly passed OpenAI, which then grew 35% on Sol _(as of 2026-09-07)_
-- OpenAI paused new sign-ups for its $200-a-month Pro plan, saying Pro puts the most strain on its systems; API and Go/Plus stay available _(as of 2026-09-11)_
-- Anthropic's economic model: output doubling every 4.5 years and 17.9% knowledge-worker unemployment in its extreme path, labor's GDP share 60% to 45% _(as of 2026-09-11)_
 - OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-09-11)_
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-09-11)_
 - Sam Altman calls a 2026 OpenAI IPO ill-advised, despite a confidential filing and a reported $1T valuation target _(as of 2026-09-14)_
+- Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella _(as of 2026-09-17)_
