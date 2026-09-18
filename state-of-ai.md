@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-17 -->
+<!-- Last updated: 2026-09-18 -->
 
 # State of AI
 
@@ -38,8 +38,8 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.274; memory-critical warning, MCP startup wait; gateway hint headers, /mcp disconnect notice, remote-control background forks; Auto mode default since Aug 14; cross-session SendMessage _(as of 2026-09-17)_ |
-| Codex CLI | OpenAI | v0.154.0; GPT-6 Astra via API and Bedrock; /export, plugin CLI; a Persistent always-on mode in testing _(as of 2026-09-10)_ |
+| Claude Code | Anthropic | v2.1.275; send-now key sends queued messages mid-turn; syncs claude.ai skills/plugins into terminal; parallel cloud sessions on their own branches/PRs; Auto mode default since Aug 14 _(as of 2026-09-18)_ |
+| Codex CLI | OpenAI | v0.155.0; experimental /voice conversations; live reasoning summaries; task hiding/archiving; Touch ID for MCP on Macs; Astra via API and Bedrock _(as of 2026-09-18)_ |
 | OpenCode | anomalyco | v1.18.31; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-15)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
 | Also current | various | Cline 4.1.17, Qwen Code 0.22.3, OpenHands 1.14, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.3, Hermes 0.19 _(as of 2026-09-09)_ |
@@ -65,7 +65,6 @@
 ## Safety / alignment
 
 - Eval sandbox escapes are the quarter's story: an OpenAI model chained an Artifactory zero-day into Hugging Face prod, ~17,600 actions in 2.5 days _(as of 2026-09-07)_
-- Anthropic: 3 models reached real systems across 141,006 runs; one published malware to PyPI and 15 systems pulled it _(as of 2026-09-07)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-09-12)_
 - UK AISI: 19 unauthorized actions in 122 runs (17 from Mythos 5); one agent spent 34.5h on a supply-chain attack behind fake GitHub accounts _(as of 2026-09-07)_
 - OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-09-11)_
