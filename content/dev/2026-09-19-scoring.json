@@ -1,0 +1,859 @@
+{
+  "date": "2026-09-19",
+  "generated_at": "2026-09-19T02:17:45.056258+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.5,
+    "cooldown_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.5,
+    "topic_importance": 1.0,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.5,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5
+  },
+  "weights_overridden": [],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "2e32a5a9d6feffb76c90904debe93e61978142c0",
+          "title": "v2.1.277",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
+          "score": 8.7721,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7941,
+            "uniqueness": 0.7941,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2059,
+            "topic_match": 0.7,
+            "creator_weight": 1.0,
+            "taste_score": 0.85,
+            "taste_raw": 0.85,
+            "taste_reason": "Actionable release a daily Claude Code user feels: AGENTS.md fallback plus a named gateways flag, extending state-of-ai's v2.1.275 row with concrete version-specific changes.",
+            "topic_importance": 0.9,
+            "topic_importance_raw": 9,
+            "total": 8.7721
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.85×1.5=1.275"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "b3df7c97046a426fd9c90cdfe2e6d0c1b9ae3f77",
+          "title": "v4.1.18: docs(skills): rewrite publish-extension for the completed SDK cutover",
+          "reason": "release_bugfix_only"
+        },
+        {
+          "id": "7a2b8a401892cf5f76ff35b59eb160dc48775a41",
+          "title": "SDK v0.0.83",
+          "reason": "release_subpackage"
+        },
+        {
+          "id": "3575631df8c6a528e012422883f10f9132f5885f",
+          "title": "v2.1.276",
+          "reason": "creator_cap",
+          "creator_key": "Claude Code releases",
+          "cap": 1
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "b2ee571e530e2f99eb8f7dbc89b7f5de0a2dbcb4",
+          "title": "Security researchers used Anthropic's Claude to hack OpenAI's internal systems in under 72 hours",
+          "canonical_url": "https://the-decoder.com/security-researchers-used-anthropics-claude-to-hack-openais-internal-systems-in-under-72-hours",
+          "score": 7.9122,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6744,
+            "uniqueness": 0.6744,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.3256,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.85,
+            "taste_raw": 0.85,
+            "taste_reason": "Concrete breach account with a named model capability step (Opus 5 bypassing a control its predecessor couldn't), extending state-of-ai's sandbox-escape/security theme.",
+            "topic_importance": 0.9,
+            "topic_importance_raw": 9,
+            "total": 7.9122
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.85×1.5=1.275"
+        },
+        {
+          "rank": 2,
+          "id": "20e16ee5bab6c3a8d012a98190982a727a0d4e75",
+          "title": "Anthropic wants you to know Claude leads a quarter of its research, but \"lead\" doesn't mean what you think",
+          "canonical_url": "https://the-decoder.com/anthropic-wants-you-to-know-claude-leads-a-quarter-of-its-research-but-lead-doesnt-mean-what-you-think",
+          "score": 7.2179,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7857,
+            "uniqueness": 0.7857,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.2143,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Concrete-but-self-scored 26%-vs-<1% agent-automation stat is genuinely interesting, but the 'doesn't mean what you think' clickbait framing and unspecified scale cap it.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 7.2179
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "f302f4c9714e48fda7fab7c3c7114e64e8cb801e",
+          "title": "How a global fintech scaled coding agent traffic with Dedicated Model Inference",
+          "canonical_url": "https://together.ai/blog/global-fintech-scales-coding-agent-traffic-with-dedicated-model-inference",
+          "score": 6.35,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.85,
+            "uniqueness": 0.85,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.15,
+            "topic_match": 0.5,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Vendor case study with no numbers, benchmarks, or named model — pure 'our product scaled' marketing copy.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.35
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9×1=0.9"
+        },
+        {
+          "rank": 4,
+          "id": "c72f60fcf6add18e14105032b742261fbd90d5e6",
+          "title": "New experts join Google’s AI & Economy team",
+          "canonical_url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench",
+          "score": 5.5821,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9423,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.0577,
+            "topic_match": -0.1,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "Vague personnel/staffing announcement with no technical signal or concrete research output — skimmable at best.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 5.5821
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: topic_match -0.1×1=-0.1"
+        },
+        {
+          "rank": 5,
+          "id": "94ad9f737cb6b727d67c6a9a976b60149d72d4f1",
+          "title": "Co-creating the future of fashion with Google",
+          "canonical_url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week",
+          "score": 5.3986,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8913,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1087,
+            "topic_match": -0.1,
+            "taste_score": 0.18,
+            "taste_raw": 0.18,
+            "taste_reason": "Marketing crossover with fashion designers, zero relevance to an AI engineer's daily work or the core beat.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 5.3986
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: topic_match -0.1×1=-0.1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "964ae1dd0facf551105fd30a5745d11e7b39c4c1",
+          "title": "How Cooley is accelerating IPO work with ChatGPT",
+          "canonical_url": "https://openai.com/index/cooley-gopublic",
+          "score": 5.2416,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.0,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "Vendor case-study marketing with no product detail, numbers, or model news — a law firm using ChatGPT is not signal for an AI engineer.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 5.2416
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8×1=0.8",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "027811ca1632d0f58ec6aef4b1b0aab0357f132b",
+          "title": "Helping older adults use AI in everyday life",
+          "canonical_url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+          "score": 5.1333,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6333,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.0,
+            "taste_score": 0.2,
+            "taste_raw": 0.2,
+            "taste_reason": "Corporate PR/partnership announcement (AARP workshops for older adults) with no technical or product substance for an AI engineer.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 5.1333
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.6333×1=0.6333",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "e867cd0e1181a4c047de49316a3f3721cf3dcd3b",
+          "title": "OpenAI takes aim at the legal market with Astra for Law",
+          "reason": "topic_dup_published",
+          "matched_title": "Introducing Astra for Law",
+          "matched_date": "2026-09-18",
+          "matched_section": "ai-world",
+          "title_jaccard": 0.25,
+          "body_containment": 0.6
+        },
+        {
+          "id": "1c1994263775947d25186e94e7c0b85df89037cf",
+          "title": "OpenRouter's staggering token chart is the AI bubble debate in a single image",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "15eaf56d15f49ab2a1a7b5e145b8ac3e520f709d",
+          "title": "Visible chains of thought are a safety advantage for AI, but that transparency is slipping away",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "829e6faf3060e19b405060230b60bf687890c338",
+          "title": "OpenAI reportedly closes in on solving the Hodge conjecture, its second Millennium Prize Problem",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "dfcfb48c1ce8cd2dc3370a9b420e3a998cd7f75a",
+          "title": "42 leading mathematicians warn that AI existential risk is real and urgent",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "41737db816bb025d3ce20e08a223da2a1611d039",
+          "title": "California Governor Newsom signs executive order demanding \"kill switch\" for AI models",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "4adbf8699022ddb8084879b7594794087531dcde",
+          "title": "EU president warns AI agents \"escaping their environment\" are just a preview of what's coming",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "6ca2e398536feae639c1c281063e3005b3915eb3",
+          "title": "OpenAI's GPT-6 Astra decrypts a Nazi radio message in ten hours that went unsolved for 83 years",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "58ef42bfe8445bbabbe671dff812bdc559b3496d",
+          "title": "An OpenAI model kept slipping prompt injections into its own notes, and researchers still aren't sure why",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "c450ac294acbba896bc899d5ae38ea0e9ceb8cc8",
+          "title": "GPT-6 Astra crushes Pokemon, Factorio, and Fallout 3 then spirals into Minecraft potato farming after one bad Creeper",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "092d4a0f928d7a03bfd168fce5a13c9c62fa13a1",
+          "title": "AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "dbb159bf7b8fe2fb09a1bc7d6e8032d047413606",
+          "title": "Google Deepmind launches interdisciplinary institute to tackle the big questions around AGI",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "71646fffd914b4964a5115ce29a926b304e95bf4",
+          "title": "How workers are unlocking new ways of working",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "c3c93bc37c9b3c3500667d0d858ef82658b3ade3",
+          "title": "SoL-Pi: Token-Efficient Coding Agent Harness",
+          "canonical_url": "https://youtube.com/watch?v=66VMcm_014I",
+          "score": 6.3978,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7455,
+            "uniqueness": 0.7455,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2545,
+            "topic_match": 0.5,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Token-efficiency in coding harnesses is squarely the audience's beat, but this is a thin 4-minute summary of a paper with no numbers or method detail.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.3978
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "a1ae7b946830a4ad920ed8bf9042bdc508e11c21",
+          "title": "Jev (Fully Tested) + Browser Use: FASTEST AI Agent I'VE TRIED YET!",
+          "canonical_url": "https://youtube.com/watch?v=SNJ3yuJ_QwY",
+          "score": 6.0022,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7807,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8429,
+            "uniqueness": 0.8429,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.1571,
+            "topic_match": 0.7,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "Clickbait title ('FASTEST AI AGENT I'VE TRIED YET!') costs ~0.15; content is a vendor-ish test of a lesser-known model (Jev System One) with no published numbers, so it caps low despite topical agent relevance.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "total": 6.0022
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.7807×1=0.7807"
+        },
+        {
+          "rank": 3,
+          "id": "e54b6a9effd003b0577a610aeb84b5d1534e54c2",
+          "title": "You Built Your AI Second Brain. Now What? (Here's How to Evolve It)",
+          "canonical_url": "https://youtube.com/watch?v=mjQlZrteMIY",
+          "score": 5.8605,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7001,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7708,
+            "uniqueness": 0.7708,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2292,
+            "topic_match": 0.7,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Practical labeled-table-over-MCP pattern for agent queries, but it's a follow-up how-to video without novel specifics or concrete results.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 5.8605
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.7001×1=0.7001"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "cef6cc75e57c252e28c17f820b7560ec6160beed",
+          "title": "Why People Are Switching to Codex: 6 Reasons (vs Claude Code)",
+          "canonical_url": "https://youtube.com/watch?v=6qVmN3mOXMo",
+          "score": 5.5669,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7838,
+            "uniqueness": 0.7838,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.2162,
+            "topic_match": 0.8,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "Listicle framing (\"6 Reasons\") with a migration walkthrough but no hard benchmark or novel finding; harness-hopping is familiar discourse, not new signal.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "fetch_fail_penalty": -1.0,
+            "total": 5.5669
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a38b994d8378cc64628f033198da4bed76c295ac",
+          "title": "Fable and Astra are the only useful models",
+          "canonical_url": "https://youtube.com/watch?v=iBrAWpjXNxs",
+          "score": 5.5666,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9082,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7632,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.3333,
+            "uniqueness_sim_state": 0.2368,
+            "creator_weight": -0.1,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Theo is a credible dev voice and the thesis (model quality = reliability on dumb tasks, not raw smarts) is a recognizable take, but it's a 27-min opinion piece asserting 'Fable and Astra' with no data behind a semi-clickbait headline.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 5.5666
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9082×1=0.9082; penalties: creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "85158ad23550d82e82a44200a2bb9aea96a4a2f1",
+          "title": "Why a New Class of AI \"Judgement Models\" Could Have Big Business Implications",
+          "canonical_url": "https://youtube.com/watch?v=sdR7FZ0SeqA",
+          "score": 5.5641,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7156,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9149,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.0851,
+            "creator_weight": -0.2,
+            "taste_score": 0.68,
+            "taste_raw": 0.68,
+            "taste_reason": "Novel pattern — a non-generative model returning calibrated probabilities with a concrete 20-200x speed/cost claim — but vendor-sourced and padded with vague 'business implications' framing.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 5.5641
+          },
+          "explanation": "cross 1×2=2 + taste 0.68×1.5=1.02 + origin_weight 1×1=1; penalties: creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "8ce97b2eefd3186df0b87ff52d317315a0e65c02",
+          "title": "Harness Arena (Fully Tested): This NEW Benchmark TESTED Every AGENT HARNESS (which is the best?)",
+          "canonical_url": "https://youtube.com/watch?v=aL4eepffdjM",
+          "score": 5.5598,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9765,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6667,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.3333,
+            "topic_match": 0.7,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "On-topic harness comparison with a leaderboard and recorded runs, but the clickbait title (\"Fully Tested\" / \"which is the best?\") signals engagement-farming and no concrete scores are surfaced.",
+            "topic_importance": 0.8,
+            "topic_importance_raw": 8,
+            "fetch_fail_penalty": -1.0,
+            "total": 5.5598
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9765×1=0.9765; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "c407b8a441e2d2aee1c19e3253428a2f1483b89d",
+          "title": "Google is SO back...",
+          "canonical_url": "https://youtube.com/watch?v=thR9_VYJiQo",
+          "score": 5.3845,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7633,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9024,
+            "uniqueness": 0.9024,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0976,
+            "taste_score": 0.38,
+            "taste_raw": 0.38,
+            "taste_reason": "Same Dream-RSI topic as other items but from a lower-signal commentary channel with a clickbait 'Google is SO back...' title and a 14-minute regurgitation; no original numbers.",
+            "topic_importance": 0.6,
+            "topic_importance_raw": 6,
+            "total": 5.3845
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.7633×1=0.7633",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "74c8a95ea07cb32d51e2e17a6aafb5070538b305",
+          "title": "OnSpace FREE AI App Builder: YOU NEED THIS right now!",
+          "canonical_url": "https://youtube.com/watch?v=CHx3EHgTa5c",
+          "score": 5.1629,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5538,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.88,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.12,
+            "topic_match": 0.7,
+            "taste_score": 0.2,
+            "taste_raw": 0.2,
+            "taste_reason": "Clickbait promo ('YOU NEED THIS right now!') for a no-code app builder, complete with redemption code — marketing with no technical depth.",
+            "topic_importance": 0.2,
+            "topic_importance_raw": 2,
+            "total": 5.1629
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "858ccc60933d501b1736b18f856dd0f9f6652f07",
+          "title": "How I Code Without Typing",
+          "canonical_url": "https://youtube.com/watch?v=NvVbCqDgfCs",
+          "score": 5.0553,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5018,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8571,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1429,
+            "creator_weight": -0.1,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "Hands-on, honest account of shipping voice-only with Wispr Flow from a well-known dev-tooling voice; useful for the niche considering voice as a primary interface, but not core-beat news.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 5.0553
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.55×1.5=0.825; penalties: creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "5cfb1a43146961f1988d478cc792067d2879f153",
+          "title": "Agentic AI Powers Employee Success | IT & HR Service Keynote, Dreamforce 2026",
+          "canonical_url": "https://youtube.com/watch?v=p0r8ELkRmdI",
+          "score": 4.9073,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4945,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7755,
+            "uniqueness": 0.7755,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2245,
+            "topic_match": 0.5,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "Salesforce Dreamforce keynote marketing aimed at internal IT/HR buyers — vague benefits ('lower costs, uptime') with zero concrete technical signal for an AI engineer.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 4.9073
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.5×1=0.5",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "9e5053db2fd2afd808ea6537b26dd27a2978cf4d",
+          "title": "How to Use Gemini in Google Sheets | AI Function Tutorial",
+          "canonical_url": "https://youtube.com/watch?v=XuG7I6_nAY0",
+          "score": 4.8341,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8182,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.1818,
+            "topic_match": -0.1,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "Basic consumer spreadsheet tutorial from a forms vendor — no relevance to harnesses, models, or an AI engineer's daily work.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 4.8341
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: topic_match -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "518a4488a51289e02e5590199c3c66213a842965",
+          "title": "He Built The Ultimate Spy Tool (Free and Open-Source)",
+          "canonical_url": "https://youtube.com/watch?v=S2VJU5DQqlU",
+          "score": 4.8135,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6746,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8387,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.1613,
+            "topic_match": 0.2,
+            "creator_weight": -0.2,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "Clickbait 'Ultimate Spy Tool' interview about an open-source data-viz tool — adjacent to the beat but remote from AI/agent engineering with no concrete technical detail.",
+            "topic_importance": 0.3,
+            "topic_importance_raw": 3,
+            "total": 4.8135
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6746×1=0.6746; penalties: creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "reddit": {
+      "picked": [],
+      "rejected": [],
+      "dropped": []
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "9b0bea9a8f225cf06bd55b8852359086ed6971a6",
+          "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+          "canonical_url": "https://code.claude.com/docs/en/changelog",
+          "score": 7.7889,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.8,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "Concrete, immediately actionable dev-tool change a daily Claude Code user feels, with strong HN traction (517 pts); not yet in state-of-ai's Claude Code row.",
+            "topic_importance": 0.9,
+            "topic_importance_raw": 9,
+            "total": 7.7889
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.5=1.2"
+        },
+        {
+          "rank": 2,
+          "id": "cd39cd61b0ab0f3e26444f6472e5ee708350dcd1",
+          "title": "[AINews] Reality Checks on AI News (Yegge shuts down Gas Town, Databricks’ +60% Astra cost)",
+          "canonical_url": "https://latent.space/p/ainews-reality-checks-on-ai-news",
+          "score": 6.4555,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7623,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8864,
+            "uniqueness": 0.8864,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1136,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "Credible source (Latent Space) with concrete data points — Databricks' +60% Astra cost and Yegge shutting down Gas Town — that temper the baseline's model-release hype.",
+            "topic_importance": 0.7,
+            "topic_importance_raw": 7,
+            "total": 6.4555,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.5=1.05; penalties: cooldown -1×1=-1"
+        },
+        {
+          "rank": 3,
+          "id": "77346bab0d39c193ad01f81c529804424e409876",
+          "title": "Subliminal Prompting Beyond Static Geometry: Causal Depth and Multi-Token Confounds",
+          "canonical_url": "https://arxiv.org/abs/2609.19149",
+          "score": 4.9889,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9333,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9111,
+            "uniqueness": 0.9111,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.0889,
+            "topic_match": 0.5,
+            "creator_weight": -0.4,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "Mechanistic work on subliminal learning is mildly interesting for interpretability fans, but the abstract is hedged and offers no concrete finding or number.",
+            "topic_importance": 0.4,
+            "topic_importance_raw": 4,
+            "total": 4.9889,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9333×1=0.9333; penalties: cooldown -1×1=-1, creator_weight -0.4×1=-0.4"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "6d3c595d4f248bb4e5fdf86e4d593091a3aef4be",
+          "title": "Few-Shot Degradation Is Not What It Seems: Behavioral Evidence, Representation Analysis, and a Random-Text Control Across 12 Models, 2 Tasks, and 2 Architectures",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "0f4546c5ec61477b5770a73ce1546c0dc011b202",
+          "title": "Modality Discrepancy Transformer for Ambivalence and Hesitancy Recognition",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "18d75a75a7f13bc2fb8fc9336669eb86e4ea614e",
+          "title": "R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "006afdcf25b96015112c205dee6dad53d23dea91",
+          "title": "Enhancing Extubation Failure Prediction with LLM-Derived Features from Respiratory Therapy Clinical Notes",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "17de8a13cdfc32702036e1b2e60ade9d4ce4dc6a",
+          "title": "Token Merging for Multilingual Speech Recognition: A Systematic Study Across Model Scale and Fine-Tuning",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        },
+        {
+          "id": "5e8be7e75af493316fe89bb37a5e76125f402da0",
+          "title": "What Counts as a Mistake? Annotating Recitation Events in Quran Memorization Transcripts",
+          "reason": "domain_cap",
+          "domain": "arxiv.org",
+          "cap": 1
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [],
+      "rejected": [],
+      "dropped": []
+    }
+  }
+}

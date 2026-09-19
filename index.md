@@ -42,7 +42,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-16.html"><div class="cal-num">16</div><ul class="cal-highlights"><li>✨ Gemini 3.8 Live</li><li>✨ DeepSeek v4.1-Flash</li><li>🛠 Claude Code v2.1.273</li><li>🚀 GPT-Live-1</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.274</li><li>🚀 Anthropic Chat + Cowork merge</li><li>🔒 OpenAI misalignment framework</li><li>💰 Apple M8 Ultra server</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🛠 CC v2.1.275</li><li>✨ Codex /voice</li><li>🚀 CC parallel agents</li><li>🚀 Astra for Law</li><li>🧪 Dream-RSI</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">19</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-19.html"><div class="cal-num">19</div><ul class="cal-highlights"><li>🛠 Claude Code AGENTS.md support</li><li>🔒 Claude-aided OpenAI breach</li><li>🧪 SoL-Pi token efficiency</li><li>💰 Databricks +60% Astra cost</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">22</div></div>
