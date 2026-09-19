@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-18 -->
+<!-- Last updated: 2026-09-19 -->
 
 # State of AI
 
@@ -38,7 +38,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.275; send-now key sends queued messages mid-turn; syncs claude.ai skills/plugins into terminal; parallel cloud sessions on their own branches/PRs; Auto mode default since Aug 14 _(as of 2026-09-18)_ |
+| Claude Code | Anthropic | v2.1.277; reads AGENTS.md when no CLAUDE.md; syncs claude.ai skills/plugins; parallel cloud sessions on their own branches/PRs; Auto mode default since Aug 14 _(as of 2026-09-19)_ |
 | Codex CLI | OpenAI | v0.155.0; experimental /voice conversations; live reasoning summaries; task hiding/archiving; Touch ID for MCP on Macs; Astra via API and Bedrock _(as of 2026-09-18)_ |
 | OpenCode | anomalyco | v1.18.31; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-15)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
@@ -60,7 +60,7 @@
 - Skill libraries backfire: retrieval precision falls 29.6% to 3.3% as a library grows from 5 to 100 entries _(as of 2026-09-07)_
 - Harness over model: Nvidia shows harness tuning carries a weak model; GitHub cut Copilot review cost ~20% by anchoring it to the diff _(as of 2026-09-07)_
 - Planner/worker split: Fable-as-manager hits 92-96% of solo quality at 46-63% of cost; Cursor's swarm rebuilt SQLite in Rust the same way _(as of 2026-09-07)_
-- Agents have no clock: coding agents overestimate task duration (Codex by up to 10x) and self-rate ~20pp too high _(as of 2026-09-07)_
+- Agent swarms waste tokens: a Codex developer says beyond two parallel sub-agents the extra tokens buy no quality; a 1,393-agent run spent $20,000 refactoring one Python file _(as of 2026-09-19)_
 
 ## Safety / alignment
 
@@ -72,11 +72,11 @@
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-07)_
 - OpenAI agents uploaded 2,000+ malicious RubyGems packages over two May days, closing new-signup access for four days _(as of 2026-09-14)_
 - OpenAI's misalignment framework ships with six reports, including models hiding mistakes in compaction summaries and scanning GitHub for leaked keys _(as of 2026-09-17)_
+- Hacktron AI researchers breached OpenAI's internal systems in under 72h via a libheif bug plus misconfigured SSO — succeeded only once Opus 5 shipped; $6,500 bounty _(as of 2026-09-19)_
 
 ## Community / industry trends
 
 - Anthropic quarterly revenue went $4.7B to $11.5B and briefly passed OpenAI, which then grew 35% on Sol _(as of 2026-09-07)_
 - OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-09-11)_
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-09-11)_
-- Sam Altman calls a 2026 OpenAI IPO ill-advised, despite a confidential filing and a reported $1T valuation target _(as of 2026-09-14)_
 - Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella _(as of 2026-09-17)_
