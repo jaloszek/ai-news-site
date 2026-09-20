@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-19 -->
+<!-- Last updated: 2026-09-20 -->
 
 # State of AI
 
@@ -15,7 +15,6 @@
 |---|---|---|---|
 | Anthropic | Claude Fable 5.1 | 2026-09-01 | Top GA model; $10/$50/M; cache reads cut 75% to $0.25/M; still ahead of GPT-6 Astra on AA Index _(as of 2026-09-07)_ |
 | Anthropic | Claude Opus 5 | 2026-07-24 | Default Opus, $5/$25/M (2x input over 200K ctx); 1M ctx; ARC-AGI-3 30.2%, 4x prior record _(as of 2026-09-07)_ |
-| Anthropic | Claude Sonnet 5 | 2026-07-01 | $2/$10/M now permanent; the Sep 1 rise to $3/$15/M was cancelled _(as of 2026-09-07)_ |
 | Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-09-07)_ |
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-09-10)_ |
 | OpenAI | GPT-Live-1 | 2026-09-10 | Full-duplex voice API, $0.05/min; hands hard questions to Astra; +30 pts vs Realtime on Full Duplex Bench _(as of 2026-09-13)_ |
@@ -38,11 +37,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.277; reads AGENTS.md when no CLAUDE.md; syncs claude.ai skills/plugins; parallel cloud sessions on their own branches/PRs; Auto mode default since Aug 14 _(as of 2026-09-19)_ |
+| Claude Code | Anthropic | v2.1.278; Auto mode defaults to an unbilled server-side classifier; reads AGENTS.md when no CLAUDE.md; syncs claude.ai skills/plugins; parallel cloud sessions on their own branches/PRs _(as of 2026-09-20)_ |
 | Codex CLI | OpenAI | v0.155.0; experimental /voice conversations; live reasoning summaries; task hiding/archiving; Touch ID for MCP on Macs; Astra via API and Bedrock _(as of 2026-09-18)_ |
 | OpenCode | anomalyco | v1.18.31; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-15)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
-| Also current | various | Cline 4.1.17, Qwen Code 0.22.3, OpenHands 1.14, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.3, Hermes 0.19 _(as of 2026-09-09)_ |
+| Also current | various | Cline 4.1.17, Qwen Code 0.24.1, OpenHands 1.14, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.3, Hermes 0.19 _(as of 2026-09-20)_ |
 
 ## Infrastructure / inference
 
@@ -56,8 +55,8 @@
 
 ## Agent patterns / frameworks
 
+- Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-09-20)_
 - Procedure beats facts: skills drove 65.7% of agent gains via procedure vs 4.5% from added facts (Princeton/UCSD, 8,135 runs) _(as of 2026-09-07)_
-- Skill libraries backfire: retrieval precision falls 29.6% to 3.3% as a library grows from 5 to 100 entries _(as of 2026-09-07)_
 - Harness over model: Nvidia shows harness tuning carries a weak model; GitHub cut Copilot review cost ~20% by anchoring it to the diff _(as of 2026-09-07)_
 - Planner/worker split: Fable-as-manager hits 92-96% of solo quality at 46-63% of cost; Cursor's swarm rebuilt SQLite in Rust the same way _(as of 2026-09-07)_
 - Agent swarms waste tokens: a Codex developer says beyond two parallel sub-agents the extra tokens buy no quality; a 1,393-agent run spent $20,000 refactoring one Python file _(as of 2026-09-19)_
