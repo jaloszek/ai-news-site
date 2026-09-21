@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-20 -->
+<!-- Last updated: 2026-09-21 -->
 
 # State of AI
 
@@ -50,7 +50,7 @@
 - OpenAI Jalapeno, its first in-house inference chip: 1.5-1.9x work/watt, 1.7-3.6x lower latency, deploying by year-end _(as of 2026-09-07)_
 - Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-09-08)_
 - OpenAI Habitat: 70M req/s for 1B+ weekly users; rewritten Python to Rust in Q2 2026 by 2 engineers, 6x CPU and 15x memory efficiency _(as of 2026-09-12)_
-- Nvidia in talks to anchor Anthropic's IPO with up to $10B; raise up to $100B near a $2T valuation, the largest listing ever, before November's midterms _(as of 2026-09-13)_
+- Anthropic's IPO pushed from October to November 2026 (up to $100B raise, ~$2T valuation) after OpenAI slipped to 2027; Nvidia may anchor with up to $10B _(as of 2026-09-21)_
 - Nvidia: over $70bn pledged to AI startups plus $300bn in customer support; critics see circular financing echoing the 1990s telecom bust _(as of 2026-09-14)_
 
 ## Agent patterns / frameworks
@@ -78,4 +78,4 @@
 - Anthropic quarterly revenue went $4.7B to $11.5B and briefly passed OpenAI, which then grew 35% on Sol _(as of 2026-09-07)_
 - OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-09-11)_
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-09-11)_
-- Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella _(as of 2026-09-17)_
+- Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-09-21)_
