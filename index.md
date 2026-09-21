@@ -44,7 +44,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🛠 CC v2.1.275</li><li>✨ Codex /voice</li><li>🚀 CC parallel agents</li><li>🚀 Astra for Law</li><li>🧪 Dream-RSI</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-19.html"><div class="cal-num">19</div><ul class="cal-highlights"><li>🛠 Claude Code AGENTS.md support</li><li>🔒 Claude-aided OpenAI breach</li><li>🧪 SoL-Pi token efficiency</li><li>💰 Databricks +60% Astra cost</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.278</li><li>🛠 Qwen Code v0.24.1</li><li>✨ Qwen3.8-Omni-Flash</li><li>🤖 DeepMind Dream-RSI</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-21.html"><div class="cal-num">21</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.276</li><li>🛠 Unity plugins for Claude Code/Codex</li><li>✨ SemIf (fka OpenJev)</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">22</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">24</div></div>
