@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-21 -->
+<!-- Last updated: 2026-09-22 -->
 
 # State of AI
 
@@ -19,7 +19,7 @@
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-09-10)_ |
 | OpenAI | GPT-Live-1 | 2026-09-10 | Full-duplex voice API, $0.05/min; hands hard questions to Astra; +30 pts vs Realtime on Full Duplex Bench _(as of 2026-09-13)_ |
 | OpenAI | GPT-5.6 Sol/Terra/Luna | 2026-07-09 | Sol cut to $4/$20/M; Luna $0.20/M in; Ultrafast tier 750 tok/s on Cerebras _(as of 2026-09-07)_ |
-| xAI (SpaceXAI) | Grok 4.6 | 2026-08-13 | AA Index 61, ties GPT-5.6 Sol, behind Opus 5; $2/$6/M _(as of 2026-09-07)_ |
+| xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-09-22)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-07)_ |
 
 ## Open weights / local
@@ -30,8 +30,8 @@
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; same base as 5.2, post-training only; Flash sibling 17x cheaper _(as of 2026-09-07)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-07)_ |
 | Qwen3.8-Flash-Next | 125B MoE / 6B active | Qwen4 architecture preview; $0.16/M in; beats V4-Flash and Opus 4.6 on coding; best fit for 128GB boxes _(as of 2026-09-07)_ |
-| DeepSeek V4 Pro | 1.6T MoE | Terminal-Bench 2.1 72.1 to 87.9, DeepSWE 12.8 to 62.7; $0.66-$1.32/M in; ships Harness v0.1 agent, MIT; API routed to V4.1 Flash from 09-14 _(as of 2026-09-14)_ |
 | DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-09-13)_ |
+| Bonsai 2 27B (Prism ML) | 27B, ~5.9GB ternary | 98.2% FP16 average, ~47 tok/s on M5 Max; needs Prism ML's llama.cpp fork _(as of 2026-09-21)_ |
 
 ## Coding agents / harnesses
 
@@ -56,7 +56,6 @@
 ## Agent patterns / frameworks
 
 - Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-09-20)_
-- Procedure beats facts: skills drove 65.7% of agent gains via procedure vs 4.5% from added facts (Princeton/UCSD, 8,135 runs) _(as of 2026-09-07)_
 - Harness over model: Nvidia shows harness tuning carries a weak model; GitHub cut Copilot review cost ~20% by anchoring it to the diff _(as of 2026-09-07)_
 - Planner/worker split: Fable-as-manager hits 92-96% of solo quality at 46-63% of cost; Cursor's swarm rebuilt SQLite in Rust the same way _(as of 2026-09-07)_
 - Agent swarms waste tokens: a Codex developer says beyond two parallel sub-agents the extra tokens buy no quality; a 1,393-agent run spent $20,000 refactoring one Python file _(as of 2026-09-19)_
@@ -75,7 +74,7 @@
 
 ## Community / industry trends
 
-- Anthropic quarterly revenue went $4.7B to $11.5B and briefly passed OpenAI, which then grew 35% on Sol _(as of 2026-09-07)_
 - OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-09-11)_
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-09-11)_
 - Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-09-21)_
+- Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-09-22)_
