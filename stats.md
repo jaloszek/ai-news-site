@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-09-22 02:32 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-09-22 14:30 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (in retention window):** 7121
-- **Enriched:** 407 (5%)
-- **Taste-rated:** 407 (5%)
-- **Researched:** 300 (4%)
-- **Status (candidate / rejected / published / duplicate):** 2109 / 5012 / 0 / 0
-- **Published bullets (all-time):** 2910 (last 7d: 138)
+- **Discovery items (in retention window):** 7655
+- **Enriched:** 452 (5%)
+- **Taste-rated:** 452 (5%)
+- **Researched:** 334 (4%)
+- **Status (candidate / rejected / published / duplicate):** 2643 / 5012 / 0 / 0
+- **Published bullets (all-time):** 2921 (last 7d: 149)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-09-22 | 558 | 22 (3%) | 22 (3%) | 17 (3%) |
+| 2026-09-22 | 1092 | 67 (6%) | 67 (6%) | 51 (4%) |
 | 2026-09-21 | 97 | 28 (28%) | 28 (28%) | 19 (19%) |
 | 2026-09-20 | 118 | 22 (18%) | 22 (18%) | 18 (15%) |
 | 2026-09-19 | 688 | 25 (3%) | 25 (3%) | 16 (2%) |
@@ -38,7 +38,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Coding Agents | AI World | YouTube | Reddit | Community | Newsletters | Total |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 2026-09-22 | 0 | 4 | 3 | 3 | 5 | 2 | 17 |
+| 2026-09-22 | 3 | 5 | 5 | 5 | 5 | 5 | 28 |
 | 2026-09-21 | 1 | 5 | 3 | 5 | 3 | 1 | 18 |
 | 2026-09-20 | 2 | 5 | 3 | 0 | 4 | 3 | 17 |
 | 2026-09-19 | 1 | 5 | 3 | 0 | 2 | 0 | 11 |
@@ -55,20 +55,20 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 | Creator | Source | Items (30d) |
 |---|---|---:|
 | arXiv cs.AI | `rss` | 4210 |
-| arXiv cs.CL | `rss` | 3400 |
-| TLDR | `email` | 2578 |
-| The Rundown AI | `email` | 513 |
-| TechCrunch AI | `rss` | 257 |
-| The Decoder | `rss` | 213 |
-| Codex releases | `rss` | 132 |
-| The Verge AI | `rss` | 119 |
-| AlphaSignal | `email` | 114 |
-| r/LocalLLaMA | `reddit` | 95 |
-| AINews | `email` | 80 |
-| OpenClaw releases | `rss` | 79 |
-| Qwen Code releases | `rss` | 73 |
-| r/LocalLLM | `reddit` | 66 |
-| r/MachineLearning | `reddit` | 63 |
+| arXiv cs.CL | `rss` | 3695 |
+| TLDR | `email` | 2686 |
+| The Rundown AI | `email` | 546 |
+| TechCrunch AI | `rss` | 259 |
+| The Decoder | `rss` | 217 |
+| Codex releases | `rss` | 137 |
+| AlphaSignal | `email` | 121 |
+| The Verge AI | `rss` | 120 |
+| r/LocalLLaMA | `reddit` | 98 |
+| AINews | `email` | 82 |
+| OpenClaw releases | `rss` | 80 |
+| Qwen Code releases | `rss` | 74 |
+| Cline releases | `rss` | 69 |
+| r/LocalLLM | `reddit` | 69 |
 
 
 ## Rejection reasons (all-time)
