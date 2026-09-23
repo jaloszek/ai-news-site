@@ -46,7 +46,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.278</li><li>🛠 Qwen Code v0.24.1</li><li>✨ Qwen3.8-Omni-Flash</li><li>🤖 DeepMind Dream-RSI</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-21.html"><div class="cal-num">21</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.276</li><li>🛠 Unity plugins for Claude Code/Codex</li><li>✨ SemIf (fka OpenJev)</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>✨ Grok 4.7</li><li>✨ Qwen 4</li><li>✨ Xiaomi MiMo-V2.6</li><li>🧪 UN AI agent warning</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>✨ Claude Opus 5.5</li><li>✨ GPT-6 Sol and Luna</li><li>✨ Xiaomi MiMo-V2.6-Pro</li><li>🛠 Qwen-Image-2.1 GGUF</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">24</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
