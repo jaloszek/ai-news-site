@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-23 -->
+<!-- Last updated: 2026-09-24 -->
 
 # State of AI
 
@@ -39,11 +39,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.280; Opus 5.5 is the default Opus at 1M ctx, $4/$20/M; Auto mode defaults to an unbilled server-side classifier; reads AGENTS.md when no CLAUDE.md; parallel cloud sessions on their own branches/PRs _(as of 2026-09-23)_ |
+| Claude Code | Anthropic | v2.1.281; Opus 5.5 is the default Opus at 1M ctx, $4/$20/M; Auto mode defaults to an unbilled server-side classifier; reads AGENTS.md when no CLAUDE.md; parallel cloud sessions on their own branches/PRs _(as of 2026-09-24)_ |
 | Codex CLI | OpenAI | v0.156.0; voice conversations on by default with an F8 toggle; fullscreen /tui with transcript search; live reasoning summaries; Astra via API and Bedrock _(as of 2026-09-23)_ |
-| OpenCode | anomalyco | v1.18.31; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-15)_ |
-| Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12 _(as of 2026-09-07)_ |
-| Also current | various | Cline 4.1.17, Qwen Code 0.24.1, OpenHands 1.14, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.3, Hermes 0.19 _(as of 2026-09-20)_ |
+| OpenCode | anomalyco | v1.18.32; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-22)_ |
+| Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots _(as of 2026-09-24)_ |
+| Also current | various | Cline 4.1.17, Qwen Code 0.24.3, OpenHands 1.22.0, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.3, Hermes 0.19 _(as of 2026-09-23)_ |
 
 ## Infrastructure / inference
 
