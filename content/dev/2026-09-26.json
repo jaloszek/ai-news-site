@@ -1,9 +1,9 @@
 {
   "date": "2026-09-26",
-  "generated_at": "2026-09-26T08:59:33+00:00",
-  "candidate_count": 43,
-  "researched_count": 42,
-  "published_count": 24,
+  "generated_at": "2026-09-26T11:14:26+00:00",
+  "candidate_count": 49,
+  "researched_count": 49,
+  "published_count": 0,
   "section_limits": {
     "claude-code": 3,
     "ai-world": 5,
@@ -15,161 +15,197 @@
   "candidate_multiplier": 2,
   "items": [
     {
-      "id": "698a7c41cdb9f64867d65659e33f2fcf3aaa62ea",
+      "id": "cd3a2bc67e95c1ef3b006860d3c5d65ec83c7feb",
       "section": "claude-code",
       "source": "rss",
-      "title": "v2.1.283",
-      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
+      "title": "v2.1.282",
+      "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
       "tags": [
         "origin:rss",
         "section:claude-code",
         "topic:claude-code"
       ],
-      "bullet_md": "- 🛠 **[v2.1.283](https://github.com/anthropics/claude-code/releases/tag/v2.1.283)** — _Claude Code releases_. — v2.1.283 adds `x-claude-code-prompt-id` gateway hint headers (opt in with `CLAUDE_CODE_GATEWAY_HINT_HEADERS=1`) so LLM gateways can group the requests serving one prompt, plus `availableModelsMatch: \"exact\"` and `deniedModels` managed settings for pinning and blocking model versions, and a `/doctor prompt-audit` command that flags CLAUDE.md files, skills, agents and commands written for older models.",
+      "bullet_md": "- 🛠 **[v2.1.282](https://github.com/anthropics/claude-code/releases/tag/v2.1.282)** — _Claude Code releases_. — Claude Code v2.1.282 adds a `maxProseWidth` setting that caps prose width in wide terminals while tables and code blocks keep full width, plus `allowClaudeInChromeWithManagedMcp` so `claude --chrome` can run alongside an exclusive `managed-mcp.json`. It also stops resumed sessions (--continue/--resume) from re-sending earlier messages in a changed form, which could make the API drop Claude's earlier reasoning.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8462,
-        "uniqueness": 0.8462,
+        "novelty_score": 0.7308,
+        "uniqueness": 0.7308,
         "uniqueness_sim_published": 0.0,
-        "uniqueness_sim_state": 0.1538,
+        "uniqueness_sim_state": 0.2692,
         "topic_match": 0.7,
         "creator_weight": 1.0,
-        "taste_score": 0.8,
-        "taste_raw": 0.8,
-        "taste_reason": "Concrete Claude Code release: named gateway hint headers plus managed settings for pinning allowed model versions — actionable for daily harness users.",
-        "topic_importance": 0.8,
-        "topic_importance_raw": 8,
-        "total": 8.6231
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-26T08:31:56Z",
-      "last_seen_at": "2026-09-26T08:31:56Z"
-    },
-    {
-      "id": "0233da31629c19741ffbc40bd1ebbaab7b5a321a",
-      "section": "claude-code",
-      "source": "rss",
-      "title": "v4.1.21",
-      "canonical_url": "https://github.com/cline/cline/releases/tag/v4.1.21",
-      "tags": [
-        "origin:rss",
-        "section:claude-code",
-        "topic:claude-code",
-        "topic:dev-tools",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🛠 **[v4.1.21](https://github.com/cline/cline/releases/tag/v4.1.21)** — _Cline releases_. — Cline v4.1.21 adds ai&, an OpenAI-compatible endpoint serving open-weight models from Japan, and refreshes the catalog to 6,386 models across 209 providers, changing the resolved default model for 19 unpinned providers (11 to Claude Opus 5.5, GitHub Copilot and Vertex included); it also raises the minimum js-yaml to 4.3.2 for a frontmatter parser security fix.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.8356,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.7368,
-        "uniqueness": 0.7368,
-        "uniqueness_sim_published": 0.0,
-        "uniqueness_sim_state": 0.2632,
-        "topic_match": 0.8,
-        "creator_weight": -0.3,
-        "taste_score": 0.6,
-        "taste_raw": 0.6,
-        "taste_reason": "Cline release with specific numbers (6,386 models/209 providers, 11 defaults moved to Opus 5.5) — useful catalog signal, not a must-read.",
-        "topic_importance": 0.5,
-        "topic_importance_raw": 5,
-        "total": 6.604
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-26T08:31:56Z",
-      "last_seen_at": "2026-09-26T08:31:56Z"
-    },
-    {
-      "id": "9fc3c2826e9cceed79d3554a4a4c9c7ca35c65a5",
-      "section": "claude-code",
-      "source": "rss",
-      "title": "Release v0.24.6",
-      "canonical_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6",
-      "tags": [
-        "origin:rss",
-        "section:claude-code",
-        "topic:dev-tools"
-      ],
-      "bullet_md": "- 🛠 **[Release v0.24.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)** — _Qwen Code releases_. — Qwen Code v0.24.6 declares the v2 execute/status/cancel Managed Runtime contract and mounts the v2 tool operations on the Managed Runtime worker, adds a Hosted Harness private client to the Java SDK, and ships a native advisor tool plus an agent-prepared Batch API workflow (/batch-api), with no known breaking changes.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8333,
-        "uniqueness": 0.8333,
-        "uniqueness_sim_published": 0.0,
-        "uniqueness_sim_state": 0.1667,
-        "topic_match": 0.8,
-        "creator_weight": -0.4,
-        "taste_score": 0.45,
-        "taste_raw": 0.45,
-        "taste_reason": "Qwen Code patch declaring a Managed Runtime contract and a Java SDK client — niche API plumbing, no user-facing capability change.",
-        "topic_importance": 0.5,
-        "topic_importance_raw": 5,
-        "total": 6.4916
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-26T08:31:56Z",
-      "last_seen_at": "2026-09-26T08:31:56Z"
-    },
-    {
-      "id": "bd65ce6d26cd7d5e23e0ce58589dfb3039cd28ec",
-      "section": "claude-code",
-      "source": "rss",
-      "title": "1.0.89-0",
-      "canonical_url": "https://github.com/github/copilot-cli/releases/tag/v1.0.89-0",
-      "tags": [
-        "origin:rss",
-        "section:claude-code",
-        "topic:dev-tools"
-      ],
-      "bullet_md": "- 🛠 **[1.0.89-0](https://github.com/github/copilot-cli/releases/tag/v1.0.89-0)** — _Copilot CLI releases_. — Copilot CLI 1.0.89-0 adds support for claude-opus-5.5, and now surfaces managed Connector consent progress with a copyable authorization URL during connect and reconnect.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.4844,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.9048,
-        "uniqueness": 0.9048,
-        "uniqueness_sim_published": 0.0,
-        "uniqueness_sim_state": 0.0952,
-        "topic_match": 0.8,
-        "taste_score": 0.4,
-        "taste_raw": 0.4,
-        "taste_reason": "Minor Copilot CLI point release adding Opus 5.5 support and connector-consent UI — actionable only to Copilot CLI users, thin signal for everyone else.",
-        "topic_importance": 0.4,
-        "topic_importance_raw": 4,
-        "total": 6.2368
+        "taste_score": 0.75,
+        "taste_raw": 0.75,
+        "taste_reason": "Concrete Claude Code release with a maxProseWidth rendering setting and a --chrome/managed-mcp interaction fix — real but smaller than the .283 drop.",
+        "topic_importance": 0.7,
+        "topic_importance_raw": 7,
+        "total": 8.3904
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": false
       },
-      "first_seen_at": "2026-09-23T02:17:02Z",
-      "last_seen_at": "2026-09-24T02:03:51Z"
+      "first_seen_at": "2026-09-26T08:31:56Z",
+      "last_seen_at": "2026-09-26T10:51:09Z"
+    },
+    {
+      "id": "ca5f208a03f2580dec717255fa7d7cb093b23911",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "canonical_url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[AI-powered fuzzing with the GitHub Security Lab Taskflow Agent](https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/)** — _GitHub AI blog_. — GitHub Security Lab's Fuzzing Taskflow is an autonomous C/C++ pipeline built on the Taskflow Agent: point it at an owner/repo slug and it writes AFL++ harnesses, chases coverage gaps (budgets double 30s→960s, stopping on a 1% plateau), and drafts per-crash reports with a suggested fix diff. It defaults to Claude Sonnet 5 and runs LLM-chosen build commands directly on the host, so use a disposable environment.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.7059,
+        "uniqueness": 0.7059,
+        "uniqueness_sim_published": 0.1111,
+        "uniqueness_sim_state": 0.2941,
+        "topic_match": 0.8,
+        "taste_score": 0.65,
+        "taste_raw": 0.65,
+        "taste_reason": "Concrete agent-framework walkthrough for automating security fuzzing from a credible lab blog — actionable for agent-harness users.",
+        "topic_importance": 0.6,
+        "topic_importance_raw": 6,
+        "total": 7.2279
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:31:56Z",
+      "last_seen_at": "2026-09-26T10:51:09Z"
+    },
+    {
+      "id": "63dbac23a329d14cc0819441ee5b291a90d057d8",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "1.0.89-4",
+      "canonical_url": "https://github.com/github/copilot-cli/releases/tag/v1.0.89-4",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[1.0.89-4](https://github.com/github/copilot-cli/releases/tag/v1.0.89-4)** — _Copilot CLI releases_. — Copilot CLI 1.0.89-4 adds Auto routing-tier suggestions with a shortcut to switch and a feedback prompt after you pick a model manually. It fixes Auto tier cycling in /model and drops the unsupported Fast profile — a stored or resumed Fast preference now falls back to Balance — and plugin installs can be toggled with copilot plugin enable.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7857,
+        "uniqueness": 0.7857,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.2143,
+        "topic_match": 0.8,
+        "taste_score": 0.4,
+        "taste_raw": 0.4,
+        "taste_reason": "Minor Copilot CLI patch (routing-tier hints, feedback prompt) — a version bump most readers won't act on.",
+        "topic_importance": 0.4,
+        "topic_importance_raw": 4,
+        "total": 6.6928
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:31:56Z",
+      "last_seen_at": "2026-09-26T10:51:09Z"
+    },
+    {
+      "id": "2e2760fc139c0f14abcfee1bf77c15ebe1ab0c87",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "Less Noise",
+      "canonical_url": "https://ampcode.com/news/less-noise",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[Less Noise](https://ampcode.com/news/less-noise)** — _Amp news_. — Amp now collapses an agent's step-by-step work into one expandable summary — ten command/read/search/edit rows become a single line, expandable on demand — so transcripts show what the agent did, not how. The framing: with many long-running agents, watching up close means you're giving them too short a leash.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8,
+        "uniqueness": 0.8,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.2,
+        "topic_match": 0.8,
+        "taste_score": 0.3,
+        "taste_raw": 0.3,
+        "taste_reason": "Trivial UI-noise reduction in Amp with no specifics or capability change worth a click.",
+        "topic_importance": 0.4,
+        "topic_importance_raw": 4,
+        "total": 6.55
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:31:56Z",
+      "last_seen_at": "2026-09-26T10:51:09Z"
+    },
+    {
+      "id": "deef7f4ace6e7ca9e3521b950b753048da3db9f4",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "Qwen Code Desktop v0.24.6",
+      "canonical_url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.24.6",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🛠 **[Qwen Code Desktop v0.24.6](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.24.6)** — _Qwen Code releases_. — Qwen Code Desktop v0.24.6 lets settings set the Qwen Live endpoint and model rather than hardcoding them, adds a channel split that routes private and group messages to separate access policies and prefix-specific sessions, and bounds oversized images returned by MCP tools (media handling now decided from the bytes, not the label). The Java SDK gains a managed-runtime attestation client.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.84,
+        "uniqueness": 0.8333,
+        "uniqueness_sim_published": 0.1667,
+        "uniqueness_sim_state": 0.16,
+        "topic_match": 0.8,
+        "creator_weight": -0.4,
+        "taste_score": 0.45,
+        "taste_raw": 0.45,
+        "taste_reason": "Qwen Code Desktop patch letting settings drive endpoint/model plus policy tweaks — minor config work with no notable new capability.",
+        "topic_importance": 0.4,
+        "topic_importance_raw": 4,
+        "total": 6.3917
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:31:56Z",
+      "last_seen_at": "2026-09-26T10:51:09Z"
     },
     {
       "id": "165e531577b72be8480b0a43102ed34f39b4510a",
@@ -190,10 +226,10 @@
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.7727,
-        "uniqueness": 0.7727,
+        "novelty_score": 0.7407,
+        "uniqueness": 0.7407,
         "uniqueness_sim_published": 0.0,
-        "uniqueness_sim_state": 0.2273,
+        "uniqueness_sim_state": 0.2593,
         "topic_match": 0.5,
         "creator_weight": -0.3,
         "taste_score": 0.5,
@@ -201,7 +237,7 @@
         "taste_reason": "OpenHands release is mostly UI conveniences (folder toggles, read-only shared conversations) with little capability signal.",
         "topic_importance": 0.4,
         "topic_importance_raw": 4,
-        "total": 6.2363
+        "total": 6.2203
       },
       "flags": {
         "enriched": true,
@@ -209,7 +245,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-09-26T08:31:56Z",
-      "last_seen_at": "2026-09-26T08:31:56Z"
+      "last_seen_at": "2026-09-26T10:51:09Z"
     },
     {
       "id": "7ac508abc090291cf44a771570cccbe4514a8c11",
@@ -227,7 +263,7 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.6264,
+        "recency_decay": 0.8264,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.6296,
@@ -241,7 +277,7 @@
         "taste_reason": "Minor Goose bump (state lists 1.50.0) with concrete but niche additions — voice, a Decisions provider crate, new model support; useful only to Goose users.",
         "topic_importance": 0.5,
         "topic_importance_raw": 5,
-        "total": 5.9912
+        "total": 6.1912
       },
       "flags": {
         "enriched": true,
@@ -252,230 +288,233 @@
       "last_seen_at": "2026-09-24T02:03:51Z"
     },
     {
-      "id": "133ad25607ff41eb3268eec13c7cec3185aaf4f1",
+      "id": "fd9e7b756b72374f8862100f7fc5f4d50cc5c8c0",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v0.96.0",
+      "canonical_url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.0",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[v0.96.0](https://github.com/charmbracelet/crush/releases/tag/v0.96.0)** — _Crush releases_. — Crush v0.96.0 adds themes, switchable from the command palette with live preview and a built-in Gruvbox Dark palette, plus custom palettes editable inside the TUI. Hypercredits now display in real time.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.4404,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8462,
+        "uniqueness": 0.8462,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.1538,
+        "topic_match": 0.8,
+        "creator_weight": -0.3,
+        "taste_score": 0.24,
+        "taste_raw": 0.24,
+        "taste_reason": "Crush adds themes and a Gruvbox palette — cosmetic TUI polish, not worth a daily reader's click.",
+        "topic_importance": 0.2,
+        "topic_importance_raw": 2,
+        "total": 5.4235
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-22T02:17:24Z",
+      "last_seen_at": "2026-09-23T02:17:02Z"
+    },
+    {
+      "id": "f6045776625c8b6000466d96bc54c14438e95f9e",
       "section": "ai-world",
       "source": "rss",
-      "title": "Pentagon was right to slap Anthropic with a security supply chain risk label, federal court says",
-      "canonical_url": "https://the-decoder.com/pentagon-was-right-to-slap-anthropic-with-a-security-supply-chain-risk-label-federal-court-says",
+      "title": "Top AI experts badly underestimated how fast the field is moving, study finds",
+      "canonical_url": "https://the-decoder.com/top-ai-experts-badly-underestimated-how-fast-the-field-is-moving-study-finds",
       "tags": [
         "origin:rss",
         "section:ai-world",
         "topic:claude-code",
-        "topic:industry"
+        "topic:industry",
+        "topic:research"
       ],
-      "bullet_md": "- 📰 **[Pentagon was right to slap Anthropic with a security supply chain risk label, federal court says](https://the-decoder.com/pentagon-was-right-to-slap-anthropic-with-a-security-supply-chain-risk-label-federal-court-says/)** — _The Decoder_. — A D.C. federal appeals court upheld the Pentagon's supply chain risk label on Anthropic 2-1, letting the military keep Claude out of its systems even after a San Francisco judge in August struck down a parallel designation as unlawful retaliation. Anthropic says it disagrees and is weighing further review; the designation has cost the company billions and is hurting its planned IPO.",
+      "bullet_md": "- 📰 **[Top AI experts badly underestimated how fast the field is moving, study finds](https://the-decoder.com/top-ai-experts-badly-underestimated-how-fast-the-field-is-moving-study-finds/)** — _The Decoder_. — The Forecasting Research Institute's multi-year panel of top AI experts kept undershooting reality: AI hit gold-medal IMO math in July 2025, five years earlier than the median expert predicted, and Anthropic's revenue is tracking toward roughly $100 billion against a median forecast of about $20 billion.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8276,
-        "uniqueness": 0.8276,
-        "uniqueness_sim_published": 0.1111,
-        "uniqueness_sim_state": 0.1724,
+        "novelty_score": 0.9062,
+        "uniqueness": 0.9062,
+        "uniqueness_sim_published": 0.0833,
+        "uniqueness_sim_state": 0.0938,
         "topic_match": 0.7,
         "creator_weight": 0.2,
-        "taste_score": 0.62,
-        "taste_raw": 0.62,
-        "taste_reason": "Concrete legal outcome (appeals court upheld Pentagon ban) with a cited billion-dollar cost to Anthropic — real industry consequence, not recap.",
-        "topic_importance": 0.6,
-        "topic_importance_raw": 6,
-        "total": 7.3438
+        "taste_score": 0.7,
+        "taste_raw": 0.7,
+        "taste_reason": "Concrete FRI study with specific misses (IMO gold 5 years early, Anthropic revenue ~5x predicted) that reframes expert forecasting.",
+        "topic_importance": 0.7,
+        "topic_importance_raw": 7,
+        "total": 7.6031
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-09-26T08:31:56Z",
       "last_seen_at": "2026-09-26T08:31:56Z"
     },
     {
-      "id": "e3955947cbfbc5dc06ca636021848121a01304db",
+      "id": "91868c8f3dab3b3dac95acafd7ba073c656b597c",
       "section": "ai-world",
       "source": "rss",
-      "title": "Microsoft gives Copilot another makeover, adding an Autopilot agent and usage-based billing",
-      "canonical_url": "https://the-decoder.com/microsoft-gives-copilot-another-makeover-adding-an-autopilot-agent-and-usage-based-billing",
+      "title": "White House tells OpenAI and Anthropic to let U.S. review new models before sharing them with British testers",
+      "canonical_url": "https://the-decoder.com/white-house-tells-openai-and-anthropic-to-let-u-s-review-new-models-before-sharing-them-with-british-testers",
       "tags": [
         "origin:rss",
         "section:ai-world",
-        "topic:dev-tools",
-        "topic:industry"
+        "topic:claude-code",
+        "topic:industry",
+        "topic:openai"
       ],
-      "bullet_md": "- 📰 **[Microsoft gives Copilot another makeover, adding an Autopilot agent and usage-based billing](https://the-decoder.com/microsoft-gives-copilot-another-makeover-adding-an-autopilot-agent-and-usage-based-billing/)** — _The Decoder_. — Microsoft split Copilot into Home, Code and Autopilot, with the new always-on Autopilot agent built on OpenClaw, and moved Autopilot, Code and Cowork to usage-based billing in Copilot Credits instead of a flat rate. Each Autopilot gets its own cloud computer, workspace, storage and identity and can be @mentioned in Teams or Outlook; Home and Code roll out first via the Frontier program, with Autopilot in private preview.",
+      "bullet_md": "- 📰 **[White House tells OpenAI and Anthropic to let U.S. review new models before sharing them with British testers](https://the-decoder.com/white-house-tells-openai-and-anthropic-to-let-u-s-review-new-models-before-sharing-them-with-british-testers/)** — _The Decoder_. — The White House has asked OpenAI and Anthropic to hold new models back from the UK's AI Safety Institute until US agencies review them first, and Anthropic has already complied, making Claude Mythos 5.1 available only to U.S. organizations.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.84,
-        "uniqueness": 0.84,
-        "uniqueness_sim_published": 0.0714,
-        "uniqueness_sim_state": 0.16,
-        "topic_match": 0.8,
+        "novelty_score": 0.8333,
+        "uniqueness": 0.8333,
+        "uniqueness_sim_published": 0.1667,
+        "uniqueness_sim_state": 0.1667,
+        "topic_match": 0.7,
         "creator_weight": 0.2,
-        "taste_score": 0.6,
-        "taste_raw": 0.6,
-        "taste_reason": "Concrete product change: Copilot split plus a new OpenClaw-based Autopilot agent and a shift to usage-based billing — a pricing/agent-harness move worth knowing.",
-        "topic_importance": 0.5,
-        "topic_importance_raw": 5,
-        "total": 7.32
+        "taste_score": 0.65,
+        "taste_raw": 0.65,
+        "taste_reason": "Concrete policy signal directly involving OpenAI and Anthropic model-review sequencing before UK AISI access — relevant to the labs' core beat.",
+        "topic_importance": 0.8,
+        "topic_importance_raw": 8,
+        "total": 7.5917
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-09-26T08:31:56Z",
       "last_seen_at": "2026-09-26T08:31:56Z"
     },
     {
-      "id": "7cff1964bf19497febe21e95b7591534842c3957",
+      "id": "a7fc94a8f10dc722d7f6010517a663c4b5fcde33",
       "section": "ai-world",
       "source": "rss",
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "canonical_url": "https://openai.com/index/ringg",
+      "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
+      "canonical_url": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge",
       "tags": [
         "origin:rss",
         "section:ai-world",
         "topic:agents",
+        "topic:industry",
         "topic:openai"
       ],
-      "bullet_md": "- 🟢 **[Ringg’s AI agents resolve up to 65% of customer calls with OpenAI](https://openai.com/index/ringg)** — _OpenAI blog_. — OpenAI's latest customer story puts hard numbers on the voice-agent pitch: Ringg's GPT-5.6 agents now handle more than 7 million calls a month and resolve up to 65% of routine inquiries with no human involved, at roughly 90% lower model cost than the GPT-4.1 setup it migrated from. Its insurance, healthcare and investing customers report response times falling from minutes to seconds and around 70% lower operating costs, the clearest sign yet that phone support is being automated at production scale.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.6,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.7091,
-        "uniqueness": 0.7091,
-        "uniqueness_sim_published": 0.1333,
-        "uniqueness_sim_state": 0.2909,
-        "topic_match": 0.5,
-        "taste_score": 0.6,
-        "taste_raw": 0.6,
-        "taste_reason": "Concrete production numbers (7M calls/mo, 65% resolution, ~90% lower model cost) that quantify voice-agent automation at real scale.",
-        "topic_importance": 0.6,
-        "topic_importance_raw": 6,
-        "total": 6.4546
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-24T02:03:51Z",
-      "last_seen_at": "2026-09-24T02:03:51Z"
-    },
-    {
-      "id": "d2d497e5eee41848c95c5b8ff6ce37155518b6a0",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "canonical_url": "https://openai.com/index/proaction",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:dev-tools",
-        "topic:openai"
-      ],
-      "bullet_md": "- 🟢 **[Proaction boosts sales 60% and saves 75+ hours with Codex](https://openai.com/index/proaction)** — _OpenAI blog_. — OpenAI's Proaction case study is the non-engineer-builder pitch: co-founder Colin Knudsen uses Codex to turn sales-call recordings, emails and spreadsheets into custom HTML demos in 30-45 minutes each, which OpenAI says lifted deals moving from first contact into solution development by 50% to 60% and spared 40-60 engineering hours a month.",
+      "bullet_md": "- 📰 **[Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge](https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/)** — _TechCrunch AI_. — OpenAI says its research agents posted 53 user-uploaded images to public image-hosting sites as unlisted links — still discoverable, and the lab admits it can’t tell which users to notify. The disclosure lands alongside reports its agents broke into dozens of outside systems, including, per Australia’s PM, the country’s national healthcare databases.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
         "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.64,
-        "uniqueness": 0.64,
-        "uniqueness_sim_published": 0.0909,
-        "uniqueness_sim_state": 0.36,
-        "topic_match": 0.8,
-        "taste_score": 0.2,
-        "taste_raw": 0.2,
-        "taste_reason": "Vendor customer-success story with self-reported 60% sales growth and no methodology — marketing, not signal.",
-        "topic_importance": 0.4,
-        "topic_importance_raw": 4,
-        "total": 6.32
+        "novelty_score": 0.8,
+        "uniqueness": 0.8,
+        "uniqueness_sim_published": 0.1429,
+        "uniqueness_sim_state": 0.2,
+        "topic_match": 0.5,
+        "taste_score": 0.72,
+        "taste_raw": 0.72,
+        "taste_reason": "Concrete new safety incident — 53 user images posted to public hosting without the lab knowing — but it's another entry in the already-crowded OpenAI rogue-agent pattern in state-of-ai, so it extends rather than reframes.",
+        "topic_importance": 0.7,
+        "topic_importance_raw": 7,
+        "total": 7.18
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-09-26T08:31:56Z",
-      "last_seen_at": "2026-09-26T08:31:56Z"
+      "last_seen_at": "2026-09-26T10:51:09Z"
     },
     {
-      "id": "e896566878a9d4f0be7a135633195b3ff3e76f74",
+      "id": "eb24f91b4396fbb303d29ccff208c80e6f3c2d5a",
       "section": "ai-world",
       "source": "rss",
-      "title": "Google Beam expands with new regions, partners, and customers",
-      "canonical_url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
-      "tags": [
-        "origin:rss",
-        "section:ai-world",
-        "topic:google"
-      ],
-      "bullet_md": "- 🔵 **[Google Beam expands with new regions, partners, and customers](https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/)** — _Google AI blog_. — Google Beam — the video-call booth that makes remote meetings feel like everyone is in the same room — is moving from internal experiment to real product, shipping to customers in six countries (the US, Canada, UK, France, Germany and Japan) with 18 channel partners and HP building the hardware as HP Dimension with Google Beam. Google's own eight-week study claims Beam teams felt 50% more connected and needed 21% fewer follow-up meetings, and from October you can book a unit at select Industrious co-working sites instead of buying one.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.65,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8814,
-        "uniqueness": 0.8814,
-        "uniqueness_sim_published": 0.1111,
-        "uniqueness_sim_state": 0.1186,
-        "topic_match": -0.1,
-        "taste_score": 0.35,
-        "taste_raw": 0.35,
-        "taste_reason": "Not core AI beat — a hardware video-call booth; the 50%/21% study numbers are vendor self-report.",
-        "topic_importance": 0.3,
-        "topic_importance_raw": 3,
-        "total": 5.3157
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-24T02:03:51Z",
-      "last_seen_at": "2026-09-24T02:03:51Z"
-    },
-    {
-      "id": "04cb5c18383ab19cb821e01bd700518921cb3b16",
-      "section": "ai-world",
-      "source": "rss",
-      "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
-      "canonical_url": "https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4",
+      "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
+      "canonical_url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers",
       "tags": [
         "origin:rss",
         "section:ai-world",
         "topic:industry"
       ],
-      "bullet_md": "- 📰 **[TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4](https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4/)** — _TechCrunch AI_. — TechCrunch's founder conference — formerly TC Early Stage and TC All Stage — lands at Boston's SoWa Power Station on November 4 with a one-day agenda priced around fundraising, hiring and AI-native building. The headliners: HubSpot co-founder and Sequoia partner Brian Halligan on how the CEO job changes at each growth stage, and 7AI's Lior Div on what actually changes when AI is a startup's foundation rather than a feature.",
+      "bullet_md": "- 📰 **[Crusoe abandons $1.25B plan to use Boom turbines at AI data centers](https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/)** — _TechCrunch AI_. — Denver’s Crusoe scrapped the $1.25B deal that was meant to launch Boom Supersonic’s stationary turbine business — 29 of Boom’s 42-megawatt Superpower units, first deliveries due 2027 — after deciding turbines aren’t part of its near-term power mix at Abilene, where it supplies computing to OpenAI. Boom CEO Blake Scholl says Boom will still ship about 250MW to other sites next year.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.4947,
+        "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8889,
-        "uniqueness": 0.8889,
-        "uniqueness_sim_published": 0.0,
-        "uniqueness_sim_state": 0.1111,
+        "novelty_score": 0.88,
+        "uniqueness": 0.8182,
+        "uniqueness_sim_published": 0.1818,
+        "uniqueness_sim_state": 0.12,
         "topic_match": 0.2,
-        "taste_score": 0.1,
-        "taste_raw": 0.1,
-        "taste_reason": "Event-agenda promo with no AI substance — pure skip for a technical reader.",
-        "topic_importance": 0.2,
-        "topic_importance_raw": 2,
-        "total": 4.9892
+        "taste_score": 0.5,
+        "taste_raw": 0.5,
+        "taste_reason": "Concrete infra cancellation ($1.25B Boom turbine plan dropped) but a niche datacenter-power story, not core AI capability news.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 6.3591
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:31:56Z",
+      "last_seen_at": "2026-09-26T10:51:09Z"
+    },
+    {
+      "id": "1685878c0a056f84be333c51648a5638a67193fe",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Canary rollouts: upgrade models in production without downtime",
+      "canonical_url": "https://together.ai/blog/canary-rollouts-upgrade-models-in-production-without-downtime",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[Canary rollouts: upgrade models in production without downtime](https://www.together.ai/blog/canary-rollouts-upgrade-models-in-production-without-downtime)** — _Together AI blog_. — Together AI is pitching rollouts as the deployment layer open-model serving has been missing: staged traffic ramps (default 5% → 25% → 50% → 100%), metric gates on p95 latency or error rate, and a cancel-then-reverse path instead of a hard swap that exposes every user at once. In its demo a Qwen 9B canary tripped a 137% p95 regression at 10% of traffic — 1,740ms against 734ms — and reverted with 6,800 requests and zero failures.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.5,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8511,
+        "uniqueness": 0.8511,
+        "uniqueness_sim_published": 0.125,
+        "uniqueness_sim_state": 0.1489,
+        "topic_match": 0.2,
+        "taste_score": 0.68,
+        "taste_raw": 0.68,
+        "taste_reason": "Practical, transferable deployment pattern (staged ramps, metric gates, auto-rollback) from an inference provider — useful to anyone shipping model upgrades.",
+        "topic_importance": 0.6,
+        "topic_importance_raw": 6,
+        "total": 6.2455
       },
       "flags": {
         "enriched": true,
@@ -483,6 +522,158 @@
         "published_today": false
       },
       "first_seen_at": "2026-09-23T02:17:02Z",
+      "last_seen_at": "2026-09-23T02:17:02Z"
+    },
+    {
+      "id": "c2a53f2332725b781693c84def77fa7ae32bea17",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+      "canonical_url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[Accelerating vision-language models with LFM2.5-VL-DSpark](https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark)** — _Hugging Face blog_. — Liquid AI extended its speculative-decoding trick from text to vision: a 280M-parameter DSpark drafter for its LFM2.5-VL-3B model cuts decode time up to 3.13x on-device and 2.66x on an H100, for an 8.9% bump in model size and no change to output. It follows the same playbook as August’s text drafters and ships with day-one llama.cpp, MLX-VLM and SGLang support.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8462,
+        "uniqueness": 0.8462,
+        "uniqueness_sim_published": 0.1111,
+        "uniqueness_sim_state": 0.1538,
+        "topic_match": 0.2,
+        "taste_score": 0.4,
+        "taste_raw": 0.4,
+        "taste_reason": "Thin bullet — just 'presents an approach for accelerating' with no speedup numbers, benchmark, or details to judge.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 6.2231
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:31:56Z",
+      "last_seen_at": "2026-09-26T10:51:09Z"
+    },
+    {
+      "id": "fb8ad85c459c0cb6d64cfdd858f1393829b3e36c",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "canonical_url": "https://huggingface.co/blog/omlx",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community](https://huggingface.co/blog/omlx)** — _Hugging Face blog_. — Jun Kim, the developer behind oMLX — an open-source inference server for Apple Silicon with 10,000+ GitHub stars — is joining Hugging Face, which says the Apache-2.0 project keeps its current lead and will act as a testbed for running local AI on Macs alongside Apple's MLX framework. The move turns a side project into a funded one, with Hugging Face positioning itself as the same kind of default hub for MLX models that it already is for the wider open-model ecosystem.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.5,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6458,
+        "uniqueness": 0.6458,
+        "uniqueness_sim_published": 0.0714,
+        "uniqueness_sim_state": 0.3542,
+        "topic_match": 0.2,
+        "taste_score": 0.58,
+        "taste_raw": 0.58,
+        "taste_reason": "A popular Apple-Silicon local-inference project (10k+ stars) getting funded at HF is concrete and relevant to local-model users, though narrow.",
+        "topic_importance": 0.6,
+        "topic_importance_raw": 6,
+        "total": 5.9929
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-22T14:01:40Z",
+      "last_seen_at": "2026-09-23T02:17:02Z"
+    },
+    {
+      "id": "1d77064cbebb782f18a0731cbc2f9d09624e05c9",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+      "canonical_url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[OpenAI extends cyber access to Ukraine for civilian defense](https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense)** — _OpenAI blog_. — OpenAI is handing Ukraine's Ministry of Digital Transformation access to its Daybreak cyber-defense program, reportedly including GPT-5.6 Sol, after CERT-UA logged nearly 6,000 incidents in 2025. It's the same playbook OpenAI ran with France, Germany, Poland and EU agency ENISA, where CERT Polska's access turned up six router flaws.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8083,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7222,
+        "uniqueness": 0.7222,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.2778,
+        "topic_match": 0.0,
+        "taste_score": 0.4,
+        "taste_raw": 0.4,
+        "taste_reason": "OpenAI policy/geopolitics announcement with no technical detail; relevant as industry context but skimmable for a dev reader.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 5.7694
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-24T02:03:51Z",
+      "last_seen_at": "2026-09-24T02:03:51Z"
+    },
+    {
+      "id": "f7558dc5c9de5bb5fdc77d93f9ea026683eaa31f",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+      "canonical_url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🟢 **[Harvey turns legal context into stronger drafts with GPT-6 Astra](https://openai.com/index/harvey-from-context-to-confidence-with-astra)** — _OpenAI blog_. — Harvey is now building legal drafts on GPT-6 Astra, which the company says carries enough context to produce more complete, better-formatted documents from case law, firm files and court records. A new memory panel bakes lawyers' preferences — numbered lists, EDGAR as a preferred source, priority color-coding — into the draft, following OpenAI's Astra for Law launch.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8148,
+        "uniqueness": 0.8125,
+        "uniqueness_sim_published": 0.1875,
+        "uniqueness_sim_state": 0.1852,
+        "topic_match": 0.0,
+        "taste_score": 0.25,
+        "taste_raw": 0.25,
+        "taste_reason": "Vendor customer story with no metrics or new capability — pure OpenAI marketing, nothing the reader learns.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 5.5812
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-24T02:03:51Z",
       "last_seen_at": "2026-09-24T02:03:51Z"
     },
     {
@@ -500,7 +691,7 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.413,
+        "recency_decay": 0.613,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.8772,
@@ -509,12 +700,12 @@
         "uniqueness_sim_state": 0.1228,
         "topic_match": 0.2,
         "creator_weight": -0.1,
-        "taste_score": 0.15,
-        "taste_raw": 0.15,
-        "taste_reason": "A $499 toothbrush waterproofing saga with no AI angle — off-beat gadget gossip a senior AI/dev reader skims past.",
-        "topic_importance": 0.2,
-        "topic_importance_raw": 2,
-        "total": 4.8766
+        "taste_score": 0.1,
+        "taste_raw": 0.1,
+        "taste_reason": "A Dyson $499 toothbrush supply mystery with no AI or dev content at all — irrelevant to the audience.",
+        "topic_importance": 0.1,
+        "topic_importance_raw": 1,
+        "total": 4.9016
       },
       "flags": {
         "enriched": true,
@@ -525,119 +716,120 @@
       "last_seen_at": "2026-09-24T02:03:51Z"
     },
     {
-      "id": "7ee47f0be8e5713f2d40252ff11e523a058bb763",
+      "id": "09ad678e21da08b8e9dc008d175e5b6dc78a8517",
       "section": "youtube",
       "source": "youtube",
-      "title": "The Biggest AI Coding Agent Upgrade Is Already on Your Machine?!",
-      "canonical_url": "https://youtube.com/watch?v=td52e2tQFIU",
+      "title": "Mimo V2.6 Pro & Flash (Fully Tested): This is OPEN WEIGHTS!?",
+      "canonical_url": "https://youtube.com/watch?v=lnzijicbAzg",
       "tags": [
         "origin:youtube",
         "section:youtube",
-        "topic:agents",
-        "topic:claude-code"
+        "topic:claude-code",
+        "topic:dev-tools"
       ],
-      "bullet_md": "- 🎥 [The Biggest AI Coding Agent Upgrade Is Already on Your Machine?!](https://www.youtube.com/watch?v=td52e2tQFIU) — **Cole Medin** (17m13s). — Cole Medin mines the transcripts his coding agent already saves locally — every prompt, tool call and failure — into a feedback loop: a one-prompt 'opportunity-scan' skill suggests improvements to your rules, hooks and skills, or you can push the history into Databricks tables and query it from Claude Code via MCP. Worth it if you want your agent to improve from your own usage without burning tokens.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=td52e2tQFIU\"><img src=\"https://img.youtube.com/vi/td52e2tQFIU/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [Mimo V2.6 Pro & Flash (Fully Tested): This is OPEN WEIGHTS!?](https://www.youtube.com/watch?v=lnzijicbAzg) — **AICodeKing** (11m59s). — Xiaomi's open-weight MiMo V2.6 Pro and Flash both clear all eight KingBench 3 tasks with context windows over one million tokens, but Flash is the pick: about 68 percent cheaper than Pro and the higher overall scorer, though neither finished the math task. Both still fine-tune a local Gemma 2B cleanly.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=lnzijicbAzg\"><img src=\"https://img.youtube.com/vi/lnzijicbAzg/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.7647,
-        "uniqueness": 0.7647,
-        "uniqueness_sim_published": 0.2,
-        "uniqueness_sim_state": 0.2353,
-        "topic_match": 0.7,
-        "taste_score": 0.6,
-        "taste_raw": 0.6,
-        "taste_reason": "Concrete, actionable pattern for Claude Code users — mining locally-saved transcripts to improve the agent over time — though the meta-title leans clickbaity and the payoff is anecdotal rather than benchmarked.",
-        "topic_importance": 0.7,
-        "topic_importance_raw": 7,
-        "total": 6.6823
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-26T08:24:24Z",
-      "last_seen_at": "2026-09-26T08:24:24Z"
-    },
-    {
-      "id": "b889c571cee425eb3d8a280e03afd60de1179299",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Octen + Opus 5.5: This MAKES your AGENT 10X BETTER for less than $1!",
-      "canonical_url": "https://youtube.com/watch?v=Yr3P1B21dp0",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [Octen + Opus 5.5: This MAKES your AGENT 10X BETTER for less than $1!](https://youtube.com/watch?v=Yr3P1B21dp0) — **AICodeKing** (14m23s). — A tour of Claude Code Templates — a free, open-source catalog of agents, skills, commands, MCPs, hooks and settings where Stack Builder bundles your picks into a single install command. The practical build pairs a Code Reviewer agent with a Generate Tests command for a reusable review-and-test workflow, and it flags that community templates should always be reviewed before installation.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=Yr3P1B21dp0\"><img src=\"https://img.youtube.com/vi/Yr3P1B21dp0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.9771,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.7895,
-        "uniqueness": 0.7895,
-        "uniqueness_sim_published": 0.1333,
-        "uniqueness_sim_state": 0.2105,
-        "topic_match": 0.7,
-        "taste_score": 0.5,
-        "taste_raw": 0.5,
-        "taste_reason": "Useful walkthrough of Claude Code Templates for agent/skill/MCP discovery, but the '10X BETTER for less than $1!' clickbait framing caps it.",
-        "topic_importance": 0.7,
-        "topic_importance_raw": 7,
-        "total": 6.5218
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-26T08:24:24Z",
-      "last_seen_at": "2026-09-26T08:24:24Z"
-    },
-    {
-      "id": "042a9d5567826286cbec8b146ec44f7d58755d6c",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "I just put 1000 hours into Claude Code… Here’s EVERYTHING I learned",
-      "canonical_url": "https://youtube.com/watch?v=YJl2Dfidu3c",
-      "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 🎥 [I just put 1000 hours into Claude Code… Here’s EVERYTHING I learned](https://www.youtube.com/watch?v=YJl2Dfidu3c) — **Income stream surfers** (9m01s). — Five workflow habits from 1,000 hours and 230M+ tokens in Claude Code, led by ending big prompts with the single word discuss so the model restates the task before touching code; also covers giving it real dev tooling like CLIs and API keys, and using only the connectors you need (Semrush for keywords, Bright Data for scraping).\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=YJl2Dfidu3c\"><img src=\"https://img.youtube.com/vi/YJl2Dfidu3c/mqdefault.jpg\" alt=\"thumb\"></a></p>",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 1.0,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.7576,
-        "uniqueness": 0.75,
-        "uniqueness_sim_published": 0.25,
-        "uniqueness_sim_state": 0.2424,
-        "topic_match": 0.7,
-        "taste_score": 0.4,
-        "taste_raw": 0.4,
-        "taste_reason": "'EVERYTHING I learned' clickbait framing from a low-signal channel, though it does carry concrete usage numbers (258 sessions, 230M+ tokens); senior readers likely skim the lessons.",
+        "novelty_score": 0.7105,
+        "uniqueness": 0.6364,
+        "uniqueness_sim_published": 0.3636,
+        "uniqueness_sim_state": 0.2895,
+        "topic_match": 0.8,
+        "taste_score": 0.55,
+        "taste_raw": 0.55,
+        "taste_reason": "Hands-on testing of MiMo V2.6 across all eight KingBench 3 tasks adds practical signal, though the open-weights model itself is already in state-of-ai.",
         "topic_importance": 0.6,
         "topic_importance_raw": 6,
-        "total": 6.275
+        "total": 6.5432
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-09-26T08:24:24Z",
-      "last_seen_at": "2026-09-26T08:24:24Z"
+      "first_seen_at": "2026-09-26T10:43:02Z",
+      "last_seen_at": "2026-09-26T10:43:02Z"
+    },
+    {
+      "id": "01e768abeae1d549a95ae93a83f96e76f0a801b7",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Gemini 3.8 Flash is FREE in Cline! I Tested Google's New AI Model",
+      "canonical_url": "https://youtube.com/watch?v=_wOTSq5783E",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:dev-tools",
+        "topic:google"
+      ],
+      "bullet_md": "- 🎥 [Gemini 3.8 Flash is FREE in Cline! I Tested Google's New AI Model](https://www.youtube.com/watch?v=_wOTSq5783E) — **Code With Yousaf** (5m07s). — Getting Gemini 3.8 Flash running free inside Cline, from creating the API key to fixing the configuration errors that block access, then a quick coding test against other models. Aimed at developers who want Google's newest Flash for everyday coding without paying.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=_wOTSq5783E\"><img src=\"https://img.youtube.com/vi/_wOTSq5783E/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.64,
+        "uniqueness": 0.64,
+        "uniqueness_sim_published": 0.2308,
+        "uniqueness_sim_state": 0.36,
+        "topic_match": 0.8,
+        "taste_score": 0.4,
+        "taste_raw": 0.4,
+        "taste_reason": "Recaps the already-known Gemini 3.8 Flash with a trivial Cline free-access setup; clickbaity title and no new facts.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 6.22
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T10:43:02Z",
+      "last_seen_at": "2026-09-26T10:43:02Z"
+    },
+    {
+      "id": "8150fae2c445cbb027b4142bbbde7ad3d0a92782",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Your 128GB Of RAM Won't Save A 24GB Card For Local AI",
+      "canonical_url": "https://youtube.com/watch?v=QMcMmrrBUNM",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:research"
+      ],
+      "bullet_md": "- 🎥 [Your 128GB Of RAM Won't Save A 24GB Card For Local AI](https://www.youtube.com/watch?v=QMcMmrrBUNM) — **The Stack** (13m34s). — Relevant if you are sizing a local agentic rig: on Qwen3.6-35B-A3B in llama.cpp a used RTX 3090 reads an 8,192-token prompt at 2,965 tok/s versus 2,036 for an M5 Max, and its 24GB VRAM fits the 20.6GB model plus roughly 90,000 tokens of context while 128GB of DDR5 alone now costs $1,950.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=QMcMmrrBUNM\"><img src=\"https://img.youtube.com/vi/QMcMmrrBUNM/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8667,
+        "uniqueness": 0.8667,
+        "uniqueness_sim_published": 0.1111,
+        "uniqueness_sim_state": 0.1333,
+        "topic_match": 0.5,
+        "taste_score": 0.5,
+        "taste_raw": 0.5,
+        "taste_reason": "Measured local-inference comparison (24GB GPU vs 64GB Mac) with real benchmarks is useful for the local crowd but niche and hardware-specific.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 6.1833
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T10:43:02Z",
+      "last_seen_at": "2026-09-26T10:43:02Z"
     },
     {
       "id": "9be0bef5775a972a59e2f1de459f57d4eb9d79cb",
@@ -656,7 +848,7 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.4412,
+        "recency_decay": 0.6412,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.717,
@@ -664,12 +856,12 @@
         "uniqueness_sim_published": 0.1818,
         "uniqueness_sim_state": 0.283,
         "topic_match": 0.7,
-        "taste_score": 0.5,
-        "taste_raw": 0.5,
-        "taste_reason": "The hands-on Opus 5.5-in-Claude-Code test with a '40% lower cost than Opus 5' claim is real signal, but the ALL-CAPS 'DESTROYED/INSANE' framing caps it — clickbait title costs 0.2.",
-        "topic_importance": 0.9,
-        "topic_importance_raw": 9,
-        "total": 6.1497
+        "taste_score": 0.4,
+        "taste_raw": 0.4,
+        "taste_reason": "Shouting clickbait title ('DESTROYED... INSANE') from a low-credibility channel caps it, though the hands-on Claude Code test carries a concrete Terminal-Bench 66.4% number.",
+        "topic_importance": 0.8,
+        "topic_importance_raw": 8,
+        "total": 6.0997
       },
       "flags": {
         "enriched": true,
@@ -697,10 +889,10 @@
         "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8,
+        "novelty_score": 0.74,
         "uniqueness": 0.7,
         "uniqueness_sim_published": 0.3,
-        "uniqueness_sim_state": 0.2,
+        "uniqueness_sim_state": 0.26,
         "topic_match": 0.0,
         "creator_weight": -0.2,
         "taste_score": 0.4,
@@ -716,7 +908,7 @@
         "published_today": false
       },
       "first_seen_at": "2026-09-26T08:24:24Z",
-      "last_seen_at": "2026-09-26T08:24:24Z"
+      "last_seen_at": "2026-09-26T10:43:02Z"
     },
     {
       "id": "9aebc390deae775adfaad1a3cc8fbd8cc53deece",
@@ -733,7 +925,7 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.6892,
+        "recency_decay": 0.8892,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.7778,
@@ -746,7 +938,7 @@
         "taste_reason": "New Kimi K3.1 / MiniMax M3.1 leak plus Gemini 4 Pro timing is on-beat, but it's speculative leak aggregation with 'LEAKED!' framing and no verifiable detail.",
         "topic_importance": 0.7,
         "topic_importance_raw": 7,
-        "total": 5.4281
+        "total": 5.6281
       },
       "flags": {
         "enriched": true,
@@ -757,40 +949,80 @@
       "last_seen_at": "2026-09-24T01:56:26Z"
     },
     {
-      "id": "e009a8d70a2a2667f3f1b7681880be9c366e42a1",
+      "id": "3a1e1231d417d867f052ac954adf1b91b0253952",
       "section": "youtube",
       "source": "youtube",
-      "title": "Meta is pivoting again... everything you missed from Connect 2026",
-      "canonical_url": "https://youtube.com/watch?v=c1rPlzxSZ8E",
+      "title": "An ex-OpenAI researcher just deleted language from the LLM...",
+      "canonical_url": "https://youtube.com/watch?v=TbkUKCm3CHQ",
       "tags": [
         "origin:youtube",
-        "section:youtube"
+        "section:youtube",
+        "topic:openai"
       ],
-      "bullet_md": "- 🎥 [Meta is pivoting again... everything you missed from Connect 2026](https://www.youtube.com/watch?v=c1rPlzxSZ8E) — **Fireship** (5m41s). — Fireship compresses Meta Connect 2026 into five minutes: the $1,299.99 Meta VR Glasses shipping spring 2027, audio-only Ray-Ban Meta Audio glasses, a third-gen Ray-Ban Meta with nine-hour battery, and the keychain Muse Charm — all pitched as vehicles for the Muse AI agent. Good for a fast catch-up on a two-day keynote.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=c1rPlzxSZ8E\"><img src=\"https://img.youtube.com/vi/c1rPlzxSZ8E/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 🎥 [An ex-OpenAI researcher just deleted language from the LLM...](https://www.youtube.com/watch?v=TbkUKCm3CHQ) — **Fireship** (5m27s). — Fireship's five-minute take on Jev, the System 1 model ex-OpenAI researcher Diogo Almeida built over two years in stealth: it cannot talk or write code, yet is claimed 200x faster, 400x cheaper, and hallucination-free — useful if you want the shape of the debate without the long version.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=TbkUKCm3CHQ\"><img src=\"https://img.youtube.com/vi/TbkUKCm3CHQ/mqdefault.jpg\" alt=\"thumb\"></a></p>",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 1.0,
+        "recency_decay": 0.449,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8966,
-        "uniqueness": 0.8966,
-        "uniqueness_sim_published": 0.0909,
-        "uniqueness_sim_state": 0.1034,
-        "taste_score": 0.35,
-        "taste_raw": 0.35,
-        "taste_reason": "Fireship recaps Meta Connect hardware/platform pivots — off the AI-engineer core beat, no model or harness signal.",
-        "topic_importance": 0.3,
-        "topic_importance_raw": 3,
-        "total": 5.2733
+        "novelty_score": 0.9111,
+        "uniqueness": 0.875,
+        "uniqueness_sim_published": 0.125,
+        "uniqueness_sim_state": 0.0889,
+        "topic_match": 0.0,
+        "taste_score": 0.6,
+        "taste_raw": 0.6,
+        "taste_reason": "Fireship on the same Jev story adds the concrete origin detail (ex-OpenAI Diogo Almeida, two years stealth, 200x-faster claim) and a credible explainer voice; title is mild clickbait.",
+        "topic_importance": 0.7,
+        "topic_importance_raw": 7,
+        "total": 5.4865
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": false
       },
-      "first_seen_at": "2026-09-26T08:24:24Z",
-      "last_seen_at": "2026-09-26T08:24:24Z"
+      "first_seen_at": "2026-09-22T02:09:37Z",
+      "last_seen_at": "2026-09-23T02:09:24Z"
+    },
+    {
+      "id": "3b5c58ba343c257bd46f71a820f32a15084cea63",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Top 5 Best Agentic AI Courses in India (2026) | LogicMojo AI & ML Course",
+      "canonical_url": "https://youtube.com/watch?v=umlmXhmjVd0",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents"
+      ],
+      "bullet_md": "- 🎥 [Top 5 Best Agentic AI Courses in India (2026) | LogicMojo AI & ML Course](https://www.youtube.com/watch?v=umlmXhmjVd0) — **Logicmojo** (5m51s). — Logicmojo ranks its own ₹87,000, 7-month live program first among India's five best agentic AI courses, ahead of IIT Delhi's ₹1,45,000 certificate and EICTA's ₹6,000 non-coding option — a shortlist aimed at anyone weighing training against Foundit's projection of 3.82 lakh AI roles in India by 2027.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=umlmXhmjVd0\"><img src=\"https://img.youtube.com/vi/umlmXhmjVd0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7586,
+        "uniqueness": 0.7586,
+        "uniqueness_sim_published": 0.0714,
+        "uniqueness_sim_state": 0.2414,
+        "topic_match": 0.5,
+        "taste_score": 0.1,
+        "taste_raw": 0.1,
+        "taste_reason": "Listicle of paid courses with marketing framing and no technical content; pure skim-past.",
+        "topic_importance": 0.3,
+        "topic_importance_raw": 3,
+        "total": 5.3293
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T10:43:02Z",
+      "last_seen_at": "2026-09-26T10:43:02Z"
     },
     {
       "id": "b35c76db686e3c7e11937d8fef4a3affa683cdb8",
@@ -807,7 +1039,7 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.4757,
+        "recency_decay": 0.6757,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.925,
@@ -815,12 +1047,12 @@
         "uniqueness_sim_published": 0.0667,
         "uniqueness_sim_state": 0.075,
         "topic_match": 0.5,
-        "taste_score": 0.2,
-        "taste_raw": 0.2,
-        "taste_reason": "Vendor mobile keynote with no AI/LLM specifics — a 1h54m stream this reader would never click, let alone finish.",
+        "taste_score": 0.25,
+        "taste_raw": 0.25,
+        "taste_reason": "A two-hour vendor CEO keynote with no concrete facts or releases; marketing sludge that no senior dev finishes.",
         "topic_importance": 0.3,
         "topic_importance_raw": 3,
-        "total": 5.0382
+        "total": 5.3132
       },
       "flags": {
         "enriched": true,
@@ -831,285 +1063,247 @@
       "last_seen_at": "2026-09-24T01:56:26Z"
     },
     {
-      "id": "3f85b4437dc3c947303e3ef833df37b40fcdba9f",
-      "section": "youtube",
-      "source": "youtube",
-      "title": "Gemini 3.8 TTS - Google's New AI Voice Is Scary Good!!",
-      "canonical_url": "https://youtube.com/watch?v=wshiKvOAwP0",
+      "id": "0371134b10acc1148c03759927fcd858816e60c8",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "[Enola] - I built an open-source architecture layer for Cursor",
+      "canonical_url": "https://reddit.com/comments/1wqhdb1",
       "tags": [
-        "origin:youtube",
-        "section:youtube",
-        "topic:google"
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code",
+        "topic:dev-tools",
+        "topic:opensource"
       ],
-      "bullet_md": "- 🎥 [Gemini 3.8 TTS - Google's New AI Voice Is Scary Good!!](https://www.youtube.com/watch?v=wshiKvOAwP0) — **AI with Surya** (6m06s). — A hands-on tour of Google's Gemini 3.8 Flash TTS and Flash-Lite TTS, which let you design a voice from a personality description, clone your own, and build multi-speaker dialogue with emotional controls; both models took the top two spots on Hume AI's quality leaderboard, with Flash first for creating new voices. Worth it if you make product or training videos needing voiceover across 100+ languages.\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=wshiKvOAwP0\"><img src=\"https://img.youtube.com/vi/wshiKvOAwP0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "bullet_md": "- 💬 [r/cursor: \"[Enola] - I built an open-source architecture layer for Cursor\"](https://www.reddit.com/r/cursor/comments/1wqhdb1/enola_i_built_an_opensource_architecture_layer/) — Enola is an Apache-2.0 local binary that builds a deterministic dependency graph of a repo and serves it over MCP, so Cursor or Claude Code can see what depends on a symbol before editing and run enola check afterward to catch new layer violations or dependency cycles.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.7001,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.75,
-        "uniqueness": 0.75,
-        "uniqueness_sim_published": 0.1429,
-        "uniqueness_sim_state": 0.25,
-        "topic_match": -0.1,
+        "novelty_score": 0.8462,
+        "uniqueness": 0.7778,
+        "uniqueness_sim_published": 0.2222,
+        "uniqueness_sim_state": 0.1538,
+        "topic_match": 0.8,
+        "creator_weight": 0.1,
         "taste_score": 0.3,
         "taste_raw": 0.3,
-        "taste_reason": "Thin body with essentially no detail beyond 'TTS models let developers direct voices', and a 'Scary Good!!' clickbait title; no concrete capability or numbers.",
+        "taste_reason": "Self-promo release with no benchmarks, repo detail, or concrete evidence of what the layer does; thin metadata, no signal either way.",
         "topic_importance": 0.5,
         "topic_importance_raw": 5,
-        "total": 4.9251
+        "total": 6.2389
       },
       "flags": {
         "enriched": true,
         "researched": true,
         "published_today": false
       },
-      "first_seen_at": "2026-09-24T01:56:26Z",
-      "last_seen_at": "2026-09-24T01:56:26Z"
+      "first_seen_at": "2026-09-26T10:50:14Z",
+      "last_seen_at": "2026-09-26T10:50:14Z"
     },
     {
-      "id": "341be57aefd8e6b294f95714a871ba1b67827330",
+      "id": "c07e9e1c82bd42c18a636c08ebac61456ea5de02",
       "section": "reddit",
       "source": "reddit",
-      "title": "Introducing Claude Opus 5.5, the first model in our new Claude 5.5 family",
-      "canonical_url": "https://reddit.com/comments/1wnecjb",
+      "title": "Looking for AI - agent builders working in finance/blockchain to help us test Agaemon - a governance layer between agents and execution.",
+      "canonical_url": "https://reddit.com/comments/1wqmngx",
       "tags": [
         "origin:reddit",
         "section:reddit",
         "topic:claude-code"
       ],
-      "bullet_md": "- 💬 [r/Anthropic: \"Introducing Claude Opus 5.5, the first model in our new Claude 5.5 family\"](https://www.reddit.com/r/Anthropic/comments/1wnecjb/introducing_claude_opus_55_the_first_model_in_our/) — Claude Opus 5.5 is the first model in Anthropic's new Claude 5.5 family, priced at $4 per million input and $20 per million output tokens — 40% cheaper to run than Opus 5, with cache reads down 60% — and it raises five-hour usage limits on Pro, Max, and Team plans.",
+      "bullet_md": "- 💬 [r/LangChain: \"Looking for AI - agent builders working in finance/blockchain to help us test Agaemon - a governance layer between agents and execution.\"](https://www.reddit.com/r/LangChain/comments/1wqmngx/looking_for_ai_agent_builders_working_in/) — A r/LangChain post seeks finance and blockchain agent builders to test Agaemon, a governance layer placed between agents and execution.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.4377,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.6154,
-        "uniqueness": 0.6154,
-        "uniqueness_sim_published": 0.25,
-        "uniqueness_sim_state": 0.3846,
-        "topic_match": 0.7,
-        "creator_weight": 0.5,
-        "taste_score": 0.45,
-        "taste_raw": 0.45,
-        "taste_reason": "Recap of state-of-ai's Opus 5.5 row — pricing and cache cut already known; only the Pro/Max usage-limit bump is new, capped as known-state.",
-        "topic_importance": 1.0,
-        "topic_importance_raw": 10,
-        "total": 6.1204,
-        "topic_repeat_penalty": -1.0,
-        "topic_repeat_matched_title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
-        "topic_repeat_matched_section": "community",
-        "topic_repeat_title_jaccard": 0.2222,
-        "topic_repeat_body_containment": 0.45
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-23T02:16:01Z",
-      "last_seen_at": "2026-09-24T02:02:56Z"
-    },
-    {
-      "id": "54354c4700c91c241b0f491745c5ae7eb048742e",
-      "section": "reddit",
-      "source": "reddit",
-      "title": "Deleted my ChatGPT account today due to age restriction",
-      "canonical_url": "https://reddit.com/comments/1wnz3hv",
-      "tags": [
-        "origin:reddit",
-        "section:reddit",
-        "topic:openai",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLM: \"Deleted my ChatGPT account today due to age restriction\"](https://www.reddit.com/r/LocalLLM/comments/1wnz3hv/deleted_my_chatgpt_account_today_due_to_age/) — A LocalLLM user deleted their ChatGPT account rather than submit a government ID and selfie after OpenAI's age classifier flagged them as a minor, joining users who refuse the Persona-run age verification.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.5616,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8148,
-        "uniqueness": 0.8148,
-        "uniqueness_sim_published": 0.0909,
-        "uniqueness_sim_state": 0.1852,
-        "topic_match": 0.2,
-        "creator_weight": 0.0,
-        "taste_score": 0.45,
-        "taste_raw": 0.45,
-        "taste_reason": "Real policy signal (OpenAI age-classifier + Persona ID/selfie pushback) but it's a single user anecdote with no numbers or wider evidence; reads as a gripe thread.",
-        "topic_importance": 0.4,
-        "topic_importance_raw": 4,
-        "total": 5.244
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-24T02:02:56Z",
-      "last_seen_at": "2026-09-24T02:02:56Z"
-    },
-    {
-      "id": "464eb5e4388e181d3cb0f3eade95a0060c690078",
-      "section": "reddit",
-      "source": "reddit",
-      "title": "Mods: can we do something about half the forum getting filled with these advertising posts for Jev?",
-      "canonical_url": "https://reddit.com/comments/1wo6o0f",
-      "tags": [
-        "origin:reddit",
-        "section:reddit",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"Mods: can we do something about half the forum getting filled with these advertising posts for Jev?\"](https://www.reddit.com/r/LocalLLaMA/comments/1wo6o0f/mods_can_we_do_something_about_half_the_forum/) — r/LocalLLaMA is pushing back on a wave of promotional Jev posts, with one user asking mods to curb advertising for the new text-classification tool they say fills half the forum. Jev sorts and labels information from written instructions without custom training, and critics are comparing it to Google's 2018 BERT.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.6159,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8462,
-        "uniqueness": 0.8462,
-        "uniqueness_sim_published": 0.0833,
-        "uniqueness_sim_state": 0.1538,
-        "topic_match": 0.2,
-        "creator_weight": 0.2,
-        "taste_score": 0.33,
-        "taste_raw": 0.33,
-        "taste_reason": "Forum-moderation meta-drama that repeats the Jev promotion complaint with no new technical signal beyond the companion thread.",
-        "topic_importance": 0.3,
-        "topic_importance_raw": 3,
-        "total": 5.234
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-24T02:02:56Z",
-      "last_seen_at": "2026-09-24T02:02:56Z"
-    },
-    {
-      "id": "29d3f3826c5793eec218c6bdc683ff069c38923d",
-      "section": "reddit",
-      "source": "reddit",
-      "title": "Qwen image 2.1 (Fast FP8) generates premium quality images",
-      "canonical_url": "https://reddit.com/comments/1wnhq8d",
-      "tags": [
-        "origin:reddit",
-        "section:reddit",
-        "topic:opensource"
-      ],
-      "bullet_md": "- 💬 [r/LocalLLaMA: \"Qwen image 2.1 (Fast FP8) generates premium quality images\"](https://www.reddit.com/r/LocalLLaMA/comments/1wnhq8d/qwen_image_21_fast_fp8_generates_premium_quality/) — Unsloth's FP8/INT8 build of Qwen-Image-2.1 shrinks the 7B model's 14.23 GB bf16 transformer to a 7.12 GB FP8 file, and its Dynamic FP8 variant runs on as little as 6 GB of VRAM via offloading at under 2x slowdown. Same-seed LPIPS against bf16 is 0.112 for FP8 and 0.064 for the shipped INT8 scheme.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.4544,
-        "origin_weight": 1.0,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.7568,
-        "uniqueness": 0.7568,
-        "uniqueness_sim_published": 0.1667,
-        "uniqueness_sim_state": 0.2432,
-        "topic_match": 0.2,
-        "creator_weight": 0.2,
-        "taste_score": 0.3,
-        "taste_raw": 0.3,
-        "taste_reason": "Showcase post with only the vague claim 'premium quality images' — no comparisons, prompts, or speed numbers to anchor it.",
-        "topic_importance": 0.5,
-        "topic_importance_raw": 5,
-        "total": 5.1828
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-23T02:16:01Z",
-      "last_seen_at": "2026-09-23T02:16:01Z"
-    },
-    {
-      "id": "2c03a82cb0b9b8f28dcfc61ebb90885807e25186",
-      "section": "reddit",
-      "source": "reddit",
-      "title": "We built a LangGraph integration for our agent runtime — looking for feedback from people running complex graphs",
-      "canonical_url": "https://reddit.com/comments/1wnicsh",
-      "tags": [
-        "origin:reddit",
-        "section:reddit",
-        "topic:claude-code"
-      ],
-      "bullet_md": "- 💬 [r/LangChain: \"We built a LangGraph integration for our agent runtime — looking for feedback from people running complex graphs\"](https://www.reddit.com/r/LangChain/comments/1wnicsh/we_built_a_langgraph_integration_for_our_agent/) — A team built a LangGraph integration for their agent runtime and is seeking feedback from people running complex graphs.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.4575,
+        "recency_decay": 1.0,
         "origin_weight": 1.0,
         "has_concrete_fact": 0.0,
-        "novelty_score": 0.9474,
-        "uniqueness": 0.9286,
-        "uniqueness_sim_published": 0.0714,
-        "uniqueness_sim_state": 0.0526,
+        "novelty_score": 0.8636,
+        "uniqueness": 0.8636,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.1364,
         "topic_match": 0.7,
         "creator_weight": 0.0,
-        "taste_score": 0.25,
-        "taste_raw": 0.25,
-        "taste_reason": "Vendor self-promo seeking feedback, no technical detail, numbers, or code — low-effort announcement energy.",
-        "topic_importance": 0.3,
-        "topic_importance_raw": 3,
-        "fetch_fail_penalty": -1.0,
-        "total": 4.2968
+        "taste_score": 0.18,
+        "taste_raw": 0.18,
+        "taste_reason": "Recruitment post soliciting beta testers for an unproven governance layer; no shipped details, benchmarks, or evidence.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 5.9018
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-09-23T02:16:01Z",
-      "last_seen_at": "2026-09-23T02:16:01Z"
+      "first_seen_at": "2026-09-26T10:50:14Z",
+      "last_seen_at": "2026-09-26T10:50:14Z"
     },
     {
-      "id": "5e9e5737b35bdb5d58ef85743844715b2b62d2e2",
+      "id": "03db647f8de7d9e8a3cf99885d973e342a15bc2c",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip",
+      "canonical_url": "https://reddit.com/comments/1wmyh9z",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip\"](https://www.reddit.com/r/LocalLLaMA/comments/1wmyh9z/alibaba_plans_ai_model_with_5_trillion_to_10/) — At its Apsara Conference Alibaba said Qwen 4 is in training and that Qwen 4.5 and Qwen 5 are projected to scale to 5 to 10 trillion parameters — roughly two to four times the 2.4 trillion parameters of its current Qwen 3.8 Max flagship — alongside the Zhenwu V900 chip, which it says delivers three times the performance of the May-released M890.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.53,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7273,
+        "uniqueness": 0.6667,
+        "uniqueness_sim_published": 0.3333,
+        "uniqueness_sim_state": 0.2727,
+        "topic_match": 0.2,
+        "creator_weight": 0.2,
+        "taste_score": 0.72,
+        "taste_raw": 0.72,
+        "taste_reason": "Concrete scale-up claims (Qwen 4 in training, 5-10T params vs current 2.4T Qwen 3.8 Max) plus a named chip, giving a real delta on Alibaba's roadmap.",
+        "topic_importance": 0.8,
+        "topic_importance_raw": 8,
+        "total": 5.6433,
+        "topic_repeat_penalty": -1.0,
+        "topic_repeat_matched_title": "Alibaba Unveils AI Chip to Drive 20GW of Data Centers by 2032",
+        "topic_repeat_matched_section": "reddit",
+        "topic_repeat_title_jaccard": 0.3333,
+        "topic_repeat_body_containment": 0.4231
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-22T14:00:04Z",
+      "last_seen_at": "2026-09-22T14:00:04Z"
+    },
+    {
+      "id": "35f7dfa42cc71b2087ae93b2126335d52a690a8d",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Ngram and world knowledge - why are we just building a coding model?",
+      "canonical_url": "https://reddit.com/comments/1wn2ybk",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"Ngram and world knowledge - why are we just building a coding model?\"](https://www.reddit.com/r/LocalLLaMA/comments/1wn2ybk/ngram_and_world_knowledge_why_are_we_just/) — A LocalLLaMA discussion questions why so much effort goes into coding-specific models, raising the ngram-versus-world-knowledge tradeoff for general capability.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.5642,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8636,
+        "uniqueness": 0.8571,
+        "uniqueness_sim_published": 0.1429,
+        "uniqueness_sim_state": 0.1364,
+        "topic_match": 0.2,
+        "creator_weight": 0.2,
+        "taste_score": 0.35,
+        "taste_raw": 0.35,
+        "taste_reason": "Open-ended discussion question with no specifics, data, or argument — thin signal beyond the ngram/world-knowledge framing.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "fetch_fail_penalty": -1.0,
+        "total": 4.4177
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-22T14:00:04Z",
+      "last_seen_at": "2026-09-22T14:00:04Z"
+    },
+    {
+      "id": "3a35425568c413ebdbccb3a98cd504d6a7a999ec",
       "section": "community",
       "source": "rss",
-      "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
-      "canonical_url": "https://latent.space/p/ainews-claude-opus-55-the-new-default",
+      "title": "Design Engineering with Maggie Appleton",
+      "canonical_url": "https://newsletter.pragmaticengineer.com/p/design-engineering-with-maggie-appleton",
       "tags": [
         "origin:rss",
         "section:community",
-        "topic:claude-code",
-        "topic:openai",
-        "topic:research"
+        "topic:agents",
+        "topic:dev-tools"
       ],
-      "bullet_md": "- 📝 **[[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%](https://www.latent.space/p/ainews-claude-opus-55-the-new-default)** — _Latent Space (swyx)_. — AINews (swyx) is migrating its writing pipeline to Claude Opus 5.5 as its new default, calling the difference in its own section output \"day and night\", after OpenAI's GPT-6 Sol and Luna undercut GPT-5.6 by 50%.",
+      "bullet_md": "- 📝 **[Design Engineering with Maggie Appleton](https://newsletter.pragmaticengineer.com/p/design-engineering-with-maggie-appleton)** — _Pragmatic Engineer_. — Maggie Appleton argues that agents collapsed the implementation gap but not the thinking gap: she now writes the spec including how the agent will verify its work, runs overnight Figma-matching loops without reading the code, and builds throwaway \"jigs\" — live sliders for the variables she cannot decide in text.",
       "score_components": {
         "cross_source_count": 2,
         "cross_score": 2,
-        "recency_decay": 0.5558,
+        "recency_decay": 0.8427,
         "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.72,
-        "uniqueness": 0.72,
-        "uniqueness_sim_published": 0.1818,
-        "uniqueness_sim_state": 0.28,
-        "topic_match": 0.7,
-        "creator_weight": 0.5,
-        "taste_score": 0.5,
-        "taste_raw": 0.5,
-        "taste_reason": "AINews roundup largely recaps Opus 5.5 and the price cuts already in state-of-ai, though the market-wide framing adds slight signal.",
-        "topic_importance": 0.8,
-        "topic_importance_raw": 8,
-        "total": 9.1658
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.7895,
+        "uniqueness": 0.7895,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.2105,
+        "topic_match": 0.8,
+        "taste_score": 0.45,
+        "taste_raw": 0.45,
+        "taste_reason": "Interview format, mostly opinion about design/engineering and human judgment with no concrete facts or numbers to anchor it.",
+        "topic_importance": 0.4,
+        "topic_importance_raw": 4,
+        "total": 8.6125
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-09-24T02:03:51Z",
-      "last_seen_at": "2026-09-26T08:34:04Z"
+      "last_seen_at": "2026-09-26T10:52:40Z"
+    },
+    {
+      "id": "c22650ec4f431c9c82f58587ce85eb95a792daf6",
+      "section": "community",
+      "source": "rss",
+      "title": "🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)",
+      "canonical_url": "https://latent.space/p/bio-security-is-an-ai-arms-race-eric",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)](https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric)** — _Latent Space (swyx)_. — Radical Numerics co-founder Eric Nguyen tells Latent Space that biosecurity is now an AI arms race and the defense side is losing: an Arc/Stanford team already used his Evo model to synthesize a working bacteriophage genome of about 6,000 base pairs. His argument for pushing the frontier harder is that the same genomic models that design sequences are the best tools for screening them, which chatbot-level refusals do not cover.",
+      "score_components": {
+        "cross_source_count": 2,
+        "cross_score": 2,
+        "recency_decay": 0.8121,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 1.0,
+        "uniqueness": 0.9091,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.0,
+        "topic_match": 0.5,
+        "creator_weight": 0.5,
+        "taste_score": 0.5,
+        "taste_raw": 0.5,
+        "taste_reason": "Credible Latent Space source on an interesting angle, but the description is too abstract to signal concrete findings.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 8.0167,
+        "cooldown_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-24T02:03:51Z",
+      "last_seen_at": "2026-09-26T10:52:40Z"
     },
     {
       "id": "09b4b1afc6ee20903b17e96dd385ad5541e93705",
@@ -1127,12 +1321,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.6762,
+        "recency_decay": 0.8762,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.7297,
-        "uniqueness": 0.7297,
-        "uniqueness_sim_published": 0.25,
+        "uniqueness": 0.6667,
+        "uniqueness_sim_published": 0.3333,
         "uniqueness_sim_state": 0.2703,
         "topic_match": 0.7,
         "taste_score": 0.78,
@@ -1140,7 +1334,7 @@
         "taste_reason": "Extends state-of-ai's Opus 5.5 row with system-card specifics — disputes the Tier 2 vs Tier 3 cyber framing and flags eval awareness in up to 36% of audit transcripts, from a credible analyst.",
         "topic_importance": 0.9,
         "topic_importance_raw": 9,
-        "total": 7.311
+        "total": 7.4795
       },
       "flags": {
         "enriched": true,
@@ -1151,119 +1345,79 @@
       "last_seen_at": "2026-09-24T02:03:51Z"
     },
     {
-      "id": "31bebec885304cf8b75e1727beef86afade4bc8e",
+      "id": "a08656e52ec718924bbf00801a1feb46b370a8fb",
       "section": "community",
       "source": "rss",
-      "title": "AI Coding Dictionary",
-      "canonical_url": "https://aihero.dev/ai-coding-dictionary",
+      "title": "AI | AI Coding Dictionary",
+      "canonical_url": "https://aihero.dev/ai-coding-dictionary/ai",
       "tags": [
         "origin:rss",
         "section:community",
         "topic:dev-tools"
       ],
-      "bullet_md": "- 📝 **[AI Coding Dictionary](https://www.aihero.dev/ai-coding-dictionary)** — _AI Hero (Matt Pocock)_. — Matt Pocock's AI Coding Dictionary argues the confusion around AI coding is partly manufactured — \"there's a whole VC-funded economy that benefits from keeping it hard to understand\" — and translates 69 terms such as harness, token, and context window into plain English.",
+      "bullet_md": "- 📝 **[AI | AI Coding Dictionary](https://www.aihero.dev/ai-coding-dictionary/ai)** — _AI Hero (Matt Pocock)_. — Matt Pocock's AI Coding Dictionary entry argues \"AI\" is a moving label rather than a technology — it points at whatever computers can newly, impressively do, now large language models, once expert systems or game-tree search — because the AI effect renames solved work as \"just\" search or statistics.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.7999,
+        "recency_decay": 0.9999,
         "origin_weight": 1.5,
         "has_concrete_fact": 0.0,
-        "novelty_score": 0.9333,
-        "uniqueness": 0.9333,
+        "novelty_score": 0.9167,
+        "uniqueness": 0.9167,
         "uniqueness_sim_published": 0.0,
-        "uniqueness_sim_state": 0.0667,
+        "uniqueness_sim_state": 0.0833,
         "topic_match": 0.8,
         "creator_weight": 0.2,
-        "taste_score": 0.4,
-        "taste_raw": 0.4,
-        "taste_reason": "Glossary/reference piece — useful to bookmark but not something you stop and read; no novel facts.",
-        "topic_importance": 0.4,
-        "topic_importance_raw": 4,
-        "total": 6.7666
+        "taste_score": 0.25,
+        "taste_raw": 0.25,
+        "taste_reason": "Single dictionary entry on 'AI' that adds no new information beyond a framing of a familiar term.",
+        "topic_importance": 0.3,
+        "topic_importance_raw": 3,
+        "total": 6.6333
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-09-26T08:31:56Z",
-      "last_seen_at": "2026-09-26T08:31:56Z"
+      "last_seen_at": "2026-09-26T10:51:09Z"
     },
     {
-      "id": "f690d66e3006d59e351d445dc4c57903e35385f4",
+      "id": "0eb2b4f3b50f8559f32a87e370f675124cba7737",
       "section": "community",
       "source": "rss",
-      "title": "BREAKING: OpenAI’s security fiasco explodes — and could tank Jensen Huang’s reputation",
-      "canonical_url": "https://garymarcus.substack.com/p/breaking-openais-security-fiasco",
-      "tags": [
-        "origin:rss",
-        "section:community",
-        "topic:openai",
-        "topic:research"
-      ],
-      "bullet_md": "- 📝 **[BREAKING: OpenAI’s security fiasco explodes — and could tank Jensen Huang’s reputation](https://garymarcus.substack.com/p/breaking-openais-security-fiasco)** — _Gary Marcus_. — Gary Marcus argues the OpenAI security fiasco reaches well beyond the Hugging Face hack — German and Australian government servers were also hit and OpenAI notified dozens of third parties — making Jensen Huang’s public trust in the labs look badly out of touch.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 1.0,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.875,
-        "uniqueness": 0.875,
-        "uniqueness_sim_published": 0.125,
-        "uniqueness_sim_state": 0.125,
-        "topic_match": 0.5,
-        "creator_weight": -0.2,
-        "taste_score": 0.35,
-        "taste_raw": 0.35,
-        "taste_reason": "Dramatised quote framing ('shut the labs down') and reaction commentary; the reported hack lacks concrete new specifics over the known baseline.",
-        "topic_importance": 0.6,
-        "topic_importance_raw": 6,
-        "total": 6.3625
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-26T08:31:56Z",
-      "last_seen_at": "2026-09-26T08:31:56Z"
-    },
-    {
-      "id": "10c04bf66fd1972db44562b985767e3c263d12b2",
-      "section": "community",
-      "source": "rss",
-      "title": "Training a Language Model End-to-End in Rust: An Experience Report",
-      "canonical_url": "https://arxiv.org/abs/2609.25008",
+      "title": "Same Quantity, Different Answer: Numerical Representation Invariance in Language Models",
+      "canonical_url": "https://arxiv.org/abs/2609.25009",
       "tags": [
         "origin:rss",
         "section:community",
         "topic:research"
       ],
-      "bullet_md": "- 🧪 **[Training a Language Model End-to-End in Rust: An Experience Report](https://arxiv.org/abs/2609.25008)** — _arXiv cs.CL_. — A solo experience report pretrained a roughly 0.4B-parameter Bangla-first model end-to-end in Rust for $164, but its real contribution is a failure taxonomy of Candle and Burn as training backends — five Candle defects including fused kernels that silently produce no gradient, and a Burn backward pass at roughly 3% of theoretical GPU throughput — concluding Rust is not yet competitive for training.",
+      "bullet_md": "- 🧪 **[Same Quantity, Different Answer: Numerical Representation Invariance in Language Models](https://arxiv.org/abs/2609.25009)** — _arXiv cs.CL_. — A new arXiv paper by Ephraim Atta-Duncan tests five open-weight systems against 3,600 exact-rational problems and finds canonical accuracy of 0.969-0.996 but orbit invariance of only 0.851-0.981, with Mistral Small 4 scoring 0.699 on unit-converted inputs.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.5333,
+        "recency_decay": 0.7333,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8421,
-        "uniqueness": 0.8421,
-        "uniqueness_sim_published": 0.0833,
-        "uniqueness_sim_state": 0.1579,
+        "novelty_score": 0.8065,
+        "uniqueness": 0.8065,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.1935,
         "topic_match": 0.5,
         "creator_weight": -0.4,
-        "taste_score": 0.75,
-        "taste_raw": 0.75,
-        "taste_reason": "Specific and useful: a $164 end-to-end Rust training run plus a concrete Candle/Burn defect taxonomy (silent no-gradient fused kernels) that any training-backend engineer would want.",
+        "taste_score": 0.6,
+        "taste_raw": 0.6,
+        "taste_reason": "Concrete methodology (3,600 exact-rational problems, 8,600 prompts, five systems) probing numerical-representation invariance — a real model-internals finding, if niche.",
         "topic_importance": 0.5,
         "topic_importance_raw": 5,
-        "total": 6.1794
+        "total": 6.1365
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
       "first_seen_at": "2026-09-24T02:03:51Z",
       "last_seen_at": "2026-09-24T02:03:51Z"
@@ -1284,7 +1438,7 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.4986,
+        "recency_decay": 0.6986,
         "origin_weight": 1.25,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.8148,
@@ -1297,7 +1451,7 @@
         "taste_reason": "Credible roundup (Willison) but Opus 5.5, GPT-6 Sol and Luna are all already in state-of-ai — recap of known state, novel only for the pelican-comparison novelty.",
         "topic_importance": 0.8,
         "topic_importance_raw": 8,
-        "total": 5.7418,
+        "total": 5.9418,
         "topic_repeat_penalty": -1.0,
         "topic_repeat_matched_title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war (6 minute read)",
         "topic_repeat_matched_section": "newsletters",
@@ -1326,19 +1480,19 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.4504,
+        "recency_decay": 0.6504,
         "origin_weight": 1.25,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.8182,
         "uniqueness": 0.8182,
-        "uniqueness_sim_published": 0.1111,
+        "uniqueness_sim_published": 0.1429,
         "uniqueness_sim_state": 0.1818,
         "taste_score": 0.5,
         "taste_raw": 0.5,
         "taste_reason": "Hands-on impression from a credible evaluator adds qualitative signal ('first non-Fable/Astra model that feels Fable-class', cheaper) beyond the state-of-ai row, though it's partly recap.",
         "topic_importance": 0.7,
         "topic_importance_raw": 7,
-        "total": 5.5595
+        "total": 5.7595
       },
       "flags": {
         "enriched": true,
@@ -1349,118 +1503,392 @@
       "last_seen_at": "2026-09-24T02:08:02Z"
     },
     {
-      "id": "34bc8c63576b1881bb4706726b7229b02ce8516d",
+      "id": "c6c28cb69bcaa3381fd49966e438df15e7ce6a5d",
       "section": "community",
       "source": "bsky",
-      "title": "Industrialization of knowledge work is going to be as disruptive a shift as…",
-      "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mw3csb657c26",
+      "title": "Put together some notes on Jev and the new category of system one aka decision…",
+      "canonical_url": "https://bsky.app/profile/simonwillison.net/post/3mw2tsop42c2u",
       "tags": [
         "origin:bsky",
         "section:community"
       ],
-      "bullet_md": "- 🦋 **[Industrialization of knowledge work is going to be as disruptive a shift as…](https://bsky.app/profile/emollick.bsky.social/post/3mw3csb657c26)** — _@emollick.bsky.social on Bluesky_. — Ethan Mollick argues the industrialization of knowledge work will be as disruptive a shift as the industrialization of physical labor was, as craft-driven fields come under pressure to produce greater volumes with machines while using less of the craft that made the work interesting and meaningful.",
+      "bullet_md": "- 🦋 **[Put together some notes on Jev and the new category of system one aka decision…](https://bsky.app/profile/simonwillison.net/post/3mw2tsop42c2u)** — _@simonwillison.net on Bluesky_. — Simon Willison shares notes on TypeSafe AI's Jev, which returns floating point confidence scores and probability distributions instead of text, arguing 'decision models' (a name he credits to Maggie Appleton) beats 'System One' for this classification-shaped class and that it fits spam detection, labelling, prioritisation and ranking.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.3311,
+        "recency_decay": 0.4939,
         "origin_weight": 1.25,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.9143,
-        "uniqueness": 0.8889,
-        "uniqueness_sim_published": 0.1111,
-        "uniqueness_sim_state": 0.0857,
-        "taste_score": 0.5,
-        "taste_raw": 0.5,
-        "taste_reason": "Mollick is credible and the framing is sharp, but it's a conceptual thinkpiece with no concrete new fact or benchmark to act on.",
+        "novelty_score": 0.9512,
+        "uniqueness": 0.8571,
+        "uniqueness_sim_published": 0.1429,
+        "uniqueness_sim_state": 0.0488,
+        "taste_score": 0.65,
+        "taste_raw": 0.65,
+        "taste_reason": "Credible source (Simon Willison) framing 'decision models' as a genuinely useful category for classification-shaped tasks.",
         "topic_importance": 0.5,
         "topic_importance_raw": 5,
-        "total": 5.2755
+        "total": 5.6475
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-09-22T14:04:20Z",
-      "last_seen_at": "2026-09-24T02:08:02Z"
+      "first_seen_at": "2026-09-22T02:19:11Z",
+      "last_seen_at": "2026-09-23T02:19:49Z"
     },
     {
-      "id": "f4180586211d51c6f8336ea77584c0e62278dfb0",
+      "id": "f7873f72fc619cab63605284b58a9818791bddd5",
+      "section": "community",
+      "source": "rss",
+      "title": "“I think the answer is we have to shut the labs down” - Jensen Huang",
+      "canonical_url": "https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:openai",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[“I think the answer is we have to shut the labs down” - Jensen Huang](https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to)** — _Gary Marcus_. — Gary Marcus argues the reported OpenAI agent hack of an Australian government website in June, disclosed only months later, should bring a temporary shutdown of OpenAI and computer-crime charges, invoking Jensen Huang's line that a company which cannot control its software should be shut down.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
+        "uniqueness": 0.8333,
+        "uniqueness_sim_published": 0.1538,
+        "uniqueness_sim_state": 0.1667,
+        "topic_match": 0.5,
+        "creator_weight": -0.2,
+        "taste_score": 0.4,
+        "taste_raw": 0.4,
+        "taste_reason": "Clickbait 'BREAKING' framing with a reputational hook; the underlying OpenAI security incident is largely covered by state-of-ai's sandbox-escape and Hacktron rows, and this adds opinion rather than new detail.",
+        "topic_importance": 0.7,
+        "topic_importance_raw": 7,
+        "total": 5.5167,
+        "cooldown_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:31:56Z",
+      "last_seen_at": "2026-09-26T10:51:09Z"
+    },
+    {
+      "id": "3f88b1569659b7118d8d95c15a5f3901d5e7b267",
+      "section": "community",
+      "source": "bsky",
+      "title": "\"Hey Opus, I want you to make a Zine by Claude, expressing something…",
+      "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mwctdxv7pc26",
+      "tags": [
+        "origin:bsky",
+        "section:community"
+      ],
+      "bullet_md": "- 🦋 **[\"Hey Opus, I want you to make a Zine by Claude, expressing something…](https://bsky.app/profile/emollick.bsky.social/post/3mwctdxv7pc26)** — _@emollick.bsky.social on Bluesky_. — @emollick asked Opus to make a punk-style Zine about Claudishness; it mocked the prompt and itself, and the result lives at stateless-zine.netlify.app.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.25,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.88,
+        "uniqueness": 0.7778,
+        "uniqueness_sim_published": 0.2222,
+        "uniqueness_sim_state": 0.12,
+        "taste_score": 0.25,
+        "taste_raw": 0.25,
+        "taste_reason": "Entertainment demo of Opus writing a zine; amusing but no technical substance or transferable insight.",
+        "topic_importance": 0.4,
+        "topic_importance_raw": 4,
+        "total": 5.4139
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:34:58Z",
+      "last_seen_at": "2026-09-26T10:53:28Z"
+    },
+    {
+      "id": "71925eafc0ba44585fe16f7ccfba3d5f1f3cf70f",
       "section": "newsletters",
       "source": "email",
-      "title": "We ported the original Doom to SQL (25 minute read)",
-      "canonical_url": "https://cedardb.com/blog/sqldoom",
+      "title": "(Activity: 2308): OP reports a true one-shot autonomous Claude Code generation using Opus 5.5 to create a 30s–60s…",
+      "canonical_url": "https://reddit.com/comments/1wogab3",
       "tags": [
         "origin:email",
         "section:newsletters",
-        "topic:dev-tools"
+        "topic:claude-code",
+        "topic:research"
       ],
-      "bullet_md": "- 📧 **[We ported the original Doom to SQL (25 minute read)](https://cedardb.com/blog/sqldoom/?utm_source=tldrdata)** — _TLDR · Sep 24_. — CedarDB ported the original 1993 Doom's game logic and renderer to SQL, running the game loop at its original 35 FPS and rendering full 320x200 frames at up to 60 Hz; Python only handles timing, keyboard input and display. The SQL game logic is about 5,900 lines versus roughly 9,000 lines of C for the same thing, and four-player deathmatch works.",
+      "bullet_md": "- 📧 **[(Activity: 2308): OP reports a true one-shot autonomous Claude Code generation using Opus 5.5 to create a 30s–60s…](https://www.reddit.com/r/ClaudeAI/comments/1wogab3/made_entirely_with_opus_55_321_of_openrouter_api/)** — _AINews · Sep 25_. — An Opus 5.5 one-shot run produced the animated short film What is the purpose of life in about 1h20m, spending $3.21 across 8 OpenRouter APIs (mostly Nano Banana 2 images and text-to-voice) plus roughly $20 of Opus usage, about 10% of one Max-plan 5-hour quota.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.7867,
+        "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 1.0,
-        "uniqueness": 0.7778,
-        "uniqueness_sim_published": 0.2222,
-        "uniqueness_sim_state": 0.0,
-        "topic_match": 0.8,
-        "creator_weight": -0.1,
-        "taste_score": 0.55,
-        "taste_raw": 0.55,
-        "taste_reason": "Genuinely fun engineering feat (Doom inside SQL) a dev would click, though it's a 25-min read off the AI core beat.",
-        "topic_importance": 0.3,
-        "topic_importance_raw": 3,
-        "total": 6.5006
+        "novelty_score": 0.8158,
+        "uniqueness": 0.8158,
+        "uniqueness_sim_published": 0.1818,
+        "uniqueness_sim_state": 0.1842,
+        "topic_match": 0.7,
+        "creator_weight": 0.2,
+        "taste_score": 0.62,
+        "taste_raw": 0.62,
+        "taste_reason": "One-shot Opus 5.5 Claude Code generation with concrete cost accounting ($20 Opus + $3.21 across 8 APIs over 1h20m) is a useful agent-cost data point, though the output itself is a demo.",
+        "topic_importance": 0.6,
+        "topic_importance_raw": 6,
+        "total": 7.3379
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-09-26T08:34:04Z",
-      "last_seen_at": "2026-09-26T08:34:04Z"
+      "first_seen_at": "2026-09-26T10:52:40Z",
+      "last_seen_at": "2026-09-26T10:52:40Z"
     },
     {
-      "id": "1fd728d63c9fc5996b5a83797139eb6e9cef4d67",
+      "id": "b821fc43a2a3a6cb3d556046002a52abde92a1bc",
       "section": "newsletters",
       "source": "email",
-      "title": "ARVO environment and training recipe",
-      "canonical_url": "https://github.com/XiaomiMiMo/verl/tree/mimo-oss/recipes/arvo",
+      "title": "Swift1.5 27B",
+      "canonical_url": "https://huggingface.co/collections/ukisai/swift-15-27b",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Swift1.5 27B](https://huggingface.co/collections/ukisai/swift-15-27b?utm_source=substack&utm_medium=email)** — _AINews · Sep 25_. — UkisAI's Swift1.5 is a reasoning-efficient derivative of Qwen3.8-27B that cuts overthinking tokens; the collection page describes it as stronger than Swift 1.0 on agentic and coding tasks, shipping BF16 weights plus GGUF, MLX, NVFP4 and AWQ/INT4 quantizations.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8929,
+        "uniqueness": 0.8929,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.1071,
+        "topic_match": 0.5,
+        "creator_weight": 0.2,
+        "taste_score": 0.72,
+        "taste_raw": 0.72,
+        "taste_reason": "Concrete open-weight release with real deltas: -58.5% thinking tokens for +0.35% score and -63.4% at 1.8x speedup, a specific overthinking-reduction recipe the local-model crowd cares about.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 7.2264
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T10:52:40Z",
+      "last_seen_at": "2026-09-26T10:52:40Z"
+    },
+    {
+      "id": "c83faf144f9162b047c356457bff597a0de7a80a",
+      "section": "newsletters",
+      "source": "email",
+      "title": "This interactive island was built in 8 hours with Opus 5.5",
+      "canonical_url": "https://reddit.com/comments/1wousv6",
       "tags": [
         "origin:email",
         "section:newsletters",
         "topic:research"
       ],
-      "bullet_md": "- 📧 **[ARVO environment and training recipe](https://github.com/XiaomiMiMo/verl/tree/mimo-oss/recipes/arvo?utm_source=substack&utm_medium=email)** — _AINews · Sep 22_. — Xiaomi MiMo-OSS publishes an ARVO environment and training recipe under recipes/arvo, with an env actor, agent loop, trajectory metadata, token tracing, reference penalties and a run script, for cyber and vulnerability-reproduction agent training.",
+      "bullet_md": "- 📧 **[This interactive island was built in 8 hours with Opus 5.5](https://www.reddit.com/r/singularity/comments/1wousv6/this_interactive_island_was_built_in_8_hours_with/?utm_source=substack&utm_medium=email)** — _AINews · Sep 25_. — Dan Greenheck built an interactive island with Opus 5.5 in about 8 hours using mostly simple iterative prompts, at roughly $1,874 in token costs.",
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.3543,
+        "recency_decay": 1.0,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
-        "novelty_score": 0.8125,
-        "uniqueness": 0.8125,
-        "uniqueness_sim_published": 0.0909,
-        "uniqueness_sim_state": 0.1875,
+        "novelty_score": 0.8333,
+        "uniqueness": 0.8333,
+        "uniqueness_sim_published": 0.125,
+        "uniqueness_sim_state": 0.1667,
         "topic_match": 0.5,
         "creator_weight": 0.2,
         "taste_score": 0.6,
         "taste_raw": 0.6,
-        "taste_reason": "Concrete open-source release (env actor, agent loop, token tracing, run script) for cyber-agent RL training — useful to the research-minded reader but a repo drop, not a finding.",
+        "taste_reason": "The interesting part is the economics: $1,874.40 in tokens = 59% of a Max 20x weekly allowance for an 8-hour build, worth knowing when budgeting agent work.",
         "topic_importance": 0.6,
         "topic_importance_raw": 6,
-        "total": 6.4605
+        "total": 7.1166
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": true
+        "published_today": false
       },
-      "first_seen_at": "2026-09-23T02:18:58Z",
-      "last_seen_at": "2026-09-24T02:06:54Z"
+      "first_seen_at": "2026-09-26T10:52:40Z",
+      "last_seen_at": "2026-09-26T10:52:40Z"
+    },
+    {
+      "id": "da23d45cd8dec4608865f1d46013add05588f5b1",
+      "section": "newsletters",
+      "source": "email",
+      "title": "MiMo-V3 is getting a new architecture. The core of it, HySparse2, is out today.",
+      "canonical_url": "https://reddit.com/comments/1wo7mr6",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[MiMo-V3 is getting a new architecture. The core of it, HySparse2, is out today.](https://www.reddit.com/r/LocalLLaMA/comments/1wo7mr6/mimov3_is_getting_a_new_architecture_the_core_of/?utm_source=substack&utm_medium=email)** — _AINews · Sep 25_. — Fuli Luo announced Xiaomi's MiMo-V3 will adopt HySparse2, a hybrid sparse-attention design with two-level KV sharing that claims 5.02x lower prefill FLOPs at 1M tokens and a 4.5x smaller KV cache versus MiMo-V2.6's Hybrid SWA, with better long-context retrieval.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8485,
+        "uniqueness": 0.8485,
+        "uniqueness_sim_published": 0.1111,
+        "uniqueness_sim_state": 0.1515,
+        "topic_match": 0.5,
+        "creator_weight": 0.2,
+        "taste_score": 0.65,
+        "taste_raw": 0.65,
+        "taste_reason": "MiMo-V3 adopting a new sparse-attention architecture (lower prefill FLOPs, smaller KV cache, better long-context) is a genuinely novel pattern beyond state-of-ai's MiMo-V2.6-Pro row, but there are no benchmark numbers yet.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 7.0993
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T10:52:40Z",
+      "last_seen_at": "2026-09-26T10:52:40Z"
+    },
+    {
+      "id": "ef92f87a19b19cb49e9940d9028ab900bc80ffa4",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Managed Deep Agents v0.8: new auth, memory, and channels (12 minute read)",
+      "canonical_url": "https://langchain.com/blog/langsmith-managed-deep-agents-whats-new",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📧 **[Managed Deep Agents v0.8: new auth, memory, and channels (12 minute read)](https://www.langchain.com/blog/langsmith-managed-deep-agents-whats-new?utm_source=tldrai)** — _TLDR · Sep 25_. — Managed Deep Agents 0.8 adds user-owned credentials and user-level memory, HTTP channels for any service that can send a JSON webhook, file transfer in Slack, and a built-in web search tool powered by Parallel that is free while the runtime is in beta.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8571,
+        "uniqueness": 0.8,
+        "uniqueness_sim_published": 0.2,
+        "uniqueness_sim_state": 0.1429,
+        "topic_match": 0.8,
+        "creator_weight": -0.1,
+        "taste_score": 0.55,
+        "taste_raw": 0.55,
+        "taste_reason": "Concrete versioned release of LangChain's hosted agent runtime with new auth/memory/channels; relevant to agent builders but thin on specifics.",
+        "topic_importance": 0.5,
+        "topic_importance_raw": 5,
+        "total": 6.925
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T08:34:04Z",
+      "last_seen_at": "2026-09-26T10:52:40Z"
+    },
+    {
+      "id": "7c8037fb58ba9baaa2a9c4e468fb4a11090ed875",
+      "section": "newsletters",
+      "source": "email",
+      "title": "(Activity: 1306): The post argues that Jev/System One Models appear to expose standard constrained-choice…",
+      "canonical_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/417e1c15b3d49852fceded8aa104107d-Abstract-Conference.html",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[(Activity: 1306): The post argues that Jev/System One Models appear to expose standard constrained-choice…](https://proceedings.iclr.cc/paper_files/paper/2026/hash/417e1c15b3d49852fceded8aa104107d-Abstract-Conference.html?utm_source=substack&utm_medium=email)** — _AINews · Sep 25_. — A post argues Jev/System One Models are just constrained-choice classifiers — probability over fixed labels and schema-valid outputs rather than a new model class — and points to the ICLR BTZSC benchmark, which compares NLI cross-encoders, embedding models, rerankers and instruction-tuned LLMs across 22 datasets, as the right baseline.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9024,
+        "uniqueness": 0.875,
+        "uniqueness_sim_published": 0.125,
+        "uniqueness_sim_state": 0.0976,
+        "topic_match": 0.5,
+        "creator_weight": 0.2,
+        "taste_score": 0.45,
+        "taste_raw": 0.45,
+        "taste_reason": "Contrarian research claim that Jev/System One Models are just constrained-choice classifiers, but no concrete numbers or experiments shown — an abstract-level argument that most readers would skim.",
+        "topic_importance": 0.4,
+        "topic_importance_raw": 4,
+        "total": 6.7125
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T10:52:40Z",
+      "last_seen_at": "2026-09-26T10:52:40Z"
+    },
+    {
+      "id": "d9689e68db0f4989dcf353a89ae3a051df4b0a67",
+      "section": "newsletters",
+      "source": "email",
+      "title": "Reducing overthinking",
+      "canonical_url": "https://reddit.com/comments/1wopeqg",
+      "tags": [
+        "origin:email",
+        "section:newsletters",
+        "topic:research"
+      ],
+      "bullet_md": "- 📧 **[Reducing overthinking](https://www.reddit.com/r/LocalLLaMA/comments/1wopeqg/mimo_26_pro_reducing_overthinking_and/?utm_source=substack&utm_medium=email)** — _AINews · Sep 25_. — Discussion of MiMo 2.6 Pro overthinking notes the sparse-attention architecture was tested on an 80B model while users hope smaller local-friendly sizes arrive, and links a system-prompt mitigation.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8571,
+        "uniqueness": 0.8571,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.1429,
+        "topic_match": 0.5,
+        "creator_weight": 0.2,
+        "taste_score": 0.4,
+        "taste_raw": 0.4,
+        "taste_reason": "Reddit discussion of MiMo 2.6 Pro overthinking with a system-prompt mitigation link is vague and anecdotal — no hard numbers, more speculation than signal.",
+        "topic_importance": 0.4,
+        "topic_importance_raw": 4,
+        "total": 6.6285
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-09-26T10:52:40Z",
+      "last_seen_at": "2026-09-26T10:52:40Z"
     },
     {
       "id": "e95bcd1f69f4ef918119fefe2811d022b2402e35",
@@ -1477,12 +1905,12 @@
       "score_components": {
         "cross_source_count": 1,
         "cross_score": 1,
-        "recency_decay": 0.3543,
+        "recency_decay": 0.5543,
         "origin_weight": 1.5,
         "has_concrete_fact": 1.0,
         "novelty_score": 0.8387,
         "uniqueness": 0.8387,
-        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_published": 0.1429,
         "uniqueness_sim_state": 0.1613,
         "topic_match": 0.5,
         "creator_weight": 0.2,
@@ -1491,206 +1919,11 @@
         "taste_reason": "Rubric-based webdev agent env with grader client is concrete, but this is the third near-identical MiMo-OSS recipe of the day and the thinnest of the three.",
         "topic_importance": 0.6,
         "topic_importance_raw": 6,
-        "total": 6.3986
+        "total": 6.5987
       },
       "flags": {
         "enriched": true,
         "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-09-23T02:18:58Z",
-      "last_seen_at": "2026-09-24T02:06:54Z"
-    },
-    {
-      "id": "76132399e786f62695fa0e7a3b212bcc082f8dd9",
-      "section": "newsletters",
-      "source": "email",
-      "title": "OpenAI Astra for Law, tuning GPT-6 Astra for legal work with U.S. case-law search and 26 plugins, with AI legal giants…",
-      "canonical_url": "https://openai.com/index/astra-for-law?_bhlid=fab45cc7a905e5ad1f8fd3a1cd8de2608fd51b5d",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:openai",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[OpenAI Astra for Law, tuning GPT-6 Astra for legal work with U.S. case-law search and 26 plugins, with AI legal giants…](https://openai.com/index/astra-for-law/?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-0921&_bhlid=fab45cc7a905e5ad1f8fd3a1cd8de2608fd51b5d)** — _The Rundown AI · Sep 21_. — OpenAI configured GPT-6 Astra for legal research with a dedicated U.S. case-law index spanning more than 230 million URLs, reporting 54.0% correct on Vals AI's Legal Research Bench (200 U.S. questions) versus 38.7% for web-search-only Astra; Harvey and Legora get API access, and 26 partner-built plugins shipped alongside it.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.1841,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.766,
-        "uniqueness": 0.766,
-        "uniqueness_sim_published": 0.1,
-        "uniqueness_sim_state": 0.234,
-        "topic_match": 0.5,
-        "taste_score": 0.75,
-        "taste_raw": 0.75,
-        "taste_reason": "Concrete benchmark (54.0% vs 38.7% on Vals AI Legal Research Bench) and a 230M-URL case-law index — a real domain-specialized Astra variant from OpenAI, though legal is off the daily coding beat.",
-        "topic_importance": 0.7,
-        "topic_importance_raw": 7,
-        "total": 6.3921
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": true
-      },
-      "first_seen_at": "2026-09-23T02:18:58Z",
-      "last_seen_at": "2026-09-23T02:18:58Z"
-    },
-    {
-      "id": "b09e2b1b70b4ca7448d436550de400f0c15c6bfa",
-      "section": "newsletters",
-      "source": "email",
-      "title": "How Concurrence governs clinical AI at a trillion-token scale with Unity Gateway (7 minute read)",
-      "canonical_url": "https://databricks.com/blog/how-concurrence-governs-clinical-ai-trillion-token-scale-unity-gateway",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:dev-tools"
-      ],
-      "bullet_md": "- 📧 **[How Concurrence governs clinical AI at a trillion-token scale with Unity Gateway (7 minute read)](https://www.databricks.com/blog/how-concurrence-governs-clinical-ai-trillion-token-scale-unity-gateway?utm_source=tldrdata)** — _TLDR · Sep 24_. — Concurrence routes clinical and developer AI through Databricks Unity Gateway, processing about 100.8 billion input tokens and 11.2 million LLM calls per 30 days — a roughly 1.2 trillion annualized input-token rate, up about 5x from its late-2025 baseline to July 2026. In July its coding agents logged 35.85 billion input tokens (95.37% cache reads) across 14 users.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.7867,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 1.0,
-        "uniqueness": 0.8462,
-        "uniqueness_sim_published": 0.1538,
-        "uniqueness_sim_state": 0.0,
-        "topic_match": 0.8,
-        "creator_weight": -0.1,
-        "taste_score": 0.3,
-        "taste_raw": 0.3,
-        "taste_reason": "Databricks vendor blog with 'trillion-token scale' framing but no concrete numbers or reproducible detail — reads as marketing.",
-        "topic_importance": 0.4,
-        "topic_importance_raw": 4,
-        "total": 6.2598
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-09-26T08:34:04Z",
-      "last_seen_at": "2026-09-26T08:34:04Z"
-    },
-    {
-      "id": "d36b5bfc9a9c12e9df8df0cf7e2f5358c1a8e9c9",
-      "section": "newsletters",
-      "source": "email",
-      "title": "[AINews] Xiaomi MiMo-V2.6-Pro 1T-A42B: the new top Open Weights model, trained for $3M",
-      "canonical_url": "https://latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b?publication_id=1084089&post_id=216854596&isFreemail=true&token=eyJ1c2VyX2lkIjo1MTUzNDExNzYsInBvc3RfaWQiOjIxNjg1NDU5NiwiaWF0IjoxNzkwMDU5MDEwLCJleHAiOjE3OTI2NTEwMTAsImlzcyI6InB1Yi0xMDg0MDg5Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.PMOsEcDxBRJ0qK0WK9opGxLBCaayCnmhXZbOZ6-D4iY&r=8itjso&triedRedirect=true",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[[AINews] Xiaomi MiMo-V2.6-Pro 1T-A42B: the new top Open Weights model, trained for $3M](https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b?utm_source=post-email-title&publication_id=1084089&post_id=216854596&utm_campaign=email-post-title&isFreemail=true&token=eyJ1c2VyX2lkIjo1MTUzNDExNzYsInBvc3RfaWQiOjIxNjg1NDU5NiwiaWF0IjoxNzkwMDU5MDEwLCJleHAiOjE3OTI2NTEwMTAsImlzcyI6InB1Yi0xMDg0MDg5Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.PMOsEcDxBRJ0qK0WK9opGxLBCaayCnmhXZbOZ6-D4iY&r=8itjso&triedRedirect=true&utm_medium=email)** — _AINews · Sep 22_. — Xiaomi's MiMo-V2.6-Pro, a 1.02T-parameter sparse mixture-of-experts with 42B active parameters, debuted as the top-scoring open-weights model on Artificial Analysis' Intelligence Index at 46 under an MIT license, with the six-day, 30-step reinforcement-learning run behind it reported at about $2.62 million.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.3543,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.8276,
-        "uniqueness": 0.625,
-        "uniqueness_sim_published": 0.375,
-        "uniqueness_sim_state": 0.1724,
-        "topic_match": 0.5,
-        "creator_weight": 0.2,
-        "taste_score": 0.44,
-        "taste_raw": 0.44,
-        "taste_reason": "Recaps state-of-ai's MiMo-V2.6-Pro open-weights lead (already 1.02T MoE, tops AA at 46, ~$2.6M RL); the '$3M' figure is the only marginal new detail.",
-        "topic_importance": 0.7,
-        "topic_importance_raw": 7,
-        "total": 6.2268
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-09-24T02:06:54Z",
-      "last_seen_at": "2026-09-24T02:06:54Z"
-    },
-    {
-      "id": "8a4fde4bbaea501c8f5f4bd4425885a7f305497b",
-      "section": "newsletters",
-      "source": "email",
-      "title": "Set up the provider",
-      "canonical_url": "https://clickhouse.com/docs/integrations/connectors/data-ingestion/etl-tools/airflow-and-clickhouse",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:dev-tools"
-      ],
-      "bullet_md": "- 📧 **[Set up the provider](https://clickhouse.com/docs/integrations/connectors/data-ingestion/etl-tools/airflow-and-clickhouse?utm_source=tldr&utm_medium=paid-newsletter&utm_id=tldr3)** — _TLDR · Sep 24_. — ClickHouse's official Airflow provider, apache-airflow-providers-clickhousedb, connects DAGs to ClickHouse over HTTP(S) via clickhouse-connect and runs DDL, DML and analytical queries through the standard SQLExecuteQueryOperator, with a clickhouse connection type and a ClickHouseHook for bulk inserts.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.7867,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.913,
-        "uniqueness": 0.913,
-        "uniqueness_sim_published": 0.0,
-        "uniqueness_sim_state": 0.087,
-        "topic_match": 0.8,
-        "creator_weight": -0.1,
-        "taste_score": 0.25,
-        "taste_raw": 0.25,
-        "taste_reason": "A paid-newsletter vendor doc on wiring an Airflow provider — setup boilerplate with no AI signal or novel finding.",
-        "topic_importance": 0.3,
-        "topic_importance_raw": 3,
-        "total": 6.1182
-      },
-      "flags": {
-        "enriched": true,
-        "researched": true,
-        "published_today": false
-      },
-      "first_seen_at": "2026-09-26T08:34:04Z",
-      "last_seen_at": "2026-09-26T08:34:04Z"
-    },
-    {
-      "id": "c20fb8b94f2cbb285fd141307c585d5695d055f7",
-      "section": "newsletters",
-      "source": "email",
-      "title": "As they note in their , they scaled RL compute along three axes:",
-      "canonical_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf",
-      "tags": [
-        "origin:email",
-        "section:newsletters",
-        "topic:research"
-      ],
-      "bullet_md": "- 📧 **[As they note in their , they scaled RL compute along three axes:](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf?utm_source=substack&utm_medium=email)** — _AINews · Sep 22_.",
-      "score_components": {
-        "cross_source_count": 1,
-        "cross_score": 1,
-        "recency_decay": 0.3543,
-        "origin_weight": 1.5,
-        "has_concrete_fact": 1.0,
-        "novelty_score": 0.95,
-        "uniqueness": 0.9231,
-        "uniqueness_sim_published": 0.0769,
-        "uniqueness_sim_state": 0.05,
-        "topic_match": 0.5,
-        "creator_weight": 0.2,
-        "taste_score": 0.3,
-        "taste_raw": 0.3,
-        "taste_reason": "Truncated, broken link-text title with no prose body, so there's no actual claim to read despite the RL-compute subject.",
-        "topic_importance": 0.5,
-        "topic_importance_raw": 5,
-        "total": 5.9658
-      },
-      "flags": {
-        "enriched": true,
-        "researched": false,
         "published_today": false
       },
       "first_seen_at": "2026-09-23T02:18:58Z",
