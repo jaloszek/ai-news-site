@@ -50,7 +50,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>✨ GPT-6 Sol</li><li>🛠 Claude Code v2.1.281</li><li>✨ Qwen4-27B</li><li>✨ MiMo-V2.6</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>✨ Gemini 3.8 Flash</li><li>✨ MiMo V2.6 Pro &amp; Flash</li><li>✨ Swift1.5 27B</li><li>🛠 Claude Code v2.1.282</li><li>🛠 Nvidia SoL-Pi harness</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-26.html"><div class="cal-num">26</div><ul class="cal-highlights"><li>🛠 Copilot Autopilot agent</li><li>✨ Qwen Image 2.1</li><li>🤖 OpenAI Astra for Law</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🚀 Claude Marketplace</li><li>🛠 GGUFs in Transformers</li><li>💰 Anthropic $11.6B Akamai deal</li><li>✨ LFM2.5-VL-DSpark</li><li>🔒 OpenAI pauses top models</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">29</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
