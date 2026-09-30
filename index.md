@@ -53,7 +53,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-09-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🚀 Claude Marketplace</li><li>🛠 GGUFs in Transformers</li><li>💰 Anthropic $11.6B Akamai deal</li><li>✨ LFM2.5-VL-DSpark</li><li>🔒 OpenAI pauses top models</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-28.html"><div class="cal-num">28</div><ul class="cal-highlights"><li>🔒 Rogue-agent security probes</li><li>🤖 Agents in model development</li><li>✨ Opus 5.5 visual design</li><li>🛠 Qwen Code Desktop v0.24.6</li><li>💰 Anthropic embedded evaluators</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-09-29.html"><div class="cal-num">29</div><ul class="cal-highlights"><li>✨ Sonnet 5.5</li><li>🛠 Codex 0.158.0</li><li>✨ NVIDIA Nemotron-3 550B</li><li>🤖 Holo4 computer-use agent</li><li>🛠 Copilot CLI .claude/rules</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-09-30.html"><div class="cal-num">30</div><ul class="cal-highlights"><li>✨ GPT-6.1 Sol</li><li>🚀 OpenAI DevDay 2026</li><li>🛠 Claude Code v2.1.285</li><li>🛠 Codex 0.159.1</li></ul></a>
   </div>
 </section>
 
