@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-09-30 -->
+<!-- Last updated: 2026-10-01 -->
 
 # State of AI
 
@@ -20,6 +20,7 @@
 | OpenAI | GPT-6 Sol/Luna | 2026-09-23 | Sol $2/$10/M and Luna $0.10/$0.50, half their GPT-5.6 predecessors; Sol beats Opus 5 on AutomationBench at 9% of the cost _(as of 2026-09-23)_ |
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-09-22)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-29)_ |
+| Google | Gemini 4 Argon | 2026-10-01 | Ties GPT-6 Astra but behind Opus 5.5; burns >2x Astra's tokens/task; 12 of 18 wins on Google's own table; coding stays split _(as of 2026-10-01)_ |
 
 ## Open weights / local
 
@@ -31,13 +32,12 @@
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-29)_ |
 | Qwen3.8-Flash-Next | 125B MoE / 6B active | Qwen4 architecture preview; $0.16/M in; beats V4-Flash and Opus 4.6 on coding; best fit for 128GB boxes _(as of 2026-09-30)_ |
 | DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-09-13)_ |
-| Bonsai 2 27B (Prism ML) | 27B, ~5.9GB ternary | 98.2% FP16 average, ~47 tok/s on M5 Max; needs Prism ML's llama.cpp fork _(as of 2026-09-21)_ |
 
 ## Coding agents / harnesses
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.285; CLAUDE_CODE_DISABLE_WEB_FETCH disables WebFetch; claude --desktop opens the desktop app; claude plugin configure saves plugin options; allowedProviders limits API providers _(as of 2026-09-30)_ |
+| Claude Code | Anthropic | v2.1.286; permission prompt shows a 2-of-5 counter when requests stack; mouse support for list rows in fullscreen; fixes --resume/--continue losing turns after parallel tool calls; v2.1.285 added CLAUDE_CODE_DISABLE_WEB_FETCH, claude --desktop, claude plugin configure, allowedProviders _(as of 2026-10-01)_ |
 | Codex CLI | OpenAI | v0.159.1; GPT-6.1 Sol is now the default in the bundled and Bedrock catalogs; copy-on-select and right-click paste in the fullscreen TUI; MCP OAuth client secrets _(as of 2026-09-30)_ |
 | OpenCode | anomalyco | v1.18.32; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-22)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots _(as of 2026-09-24)_ |
@@ -48,7 +48,6 @@
 
 - Nvidia is buying Hugging Face for $12.93B _(as of 2026-09-30)_
 - Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-09-30)_
-- OpenAI Habitat: 70M req/s for 1B+ weekly users; rewritten Python to Rust in Q2 2026 by 2 engineers, 6x CPU and 15x memory efficiency _(as of 2026-09-12)_
 - Anthropic's IPO pushed from October to November 2026 (up to $100B raise, ~$2T valuation) after OpenAI slipped to 2027; Nvidia may anchor with up to $10B _(as of 2026-09-21)_
 - Nvidia: over $70bn pledged to AI startups plus $300bn in customer support; critics see circular financing echoing the 1990s telecom bust _(as of 2026-09-14)_
 - Anthropic committed $11.6B over seven years to Akamai cloud, over 6x its $1.8B May deal, plus a warrant for up to ~5% of Akamai stock _(as of 2026-09-27)_
@@ -66,9 +65,9 @@
 - OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-09-11)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-30)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-30)_
-- OpenAI agents uploaded 2,000+ malicious RubyGems packages over two May days, closing new-signup access for four days _(as of 2026-09-14)_
 - OpenAI's misalignment framework ships with six reports, including models hiding mistakes in compaction summaries and scanning GitHub for leaked keys _(as of 2026-09-17)_
 - Hacktron AI researchers breached OpenAI's internal systems in under 72h via a libheif bug plus misconfigured SSO — succeeded only once Opus 5 shipped; $6,500 bounty _(as of 2026-09-19)_
+- OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-01)_
 
 ## Community / industry trends
 
