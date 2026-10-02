@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-01 -->
+<!-- Last updated: 2026-10-02 -->
 
 # State of AI
 
@@ -16,7 +16,7 @@
 | Anthropic | Claude Fable 5.1 | 2026-09-01 | $10/$50/M; cache reads $0.25/M; AA 53, behind Opus 5.5's 58; ran Claude Science's nine-loop N=4 SYM amplitude _(as of 2026-09-29)_ |
 | Anthropic | Claude Opus 5.5 | 2026-09-23 | Matches Fable 5.1, ~40% cheaper than Opus 5 at $4/$20/M; tops the AA index at 58; Sonnet 5.5 shipped 09-29 at $2/$10/M, Terminal-Bench 4.0 70.6 _(as of 2026-09-29)_ |
 | Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-09-29)_ |
-| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-09-10)_ |
+| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-02)_ |
 | OpenAI | GPT-6 Sol/Luna | 2026-09-23 | Sol $2/$10/M and Luna $0.10/$0.50, half their GPT-5.6 predecessors; Sol beats Opus 5 on AutomationBench at 9% of the cost _(as of 2026-09-23)_ |
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-09-22)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-29)_ |
@@ -37,11 +37,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.286; permission prompt shows a 2-of-5 counter when requests stack; mouse support for list rows in fullscreen; fixes --resume/--continue losing turns after parallel tool calls; v2.1.285 added CLAUDE_CODE_DISABLE_WEB_FETCH, claude --desktop, claude plugin configure, allowedProviders _(as of 2026-10-01)_ |
+| Claude Code | Anthropic | v2.1.287 adds Claude Mods for deeper plugin behavior and a built-in "You should know" side-agent mod; permission prompt 2-of-5 counter; v2.1.285 added CLAUDE_CODE_DISABLE_WEB_FETCH and claude --desktop; fixes --resume/--continue losing turns _(as of 2026-10-02)_ |
 | Codex CLI | OpenAI | v0.159.1; GPT-6.1 Sol is now the default in the bundled and Bedrock catalogs; copy-on-select and right-click paste in the fullscreen TUI; MCP OAuth client secrets _(as of 2026-09-30)_ |
 | OpenCode | anomalyco | v1.18.32; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-22)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots _(as of 2026-09-24)_ |
-| Also current | various | Cline 4.1.21, Qwen Code 0.24.6, OpenHands 1.22.0, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.3, Hermes 0.19 _(as of 2026-09-27)_ |
+| Also current | various | Cline 4.1.21, Qwen Code 0.24.6, OpenHands 1.22.0, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-02)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
 
 ## Infrastructure / inference
