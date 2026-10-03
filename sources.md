@@ -37,6 +37,8 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Amp news | <https://ampcode.com/news.rss> | dev-tools | Amp (Sourcegraph) — agentic coding tool from the Sourcegraph team; news feed carries release notes + engineering posts. Verified fresh 2026-07-30. |
 | Zed blog | <https://zed.dev/blog.rss> | dev-tools | Zed — high-performance editor with native agentic editing; blog covers agent features + editor AI. Low cadence. Verified 2026-07-30. |
 | JetBrains AI blog | <https://blog.jetbrains.com/ai/feed/> | dev-tools | JetBrains AI blog — Junie agent + AI Assistant updates for the IDE ecosystem half of the audience. Verified fresh 2026-07-30. |
+| Pi releases | <https://github.com/badlogic/pi-mono/releases.atom> | agents | Pi (badlogic/pi-mono) — minimal open-source terminal coding harness, 50k+ stars; active releases.atom, verified fresh 2026-10-03. |
+| Symphony releases | <https://github.com/openai/symphony/releases.atom> | agents | Symphony (OpenAI) — Elixir reference implementation of harness engineering / ticket-to-PR orchestration; sparse releases, on-beat. Verified 2026-10-03. |
 
 ### AI World
 
@@ -53,6 +55,10 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Ollama blog | <https://ollama.com/blog/rss.xml> | opensource | Ollama — local-model launch news; Ollama already appears in the Reddit list & tagger keywords but had no feed until now. Verified fresh 2026-07-12. |
 | Mistral news | <https://mistral.ai/rss.xml> | opensource | Mistral news — round-2 correction: an earlier pass (2026-06) tested `mistral.ai/news/rss.xml` (404) and concluded no RSS existed; `/rss.xml` (no `/news/` prefix) works. Verified fresh 2026-07-12. |
 | The Verge AI | <https://www.theverge.com/rss/ai-artificial-intelligence/index.xml> | industry | The Verge AI section — consumer/industry AI coverage with strong original reporting; daily cadence. Verified fresh 2026-07-30. |
+| Ai2 blog | <https://allenai.org/rss.xml> | opensource | Ai2 (Olmo, open model stack) — the main fully-open-weights lab; ~2 posts/week. Verified fresh 2026-10-03. |
+| vLLM releases | <https://github.com/vllm-project/vllm/releases.atom> | opensource | vLLM releases — the reference open inference engine; point releases carry new-model support lists. Verified fresh 2026-10-03. |
+| METR | <https://metr.org/feed.xml> | research | METR — pre-deployment frontier-model evals and agent-incident reports; the translated zh/es duplicates are dropped by the scanner's locale-path filter. Verified fresh 2026-10-03. |
+| Help Net Security AI | <https://www.helpnetsecurity.com/tag/artificial-intelligence/feed/> | industry | Help Net Security AI tag — AI security news (prompt injection, agent incidents, model abuse) from a security desk, not the AI press. Verified fresh 2026-10-03. |
 
 ### Community — Tier S (top long-form authors)
 
@@ -69,6 +75,16 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Understanding AI | <https://www.understandingai.org/feed> | research | Timothy B. Lee — careful, technically-literate AI reporting/analysis (agents, robotics, economics). Verified fresh 2026-07-30. |
 | AI Snake Oil | <https://www.aisnakeoil.com/feed> | research | Narayanan & Kapoor (Princeton) — evidence-first skeptical analysis; counterweight to launch-hype sources. Verified fresh 2026-07-30. |
 | Gary Marcus | <https://garymarcus.substack.com/feed> | research | Gary Marcus — the loyal-opposition voice on frontier-AI claims; posts near-daily. Verified fresh 2026-07-30. |
+| Simon Willison | <https://simonwillison.net/atom/entries/> | dev-tools | Simon Willison, entries-only Atom feed — drops the quote/link-blog posts that flooded Community when the everything feed was removed 2026-05-16; the per-domain cap (1/day in community) bounds the rest. Verified fresh 2026-10-03. |
+| Epoch AI | <https://epochai.substack.com/feed> | research | Epoch AI — compute/economics data and Gradient Updates essays; replaces the dead email source. Verified fresh 2026-10-03. |
+| Transformer News | <https://www.transformernews.ai/feed> | industry | Transformer (Shakeel Hashim) — AI policy and safety news, weekly plus analysis. Verified fresh 2026-10-03. |
+| PyTorch blog | <https://pytorch.org/blog/feed.xml> | research | PyTorch blog — kernels, vLLM/Helion integration, framework releases; ~2 posts/week. Verified fresh 2026-10-03. |
+| ThursdAI | <https://sub.thursdai.news/feed> | research | ThursdAI — weekly open-source/frontier AI news roundup (the existing creator weight had no feed; it arrived by email only). Verified fresh 2026-10-03. |
+| Geoffrey Huntley | <https://ghuntley.com/rss/> | agents | Geoffrey Huntley — originator of the Ralph loop; practitioner posts on agentic software factories. Verified fresh 2026-10-03. |
+| Addy Osmani | <https://addyosmani.com/feed.xml> | dev-tools | Addy Osmani — agent-orchestration patterns for engineering teams; low cadence (~monthly). Verified 2026-10-03. |
+| Martin Fowler | <https://martinfowler.com/feed.atom> | dev-tools | Martin Fowler — measured SDLC / spec-driven-development commentary; a few posts a week, most off-topic items fall to the AI-relevance of the taste score. Verified fresh 2026-10-03. |
+| Tessl blog | <https://tessl.io/blog/rss.xml> | dev-tools | Tessl blog — spec-driven development and dark-factory pattern write-ups. Verified 2026-10-03. |
+| Vanishing Gradients (Hugo Bowne-Anderson) | <https://hugobowne.substack.com/feed> | agents | Hugo Bowne-Anderson (Vanishing Gradients) — agentic software-factory write-ups; ~weekly. Verified fresh 2026-10-03. |
 
 ### Community — Tier A (high-quality regulars)
 
@@ -84,7 +100,7 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 
 | Source | URL | Topic | Why |
 |---|---|---|---|
-| arXiv cs.CL | <https://rss.arxiv.org/rss/cs.CL> | research | arXiv Computation & Language new-submissions feed — rankable primary abstracts (NLP/LLM), replaces low-signal research paraphrases. Official rss.arxiv.org endpoint. |
+| HF Daily Papers | <https://huggingface.co/api/daily_papers?limit=30> | research | Hugging Face Daily Papers — JSON API (the /papers/rss path is auth-gated). The scanner keeps the top 5/day by upvotes (>= 20), upvotes stored in raw_json. Verified 2026-10-03. |
 | Hacker News (ai/llm/claude) | <https://hnrss.org/frontpage?q=ai+OR+llm+OR+claude> | dev-tools | Hacker News front-page items matching ai / llm / claude — cross-source-consensus signal that also feeds cross_source_count. |
 
 ## YouTube channels
@@ -128,7 +144,6 @@ the YouTube Data API; the picker emits exactly 3 videos/day from this pool.
 | Channel |
 |---|
 | AI Jason |
-| WorldofAI |
 | Tech With Tim |
 | Two Minute Papers |
 | sentdex |
@@ -197,16 +212,22 @@ scored by upvotes + comments + recency.
 | r/AI_Agents | `claude_coding` |
 | r/LangChain | `claude_coding` |
 | r/mcp | `claude_coding` |
-| r/ChatGPTCoding | `claude_coding` |
-| r/cursor | `claude_coding` |
-| r/OpenWebUI | `claude_coding` |
 
-### AI World — general AI news, hottest topics, broad discourse
+### r/ChatGPTCoding claude_coding
 
 | Subreddit | Bucket |
 |---|---|
-| r/ChatGPT | `ai_world` |
+| r/cursor | `claude_coding` |
+| r/OpenWebUI | `claude_coding` |
+
+### r/ChatGPT           ai_world
+
+| Subreddit | Bucket |
+|---|---|
 | r/OpenAI | `ai_world` |
-| r/MachineLearning | `ai_world` |
+
+### r/MachineLearning   ai_world
+
+| Subreddit | Bucket |
+|---|---|
 | r/singularity | `ai_world` |
-| r/Artificial | `ai_world` |

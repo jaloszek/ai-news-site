@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-10-03 17:24 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-10-03 20:43 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (in retention window):** 8721
-- **Enriched:** 589 (6%)
-- **Taste-rated:** 589 (6%)
-- **Researched:** 433 (4%)
-- **Status (candidate / rejected / published / duplicate):** 4706 / 4015 / 0 / 0
-- **Published bullets (all-time):** 3180 (last 7d: 189)
+- **Discovery items (in retention window):** 8771
+- **Enriched:** 638 (7%)
+- **Taste-rated:** 638 (7%)
+- **Researched:** 449 (5%)
+- **Status (candidate / rejected / published / duplicate):** 4756 / 4015 / 0 / 0
+- **Published bullets (all-time):** 3181 (last 7d: 190)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,7 +22,7 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-10-03 | 1002 | 81 (8%) | 81 (8%) | 50 (4%) |
+| 2026-10-03 | 1052 | 130 (12%) | 130 (12%) | 66 (6%) |
 | 2026-10-02 | 881 | 34 (3%) | 34 (3%) | 24 (2%) |
 | 2026-10-01 | 1023 | 35 (3%) | 35 (3%) | 26 (2%) |
 | 2026-09-30 | 1800 | 44 (2%) | 44 (2%) | 38 (2%) |
@@ -37,7 +37,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Coding Agents | AI World | YouTube | Reddit | Community | Newsletters | Total |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 2026-10-03 | 3 | 5 | 3 | 5 | 4 | 3 | 23 |
+| 2026-10-03 | 3 | 5 | 3 | 5 | 5 | 3 | 24 |
 | 2026-10-02 | 3 | 5 | 3 | 3 | 5 | 3 | 22 |
 | 2026-10-01 | 3 | 5 | 3 | 5 | 5 | 3 | 24 |
 | 2026-09-30 | 3 | 5 | 3 | 5 | 5 | 3 | 24 |
@@ -57,13 +57,13 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 | arXiv cs.CL | `rss` | 3582 |
 | TLDR | `email` | 2705 |
 | The Rundown AI | `email` | 497 |
-| TechCrunch AI | `rss` | 295 |
-| The Decoder | `rss` | 221 |
-| Codex releases | `rss` | 159 |
+| TechCrunch AI | `rss` | 296 |
+| The Decoder | `rss` | 222 |
+| Codex releases | `rss` | 160 |
 | The Verge AI | `rss` | 153 |
 | AINews | `email` | 136 |
 | AlphaSignal | `email` | 125 |
-| r/LocalLLaMA | `reddit` | 92 |
+| r/LocalLLaMA | `reddit` | 93 |
 | Ars Technica AI | `rss` | 78 |
 | Qwen Code releases | `rss` | 74 |
 | AI Hero (Matt Pocock) | `rss` | 73 |
