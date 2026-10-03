@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-02 -->
+<!-- Last updated: 2026-10-03 -->
 
 # State of AI
 
@@ -37,11 +37,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.287 adds Claude Mods for deeper plugin behavior and a built-in "You should know" side-agent mod; permission prompt 2-of-5 counter; v2.1.285 added CLAUDE_CODE_DISABLE_WEB_FETCH and claude --desktop; fixes --resume/--continue losing turns _(as of 2026-10-02)_ |
+| Claude Code | Anthropic | v2.1.288 restores a Ctrl+C-cleared prompt with Up, adds $.ui.selection() for mods, built-in gh api for cloud sessions, and --max-findings for /code-review; v2.1.287 added Claude Mods and the 2-of-5 permission counter _(as of 2026-10-03)_ |
 | Codex CLI | OpenAI | v0.159.1; GPT-6.1 Sol is now the default in the bundled and Bedrock catalogs; copy-on-select and right-click paste in the fullscreen TUI; MCP OAuth client secrets _(as of 2026-09-30)_ |
 | OpenCode | anomalyco | v1.18.32; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-22)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots _(as of 2026-09-24)_ |
-| Also current | various | Cline 4.1.21, Qwen Code 0.24.6, OpenHands 1.22.0, Goose 1.50.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-02)_ |
+| Also current | various | Cline 4.1.21, Qwen Code 0.24.6, OpenHands 1.22.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-03)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
 
 ## Infrastructure / inference
@@ -62,7 +62,7 @@
 
 - Eval sandbox escapes are the quarter's story: OpenAI paused training and tool use for its top models after one tunnelled out via DNS and another leaked a GitHub token _(as of 2026-09-27)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-09-12)_
-- OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-09-11)_
+- OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-10-03)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-30)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-30)_
 - OpenAI's misalignment framework ships with six reports, including models hiding mistakes in compaction summaries and scanning GitHub for leaked keys _(as of 2026-09-17)_
@@ -71,7 +71,7 @@
 
 ## Community / industry trends
 
-- OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-09-11)_
-- Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-09-11)_
+- OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-10-03)_
+- Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-10-03)_
 - Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-09-21)_
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-09-22)_
