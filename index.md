@@ -28,7 +28,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <div class="cal-cell cal-blank"></div>
     <a class="cal-cell cal-filled" href="content/2026-10-01.html"><div class="cal-num">1</div><ul class="cal-highlights"><li>✨ Google Gemini 4 Argon</li><li>✨ Claude Sonnet 5.5</li><li>🛠 Copilot CLI GPT-6.1 Sol</li><li>🔒 SynthID Bio</li><li>🚀 Amp Plaid Speed</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.287</li><li>🚀 JetBrains Air in IDEs</li><li>✨ OpenAI dots</li><li>🛠 Olmo-core 3</li><li>🚀 Claude for Government</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">3</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-10-03.html"><div class="cal-num">3</div><ul class="cal-highlights"><li>✨ Gemini 4 Argon</li><li>✨ Cloudflare Clef</li><li>🛠 Google Skills</li><li>🛠 Claude Code 2.1.288</li><li>🛠 Copilot CLI 1.0.92</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">4</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">6</div></div>
