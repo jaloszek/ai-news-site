@@ -29,15 +29,10 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Cline releases | <https://github.com/cline/cline/releases.atom> | dev-tools | Cline — most-installed open-source VS Code coding agent (direct CC competitor); high cadence, structured per-version releases.atom. |
 | Goose releases | <https://github.com/block/goose/releases.atom> | agents | Goose (Block) — extensible open-source agent under the Linux Foundation Agentic AI Foundation; ~weekly, one clean entry per version. |
 | OpenHands releases | <https://github.com/OpenHands/OpenHands/releases.atom> | agents | OpenHands (formerly OpenDevin) — open-source autonomous SWE-agent platform; frequent structured releases. |
-| Kilo Code releases | <https://github.com/Kilo-Org/kilocode/releases.atom> | dev-tools | Kilo Code — fast-growing open-source VS Code/JetBrains agent (Roo/Cline lineage); active multi-version cadence. |
-| Aider blog | <https://aider.chat/feed.xml> | dev-tools | Coding-agent changelog — benchmark posts + release notes from a direct Claude Code competitor. Canonical feed is /feed.xml (the doc's /blog/feed.xml 404s). |
-| Continue.dev blog | <https://blog.continue.dev/feed.xml> | dev-tools | Open-source AI coding assistant — release notes + agent-workflow posts. Canonical feed is /feed.xml (the doc's /rss/ 404s). |
 | GitHub AI blog | <https://github.blog/ai-and-ml/feed/> | dev-tools | Copilot updates + GitHub AI/agent features — squarely on the coding-agent beat. |
 | Cursor changelog | <https://www.cursor.com/changelog/rss.xml> | dev-tools | Cursor changelog — top coding-agent competitor, previously only reachable via r/cursor. Verified fresh 2026-07-12 (redirects www.cursor.com -> cursor.com, resolves to valid RSS). |
 | Gemini CLI releases | <https://github.com/google-gemini/gemini-cli/releases.atom> | dev-tools | Gemini CLI releases — Google's terminal coding agent, one entry per version. Verified fresh 2026-07-12. |
 | Qwen Code releases | <https://github.com/QwenLM/qwen-code/releases.atom> | dev-tools | Qwen Code releases — Alibaba's open-source coding agent CLI. Verified fresh 2026-07-12. |
-| Crush releases | <https://github.com/charmbracelet/crush/releases.atom> | dev-tools | Crush (charmbracelet) — terminal AI coding agent, structured per-version releases.atom. Verified fresh 2026-07-12. |
-| Roo Code releases | <https://github.com/RooCodeInc/Roo-Code/releases.atom> | dev-tools | Roo Code — popular Cline-lineage VS Code agent (v3.5x line active); one entry per version. Verified 2026-07-30. |
 | Copilot CLI releases | <https://github.com/github/copilot-cli/releases.atom> | dev-tools | GitHub Copilot CLI — GitHub's terminal coding agent, direct CC competitor; active per-version releases.atom. Verified fresh 2026-07-30. |
 | Amp news | <https://ampcode.com/news.rss> | dev-tools | Amp (Sourcegraph) — agentic coding tool from the Sourcegraph team; news feed carries release notes + engineering posts. Verified fresh 2026-07-30. |
 | Zed blog | <https://zed.dev/blog.rss> | dev-tools | Zed — high-performance editor with native agentic editing; blog covers agent features + editor AI. Low cadence. Verified 2026-07-30. |
@@ -58,7 +53,6 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Ollama blog | <https://ollama.com/blog/rss.xml> | opensource | Ollama — local-model launch news; Ollama already appears in the Reddit list & tagger keywords but had no feed until now. Verified fresh 2026-07-12. |
 | Mistral news | <https://mistral.ai/rss.xml> | opensource | Mistral news — round-2 correction: an earlier pass (2026-06) tested `mistral.ai/news/rss.xml` (404) and concluded no RSS existed; `/rss.xml` (no `/news/` prefix) works. Verified fresh 2026-07-12. |
 | The Verge AI | <https://www.theverge.com/rss/ai-artificial-intelligence/index.xml> | industry | The Verge AI section — consumer/industry AI coverage with strong original reporting; daily cadence. Verified fresh 2026-07-30. |
-| Ars Technica AI | <https://arstechnica.com/ai/feed/> | industry | Ars Technica AI section — deeper technical journalism than the general AI press; daily cadence. Verified fresh 2026-07-30. |
 
 ### Community — Tier S (top long-form authors)
 
@@ -75,13 +69,11 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Understanding AI | <https://www.understandingai.org/feed> | research | Timothy B. Lee — careful, technically-literate AI reporting/analysis (agents, robotics, economics). Verified fresh 2026-07-30. |
 | AI Snake Oil | <https://www.aisnakeoil.com/feed> | research | Narayanan & Kapoor (Princeton) — evidence-first skeptical analysis; counterweight to launch-hype sources. Verified fresh 2026-07-30. |
 | Gary Marcus | <https://garymarcus.substack.com/feed> | research | Gary Marcus — the loyal-opposition voice on frontier-AI claims; posts near-daily. Verified fresh 2026-07-30. |
-| The Gradient | <https://thegradient.pub/rss/> | research | The Gradient — long-form ML research essays; low cadence, high quality. Verified 2026-07-30. |
 
 ### Community — Tier A (high-quality regulars)
 
 | Source | URL | Topic | Why |
 |---|---|---|---|
-| Chip Huyen | <https://huyenchip.com/feed.xml> | dev-tools | ML system design, AI engineering economics. |
 | Lilian Weng | <https://lilianweng.github.io/index.xml> | research | Long-form research deep dives. |
 | Andrej Karpathy | <https://karpathy.github.io/feed.xml> | research | Foundational LLM education + research notes. |
 | Pragmatic Engineer | <https://newsletter.pragmaticengineer.com/feed> | dev-tools | Tech-org practices; covers AI tooling adoption. |
@@ -93,7 +85,6 @@ coverage + recency + origin weight (see `scripts/db/pick.py`).
 | Source | URL | Topic | Why |
 |---|---|---|---|
 | arXiv cs.CL | <https://rss.arxiv.org/rss/cs.CL> | research | arXiv Computation & Language new-submissions feed — rankable primary abstracts (NLP/LLM), replaces low-signal research paraphrases. Official rss.arxiv.org endpoint. |
-| arXiv cs.AI | <https://rss.arxiv.org/rss/cs.AI> | research | arXiv Artificial Intelligence new-submissions feed — primary abstracts for agents / RL / reasoning work. |
 | Hacker News (ai/llm/claude) | <https://hnrss.org/frontpage?q=ai+OR+llm+OR+claude> | dev-tools | Hacker News front-page items matching ai / llm / claude — cross-source-consensus signal that also feeds cross_source_count. |
 
 ## YouTube channels
