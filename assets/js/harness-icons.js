@@ -78,7 +78,11 @@
         node = next;
       }
 
-      var items = section.querySelectorAll("ul > li").length;
+      /* nested sub-points (`  - point` under an item) are not items */
+      var items = Array.prototype.filter.call(
+        section.querySelectorAll("ul > li"),
+        function (li) { return !li.parentElement.closest("li"); }
+      ).length;
       if (items === 0) {
         section.classList.add("news-section-empty");
         return;
@@ -167,8 +171,10 @@
     var thumb = li.querySelector(":scope > p");
     if (thumb && !thumb.querySelector("img")) thumb = null;
 
-    /* body = whatever follows the source element (minus the thumbnail) */
+    /* body = whatever follows the source element (minus the thumbnail);
+       a nested <ul> is the item's sub-point list, kept out of the body <p> */
     var bodyNodes = [];
+    var points = null;
     var collecting = false;
     var marker = srcEl || titleWrap;
     kids = Array.prototype.slice.call(li.childNodes); // re-read (duration edit)
@@ -176,6 +182,7 @@
       var k = kids[j];
       if (k === marker) { collecting = true; continue; }
       if (!collecting || k === thumb || k === titleWrap) continue;
+      if (k.nodeType === 1 && k.tagName === "UL") { points = k; continue; }
       bodyNodes.push(k);
     }
 
@@ -217,6 +224,10 @@
     if (media.firstChild && slug === "youtube") li.classList.add("news-item-video");
     li.appendChild(head);
     if (hasBody) li.appendChild(body);
+    if (points) {
+      points.className = "item-points";
+      li.appendChild(points);
+    }
     if (media.firstChild) li.appendChild(media);
     return true;
   }
@@ -228,6 +239,7 @@
         var slug = section.getAttribute("data-section");
         if (slug === "gossip") return; // terse one-liners stay as-is
         Array.prototype.forEach.call(section.querySelectorAll("ul > li"), function (li) {
+          if (li.parentElement.closest("li")) return; // sub-point, not an item
           restructure(li, slug);
         });
       }

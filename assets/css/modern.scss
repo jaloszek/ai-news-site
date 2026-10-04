@@ -242,6 +242,20 @@ li.news-item-video { grid-template-columns: minmax(0, 1fr) 168px; }
   color: var(--text);
   opacity: 0.92;
 }
+/* Sub-points under a lead (`  - point` lines in the daily markdown) */
+.news-section .item-points,
+.news-section li > ul {
+  grid-column: 1;
+  list-style: disc;
+  margin: 0.1rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.92rem;
+  color: var(--text);
+  opacity: 0.92;
+}
+.news-section .item-points li,
+.news-section li > ul li { list-style: disc; padding: 0.1rem 0; border-top: 0; }
+.news-section .item-points li::marker { color: var(--muted); }
 .item-media {
   grid-column: 2;
   grid-row: 1 / span 2;
