@@ -4,15 +4,15 @@
 
 # AI News — Stats
 
-_Generated 2026-10-04 03:40 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-10-04 12:08 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (in retention window):** 8685
-- **Enriched:** 635 (7%)
-- **Taste-rated:** 635 (7%)
-- **Researched:** 450 (5%)
-- **Status (candidate / rejected / published / duplicate):** 2988 / 5697 / 0 / 0
+- **Discovery items (in retention window):** 8716
+- **Enriched:** 666 (7%)
+- **Taste-rated:** 665 (7%)
+- **Researched:** 465 (5%)
+- **Status (candidate / rejected / published / duplicate):** 3019 / 5697 / 0 / 0
 - **Published bullets (all-time):** 3205 (last 7d: 190)
 
 
@@ -22,8 +22,8 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-10-04 | 32 | 8 (25%) | 8 (25%) | 2 (6%) |
-| 2026-10-03 | 1052 | 141 (13%) | 141 (13%) | 82 (7%) |
+| 2026-10-04 | 63 | 27 (42%) | 26 (41%) | 12 (19%) |
+| 2026-10-03 | 1052 | 153 (14%) | 153 (14%) | 87 (8%) |
 | 2026-10-02 | 881 | 34 (3%) | 34 (3%) | 25 (2%) |
 | 2026-10-01 | 1023 | 35 (3%) | 35 (3%) | 26 (2%) |
 | 2026-09-30 | 1800 | 44 (2%) | 44 (2%) | 38 (2%) |
@@ -58,12 +58,12 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 | TLDR | `email` | 2604 |
 | The Rundown AI | `email` | 478 |
 | TechCrunch AI | `rss` | 288 |
-| The Decoder | `rss` | 214 |
-| Codex releases | `rss` | 155 |
+| The Decoder | `rss` | 217 |
+| Codex releases | `rss` | 156 |
 | The Verge AI | `rss` | 147 |
 | AINews | `email` | 133 |
 | AlphaSignal | `email` | 120 |
-| r/LocalLLaMA | `reddit` | 90 |
+| r/LocalLLaMA | `reddit` | 92 |
 | Ars Technica AI | `rss` | 76 |
 | Qwen Code releases | `rss` | 74 |
 | AI Hero (Matt Pocock) | `rss` | 73 |
