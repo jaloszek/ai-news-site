@@ -29,7 +29,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-10-01.html"><div class="cal-num">1</div><ul class="cal-highlights"><li>✨ Google Gemini 4 Argon</li><li>✨ Claude Sonnet 5.5</li><li>🛠 Copilot CLI GPT-6.1 Sol</li><li>🔒 SynthID Bio</li><li>🚀 Amp Plaid Speed</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.287</li><li>🚀 JetBrains Air in IDEs</li><li>✨ OpenAI dots</li><li>🛠 Olmo-core 3</li><li>🚀 Claude for Government</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-03.html"><div class="cal-num">3</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.288</li><li>✨ An OpenAI safety employee has quit and is</li><li>💬 TomasuLLM: Out-of-Order Speculative Execution</li><li>🛠 AI is changing developer work. Here are three</li><li>✨ Cloudflare says its new Clef model means humans</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">4</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-10-04.html"><div class="cal-num">4</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.289</li><li>✨ Apple will limit Mac disk access as AI agents</li><li>💬 AINews Pi 1.0 Pi Durable and AIE NYC</li><li>🛠 Pi v1.0.1</li><li>✨ OpenAI's internal model considered restarting</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">6</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">7</div></div>
