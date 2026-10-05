@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-04 -->
+<!-- Last updated: 2026-10-05 -->
 
 # State of AI
 
@@ -31,7 +31,7 @@
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; same base as 5.2, post-training only; Flash sibling 17x cheaper _(as of 2026-09-29)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-29)_ |
 | Qwen3.8-Flash-Next | 125B MoE / 6B active | Qwen4 architecture preview; $0.16/M in; beats V4-Flash and Opus 4.6 on coding; best fit for 128GB boxes _(as of 2026-09-30)_ |
-| DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-09-13)_ |
+| DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-10-05)_ |
 
 ## Coding agents / harnesses
 
