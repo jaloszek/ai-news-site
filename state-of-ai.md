@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-05 -->
+<!-- Last updated: 2026-10-06 -->
 
 # State of AI
 
@@ -20,13 +20,14 @@
 | OpenAI | GPT-6 Sol/Luna | 2026-09-23 | Sol $2/$10/M and Luna $0.10/$0.50, half their GPT-5.6 predecessors; Sol beats Opus 5 on AutomationBench at 9% of the cost _(as of 2026-09-23)_ |
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-09-22)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-29)_ |
-| Google | Gemini 4 Argon | 2026-10-01 | Ties GPT-6 Astra but behind Opus 5.5; burns >2x Astra's tokens/task; 12 of 18 wins on Google's own table; coding stays split _(as of 2026-10-01)_ |
+| Google | Gemini 4 Argon | 2026-10-01 | Tops 13 of 19 benchmarks; output up from 64K to 1M; $4/$20/M halved intro, Fairwind testers; burns >2x Astra's tokens/task _(as of 2026-10-06)_ |
 
 ## Open weights / local
 
 | Model | Size | Notable |
 |---|---|---|
 | MiMo-V2.6-Pro (Xiaomi) | 1.02T MoE / 42B active | MIT weights; tops the open-model AA index at 46; ~$2.6M RL run livestreamed over six days _(as of 2026-09-23)_ |
+| Kolibri (Aleph Alpha) | 78B MoE / 3B active | Apache 2.0; 1M ctx; German-built under EU AI Act/GDPR; on Hugging Face _(as of 2026-10-06)_ |
 | Kimi K3 (Moonshot) | 2.8T MoE, 16/896 active | Largest open weights ever; 07-27, Modified MIT; 1M ctx; AA 60; Code Arena Frontend 1679 ELO tops Fable 5 _(as of 2026-09-29)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; same base as 5.2, post-training only; Flash sibling 17x cheaper _(as of 2026-09-29)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-29)_ |
@@ -37,11 +38,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.289 closes deny/ask bypasses: Read deny rules now cover @-mentioned/IDE-selected files via symlink, and Bash rules catch env-var-prefixed commands; v2.1.287 added Claude Mods and the 2-of-5 permission counter _(as of 2026-10-04)_ |
+| Claude Code | Anthropic | v2.1.290 fixes image-heavy hangs and filter-stopped turns; attach/logs take partial session names; WebFetch no longer drops text past 100K; sign-in Deny _(as of 2026-10-06)_ |
 | Codex CLI | OpenAI | v0.159.1; GPT-6.1 Sol is now the default in the bundled and Bedrock catalogs; copy-on-select and right-click paste in the fullscreen TUI; MCP OAuth client secrets _(as of 2026-09-30)_ |
 | OpenCode | anomalyco | v1.18.32; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-22)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots _(as of 2026-09-24)_ |
-| Also current | various | Pi 1.0.1, Cline 4.1.21, Qwen Code 0.24.6, OpenHands 1.22.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-04)_ |
+| Also current | various | Pi 1.0.1, Cline 4.1.22, Qwen Code 0.25.0, OpenHands 1.22.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-06)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
 
 ## Infrastructure / inference
@@ -55,7 +56,6 @@
 
 - Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-09-20)_
 - Planner/worker split: Fable-as-manager hits 92-96% of solo quality at 46-63% of cost; Cursor's swarm rebuilt SQLite in Rust the same way _(as of 2026-09-30)_
-- Agent swarms waste tokens: a Codex developer says beyond two parallel sub-agents the extra tokens buy no quality; a 1,393-agent run spent $20,000 refactoring one Python file _(as of 2026-09-19)_
 
 ## Safety / alignment
 
@@ -75,3 +75,4 @@
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-10-03)_
 - Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-09-21)_
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-09-22)_
+- Meta Claude Code users fell from ~60k to 30k; Microsoft cut per-employee Claude budgets from $100k to $10k _(as of 2026-10-06)_
