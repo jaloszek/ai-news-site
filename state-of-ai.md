@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-07 -->
+<!-- Last updated: 2026-10-08 -->
 
 # State of AI
 
@@ -16,6 +16,7 @@
 | Anthropic | Claude Fable 5.1 | 2026-09-01 | $10/$50/M; cache reads $0.25/M; AA 53, behind Opus 5.5's 58; ran Claude Science's nine-loop N=4 SYM amplitude _(as of 2026-09-29)_ |
 | Anthropic | Claude Opus 5.5 | 2026-09-23 | Matches Fable 5.1, ~40% cheaper than Opus 5 at $4/$20/M; tops the AA index at 58; Sonnet 5.5 shipped 09-29 at $2/$10/M, Terminal-Bench 4.0 70.6 _(as of 2026-09-29)_ |
 | Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-09-29)_ |
+| Anthropic | Claude Haiku 5.5 | 2026-10-08 | $0.10/$0.50/M, ~75% under Haiku 4.5, matches GPT-6 Luna; OSWorld 15.7% to 72.4%, Terminal-Bench 4.0 39.2 _(as of 2026-10-08)_ |
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-02)_ |
 | OpenAI | GPT-6 Sol/Luna | 2026-09-23 | Sol $2/$10/M and Luna $0.10/$0.50, half their GPT-5.6 predecessors; Sol beats Opus 5 on AutomationBench at 9% of the cost _(as of 2026-09-23)_ |
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-09-22)_ |
@@ -26,7 +27,6 @@
 
 | Model | Size | Notable |
 |---|---|---|
-| MiMo-V2.6-Pro (Xiaomi) | 1.02T MoE / 42B active | MIT weights; tops the open-model AA index at 46; ~$2.6M RL run livestreamed over six days _(as of 2026-09-23)_ |
 | Kolibri (Aleph Alpha) | 78B MoE / 3B active | Apache 2.0; 1M ctx; German-built under EU AI Act/GDPR; on Hugging Face _(as of 2026-10-06)_ |
 | Kimi K3 (Moonshot) | 2.8T MoE, 16/896 active | Largest open weights ever; 07-27, Modified MIT; 1M ctx; AA 60; Code Arena Frontend 1679 ELO tops Fable 5 _(as of 2026-09-29)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; same base as 5.2, post-training only; Flash sibling 17x cheaper _(as of 2026-09-29)_ |
@@ -38,11 +38,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.292 adds marketplace-source plugin installs, per-agent Agent effort control, and a tunable 529 retry delay _(as of 2026-10-07)_ |
+| Claude Code | Anthropic | v2.1.293 switches the default Haiku model to Claude Haiku 5.5 at $0.10/$0.50 per Mtok _(as of 2026-10-08)_ |
 | Codex CLI | OpenAI | v0.159.1; GPT-6.1 Sol is now the default in the bundled and Bedrock catalogs; copy-on-select and right-click paste in the fullscreen TUI; MCP OAuth client secrets _(as of 2026-09-30)_ |
-| OpenCode | anomalyco | v1.18.32; free opencode/* tier with built-in Exa websearch; ACP session options restored on resume _(as of 2026-09-22)_ |
+| OpenCode | anomalyco | v1.18.35 adds canonical redirects and JSON/Markdown stats output; free opencode/* tier with built-in Exa websearch _(as of 2026-10-08)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots; iOS Remote Control for local agents _(as of 2026-10-07)_ |
-| Also current | various | Pi 1.0.1, Cline 4.1.22, Qwen Code 0.25.0, OpenHands 1.22.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-06)_ |
+| Also current | various | Pi 1.1.0, Cline 4.1.22, Qwen Code 0.25.0, OpenHands 1.22.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-08)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
 
 ## Infrastructure / inference
