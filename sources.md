@@ -220,6 +220,15 @@ scored by upvotes + comments + recency.
 | r/cursor | `claude_coding` |
 | r/OpenWebUI | `claude_coding` |
 
+### added 2026-10-07 for coding-harness/LLM-dev coverage; review after 14d
+
+| Subreddit | Bucket |
+|---|---|
+| r/ClaudeCode | `claude_coding` |
+| r/codex | `claude_coding` |
+| r/opencode | `claude_coding` |
+| r/LLMDevs | `claude_coding` |
+
 ### r/ChatGPT           ai_world
 
 | Subreddit | Bucket |

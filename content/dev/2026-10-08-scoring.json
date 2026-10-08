@@ -1,0 +1,949 @@
+{
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08T03:41:58.837789+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "4250e365b896ce62b812f5868a9dc895704f0633",
+          "title": "v2.1.293",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+          "score": 7.9338,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6596,
+            "uniqueness": 0.6596,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.3404,
+            "topic_match": 0.7,
+            "creator_weight": 1.0,
+            "taste_score": 0.84,
+            "taste_raw": 0.84,
+            "taste_reason": "jev score 0.84",
+            "total": 7.9338
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.84×1.75=1.47"
+        },
+        {
+          "rank": 2,
+          "id": "b96448f5a5529676ae0ecc167e74c935a985b82a",
+          "title": "Secret protection must scale with software",
+          "canonical_url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
+          "score": 7.2426,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6939,
+            "uniqueness": 0.6939,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.3061,
+            "topic_match": 0.8,
+            "taste_score": 0.38,
+            "taste_raw": 0.38,
+            "taste_reason": "jev score 0.38",
+            "non_release_bonus": 1.0,
+            "total": 7.2426
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "cc89d17b3340a04fdcb9b4195454c98901f38da2",
+          "title": "v1.1.0",
+          "canonical_url": "https://github.com/earendil-works/pi/releases/tag/v1.1.0",
+          "score": 7.1035,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.74,
+            "uniqueness": 0.74,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.26,
+            "topic_match": 0.7,
+            "taste_score": 0.49,
+            "taste_raw": 0.49,
+            "taste_reason": "jev score 0.49",
+            "story_heat": 1.0,
+            "story_sources": 6,
+            "total": 7.1035
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "d886259dd75b001b1f5bc291309d35a8581adb7f",
+          "title": "Qwen Code Desktop v0.25.0",
+          "reason": "title_dup_published",
+          "matched_title": "Qwen Code Desktop v0.24.6",
+          "jaccard": 1.0
+        },
+        {
+          "id": "c5efc9a75bf5781bfcd628883b60778015231018",
+          "title": "v1.3: /implement-spec, /pr, /retro, and GLOSSARY.md",
+          "reason": "title_dup_published",
+          "matched_title": "v1.3: /implement-spec, /pr, /retro, and GLOSSARY.md",
+          "jaccard": 1.0
+        },
+        {
+          "id": "31ce016c939917d7f5c3460561ec5b2eb2e5985a",
+          "title": "v2.1.291",
+          "reason": "creator_cap",
+          "creator_key": "Claude Code releases",
+          "cap": 1
+        },
+        {
+          "id": "ea8ee12c21ddb67561f38c0c560606fe268e4e74",
+          "title": "1.0.93-2",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "3304dc65c83b76a3f62af4b38b449dfa8f6a835d",
+          "title": "1.0.94-3",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "2e90d03790b8f94f166be8ffc9dd11e9970cd34f",
+          "title": "v1.0.4",
+          "reason": "creator_cap",
+          "creator_key": "Pi releases",
+          "cap": 1
+        },
+        {
+          "id": "8ddfb69c657e3fecbf56655383de21e1facb9aa8",
+          "title": "1.0.92-4",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "bdbf8c404bea79af3276aa4df052557d2a949fe7",
+          "title": "v1.0.3",
+          "reason": "creator_cap",
+          "creator_key": "Pi releases",
+          "cap": 1
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "91a286d5f9cf902d25a98bd4727dae9fd717921e",
+          "title": "Claude Haiku 5.5 arrives with massive price cuts proving the AI pricing arms race is far from over",
+          "canonical_url": "https://the-decoder.com/claude-haiku-5-5-arrives-with-massive-price-cuts-proving-the-ai-pricing-arms-race-is-far-from-over",
+          "score": 6.7875,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6,
+            "uniqueness": 0.6,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.4,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.77,
+            "taste_raw": 0.77,
+            "taste_reason": "jev score 0.77",
+            "story_heat": 1.0,
+            "story_sources": 6,
+            "total": 6.7875,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.77×1.75=1.3475; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 2,
+          "id": "7cd8264a1512cae89b889cf5841428bf9b61445a",
+          "title": "Anthropic loosens Claude’s cyber restrictions for verified defenders",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/07/anthropic-expands-cyber-verification-program",
+          "score": 6.4015,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.975,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6981,
+            "uniqueness": 0.6981,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.3019,
+            "topic_match": 0.7,
+            "taste_score": 0.48,
+            "taste_raw": 0.48,
+            "taste_reason": "jev score 0.48",
+            "story_heat": 0.4764,
+            "story_sources": 2,
+            "total": 6.4015,
+            "domain_saturation_penalty": -0.25
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.975×1=0.975; penalties: domain_saturation -0.25×1=-0.25"
+        },
+        {
+          "rank": 3,
+          "id": "5ca9c0ebb6f5947b25e1ec94185634a7f064b411",
+          "title": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
+          "canonical_url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits",
+          "score": 5.9902,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8333,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7297,
+            "uniqueness": 0.7297,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2703,
+            "topic_match": 0.7,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "jev score 0.30",
+            "story_heat": 0.52,
+            "story_sources": 3,
+            "total": 5.9902,
+            "domain_saturation_penalty": -0.25
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8333×1=0.8333; penalties: domain_saturation -0.25×1=-0.25"
+        },
+        {
+          "rank": 4,
+          "id": "36bf85cb54324cffc02be11d32050364df424fb3",
+          "title": "Meta’s Muse launches on iPad just a month after its mobile debut",
+          "canonical_url": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut",
+          "score": 5.525,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8298,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1702,
+            "topic_match": 0.5,
+            "taste_score": 0.26,
+            "taste_raw": 0.26,
+            "taste_reason": "jev score 0.26",
+            "total": 5.525,
+            "domain_saturation_penalty": -0.25
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -0.25×1=-0.25"
+        },
+        {
+          "rank": 5,
+          "id": "47b9255d8fa0f8e89c91be9f3fca6f4f2b924e04",
+          "title": "Sharing AI progress in mathematics",
+          "canonical_url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+          "score": 5.4931,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7895,
+            "uniqueness": 0.7895,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.2105,
+            "topic_match": 0.0,
+            "creator_weight": 0.15,
+            "taste_score": 0.64,
+            "taste_raw": 0.64,
+            "taste_reason": "jev score 0.64",
+            "story_heat": 0.4764,
+            "story_sources": 2,
+            "total": 5.4931,
+            "domain_saturation_penalty": -0.75
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.64×1.75=1.12; penalties: domain_saturation -0.75×1=-0.75"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "f96eb5478801166ba4affe62803adb5ed871e13c",
+          "title": "Gemini Call for Me might tell your mom you’re running late",
+          "canonical_url": "https://theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+          "score": 4.2343,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.693,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.8095,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.2,
+            "creator_weight": -0.1,
+            "taste_score": 0.21,
+            "taste_raw": 0.21,
+            "taste_reason": "jev score 0.21",
+            "total": 4.2343,
+            "domain_saturation_penalty": -0.75
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.693×1=0.693; penalties: domain_saturation -0.75×1=-0.75, creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "40aeb8d31c9b72710a64d20b339e7d7f2a859306",
+          "title": "Aleph Alpha releases Kolibri, an open-weight model that makes the case for European AI sovereignty",
+          "reason": "topic_dup_published",
+          "matched_title": "Kolibri: A Sovereign Open-Weight Model",
+          "matched_date": "2026-10-06",
+          "matched_section": "ai-world",
+          "title_jaccard": 0.3,
+          "body_containment": 0.75
+        },
+        {
+          "id": "17ce05f2c0e82af1985edc6132e65cb8e9738314",
+          "title": "Google is about to remove free access to Gemini Flash and Pro",
+          "reason": "title_dup_published",
+          "matched_title": "Gemini 3.8 Flash is FREE in Cline! I Tested Google's New AI Model",
+          "jaccard": 0.4444
+        },
+        {
+          "id": "1a42fb5dbf329d58675cb956d231adeeb5aafe05",
+          "title": "ChatGPT with GPT-6 ditches mostly text output for interactive UI with charts, buttons, and mini apps",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "78ad53815846c15cf66038ceb51792507cbc3ef4",
+          "title": "Our approach to EU text provenance rules",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "df746c21e273396b8f20a609d855d8d1b8284443",
+          "title": "OpenAI will watermark ChatGPT text in the EU but makes it optional for API users worldwide",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "8a9c48729bde803bdfc072741c9d13f877f0ec04",
+          "title": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "342677ae7eadb2eb62e4a38c30f07848c459226e",
+          "title": "How Jump Trading is scaling quant research with ChatGPT",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "3cbec84de8bf615536c6b0a8e25828a7b15705aa",
+          "title": "Building advertising for the way people use AI",
+          "reason": "domain_cap",
+          "domain": "openai.com",
+          "cap": 2
+        },
+        {
+          "id": "062c049b478a145e3674c13e4c79cc54dad00334",
+          "title": "Trump unveils his new Super Intelligence Force",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "b000804a713f2be5b55b831cde660f0114ffdfe4",
+          "title": "Trump launches \"Super Intelligence Force\" that has nothing to do with actual superintelligence",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "60d57f56163cdd080b7bfe6c3631f958efe4ebd4",
+          "title": "Mistral Large 4 (Le Chonk - Fully Tested): Is IT ACTUALLY The BEST OPEN MODEL!?",
+          "canonical_url": "https://youtube.com/watch?v=MNOR65DYdpA",
+          "score": 6.9204,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9877,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8125,
+            "uniqueness": 0.8125,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1875,
+            "topic_match": 0.8,
+            "taste_score": 0.36,
+            "taste_raw": 0.36,
+            "taste_reason": "jev score 0.36",
+            "story_heat": 1.0,
+            "story_sources": 7,
+            "attention": 0.8554,
+            "total": 6.4204,
+            "jev_clickbait_penalty": -0.5,
+            "jev_clickbait_p": 0.95
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9877×1=0.9877"
+        },
+        {
+          "rank": 2,
+          "id": "db03570964a8d58ad449fe4a1695cd59b0e8bb20",
+          "title": "Tecent Octop (Opensource): Wait, Tencent just ENDED OpenAI Dots & Muse!?",
+          "canonical_url": "https://youtube.com/watch?v=fw1b7Lz5TE4",
+          "score": 5.751,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5816,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8462,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1538,
+            "topic_match": 0.7,
+            "taste_score": 0.41,
+            "taste_raw": 0.41,
+            "taste_reason": "jev score 0.41",
+            "attention": 0.8268,
+            "total": 5.251,
+            "jev_clickbait_penalty": -0.5,
+            "jev_clickbait_p": 0.93
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.41×1.75=0.7175"
+        },
+        {
+          "rank": 3,
+          "id": "4644e48f23d890424eeebe1c86dbca1ede15add7",
+          "title": "Jev Can SERIOUSLY Supercharge Your AI Second Brain (Here's How)",
+          "canonical_url": "https://youtube.com/watch?v=Cl3OWig5hkk",
+          "score": 5.6433,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8444,
+            "uniqueness": 0.8444,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1556,
+            "topic_match": 0.7,
+            "taste_score": 0.12,
+            "taste_raw": 0.12,
+            "taste_reason": "jev score 0.12",
+            "attention": 0.7911,
+            "total": 5.1433,
+            "jev_clickbait_penalty": -0.5,
+            "jev_clickbait_p": 0.94
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "87e97f12f516b690c529ef5769ea4d71bf59d726",
+          "title": "Claude Code Is MISSING One Key Thing. Here's How to Fix It!",
+          "canonical_url": "https://youtube.com/watch?v=sRz1UlWktH4",
+          "score": 5.3609,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8875,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8519,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1481,
+            "topic_match": 0.7,
+            "taste_score": 0.06,
+            "taste_raw": 0.06,
+            "taste_reason": "jev score 0.06",
+            "attention": 0.6969,
+            "total": 5.3609
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8875×1=0.8875",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "2f1acd9f17f40ec1a64ad5afa074577ab8cfd6c5",
+          "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
+          "canonical_url": "https://youtube.com/watch?v=WrCjAAl9okA",
+          "score": 5.25,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9231,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.0769,
+            "topic_match": 0.2,
+            "creator_weight": -0.1,
+            "taste_score": 0.2,
+            "taste_raw": 0.2,
+            "taste_reason": "jev score 0.20",
+            "attention": 1.0,
+            "total": 5.25
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "39d5b3a4dd98e74aac91017444f6febdc2ec9b3c",
+          "title": "Freebuff - Free AI Coding Agent | Unlimited AI CLI",
+          "canonical_url": "https://youtube.com/watch?v=r8IBLHL_fXo",
+          "score": 5.1495,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7209,
+            "uniqueness": 0.7209,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2791,
+            "topic_match": 0.5,
+            "taste_score": 0.17,
+            "taste_raw": 0.17,
+            "taste_reason": "jev score 0.17",
+            "attention": 0.1273,
+            "total": 5.1495
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "5ec4a0a1936435fda93c87bbe1ed4c5ac2241c59",
+          "title": "Why AI Needs Frontier Deployed Engineers",
+          "canonical_url": "https://youtube.com/watch?v=V4fhOQJwE3o",
+          "score": 4.8422,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8834,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8293,
+            "uniqueness": 0.8293,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1707,
+            "taste_score": 0.17,
+            "taste_raw": 0.17,
+            "taste_reason": "jev score 0.17",
+            "attention": 0.6591,
+            "total": 4.8422
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8834×1=0.8834",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "d42050739f3f403d9f019427190d1f9271b6167e",
+          "title": "PewDiePie is setting AI free... and OpenAI is furious",
+          "canonical_url": "https://youtube.com/watch?v=_5p1_TNSWqQ",
+          "score": 4.7273,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6715,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8519,
+            "uniqueness": 0.8519,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1481,
+            "topic_match": 0.0,
+            "creator_weight": -0.1,
+            "taste_score": 0.18,
+            "taste_raw": 0.18,
+            "taste_reason": "jev score 0.18",
+            "attention": 1.0,
+            "total": 4.7273
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6715×1=0.6715; penalties: creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "940c329c097b19da673d0d9165d5d3e80bd26404",
+          "title": "How I'd Learn AI From Zero in 2026 (the full free course)",
+          "canonical_url": "https://youtube.com/watch?v=6AzLk2-kWyY",
+          "score": 4.6024,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8882,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8621,
+            "uniqueness": 0.8621,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1379,
+            "taste_score": 0.01,
+            "taste_raw": 0.01,
+            "taste_reason": "jev score 0.01",
+            "attention": 0.7038,
+            "total": 4.6024
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8882×1=0.8882",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "b8f46e624ab744eee9fe7fd103cb75b782c17069",
+          "title": "We Are So Early in AI",
+          "canonical_url": "https://youtube.com/watch?v=t_NEh689siE",
+          "score": 4.3793,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7166,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8846,
+            "uniqueness": 0.8846,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1154,
+            "taste_score": 0.09,
+            "taste_raw": 0.09,
+            "taste_reason": "jev score 0.09",
+            "attention": 0.3027,
+            "total": 4.3793
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.7166×1=0.7166",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "3dccf272b05b6fa7d3ae7406767f392ac1b9ae6e",
+          "title": "AI Just Exploded: GPT-7 BEL, 99% AGI, Gemini 4 RSI, Alien Mind, JEV",
+          "canonical_url": "https://youtube.com/watch?v=dk-hx4_cqpk",
+          "score": 4.3004,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4814,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.0,
+            "taste_score": 0.04,
+            "taste_raw": 0.04,
+            "taste_reason": "jev score 0.04",
+            "attention": 0.898,
+            "total": 4.3004
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.4814×1=0.4814",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "e09ee5bbfe57a1f1d6b3c7ed2893f562ee6c40c9",
+          "title": "OpenAI's employee's WARNING",
+          "canonical_url": "https://youtube.com/watch?v=9CGsq3A590Q",
+          "score": 2.9615,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4183,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.0,
+            "taste_score": 0.29,
+            "taste_raw": 0.29,
+            "taste_reason": "jev score 0.29",
+            "ungrounded_penalty": -1.0,
+            "ungrounded_terms": [
+              "3.5"
+            ],
+            "attention": 1.0,
+            "total": 2.9615
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.29×1.75=0.5075; penalties: ungrounded -1×1.75=-1.75",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "1e3bb4a0d2f125705697e953876b54e592f2e114",
+          "title": "Opus 5.5 + Claude Code Just Got INSANE (I'm Not Vibe Coding)",
+          "reason": "cross_section_dup",
+          "matched_title": "Claude Code + Opus 5.5 = 24/7 Senior Dev For $200 (INSANE)",
+          "kept_id": "e7c40c48d2f7600daf6f9658593532a009be374a",
+          "kept_section": "youtube",
+          "jaccard": 0.4444
+        }
+      ]
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "35e14f78f79e105f877541a6c44e5089459fd48f",
+          "title": "New MoE Model - Aleph-Alpha Kolibri-1 78B-A3.5B",
+          "canonical_url": "https://reddit.com/comments/1wxjuim",
+          "score": 3.6714,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4372,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7105,
+            "uniqueness": 0.7105,
+            "uniqueness_sim_published": 0.2727,
+            "uniqueness_sim_state": 0.2895,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "A genuinely new open MoE (78B/3.5B active) not in the state file, but the bullet carries no benchmark or license detail, so it reads as a name-drop rather than a result.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "ungrounded_penalty": -1.0,
+            "ungrounded_terms": [
+              "262"
+            ],
+            "total": 3.1714,
+            "jev_same_story_cross_penalty": -0.5,
+            "jev_same_story_cross_p": 0.81
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.5×1.75=0.875; penalties: ungrounded -1×1.75=-1.75"
+        }
+      ],
+      "rejected": [],
+      "dropped": []
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "729a1a1d63d146a4b10a5e94b3d6739700fcefe4",
+          "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+          "canonical_url": "https://zohaib.cc/blog/smartest-claude-code-feature",
+          "score": 8.7903,
+          "components": {
+            "cross_source_count": 2,
+            "cross_score": 2,
+            "recency_decay": 0.8501,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8966,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1034,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.46,
+            "taste_raw": 0.46,
+            "taste_reason": "jev score 0.46",
+            "attention": 0.8038,
+            "total": 8.7903
+          },
+          "explanation": "cross 2×2=4 + origin_weight 1.5×1=1.5 + recency_decay 0.8501×1=0.8501"
+        },
+        {
+          "rank": 2,
+          "id": "14103ec9973068df28175591c515b79e193dbafb",
+          "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
+          "canonical_url": "https://theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+          "score": 6.6336,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.2859,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7609,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.3333,
+            "uniqueness_sim_state": 0.2391,
+            "topic_match": 0.8,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "Personnel-drama resignation with no named person, no concrete claim beyond a vague 'broken culture' — interesting to OpenAI-watchers but thin on signal, and not in state-of-ai.",
+            "topic_importance": 0.5,
+            "topic_importance_raw": 5,
+            "attention": 0.9121,
+            "total": 5.6336,
+            "jev_same_story_penalty": -1.0,
+            "jev_same_story_p": 0.9
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "d7beaa53f3faf6d756cecaea9f3bc9e38b25c592",
+          "title": "How to scale intent, quality, and artistry with AI [video]",
+          "reason": "title_dup_published",
+          "matched_title": "Raise the ceiling: how to scale intent, quality, and artistry with AI (12 minute read)",
+          "jaccard": 0.4444
+        },
+        {
+          "id": "b82bd485fd9d1ced592f2b20320c5baf89de0e49",
+          "title": "Anthropic reported diary entry to police, woman faces felony charge",
+          "reason": "jev_offtopic",
+          "p": 0.71
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "d46e3cd2acda4b79eeeb86466bc6f7afb2083e37",
+          "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration (6 minute read)",
+          "canonical_url": "https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration",
+          "score": 6.5374,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8372,
+            "uniqueness": 0.8372,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1628,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.63,
+            "taste_raw": 0.63,
+            "taste_reason": "jev score 0.63",
+            "total": 6.5374
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.63×1.75=1.1025; penalties: creator_weight -0.2×1=-0.2"
+        },
+        {
+          "rank": 2,
+          "id": "537cf5cba9875b8310966e2187e70bfe60439ff9",
+          "title": "US-China AI Gap Hits 3%, and DeepSeek V4.1 Flash Now Leads on Agentic Coding Benchmarks (12 minute read)",
+          "canonical_url": "https://techtimes.com/articles/328620/20261006/us-china-ai-gap-hits-3-deepseek-v41-flash-now-leads-agentic-coding-benchmarks.htm",
+          "score": 6.0697,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7179,
+            "uniqueness": 0.7179,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.2821,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "total": 6.0697
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: creator_weight -0.2×1=-0.2"
+        },
+        {
+          "rank": 3,
+          "id": "aeb89fd26535623473a8e7bc09faee7d1a3816f3",
+          "title": "Watch the webinar session",
+          "canonical_url": "https://cloudonair.withgoogle.com/events/unifying-structured-unstructured-data-insights-bigquery",
+          "score": 4.6738,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5866,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8929,
+            "uniqueness": 0.8929,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1071,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.36,
+            "taste_raw": 0.36,
+            "taste_reason": "jev score 0.36",
+            "fetch_fail_penalty": -1.0,
+            "total": 4.6738
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8; penalties: fetch_fail -1×1=-1, creator_weight -0.2×1=-0.2"
+        }
+      ],
+      "rejected": [],
+      "dropped": []
+    }
+  }
+}
