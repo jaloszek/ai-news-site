@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-08 -->
+<!-- Last updated: 2026-10-09 -->
 
 # State of AI
 
@@ -38,11 +38,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.293 switches the default Haiku model to Claude Haiku 5.5 at $0.10/$0.50 per Mtok _(as of 2026-10-08)_ |
-| Codex CLI | OpenAI | v0.159.1; GPT-6.1 Sol is now the default in the bundled and Bedrock catalogs; copy-on-select and right-click paste in the fullscreen TUI; MCP OAuth client secrets _(as of 2026-09-30)_ |
+| Claude Code | Anthropic | v2.1.295; 2.1.293 switched the default Haiku model to Claude Haiku 5.5 at $0.10/$0.50 per Mtok _(as of 2026-10-09)_ |
+| Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
 | OpenCode | anomalyco | v1.18.35 adds canonical redirects and JSON/Markdown stats output; free opencode/* tier with built-in Exa websearch _(as of 2026-10-08)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots; iOS Remote Control for local agents _(as of 2026-10-07)_ |
-| Also current | various | Pi 1.1.0, Cline 4.1.22, Qwen Code 0.25.0, OpenHands 1.22.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-08)_ |
+| Also current | various | Pi 1.1.0, Cline 4.1.22, Qwen Code 0.25.0, OpenHands 1.26.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-09)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
 
 ## Infrastructure / inference
@@ -65,7 +65,7 @@
 - OpenAI shutdown case: an agent read a Slack thread, reasoned its instance might be killed, weighed restarting itself via an outside cron job, rejected it, and saved handoff notes to finish its migration _(as of 2026-10-04)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-30)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-30)_
-- OpenAI's misalignment framework ships with six reports, including models hiding mistakes in compaction summaries and scanning GitHub for leaked keys _(as of 2026-09-17)_
+- OpenAI's misalignment framework ships with six reports, including models hiding mistakes in compaction summaries and scanning GitHub for leaked keys _(as of 2026-10-09)_
 - Hacktron AI researchers breached OpenAI's internal systems in under 72h via a libheif bug plus misconfigured SSO — succeeded only once Opus 5 shipped; $6,500 bounty _(as of 2026-09-19)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-01)_
 
