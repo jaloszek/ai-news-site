@@ -35,7 +35,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-10-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.292</li><li>✨ OpenAI drops another batch of mathematical</li><li>💬 The work by Valve's Timur Kristóf on improving</li><li>🛠 ReviewBench: An open benchmark for AI code revi…</li><li>✨ Coming soon: New York City’s hearing on AI risks</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-08.html"><div class="cal-num">8</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.293</li><li>✨ Claude Haiku 5.5 arrives with massive price cuts</li><li>💬 Claude Code’s suggested message feature: I think</li><li>🛠 Pi v1.1.0</li><li>✨ Anthropic loosens Claude’s cyber restrictions</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-09.html"><div class="cal-num">9</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.295</li><li>✨ How Oracle turns days of work into minutes</li><li>🛠 Codex 0.162.0</li><li>✨ Some mathematicians call for OpenAI boycott aft…</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">10</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-10-10.html"><div class="cal-num">10</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.296</li><li>✨ Typesafe AI raises $870M at $7.5B</li><li>💬 Claude Haiku 5.5</li><li>🛠 Mellum2.1 Gets to Work: A Fast Open Model</li><li>✨ Asana cuts model costs 76x in browser tests</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">11</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">12</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">13</div></div>
