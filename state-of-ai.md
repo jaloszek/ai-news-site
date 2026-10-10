@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-09 -->
+<!-- Last updated: 2026-10-10 -->
 
 # State of AI
 
@@ -29,7 +29,7 @@
 |---|---|---|
 | Kolibri (Aleph Alpha) | 78B MoE / 3B active | Apache 2.0; 1M ctx; German-built under EU AI Act/GDPR; on Hugging Face _(as of 2026-10-06)_ |
 | Kimi K3 (Moonshot) | 2.8T MoE, 16/896 active | Largest open weights ever; 07-27, Modified MIT; 1M ctx; AA 60; Code Arena Frontend 1679 ELO tops Fable 5 _(as of 2026-09-29)_ |
-| GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; same base as 5.2, post-training only; Flash sibling 17x cheaper _(as of 2026-09-29)_ |
+| GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; Flash sibling (320B/18B, MIT) tops AA's Cyber Index over Claude _(as of 2026-10-10)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-29)_ |
 | Qwen3.8-Flash-Next | 125B MoE / 6B active | Qwen4 architecture preview; $0.16/M in; beats V4-Flash and Opus 4.6 on coding; best fit for 128GB boxes _(as of 2026-09-30)_ |
 | DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-10-05)_ |
@@ -38,7 +38,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.295; 2.1.293 switched the default Haiku model to Claude Haiku 5.5 at $0.10/$0.50 per Mtok _(as of 2026-10-09)_ |
+| Claude Code | Anthropic | v2.1.296 adds gateway policy keys, subagent compaction and oversized-file Read; default Haiku 5.5 at $0.10/$0.50/Mtok _(as of 2026-10-10)_ |
 | Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
 | OpenCode | anomalyco | v1.18.35 adds canonical redirects and JSON/Markdown stats output; free opencode/* tier with built-in Exa websearch _(as of 2026-10-08)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots; iOS Remote Control for local agents _(as of 2026-10-07)_ |
