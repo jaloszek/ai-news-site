@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-10 -->
+<!-- Last updated: 2026-10-11 -->
 
 # State of AI
 
@@ -66,7 +66,7 @@
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-30)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-30)_
 - OpenAI's misalignment framework ships with six reports, including models hiding mistakes in compaction summaries and scanning GitHub for leaked keys _(as of 2026-10-09)_
-- Hacktron AI researchers breached OpenAI's internal systems in under 72h via a libheif bug plus misconfigured SSO — succeeded only once Opus 5 shipped; $6,500 bounty _(as of 2026-09-19)_
+- Hacktron AI researchers breached OpenAI's internal systems in under 72h via a libheif bug plus misconfigured SSO — succeeded only once Opus 5 shipped; $6,500 bounty _(as of 2026-10-11)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-01)_
 
 ## Community / industry trends
