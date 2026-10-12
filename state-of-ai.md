@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-11 -->
+<!-- Last updated: 2026-10-12 -->
 
 # State of AI
 
@@ -33,6 +33,7 @@
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-29)_ |
 | Qwen3.8-Flash-Next | 125B MoE / 6B active | Qwen4 architecture preview; $0.16/M in; beats V4-Flash and Opus 4.6 on coding; best fit for 128GB boxes _(as of 2026-09-30)_ |
 | DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-10-05)_ |
+| Beam (Reflection AI) | 501B MoE / 23B active | First open-weight release; Nvidia, an $800M backer, is in talks to buy the startup _(as of 2026-10-12)_ |
 
 ## Coding agents / harnesses
 
@@ -42,20 +43,19 @@
 | Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
 | OpenCode | anomalyco | v1.18.35 adds canonical redirects and JSON/Markdown stats output; free opencode/* tier with built-in Exa websearch _(as of 2026-10-08)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots; iOS Remote Control for local agents _(as of 2026-10-07)_ |
-| Also current | various | Pi 1.1.0, Cline 4.1.22, Qwen Code 0.25.0, OpenHands 1.26.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.9.7, Hermes 0.19 _(as of 2026-10-09)_ |
+| Also current | various | Pi 1.1.0, Cline 4.1.22, Qwen Code 0.25.1, OpenHands 1.26.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.1, Hermes 0.19 _(as of 2026-10-12)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
 
 ## Infrastructure / inference
 
 - Nvidia is buying Hugging Face for $12.93B _(as of 2026-09-30)_
 - Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-09-30)_
-- Anthropic's IPO pushed from October to November 2026 (up to $100B raise, ~$2T valuation) after OpenAI slipped to 2027; Nvidia may anchor with up to $10B _(as of 2026-09-21)_
-- Anthropic committed $11.6B over seven years to Akamai cloud, over 6x its $1.8B May deal, plus a warrant for up to ~5% of Akamai stock _(as of 2026-09-27)_
 
 ## Agent patterns / frameworks
 
-- Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-09-20)_
+- Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-10-12)_
 - Planner/worker split: Fable-as-manager hits 92-96% of solo quality at 46-63% of cost; Cursor's swarm rebuilt SQLite in Rust the same way _(as of 2026-09-30)_
+- Vals AI: agent teams cost 1.8-5.1x a solo agent for one real gain in four tests; Opus max-effort team $122/app vs $9.10 medium _(as of 2026-10-12)_
 
 ## Safety / alignment
 
