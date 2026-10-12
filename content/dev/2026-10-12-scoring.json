@@ -1,0 +1,967 @@
+{
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T03:19:14.267355+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "1053b61d4822f9bd7bad08047c391a9561c29335",
+          "title": "github-v1.2.26: chore: promote v2 to dev",
+          "canonical_url": "https://github.com/anomalyco/opencode/releases/tag/github-v1.2.26",
+          "score": 6.0647,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8247,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.8,
+            "creator_weight": 0.6,
+            "taste_score": 0.28,
+            "taste_raw": 0.28,
+            "taste_reason": "jev score 0.28",
+            "patch_release_penalty": -1.0,
+            "total": 6.0647
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8247×1=0.8247; penalties: patch_release -1×0.5=-0.5"
+        },
+        {
+          "rank": 2,
+          "id": "e7044363b7ad21fab00aaf6a7cc78bdac047f960",
+          "title": "openclaw 2026.10.1",
+          "canonical_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1",
+          "score": 5.7117,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9037,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.82,
+            "uniqueness": 0.82,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.18,
+            "topic_match": 0.5,
+            "creator_weight": 0.0,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "patch_release_penalty": -1.0,
+            "total": 5.7117
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.56×1.75=0.98; penalties: patch_release -1×0.5=-0.5"
+        },
+        {
+          "rank": 3,
+          "id": "354cc0b4e51b77d1ccad30a836bea16b808a6f55",
+          "title": "v1.54.0",
+          "canonical_url": "https://github.com/aaif-goose/goose/releases/tag/v1.54.0",
+          "score": 5.6048,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4578,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.68,
+            "uniqueness": 0.68,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.32,
+            "topic_match": 0.7,
+            "creator_weight": -0.2,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "jev score 0.50",
+            "total": 5.6048
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.5×1.75=0.875; penalties: creator_weight -0.2×1=-0.2"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "25baa8545916762480f3404a079c2370f8bfabd2",
+          "title": "1.0.95-1",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "79a82531935557331d60b73f1106fca931b7fb60",
+          "title": "1.0.96-1",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "9a6cbe528dff003b1846aebe448df70c8607857f",
+          "title": "Qwen Code Desktop v0.25.1",
+          "reason": "title_dup_published",
+          "matched_title": "Qwen Code Desktop v0.24.6",
+          "jaccard": 1.0
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "e0e20b886a44f912443267e2f7b42b19dd346672",
+          "title": "AI agent teams waste massive tokens for barely measurable quality gains, research finds",
+          "canonical_url": "https://the-decoder.com/ai-agent-teams-waste-massive-tokens-for-barely-measurable-quality-gains-research-finds",
+          "score": 5.9552,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7442,
+            "uniqueness": 0.7442,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.2558,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.69,
+            "taste_raw": 0.69,
+            "taste_reason": "jev score 0.69",
+            "total": 5.9552,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.69×1.75=1.2075; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 2,
+          "id": "b99473607ce8d77dde4b056c6c501d28487e29a2",
+          "title": "AI agents overstate their results and remain far from autonomous research, study finds",
+          "canonical_url": "https://the-decoder.com/ai-agents-overstate-their-results-and-remain-far-from-autonomous-research-study-finds",
+          "score": 5.7627,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7442,
+            "uniqueness": 0.7442,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.2558,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "jev score 0.58",
+            "total": 5.7627,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.58×1.75=1.015; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 3,
+          "id": "48092d1d873f6f9c42aa9c42dc05a08e7b872729",
+          "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+          "canonical_url": "https://theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+          "score": 5.0472,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9118,
+            "uniqueness": 0.9118,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0882,
+            "topic_match": 0.2,
+            "creator_weight": -0.1,
+            "taste_score": 0.19,
+            "taste_raw": 0.19,
+            "taste_reason": "jev score 0.19",
+            "total": 5.0472,
+            "domain_saturation_penalty": -0.25
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -0.25×1=-0.25, creator_weight -0.1×1=-0.1"
+        },
+        {
+          "rank": 4,
+          "id": "df97c62cc773ca8681dae7e4956554b91d53bcca",
+          "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
+          "canonical_url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas",
+          "score": 4.5042,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8293,
+            "uniqueness": 0.8293,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1707,
+            "topic_match": 0.2,
+            "taste_score": 0.27,
+            "taste_raw": 0.27,
+            "taste_reason": "jev score 0.27",
+            "total": 4.5042,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 5,
+          "id": "ca1ec6c6a1a1314d953bafc0b010c073f56e9464",
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "canonical_url": "https://openai.com/index/pollo-ai",
+          "score": 4.34,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.0,
+            "creator_weight": 0.15,
+            "taste_score": 0.28,
+            "taste_raw": 0.28,
+            "taste_reason": "jev score 0.28",
+            "total": 4.34,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.28×1.75=0.49; penalties: domain_saturation -0.5×1=-0.5"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "fd9d677d057df53291426b3abbf56dbb60574cd1",
+          "title": "Google's Gemini 4 \"Carbon\" model reportedly feels like Anthropic's Opus 5.5 coding performance",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "b5fb86d8eefe4e5731e257b3c7a822b3f7cfbe85",
+          "title": "Cheaper AI tokens are driving more demand, and that's Jensen Huang's best-case scenario",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "270230766f1043a5672d58be2696154ce1ba4821",
+          "title": "Being mean to Claude can now get your account suspended under Anthropic's new TOS",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "e07ad26d1e7d044f36b7f46752cabcaee5d2de64",
+          "title": "Anthropic is cutting off its internal evaluations from the internet",
+          "reason": "jev_same_story_published",
+          "p": 0.92
+        },
+        {
+          "id": "7d4e278f0b74844571bb3cf87efa87ac5316d15f",
+          "title": "Will the HomeView be Apple’s first smart home success?",
+          "reason": "jev_offtopic",
+          "p": 0.69
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "4955e2dd9266828f05dd972f0d191b9e4e096796",
+          "title": "Containment Is Lying to You: Measuring AI Agents Like Employees — Druid AI",
+          "canonical_url": "https://youtube.com/watch?v=PwCSYy-oGsM",
+          "score": 6.2631,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8723,
+            "uniqueness": 0.8723,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1277,
+            "topic_match": 0.5,
+            "creator_weight": 0.2,
+            "taste_score": 0.48,
+            "taste_raw": 0.48,
+            "taste_reason": "jev score 0.48",
+            "attention": 0.7483,
+            "total": 5.7631,
+            "jev_clickbait_penalty": -0.5,
+            "jev_clickbait_p": 0.85
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "f6caeba206d1f5efe7d47ff3a6594002efc773be",
+          "title": "My Self Training Claude Code Setup: I Made Claude Code TRAIN ITSELF!",
+          "canonical_url": "https://youtube.com/watch?v=wMQB33rM28I",
+          "score": 6.1069,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9771,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7818,
+            "uniqueness": 0.7818,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.2182,
+            "topic_match": 0.7,
+            "taste_score": 0.38,
+            "taste_raw": 0.38,
+            "taste_reason": "jev score 0.38",
+            "attention": 0.9041,
+            "total": 5.6069,
+            "jev_clickbait_penalty": -0.5,
+            "jev_clickbait_p": 0.9
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9771×1=0.9771"
+        },
+        {
+          "rank": 3,
+          "id": "909801edc3ef3c86f7feedfa6f28eb073c085de2",
+          "title": "How to Add MCP Servers to Claude Code CLI (Working 2026 Guide)",
+          "canonical_url": "https://youtube.com/watch?v=vL7jahQAZIQ",
+          "score": 5.6867,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8372,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1628,
+            "topic_match": 0.7,
+            "taste_score": 0.34,
+            "taste_raw": 0.34,
+            "taste_reason": "jev score 0.34",
+            "attention": 0.1167,
+            "total": 5.6867
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "cbafe336042c49c7be4dc909e31d120c0bae219b",
+          "title": "Google Stitch 2.0: The FREE AI Design Powerhouse by Google is CRAZY!",
+          "canonical_url": "https://youtube.com/watch?v=POZaR1cWigY",
+          "score": 5.1896,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5771,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8772,
+            "uniqueness": 0.8772,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1228,
+            "topic_match": 0.7,
+            "taste_score": 0.11,
+            "taste_raw": 0.11,
+            "taste_reason": "jev score 0.11",
+            "attention": 0.7383,
+            "total": 5.1896
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "c7a3af71f61ac2671a2a4768f849534a8711ab8e",
+          "title": "OpenAI’s “Alien Math” Is Freaking People Out",
+          "canonical_url": "https://youtube.com/watch?v=rxpV3QLV-pg",
+          "score": 5.0523,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5373,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.0,
+            "taste_score": 0.38,
+            "taste_raw": 0.38,
+            "taste_reason": "jev score 0.38",
+            "attention": 1.0,
+            "total": 5.0523
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.38×1.75=0.665",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "62e1f80441cf9e6b5be1ab525761bf4f3179152c",
+          "title": "Google Delays Gemini 4 Argon While OpenAI Struggles",
+          "canonical_url": "https://youtube.com/watch?v=4GIYeL_Kl4c",
+          "score": 4.9185,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4883,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6727,
+            "uniqueness": 0.6727,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.3273,
+            "topic_match": 0.0,
+            "taste_score": 0.44,
+            "taste_raw": 0.44,
+            "taste_reason": "jev score 0.44",
+            "attention": 0.7823,
+            "total": 4.9185
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.44×1.75=0.77",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "0cd667f5827830282b1629756478a36ee98c3c82",
+          "title": "Google Just Put 5 Powerful AI Tools in ONE Ecosystem (Gemini 3.8 Is INSANE)",
+          "canonical_url": "https://youtube.com/watch?v=BI6Ax78CQtE",
+          "score": 4.3635,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8387,
+            "uniqueness": 0.8387,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.1613,
+            "topic_match": -0.1,
+            "taste_score": 0.12,
+            "taste_raw": 0.12,
+            "taste_reason": "jev score 0.12",
+            "attention": 0.436,
+            "total": 4.3635
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.7×1=0.7; penalties: topic_match -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "76ffadc6403a55eacad9b943a926ad2f9992391a",
+          "title": "AI coding assistant pricing",
+          "reason": "title_dup_published",
+          "matched_title": "AI coding assistant pricing",
+          "jaccard": 1.0
+        },
+        {
+          "id": "ce5195f2def0d0fe52ac7a1031bf674aa6a775e4",
+          "title": "Build an MCP Server in Python and Use It in Claude Code",
+          "reason": "title_dup_published",
+          "matched_title": "Build Your First MCP Server in Python: 20 Lines, Real Tools",
+          "jaccard": 0.4444
+        }
+      ]
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "a1b709e79ac41a7d3c9f49c08b217775f6596e1c",
+          "title": "Claude Code now shows images and videos in the terminal",
+          "canonical_url": "https://reddit.com/comments/1x34qj4",
+          "score": 6.4264,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9866,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9111,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.0889,
+            "topic_match": 0.7,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "story_heat": 0.6564,
+            "story_sources": 4,
+            "total": 6.4264
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9866×1=0.9866"
+        },
+        {
+          "rank": 2,
+          "id": "d993dab527f32eac928639b88add379615e4925f",
+          "title": "I've had four long running agents running my newsletter for months. The hard part wasn't memory, it was the context window",
+          "canonical_url": "https://reddit.com/comments/1x3oqns",
+          "score": 6.1258,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "total": 6.1258
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "c2e9c838dc838f9605733920331416c6af9c605a",
+          "title": "Should your MCP server hide its tools until a user is authenticated?",
+          "canonical_url": "https://reddit.com/comments/1x3i5jx",
+          "score": 6.1134,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8367,
+            "uniqueness": 0.7273,
+            "uniqueness_sim_published": 0.2727,
+            "uniqueness_sim_state": 0.1633,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 6.1134
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "dde5ccf09b3708b81f6386c32fdf683ba703b1d9",
+          "title": "For those deploying AI inside companies: what do clients ask for that you still can't give them?",
+          "canonical_url": "https://reddit.com/comments/1x3k927",
+          "score": 5.8923,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8511,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.1489,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.38,
+            "taste_raw": 0.38,
+            "taste_reason": "jev score 0.38",
+            "total": 5.8923
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "56030de47b954dfeffeb136960667a69e037fccd",
+          "title": "Ollama 0.35+ now reports a prefill tok/s on the OpenAI endpoint. On a warm cache it's off by the cache hit ratio (3875 vs 125 tok/s). Plus two other things I measured on 0.40.3.",
+          "canonical_url": "https://reddit.com/comments/1x3j8sz",
+          "score": 5.885,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.78,
+            "taste_raw": 0.78,
+            "taste_reason": "jev score 0.78",
+            "total": 5.885
+          },
+          "explanation": "cross 1×2=2 + taste 0.78×1.75=1.365 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "ff1339491b13c9d0b42da0b4c603ccbfa3dcda1c",
+          "title": "Opendesign Go Plan",
+          "canonical_url": "https://reddit.com/comments/1x3p5f7",
+          "score": 5.5433,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.5769,
+            "uniqueness": 0.5769,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.4231,
+            "topic_match": 0.7,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "jev score 0.35",
+            "total": 5.5433
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "32d9cf9f8dfd9b69911b1499c2b32089dbabe175",
+          "title": "Open WebUI v0.12.0: A Voice That Talks Back, and a Face to Go With It",
+          "canonical_url": "https://reddit.com/comments/1x2sa4l",
+          "score": 5.5398,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8898,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8667,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1333,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.36,
+            "taste_raw": 0.36,
+            "taste_reason": "jev score 0.36",
+            "total": 5.5398
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8898×1=0.8898",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ff00b4f2701e67b7be255c46fa0156e3448092a1",
+          "title": "I made Claude use an AI agent for split ticket flights which saved me $1000+ on a long haul flight",
+          "canonical_url": "https://reddit.com/comments/1x3ikht",
+          "score": 5.5127,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7879,
+            "uniqueness": 0.7879,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.2121,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.17,
+            "taste_raw": 0.17,
+            "taste_reason": "jev score 0.17",
+            "total": 5.5127
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "cdd5a0cf96f68c8de9fbc926deb9f1fef769da5d",
+          "title": "\"Strata\" for GLM5.3 Flash is here for some! Project Maya",
+          "canonical_url": "https://reddit.com/comments/1x3fxzj",
+          "score": 5.5082,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8571,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.1429,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.5082
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "7ebc728b88d7be96ab44cb0c86030a548d77269e",
+          "title": "Anthropic should sponsor me to plant an American Chestnut tree",
+          "canonical_url": "https://reddit.com/comments/1x2v2gw",
+          "score": 5.5019,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.909,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8947,
+            "uniqueness": 0.8947,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1053,
+            "topic_match": 0.7,
+            "creator_weight": 0.5,
+            "taste_score": 0.02,
+            "taste_raw": 0.02,
+            "taste_reason": "jev score 0.02",
+            "total": 5.5019
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.909×1=0.909",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "1927d1cdecea3960f892a1b116796d62d554e726",
+          "title": "Any tips on making a UI/UX frontend not look like it was obviously coded by Claude?",
+          "canonical_url": "https://reddit.com/comments/1x3go5l",
+          "score": 5.4998,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8182,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1818,
+            "topic_match": 0.7,
+            "taste_score": 0.27,
+            "taste_raw": 0.27,
+            "taste_reason": "jev score 0.27",
+            "total": 5.4998
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "79ebf6100b4dc4e6d8714cc63ead007fc37fa5be",
+          "title": "new prediction feature",
+          "canonical_url": "https://reddit.com/comments/1x1towq",
+          "score": 5.4954,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6576,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6571,
+            "uniqueness": 0.6571,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.3429,
+            "topic_match": 0.7,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "jev score 0.50",
+            "total": 5.4954
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.5×1.75=0.875",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "c431495aeb348e72d2e96ada374dcef7d4d6d393",
+          "title": "Rebuilding a PDF editor with Claude Code made me question my engineering skills",
+          "canonical_url": "https://reddit.com/comments/1x37jfk",
+          "score": 5.4533,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.7,
+            "taste_score": 0.24,
+            "taste_raw": 0.24,
+            "taste_reason": "jev score 0.24",
+            "total": 5.4533
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "2e9e8c9f7d5256af783469f4c6e99357f2bea97c",
+          "title": "Here’s why RTX 5090 costs $5,000: AI firms are buying gaming GPUs by the pallet",
+          "canonical_url": "https://reddit.com/comments/1x37tg6",
+          "score": 5.453,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8824,
+            "uniqueness": 0.8824,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1176,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "jev score 0.40",
+            "total": 5.453
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "bf7a1502cb78ca14fdf0d697e65f8bf0be0310a5",
+          "title": "NVIDIA reportedly discontinuing RTX 5090, GB202 GPUs to be reserved for RTX PRO series",
+          "canonical_url": "https://reddit.com/comments/1x2bt6r",
+          "score": 5.4428,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7861,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8667,
+            "uniqueness": 0.8667,
+            "uniqueness_sim_published": 0.0952,
+            "uniqueness_sim_state": 0.1333,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.52,
+            "taste_raw": 0.52,
+            "taste_reason": "jev score 0.52",
+            "total": 5.4428
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.52×1.75=0.91",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "community": {
+      "picked": [],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "133541a06ad093b73c3a9e970ad36505e735eec1",
+          "title": "OpenAI Withdraws 3 Math Papers",
+          "reason": "topic_dup_published",
+          "matched_title": "OpenAI withdraws three mathematical results",
+          "matched_date": "2026-10-11",
+          "matched_section": "community",
+          "title_jaccard": 0.2857,
+          "body_containment": 0.5
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "5d844cda855e9032130232cdf7f712204cc15fda",
+          "title": "cross-model KV cache transfer technique",
+          "canonical_url": "https://arxiv.org/pdf/2608.03893",
+          "score": 7.1012,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8718,
+            "uniqueness": 0.8718,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1282,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.83,
+            "taste_raw": 0.83,
+            "taste_reason": "jev score 0.83",
+            "total": 7.1012
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.83×1.75=1.4525"
+        },
+        {
+          "rank": 2,
+          "id": "5dcac7eead58b072aaba8280ab9cef28593aea1b",
+          "title": "three new capabilities",
+          "canonical_url": "https://microsoft.com/en-us/copilot?OCID=CGE_csocial_MG_CopilotAppEngagement_868meb6uh&_bhlid=d541de3f17d96140a24450198d05d7bd3f5048bd",
+          "score": 5.8482,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.984,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8293,
+            "uniqueness": 0.8293,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1707,
+            "topic_match": 0.8,
+            "creator_weight": -0.1,
+            "taste_score": 0.19,
+            "taste_raw": 0.19,
+            "taste_reason": "jev score 0.19",
+            "total": 5.8482
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.984×1=0.984; penalties: creator_weight -0.1×1=-0.1"
+        }
+      ],
+      "rejected": [],
+      "dropped": []
+    }
+  }
+}
