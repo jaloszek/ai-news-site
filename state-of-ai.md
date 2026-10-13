@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-12 -->
+<!-- Last updated: 2026-10-13 -->
 
 # State of AI
 
@@ -22,6 +22,7 @@
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-09-22)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-29)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Tops 13 of 19 benchmarks; output up from 64K to 1M; $4/$20/M halved intro, Fairwind testers; burns >2x Astra's tokens/task _(as of 2026-10-06)_ |
+| Meta | Muse Wonder Full | 2026-10-13 | AA 56 from Spark 1.3's 48; Terminal-Bench 4.0 57% from 33; $4/$20/M; Muse Code subscribers only _(as of 2026-10-13)_ |
 
 ## Open weights / local
 
@@ -43,7 +44,7 @@
 | Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
 | OpenCode | anomalyco | v1.18.35 adds canonical redirects and JSON/Markdown stats output; free opencode/* tier with built-in Exa websearch _(as of 2026-10-08)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots; iOS Remote Control for local agents _(as of 2026-10-07)_ |
-| Also current | various | Pi 1.1.0, Cline 4.1.22, Qwen Code 0.25.1, OpenHands 1.26.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.1, Hermes 0.19 _(as of 2026-10-12)_ |
+| Also current | various | Pi 1.1.0, Cline 4.1.22, Qwen Code 0.25.1, OpenHands 1.27.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.1, Hermes 0.19 _(as of 2026-10-13)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
 
 ## Infrastructure / inference
@@ -73,6 +74,5 @@
 
 - OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-10-03)_
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-10-03)_
-- Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-09-21)_
+- Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-10-13)_
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-09-22)_
-- Meta Claude Code users fell from ~60k to 30k; Microsoft cut per-employee Claude budgets from $100k to $10k _(as of 2026-10-06)_
