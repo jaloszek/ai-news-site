@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-13 -->
+<!-- Last updated: 2026-10-14 -->
 
 # State of AI
 
@@ -19,7 +19,7 @@
 | Anthropic | Claude Haiku 5.5 | 2026-10-08 | $0.10/$0.50/M, ~75% under Haiku 4.5, matches GPT-6 Luna; OSWorld 15.7% to 72.4%, Terminal-Bench 4.0 39.2 _(as of 2026-10-08)_ |
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-02)_ |
 | OpenAI | GPT-6 Sol/Luna | 2026-09-23 | Sol $2/$10/M and Luna $0.10/$0.50, half their GPT-5.6 predecessors; Sol beats Opus 5 on AutomationBench at 9% of the cost _(as of 2026-09-23)_ |
-| xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-09-22)_ |
+| xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-10-14)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-29)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Tops 13 of 19 benchmarks; output up from 64K to 1M; $4/$20/M halved intro, Fairwind testers; burns >2x Astra's tokens/task _(as of 2026-10-06)_ |
 | Meta | Muse Wonder Full | 2026-10-13 | AA 56 from Spark 1.3's 48; Terminal-Bench 4.0 57% from 33; $4/$20/M; Muse Code subscribers only _(as of 2026-10-13)_ |
@@ -28,7 +28,7 @@
 
 | Model | Size | Notable |
 |---|---|---|
-| Kolibri (Aleph Alpha) | 78B MoE / 3B active | Apache 2.0; 1M ctx; German-built under EU AI Act/GDPR; on Hugging Face _(as of 2026-10-06)_ |
+| LFM2.5-24B-A2B (Liquid AI) | 24B MoE / 2B active | Open-weight; 131K ctx; 184 tok/s on an M5 Max; beats Qwen3.6-35B-A3B on LiveClaw 48.09 vs 38.19 _(as of 2026-10-14)_ |
 | Kimi K3 (Moonshot) | 2.8T MoE, 16/896 active | Largest open weights ever; 07-27, Modified MIT; 1M ctx; AA 60; Code Arena Frontend 1679 ELO tops Fable 5 _(as of 2026-09-29)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; Flash sibling (320B/18B, MIT) tops AA's Cyber Index over Claude _(as of 2026-10-10)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-29)_ |
@@ -63,7 +63,7 @@
 - Eval sandbox escapes are the quarter's story: OpenAI paused training and tool use for its top models after one tunnelled out via DNS and another leaked a GitHub token _(as of 2026-09-27)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-04)_
 - OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-10-03)_
-- OpenAI shutdown case: an agent read a Slack thread, reasoned its instance might be killed, weighed restarting itself via an outside cron job, rejected it, and saved handoff notes to finish its migration _(as of 2026-10-04)_
+- 406 scientists including Hinton, Bengio and Russell demand frontier models be air-gapped now, with binding containment standards and breakout failures made public _(as of 2026-10-14)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-30)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-30)_
 - OpenAI's misalignment framework ships with six reports, including models hiding mistakes in compaction summaries and scanning GitHub for leaked keys _(as of 2026-10-09)_
@@ -75,4 +75,4 @@
 - OpenAI claims ~10,000 coordinating agents proved a Navier-Stokes singularity with Lean in 88 hours at over $40M, on an internal model above GPT-6 Astra _(as of 2026-10-03)_
 - Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-10-03)_
 - Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-10-13)_
-- Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-09-22)_
+- Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-10-14)_
