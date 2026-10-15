@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-14 -->
+<!-- Last updated: 2026-10-15 -->
 
 # State of AI
 
@@ -18,7 +18,7 @@
 | Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-09-29)_ |
 | Anthropic | Claude Haiku 5.5 | 2026-10-08 | $0.10/$0.50/M, ~75% under Haiku 4.5, matches GPT-6 Luna; OSWorld 15.7% to 72.4%, Terminal-Bench 4.0 39.2 _(as of 2026-10-08)_ |
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-02)_ |
-| OpenAI | GPT-6 Sol/Luna | 2026-09-23 | Sol $2/$10/M and Luna $0.10/$0.50, half their GPT-5.6 predecessors; Sol beats Opus 5 on AutomationBench at 9% of the cost _(as of 2026-09-23)_ |
+| OpenAI | GPT-6.1 Sol / GPT-6 Luna | 2026-09-30 | Sol $2/$10/M, one-fifth of Astra's and near-Astra on agentic coding; Luna $0.10/$0.50, half GPT-5.6; Ultrafast 8x in Codex _(as of 2026-10-15)_ |
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-10-14)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-09-29)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Tops 13 of 19 benchmarks; output up from 64K to 1M; $4/$20/M halved intro, Fairwind testers; burns >2x Astra's tokens/task _(as of 2026-10-06)_ |
@@ -40,7 +40,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.296 adds gateway policy keys, subagent compaction and oversized-file Read; default Haiku 5.5 at $0.10/$0.50/Mtok _(as of 2026-10-10)_ |
+| Claude Code | Anthropic | v2.1.300 expands the mod API and OpenTelemetry telemetry: virtualText decorations, cache writes split 5m/1h; /advisor on AWS _(as of 2026-10-15)_ |
 | Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
 | OpenCode | anomalyco | v1.18.35 adds canonical redirects and JSON/Markdown stats output; free opencode/* tier with built-in Exa websearch _(as of 2026-10-08)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots; iOS Remote Control for local agents _(as of 2026-10-07)_ |
