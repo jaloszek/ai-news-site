@@ -1,0 +1,1112 @@
+{
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T02:29:19.804959+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "29f9840eaa57bc2eeaad1c24f472fedea9bb3a3f",
+          "title": "v2.1.300",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300",
+          "score": 7.7426,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8378,
+            "uniqueness": 0.8378,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1622,
+            "topic_match": 0.7,
+            "creator_weight": 1.0,
+            "taste_score": 0.69,
+            "taste_raw": 0.69,
+            "taste_reason": "jev score 0.69",
+            "total": 7.7426
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.69×1.75=1.2075"
+        },
+        {
+          "rank": 2,
+          "id": "acb868617334bc3b8e58223cae4f7b3b71e8f869",
+          "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "canonical_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+          "score": 6.578,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6478,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7442,
+            "uniqueness": 0.7442,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2558,
+            "topic_match": 0.8,
+            "taste_score": 0.19,
+            "taste_raw": 0.19,
+            "taste_reason": "jev score 0.19",
+            "non_release_bonus": 1.0,
+            "total": 6.578
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + non_release_bonus 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "9a6cbe528dff003b1846aebe448df70c8607857f",
+          "title": "Qwen Code Desktop v0.25.1",
+          "canonical_url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.1",
+          "score": 5.6437,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.396,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7879,
+            "uniqueness": 0.7879,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2121,
+            "topic_match": 0.8,
+            "creator_weight": -0.4,
+            "taste_score": 0.59,
+            "taste_raw": 0.59,
+            "taste_reason": "jev score 0.59",
+            "total": 5.6437
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.59×1.75=1.0325; penalties: creator_weight -0.4×1=-0.4"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "ba411b63d46219adfc3019ce04ed4cbfed0ce5a5",
+          "title": "1.0.98-1",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "bbc5b1605b04d90b99e91cd9a5516c774094c4ea",
+          "title": "1.0.97",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "d6542019b6a54efbb96686291a53892198b0d20e",
+          "title": "1.0.99-0",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "4e8f09d7d9c080998d7f0bc74571cbb940343710",
+          "title": "1.0.98",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "5231ee939b107f0c8f138db06102ad07725dd39e",
+          "title": "v2.1.299",
+          "reason": "creator_cap",
+          "creator_key": "Claude Code releases",
+          "cap": 1
+        },
+        {
+          "id": "3de1fa1fb74aaac828610ad13332ba992caad572",
+          "title": "First Things First, Faster",
+          "reason": "creator_cap",
+          "creator_key": "Amp news",
+          "cap": 1
+        },
+        {
+          "id": "93b4895d6f595f4c58dd80fba979b8359f8e3ae2",
+          "title": "Take Puck with You",
+          "reason": "jev_offtopic",
+          "p": 0.72
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "7aff82cf50e7c250f6064e6055fc2cbb0e756b25",
+          "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+          "canonical_url": "https://csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+          "score": 6.8728,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6383,
+            "uniqueness": 0.6383,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.3617,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.41,
+            "taste_raw": 0.41,
+            "taste_reason": "jev score 0.41",
+            "attention": 1.0,
+            "total": 6.8728
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "b3d04b5f805f38bf6566af108b3ba76e3c0163d2",
+          "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+          "canonical_url": "https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
+          "score": 5.9017,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6043,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7872,
+            "uniqueness": 0.7872,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.2128,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "total": 5.9017
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.39×1.75=0.6825"
+        },
+        {
+          "rank": 3,
+          "id": "4736fef67425d8b151365cbb3f1ee739464eae29",
+          "title": "OpenAI engineer arrested for allegedly trying to eavesdrop on executive meetings",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/14/openai-engineer-arrested-hidden-recording-device",
+          "score": 5.6953,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9723,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9231,
+            "uniqueness": 0.6364,
+            "uniqueness_sim_published": 0.3636,
+            "uniqueness_sim_state": 0.0769,
+            "topic_match": 0.5,
+            "taste_score": 0.31,
+            "taste_raw": 0.31,
+            "taste_reason": "jev score 0.31",
+            "story_heat": 0.5679,
+            "story_sources": 3,
+            "total": 5.1953,
+            "topic_repeat_penalty": -1.0,
+            "topic_repeat_matched_title": "OpenAI engineer arrested in bugging of executive conference room",
+            "topic_repeat_matched_section": "community",
+            "topic_repeat_title_jaccard": 0.3636,
+            "topic_repeat_body_containment": 0.4,
+            "jev_same_story_cross_penalty": -0.5,
+            "jev_same_story_cross_p": 0.95
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9723×1=0.9723; penalties: topic_repeat -1×0.5=-0.5"
+        },
+        {
+          "rank": 4,
+          "id": "5d11600ca8895d67e73c832c3971a3e5597d70e5",
+          "title": "Could this be the Frontier Labs’ WeWork moment?",
+          "canonical_url": "https://garymarcus.substack.com/p/could-this-be-the-frontier-labs-wework",
+          "score": 5.5318,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7039,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8636,
+            "uniqueness": 0.8636,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1364,
+            "topic_match": 0.5,
+            "creator_weight": -0.2,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "total": 5.0318,
+            "jev_clickbait_penalty": -0.5,
+            "jev_clickbait_p": 0.88
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.7039×1=0.7039; penalties: creator_weight -0.2×1=-0.2"
+        },
+        {
+          "rank": 5,
+          "id": "c401765ed2d2b00a4cd8e438d9e895d672dbea95",
+          "title": "OpenAI will reportedly ship at least one model this year but its flagship still needs alignment work",
+          "canonical_url": "https://the-decoder.com/openai-will-reportedly-ship-at-least-one-model-this-year-but-its-flagship-still-needs-alignment-work",
+          "score": 5.0137,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6905,
+            "uniqueness": 0.6905,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.3095,
+            "topic_match": 0.2,
+            "creator_weight": 0.25,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "total": 5.0137,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "4a4a81eb8e4e64009b288ca822507a20a6192d11",
+          "title": "Gemini 4 Argon is now available worldwide as Google's most capable frontier model",
+          "canonical_url": "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model",
+          "score": 4.9026,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8501,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6279,
+            "uniqueness": 0.625,
+            "uniqueness_sim_published": 0.375,
+            "uniqueness_sim_state": 0.3721,
+            "topic_match": 0.8,
+            "creator_weight": 0.25,
+            "taste_score": 0.43,
+            "taste_raw": 0.43,
+            "taste_reason": "jev score 0.43",
+            "total": 4.9026,
+            "topic_repeat_penalty": -1.0,
+            "topic_repeat_matched_title": "Gemini 4 Argon now available in OpenCode 🔥",
+            "topic_repeat_matched_section": "reddit",
+            "topic_repeat_title_jaccard": 0.375,
+            "topic_repeat_body_containment": 0.36,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8501×1=0.8501; penalties: domain_saturation -1×1=-1, topic_repeat -1×0.5=-0.5",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ffc748cb8d88a919ca05994bbdf2a485643ad1da",
+          "title": "Higgsfield takes AI video from 1 minute to over 10",
+          "canonical_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+          "score": 4.6713,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.8095,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.0,
+            "creator_weight": 0.15,
+            "taste_score": 0.37,
+            "taste_raw": 0.37,
+            "taste_reason": "jev score 0.37",
+            "total": 4.6713,
+            "domain_saturation_penalty": -0.75
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8×1=0.8; penalties: domain_saturation -0.75×1=-0.75",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "7d4e278f0b74844571bb3cf87efa87ac5316d15f",
+          "title": "Will the HomeView be Apple’s first smart home success?",
+          "canonical_url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success",
+          "score": 4.0133,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.477,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.8095,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.2,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "jev score 0.15",
+            "total": 4.0133,
+            "domain_saturation_penalty": -0.75
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.477×1=0.477; penalties: domain_saturation -0.75×1=-0.75",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "9726aa3a5f66ec7f41ada6ab24e69cf56461d144",
+          "title": "Meta releases its first frontier model, Muse Wonder",
+          "reason": "title_dup_published",
+          "matched_title": "Meta's new frontier model Muse Wonder Full breaks into the AI top tier",
+          "jaccard": 0.5714
+        },
+        {
+          "id": "a2c304623a61d6cf82e35f0b69ad27b773367dfd",
+          "title": "[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model",
+          "reason": "title_dup_published",
+          "matched_title": "Meta's new frontier model Muse Wonder Full breaks into the AI top tier",
+          "jaccard": 0.6
+        },
+        {
+          "id": "b5fb86d8eefe4e5731e257b3c7a822b3f7cfbe85",
+          "title": "Cheaper AI tokens are driving more demand, and that's Jensen Huang's best-case scenario",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "f6cba501345f0b730f2efecb7a6cd7157ac95917",
+          "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+          "reason": "jev_offtopic",
+          "p": 0.67
+        },
+        {
+          "id": "5401d4af2d74a8f609ad61a54e582df530fe5743",
+          "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+          "reason": "jev_offtopic",
+          "p": 0.83
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "01b1f507f7111ff46f7346f9b4aa52eea0f886dd",
+          "title": "Gemini 4 Argon (Fully Tested & Thoughts): It's Just Fake? I Tested It on 6 Hard Apps",
+          "canonical_url": "https://youtube.com/watch?v=z6rW8PsDxV4",
+          "score": 7.0775,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.973,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8039,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1961,
+            "topic_match": 0.7,
+            "taste_score": 0.49,
+            "taste_raw": 0.49,
+            "taste_reason": "jev score 0.49",
+            "story_heat": 1.0,
+            "story_sources": 20,
+            "attention": 0.954,
+            "total": 6.5775,
+            "jev_same_story_cross_penalty": -0.5,
+            "jev_same_story_cross_p": 0.74
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.973×1=0.973"
+        },
+        {
+          "rank": 2,
+          "id": "136fcec8352646958b7828c893d5b285d2e64bc2",
+          "title": "How I Keep Up with AI Without Drowning in It (Free Skill)",
+          "canonical_url": "https://youtube.com/watch?v=2i_ZyqDmtio",
+          "score": 5.9291,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8298,
+            "uniqueness": 0.8298,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1702,
+            "topic_match": 0.7,
+            "taste_score": 0.31,
+            "taste_raw": 0.31,
+            "taste_reason": "jev score 0.31",
+            "attention": 0.7094,
+            "total": 5.9291
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "71d670f24699866d3d8840047654c937f44f2c65",
+          "title": "Google Cloud Live: Inside the Gemini at Work 2026 keynote",
+          "canonical_url": "https://youtube.com/watch?v=WuqwGPtZwvY",
+          "score": 5.5248,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6917,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7455,
+            "uniqueness": 0.7455,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2545,
+            "topic_match": -0.1,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "jev score 0.55",
+            "story_heat": 0.435,
+            "story_sources": 2,
+            "attention": 0.6923,
+            "total": 5.5248
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.55×1.75=0.9625; penalties: topic_match -0.1×1=-0.1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "c7ab621b9edfc4445b346c1c60c5457e062ae18f",
+          "title": "Anthropic Bans Cruelty to Claude. Is That Justified?",
+          "canonical_url": "https://youtube.com/watch?v=J32sFQ-vxUo",
+          "score": 5.2525,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4904,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8947,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.1053,
+            "topic_match": 0.7,
+            "taste_score": 0.28,
+            "taste_raw": 0.28,
+            "taste_reason": "jev score 0.28",
+            "attention": 0.5219,
+            "total": 5.2525
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "09121ef424bf82bc8cba93b6525115d19ab0d648",
+          "title": "AI Labs Warn Race Makes Breach ‘Inevitable’",
+          "canonical_url": "https://youtube.com/watch?v=C4Sq3Rot8FU",
+          "score": 5.2466,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6906,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7826,
+            "uniqueness": 0.7826,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2174,
+            "topic_match": 0.0,
+            "creator_weight": 0.4,
+            "taste_score": 0.21,
+            "taste_raw": 0.21,
+            "taste_reason": "jev score 0.21",
+            "attention": 0.9509,
+            "total": 5.2466
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6906×1=0.6906",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "afa141ac8c7175714086e2d19ad66a659779279a",
+          "title": "Vibe Coding 2.0 is here...",
+          "canonical_url": "https://youtube.com/watch?v=S0JwWcLVzQA",
+          "score": 5.0261,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7357,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8372,
+            "uniqueness": 0.8372,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1628,
+            "taste_score": 0.27,
+            "taste_raw": 0.27,
+            "taste_reason": "jev score 0.27",
+            "attention": 0.9661,
+            "total": 5.0261
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.7357×1=0.7357",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "d64a456d8120346428df88c0c1e3cdfd0628c97c",
+          "title": "OpenAI’s lead engineer was secretly a spy...",
+          "canonical_url": "https://youtube.com/watch?v=QZVzuq28eFw",
+          "score": 4.7725,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8246,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1754,
+            "topic_match": 0.5,
+            "creator_weight": -0.1,
+            "taste_score": 0.03,
+            "taste_raw": 0.03,
+            "taste_reason": "jev score 0.03",
+            "attention": 1.0,
+            "total": 4.7725,
+            "topic_repeat_penalty": -1.0,
+            "topic_repeat_matched_title": "OpenAI engineer arrested in bugging of executive conference room",
+            "topic_repeat_matched_section": "community",
+            "topic_repeat_title_jaccard": 0.2,
+            "topic_repeat_body_containment": 0.5
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: topic_repeat -1×0.5=-0.5, creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "9434eb140a723d05969d649136302ad6735d6d03",
+          "title": "Google Just Caught Up (Gemini-4 Argon)",
+          "canonical_url": "https://youtube.com/watch?v=eBszYxzE2dk",
+          "score": 4.7216,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8399,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7941,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.3333,
+            "uniqueness_sim_state": 0.2059,
+            "topic_match": 0.0,
+            "creator_weight": -0.2,
+            "taste_score": 0.18,
+            "taste_raw": 0.18,
+            "taste_reason": "jev score 0.18",
+            "attention": 1.0,
+            "total": 4.7216
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8399×1=0.8399; penalties: creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "529806abe9fafe1e204319c44e501fbd2346b71b",
+          "title": "GEMINI 4 ARGON IS WEIRD...",
+          "reason": "jev_same_story_section",
+          "p": 0.75
+        }
+      ]
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "09352035b1593aacbdfc46956316493e4b6b7b21",
+          "title": "Four MCP tool-design mistakes I made, and what agents did with them",
+          "canonical_url": "https://reddit.com/comments/1x62q2y",
+          "score": 6.5058,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7895,
+            "uniqueness": 0.7895,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2105,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.68,
+            "taste_raw": 0.68,
+            "taste_reason": "jev score 0.68",
+            "total": 6.5058
+          },
+          "explanation": "cross 1×2=2 + taste 0.68×1.75=1.19 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "018a96cf03a24c39a348af45be2f454e4ca243b1",
+          "title": "How are you handling live web search in MCP agents without flooding the context window?",
+          "canonical_url": "https://reddit.com/comments/1x563cd",
+          "score": 6.2738,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8615,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8182,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1579,
+            "uniqueness_sim_state": 0.1818,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "total": 6.2738
+          },
+          "explanation": "cross 1×2=2 + taste 0.62×1.75=1.085 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "afe535bf64d78c55a8167c0b94830eb9ba96948b",
+          "title": "Open WebUI 0.12.2: Tool Search now works with OpenAI, and we measured what it saves. Up to 78% fewer prompt tokens, and 147 tools on a model that only takes 128.",
+          "canonical_url": "https://reddit.com/comments/1x644mb",
+          "score": 6.1922,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7556,
+            "uniqueness": 0.7556,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.2444,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.68,
+            "taste_raw": 0.68,
+            "taste_reason": "jev score 0.68",
+            "total": 6.1922
+          },
+          "explanation": "cross 1×2=2 + taste 0.68×1.75=1.19 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "d636c759c63de0054a73cc77987f842076f616e6",
+          "title": "Are They Nerfing Opus 5.5? Livenerf Day 20 update",
+          "canonical_url": "https://reddit.com/comments/1x606aj",
+          "score": 6.15,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.7,
+            "creator_weight": 0.4,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "jev score 0.40",
+            "total": 6.15
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "8ee5e5a5b817f8098fc468a24a07c2c0495471c3",
+          "title": "inclusionAI/Ling-3.1-flash · Hugging Face",
+          "canonical_url": "https://reddit.com/comments/1x5tsni",
+          "score": 5.9152,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7692,
+            "uniqueness": 0.7692,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2308,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.69,
+            "taste_raw": 0.69,
+            "taste_reason": "jev score 0.69",
+            "total": 5.9152
+          },
+          "explanation": "cross 1×2=2 + taste 0.69×1.75=1.2075 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "1dd1f7015c308092db37868cf18717f69bac1dc8",
+          "title": "NVIDIA Nemotron Bolt 3.5 74B A9B releases Oct. 15th",
+          "canonical_url": "https://reddit.com/comments/1x5t1tm",
+          "score": 5.8749,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7561,
+            "uniqueness": 0.7561,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2439,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.67,
+            "taste_raw": 0.67,
+            "taste_reason": "jev score 0.67",
+            "total": 5.8749
+          },
+          "explanation": "cross 1×2=2 + taste 0.67×1.75=1.1725 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "4b90680285042981331e8d7fbf09cd5e136e58f8",
+          "title": "We built the ultimate job search MCP. It does everything",
+          "canonical_url": "https://reddit.com/comments/1x5y8nk",
+          "score": 5.8385,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8276,
+            "uniqueness": 0.8276,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1724,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.29,
+            "taste_raw": 0.29,
+            "taste_reason": "jev score 0.29",
+            "total": 5.8385
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "25e3d053f2dfe2cdba89c536c75c64eac8deafed",
+          "title": "Open WebUI 0.12.1: EXTERNAL APPS in channels, Azure Realtime voice calls, avatars in every call, compare and merge revisions",
+          "canonical_url": "https://reddit.com/comments/1x5xgb8",
+          "score": 5.825,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.1562,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.46,
+            "taste_raw": 0.46,
+            "taste_reason": "jev score 0.46",
+            "total": 5.825
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "e8b5a33f1fb1d3b7f2546065dd877d9f671571e6",
+          "title": "Anthropic says unkillable small models may be months away from self-replicating across the internet",
+          "canonical_url": "https://reddit.com/comments/1x4zp6s",
+          "score": 5.8099,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8289,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.7,
+            "creator_weight": 0.4,
+            "taste_score": 0.31,
+            "taste_raw": 0.31,
+            "taste_reason": "jev score 0.31",
+            "total": 5.8099
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8289×1=0.8289",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "165b1e976a4d4c332835876ec421750e3548d1e1",
+          "title": "The hypocrisy is absolutely unbelievable. Claude—TRAINED ON ANNA'S ARCHIVE—refusing to find an Anna's Archive link.",
+          "canonical_url": "https://reddit.com/comments/1x5ky7s",
+          "score": 5.7456,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9625,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8889,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1111,
+            "topic_match": 0.7,
+            "creator_weight": 0.5,
+            "taste_score": 0.13,
+            "taste_raw": 0.13,
+            "taste_reason": "jev score 0.13",
+            "total": 5.7456
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9625×1=0.9625",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "6e3b6ef7f99baeeb2724ca7392b33380a6eca672",
+          "title": "The AI race: China's open-weight models trail US closed models by just 7 months",
+          "canonical_url": "https://reddit.com/comments/1x5pjv7",
+          "score": 5.6877,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7692,
+            "uniqueness": 0.7692,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.2308,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 5.6877
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "485b5fbb14825f819b721ccf1b5d710d998c8cb8",
+          "title": "The usage I don't burn before the weekly reset just evaporates, so I built a free ledger to spend it on other people's GitHub issues",
+          "canonical_url": "https://reddit.com/comments/1x4bkp0",
+          "score": 5.5632,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6632,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.1,
+            "topic_match": 0.7,
+            "taste_score": 0.48,
+            "taste_raw": 0.48,
+            "taste_reason": "jev score 0.48",
+            "total": 5.5632
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.48×1.75=0.84",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "bcbad1a43451d0fa5672fe30659cd71bf1495655",
+          "title": "Claude account banned , what’s next?",
+          "canonical_url": "https://reddit.com/comments/1x648vg",
+          "score": 5.5613,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8158,
+            "uniqueness": 0.8158,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1842,
+            "topic_match": 0.7,
+            "creator_weight": 0.5,
+            "taste_score": 0.02,
+            "taste_raw": 0.02,
+            "taste_reason": "jev score 0.02",
+            "total": 5.5613
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "192ab93a6e43ea1778e3f2cc0b86ec89a73a4267",
+          "title": "Introducing Localhost Lounge: an Open WebUI meet-up series, starting in Tokyo.",
+          "canonical_url": "https://reddit.com/comments/1x6506x",
+          "score": 5.5605,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9032,
+            "uniqueness": 0.8824,
+            "uniqueness_sim_published": 0.1176,
+            "uniqueness_sim_state": 0.0968,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.29,
+            "taste_raw": 0.29,
+            "taste_reason": "jev score 0.29",
+            "total": 5.5605
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ac9ccf7611adba085b9c966ad607bbd4b1e2c1ff",
+          "title": "Someone is running Qwen 27B at ~20 tok/s on a jailbroken PS5's GPU",
+          "canonical_url": "https://reddit.com/comments/1x5ak2n",
+          "score": 5.555,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8862,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.8095,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.54,
+            "taste_raw": 0.54,
+            "taste_reason": "jev score 0.54",
+            "total": 5.555
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.54×1.75=0.945",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "2c1c2c493e6e992d79539dce3b409ea71919bda2",
+          "title": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI Benchmarks",
+          "canonical_url": "https://latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
+          "score": 6.8234,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9473,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7949,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.2051,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.18,
+            "taste_raw": 0.18,
+            "taste_reason": "jev score 0.18",
+            "story_heat": 1.0,
+            "story_sources": 20,
+            "total": 6.8234
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9473×1=0.9473"
+        },
+        {
+          "rank": 2,
+          "id": "be4141aad3c26827695d8ae9531cfe5e8b0d4ac5",
+          "title": "Has AI tells",
+          "canonical_url": "https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1",
+          "score": 6.7174,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9706,
+            "uniqueness": 0.9706,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0294,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.31,
+            "taste_raw": 0.31,
+            "taste_reason": "jev score 0.31",
+            "attention": 0.7734,
+            "total": 6.7174
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "ce7cbe0fa785220744768fc34b8ca03b368b422e",
+          "title": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+          "reason": "domain_cap",
+          "domain": "github.com",
+          "cap": 1
+        },
+        {
+          "id": "d268e81a3a1d6e96ee014784913426ce2ff9947b",
+          "title": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+          "reason": "jev_offtopic",
+          "p": 0.73
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [],
+      "rejected": [],
+      "dropped": []
+    }
+  }
+}
