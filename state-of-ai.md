@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-16 -->
+<!-- Last updated: 2026-10-17 -->
 
 # State of AI
 
@@ -40,11 +40,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.301 adds a retry-watchdog wait cap, OTEL tracing setup in the claude-api skill, and vim % bracket jumps _(as of 2026-10-16)_ |
+| Claude Code | Anthropic | v2.1.302 adds a client-side auto-mode classifier env var and idle-compaction toggle in /config _(as of 2026-10-17)_ |
 | Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
 | OpenCode | anomalyco | v1.18.35 adds canonical redirects and JSON/Markdown stats output; free opencode/* tier with built-in Exa websearch _(as of 2026-10-08)_ |
-| Cursor | SpaceX | Acquired for $60B; Origin first-party code hosting in beta; OpenAI cuts its models off Nov 12; Rollouts and Security Review PR bots; iOS Remote Control for local agents _(as of 2026-10-07)_ |
-| Also current | various | Pi 1.2.0, Cline 4.1.22, Qwen Code 0.25.2, OpenHands 1.27.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.1, Hermes 0.19 _(as of 2026-10-16)_ |
+| Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
+| Also current | various | Pi 1.3.0, Cline 4.1.22, Qwen Code 0.25.2, OpenHands 1.27.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.1, Hermes 0.19 _(as of 2026-10-17)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
 
 ## Infrastructure / inference
