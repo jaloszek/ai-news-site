@@ -43,7 +43,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-10-15.html"><div class="cal-num">15</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.300</li><li>✨ Containment and monitoring failures are to blame</li><li>💬 AINews AI Engineer NYC: Gemini 4 Argon Vals AI</li><li>🛠 GitHub Copilot app for Beginners: How to teach</li><li>✨ OpenAI engineer arrested for allegedly trying</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-16.html"><div class="cal-num">16</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.301</li><li>✨ NVIDIA IIT Indic pretraining corpus</li><li>💬 Muse Spark open-weights model</li><li>🛠 Netflix efficient AI coding agents</li><li>✨ Introducing Timestral</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.302</li><li>✨ Assessor investigates AI control</li><li>💬 AI reverse engineers hardware</li><li>🛠 Cursor Cloud Agent Canvases</li><li>✨ Gemini 4 Argon nears launch</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">18</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-10-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🛠 vLLM adds System One endpoint</li><li>✨ DeepSeek Flash beats larger rivals</li><li>💬 Tessl merges most PRs unreviewed</li><li>🛠 CC idle compaction</li><li>✨ Anthropic stops hiring juniors</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">19</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>

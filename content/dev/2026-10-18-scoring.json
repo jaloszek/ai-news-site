@@ -1,0 +1,1283 @@
+{
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T16:59:27.842540+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "5231ee939b107f0c8f138db06102ad07725dd39e",
+          "title": "v2.1.299",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
+          "score": 7.095,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3236,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8222,
+            "uniqueness": 0.8222,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1778,
+            "topic_match": 0.7,
+            "creator_weight": 1.0,
+            "taste_score": 0.71,
+            "taste_raw": 0.71,
+            "taste_reason": "jev score 0.71",
+            "total": 7.095
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.71×1.75=1.2425"
+        },
+        {
+          "rank": 2,
+          "id": "51299d4c7c9cbf0baeebd63aa41d947e0714e9b2",
+          "title": "v0.32.0",
+          "canonical_url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+          "score": 6.3392,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8605,
+            "uniqueness": 0.8605,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1395,
+            "topic_match": 0.2,
+            "taste_score": 0.74,
+            "taste_raw": 0.74,
+            "taste_reason": "jev score 0.74",
+            "total": 6.3392
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.74×1.75=1.295"
+        },
+        {
+          "rank": 3,
+          "id": "e4c11e1fdd68bfda70db445cf8b89033e4f5f8e4",
+          "title": "1.0.99-3",
+          "canonical_url": "https://github.com/github/copilot-cli/releases/tag/v1.0.99-3",
+          "score": 5.8359,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8262,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8367,
+            "uniqueness": 0.8367,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1633,
+            "topic_match": 0.8,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "jev score 0.50",
+            "patch_release_penalty": -1.0,
+            "total": 5.8359
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.5×1.75=0.875; penalties: patch_release -1×0.5=-0.5"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "88dca9de836d4f1fae08bfc6715c3f9de3e7f7f7",
+          "title": "Qwen Code Desktop v0.25.2",
+          "reason": "title_dup_published",
+          "matched_title": "Qwen Code Desktop v0.25.1",
+          "jaccard": 1.0
+        },
+        {
+          "id": "332740379865b2c59c207932769dfbafe2b4477c",
+          "title": "1.0.99-1",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "d6542019b6a54efbb96686291a53892198b0d20e",
+          "title": "1.0.99-0",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "4e8f09d7d9c080998d7f0bc74571cbb940343710",
+          "title": "1.0.98",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "4fa808623e73af3333cf40d7cacd025c37f6087b",
+          "title": "See Your Runner's Desktop",
+          "reason": "jev_offtopic",
+          "p": 0.65
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "6f7ae06bf863de03ff3b8c4f3082503567525d5c",
+          "title": "Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while once again massively cutting per-task costs",
+          "canonical_url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs",
+          "score": 6.5827,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.988,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6,
+            "uniqueness": 0.6,
+            "uniqueness_sim_published": 0.2143,
+            "uniqueness_sim_state": 0.4,
+            "topic_match": 0.8,
+            "creator_weight": 0.25,
+            "taste_score": 0.61,
+            "taste_raw": 0.61,
+            "taste_reason": "jev score 0.61",
+            "story_heat": 0.9829,
+            "story_sources": 5,
+            "total": 6.5827,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.61×1.75=1.0675; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 2,
+          "id": "9db4940a53f868400a117abeba82d09071409b87",
+          "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+          "canonical_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+          "score": 6.0328,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7632,
+            "uniqueness": 0.7632,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2368,
+            "topic_match": 0.8,
+            "creator_weight": 0.15,
+            "taste_score": 0.33,
+            "taste_raw": 0.33,
+            "taste_reason": "jev score 0.33",
+            "total": 6.0328
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8"
+        },
+        {
+          "rank": 3,
+          "id": "cd9ee83649ac9c5fa91a09f232b55349b911f594",
+          "title": "Anthropic has nearly stopped hiring junior staff because AI agents now work six times as many hours",
+          "canonical_url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours",
+          "score": 6.0223,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8108,
+            "uniqueness": 0.8108,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.1892,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "jev score 0.55",
+            "story_heat": 0.3807,
+            "story_sources": 2,
+            "total": 6.0223,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 4,
+          "id": "d4d8a21bd9972e11394c29470a79b7d15cd8916b",
+          "title": "Meta removes language that raised scraping and AI training concerns",
+          "canonical_url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns",
+          "score": 5.9449,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.881,
+            "uniqueness": 0.881,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.119,
+            "topic_match": 0.2,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "total": 5.9449
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "218f77bb959f0137a2323231ddc1aa12a0ee1e5f",
+          "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+          "canonical_url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce",
+          "score": 5.7253,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8571,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1429,
+            "topic_match": 0.2,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "total": 5.7253
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "78095fed0138226ca7695c3f4421f95f5619c174",
+          "title": "v0.32.0rc1: [Dependency] Update Humming and remove NVFP4 scale workaround (#61556)",
+          "canonical_url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc1",
+          "score": 5.0614,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4958,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.913,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.087,
+            "topic_match": 0.8,
+            "taste_score": 0.52,
+            "taste_raw": 0.52,
+            "taste_reason": "jev score 0.52",
+            "total": 5.0614,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.52×1.75=0.91; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a01e02239da0a38ee49f2989916454516c49e83e",
+          "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+          "canonical_url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+          "score": 4.8908,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6714,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8235,
+            "uniqueness": 0.8235,
+            "uniqueness_sim_published": 0.0556,
+            "uniqueness_sim_state": 0.1765,
+            "topic_match": 0.2,
+            "taste_score": 0.68,
+            "taste_raw": 0.68,
+            "taste_reason": "jev score 0.68",
+            "total": 4.8908,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.68×1.75=1.19; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a65b774e754deb8214bf18892f6afc5977d4a63e",
+          "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
+          "canonical_url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
+          "score": 4.5903,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9036,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9375,
+            "uniqueness": 0.9167,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.0625,
+            "topic_match": 0.7,
+            "taste_score": 0.64,
+            "taste_raw": 0.64,
+            "taste_reason": "jev score 0.64",
+            "fetch_fail_penalty": -1.0,
+            "total": 4.5903,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.64×1.75=1.12; penalties: domain_saturation -1×1=-1, fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "9d251ac6836a600d8fed2294d5c3f8928f6177ed",
+          "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+          "canonical_url": "https://huggingface.co/blog/meta-muse-spark-open",
+          "score": 3.9744,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6047,
+            "uniqueness": 0.6047,
+            "uniqueness_sim_published": 0.2727,
+            "uniqueness_sim_state": 0.3953,
+            "topic_match": 0.2,
+            "taste_score": 0.59,
+            "taste_raw": 0.59,
+            "taste_reason": "jev score 0.59",
+            "total": 3.9744,
+            "topic_repeat_penalty": -1.0,
+            "topic_repeat_matched_title": "Muse Spark Is Now an Open-Weights Model",
+            "topic_repeat_matched_section": "community",
+            "topic_repeat_title_jaccard": 0.2727,
+            "topic_repeat_body_containment": 0.5938,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.59×1.75=1.0325; penalties: domain_saturation -1×1=-1, topic_repeat -1×0.5=-0.5",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "e91685213861b0f805f480574580cde1ad09e849",
+          "title": "Meta Muse Spark Open is live on Together AI",
+          "reason": "title_dup_published",
+          "matched_title": "Muse Spark Is Now an Open-Weights Model",
+          "jaccard": 0.4286
+        },
+        {
+          "id": "0e2a093b6715ff84c4705af986af62923650cc1e",
+          "title": "AI models hide mistakes in their own work reports, but one sentence in your prompt can help",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "c79f3f7585e330b0deba56d994875916e1ca0c89",
+          "title": "AI agents have bad taste in long-term decisions and a new benchmark proves it",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "dd8266e29d0b131f5ed984cbd460d0fa6896c03c",
+          "title": "Anthropics' Claude cracks a 25-year-old NSA cryptography mystery in under 30 minutes",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "e874f1181e686a821c0b37fddedcd903863a5318",
+          "title": "Meta’s new terms may allow it to train AI on news sites for free",
+          "reason": "domain_cap",
+          "domain": "theverge.com",
+          "cap": 2
+        },
+        {
+          "id": "66d23509b14817ab570bfd2b22057b09af0a70e4",
+          "title": "An OpenAI model hacked a government site, grabbed 24 years of hospital data and kept it quiet",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "18d978c9e698ef6b36390dcc6003759551efb8ae",
+          "title": "Four Gemini 4 Argon agents beat Minecraft without any human help",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "3f4528f1e1767bb7cb131636ac962977d2c39fdf",
+          "title": "Two German courts now hold Google liable for what its AI overviews say",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "0eea14ec0d885b5b22c84ac29d94df88f53234ff",
+          "title": "GPT-6-Astra solves 49 of 50 physics research problems at $2.40 apiece",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "7543df857d57c325487bb2d7bccf14ed3adaf658",
+          "title": "Muse Spark Open is Meta's answer to Qwen, GLM, and Kimi in the open-weight race",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "2dd5c189d23158f9dc901df434eb834181ca0786",
+          "title": "v0.32.0rc2",
+          "reason": "domain_cap",
+          "domain": "github.com",
+          "cap": 2
+        },
+        {
+          "id": "3e7a8c91741b3469c3bb18d0b2163b2646227ccb",
+          "title": "Meta removes language that may have allowed it to scrape news sites",
+          "reason": "jev_same_story_section",
+          "p": 0.85
+        },
+        {
+          "id": "f6cba501345f0b730f2efecb7a6cd7157ac95917",
+          "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+          "reason": "jev_offtopic",
+          "p": 0.68
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "491024b59801f6df5a655bc70b4c523d12c2c0f1",
+          "title": "I Built an Autonomous AI Agent for Android(Offline Models, MCP Servers)",
+          "canonical_url": "https://youtube.com/watch?v=wys-oHIeZc8",
+          "score": 6.5475,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9959,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8163,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1837,
+            "topic_match": 0.7,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "jev score 0.60",
+            "attention": 0.9632,
+            "total": 6.5475
+          },
+          "explanation": "cross 1×2=2 + taste 0.6×1.75=1.05 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "abafa450e5740cdf25c6d65f548ae642e347a01d",
+          "title": "Evals for High-Stakes AI Agents — Doneyli De Jesus & Annabell Schäfer, Langfuse",
+          "canonical_url": "https://youtube.com/watch?v=obfPzbapMIM",
+          "score": 6.411,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7963,
+            "uniqueness": 0.7963,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.2037,
+            "topic_match": 0.5,
+            "creator_weight": 0.2,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "attention": 1.0,
+            "total": 6.411
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "80e93bfd8d94a175a37c959285ec5e3417dd14c8",
+          "title": "Vet an MCP Server Before You Trust It: 9 Steps from Publisher Check to Rug-Pull Protection",
+          "canonical_url": "https://youtube.com/watch?v=FElhi5UC7P4",
+          "score": 6.2065,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9057,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.0943,
+            "topic_match": 0.7,
+            "taste_score": 0.57,
+            "taste_raw": 0.57,
+            "taste_reason": "jev score 0.57",
+            "attention": 0.341,
+            "total": 6.2065
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [],
+      "dropped": []
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "4a155be6b5b292c5f127ec6700ba52f9152284bf",
+          "title": "Introducing Muse Spark Open: the most capable US open-weight model to date",
+          "canonical_url": "https://reddit.com/comments/1x6r9pz",
+          "score": 6.368,
+          "components": {
+            "cross_source_count": 2,
+            "cross_score": 2,
+            "recency_decay": 0.6422,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.5333,
+            "uniqueness": 0.5333,
+            "uniqueness_sim_published": 0.375,
+            "uniqueness_sim_state": 0.4667,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "jev score 0.35",
+            "total": 5.868,
+            "topic_repeat_penalty": -1.0,
+            "topic_repeat_matched_title": "Muse Spark Is Now an Open-Weights Model",
+            "topic_repeat_matched_section": "community",
+            "topic_repeat_title_jaccard": 0.375,
+            "topic_repeat_body_containment": 0.5,
+            "jev_same_story_cross_penalty": -0.5,
+            "jev_same_story_cross_p": 0.89
+          },
+          "explanation": "cross 2×2=4 + origin_weight 1×1=1 + recency_decay 0.6422×1=0.6422; penalties: topic_repeat -1×0.5=-0.5"
+        },
+        {
+          "rank": 2,
+          "id": "7ccb5d413c99dc11ad2888c906cbba538df8971e",
+          "title": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF · Hugging Face",
+          "canonical_url": "https://reddit.com/comments/1x95491",
+          "score": 5.9997,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6579,
+            "uniqueness": 0.625,
+            "uniqueness_sim_published": 0.375,
+            "uniqueness_sim_state": 0.3421,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "jev score 0.35",
+            "story_heat": 0.9829,
+            "story_sources": 5,
+            "total": 5.9997
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "51a87d1e8614e51248789d3b25d92c55bd0378a2",
+          "title": "MINISFORUM MS-S1 MAX P495 (192GB) Review and Weekend Test: llama.cpp Vulkan benchmarks: gpt-oss 120B, MiniMax M2.7, DeepSeek V4 Flash, Flash-Next, Qwen3.5 35B, Qwen3.8 27B (+ MTP)",
+          "canonical_url": "https://reddit.com/comments/1x8zt4f",
+          "score": 5.9434,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8085,
+            "uniqueness": 0.8085,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1915,
+            "topic_match": 0.5,
+            "creator_weight": 0.0,
+            "taste_score": 0.64,
+            "taste_raw": 0.64,
+            "taste_reason": "jev score 0.64",
+            "total": 5.9434
+          },
+          "explanation": "cross 1×2=2 + taste 0.64×1.75=1.12 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "fdeca709161e5075277d723b1a3a72be47098def",
+          "title": "Openspline - host a realtime talking avatar on a commercial GPU (90+ FPS on RTX4090)",
+          "canonical_url": "https://reddit.com/comments/1x8wwhy",
+          "score": 5.9204,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8636,
+            "uniqueness": 0.8636,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1364,
+            "topic_match": 0.7,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "jev score 0.50",
+            "total": 5.9204
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "4f6cbf372471317e7f23281def8dd77cd2e5fcc4",
+          "title": "Should I switch from CommandCode Goat to Cursor's $8 plan?",
+          "canonical_url": "https://reddit.com/comments/1x90qq6",
+          "score": 5.7997,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7179,
+            "uniqueness": 0.7179,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2821,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "jev score 0.35",
+            "total": 5.7997
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "190e6d30e0161d5d61b9edb9f104ccf0ce906986",
+          "title": "LangGraph in Small Pieces",
+          "canonical_url": "https://reddit.com/comments/1x8cwos",
+          "score": 5.6452,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7879,
+            "uniqueness": 0.7879,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.2121,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.36,
+            "taste_raw": 0.36,
+            "taste_reason": "jev score 0.36",
+            "total": 5.6452
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "34a6be55add5e57d9ab3958c6caf0f1ffb4143ca",
+          "title": "Codex burning usage way faster after reset",
+          "canonical_url": "https://reddit.com/comments/1x8wj35",
+          "score": 5.5428,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7632,
+            "uniqueness": 0.7632,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.2368,
+            "topic_match": 0.8,
+            "taste_score": 0.25,
+            "taste_raw": 0.25,
+            "taste_reason": "jev score 0.25",
+            "total": 5.5428
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "f6a12c908c8ccf19c6b54b7a9077e7d2fb235228",
+          "title": "Two pallets of ZOTAC RTX 5090 graphics cards worth $470,000 disappear at Brazilian airport",
+          "canonical_url": "https://reddit.com/comments/1x91svd",
+          "score": 5.51,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9375,
+            "uniqueness": 0.9375,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.0625,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.42,
+            "taste_raw": 0.42,
+            "taste_reason": "jev score 0.42",
+            "total": 5.51
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "379d2673ae8d768972fd0ccc88330a34f43c726e",
+          "title": "Do not trust 6.1 Sol right now!",
+          "canonical_url": "https://reddit.com/comments/1x8o5oj",
+          "score": 5.4473,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8182,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.1818,
+            "topic_match": 0.7,
+            "taste_score": 0.24,
+            "taste_raw": 0.24,
+            "taste_reason": "jev score 0.24",
+            "total": 5.4473
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "671de9e40e33dd64c47ec97c1845cfe5fee8c9ec",
+          "title": "automatically organise and sort notes using an LLM with Obsidian",
+          "canonical_url": "https://reddit.com/comments/1x8zxod",
+          "score": 5.433,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7826,
+            "uniqueness": 0.7826,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.2174,
+            "topic_match": 0.7,
+            "taste_score": 0.24,
+            "taste_raw": 0.24,
+            "taste_reason": "jev score 0.24",
+            "total": 5.433
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "f0f1cd81a67c36b68bd50558a936d1f8d982093b",
+          "title": "How are you handling user created documents",
+          "canonical_url": "https://reddit.com/comments/1x6rq08",
+          "score": 5.332,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6445,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.85,
+            "uniqueness": 0.85,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.15,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.37,
+            "taste_raw": 0.37,
+            "taste_reason": "jev score 0.37",
+            "total": 5.332
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "9d14a7ef2884dcbb06a71d8ba2aff5d11653733d",
+          "title": "If this is real, Claude is so based",
+          "canonical_url": "https://reddit.com/comments/1x6u76b",
+          "score": 5.3261,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6575,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.7,
+            "creator_weight": 0.5,
+            "taste_score": 0.09,
+            "taste_raw": 0.09,
+            "taste_reason": "jev score 0.09",
+            "total": 5.3261
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "e7252a3cabe79600568356e4cc8f5c464e5e3927",
+          "title": "Burning through usage FAST",
+          "canonical_url": "https://reddit.com/comments/1x96a0v",
+          "score": 5.2775,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.95,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.05,
+            "topic_match": 0.7,
+            "taste_score": 0.13,
+            "taste_raw": 0.13,
+            "taste_reason": "jev score 0.13",
+            "total": 5.2775
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "04d2c54203f2b1722176b6427aa0e364157c1821",
+          "title": "Efforts to upstream adaptive MTP depth to llama.cpp abandoned",
+          "canonical_url": "https://reddit.com/comments/1x92yqf",
+          "score": 5.2731,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9048,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.0952,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.41,
+            "taste_raw": 0.41,
+            "taste_reason": "jev score 0.41",
+            "total": 5.2731
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "11a750788ff1f7961f71bcca62a9c07eef70da7d",
+          "title": "A month ago, I had an idea for a second brain app while taking a walk and started building it right there in the trail, it got accepted by Apple in one round",
+          "canonical_url": "https://reddit.com/comments/1x85u7g",
+          "score": 5.2535,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.978,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8824,
+            "uniqueness": 0.8824,
+            "uniqueness_sim_published": 0.0556,
+            "uniqueness_sim_state": 0.1176,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.07,
+            "taste_raw": 0.07,
+            "taste_reason": "jev score 0.07",
+            "total": 5.2535
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.978×1=0.978",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "7d4a9c9fabf1c921540ca8e861de19b51c8abd48",
+          "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB · Hugging Face",
+          "reason": "title_dup_published",
+          "matched_title": "NVIDIA Nemotron Bolt 3.5 74B A9B releases Oct. 15th",
+          "jaccard": 0.5
+        },
+        {
+          "id": "118a5096165e86000ca2ec95e3372a2a9499e674",
+          "title": "Unsloth Muse Spark Open is out!",
+          "reason": "title_dup_published",
+          "matched_title": "Muse Spark Is Now an Open-Weights Model",
+          "jaccard": 0.6
+        }
+      ]
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "0e4f8374803f0b7c68099515797f014d4488fcba",
+          "title": "The Pulse: OpenAI software engineer accused of spying",
+          "canonical_url": "https://newsletter.pragmaticengineer.com/p/the-pulse-openai-software-engineer",
+          "score": 6.1036,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.641,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8065,
+            "uniqueness": 0.8065,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.1935,
+            "topic_match": 0.8,
+            "taste_score": 0.48,
+            "taste_raw": 0.48,
+            "taste_reason": "jev score 0.48",
+            "total": 6.1036
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.48×1.75=0.84"
+        },
+        {
+          "rank": 2,
+          "id": "11c25d36bfb91891192d29b70f3416b2eab897f4",
+          "title": "75% of Tessl's PRs now merge without human review",
+          "canonical_url": "https://tessl.io/blog/75-of-tessls-prs-now-merge-without-human-review",
+          "score": 6.072,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7743,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7879,
+            "uniqueness": 0.7879,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2121,
+            "topic_match": 0.8,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "total": 6.072
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8"
+        },
+        {
+          "rank": 3,
+          "id": "e40fc955419735853c1040b30ec935f017743589",
+          "title": "The paper on how a team of Gemini 4 agents beat Minecraft is worth a look.",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3mxzbegeels2t",
+          "score": 5.9908,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8589,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8298,
+            "uniqueness": 0.8298,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.1702,
+            "topic_match": 0.5,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "jev score 0.60",
+            "total": 5.9908
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + taste 0.6×1.75=1.05"
+        },
+        {
+          "rank": 4,
+          "id": "93f5d3187e2cb10708f53a49434625f03b23ab3f",
+          "title": "Bringing ExecuTorch to Arm Cortex-M CPUs",
+          "canonical_url": "https://pytorch.org/blog/bringing-executorch-to-arm-cortex-m-cpus",
+          "score": 4.8481,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6223,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7895,
+            "uniqueness": 0.7895,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2105,
+            "topic_match": 0.5,
+            "taste_score": 0.52,
+            "taste_raw": 0.52,
+            "taste_reason": "jev score 0.52",
+            "total": 4.8481,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.52×1.75=0.91; penalties: cooldown -1×1=-1"
+        },
+        {
+          "rank": 5,
+          "id": "3adc556ab3f7de04ae12f4dfc8212a094e5768d4",
+          "title": "FDE-Gym: The Last Mile of AI Delivery",
+          "canonical_url": "https://huggingface.co/papers/2610.22350",
+          "score": 4.3022,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7805,
+            "uniqueness": 0.7805,
+            "uniqueness_sim_published": 0.0625,
+            "uniqueness_sim_state": 0.2195,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.68,
+            "taste_raw": 0.68,
+            "taste_reason": "jev score 0.68",
+            "total": 4.3022,
+            "domain_saturation_penalty": -1.0,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.68×1.75=1.19; penalties: cooldown -1×1=-1, domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "7c3a547ab4228c0064e9ecfde91ffb69a09d309a",
+          "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "fb48bdee5e46da68f43f231b03c3b3f8851246a6",
+          "title": "Can World and Action Modeling Benefit Each Other under Unified Causal Training?",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "3a9b586c35f878d2e4e0b3aa6f2d213a47e0bdcf",
+          "title": "Stepfun Step-5-Preview released! (600B/27B-1M Context)",
+          "canonical_url": "https://reddit.com/comments/1x6dx5x",
+          "score": 6.8435,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9649,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7714,
+            "uniqueness": 0.7714,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.2286,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.84,
+            "taste_raw": 0.84,
+            "taste_reason": "jev score 0.84",
+            "total": 6.8435
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.84×1.75=1.47"
+        },
+        {
+          "rank": 2,
+          "id": "87a93a35b2f18a26768d4232cdab80a408c4254b",
+          "title": "Open-sourcing SPACE, the sandbox platform behind Computer (6 minute read)",
+          "canonical_url": "https://perplexity.ai/hub/blog/open-sourcing-space",
+          "score": 6.6526,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7924,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7895,
+            "uniqueness": 0.7692,
+            "uniqueness_sim_published": 0.2308,
+            "uniqueness_sim_state": 0.2105,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.83,
+            "taste_raw": 0.83,
+            "taste_reason": "jev score 0.83",
+            "total": 6.6526
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.83×1.75=1.4525; penalties: creator_weight -0.2×1=-0.2"
+        },
+        {
+          "rank": 3,
+          "id": "07d17ed53f2bd509d1020c815dade48c94e41a06",
+          "title": "New image generation method skips flow scheduling and still beats top few-step models",
+          "canonical_url": "https://arxiv.org/abs/2610.12102",
+          "score": 6.581,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6023,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8718,
+            "uniqueness": 0.8718,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.1282,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.76,
+            "taste_raw": 0.76,
+            "taste_reason": "jev score 0.76",
+            "total": 6.581
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.76×1.75=1.33"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "b836da8f4c4689f1badcdd1d3369b267b5244342",
+          "title": "Ultra Ethernet 1.1 extends the specification to scale-up networks and adds programmable congestion control (6 minute…",
+          "canonical_url": "https://networkworld.com/article/4235340/ultra-ethernet-1-1-extends-the-specification-to-scale-up-networks-and-adds-programmable-congestion-control.html",
+          "score": 6.3161,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6056,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.92,
+            "uniqueness": 0.92,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.08,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.71,
+            "taste_raw": 0.71,
+            "taste_reason": "jev score 0.71",
+            "total": 6.3161
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.71×1.75=1.2425; penalties: creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "5fa8ba289d2f22db9055220344bb77ff9b49ee88",
+          "title": "Google makes Gemini 4 Argon broadly available with limited-time low API pricing of 2/10 per 1M token (17 minute read)",
+          "canonical_url": "https://venturebeat.com/technology/google-makes-gemini-4-argon-broadly-available-with-limited-time-low-api-pricing-of-2-10-per-1m-token",
+          "score": 5.7179,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3932,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7429,
+            "uniqueness": 0.7429,
+            "uniqueness_sim_published": 0.2143,
+            "uniqueness_sim_state": 0.2571,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "total": 5.7179
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.53×1.75=0.9275; penalties: creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "4f8b2bc1479dcbf08ab96bcc4dd57af95aa87898",
+          "title": "FLUX 3 Image Klein",
+          "canonical_url": "https://huggingface.co/collections/black-forest-labs/flux-3-image-klein?_bhlid=ab4c2379080653ffa5a36f758fc5525357acd3cb",
+          "score": 5.547,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7847,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7632,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.2368,
+            "topic_match": 0.5,
+            "creator_weight": -0.1,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "story_heat": 0.2264,
+            "story_sources": 2,
+            "total": 5.547,
+            "topic_repeat_penalty": -1.0,
+            "topic_repeat_matched_title": "Black Forest Labs' open-weights image model FLUX 3 Image Klein runs on consumer GPUs with just 8 GB of VRAM",
+            "topic_repeat_matched_section": "ai-world",
+            "topic_repeat_title_jaccard": 0.25,
+            "topic_repeat_body_containment": 0.6071
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.51×1.75=0.8925; penalties: topic_repeat -1×0.5=-0.5, creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    }
+  }
+}
