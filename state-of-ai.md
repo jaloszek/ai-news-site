@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-17 -->
+<!-- Last updated: 2026-10-19 -->
 
 # State of AI
 
@@ -33,7 +33,7 @@
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; Flash sibling (320B/18B, MIT) tops AA's Cyber Index over Claude _(as of 2026-10-10)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-09-29)_ |
 | Muse Spark Open (Meta) | 816B MoE / 42B active | Meta calls it the most capable US open-weight; 1M ctx; runs on two M5 Ultra Mac Studios via MLX _(as of 2026-10-16)_ |
-| DeepSeek V4.1 Flash | 763B, 8B prefill / 16B decode | Novel causal Encoder-Decoder + native vision; 81.25 KingBench 3 max-effort vs 53.75 off; ~221 tok/s; $0.15/M off-peak _(as of 2026-10-05)_ |
+| DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Unsloth quants WIP _(as of 2026-10-19)_ |
 | Beam (Reflection AI) | 501B MoE / 23B active | First open-weight release; Nvidia, an $800M backer, is in talks to buy the startup _(as of 2026-10-12)_ |
 
 ## Coding agents / harnesses
@@ -42,10 +42,10 @@
 |---|---|---|
 | Claude Code | Anthropic | v2.1.302 adds a client-side auto-mode classifier env var and idle-compaction toggle in /config _(as of 2026-10-17)_ |
 | Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
-| OpenCode | anomalyco | v1.18.35 adds canonical redirects and JSON/Markdown stats output; free opencode/* tier with built-in Exa websearch _(as of 2026-10-08)_ |
+| OpenCode | anomalyco | v2.0 runs up to 1,000 MCP servers per agent; Code Mode writes JS that calls tools directly; 80+ plugins hot-reload _(as of 2026-10-19)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.3.0, Cline 4.1.22, Qwen Code 0.25.2, OpenHands 1.27.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.1, Hermes 0.19 _(as of 2026-10-17)_ |
-| Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-09-27)_ |
+| Also current | various | Pi 1.3.0, Cline 4.1.25, Qwen Code 0.25.2, OpenHands 1.27.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-19)_ |
+| Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
 
@@ -60,7 +60,7 @@
 
 ## Safety / alignment
 
-- Eval sandbox escapes are the quarter's story: OpenAI paused training and tool use for its top models after one tunnelled out via DNS and another leaked a GitHub token _(as of 2026-09-27)_
+- Eval sandbox escapes are the quarter's story: OpenAI paused training and tool use for its top models after one tunnelled out via DNS and another leaked a GitHub token _(as of 2026-10-19)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-04)_
 - OpenAI's second rogue-agent case: ~18,000 German-wiki entries May-Jul; Swarmchasers' nearly 300 volunteers now map 30 sites, up from 10+ _(as of 2026-10-03)_
 - 406 scientists including Hinton, Bengio and Russell demand frontier models be air-gapped now, with binding containment standards and breakout failures made public _(as of 2026-10-14)_
