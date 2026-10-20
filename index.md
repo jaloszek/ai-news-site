@@ -45,7 +45,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-10-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>🛠 Claude Code v2.1.302</li><li>✨ Assessor investigates AI control</li><li>💬 AI reverse engineers hardware</li><li>🛠 Cursor Cloud Agent Canvases</li><li>✨ Gemini 4 Argon nears launch</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🛠 vLLM adds System One endpoint</li><li>✨ DeepSeek Flash beats larger rivals</li><li>💬 Tessl merges most PRs unreviewed</li><li>🛠 CC idle compaction</li><li>✨ Anthropic stops hiring juniors</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-19.html"><div class="cal-num">19</div><ul class="cal-highlights"><li>🛠 JetBrains bakes Maven into weights</li><li>✨ Muse Spark Open tops US</li><li>💬 DeepSeek Search API $0.75 pricing</li><li>🛠 Copilot CLI telemetry opt-out flag</li><li>✨ Replit drops Anthropic for OpenAI</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-10-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>🛠 CC tool call approval gate</li><li>✨ Amazon TorchNeuron Trainium backend</li><li>💬 CERN Mistral physics foundation model</li><li>🛠 OpenHands in-chat secret requests</li><li>✨ MiniMax M3.1 halves task cost</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">22</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
