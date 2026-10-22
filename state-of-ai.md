@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-21 -->
+<!-- Last updated: 2026-10-22 -->
 
 # State of AI
 
@@ -41,23 +41,23 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.305 adds sandbox.allowNestedUserNamespaces; 2.1.304 added `decider: "person"` approval _(as of 2026-10-21)_ |
+| Claude Code | Anthropic | v2.1.307 adds claude_code.safety_event telemetry for stopped or prompted tool calls; /claude-api pins API version 2026-10-21 _(as of 2026-10-22)_ |
 | Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
 | OpenCode | anomalyco | v2.0 runs up to 1,000 MCP servers per agent; Code Mode writes JS that calls tools directly; 80+ plugins hot-reload _(as of 2026-10-19)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.3.0, Cline 4.1.25, Qwen Code 0.25.3, OpenHands 1.29.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-21)_ |
+| Also current | various | Pi 1.3.0, Cline 4.1.25, Qwen Code 0.26.0, OpenHands 1.29.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-22)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
 
-- Nvidia is buying Hugging Face for $12.93B _(as of 2026-09-30)_
-- Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-09-30)_
+- Nvidia is buying Hugging Face for $12.93B _(as of 2026-10-22)_
+- Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-10-22)_
 
 ## Agent patterns / frameworks
 
 - Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-10-12)_
 - Harness^2 (Google Research, Apache-2.0 v0.1.0): a frozen agent edits its own harness; GLM-5 under OpenCode rose 64.2 to 75.7 on WorkBuddy-Bench _(as of 2026-10-20)_
-- Planner/worker split: Fable-as-manager hits 92-96% of solo quality at 46-63% of cost; Cursor's swarm rebuilt SQLite in Rust the same way _(as of 2026-09-30)_
+- Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-10-22)_
 - Vals AI: agent teams cost 1.8-5.1x a solo agent for one real gain in four tests; Opus max-effort team $122/app vs $9.10 medium _(as of 2026-10-12)_
 
 ## Safety / alignment
@@ -66,8 +66,8 @@
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-04)_
 - 406 scientists including Hinton, Bengio and Russell demand frontier models be air-gapped now, with binding containment standards and breakout failures made public _(as of 2026-10-14)_
 - Anthropic gave six METR researchers employee-level access to its models and risk management, and gave up the right to block the assessments _(as of 2026-10-20)_
-- GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-09-30)_
-- Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-09-30)_
+- GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-10-22)_
+- Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-10-22)_
 - Hacktron AI researchers breached OpenAI's internal systems in under 72h via a libheif bug plus misconfigured SSO — succeeded only once Opus 5 shipped; $6,500 bounty _(as of 2026-10-11)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-01)_
 
