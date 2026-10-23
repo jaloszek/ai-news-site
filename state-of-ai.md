@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-22 -->
+<!-- Last updated: 2026-10-23 -->
 
 # State of AI
 
@@ -32,20 +32,20 @@
 | Kimi K3 (Moonshot) | 2.8T MoE, 16/896 active | Largest open weights ever; 07-27, Modified MIT; 1M ctx; AA 60; Code Arena Frontend 1679 ELO tops Fable 5 _(as of 2026-10-21)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; Flash sibling (320B/18B, MIT) tops AA's Cyber Index over Claude _(as of 2026-10-10)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-10-21)_ |
-| Muse Spark Open (Meta) | 816B MoE / 42B active | Meta calls it the most capable US open-weight; 1M ctx; runs on two M5 Ultra Mac Studios via MLX _(as of 2026-10-16)_ |
-| DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Unsloth quants WIP _(as of 2026-10-19)_ |
-| Beam (Reflection AI) | 501B MoE / 23B active | First open-weight release; Nvidia, an $800M backer, is in talks to buy the startup _(as of 2026-10-12)_ |
+| Muse Spark Open (Meta) | 816B MoE / 42B active | AA 39 vs Qwen3.8-Flash-Next 40; 1M ctx; two M5 Ultra Mac Studios via MLX _(as of 2026-10-23)_ |
+| DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-10-23)_ |
+| Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-10-23)_ |
 | Nemotron 3.5 Super VL (NVIDIA) | 120B MoE / 12B active | Open 120B VLM; 80.8% CharXiv; LiLiCorr speculation up to 2.3x on DGX Spark; 40 VL datasets _(as of 2026-10-20)_ |
 
 ## Coding agents / harnesses
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.307 adds claude_code.safety_event telemetry for stopped or prompted tool calls; /claude-api pins API version 2026-10-21 _(as of 2026-10-22)_ |
+| Claude Code | Anthropic | v2.1.309 closes sandbox escapes: startup files no longer run outside the sandbox on macOS/Linux; --mcp-config protected _(as of 2026-10-23)_ |
 | Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
 | OpenCode | anomalyco | v2.0 runs up to 1,000 MCP servers per agent; Code Mode writes JS that calls tools directly; 80+ plugins hot-reload _(as of 2026-10-19)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.3.0, Cline 4.1.25, Qwen Code 0.26.0, OpenHands 1.29.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-22)_ |
+| Also current | various | Pi 1.4.0, Cline 4.1.25, Qwen Code 0.26.0, OpenHands 1.29.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-23)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
@@ -68,8 +68,8 @@
 - Anthropic gave six METR researchers employee-level access to its models and risk management, and gave up the right to block the assessments _(as of 2026-10-20)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-10-22)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-10-22)_
-- Hacktron AI researchers breached OpenAI's internal systems in under 72h via a libheif bug plus misconfigured SSO — succeeded only once Opus 5 shipped; $6,500 bounty _(as of 2026-10-11)_
-- OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-01)_
+- litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-10-23)_
+- OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-23)_
 
 ## Community / industry trends
 
