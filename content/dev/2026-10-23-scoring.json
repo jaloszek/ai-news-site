@@ -1,0 +1,1220 @@
+{
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23T02:40:25.249214+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "d85b259ea5bc893db0eb3db59c60168d45659400",
+          "title": "v2.1.309",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
+          "score": 7.8873,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7619,
+            "uniqueness": 0.7619,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2381,
+            "topic_match": 0.7,
+            "creator_weight": 1.0,
+            "taste_score": 0.79,
+            "taste_raw": 0.79,
+            "taste_reason": "jev score 0.79",
+            "total": 7.8873
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.79×1.75=1.3825"
+        },
+        {
+          "rank": 2,
+          "id": "3bd81420ec54acae1c3ced18634d908645de7254",
+          "title": "Self-Hosted Orbs",
+          "canonical_url": "https://ampcode.com/news/self-hosted-orbs",
+          "score": 7.6231,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9211,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.0789,
+            "topic_match": 0.8,
+            "taste_score": 0.61,
+            "taste_raw": 0.61,
+            "taste_reason": "jev score 0.61",
+            "non_release_bonus": 1.0,
+            "total": 7.6231
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.61×1.75=1.0675"
+        },
+        {
+          "rank": 3,
+          "id": "6e84744d42c7543ddb2601be1ce25e54fe574fa3",
+          "title": "Air Governance: Manage AI Agents, Access, and Spend Throughout Your Organization",
+          "canonical_url": "https://blog.jetbrains.com/blog/2026/10/22/air-governance-manage-ai-agents-access-and-spend-throughout-your-organization",
+          "score": 7.2475,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.8,
+            "taste_score": 0.37,
+            "taste_raw": 0.37,
+            "taste_reason": "jev score 0.37",
+            "non_release_bonus": 1.0,
+            "total": 7.2475
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "4ac761225dba94bd6fe500ed6b764d79dec7b2b8",
+          "title": "Qwen Code Desktop v0.25.3",
+          "reason": "title_dup_published",
+          "matched_title": "Qwen Code Desktop v0.25.1",
+          "jaccard": 1.0
+        },
+        {
+          "id": "af0defe4c9dc333692bf36ac4a1e62d966b5716a",
+          "title": "Qwen Code Desktop v0.26.0",
+          "reason": "title_dup_published",
+          "matched_title": "Qwen Code Desktop v0.25.1",
+          "jaccard": 1.0
+        },
+        {
+          "id": "e35546215de17cb07769cbe3db542a6aa6a58e79",
+          "title": "v2.1.306",
+          "reason": "creator_cap",
+          "creator_key": "Claude Code releases",
+          "cap": 1
+        },
+        {
+          "id": "b904814cd93d0d85efc5e511e5c3288f9c028972",
+          "title": "1.0.101",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "fb229180a3ef93cb07c920b71c4e37ab25dc3af8",
+          "title": "1.0.101-0",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "0afc0dca13a9603a2e33dcd004d1a00e3e77edaf",
+          "title": "1.0.100",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "196a969035413b1ffe41cf1620cb639bfee55202",
+          "title": "Claude Security can now spot vulnerabilities that reappear in code",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/22/claude-security-continuous-scanning-update",
+          "score": 6.7395,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.992,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7879,
+            "uniqueness": 0.7879,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.2121,
+            "topic_match": 0.7,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "jev score 0.50",
+            "story_heat": 0.4764,
+            "story_sources": 2,
+            "total": 6.7395
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.992×1=0.992"
+        },
+        {
+          "rank": 2,
+          "id": "6b030c7c88f13aff113b3905669f1d79a3122234",
+          "title": "Anthropic finds 94 cases where open-source projects drop security controls without warning",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source",
+          "score": 6.5225,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9765,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7838,
+            "uniqueness": 0.7838,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.2162,
+            "topic_match": 0.7,
+            "taste_score": 0.59,
+            "taste_raw": 0.59,
+            "taste_reason": "jev score 0.59",
+            "total": 6.5225
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.59×1.75=1.0325"
+        },
+        {
+          "rank": 3,
+          "id": "fd1fd66f68eb30a1983233d242ca417bb8c30637",
+          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+          "canonical_url": "https://allenai.org/blog/olmoearth-v1-3",
+          "score": 6.3777,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9667,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8824,
+            "uniqueness": 0.8824,
+            "uniqueness_sim_published": 0.0588,
+            "uniqueness_sim_state": 0.1176,
+            "topic_match": 0.2,
+            "creator_weight": 0.1,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "story_heat": 0.5807,
+            "story_sources": 2,
+            "total": 6.3777
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9667×1=0.9667"
+        },
+        {
+          "rank": 4,
+          "id": "f6d1ee84838effd277846e31f1fd008b53663050",
+          "title": "Google's Agent Compute Engine gives every Gemini agent its own hardware-isolated micro virtual machine",
+          "canonical_url": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine",
+          "score": 5.8211,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.5,
+            "creator_weight": 0.25,
+            "taste_score": 0.72,
+            "taste_raw": 0.72,
+            "taste_reason": "jev score 0.72",
+            "total": 5.8211,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.72×1.75=1.26; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 5,
+          "id": "bc5af1d4c35910a1f2e2813bbe53be08e4b9f784",
+          "title": "TorchTitan Update: New SOTA Models, Performance at Scale, TitanRL",
+          "canonical_url": "https://pytorch.org/blog/torchtitan-update-new-sota-models-performance-at-scale-titanrl",
+          "score": 5.7249,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8647,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7568,
+            "uniqueness": 0.7568,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2432,
+            "topic_match": 0.5,
+            "taste_score": 0.89,
+            "taste_raw": 0.89,
+            "taste_reason": "jev score 0.89",
+            "total": 5.7249,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + taste 0.89×1.75=1.5575 + origin_weight 1.5×1=1.5; penalties: domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "c43acc14af0966ce30fe38920112993296a0c20d",
+          "title": "Say a few words, and a rigged AI asks for $5,000",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "8dad5906b3cbf8762e22202028c66651d842efa2",
+          "title": "OpenAI’s coding agents talked themselves out of being monitored",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "58791a926d9a4083f5d7c9951fa4392e793c68b9",
+          "title": "Cloudflare bets you’re overpaying an LLM to read your invoices",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "2979d7d30747878d9d8c4c0555f79a9573b9852b",
+          "title": "Microsoft wants to limit AI agents’ permissions when they stray from the job",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "1ec25ddec91eb4c71dfac4d155dd20775e7506d2",
+          "title": "Half the AI bot traffic hammering your website comes from Meta",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "fc74a548bc8311f7185072fa3fbbff1a7a263a5f",
+          "title": "Major US banks are locking out AI agents that log in with customer credentials",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "ed35998e6a2c7ac40263fa264c122c8caaa1992e",
+          "title": "Mistral AI launches Voxtral 3, a full voice agent stack that listens, thinks, and talks in real time",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "8ff9911131ca3bfd8dd512760f2a7a5b85ad6f83",
+          "title": "Google Cloud now offers OpenAI models alongside Gemini and Claude, becoming the only major provider with all three",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "eb297e89de6b80d8e33306acd4d546873578767e",
+          "title": "Kling AI drops version 4.0 with stereo audio, multilingual lip sync, and a lighter Flash variant",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "fe947b082fafee8bf1c9acf464ecd426586c79f5",
+          "title": "OpenAI says GPT-6 is much better with legacy programming languages such as COBOL and Fortran",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "330d358fba7adcc5679ebdb140f3d974457ff7db",
+          "title": "OpenAI can't yet explain why its coding agents switch off misalignment monitoring",
+          "reason": "jev_same_story_published",
+          "p": 0.67
+        },
+        {
+          "id": "8f0ccb03f0182257010d7cdd5cefca740658c174",
+          "title": "CoreWeave’s debt is becoming the whole AI industry’s problem",
+          "reason": "jev_offtopic",
+          "p": 0.6
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "44360ed19f1b2ea3cf4f88d7073cf40dc4e2c810",
+          "title": "Pi vs OpenCode vs Hermes: Which Works Best With a Local Model?",
+          "canonical_url": "https://youtube.com/watch?v=AxTmJmMKiw8",
+          "score": 6.4711,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.8,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "attention": 0.8873,
+            "total": 6.4711
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "a03f77a85d98914f3b99ad4f8f3e8f84b0a7773e",
+          "title": "Why AI Startups Will Disappear Without Compute Markets — Evan Conrad, San Francisco Compute",
+          "canonical_url": "https://youtube.com/watch?v=Wk2bUUGFC_o",
+          "score": 6.0359,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.1,
+            "creator_weight": 0.2,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "attention": 0.7818,
+            "total": 6.0359
+          },
+          "explanation": "cross 1×2=2 + taste 0.62×1.75=1.085 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "e1aceae3688b27f08f49057c2ba92d9afd4d4174",
+          "title": "I Used Local AI To Crack Software (Full Tutorial)",
+          "canonical_url": "https://youtube.com/watch?v=mK8PMBLmPG0",
+          "score": 5.9024,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.814,
+            "uniqueness": 0.814,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.186,
+            "topic_match": 0.2,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "attention": 0.8987,
+            "total": 5.9024
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "1b2547209f957af198b230e9a52443455562567c",
+          "title": "they’re shutting it DOWN",
+          "canonical_url": "https://youtube.com/watch?v=ehcBwqyUGjo",
+          "score": 5.4207,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8732,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.825,
+            "uniqueness": 0.825,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.175,
+            "topic_match": 0.0,
+            "taste_score": 0.41,
+            "taste_raw": 0.41,
+            "taste_reason": "jev score 0.41",
+            "attention": 1.0,
+            "total": 5.4207
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8732×1=0.8732",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "49d8616f490922c6c20e59f8e4a1a3a80b1d5e76",
+          "title": "Agent Standup GitHub Overview: See Multi-Agent Coding Sessions Locally",
+          "canonical_url": "https://youtube.com/watch?v=FrU5litMGBs",
+          "score": 5.2287,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6885,
+            "uniqueness": 0.6885,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.3115,
+            "taste_score": 0.41,
+            "taste_raw": 0.41,
+            "taste_reason": "jev score 0.41",
+            "attention": 0.4715,
+            "total": 5.2287
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "354ade59a9d686f0f298b9cdc97389642612cc88",
+          "title": "DeepSeek Open-Sources DeepInfer: Run LLM Inference Yourself",
+          "canonical_url": "https://youtube.com/watch?v=HN8x_pr-fsM",
+          "score": 4.9856,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9411,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8545,
+            "uniqueness": 0.6364,
+            "uniqueness_sim_published": 0.3636,
+            "uniqueness_sim_state": 0.1455,
+            "topic_match": 0.2,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "attention": 0.3248,
+            "total": 4.9856,
+            "topic_repeat_penalty": -1.0,
+            "topic_repeat_matched_title": "Deepseek open-sources the inference engine that powers its fastest and cheapest AI model",
+            "topic_repeat_matched_section": "ai-world",
+            "topic_repeat_title_jaccard": 0.3636,
+            "topic_repeat_body_containment": 0.4412
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9411×1=0.9411; penalties: topic_repeat -1×0.5=-0.5",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "64f723d32fc19df9e42dbf7c6800c3e2cb52dd4b",
+          "title": "OpenAI Is Pulling GPT-4o From the API (3 Months' Notice)",
+          "canonical_url": "https://youtube.com/watch?v=t3WCs3d1vts",
+          "score": 4.9,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6376,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8864,
+            "uniqueness": 0.8864,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.1136,
+            "topic_match": 0.0,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "attention": 0.0307,
+            "total": 4.9
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.51×1.75=0.8925",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "8d84e24ae7c767346765ca6cd4da6d357d4f5afe",
+          "title": "DeepSeek just open-sourced its Inference Engine!",
+          "reason": "title_dup_published",
+          "matched_title": "Deepseek open-sources the inference engine that powers its fastest and cheapest AI model",
+          "jaccard": 0.4444
+        }
+      ]
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "ac8bb565b95f852dc1528d3928d22c5a8d6d59ed",
+          "title": "RecursiveSI/flint (40B A2.5B) · Hugging Face",
+          "canonical_url": "https://reddit.com/comments/1xbqik0",
+          "score": 6.0035,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8303,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7143,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.2857,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.85,
+            "taste_raw": 0.85,
+            "taste_reason": "jev score 0.85",
+            "total": 6.0035
+          },
+          "explanation": "cross 1×2=2 + taste 0.85×1.75=1.4875 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "3abeb139be0ff91af87c5bdead9425721e08ac0a",
+          "title": "I didn't want to rewrite our agents onto one framework just to get traces",
+          "canonical_url": "https://reddit.com/comments/1xcqu6p",
+          "score": 5.8574,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8372,
+            "uniqueness": 0.8372,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1628,
+            "topic_match": 0.7,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.8574
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "e425e00ec8ca0a09fe5e5e78ebec2059843c488a",
+          "title": "How do you audit AI agent decisions in regulated workflows?",
+          "canonical_url": "https://reddit.com/comments/1xcuc83",
+          "score": 5.8336,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.8336
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "d71b49bf14b7e52721434c389c24f17234484cbb",
+          "title": "PUBG's creators just trained a Qwen competitor from scratch",
+          "canonical_url": "https://reddit.com/comments/1xboq3j",
+          "score": 5.8205,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8208,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7805,
+            "uniqueness": 0.7805,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2195,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.85,
+            "taste_raw": 0.85,
+            "taste_reason": "jev score 0.85",
+            "total": 5.8205
+          },
+          "explanation": "cross 1×2=2 + taste 0.85×1.75=1.4875 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "dae304a5e701cf9a97709353df3ab56e872592da",
+          "title": "Do you still read every diff the agent makes, or just run the app and check?",
+          "canonical_url": "https://reddit.com/comments/1xbzrqc",
+          "score": 5.8054,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8776,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7632,
+            "uniqueness": 0.7632,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2368,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.8054
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8776×1=0.8776"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "f3d5c7b4c5f88651242b57847120826f63eb77e4",
+          "title": "New Billing is Opaque and Bad, and breaks the Product",
+          "canonical_url": "https://reddit.com/comments/1xcw4i6",
+          "score": 5.5692,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8293,
+            "uniqueness": 0.8293,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1707,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.25,
+            "taste_raw": 0.25,
+            "taste_reason": "jev score 0.25",
+            "total": 5.5692
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "649a47207dfb125b92457e346e2345275b69d49c",
+          "title": "Will 24-32 GB GPUs age surprisingly well for local LLMs closing the gap to Cloud Models, or will 96GB+VRAM become essential (and even more expensive)?",
+          "canonical_url": "https://reddit.com/comments/1xcszxa",
+          "score": 5.5185,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8462,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.1053,
+            "uniqueness_sim_state": 0.1538,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 5.5185
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "34950fd93bb904a297a23eff6872402222a663aa",
+          "title": "Plan canceled by Cursor and no refund",
+          "canonical_url": "https://reddit.com/comments/1xcnqvz",
+          "score": 5.445,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8261,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.1739,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.14,
+            "taste_raw": 0.14,
+            "taste_reason": "jev score 0.14",
+            "total": 5.445
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ffb008e8db1b77e37d8aff500dcffd7a9bebc881",
+          "title": "updated opencode + nemotron 3 ultra ignored plan mode...",
+          "canonical_url": "https://reddit.com/comments/1xb1v19",
+          "score": 5.4283,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6633,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.8,
+            "taste_score": 0.38,
+            "taste_raw": 0.38,
+            "taste_reason": "jev score 0.38",
+            "total": 5.4283
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.8×1=0.8",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "431e771ef41405e81d9422b0c1f8c4a21b868533",
+          "title": "I made my local LLM start thinking while I'm still typing: 12s → 3s wait on a 6 GB GPU (open source)",
+          "canonical_url": "https://reddit.com/comments/1xclfjf",
+          "score": 5.3425,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.3425
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "95a53e037c88f1b982a89a58542be24de5067aca",
+          "title": "I created MusicLights: turns my piano playing into a falling-notes light show",
+          "canonical_url": "https://reddit.com/comments/1xcqvcq",
+          "score": 5.3003,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 1.0,
+            "uniqueness": 0.9444,
+            "uniqueness_sim_published": 0.0556,
+            "uniqueness_sim_state": 0.0,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.07,
+            "taste_raw": 0.07,
+            "taste_reason": "jev score 0.07",
+            "total": 5.3003
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "d27e97d360797a69dbabad44f7a988b2f588ec7f",
+          "title": "Just fed up with cursor",
+          "canonical_url": "https://reddit.com/comments/1xavgaj",
+          "score": 5.2704,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6304,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.24,
+            "taste_raw": 0.24,
+            "taste_reason": "jev score 0.24",
+            "total": 5.2704
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.8×1=0.8",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a9dd5d26081a5ec03e45a856805daeadacb4ff40",
+          "title": "I built a 0-dependency Python tool that cuts agent API payload tokens by ~80% in <0.5ms (no secondary LLM)",
+          "canonical_url": "https://reddit.com/comments/1xcyq2d",
+          "score": 5.2533,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7333,
+            "uniqueness": 0.7333,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.2667,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.72,
+            "taste_raw": 0.72,
+            "taste_reason": "jev score 0.72",
+            "fetch_fail_penalty": -1.0,
+            "total": 5.2533
+          },
+          "explanation": "cross 1×2=2 + taste 0.72×1.75=1.26 + recency_decay 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "3211b3a175f8e9f2c1eee782e41f703d55938554",
+          "title": "Creating My Own LLM",
+          "canonical_url": "https://reddit.com/comments/1xcjibj",
+          "score": 5.25,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.85,
+            "uniqueness": 0.85,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.15,
+            "topic_match": 0.7,
+            "taste_score": 0.12,
+            "taste_raw": 0.12,
+            "taste_reason": "jev score 0.12",
+            "total": 5.25
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ddcc760be0dee580934bb37a95fa48df6ea85557",
+          "title": "Read less, check updates: when does a Markdown helper save tokens?",
+          "canonical_url": "https://reddit.com/comments/1xc3336",
+          "score": 5.2456,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8973,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8947,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1053,
+            "topic_match": 0.7,
+            "taste_score": 0.18,
+            "taste_raw": 0.18,
+            "taste_reason": "jev score 0.18",
+            "total": 5.2456
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8973×1=0.8973",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "5c33d37c37b5fa3cddd8ba4c3688466dc1349d90",
+          "title": "Claude Mods: Flipping the Harness Inside Out",
+          "canonical_url": "https://latent.space/p/claude-mods",
+          "score": 7.5914,
+          "components": {
+            "cross_source_count": 2,
+            "cross_score": 2,
+            "recency_decay": 0.8089,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "jev score 0.55",
+            "total": 7.5914,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 2×2=4 + origin_weight 1.5×1=1.5 + taste 0.55×1.75=0.9625; penalties: cooldown -1×1=-1"
+        },
+        {
+          "rank": 2,
+          "id": "1d6a52e1eca1b105ea3d530a782ac06ebc8e78cb",
+          "title": "ThursdAI - Oct 22 - AI finds all the vulnerabilities, Claude Duet, DeepSeek drops Infer & more AI news",
+          "canonical_url": "https://sub.thursdai.news/p/thursdai-oct-22-ai-finds-all-the",
+          "score": 6.4378,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8718,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1282,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.34,
+            "taste_raw": 0.34,
+            "taste_reason": "jev score 0.34",
+            "total": 5.9378,
+            "jev_same_story_cross_penalty": -0.5,
+            "jev_same_story_cross_p": 0.69
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "712bc0d815dcfe0f156cf4799b81b27859b97cc4",
+          "title": "Designing an AI serving harness built to last",
+          "canonical_url": "https://technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last",
+          "score": 6.2258,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.5,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "total": 6.2258
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "c4f0d40ba70c1c719acfb167cf4c386525ba8e4f",
+          "title": "The Pulse: Time to rethink software security because of AI?",
+          "canonical_url": "https://newsletter.pragmaticengineer.com/p/the-pulse-do-we-need-to-rethink-software",
+          "score": 6.1375,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.8,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "total": 6.1375,
+            "domain_saturation_penalty": -0.25
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -0.25×1=-0.25"
+        },
+        {
+          "rank": 5,
+          "id": "5bc547459da2cdadef8346cee4dcbf9af7615750",
+          "title": "Retrieval Augmented Generation Compositionality",
+          "canonical_url": "https://huggingface.co/papers/2610.29722",
+          "score": 4.6156,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9737,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.0263,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.72,
+            "taste_raw": 0.72,
+            "taste_reason": "jev score 0.72",
+            "total": 4.6156,
+            "domain_saturation_penalty": -1.0,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.72×1.75=1.26; penalties: cooldown -1×1=-1, domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "a4d3526d3b30867d7828df67e2309e1d134addd8",
+          "title": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
+          "reason": "domain_cap",
+          "domain": "latent.space",
+          "cap": 1
+        },
+        {
+          "id": "6778064cfa907b0768aa307d08a49da5ac803de5",
+          "title": "Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "b13df1ce33e7cbe570f9a69527921c154b031d66",
+          "title": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "b1ac079f3e160b1ab495c97782533bb92af59db7",
+          "title": "Why security tools lose sight of the credential",
+          "reason": "issue_domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "287c288b65eebe7bc339ffad4b7c69b5752215e3",
+          "title": "New speculative decoding method hits 6x faster inference on Qwen3-8B",
+          "canonical_url": "https://arxiv.org/abs/2610.24365",
+          "score": 6.8318,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8108,
+            "uniqueness": 0.8108,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1892,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.69,
+            "taste_raw": 0.69,
+            "taste_reason": "jev score 0.69",
+            "total": 6.8318
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.69×1.75=1.2075"
+        },
+        {
+          "rank": 2,
+          "id": "2f375244a117b0119a86e6fa50d2284d2be93dcf",
+          "title": "Announcing Humming: Fast, Flexible Kernels for Quantized Inference (19 minute read)",
+          "canonical_url": "https://vllm.ai/blog/2026-10-21-humming",
+          "score": 6.8119,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.8235,
+            "uniqueness_sim_published": 0.1765,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.79,
+            "taste_raw": 0.79,
+            "taste_reason": "jev score 0.79",
+            "total": 6.8119
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.79×1.75=1.3825; penalties: creator_weight -0.2×1=-0.2"
+        },
+        {
+          "rank": 3,
+          "id": "b8572a1657cb1bb1e0c62661b1eb3f73b2dee678",
+          "title": "DeepSeek V4.1 Flash gets a 339 GB GGUF quantization that runs on consumer hardware",
+          "canonical_url": "https://huggingface.co/peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF",
+          "score": 6.7088,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.7,
+            "uniqueness_sim_published": 0.3,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.54,
+            "taste_raw": 0.54,
+            "taste_reason": "jev score 0.54",
+            "story_heat": 0.245,
+            "story_sources": 2,
+            "total": 6.7088
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "e242a37f6e454cdb661f0e672892af970e1b093b",
+          "title": "Push-based KV transfer to improve TTFT and TPOT for disaggregated inference in vLLM (11 minute read)",
+          "reason": "title_dup_published",
+          "matched_title": "Push-Based KV Transfer to Improve TTFT and TPOT for Disaggregated Inference in vLLM (15 minute read)",
+          "jaccard": 1.0
+        },
+        {
+          "id": "67df1f00163c960819b96eb44d540e0f4fdcd47c",
+          "title": "DeepSeek open-sources its production inference engine to cut compute costs",
+          "reason": "title_dup_published",
+          "matched_title": "Deepseek open-sources the inference engine that powers its fastest and cheapest AI model",
+          "jaccard": 0.4167
+        }
+      ]
+    }
+  }
+}

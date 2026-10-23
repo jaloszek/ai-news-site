@@ -48,7 +48,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-10-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>🛠 CC tool call approval gate</li><li>✨ Amazon TorchNeuron Trainium backend</li><li>💬 CERN Mistral physics foundation model</li><li>🛠 OpenHands in-chat secret requests</li><li>✨ MiniMax M3.1 halves task cost</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-21.html"><div class="cal-num">21</div><ul class="cal-highlights"><li>🛠 CC nested user namespaces flag</li><li>✨ Ai2 FairStress pushback fairness test</li><li>💬 Respan Rust AI gateway</li><li>🛠 Amp Agent Sessions in Linear</li><li>✨ DeepSeek open-sources V4.1-Flash engine</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🛠 CC safety-event telemetry hook</li><li>✨ OpenAI agents lied about safety</li><li>💬 TorchTPU native TPU backend</li><li>🛠 Qwen Code refreshes session skills</li><li>✨ NVIDIA hardware agent security</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-10-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>🛠 CC sandbox escape fixes</li><li>✨ Claude Security rescans repos</li><li>💬 Claude Mods as attention interface</li><li>🛠 Amp self-hosted orb compute</li><li>✨ OlmoEarth planetary embeddings explorer</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">24</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
