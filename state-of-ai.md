@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-23 -->
+<!-- Last updated: 2026-10-24 -->
 
 # State of AI
 
@@ -17,7 +17,7 @@
 | Anthropic | Claude Opus 5.5 | 2026-09-23 | Matches Fable 5.1, ~40% cheaper than Opus 5 at $4/$20/M; tops the AA index at 58; Sonnet 5.5 shipped 09-29 at $2/$10/M, Terminal-Bench 4.0 70.6 _(as of 2026-10-21)_ |
 | Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-10-21)_ |
 | Anthropic | Claude Haiku 5.5 | 2026-10-08 | $0.10/$0.50/M, ~75% under Haiku 4.5, matches GPT-6 Luna; OSWorld 15.7% to 72.4%, Terminal-Bench 4.0 39.2 _(as of 2026-10-08)_ |
-| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M, 2x input over 272K; 1.05M ctx; Epoch ranks it 1st at 169, AA v4.2 puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-02)_ |
+| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M; Epoch ranks it 1st at 169; AA puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-24)_ |
 | OpenAI | GPT-6.1 Sol / GPT-6 Luna | 2026-09-30 | Sol $2/$10/M, one-fifth of Astra's and near-Astra on agentic coding; Luna $0.10/$0.50, half GPT-5.6; Ultrafast 8x in Codex _(as of 2026-10-15)_ |
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-10-14)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-10-21)_ |
@@ -41,8 +41,8 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.309 closes sandbox escapes: startup files no longer run outside the sandbox on macOS/Linux; --mcp-config protected _(as of 2026-10-23)_ |
-| Codex CLI | OpenAI | v0.162.0 adds managed Git worktrees, task pinning, and transcript navigation; clickable URLs in approval headers and MCP prompts _(as of 2026-10-09)_ |
+| Claude Code | Anthropic | v2.1.310 adds the Monitor tool and plugin monitors on Bedrock, Vertex and Foundry, blocking long foreground sleeps _(as of 2026-10-24)_ |
+| Codex CLI | OpenAI | v0.164.0 adds ten numbered /presets slots for reusable prompts and slash commands, plus inline /model and /permissions arguments _(as of 2026-10-24)_ |
 | OpenCode | anomalyco | v2.0 runs up to 1,000 MCP servers per agent; Code Mode writes JS that calls tools directly; 80+ plugins hot-reload _(as of 2026-10-19)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
 | Also current | various | Pi 1.4.0, Cline 4.1.25, Qwen Code 0.26.0, OpenHands 1.29.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-23)_ |
