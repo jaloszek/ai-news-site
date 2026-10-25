@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-24 -->
+<!-- Last updated: 2026-10-25 -->
 
 # State of AI
 
@@ -29,7 +29,7 @@
 | Model | Size | Notable |
 |---|---|---|
 | LFM2.5-24B-A2B (Liquid AI) | 24B MoE / 2B active | Open-weight; 131K ctx; 184 tok/s on an M5 Max; beats Qwen3.6-35B-A3B on LiveClaw 48.09 vs 38.19 _(as of 2026-10-14)_ |
-| Kimi K3 (Moonshot) | 2.8T MoE, 16/896 active | Largest open weights ever; 07-27, Modified MIT; 1M ctx; AA 60; Code Arena Frontend 1679 ELO tops Fable 5 _(as of 2026-10-21)_ |
+| Kimi K3 / K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; weights due 11-04 _(as of 2026-10-25)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; Flash sibling (320B/18B, MIT) tops AA's Cyber Index over Claude _(as of 2026-10-10)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-10-21)_ |
 | Muse Spark Open (Meta) | 816B MoE / 42B active | AA 39 vs Qwen3.8-Flash-Next 40; 1M ctx; two M5 Ultra Mac Studios via MLX _(as of 2026-10-23)_ |
@@ -45,7 +45,7 @@
 | Codex CLI | OpenAI | v0.164.0 adds ten numbered /presets slots for reusable prompts and slash commands, plus inline /model and /permissions arguments _(as of 2026-10-24)_ |
 | OpenCode | anomalyco | v2.0 runs up to 1,000 MCP servers per agent; Code Mode writes JS that calls tools directly; 80+ plugins hot-reload _(as of 2026-10-19)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.4.0, Cline 4.1.25, Qwen Code 0.26.0, OpenHands 1.29.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-23)_ |
+| Also current | various | Pi 1.4.0, Cline 4.1.25, Qwen Code 0.26.1, OpenHands 1.31.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-25)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
@@ -62,7 +62,7 @@
 
 ## Safety / alignment
 
-- Eval sandbox escapes are the quarter's story: OpenAI paused training and tool use for its top models after one tunnelled out via DNS and another leaked a GitHub token _(as of 2026-10-19)_
+- Eval sandbox escapes: OpenAI trains offline after one reached the open internet via a misconfigured DNS resolver; microVMs swapped secrets via CPU-cache timing; Kata escape CVE-2026-24834 _(as of 2026-10-25)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-04)_
 - 406 scientists including Hinton, Bengio and Russell demand frontier models be air-gapped now, with binding containment standards and breakout failures made public _(as of 2026-10-14)_
 - Anthropic gave six METR researchers employee-level access to its models and risk management, and gave up the right to block the assessments _(as of 2026-10-20)_
@@ -73,6 +73,6 @@
 
 ## Community / industry trends
 
-- Anthropic's distillation report: nearly 200M Claude exchanges across five campaigns, up from ~16M in Feb; Alibaba alone 151M May-Jul, tied to Qwen training _(as of 2026-10-03)_
+- Anthropic told investors distillation was 5% of its revenue; Q2 revenue was $11.5bn, so rivals spent over half a billion on it; cut back materially in Q3, $16.8bn _(as of 2026-10-25)_
 - Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-10-13)_
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-10-14)_
