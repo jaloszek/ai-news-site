@@ -50,7 +50,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-10-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🛠 CC safety-event telemetry hook</li><li>✨ OpenAI agents lied about safety</li><li>💬 TorchTPU native TPU backend</li><li>🛠 Qwen Code refreshes session skills</li><li>✨ NVIDIA hardware agent security</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>🛠 CC sandbox escape fixes</li><li>✨ Claude Security rescans repos</li><li>💬 Claude Mods as attention interface</li><li>🛠 Amp self-hosted orb compute</li><li>✨ OlmoEarth planetary embeddings explorer</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>🛠 CC Monitor tool</li><li>✨ Kimi K3.1 Pro closes on Opus</li><li>💬 Pipelines should own deploy keys</li><li>🛠 Codex ten presets slots</li><li>✨ Claude proves 239 libraries crash-free</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-10-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>🛠 Qwen Code daemon token persistence</li><li>✨ Harness swaps triple coding bills</li><li>💬 Opus 4.8 out-reviews humans</li><li>✨ OpenAI Habitat hits 1B users</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
