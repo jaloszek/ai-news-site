@@ -1,0 +1,1105 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T02:24:03.629808+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "d76b478342693449f735a8dc67d61d7e213f10d0",
+          "title": "openclaw 2026.10.7",
+          "canonical_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.7",
+          "score": 5.941,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8693,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8605,
+            "uniqueness": 0.8605,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1395,
+            "topic_match": 0.8,
+            "creator_weight": 0.0,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "patch_release_penalty": -1.0,
+            "total": 5.941
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.53×1.75=0.9275; penalties: patch_release -1×0.5=-0.5"
+        },
+        {
+          "rank": 2,
+          "id": "012f9fca3b5f4d3128ebc23d405e2d1513df4341",
+          "title": "v1.32.0",
+          "canonical_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.32.0",
+          "score": 5.7679,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5266,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9032,
+            "uniqueness": 0.9032,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0968,
+            "topic_match": 0.7,
+            "creator_weight": -0.3,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 5.7679
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.56×1.75=0.98; penalties: creator_weight -0.3×1=-0.3"
+        },
+        {
+          "rank": 3,
+          "id": "95a836f50f76352d66d873d1b7403b708f972750",
+          "title": "1.0.103-0",
+          "canonical_url": "https://github.com/github/copilot-cli/releases/tag/v1.0.103-0",
+          "score": 5.5314,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3306,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7895,
+            "uniqueness": 0.7895,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2105,
+            "topic_match": 0.8,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "patch_release_penalty": -1.0,
+            "total": 5.5314
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.62×1.75=1.085; penalties: patch_release -1×0.5=-0.5"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "42779ff9f340792c1044cca325626c32f876822d",
+          "title": "Qwen Code Desktop v0.26.1",
+          "reason": "title_dup_published",
+          "matched_title": "Qwen Code Desktop v0.25.1",
+          "jaccard": 1.0
+        },
+        {
+          "id": "de28e840aebe424395c48b83846b82a9be6e3e76",
+          "title": "v1.33.0",
+          "reason": "creator_cap",
+          "creator_key": "OpenHands releases",
+          "cap": 1
+        },
+        {
+          "id": "b957255fdc6df9f28ebdb5a5fac744a0c2813778",
+          "title": "openclaw 2026.9.34",
+          "reason": "creator_cap",
+          "creator_key": "OpenClaw releases",
+          "cap": 1
+        },
+        {
+          "id": "2bf026689e925d754474e94d5c2d0a1d7b08a7ce",
+          "title": "openclaw 2026.10.6",
+          "reason": "creator_cap",
+          "creator_key": "OpenClaw releases",
+          "cap": 1
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "2ca67924f9fca88f90b4b29f6c6565e8ee2418b1",
+          "title": "Dessa: the most authentic full-duplex speech model ever built",
+          "canonical_url": "https://block.xyz/dessa",
+          "score": 6.3589,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6597,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7317,
+            "uniqueness": 0.7317,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2683,
+            "topic_match": 0.8,
+            "taste_score": 0.37,
+            "taste_raw": 0.37,
+            "taste_reason": "jev score 0.37",
+            "attention": 0.918,
+            "total": 5.8589,
+            "jev_clickbait_penalty": -0.5,
+            "jev_clickbait_p": 0.84
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8"
+        },
+        {
+          "rank": 2,
+          "id": "6b8512880bc50730dd965872866e43f9740bd2b5",
+          "title": "Anthropic says one AI agent beats many subagents now that models can handle complexity alone",
+          "canonical_url": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone",
+          "score": 5.818,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9767,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.8095,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.61,
+            "taste_raw": 0.61,
+            "taste_reason": "jev score 0.61",
+            "total": 5.818,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.61×1.75=1.0675; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 3,
+          "id": "7971b394f72bbcfda0b2a5e341baed6918d8bedc",
+          "title": "Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027",
+          "canonical_url": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027",
+          "score": 5.5902,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9802,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.48,
+            "taste_raw": 0.48,
+            "taste_reason": "jev score 0.48",
+            "total": 5.5902,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9802×1=0.9802; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 4,
+          "id": "6bffee9c13e86ea3f1f18819c3eafd5a96730630",
+          "title": "r/opensource just banned AI, non-English speakers, and more",
+          "canonical_url": "https://theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+          "score": 5.5439,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9286,
+            "uniqueness": 0.9286,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.0714,
+            "topic_match": 0.2,
+            "creator_weight": -0.1,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.5439,
+            "domain_saturation_penalty": -0.25
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -0.25×1=-0.25, creator_weight -0.1×1=-0.1"
+        },
+        {
+          "rank": 5,
+          "id": "934580108444c224e6486129524c2bdb98217d33",
+          "title": "Pennsylvania will require labels on AI-generated ads",
+          "canonical_url": "https://theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+          "score": 5.2645,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8545,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1,
+            "topic_match": 0.2,
+            "creator_weight": -0.1,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "jev score 0.40",
+            "total": 5.2645,
+            "domain_saturation_penalty": -0.25
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8545×1=0.8545; penalties: domain_saturation -0.25×1=-0.25, creator_weight -0.1×1=-0.1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "48e2274fdf2ba9fe48db533ddecc410e5cc41b05",
+          "title": "Securing our frontier model training environment",
+          "canonical_url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+          "score": 4.9799,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5833,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.5789,
+            "uniqueness": 0.5789,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.4211,
+            "topic_match": 0.5,
+            "creator_weight": 0.15,
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "jev score 0.58",
+            "fetch_fail_penalty": -1.0,
+            "total": 4.9799
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.58×1.75=1.015; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a89d72074e84bd2d4f52522fcec5914ac4a02b85",
+          "title": "Google opens its cloud to rival OpenAI, promises business data won’t train models",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview",
+          "score": 4.711,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5501,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7209,
+            "uniqueness": 0.7209,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.2791,
+            "topic_match": 0.2,
+            "taste_score": 0.67,
+            "taste_raw": 0.67,
+            "taste_reason": "jev score 0.67",
+            "total": 4.711,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.67×1.75=1.1725; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "bf66f4b63168a32ff862d55af7845589df2137e9",
+          "title": "AI agent permissions are outrunning security",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/22/ai-agent-permissions-security",
+          "score": 4.3361,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3459,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6818,
+            "uniqueness": 0.6818,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.3182,
+            "topic_match": 0.5,
+            "taste_score": 0.41,
+            "taste_raw": 0.41,
+            "taste_reason": "jev score 0.41",
+            "total": 4.3361,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.41×1.75=0.7175; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "7892ff4b949a3a7fc3c7ff6f270df47438be5bba",
+          "title": "Three-week on-site audit at OpenAI reveals major gaps in AI safety monitoring",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "6905c9848f7b15d81240e240e8b9a734f2ee9801",
+          "title": "Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "27d89f6515103dc73c4d5d0c9a277c8d9f0981ab",
+          "title": "OpenMobile-2 proves open-source smartphone agents can rival proprietary models",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "fd2784d8397a727fd83549de72dfb5effdb71bb9",
+          "title": "Anthropic says its unreleased model is both more capable and better aligned than Mythos 5.1",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "8e4d298bee2618754261792a0bcf2ecd49e28749",
+          "title": "Three fired OpenAI safety researchers say they were never told what they actually leaked",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "fc74a548bc8311f7185072fa3fbbff1a7a263a5f",
+          "title": "Major US banks are locking out AI agents that log in with customer credentials",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "b486af98138065d95122194a8f3e2105d7ce321c",
+          "title": "AI is taking cybersecurity jobs at junior and experienced levels alike",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "f699a3e5cdaf492915584e366379490fa9928321",
+          "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+          "reason": "jev_same_story_published",
+          "p": 0.93
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "20328a46fdabd62093b413dcaf7cfdc7d94bdc10",
+          "title": "Kimi K3.1 Pro and Opus 5.5 Made the Same 13 Apps (Raw Results)",
+          "canonical_url": "https://youtube.com/watch?v=_XXX5K-EMoc",
+          "score": 7.224,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.76,
+            "uniqueness": 0.7,
+            "uniqueness_sim_published": 0.3,
+            "uniqueness_sim_state": 0.24,
+            "topic_match": 0.7,
+            "taste_score": 0.68,
+            "taste_raw": 0.68,
+            "taste_reason": "jev score 0.68",
+            "story_heat": 0.7386,
+            "story_sources": 5,
+            "attention": 1.0,
+            "total": 6.724,
+            "jev_same_story_cross_penalty": -0.5,
+            "jev_same_story_cross_p": 0.61
+          },
+          "explanation": "cross 1×2=2 + taste 0.68×1.75=1.19 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "2241617619e1a90e87a50d5533445c0a9181a715",
+          "title": "Harness² Explained: Self-Improving Agents Without Training",
+          "canonical_url": "https://youtube.com/watch?v=pW2ktrJlsyE",
+          "score": 6.2729,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8084,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7255,
+            "uniqueness": 0.6,
+            "uniqueness_sim_published": 0.4,
+            "uniqueness_sim_state": 0.2745,
+            "topic_match": 0.5,
+            "taste_score": 0.71,
+            "taste_raw": 0.71,
+            "taste_reason": "jev score 0.71",
+            "attention": 0.9639,
+            "total": 6.2729
+          },
+          "explanation": "cross 1×2=2 + taste 0.71×1.75=1.2425 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "e77ca808d0e06ee4d9aef5c9b1bac318608283fd",
+          "title": "Build a Clean MCP Server in Rust (rmcp, SQLx, PostgreSQL) · Full Tutorial",
+          "canonical_url": "https://youtube.com/watch?v=t8slExcAJbM",
+          "score": 6.1318,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.7,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "attention": 0.3686,
+            "total": 6.1318
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "c5a3d8e9c0df48e81735a8812fe05d4c367593fa",
+          "title": "Black October Isn't Just A PHP Bug. Attackers Want Your AI Keys.",
+          "canonical_url": "https://youtube.com/watch?v=qDYe2eTl_D4",
+          "score": 5.9241,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8251,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8824,
+            "uniqueness": 0.8824,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1176,
+            "topic_match": 0.5,
+            "creator_weight": -0.2,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "jev score 0.55",
+            "attention": 0.9671,
+            "total": 5.9241
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.55×1.75=0.9625; penalties: creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a63adce123d4a2328f8ef32144e7a93c96813274",
+          "title": "GPT-6 Astra Effort Levels: OpenAI's Own Chart Says Max Didn't Win",
+          "canonical_url": "https://youtube.com/watch?v=NMTTw40nC4o",
+          "score": 5.9127,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7,
+            "uniqueness": 0.7,
+            "uniqueness_sim_published": 0.1176,
+            "uniqueness_sim_state": 0.3,
+            "topic_match": 0.8,
+            "taste_score": 0.29,
+            "taste_raw": 0.29,
+            "taste_reason": "jev score 0.29",
+            "attention": 0.6503,
+            "total": 5.9127
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "b79784618af8d81db7241a28241842442f753cb4",
+          "title": "Flint - The First RSI Coding Model?",
+          "canonical_url": "https://youtube.com/watch?v=BsfjQDSeTwI",
+          "score": 5.2511,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6084,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7045,
+            "uniqueness": 0.7045,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2955,
+            "topic_match": 0.2,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "attention": 0.9568,
+            "total": 5.2511
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.39×1.75=0.6825",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "e44f9653fba356a4aa214541becc42b05e21609f",
+          "title": "An AI agent hit my site, read a note hidden from humans, and did exactly what it said 61 minutes later",
+          "canonical_url": "https://reddit.com/comments/1xfddh7",
+          "score": 6.23,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9375,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.0625,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 6.23
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "ff315a61d5db6bc199ad20c9fca6dc4d3b797d15",
+          "title": "Cancelling Ultra Plan",
+          "canonical_url": "https://reddit.com/comments/1xejwlm",
+          "score": 5.8993,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.876,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6957,
+            "uniqueness": 0.6957,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.3043,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.54,
+            "taste_raw": 0.54,
+            "taste_reason": "jev score 0.54",
+            "total": 5.8993
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.54×1.75=0.945"
+        },
+        {
+          "rank": 3,
+          "id": "ee4bea48ff2325c06e6f407f3804c4bf9c7ff45a",
+          "title": "Am I crazy or is Anthropic dynamically adjusting the weekly and 5hr limits?",
+          "canonical_url": "https://reddit.com/comments/1xffwx1",
+          "score": 5.893,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8387,
+            "uniqueness": 0.8387,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.1613,
+            "topic_match": 0.7,
+            "taste_score": 0.49,
+            "taste_raw": 0.49,
+            "taste_reason": "jev score 0.49",
+            "total": 5.893
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "ee41de94718915b33df6130628a886cc4fb5a033",
+          "title": "Do you actually use multi-agent orchestration, or is a single agent enough?",
+          "canonical_url": "https://reddit.com/comments/1xfeuxp",
+          "score": 5.8685,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9333,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.0667,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.36,
+            "taste_raw": 0.36,
+            "taste_reason": "jev score 0.36",
+            "total": 5.8685
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "ed9298799969c8806e0a1d1e55ff53b5a73ef7fd",
+          "title": "What's the one line in your CLAUDE.md that made the biggest difference?",
+          "canonical_url": "https://reddit.com/comments/1xeautc",
+          "score": 5.7692,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.825,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7917,
+            "uniqueness": 0.7917,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2083,
+            "topic_match": 0.7,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "total": 5.7692
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.53×1.75=0.9275"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "ac1375b0d4e67003c3b42b7834171cd94dafc6f0",
+          "title": "I have a confession, I was wrong .",
+          "canonical_url": "https://reddit.com/comments/1xe7rim",
+          "score": 5.6565,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8065,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7,
+            "uniqueness": 0.7,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.3,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.44,
+            "taste_raw": 0.44,
+            "taste_reason": "jev score 0.44",
+            "total": 5.6565
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8065×1=0.8065",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "0b5d89e76fd6f5de2494861b8be70fb351684c70",
+          "title": "Nanbeige/Nanbeige4.3-33B · Hugging Face",
+          "canonical_url": "https://reddit.com/comments/1xf0kz4",
+          "score": 5.655,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7037,
+            "uniqueness": 0.6,
+            "uniqueness_sim_published": 0.4,
+            "uniqueness_sim_state": 0.2963,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "jev score 0.58",
+            "total": 5.655
+          },
+          "explanation": "cross 1×2=2 + taste 0.58×1.75=1.015 + recency_decay 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "9885f19b5d0fd6e01d7df9972575a4478c5ee2ec",
+          "title": "Has anyone compared Cursor’s new $8 plan with the $20 Pro plan?",
+          "canonical_url": "https://reddit.com/comments/1xe5rzo",
+          "score": 5.6298,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.792,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8824,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1176,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.34,
+            "taste_raw": 0.34,
+            "taste_reason": "jev score 0.34",
+            "total": 5.6298
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.8×1=0.8",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "5aad85768d019267e291a8d85bceba0bcf74be78",
+          "title": "Cursor legacy $20 plan renews in 2 days. Switch to the Orange C for a month or stay?",
+          "canonical_url": "https://reddit.com/comments/1xf273g",
+          "score": 5.5985,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7838,
+            "uniqueness": 0.7838,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2162,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.22,
+            "taste_raw": 0.22,
+            "taste_reason": "jev score 0.22",
+            "total": 5.5985
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "13dfe3bc19df6be77df54e626abeca7c506b36f3",
+          "title": "I pointed Claude Code at the cheap Chinese head unit in my Civic. What it found in the firmware was wild.",
+          "canonical_url": "https://reddit.com/comments/1xf2lur",
+          "score": 5.5717,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8837,
+            "uniqueness": 0.8667,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.1163,
+            "topic_match": 0.7,
+            "taste_score": 0.3,
+            "taste_raw": 0.3,
+            "taste_reason": "jev score 0.30",
+            "total": 5.5717
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "7888dbf176e795e4e77da67dc35b6381f684ef8f",
+          "title": "Mysterious Qwen4 Appearance by New GitHub Accounts",
+          "canonical_url": "https://reddit.com/comments/1xdmt2o",
+          "score": 5.5545,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6582,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.8095,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.67,
+            "taste_raw": 0.67,
+            "taste_reason": "jev score 0.67",
+            "total": 5.5545
+          },
+          "explanation": "cross 1×2=2 + taste 0.67×1.75=1.1725 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "4d96659d1a1760e97c281869276fbffabbaa89f0",
+          "title": "😯 Why does DeepSeek perform \"different\" in OpenCode? Maybe because of this?",
+          "canonical_url": "https://reddit.com/comments/1xevoby",
+          "score": 5.5149,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9599,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.75,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.25,
+            "topic_match": 0.8,
+            "taste_score": 0.26,
+            "taste_raw": 0.26,
+            "taste_reason": "jev score 0.26",
+            "total": 5.5149
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9599×1=0.9599",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "0384dda4e3cf2a0f1e8ea35f0724f05e9ae104cb",
+          "title": "AI bot/agent for end of day email/messaging/todo list review",
+          "canonical_url": "https://reddit.com/comments/1xekr0k",
+          "score": 5.5086,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8811,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8125,
+            "uniqueness": 0.8125,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1875,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.23,
+            "taste_raw": 0.23,
+            "taste_reason": "jev score 0.23",
+            "total": 5.5086
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8811×1=0.8811",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "3bf5d9e1d53ac56188d34b592490b18a8e5155db",
+          "title": "WARNING: Stripe glitch stole my payment, Pro canceled, Support ghosted for 10+ days (Ticket 1-H44313)",
+          "canonical_url": "https://reddit.com/comments/1xfjz82",
+          "score": 5.4145,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.88,
+            "uniqueness": 0.88,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.12,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "jev score 0.15",
+            "total": 5.4145
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "704e9e8286119007132a8c97f4607b99b93d6fb3",
+          "title": "v100 16g *4 running qwen3.8 27b nvfp4 in 353t/s!!!!",
+          "canonical_url": "https://reddit.com/comments/1xeflk8",
+          "score": 5.404,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8515,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.875,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.125,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.59,
+            "taste_raw": 0.59,
+            "taste_reason": "jev score 0.59",
+            "total": 5.404
+          },
+          "explanation": "cross 1×2=2 + taste 0.59×1.75=1.0325 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "d0e47d184b31389b923aa143728d39f2f8677552",
+          "title": "Why cursor is forcing to opt for Grok and X with increased pricing?",
+          "reason": "jev_same_story_published",
+          "p": 0.63
+        }
+      ]
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "619059630d1f6d6c523a7b9918562b304cc6a80d",
+          "title": "AI Is Getting Good at Math. Here’s Why.",
+          "canonical_url": "https://latent.space/p/ai-is-getting-good-at-math",
+          "score": 5.7406,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6278,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.9655,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.0345,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.44,
+            "taste_raw": 0.44,
+            "taste_reason": "jev score 0.44",
+            "total": 5.7406,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.44×1.75=0.77; penalties: domain_saturation -0.5×1=-0.5"
+        },
+        {
+          "rank": 2,
+          "id": "f6d68cd73a5aaf2aab42e5366e7475fdbb5ed675",
+          "title": "What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models",
+          "canonical_url": "https://huggingface.co/papers/2610.23987",
+          "score": 3.9961,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9302,
+            "uniqueness": 0.9091,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.0698,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.59,
+            "taste_raw": 0.59,
+            "taste_reason": "jev score 0.59",
+            "total": 3.9961,
+            "domain_saturation_penalty": -1.0,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.59×1.75=1.0325; penalties: cooldown -1×1=-1, domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 3,
+          "id": "b1ac079f3e160b1ab495c97782533bb92af59db7",
+          "title": "Why security tools lose sight of the credential",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/21/gitguardian-securing-credential-layer",
+          "score": 3.8414,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.1417,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7931,
+            "uniqueness": 0.7931,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2069,
+            "topic_match": 0.2,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "total": 3.8414,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.39×1.75=0.6825; penalties: domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "dc028fea27bbb478762025a451f3125783f1687e",
+          "title": "[AINews] OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months",
+          "reason": "domain_cap",
+          "domain": "latent.space",
+          "cap": 1
+        },
+        {
+          "id": "b13df1ce33e7cbe570f9a69527921c154b031d66",
+          "title": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "e0ece036cc7aae373312e2b7acdf80672198126f",
+          "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "2d4010745b64c2356af0d4f75b04715f8def10ff",
+          "title": "Editing Images into Reusable Layers via Compositional Edit-Prior Distillation",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "2a76e5ab6caec14b1fa624ad0d66321f3f40c32c",
+          "title": "Toward Recursive Self-Improvement in Physical AI",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "67df1f00163c960819b96eb44d540e0f4fdcd47c",
+          "title": "DeepSeek open-sources its production inference engine to cut compute costs",
+          "reason": "title_dup_published",
+          "matched_title": "Deepseek open-sources the inference engine that powers its fastest and cheapest AI model",
+          "jaccard": 0.4167
+        }
+      ]
+    }
+  }
+}
