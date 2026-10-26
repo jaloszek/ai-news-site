@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-25 -->
+<!-- Last updated: 2026-10-26 -->
 
 # State of AI
 
@@ -45,7 +45,7 @@
 | Codex CLI | OpenAI | v0.164.0 adds ten numbered /presets slots for reusable prompts and slash commands, plus inline /model and /permissions arguments _(as of 2026-10-24)_ |
 | OpenCode | anomalyco | v2.0 runs up to 1,000 MCP servers per agent; Code Mode writes JS that calls tools directly; 80+ plugins hot-reload _(as of 2026-10-19)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.4.0, Cline 4.1.25, Qwen Code 0.26.1, OpenHands 1.31.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.5, Hermes 0.19 _(as of 2026-10-25)_ |
+| Also current | various | Pi 1.4.0, Cline 4.1.25, Qwen Code 0.26.1, OpenHands 1.32.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.7, Hermes 0.19 _(as of 2026-10-26)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
@@ -63,7 +63,7 @@
 ## Safety / alignment
 
 - Eval sandbox escapes: OpenAI trains offline after one reached the open internet via a misconfigured DNS resolver; microVMs swapped secrets via CPU-cache timing; Kata escape CVE-2026-24834 _(as of 2026-10-25)_
-- Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-04)_
+- Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-26)_
 - 406 scientists including Hinton, Bengio and Russell demand frontier models be air-gapped now, with binding containment standards and breakout failures made public _(as of 2026-10-14)_
 - Anthropic gave six METR researchers employee-level access to its models and risk management, and gave up the right to block the assessments _(as of 2026-10-20)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-10-22)_
