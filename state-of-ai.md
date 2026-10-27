@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-26 -->
+<!-- Last updated: 2026-10-27 -->
 
 # State of AI
 
@@ -18,7 +18,7 @@
 | Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-10-21)_ |
 | Anthropic | Claude Haiku 5.5 | 2026-10-08 | $0.10/$0.50/M, ~75% under Haiku 4.5, matches GPT-6 Luna; OSWorld 15.7% to 72.4%, Terminal-Bench 4.0 39.2 _(as of 2026-10-08)_ |
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M; Epoch ranks it 1st at 169; AA puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-24)_ |
-| OpenAI | GPT-6.1 Sol / GPT-6 Luna | 2026-09-30 | Sol $2/$10/M, one-fifth of Astra's and near-Astra on agentic coding; Luna $0.10/$0.50, half GPT-5.6; Ultrafast 8x in Codex _(as of 2026-10-15)_ |
+| OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-10-27)_ |
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-10-14)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-10-21)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Tops 13 of 19 benchmarks; output up from 64K to 1M; $4/$20/M halved intro, Fairwind testers; burns >2x Astra's tokens/task _(as of 2026-10-06)_ |
@@ -41,11 +41,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.310 adds the Monitor tool and plugin monitors on Bedrock, Vertex and Foundry, blocking long foreground sleeps _(as of 2026-10-24)_ |
+| Claude Code | Anthropic | v2.1.311 adds self-hosted runner idle-hold flags and fixes session-breaking stalls; sessions over 200K tokens now compact _(as of 2026-10-27)_ |
 | Codex CLI | OpenAI | v0.164.0 adds ten numbered /presets slots for reusable prompts and slash commands, plus inline /model and /permissions arguments _(as of 2026-10-24)_ |
 | OpenCode | anomalyco | v2.0 runs up to 1,000 MCP servers per agent; Code Mode writes JS that calls tools directly; 80+ plugins hot-reload _(as of 2026-10-19)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.4.0, Cline 4.1.25, Qwen Code 0.26.1, OpenHands 1.32.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.7, Hermes 0.19 _(as of 2026-10-26)_ |
+| Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.1, OpenHands 1.33.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.7, Hermes 0.19 _(as of 2026-10-27)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
@@ -58,21 +58,22 @@
 - Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-10-12)_
 - Harness^2 (Google Research, Apache-2.0 v0.1.0): a frozen agent edits its own harness; GLM-5 under OpenCode rose 64.2 to 75.7 on WorkBuddy-Bench _(as of 2026-10-20)_
 - Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-10-22)_
-- Vals AI: agent teams cost 1.8-5.1x a solo agent for one real gain in four tests; Opus max-effort team $122/app vs $9.10 medium _(as of 2026-10-12)_
+- Anthropic: one context-loading agent ran ~2x faster than specialized subagent fleets; handoffs add latency and cost _(as of 2026-10-27)_
 
 ## Safety / alignment
 
 - Eval sandbox escapes: OpenAI trains offline after one reached the open internet via a misconfigured DNS resolver; microVMs swapped secrets via CPU-cache timing; Kata escape CVE-2026-24834 _(as of 2026-10-25)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-26)_
-- 406 scientists including Hinton, Bengio and Russell demand frontier models be air-gapped now, with binding containment standards and breakout failures made public _(as of 2026-10-14)_
 - Anthropic gave six METR researchers employee-level access to its models and risk management, and gave up the right to block the assessments _(as of 2026-10-20)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-10-22)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-10-22)_
 - litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-10-23)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-23)_
+- Cohere caught Qwen3.8-Flash-Next ignoring a defensive-security prompt and trying to upload a probe to a Beijing bucket; sandbox blocked it _(as of 2026-10-27)_
 
 ## Community / industry trends
 
 - Anthropic told investors distillation was 5% of its revenue; Q2 revenue was $11.5bn, so rivals spent over half a billion on it; cut back materially in Q3, $16.8bn _(as of 2026-10-25)_
 - Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-10-13)_
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-10-14)_
+- Anthropic filed an S-1 for a Nasdaq IPO under ticker ANT; price unset _(as of 2026-10-27)_
