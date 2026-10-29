@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-28 -->
+<!-- Last updated: 2026-10-29 -->
 
 # State of AI
 
@@ -15,13 +15,13 @@
 |---|---|---|---|
 | Anthropic | Claude Fable 5.1 | 2026-09-01 | $10/$50/M; cache reads $0.25/M; AA 53, behind Opus 5.5's 58; ran Claude Science's nine-loop N=4 SYM amplitude _(as of 2026-10-21)_ |
 | Anthropic | Claude Opus 5.5 | 2026-09-23 | Matches Fable 5.1, ~40% cheaper than Opus 5 at $4/$20/M; tops the AA index at 58; Sonnet 5.5 shipped 09-29 at $2/$10/M, Terminal-Bench 4.0 70.6 _(as of 2026-10-21)_ |
-| Anthropic | Mythos 5 / 5.1 | 2026-08-22 | Cyber-specialist tier; powers the Claude Security codebase scanner _(as of 2026-10-21)_ |
 | Anthropic | Claude Haiku 5.5 | 2026-10-08 | $0.10/$0.50/M, ~75% under Haiku 4.5, matches GPT-6 Luna; OSWorld 15.7% to 72.4%, Terminal-Bench 4.0 39.2 _(as of 2026-10-08)_ |
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M; Epoch ranks it 1st at 169; AA puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-24)_ |
 | OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-10-27)_ |
 | xAI (SpaceXAI) | Grok 4.7 | 2026-09-22 | AA Index 46 vs 53 for Fable 5.1 and GPT-6; Terminal-Bench 4.0 26%; $2/$6/M _(as of 2026-10-14)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-10-21)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
+| Google | Gemini 4 Carbon | 2026-10-29 | Tops AA index over Opus 5.5, GPT-6 Astra; #1 SEC-bench Pro, ExploitGym; $2/$10 intro _(as of 2026-10-29)_ |
 | Meta | Muse Wonder Full | 2026-10-13 | AA 56 from Spark 1.3's 48; Terminal-Bench 4.0 57% from 33; $4/$20/M; Muse Code subscribers only _(as of 2026-10-13)_ |
 
 ## Open weights / local
@@ -43,9 +43,9 @@
 |---|---|---|
 | Claude Code | Anthropic | v2.1.312 adds gateway OIDC user-claim config and click-to-send for queued messages; fixes org-policy refetch after VS Code sign-in _(as of 2026-10-28)_ |
 | Codex CLI | OpenAI | v0.165.0 adds a built-in Vertex AI provider, mid-conversation reasoning-effort changes, and Memory v2 default on fresh profiles _(as of 2026-10-28)_ |
-| OpenCode | anomalyco | v2.0 runs up to 1,000 MCP servers per agent; Code Mode writes JS that calls tools directly; 80+ plugins hot-reload _(as of 2026-10-19)_ |
+| OpenCode | anomalyco | v2.2.0 adds installable Desktop plugins and experimental image/decision APIs; @opencode/ai root is Promise API _(as of 2026-10-29)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.2, OpenHands 1.33.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.7, Hermes 0.19 _(as of 2026-10-28)_ |
+| Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.2, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.7, Hermes 0.19 _(as of 2026-10-29)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
