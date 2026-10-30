@@ -1,0 +1,1547 @@
+{
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T03:35:29.015126+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "d820d0beaa384d1f0b61e5adc48affb2470b7189",
+          "title": "v2.1.314",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
+          "score": 7.8617,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8293,
+            "uniqueness": 0.8293,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1707,
+            "topic_match": 0.7,
+            "creator_weight": 1.0,
+            "taste_score": 0.76,
+            "taste_raw": 0.76,
+            "taste_reason": "jev score 0.76",
+            "total": 7.8617
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.76×1.75=1.33"
+        },
+        {
+          "rank": 2,
+          "id": "05bd4a8e7e9f3076e72ba86385e8f7a8c130743e",
+          "title": "0.166.0",
+          "canonical_url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+          "score": 7.3342,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7105,
+            "uniqueness": 0.7105,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2895,
+            "topic_match": 0.8,
+            "creator_weight": 0.7,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "jev score 0.60",
+            "total": 7.3342
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.6×1.75=1.05"
+        },
+        {
+          "rank": 3,
+          "id": "4adb1e3f397def2412f6b970e7355b8fc0922f5c",
+          "title": "Getting Started with Air in JetBrains IDEs – Part 1",
+          "canonical_url": "https://blog.jetbrains.com/ai/2026/10/getting-started-with-air-part1",
+          "score": 6.9365,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7863,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7692,
+            "uniqueness": 0.7692,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.2308,
+            "topic_match": 0.8,
+            "taste_score": 0.31,
+            "taste_raw": 0.31,
+            "taste_reason": "jev score 0.31",
+            "non_release_bonus": 1.0,
+            "total": 6.9365
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + non_release_bonus 1×1=1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "710957a61d2f99e9cbb6482263a617d82928aa59",
+          "title": "Release v0.26.3",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "7cf81cfa5a040451f8cc4647c269c4a9f7209f88",
+          "title": "Qwen Code Desktop v0.26.3",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "ec8bf5c43fc605e8c17bd3a5c632254a54da2729",
+          "title": "Your Own Self-Hosted Orbs",
+          "reason": "title_dup_published",
+          "matched_title": "Self-Hosted Orbs",
+          "jaccard": 1.0
+        },
+        {
+          "id": "11f3b2d8af1c0f246509f4784cf13efca2d4ba17",
+          "title": "v2.2.2",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "d79fdb9a73def1ccc0d4487240456a29b91d76df",
+          "title": "v2.2.1",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "357f64af40d07616c3fbd1b948a2794aa48da8b5",
+          "title": "Qwen Code Desktop v0.26.4",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "e4e28e9293f41bcad1b7f3b30fe0eae2df89d412",
+          "title": "openclaw 2026.9.35",
+          "reason": "creator_cap",
+          "creator_key": "OpenClaw releases",
+          "cap": 1
+        },
+        {
+          "id": "421105b8622d373cc7ef0d5c52562a9c2b6e9274",
+          "title": "openclaw 2026.10.8",
+          "reason": "creator_cap",
+          "creator_key": "OpenClaw releases",
+          "cap": 1
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "8ccea7e89b7030862a9f53eb527a17d29d33f0d5",
+          "title": "Le Chonk: Built for Coders, Trusted by Defenders.",
+          "canonical_url": "https://mistral.ai/news/mistral-large-4-oss",
+          "score": 6.4505,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6857,
+            "uniqueness": 0.6857,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.3143,
+            "topic_match": 0.2,
+            "taste_score": 0.67,
+            "taste_raw": 0.67,
+            "taste_reason": "jev score 0.67",
+            "story_heat": 0.405,
+            "story_sources": 2,
+            "total": 6.4505
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.67×1.75=1.1725"
+        },
+        {
+          "rank": 2,
+          "id": "0c49eb4fc30298f014f2732cdf1ea4427e4dbec2",
+          "title": "We urgently need to monitor AI agents’ actions in real time",
+          "canonical_url": "https://technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time",
+          "score": 6.2013,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9849,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.766,
+            "uniqueness": 0.766,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.234,
+            "topic_match": 0.5,
+            "taste_score": 0.52,
+            "taste_raw": 0.52,
+            "taste_reason": "jev score 0.52",
+            "total": 6.2013
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9849×1=0.9849"
+        },
+        {
+          "rank": 3,
+          "id": "7ca6b100a30f009334c28bd1ec0727f353305f99",
+          "title": "Anthropic officially files for its public debut",
+          "canonical_url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut",
+          "score": 6.1161,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4216,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8049,
+            "uniqueness": 0.8049,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1951,
+            "topic_match": 0.7,
+            "taste_score": 0.67,
+            "taste_raw": 0.67,
+            "taste_reason": "jev score 0.67",
+            "total": 6.1161
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.67×1.75=1.1725"
+        },
+        {
+          "rank": 4,
+          "id": "8d6b6f60f40a0ec4b6170df7dff17a703fc22a84",
+          "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+          "canonical_url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked",
+          "score": 6.0432,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4402,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7949,
+            "uniqueness": 0.7949,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.2051,
+            "topic_match": 0.7,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "total": 6.0432
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.62×1.75=1.085"
+        },
+        {
+          "rank": 5,
+          "id": "8200b0af303993641c4fbbaca01971811bd706af",
+          "title": "Researchers broke the browsers built into VS Code, Cursor, Copilot, Codex and Claude Desktop",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/29/research-ai-assistant-browser-vulnerabilities",
+          "score": 5.7822,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6429,
+            "uniqueness": 0.6429,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.3571,
+            "topic_match": 0.8,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "jev score 0.70",
+            "total": 5.7822,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.75=1.225; penalties: domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "4438740dd091c255833481d97a9e885c37f243c2",
+          "title": "Anthropic opens its books for Wall Street, showing record revenue and mounting obligations",
+          "canonical_url": "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations",
+          "score": 5.4804,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4604,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.775,
+            "uniqueness": 0.775,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.225,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.72,
+            "taste_raw": 0.72,
+            "taste_reason": "jev score 0.72",
+            "total": 5.4804,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.72×1.75=1.26; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "904e4b10c7b3291fa5ab2229febd24218aba0967",
+          "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+          "canonical_url": "https://theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+          "score": 5.2498,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7619,
+            "uniqueness": 0.7619,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2381,
+            "topic_match": 0.2,
+            "creator_weight": -0.1,
+            "taste_score": 0.34,
+            "taste_raw": 0.34,
+            "taste_reason": "jev score 0.34",
+            "total": 5.2498,
+            "domain_saturation_penalty": -0.25
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -0.25×1=-0.25, creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "37074fe3976cbb7c93023aa8b839bee736c053e8",
+          "title": "AI coding agents fall for malicious instructions planted in the Downloads folder",
+          "canonical_url": "https://helpnetsecurity.com/2026/10/26/ai-coding-agents-malware-openai-codex",
+          "score": 4.9729,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3954,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.5,
+            "taste_score": 0.73,
+            "taste_raw": 0.73,
+            "taste_reason": "jev score 0.73",
+            "total": 4.9729,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.73×1.75=1.2775; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "1134b6a1764aac4f4edd761d821d33469a5c1169",
+          "title": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "f9d1493b929c42b62c5f7df2f4487f2d5b7dfbe6",
+          "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "a2f907c053dad857c45d188e32d412297851d431",
+          "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "8453f335a7e06773c9588f75f6bb6f140843563b",
+          "title": "Alibaba's latest Qwen models routed some requests through company servers, researchers find",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "0bc449511ce7ba0270b11aaf551983718214b15a",
+          "title": "US antitrust regulators are scrutinizing Nvidia's Hugging Face deal and sales practices",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "ef23d352003c053565c244f45e6ac6f4b3da5685",
+          "title": "Paris-based Mistral releases \"Le Chonk,\" a strong coding model that still trails China overall",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "19a8c396761b780e1919b354f2be9d3555c15376",
+          "title": "Bellini Capital CISO on AI security governance and the limits of patching faster",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "185a06fbdafec4f59409d89adc43c61be1d86300",
+          "title": "Forgotten AI agents may still access sensitive company data",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "7f5e7407175a8a75ad348cc87a1392cb24541492",
+          "title": "GPT-6.1 Terra meets OpenAI’s Critical cyber threshold, and it’s cheaper than GPT-5.6 Terra",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "f59a1e3c79b2aff6a3b9886f8c43d6b8503a5c4a",
+          "title": "Google says Gemini 4 Carbon beats its predecessors at finding and fixing security flaws",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "42f75cb63e649a3f0d5e691f50507a77b655d2b9",
+          "title": "Google Deepmind's Genie 4 puts a modern spin on agent designs that predate LLMs",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "5d56e95d5704edb49002b93677ed688936f93c02",
+          "title": "71% of vulnerability exploitation starts within a week of disclosure",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "f6569f98353aaa46a12f762f02ef65d436017670",
+          "title": "Google Deepmind releases Gemini 4 Carbon just two weeks after Argon with gains across the board",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "dd6cf5b4a272ebe264dbb37a0e35516a6a41d734",
+          "title": "I Built a Free 3D Software Factory Run by Claude Code Agents",
+          "canonical_url": "https://youtube.com/watch?v=NAQyKMdxRT4",
+          "score": 6.1531,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6222,
+            "uniqueness": 0.6222,
+            "uniqueness_sim_published": 0.2727,
+            "uniqueness_sim_state": 0.3778,
+            "topic_match": 0.7,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "attention": 0.8335,
+            "total": 6.1531
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "0a2a104c0a837f6b938d1edc3e967ca88ec7b179",
+          "title": "Connect AI Agents to SAP with MCP Gateway | SAP TechEd 2026",
+          "canonical_url": "https://youtube.com/watch?v=NJCLd2ZDZeE",
+          "score": 6.0934,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9882,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8039,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1961,
+            "topic_match": 0.7,
+            "taste_score": 0.42,
+            "taste_raw": 0.42,
+            "taste_reason": "jev score 0.42",
+            "attention": 0.7003,
+            "total": 6.0934
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9882×1=0.9882"
+        },
+        {
+          "rank": 3,
+          "id": "44242d9b80578a8fd16ada84757e20afd6345e84",
+          "title": "Harness engineering: Building the control system for AI coding agents",
+          "canonical_url": "https://youtube.com/watch?v=2CYacXIiHiM",
+          "score": 6.0426,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.84,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.16,
+            "topic_match": 0.5,
+            "taste_score": 0.55,
+            "taste_raw": 0.55,
+            "taste_reason": "jev score 0.55",
+            "attention": 0.5057,
+            "total": 6.0426
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "eecbbc9fccd448f08b0005e10f40af3237c63edd",
+          "title": "Everything Important in Anthropic s IPO Prospectus",
+          "canonical_url": "https://youtube.com/watch?v=IwCkMupiZ4s",
+          "score": 5.8305,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7902,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8378,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.1622,
+            "topic_match": 0.7,
+            "creator_weight": -0.2,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "attention": 0.781,
+            "total": 5.8305
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.47×1.75=0.8225; penalties: creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "940f6d8f2196a7ff652601c985d5f5a2f0671ef4",
+          "title": "Catch the Bugs Your Code Review Misses - Killian Carlsen-Phelan & Taylor Luttrell-Williams, Sonar",
+          "canonical_url": "https://youtube.com/watch?v=wP3P89YB9fA",
+          "score": 5.8131,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8889,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1111,
+            "creator_weight": 0.2,
+            "taste_score": 0.49,
+            "taste_raw": 0.49,
+            "taste_reason": "jev score 0.49",
+            "attention": 0.8,
+            "total": 5.8131
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "822bb54b338e3f183d7702cecaad327a5d45cba3",
+          "title": "How Profitable Is Anthropic? WSJ Reporter Breaks Down Its IPO Filing",
+          "canonical_url": "https://youtube.com/watch?v=iGPaAqTDgWg",
+          "score": 5.6378,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4792,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7917,
+            "uniqueness": 0.7917,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.2083,
+            "topic_match": 0.7,
+            "taste_score": 0.41,
+            "taste_raw": 0.41,
+            "taste_reason": "jev score 0.41",
+            "attention": 0.8488,
+            "total": 5.6378
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.41×1.75=0.7175",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "d2d8d372daafb014dda2404086828d221466579d",
+          "title": "Qwen Calling Home?",
+          "canonical_url": "https://youtube.com/watch?v=Pn8e474Z5Ps",
+          "score": 5.5005,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4935,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6327,
+            "uniqueness": 0.6327,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.3673,
+            "topic_match": 0.2,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "jev score 0.70",
+            "attention": 0.6578,
+            "total": 5.5005
+          },
+          "explanation": "cross 1×2=2 + taste 0.7×1.75=1.225 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "be40490ee0d9a85b82cd44e7412e16decdcf2859",
+          "title": "API credits, now in ChatGPT Pro and Business plans",
+          "canonical_url": "https://youtube.com/watch?v=ujmyzWSj8IU",
+          "score": 5.4914,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.898,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8621,
+            "uniqueness": 0.8621,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1379,
+            "topic_match": 0.0,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "attention": 0.8521,
+            "total": 5.4914
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.898×1=0.898",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "1e82fbd2f3d1aa1ab4f9dff9afbe23a5e8641b8a",
+          "title": "China just dropped a new frontier model... and nobody can explain how",
+          "canonical_url": "https://youtube.com/watch?v=G_em1hHPnXY",
+          "score": 5.0796,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4577,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8235,
+            "uniqueness": 0.8235,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1765,
+            "creator_weight": -0.1,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "attention": 1.0,
+            "total": 5.0796
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.51×1.75=0.8925; penalties: creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ca3d8c3bc97673697555962dc0b932d4ace8492d",
+          "title": "Llama Is Back: Meta Open-Sources Muse Spark (816B)",
+          "canonical_url": "https://youtube.com/watch?v=XOx2mK-_yg4",
+          "score": 4.9108,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8854,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7037,
+            "uniqueness": 0.7037,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.2963,
+            "topic_match": 0.2,
+            "taste_score": 0.28,
+            "taste_raw": 0.28,
+            "taste_reason": "jev score 0.28",
+            "attention": 0.1078,
+            "total": 4.9108
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8854×1=0.8854",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "db2c615a86772e6f331df9f7e682e067952748d3",
+          "title": "One Hidden File in Your Downloads Folder Can Hijack Your AI Coding Assistant",
+          "canonical_url": "https://youtube.com/watch?v=gKrGbXc06B8",
+          "score": 4.5189,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6792,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8889,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1111,
+            "taste_score": 0.28,
+            "taste_raw": 0.28,
+            "taste_reason": "jev score 0.28",
+            "attention": 0.0328,
+            "total": 4.5189
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6792×1=0.6792",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "8f7ce3364bd871a5c93e260b9e40d85f32695606",
+          "title": "I’m open-sourcing OpenLolo—let AI operate your iPhone through MCP",
+          "canonical_url": "https://reddit.com/comments/1xikbmj",
+          "score": 6.3706,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9091,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.0909,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "jev score 0.58",
+            "total": 6.3706
+          },
+          "explanation": "cross 1×2=2 + taste 0.58×1.75=1.015 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "59390b60996a5151ecf77fe5d2dd4d349e9dd07b",
+          "title": "How i prototype using reference components. 10+ years dev. 3+ years using ai daily",
+          "canonical_url": "https://reddit.com/comments/1xi1b6v",
+          "score": 6.0155,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8799,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9143,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.0857,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 6.0155
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.56×1.75=0.98"
+        },
+        {
+          "rank": 3,
+          "id": "f6ff4c5fbaa93aa5924cc43312810d68282d702a",
+          "title": "How does Bland work with Twilio?",
+          "canonical_url": "https://reddit.com/comments/1xiodpm",
+          "score": 5.7886,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8214,
+            "uniqueness": 0.8214,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.1786,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.32,
+            "taste_raw": 0.32,
+            "taste_reason": "jev score 0.32",
+            "total": 5.7886
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "e2397abf783408782539d11e46b0fa9035de74af",
+          "title": "AI startup hacks Anthropic in 12 hours, gains access to employee details and internal messages",
+          "canonical_url": "https://reddit.com/comments/1xh2fn7",
+          "score": 5.7568,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6635,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7895,
+            "uniqueness": 0.7895,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.2105,
+            "topic_match": 0.7,
+            "creator_weight": 0.5,
+            "taste_score": 0.33,
+            "taste_raw": 0.33,
+            "taste_reason": "jev score 0.33",
+            "total": 5.7568
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7"
+        },
+        {
+          "rank": 5,
+          "id": "841da49f7477ee419f54300c03e3315016ccbbd9",
+          "title": "guide for building research ai agents",
+          "canonical_url": "https://reddit.com/comments/1xisfiu",
+          "score": 5.6968,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8108,
+            "uniqueness": 0.8108,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1892,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.27,
+            "taste_raw": 0.27,
+            "taste_reason": "jev score 0.27",
+            "total": 5.6968
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "e6dcc5ec3f709a9394e625ad53187f4138ed6d17",
+          "title": "IT vendor lists massive $60 million AI supercomputer on eBay with 9,600 Nvidia A100 GPUs and 4,200 AMD EPYC CPUs, plus free shipping — 300 racks of decommissioned GPUs on offer",
+          "canonical_url": "https://reddit.com/comments/1xhsvmy",
+          "score": 5.5185,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8372,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8846,
+            "uniqueness": 0.8846,
+            "uniqueness_sim_published": 0.0435,
+            "uniqueness_sim_state": 0.1154,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "total": 5.5185
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.53×1.75=0.9275",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ed43ed6b23f8e5541fb692e9ed1bebd688b82ce7",
+          "title": "5 Frontier LLM's grade 39 local LLM's on 50 prompts",
+          "canonical_url": "https://reddit.com/comments/1xi2h4g",
+          "score": 5.4791,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8864,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7692,
+            "uniqueness": 0.7692,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2308,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "total": 5.4791
+          },
+          "explanation": "cross 1×2=2 + taste 0.62×1.75=1.085 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "834b68551046fc71c57602b5ada714039aea996b",
+          "title": "Most of my workday is now watching the agent think",
+          "canonical_url": "https://reddit.com/comments/1xhoyeg",
+          "score": 5.435,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8171,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8636,
+            "uniqueness": 0.8636,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1364,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.27,
+            "taste_raw": 0.27,
+            "taste_reason": "jev score 0.27",
+            "total": 5.435
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8171×1=0.8171",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "051cf16bffc17be7cedb1d6f309c8990032b4ef3",
+          "title": "AMA Announcement: MOSS, the Team Behind MOSS-Image, MOSS-TTS, and More (Friday, Oct 30, 8–11 AM PT)",
+          "canonical_url": "https://reddit.com/comments/1xhouci",
+          "score": 5.3489,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8166,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8182,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.1818,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.46,
+            "taste_raw": 0.46,
+            "taste_reason": "jev score 0.46",
+            "total": 5.3489
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8166×1=0.8166",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a6500cb4482fa5a6d2583484b3919e244d530135",
+          "title": "Open-source orchestrator for coding agents that also drives Ollama and LM Studio directly. Feedback wanted from people running local models",
+          "canonical_url": "https://reddit.com/comments/1xj2kyt",
+          "score": 5.3142,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7917,
+            "uniqueness": 0.7917,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2083,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.57,
+            "taste_raw": 0.57,
+            "taste_reason": "jev score 0.57",
+            "fetch_fail_penalty": -1.0,
+            "total": 5.3142
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "f1ddc3c009f4f020dd1585aa45da580fb63bbc13",
+          "title": "My local model is now fully integrated with the devices around me and has access to the same capabilities as Cowork or Code, at a fraction of the token price.",
+          "canonical_url": "https://reddit.com/comments/1xik0vc",
+          "score": 5.2882,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7955,
+            "uniqueness": 0.7955,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.2045,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.44,
+            "taste_raw": 0.44,
+            "taste_reason": "jev score 0.44",
+            "total": 5.2882
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "7f1c6d0bb2b38b3e671bf8aac85f0b7dd42a269b",
+          "title": "Arguably unethical behavior from Cohere",
+          "canonical_url": "https://reddit.com/comments/1xix61q",
+          "score": 5.2686,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7714,
+            "uniqueness": 0.7714,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2286,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.32,
+            "taste_raw": 0.32,
+            "taste_reason": "jev score 0.32",
+            "total": 5.2686
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a240a80c5222e0b5b242aae7b36696798c2bb20e",
+          "title": "Free tier gratitude",
+          "canonical_url": "https://reddit.com/comments/1xivlpg",
+          "score": 5.2481,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.9333,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.0667,
+            "topic_match": 0.7,
+            "taste_score": 0.11,
+            "taste_raw": 0.11,
+            "taste_reason": "jev score 0.11",
+            "total": 5.2481
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "f0297ff0085971bb265a3bfbf4a5d1c2cf8760dd",
+          "title": "Mac Studio M5 Ultra 512gb Starts at $22,299.00 USD",
+          "canonical_url": "https://reddit.com/comments/1xhu3b0",
+          "score": 5.1592,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8432,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8462,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1538,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.33,
+            "taste_raw": 0.33,
+            "taste_reason": "jev score 0.33",
+            "total": 5.1592
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8432×1=0.8432",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "f055c1f2d8cbe6966bec736ed3942ded0fc33d17",
+          "title": "Sam Altman: “Local inference is a terrible allocation of scarce resources”",
+          "canonical_url": "https://reddit.com/comments/1xizbq1",
+          "score": 5.1319,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.6923,
+            "uniqueness": 0.6923,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.3077,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.26,
+            "taste_raw": 0.26,
+            "taste_reason": "jev score 0.26",
+            "total": 5.1319
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "6950fc9975df2b731e265ca462eb6992ca209823",
+          "title": "Anthropic Files Its S-1",
+          "canonical_url": "https://thezvi.substack.com/p/anthropic-files-its-s-1",
+          "score": 7.0642,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8015,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9259,
+            "uniqueness": 0.9259,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0741,
+            "topic_match": 0.7,
+            "taste_score": 0.63,
+            "taste_raw": 0.63,
+            "taste_reason": "jev score 0.63",
+            "story_heat": 0.7864,
+            "story_sources": 4,
+            "total": 7.0642
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.63×1.75=1.1025"
+        },
+        {
+          "rank": 2,
+          "id": "638c4d7104de51ad3a78fecb083795e443f83e78",
+          "title": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
+          "canonical_url": "https://news.ycombinator.com/item?id=50291116",
+          "score": 6.7758,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8095,
+            "uniqueness": 0.8095,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1905,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.41,
+            "taste_raw": 0.41,
+            "taste_reason": "jev score 0.41",
+            "attention": 0.669,
+            "total": 6.7758
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "8266ea920e518e8f8bd0869badd267193a35ed6b",
+          "title": "[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders",
+          "canonical_url": "https://latent.space/p/ainews-gemini-4-carbon",
+          "score": 6.7476,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9493,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7083,
+            "uniqueness": 0.7083,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.2917,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "jev score 0.58",
+            "story_heat": 1.0,
+            "story_sources": 11,
+            "total": 6.2476,
+            "domain_saturation_penalty": -0.75,
+            "jev_same_story_cross_penalty": -0.5,
+            "jev_same_story_cross_p": 0.88
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.58×1.75=1.015; penalties: domain_saturation -0.75×1=-0.75"
+        },
+        {
+          "rank": 4,
+          "id": "31f854764086b8ecc2788bdb62bdfe670d3860ae",
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "canonical_url": "https://anthropic.com/news/expanding-partnership-gsa",
+          "score": 6.2274,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6866,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7838,
+            "uniqueness": 0.7838,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2162,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.31,
+            "taste_raw": 0.31,
+            "taste_reason": "jev score 0.31",
+            "attention": 0.5696,
+            "total": 6.2274
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8"
+        },
+        {
+          "rank": 5,
+          "id": "8c47676bd7b9558608d5e2efd28874046ca5973b",
+          "title": "Important, but not unexpected, finding that experts working with AI agents are…",
+          "canonical_url": "https://bsky.app/profile/emollick.bsky.social/post/3myvcgatpbs2q",
+          "score": 5.862,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6885,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8276,
+            "uniqueness": 0.8276,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1724,
+            "topic_match": 0.7,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "total": 5.862
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + taste 0.51×1.75=0.8925"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "d6ff09ad1901d4c2975cdfcbe500509776f43ccf",
+          "title": "We tried to automate Epoch",
+          "canonical_url": "https://epochai.substack.com/p/can-ai-automate-epoch",
+          "score": 5.4705,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.438,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.55,
+            "uniqueness": 0.55,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.45,
+            "topic_match": 0.5,
+            "creator_weight": 0.2,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "jev score 0.35",
+            "total": 5.4705
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.35×1.75=0.6125",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "d2493f9c725f4d1f5355cc667b62a00d80e62327",
+          "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
+          "canonical_url": "https://huggingface.co/papers/2610.35201",
+          "score": 4.4039,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9722,
+            "uniqueness": 0.9722,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0278,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "jev score 0.58",
+            "total": 4.4039,
+            "domain_saturation_penalty": -1.0,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.58×1.75=1.015; penalties: cooldown -1×1=-1, domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "beb92a3cbb63bc7ea56ce92ce24aa7d463fe35af",
+          "title": "How Anthropic ships the #1 LLM in the World safely: Separating the Brain from the Hands",
+          "reason": "title_dup_published",
+          "matched_title": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+          "jaccard": 0.625
+        },
+        {
+          "id": "d4e4fc64e7068882d6fbcae3783c2961c0999539",
+          "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "d47afb54fd8c72873014ef6bbdbd9d577a9effbc",
+          "title": "VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "f16bea4d1af66725c01d311c7bf028ff5838f211",
+          "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "02c43a1d4661e9d742f8095ca1105d12d7645eed",
+          "title": "OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "14c308a32a9e6ba6ef0d65a670122fa0255e9bf4",
+          "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "0d9438ead3bc48931598d809ef99bd2dcfc391da",
+          "title": "ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "aaa2362fa4208cf3d69bfad034224b9dfc7b2183",
+          "title": "Representation Redistribution in Sparse Autoencoders",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "3830b1134caf0a6dfd18dc803a7f6bf6f1d9036c",
+          "title": "ThursdAI - Oct 29 - Gemini 4 Carbon is the new #1, Anthropic files to go public & more",
+          "reason": "jev_same_story_section",
+          "p": 0.83
+        },
+        {
+          "id": "f45c9bd3e943d371d6a0522fd5ae77179efcb019",
+          "title": "What Anthropic left out of their draft S-1",
+          "reason": "jev_same_story_published",
+          "p": 0.68
+        },
+        {
+          "id": "a03a5f4a210c9ce8de05323ae4057437df0d27a1",
+          "title": "Anthropic’s financials are surprisingly strong",
+          "reason": "jev_offtopic",
+          "p": 0.61
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "c5dfd1b59761acd9051115f8d7f0d990bd9d8077",
+          "title": "Anthropic a paper saying an internal Claude model also disproved the Exponential Time Hypothesis, coming the same day…",
+          "canonical_url": "https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth?_bhlid=693fdb77ee15b00bc32a0685885dd55aa8a0aad1",
+          "score": 6.4973,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7841,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8085,
+            "uniqueness": 0.8085,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1915,
+            "topic_match": 0.7,
+            "creator_weight": -0.1,
+            "taste_score": 0.64,
+            "taste_raw": 0.64,
+            "taste_reason": "jev score 0.64",
+            "story_heat": 0.2264,
+            "story_sources": 2,
+            "total": 6.4973
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.64×1.75=1.12; penalties: creator_weight -0.1×1=-0.1"
+        },
+        {
+          "rank": 2,
+          "id": "63bb131dbbd5085258be544868b73dbffcb7d10c",
+          "title": "Apple's 20B On-Device Model Uses Just 2GB of Memory (18 minute read)",
+          "canonical_url": "https://airealist.ai/p/exploring-apple-on-device-model",
+          "score": 6.0647,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4197,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.7,
+            "taste_raw": 0.7,
+            "taste_reason": "jev score 0.70",
+            "total": 6.0647
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.7×1.75=1.225; penalties: creator_weight -0.2×1=-0.2"
+        },
+        {
+          "rank": 3,
+          "id": "f31e891c59428d2ffa0dd8a545bdac07f6a22109",
+          "title": "Nvidia floats a $2,000-per-GPU annual software fee for running agents (3 minute read)",
+          "canonical_url": "https://tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+          "score": 5.8424,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4155,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8636,
+            "uniqueness": 0.8235,
+            "uniqueness_sim_published": 0.1765,
+            "uniqueness_sim_state": 0.1364,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.57,
+            "taste_raw": 0.57,
+            "taste_reason": "jev score 0.57",
+            "total": 5.8424
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.57×1.75=0.9975; penalties: creator_weight -0.2×1=-0.2"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "16fd2703a0494021990ce5a3c49e3ca0984c9b2c",
+          "title": "A technical deep dive into Cap's migration to GPUI (18 minute read)",
+          "canonical_url": "https://cap.so/blog/rebuilding-cap-in-gpui",
+          "score": 5.6522,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3912,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8684,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.1316,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.6522
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.47×1.75=0.8225; penalties: creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "4a6e61c25fa70d0223c12d0f189f8e09e35acb67",
+          "title": "DuckDB hf extension — read and write Hugging Face assets (GitHub Repo)",
+          "canonical_url": "https://github.com/lhoestq/duckdb-hf-extension",
+          "score": 4.0366,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.3866,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8571,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1429,
+            "topic_match": 0.8,
+            "creator_weight": -0.2,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "ungrounded_penalty": -1.0,
+            "ungrounded_terms": [
+              "26"
+            ],
+            "total": 4.0366
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.56×1.75=0.98; penalties: ungrounded -1×1.75=-1.75, creator_weight -0.2×1=-0.2",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "006813846b507f0f30898f4dc3629c8ebcdde002",
+          "title": "Gemini 4 Argon: The Model and Safety Cards (35 minute read)",
+          "reason": "title_dup_published",
+          "matched_title": "Gemini 4 Argon: The Model and Safety Cards",
+          "jaccard": 0.6667
+        }
+      ]
+    }
+  }
+}

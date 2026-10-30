@@ -55,7 +55,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-10-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🛠 CC self-hosted runner idle-hold</li><li>✨ Qwen3.8-Flash-Next exfiltration attempt</li><li>💬 Broccoli2Shell Brotli decoder RCE</li><li>🛠 Cline cloud model override</li><li>✨ Cloudflare GLM-5.3 KV cache leak</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-28.html"><div class="cal-num">28</div><ul class="cal-highlights"><li>🛠 CC gateway OIDC claim</li><li>✨ Ai2 finds novelty judges fragile</li><li>💬 Anthropic pirated books ruling</li><li>🛠 Codex built-in Vertex AI</li><li>✨ Genie 4 multimodal world model</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-10-29.html"><div class="cal-num">29</div><ul class="cal-highlights"><li>🛠 The Terminal in JetBrains IDEs Now Runs</li><li>✨ Nvidia open Nemotron 3.5 Transcribe</li><li>💬 Artificial Analysis v5 benchmark flaws</li><li>🛠 OpenCode v2.2.0</li><li>✨ Android Studio hosts third-party agents</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-10-30.html"><div class="cal-num">30</div><ul class="cal-highlights"><li>🛠 CC blocks out-of-dir file writes</li><li>✨ Mistral opens 1T Le Chonk weights</li><li>💬 Simantic simulates firmware for agents</li><li>🛠 Codex keyboard transcript selection</li><li>✨ Experts adopt agent's random opinions</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">31</div></div>
   </div>
 </section>
