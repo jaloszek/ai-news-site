@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-30 -->
+<!-- Last updated: 2026-10-31 -->
 
 # State of AI
 
@@ -20,7 +20,7 @@
 | OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-10-27)_ |
 | Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-10-21)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
-| Google | Gemini 4 Carbon | 2026-10-29 | Tops AA index over Opus 5.5, GPT-6 Astra; #1 SEC-bench Pro, ExploitGym; $2/$10 intro _(as of 2026-10-29)_ |
+| Google | Gemini 4 Carbon | 2026-10-29 | AA 59, 1 ahead of Opus 5.5; #1 SEC-bench Pro, ExploitGym; $2/$10 intro _(as of 2026-10-31)_ |
 | Meta | Muse Wonder Full | 2026-10-13 | AA 56 from Spark 1.3's 48; Terminal-Bench 4.0 57% from 33; $4/$20/M; Muse Code subscribers only _(as of 2026-10-13)_ |
 
 ## Open weights / local
@@ -35,17 +35,17 @@
 | DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-10-23)_ |
 | Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-10-23)_ |
 | Nemotron 3.5 Super VL (NVIDIA) | 120B MoE / 12B active | Open 120B VLM; 80.8% CharXiv; LiLiCorr speculation up to 2.3x on DGX Spark; 40 VL datasets _(as of 2026-10-20)_ |
-| Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; 82% Cyber Index reproduce-and-patch; Coding Agent Index 49.8% _(as of 2026-10-30)_ |
+| Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; FrontierCode 2.0 19.7% first open; 82% Cyber Index; Coding Agent Index 49.8% _(as of 2026-10-31)_ |
 
 ## Coding agents / harnesses
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.314 adds permissions.blockWritesOutsideWorkingDirectories, refusing writes outside working dirs in every mode _(as of 2026-10-30)_ |
+| Claude Code | Anthropic | v2.1.316 adds CLAUDE_CODE_DISABLE_ULTRATHINK, CLAUDE_CODE_SUBAGENT_EFFORT and pooled budgets _(as of 2026-10-31)_ |
 | Codex CLI | OpenAI | v0.166.0 adds keyboard transcript selection and puts GPT-6.1 Terra in the Vertex AI and Bedrock catalogs _(as of 2026-10-30)_ |
 | OpenCode | anomalyco | v2.2.0 adds installable Desktop plugins and experimental image/decision APIs; @opencode/ai root is Promise API _(as of 2026-10-29)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.2, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.7, Hermes 0.19 _(as of 2026-10-29)_ |
+| Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.4, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.9, Hermes 0.19 _(as of 2026-10-31)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
