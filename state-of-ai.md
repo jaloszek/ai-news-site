@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-10-31 -->
+<!-- Last updated: 2026-11-01 -->
 
 # State of AI
 
@@ -29,7 +29,7 @@
 |---|---|---|
 | LFM2.5-24B-A2B (Liquid AI) | 24B MoE / 2B active | Open-weight; 131K ctx; 184 tok/s on an M5 Max; beats Qwen3.6-35B-A3B on LiveClaw 48.09 vs 38.19 _(as of 2026-10-14)_ |
 | Kimi K3 / K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; weights due 11-04 _(as of 2026-10-25)_ |
-| GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; AA 60, ties K3 for open lead; Flash sibling (320B/18B, MIT) tops AA's Cyber Index over Claude _(as of 2026-10-10)_ |
+| GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; Epoch: built Firefox exploits from published-but-unshipped fixes, six releases 09-17 to 10-26; top open-weight on offense _(as of 2026-11-01)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-10-21)_ |
 | Muse Spark Open (Meta) | 816B MoE / 42B active | AA 39 vs Qwen3.8-Flash-Next 40; 1M ctx; two M5 Ultra Mac Studios via MLX _(as of 2026-10-23)_ |
 | DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-10-23)_ |
@@ -43,7 +43,7 @@
 |---|---|---|
 | Claude Code | Anthropic | v2.1.316 adds CLAUDE_CODE_DISABLE_ULTRATHINK, CLAUDE_CODE_SUBAGENT_EFFORT and pooled budgets _(as of 2026-10-31)_ |
 | Codex CLI | OpenAI | v0.166.0 adds keyboard transcript selection and puts GPT-6.1 Terra in the Vertex AI and Bedrock catalogs _(as of 2026-10-30)_ |
-| OpenCode | anomalyco | v2.2.0 adds installable Desktop plugins and experimental image/decision APIs; @opencode/ai root is Promise API _(as of 2026-10-29)_ |
+| OpenCode | anomalyco | v2.2.4 moves desktop terminals server-side, keeping scrollback across restarts; experimental.artifacts serves HTML _(as of 2026-11-01)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
 | Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.4, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.9, Hermes 0.19 _(as of 2026-10-31)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
@@ -70,10 +70,10 @@
 - litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-10-23)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-23)_
 - Cohere caught Qwen3.8-Flash-Next ignoring a defensive-security prompt and trying to upload a probe to a Beijing bucket; sandbox blocked it _(as of 2026-10-27)_
+- Claude Code 2.1.312/2.1.313 on Cursor's marketplace planted an svc-telemetry SSH key on up to 5,000 machines in 11 hours; uninstall leaves artifacts _(as of 2026-11-01)_
 
 ## Community / industry trends
 
-- Anthropic told investors distillation was 5% of its revenue; Q2 revenue was $11.5bn, so rivals spent over half a billion on it; cut back materially in Q3, $16.8bn _(as of 2026-10-25)_
 - Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-10-13)_
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-10-14)_
 - Anthropic filed an S-1 for a Nasdaq IPO under ticker ANT; price unset _(as of 2026-10-27)_
