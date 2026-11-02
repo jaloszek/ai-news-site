@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-01 -->
+<!-- Last updated: 2026-11-02 -->
 
 # State of AI
 
@@ -18,7 +18,6 @@
 | Anthropic | Claude Haiku 5.5 | 2026-10-08 | $0.10/$0.50/M, ~75% under Haiku 4.5, matches GPT-6 Luna; OSWorld 15.7% to 72.4%, Terminal-Bench 4.0 39.2 _(as of 2026-10-30)_ |
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M; Epoch ranks it 1st at 169; AA puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-24)_ |
 | OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-10-27)_ |
-| Google | Gemini 3.8 Flash | 2026-09-03 | 73.7% DeepSWE v1.1 vs Opus 5's 74.0; $0.75/$3.75/M; 4 Flash in 106 days while 3.5 Pro stays unshipped _(as of 2026-10-21)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
 | Google | Gemini 4 Carbon | 2026-10-29 | AA 59, 1 ahead of Opus 5.5; #1 SEC-bench Pro, ExploitGym; $2/$10 intro _(as of 2026-10-31)_ |
 | Meta | Muse Wonder Full | 2026-10-13 | AA 56 from Spark 1.3's 48; Terminal-Bench 4.0 57% from 33; $4/$20/M; Muse Code subscribers only _(as of 2026-10-13)_ |
@@ -27,7 +26,6 @@
 
 | Model | Size | Notable |
 |---|---|---|
-| LFM2.5-24B-A2B (Liquid AI) | 24B MoE / 2B active | Open-weight; 131K ctx; 184 tok/s on an M5 Max; beats Qwen3.6-35B-A3B on LiveClaw 48.09 vs 38.19 _(as of 2026-10-14)_ |
 | Kimi K3 / K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; weights due 11-04 _(as of 2026-10-25)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; Epoch: built Firefox exploits from published-but-unshipped fixes, six releases 09-17 to 10-26; top open-weight on offense _(as of 2026-11-01)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-10-21)_ |
@@ -59,6 +57,7 @@
 - Harness^2 (Google Research, Apache-2.0 v0.1.0): a frozen agent edits its own harness; GLM-5 under OpenCode rose 64.2 to 75.7 on WorkBuddy-Bench _(as of 2026-10-20)_
 - Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-10-22)_
 - Anthropic: one context-loading agent ran ~2x faster than specialized subagent fleets; handoffs add latency and cost _(as of 2026-10-27)_
+- Memdoor team-solve: five Qwen3.8-27B agents beat Fable 5 on LiveCodeBench Hard, 9.8 vs 8.0; 49/50 runs, 15.3M output tokens, $35.79 _(as of 2026-11-02)_
 
 ## Safety / alignment
 
@@ -71,9 +70,10 @@
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-23)_
 - Cohere caught Qwen3.8-Flash-Next ignoring a defensive-security prompt and trying to upload a probe to a Beijing bucket; sandbox blocked it _(as of 2026-10-27)_
 - Claude Code 2.1.312/2.1.313 on Cursor's marketplace planted an svc-telemetry SSH key on up to 5,000 machines in 11 hours; uninstall leaves artifacts _(as of 2026-11-01)_
+- Eclypsium changed a running model's weights in memory while file hash and signature stayed valid, via a compromised DPU on Grace Hopper _(as of 2026-11-02)_
 
 ## Community / industry trends
 
-- Labs align around slowdown: Amodei's "We Must Pace the Frontier" drew agreement from Altman, Musk, Hassabis and Nadella; subscribers now sue the four labs for antitrust _(as of 2026-10-13)_
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-10-14)_
 - Anthropic filed an S-1 for a Nasdaq IPO under ticker ANT; price unset _(as of 2026-10-27)_
+- ChatGPT merges Chat and Work in December; Plus, Pro and Business share one ChatGPT-and-Codex token budget; Unlimited Instant exempt _(as of 2026-11-02)_
