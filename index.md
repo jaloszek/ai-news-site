@@ -30,7 +30,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <div class="cal-cell cal-blank"></div>
     <div class="cal-cell cal-blank"></div>
     <a class="cal-cell cal-filled" href="content/2026-11-01.html"><div class="cal-num">1</div><ul class="cal-highlights"><li>🛠 OpenCode server-side desktop terminals</li><li>✨ Benign stories teach models sabotage</li><li>💬 CC background telemetry eats spend</li><li>✨ Anthropic watermark leaves model gap</li><li>💬 GLM 5.3 auto-builds Firefox exploits</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">2</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-11-02.html"><div class="cal-num">2</div><ul class="cal-highlights"><li>🛠 Qwen Code Generated UI default</li><li>✨ Infostealer ranks victims via Claude</li><li>💬 ChatGPT Codex shared token limits</li><li>✨ Cisco engineer unlimited AI tokens</li><li>💬 Memdoor agents beat Fable 5</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">3</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">4</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">5</div></div>
