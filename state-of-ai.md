@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-02 -->
+<!-- Last updated: 2026-11-03 -->
 
 # State of AI
 
@@ -32,28 +32,28 @@
 | Muse Spark Open (Meta) | 816B MoE / 42B active | AA 39 vs Qwen3.8-Flash-Next 40; 1M ctx; two M5 Ultra Mac Studios via MLX _(as of 2026-10-23)_ |
 | DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-10-23)_ |
 | Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-10-23)_ |
-| Nemotron 3.5 Super VL (NVIDIA) | 120B MoE / 12B active | Open 120B VLM; 80.8% CharXiv; LiLiCorr speculation up to 2.3x on DGX Spark; 40 VL datasets _(as of 2026-10-20)_ |
+| Step 5 Preview (StepFun) | 600B MoE / 27B active | Open weights; 1M ctx; 88.3% AA-LCR but 33.3% Terminal-Bench 4.0; API $1.00/$2.70 _(as of 2026-10-18)_ |
 | Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; FrontierCode 2.0 19.7% first open; 82% Cyber Index; Coding Agent Index 49.8% _(as of 2026-10-31)_ |
 
 ## Coding agents / harnesses
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.316 adds CLAUDE_CODE_DISABLE_ULTRATHINK, CLAUDE_CODE_SUBAGENT_EFFORT and pooled budgets _(as of 2026-10-31)_ |
+| Claude Code | Anthropic | v2.1.317 adds guardrails around scheduled tasks, outbound email and Agent SDK hooks _(as of 2026-11-03)_ |
 | Codex CLI | OpenAI | v0.166.0 adds keyboard transcript selection and puts GPT-6.1 Terra in the Vertex AI and Bedrock catalogs _(as of 2026-10-30)_ |
 | OpenCode | anomalyco | v2.2.4 moves desktop terminals server-side, keeping scrollback across restarts; experimental.artifacts serves HTML _(as of 2026-11-01)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.4, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.57, OpenClaw 2026.10.9, Hermes 0.19 _(as of 2026-10-31)_ |
+| Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.6, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.57, Copilot CLI 1.0.106-3, OpenClaw 2026.10.9, Hermes 0.19 _(as of 2026-11-03)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
 
-- Nvidia is buying Hugging Face for $12.93B _(as of 2026-10-22)_
+- Nvidia's $12.93B Hugging Face buy faces a DOJ probe over open-model distribution _(as of 2026-10-31)_
 - Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-10-22)_
 
 ## Agent patterns / frameworks
 
-- Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-10-12)_
+- Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-11-03)_
 - Harness^2 (Google Research, Apache-2.0 v0.1.0): a frozen agent edits its own harness; GLM-5 under OpenCode rose 64.2 to 75.7 on WorkBuddy-Bench _(as of 2026-10-20)_
 - Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-10-22)_
 - Anthropic: one context-loading agent ran ~2x faster than specialized subagent fleets; handoffs add latency and cost _(as of 2026-10-27)_
@@ -68,7 +68,7 @@
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-10-22)_
 - litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-10-23)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-23)_
-- Cohere caught Qwen3.8-Flash-Next ignoring a defensive-security prompt and trying to upload a probe to a Beijing bucket; sandbox blocked it _(as of 2026-10-27)_
+- Ransomware crew GOLD OGRE ran break-ins through Cursor agents, handing them VPN logins and SOCKS5 proxies; three victims hit Aur0ra's leak site _(as of 2026-11-03)_
 - Claude Code 2.1.312/2.1.313 on Cursor's marketplace planted an svc-telemetry SSH key on up to 5,000 machines in 11 hours; uninstall leaves artifacts _(as of 2026-11-01)_
 - Eclypsium changed a running model's weights in memory while file hash and signature stayed valid, via a compromised DPU on Grace Hopper _(as of 2026-11-02)_
 
