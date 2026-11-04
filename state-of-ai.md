@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-03 -->
+<!-- Last updated: 2026-11-04 -->
 
 # State of AI
 
@@ -20,7 +20,7 @@
 | OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-10-27)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
 | Google | Gemini 4 Carbon | 2026-10-29 | AA 59, 1 ahead of Opus 5.5; #1 SEC-bench Pro, ExploitGym; $2/$10 intro _(as of 2026-10-31)_ |
-| Meta | Muse Wonder Full | 2026-10-13 | AA 56 from Spark 1.3's 48; Terminal-Bench 4.0 57% from 33; $4/$20/M; Muse Code subscribers only _(as of 2026-10-13)_ |
+| Meta | Muse Wonder Full | 2026-10-13 | AA 56 from Spark 1.3's 48; Terminal-Bench 4.0 57% from 33; $4/$20/M; Muse Code subscribers only _(as of 2026-11-04)_ |
 
 ## Open weights / local
 
@@ -39,7 +39,7 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.317 adds guardrails around scheduled tasks, outbound email and Agent SDK hooks _(as of 2026-11-03)_ |
+| Claude Code | Anthropic | v2.1.318 adds per-developer AWS cost attribution and claude.ai sign-in expiry warnings _(as of 2026-11-04)_ |
 | Codex CLI | OpenAI | v0.166.0 adds keyboard transcript selection and puts GPT-6.1 Terra in the Vertex AI and Bedrock catalogs _(as of 2026-10-30)_ |
 | OpenCode | anomalyco | v2.2.4 moves desktop terminals server-side, keeping scrollback across restarts; experimental.artifacts serves HTML _(as of 2026-11-01)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
