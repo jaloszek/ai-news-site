@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-04 -->
+<!-- Last updated: 2026-11-05 -->
 
 # State of AI
 
@@ -43,7 +43,7 @@
 | Codex CLI | OpenAI | v0.166.0 adds keyboard transcript selection and puts GPT-6.1 Terra in the Vertex AI and Bedrock catalogs _(as of 2026-10-30)_ |
 | OpenCode | anomalyco | v2.2.4 moves desktop terminals server-side, keeping scrollback across restarts; experimental.artifacts serves HTML _(as of 2026-11-01)_ |
 | Cursor | SpaceX | Acquired for $60B; Origin code hosting in beta; OpenAI cuts its models off Nov 12; cloud-agent canvases and an Environments API beta; iOS Remote Control for local agents _(as of 2026-10-17)_ |
-| Also current | various | Pi 1.4.0, Cline 4.1.26, Qwen Code 0.26.6, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.57, Copilot CLI 1.0.106-3, OpenClaw 2026.10.9, Hermes 0.19 _(as of 2026-11-03)_ |
+| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.26.7, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.106-3, OpenClaw 2026.10.10, Hermes 0.19 _(as of 2026-11-05)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
@@ -74,6 +74,6 @@
 
 ## Community / industry trends
 
-- Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-10-14)_
+- Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-11-05)_
 - Anthropic filed an S-1 for a Nasdaq IPO under ticker ANT; price unset _(as of 2026-10-27)_
 - ChatGPT merges Chat and Work in December; Plus, Pro and Business share one ChatGPT-and-Codex token budget; Unlimited Instant exempt _(as of 2026-11-02)_
