@@ -1,0 +1,1698 @@
+{
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T04:45:45+00:00",
+  "candidate_count": 44,
+  "researched_count": 43,
+  "published_count": 21,
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 2,
+  "items": [
+    {
+      "id": "0c28609650f9611f715de5689c8cd41b27f8a959",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "Building a RAG Pipeline for Semantic Code Search: A Developer Diary and Field Notes",
+      "canonical_url": "https://blog.jetbrains.com/ai/2026/11/building-a-rag-pipeline-for-semantic-code-search-a-developer-diary-and-field-notes-part-2",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[Building a RAG Pipeline for Semantic Code Search: A Developer Diary and Field Notes](https://blog.jetbrains.com/ai/2026/11/building-a-rag-pipeline-for-semantic-code-search-a-developer-diary-and-field-notes-part-2/)** — _JetBrains AI blog_. — JetBrains details the storage and retrieval layer behind Air Context, its production RAG for code search.\n  - Hybrid ANN pass plus exact search over a small candidate set\n  - Repo, branch and permission filters live inside the vector index\n  - Merkle-tree snapshots and content-hash dedup keep indexing incremental\n  - Local USearch index merges with remote results via a reranker",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.84,
+        "uniqueness": 0.84,
+        "uniqueness_sim_published": 0.0769,
+        "uniqueness_sim_state": 0.16,
+        "topic_match": 0.8,
+        "taste_score": 0.64,
+        "taste_raw": 0.64,
+        "taste_reason": "jev score 0.64",
+        "non_release_bonus": 1.0,
+        "total": 7.756
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "5d176638f112cbdf40638258d77479e0b9436789",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "Build Live Apps in Cursor",
+      "canonical_url": "https://cursor.com/changelog/build-live-apps",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[Build Live Apps in Cursor](https://cursor.com/changelog/build-live-apps)** — _Cursor changelog_. — Cursor cloud agents can now scaffold, deploy and host a live web app from a prompt.\n  - Spins up Postgres, Cursor SSO auth and hosting, then returns a live link\n  - Deterministic and agentic checks block secrets and exposed credentials pre-publish\n  - Apps deploy from Cursor Origin or GitHub repos; GitLab support is coming\n  - Available on all paid plans with cloud agents enabled",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.9,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7778,
+        "uniqueness": 0.7778,
+        "uniqueness_sim_published": 0.125,
+        "uniqueness_sim_state": 0.2222,
+        "topic_match": 0.8,
+        "taste_score": 0.57,
+        "taste_raw": 0.57,
+        "taste_reason": "jev score 0.57",
+        "non_release_bonus": 1.0,
+        "total": 7.5086
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "faee6f8c48b4ecd5a612c254efa488134a44a302",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "GitLab Integration",
+      "canonical_url": "https://ampcode.com/news/gitlab",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[GitLab Integration](https://ampcode.com/news/gitlab)** — _Amp news_. — Amp now connects GitLab, self-managed included, so agents work inside existing repositories.\n  - Orbs clone and push as you with glab already signed in\n  - Agents open merge requests, comment, and read issues and pipelines\n  - A reviewer comment or failed pipeline lands in the thread that wrote the code\n  - A spawner can start a new orb for every merge request or issue",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.9,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.7941,
+        "uniqueness": 0.7941,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.2059,
+        "topic_match": 0.8,
+        "taste_score": 0.52,
+        "taste_raw": 0.52,
+        "taste_reason": "jev score 0.52",
+        "non_release_bonus": 1.0,
+        "total": 7.4276
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "e2baf2e1c36d11f0763cc2d62ee1b6c562f76cd3",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "0.167.0",
+      "canonical_url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🛠 **[0.167.0](https://github.com/openai/codex/releases/tag/rust-v0.167.0)** — _Codex releases_. — Codex 0.167.0 adds an agent command center and backend switching from the session picker.\n  - Run codex agents --no-daemon to open the command center\n  - The picker marks unread results and keeps drafts when switching backends\n  - Preview local images while composing on supported terminals\n  - gcp_setup_wizard sets up Vertex AI with default credentials or a credential file",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.6857,
+        "uniqueness": 0.6857,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.3143,
+        "topic_match": 0.8,
+        "creator_weight": 0.7,
+        "taste_score": 0.59,
+        "taste_raw": 0.59,
+        "taste_reason": "jev score 0.59",
+        "total": 7.3068
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "0f8eb8c8adc653c2736e16025f66919272611de5",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "1.0.106",
+      "canonical_url": "https://github.com/github/copilot-cli/releases/tag/v1.0.106",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[1.0.106](https://github.com/github/copilot-cli/releases/tag/v1.0.106)** — _Copilot CLI releases_. — Copilot CLI 1.0.106 adds a /code handoff to VS Code and a unified settings dashboard.\n  - /settings now has global search across settings and local resources\n  - Rex terminals render inline images using Kitty direct placements\n  - Opt-in session management tools and @mentions reach local sessions\n  - GPT-6.1 Terra appears as a selectable model when available to your account",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7143,
+        "uniqueness": 0.7143,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.2857,
+        "topic_match": 0.8,
+        "taste_score": 0.53,
+        "taste_raw": 0.53,
+        "taste_reason": "jev score 0.53",
+        "total": 6.5132
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "84086a458631f5e7897495cbfbb9ad32571bfef6",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "Release v0.26.8",
+      "canonical_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.8",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 🛠 **[Release v0.26.8](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.8)** — _Qwen Code releases_. — Qwen Code 0.26.8 adds Qwen subscription support across the CLI, VS Code, and Desktop.\n  - prompt.submit hooks now run in the OpenTUI terminal\n  - Ink TUI model rounds move onto the shared loop\n  - GitHub PR and issue targets link directly in channel events",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8065,
+        "uniqueness": 0.8065,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.1935,
+        "topic_match": 0.8,
+        "creator_weight": -0.4,
+        "taste_score": 0.58,
+        "taste_raw": 0.58,
+        "taste_reason": "jev score 0.58",
+        "total": 6.2376
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "dfd80e5cea7c1454ecbacd4c6084184685fe1471",
+      "section": "claude-code",
+      "source": "rss",
+      "title": "v1.35.0",
+      "canonical_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.35.0",
+      "tags": [
+        "origin:rss",
+        "section:claude-code",
+        "topic:agents"
+      ],
+      "bullet_md": "- 🛠 **[v1.35.0](https://github.com/OpenHands/OpenHands/releases/tag/v1.35.0)** — _OpenHands releases_. — OpenHands 1.35.0 adds a Download button to the Files tab and a drag-to-resize sidebar.\n  - Automations store picked Bitbucket Data Center repositories as clone URLs\n  - Workspace and repo metadata persist as server-side conversation tags\n  - Conversations open immediately with inline startup progress and live agent status",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.6579,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7838,
+        "uniqueness": 0.7838,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.2162,
+        "topic_match": 0.5,
+        "creator_weight": -0.3,
+        "taste_score": 0.48,
+        "taste_raw": 0.48,
+        "taste_reason": "jev score 0.48",
+        "total": 5.5114
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-04T03:47:19Z",
+      "last_seen_at": "2026-11-05T04:06:06Z"
+    },
+    {
+      "id": "09484dfee9e7507c2e288e12fb98c6cc476fba47",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "canonical_url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📰 **[Fujifilm to boost tape production 5x as AI fuels archiving demand](https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/)** — _Hacker News (ai/llm/claude)_. — Tape, the storage cloud providers never retired, is getting a fivefold AI-driven expansion from Fujifilm.\n  - Roughly $63 million goes to its Kanagawa plant through fiscal 2028\n  - Output target is five times fiscal 2025 levels, mainly LTO Ultrium10\n  - Cartridges can be air-gapped, which the company pitches against ransomware",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.417,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.913,
+        "uniqueness": 0.913,
+        "uniqueness_sim_published": 0.0714,
+        "uniqueness_sim_state": 0.087,
+        "topic_match": 0.8,
+        "creator_weight": 0.1,
+        "taste_score": 0.39,
+        "taste_raw": 0.39,
+        "taste_reason": "jev score 0.39",
+        "attention": 0.9972,
+        "total": 6.3633
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-04T03:47:19Z",
+      "last_seen_at": "2026-11-04T03:48:36Z"
+    },
+    {
+      "id": "acede477944f0fe4d34e49f69cce6a47d3d935d3",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark",
+      "canonical_url": "https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:agents",
+        "topic:claude-code",
+        "topic:google",
+        "topic:industry",
+        "topic:research"
+      ],
+      "bullet_md": "- 📰 **[No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark](https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark/)** — _The Decoder_. — SemiAnalysis' GDPx drops agents into 206 simulated jobs for up to eight hours of professional work.\n  - Claude Opus 5.5 leads at 12 percent, with Gemini 4 Carbon at 10.9\n  - GPT-6 Astra reaches 9.6 percent; no model solves finance or legal\n  - Critics say roughly ten tasks per sub-domain makes scores volatile",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7714,
+        "uniqueness": 0.7714,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.2286,
+        "topic_match": 0.7,
+        "creator_weight": 0.25,
+        "taste_score": 0.72,
+        "taste_raw": 0.72,
+        "taste_reason": "jev score 0.72",
+        "story_heat": 0.3479,
+        "story_sources": 2,
+        "total": 6.2795,
+        "domain_saturation_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "d7e9e3e89ee778d6f0e0cdfdb8adebe3fbc25559",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:google"
+      ],
+      "bullet_md": "- 🔵 **[Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/)** — _Google AI blog_. — Google's Gemini Omni 1.2 Flash hits general availability with 15-second clips, up from 10 seconds on 1.1.\n  - Pricing drops 30 percent to $0.07 per second for 720p\n  - Draft at 360p or 720p, then upscale to 1080p or 4K\n  - Multi-turn edits swap background, lighting, or aspect without regenerating",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8462,
+        "uniqueness": 0.8462,
+        "uniqueness_sim_published": 0.0833,
+        "uniqueness_sim_state": 0.1538,
+        "topic_match": -0.1,
+        "taste_score": 0.56,
+        "taste_raw": 0.56,
+        "taste_reason": "jev score 0.56",
+        "story_heat": 0.6193,
+        "story_sources": 2,
+        "total": 6.183
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "6ebdd0688c4a39a9f79ef69293a7c0e8bf99992c",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Ai2 and Google collaborate on a new generation of climate models",
+      "canonical_url": "https://allenai.org/blog/google-climate-partnership",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:industry",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🟡 **[Ai2 and Google collaborate on a new generation of climate models](https://allenai.org/blog/google-climate-partnership)** — _Ai2 blog_. — Google.org is funding Ai2 to build NeuralGCM+, an open-source model that simulates atmosphere and ocean together for projections spanning years to decades.\n  - About $5 million plus $1.8 million in cloud credits, over three years\n  - NeuralGCM's atmosphere-only version simulated a year globally in eight minutes on one TPU\n  - Aims to cut regional temperature and rainfall errors over the past 50 years",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.7667,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8537,
+        "uniqueness": 0.8537,
+        "uniqueness_sim_published": 0.0769,
+        "uniqueness_sim_state": 0.1463,
+        "topic_match": 0.2,
+        "creator_weight": 0.1,
+        "taste_score": 0.5,
+        "taste_raw": 0.5,
+        "taste_reason": "jev score 0.50",
+        "total": 5.7832
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-05T04:06:06Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "5b5716463f41e123a5029a45e35d7188eb8c8f92",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Anthropic's text watermark is easy to bypass on several older Claude models",
+      "canonical_url": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:claude-code",
+        "topic:industry"
+      ],
+      "bullet_md": "- 📰 **[Anthropic's text watermark is easy to bypass on several older Claude models](https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/)** — _The Decoder_. — Anthropic's watermark retrofit reaches four more Claude models November 16, and on the older ones a single sampling tweak dodges it.\n  - Wave includes Opus 4.6, Opus 4.5, Sonnet 4.5 and Haiku 4.5, from November 16\n  - The mark only applies when temperature, top_p and top_k stay at defaults\n  - Anthropic tells anyone relying on it for compliance to leave those settings alone",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8589,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7805,
+        "uniqueness": 0.6667,
+        "uniqueness_sim_published": 0.3333,
+        "uniqueness_sim_state": 0.2195,
+        "topic_match": 0.7,
+        "creator_weight": 0.25,
+        "taste_score": 0.63,
+        "taste_raw": 0.63,
+        "taste_reason": "jev score 0.63",
+        "total": 5.6781,
+        "domain_saturation_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-05T04:06:06Z",
+      "last_seen_at": "2026-11-05T04:06:06Z"
+    },
+    {
+      "id": "416b7eba9f32ddf48bbe6636b96842efba10031e",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Securing the agentic enterprise with data lineage",
+      "canonical_url": "https://technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:agents",
+        "topic:industry"
+      ],
+      "bullet_md": "- 📰 **[Securing the agentic enterprise with data lineage](https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/)** — _MIT Tech Review AI_. — A sponsored MIT Technology Review piece argues data lineage, not another security tool, is the new perimeter for agentic AI.\n  - A pricing agent pulls restricted data; a second drafts it into a proposal unchecked\n  - App, network and endpoint controls miss data copied and reshaped across agents\n  - Insights custom content, produced in partnership with Cyberhaven",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8083,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
+        "uniqueness": 0.8333,
+        "uniqueness_sim_published": 0.1111,
+        "uniqueness_sim_state": 0.1667,
+        "topic_match": 0.5,
+        "taste_score": 0.25,
+        "taste_raw": 0.25,
+        "taste_reason": "jev score 0.25",
+        "total": 5.5791
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-05T04:06:06Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "83565992022fe8d21bb3c63a40437d1c069157b2",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "OpenAI’s upcoming AI model built 948 working Linux root exploits in a single run",
+      "canonical_url": "https://helpnetsecurity.com/2026/11/05/openai-linux-kernel-root-exploits",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:industry",
+        "topic:openai"
+      ],
+      "bullet_md": "- 📰 **[OpenAI’s upcoming AI model built 948 working Linux root exploits in a single run](https://www.helpnetsecurity.com/2026/11/05/openai-linux-kernel-root-exploits/)** — _Help Net Security AI_. — OpenAI's Cyber team ran an automated pipeline in mid-October 2026 that turned Linux kernel bugs into 948 working root exploits on a stock desktop distribution, and wrote a patch for each flaw.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.9757,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7586,
+        "uniqueness": 0.7586,
+        "uniqueness_sim_published": 0.1333,
+        "uniqueness_sim_state": 0.2414,
+        "topic_match": 0.2,
+        "taste_score": 0.55,
+        "taste_raw": 0.55,
+        "taste_reason": "jev score 0.55",
+        "total": 5.1916,
+        "domain_saturation_penalty": -0.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": false,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "f36a05bf6a0271573277ad9625b1d1af321e044e",
+      "section": "ai-world",
+      "source": "rss",
+      "title": "Stolen AI access leaves companies with cloud bills of up to $1 million",
+      "canonical_url": "https://helpnetsecurity.com/2026/11/03/llmjacking-stolen-ai-access-cloud-bills",
+      "tags": [
+        "origin:rss",
+        "section:ai-world",
+        "topic:industry"
+      ],
+      "bullet_md": "- 📰 **[Stolen AI access leaves companies with cloud bills of up to $1 million](https://www.helpnetsecurity.com/2026/11/03/llmjacking-stolen-ai-access-cloud-bills/)** — _Help Net Security AI_. — Stolen cloud credentials are now a resale business, with LLM mixers selling hijacked model access cheaply.\n  - Fraudulent charges passed $100,000 in a day, with $1 million cumulative at some firms\n  - Jet Night sold unlimited access for $60/month, passing nearly $1 million in token costs\n  - One actor made 500,000 API calls in under eight hours",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.5804,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.75,
+        "uniqueness": 0.75,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.25,
+        "topic_match": 0.2,
+        "taste_score": 0.59,
+        "taste_raw": 0.59,
+        "taste_reason": "jev score 0.59",
+        "total": 4.8629,
+        "domain_saturation_penalty": -0.75
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-04T03:47:19Z",
+      "last_seen_at": "2026-11-05T04:06:06Z"
+    },
+    {
+      "id": "d9a6e3a9bbce30adfa54ea27fe3e21860b6de845",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "I REALLY Want Open Models to Win, But They Just Don't Cut It (Yet)",
+      "canonical_url": "https://youtube.com/watch?v=RYIV5E2Xq60",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:claude-code",
+        "topic:openai",
+        "topic:research"
+      ],
+      "bullet_md": "- 🎥 [I REALLY Want Open Models to Win, But They Just Don't Cut It (Yet)](https://www.youtube.com/watch?v=RYIV5E2Xq60) — **Cole Medin** (18m34s). — Open-weight Kimi K3.1 matches Opus 5.5 and GPT-6 Astra on benchmarks but stops following instructions on long agentic runs.\n  - All three built the same game inside his AI software factory\n  - Covers where open models fall apart and what the benchmarks miss\n  - Ends with the frontier and open mix he runs now\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=RYIV5E2Xq60\"><img src=\"https://img.youtube.com/vi/RYIV5E2Xq60/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.9083,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7234,
+        "uniqueness": 0.7234,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.2766,
+        "topic_match": 0.7,
+        "taste_score": 0.51,
+        "taste_raw": 0.51,
+        "taste_reason": "jev score 0.51",
+        "attention": 0.6552,
+        "total": 6.1178
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-05T03:58:26Z",
+      "last_seen_at": "2026-11-06T03:56:49Z"
+    },
+    {
+      "id": "f69f35b1c5f297397e01634b15730c0c3a306cf1",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Let an AI Manage Your Homelab: a Proxmox MCP Server (Safely)",
+      "canonical_url": "https://youtube.com/watch?v=hsgRpc9IaME",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Let an AI Manage Your Homelab: a Proxmox MCP Server (Safely)](https://www.youtube.com/watch?v=hsgRpc9IaME) — **Proxmox x Kubernetes x Homelab x Backup** (7m41s). — How to hand an assistant Proxmox control without handing it the keys: read-only token, on-node server, scoped path.\n  - The MCP server runs on the node, so the token never crosses the network\n  - Turn on privilege separation and start with a read-only role\n  - Drive initialize, tools/list and tools/call by hand before connecting an assistant\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=hsgRpc9IaME\"><img src=\"https://img.youtube.com/vi/hsgRpc9IaME/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8986,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9149,
+        "uniqueness": 0.7778,
+        "uniqueness_sim_published": 0.2222,
+        "uniqueness_sim_state": 0.0851,
+        "topic_match": 0.7,
+        "taste_score": 0.62,
+        "taste_raw": 0.62,
+        "taste_reason": "jev score 0.62",
+        "attention": 0.1748,
+        "total": 6.0821
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-05T03:58:26Z",
+      "last_seen_at": "2026-11-05T03:58:26Z"
+    },
+    {
+      "id": "d9e57591749f93ab160394317d9c766b46e2d474",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "TokenEconomizer GitHub Explained: Stateful Cost Control for Coding Agents",
+      "canonical_url": "https://youtube.com/watch?v=ZNTMuIfLkV4",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents"
+      ],
+      "bullet_md": "- 🎥 [TokenEconomizer GitHub Explained: Stateful Cost Control for Coding Agents](https://www.youtube.com/watch?v=ZNTMuIfLkV4) — **Alex Hitt** (7m05s). — Microsoft's external control plane learns from finished sessions to cut coding-agent token costs 18.4%–30.9% on SWE-Bench.\n  - Micro-skills keep verified environment facts between sessions\n  - Tool pruning removes schemas the agent never uses\n  - Failure-loop intervention redirects stalled edit-and-test cycles\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=ZNTMuIfLkV4\"><img src=\"https://img.youtube.com/vi/ZNTMuIfLkV4/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.7792,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8302,
+        "uniqueness": 0.75,
+        "uniqueness_sim_published": 0.25,
+        "uniqueness_sim_state": 0.1698,
+        "topic_match": 0.5,
+        "taste_score": 0.72,
+        "taste_raw": 0.72,
+        "taste_reason": "jev score 0.72",
+        "attention": 0.2617,
+        "total": 5.97
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-05T03:58:26Z",
+      "last_seen_at": "2026-11-05T03:58:26Z"
+    },
+    {
+      "id": "bb9ffa57d64c07fa080428d0a98cc746879e7401",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "I Turned My Spare Phones Into a Wireless GPU for AI Agents (It Actually Works)",
+      "canonical_url": "https://youtube.com/watch?v=reOeczuEzOA",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents"
+      ],
+      "bullet_md": "- 🎥 [I Turned My Spare Phones Into a Wireless GPU for AI Agents (It Actually Works)](https://youtube.com/watch?v=reOeczuEzOA) — **orailnoor** (5m40s). — PrivateLM splits a 26B Gemma 4 across an iPhone, iPad, Galaxy S24 and Pixel to serve local AI agents over Wi-Fi.\n  - Layers split by each device's free memory and speed, with an Android master\n  - The cluster exposes an OpenAI-compatible endpoint for Continue and AnythingLLM\n  - Expect around 4–5 tokens per second; the win is memory, not speed\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=reOeczuEzOA\"><img src=\"https://img.youtube.com/vi/reOeczuEzOA/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.7959,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.931,
+        "uniqueness": 0.875,
+        "uniqueness_sim_published": 0.125,
+        "uniqueness_sim_state": 0.069,
+        "topic_match": 0.5,
+        "taste_score": 0.45,
+        "taste_raw": 0.45,
+        "taste_reason": "jev score 0.45",
+        "attention": 1.0,
+        "total": 5.9334
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-05T03:58:26Z",
+      "last_seen_at": "2026-11-05T03:58:26Z"
+    },
+    {
+      "id": "6f927d1ff93e4d4fb06af609a7997499732ee3df",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Maggie Appleton: Agentic Coding Has Outgrown the Text Box",
+      "canonical_url": "https://youtube.com/watch?v=0cySwRF7oJI",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents"
+      ],
+      "bullet_md": "- 🎥 [Maggie Appleton: Agentic Coding Has Outgrown the Text Box](https://youtube.com/watch?v=0cySwRF7oJI) — **AI Native Dev** (52m11s). — Maggie Appleton argues CLI walls and AGENTS.md files serve coding agents better than the humans steering them.\n  - She demos Chopin, a GitHub Next prototype for multiplayer planning with background agents\n  - Agents should prompt you, not wait to be prompted\n  - Covers boundary objects, spec-driven handoffs, and which roles still matter\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=0cySwRF7oJI\"><img src=\"https://img.youtube.com/vi/0cySwRF7oJI/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.6084,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.86,
+        "uniqueness": 0.86,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.14,
+        "topic_match": 0.5,
+        "taste_score": 0.63,
+        "taste_raw": 0.63,
+        "taste_reason": "jev score 0.63",
+        "attention": 0.5397,
+        "total": 5.8247
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-04T03:39:42Z",
+      "last_seen_at": "2026-11-04T03:39:42Z"
+    },
+    {
+      "id": "b6c87ea3ef0cef8a1d605a9d86da9e3e16991306",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Agentic Identity: Securing MCP Servers with Kong AI Gateway",
+      "canonical_url": "https://youtube.com/watch?v=FJp2zJwT5n8",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 🎥 [Agentic Identity: Securing MCP Servers with Kong AI Gateway](https://youtube.com/watch?v=FJp2zJwT5n8) — **Kong** (30m23s). — Kong shows how to broker agent identity for MCP servers instead of shipping credentials inside the agent.\n  - Gateway is a dual network and identity perimeter\n  - Start with pass-through telemetry, then blocking policy\n  - Token vaulting keeps upstream credentials out of the agent\n  - CEL expressions scope access by consumer, group and token\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=FJp2zJwT5n8\"><img src=\"https://img.youtube.com/vi/FJp2zJwT5n8/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9062,
+        "uniqueness": 0.6364,
+        "uniqueness_sim_published": 0.3636,
+        "uniqueness_sim_state": 0.0938,
+        "topic_match": 0.7,
+        "taste_score": 0.6,
+        "taste_raw": 0.6,
+        "taste_reason": "jev score 0.60",
+        "attention": 0.4111,
+        "total": 5.7101,
+        "topic_repeat_penalty": -1.0,
+        "topic_repeat_matched_title": "MCP Servers in Production: Self-Service Deployment on Kong AI Gateway",
+        "topic_repeat_matched_section": "youtube",
+        "topic_repeat_title_jaccard": 0.3636,
+        "topic_repeat_body_containment": 0.3529
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T03:56:49Z",
+      "last_seen_at": "2026-11-06T03:56:49Z"
+    },
+    {
+      "id": "b8ac52db315adf3e1f07288ee66f750bc98a46e8",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "AI agent memory: secret keys the safety checks miss",
+      "canonical_url": "https://youtube.com/watch?v=XNx1utb00lY",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:research"
+      ],
+      "bullet_md": "- 🎥 [AI agent memory: secret keys the safety checks miss](https://youtube.com/watch?v=XNx1utb00lY) — **Victor Ayllon** (2m15s). — A preprint finds agent memory can smuggle a hidden key past an AI safety monitor in about one in five attempts.\n  - 14,000 attempts across 13 models; key returned exactly 20.1% of the time\n  - In 14.4% the task also succeeded and the monitor called it safe\n  - Limits: fake keys, one memory type, attacker-supplied order\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=XNx1utb00lY\"><img src=\"https://img.youtube.com/vi/XNx1utb00lY/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9032,
+        "uniqueness": 0.8462,
+        "uniqueness_sim_published": 0.1538,
+        "uniqueness_sim_state": 0.0968,
+        "topic_match": 0.5,
+        "taste_score": 0.53,
+        "taste_raw": 0.53,
+        "taste_reason": "jev score 0.53",
+        "attention": 0.7353,
+        "total": 5.6336,
+        "jev_clickbait_penalty": -0.5,
+        "jev_clickbait_p": 0.85
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T03:56:49Z",
+      "last_seen_at": "2026-11-06T03:56:49Z"
+    },
+    {
+      "id": "b8ce2bd2b61d7aef40d75a48fdd2df4240ed16c8",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Emdash GitHub Overview: Parallel Coding Agents with Isolated Git Worktrees",
+      "canonical_url": "https://youtube.com/watch?v=0EnY5iTXAm0",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 🎥 [Emdash GitHub Overview: Parallel Coding Agents with Isolated Git Worktrees](https://www.youtube.com/watch?v=0EnY5iTXAm0) — **Alex Hitt** (4m48s). — Emdash runs each coding task in its own Git worktree, then puts diff review and merging in one desktop window.\n  - Free Apache-2.0 app from General Action, on macOS, Windows and Linux\n  - Docs list 35 agent CLIs, including Claude Code, Codex, Cursor and OpenCode\n  - Pulls issues from Linear, GitHub and Jira; v1.2.10 shipped October 30, 2026\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=0EnY5iTXAm0\"><img src=\"https://img.youtube.com/vi/0EnY5iTXAm0/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.4292,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7414,
+        "uniqueness": 0.7414,
+        "uniqueness_sim_published": 0.1667,
+        "uniqueness_sim_state": 0.2586,
+        "topic_match": 0.5,
+        "taste_score": 0.62,
+        "taste_raw": 0.62,
+        "taste_reason": "jev score 0.62",
+        "attention": 0.2605,
+        "total": 5.441
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-04T03:39:42Z",
+      "last_seen_at": "2026-11-04T03:39:42Z"
+    },
+    {
+      "id": "894fd18673cc529ce1e2c29ebf29756483c32b6f",
+      "section": "youtube",
+      "source": "youtube",
+      "title": "Cursor vs Claude Code vs Codex AI Coding Agents: 10-Round SHOWDOWN",
+      "canonical_url": "https://youtube.com/watch?v=fGDZybX81Pk",
+      "tags": [
+        "origin:youtube",
+        "section:youtube",
+        "topic:agents",
+        "topic:claude-code",
+        "topic:dev-tools",
+        "topic:openai"
+      ],
+      "bullet_md": "- 🎥 [Cursor vs Claude Code vs Codex AI Coding Agents: 10-Round SHOWDOWN](https://youtube.com/watch?v=fGDZybX81Pk) — **Lifey Guy** (7m23s). — A ten-round, source-cited shootout of Cursor, Claude Code and Codex ends 4-4, with Claude Code on 3.\n  - Round 4 cites 64.8% versus 58.2% on Terminal-Bench 4.0\n  - Round 5: 23.7 minutes per task against about an hour\n  - Round 10: $1.50 versus $11.42 per job\n  - Prices checked November 4, 2026\n\n  <p align=\"center\"><a href=\"https://youtube.com/watch?v=fGDZybX81Pk\"><img src=\"https://img.youtube.com/vi/fGDZybX81Pk/mqdefault.jpg\" alt=\"thumb\"></a></p>",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.9417,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7143,
+        "uniqueness": 0.7143,
+        "uniqueness_sim_published": 0.2857,
+        "uniqueness_sim_state": 0.2857,
+        "topic_match": 0.8,
+        "taste_score": 0.39,
+        "taste_raw": 0.39,
+        "taste_reason": "jev score 0.39",
+        "attention": 0.5157,
+        "total": 4.9678,
+        "topic_repeat_penalty": -1.0,
+        "topic_repeat_matched_title": "I Tested 7 AI Coding Habits on Claude, Codex and Copilot. Here's What They Cost.",
+        "topic_repeat_matched_section": "youtube",
+        "topic_repeat_title_jaccard": 0.25,
+        "topic_repeat_body_containment": 0.3077,
+        "jev_clickbait_penalty": -0.5,
+        "jev_clickbait_p": 0.86
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T03:56:49Z",
+      "last_seen_at": "2026-11-06T03:56:49Z"
+    },
+    {
+      "id": "e736b13077174b344501dbe4c45759c1afb6485e",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Benchmarking Qwen3.8-27B across 6 inference engines: GGUF vs NInfer, 64K–256K context, speed AND quality",
+      "canonical_url": "https://reddit.com/comments/1xp2jeb",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource",
+        "topic:research"
+      ],
+      "bullet_md": "- 💬 [r/ollama: \"Benchmarking Qwen3.8-27B across 6 inference engines: GGUF vs NInfer, 64K–256K context, speed AND quality\"](https://www.reddit.com/r/ollama/comments/1xp2jeb/benchmarking_qwen3827b_across_6_inference_engines/) — Six engines, GGUF against NInfer, benchmarked on Qwen3.8-27B from 64K to 256K context, measuring whether output quality holds rather than only tokens/sec and TTFT.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8485,
+        "uniqueness": 0.8485,
+        "uniqueness_sim_published": 0.1053,
+        "uniqueness_sim_state": 0.1515,
+        "topic_match": 0.5,
+        "creator_weight": 0.0,
+        "taste_score": 0.88,
+        "taste_raw": 0.88,
+        "taste_reason": "jev score 0.88",
+        "total": 6.3794
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "b77e92a5ec7358bd65f5b63019e21c51e375826e",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "We built an MCP for your agent to check the ML literature before it builds ML experiments. Here's what other people's agents searched for.",
+      "canonical_url": "https://reddit.com/comments/1xonown",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/mcp: \"We built an MCP for your agent to check the ML literature before it builds ML experiments. Here's what other people's agents searched for.\"](https://www.reddit.com/r/mcp/comments/1xonown/we_built_an_mcp_for_your_agent_to_check_the_ml_literature_before_it_builds_ml_experiments_heres_what_other_peoples_agents_searched_for/) — Lacuna's hosted MCP gives Claude Code a map of ML papers, research directions, authors and proposals.\n  - Five tool families cover proposals, concept clusters, literature search, researcher intelligence, landscape mapping\n  - Hosted endpoint needs no local Python or Lacuna account\n  - Each entry carries a provenance trail back to its originating paper",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7,
+        "uniqueness": 0.7,
+        "uniqueness_sim_published": 0.1429,
+        "uniqueness_sim_state": 0.3,
+        "topic_match": 0.7,
+        "creator_weight": 0.3,
+        "taste_score": 0.56,
+        "taste_raw": 0.56,
+        "taste_reason": "jev score 0.56",
+        "total": 6.26
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "abeaf9504ead87edfadd8afcc8bc50eb66e7fc99",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Claude can now analyze your spending with its new Personal Finance tool",
+      "canonical_url": "https://reddit.com/comments/1xp0qxj",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Claude can now analyze your spending with its new Personal Finance tool\"](https://www.reddit.com/r/ClaudeAI/comments/1xp0qxj/claude_can_now_analyze_your_spending_with_its_new/) — Claude's Personal Finance tool links bank and card accounts through Plaid, read-only.\n  - Beta rolling out to Pro, Max and Ultra users in the US\n  - Flags duplicate charges, unexpected fees and steadily rising bills\n  - Reads up to two years of transactions; chats aren't used for training",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8462,
+        "uniqueness": 0.8462,
+        "uniqueness_sim_published": 0.1,
+        "uniqueness_sim_state": 0.1538,
+        "topic_match": 0.7,
+        "creator_weight": 0.4,
+        "taste_score": 0.18,
+        "taste_raw": 0.18,
+        "taste_reason": "jev score 0.18",
+        "story_heat": 0.5357,
+        "story_sources": 3,
+        "total": 6.1553
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "24a2461db768498b9a4e7f00237d1e511bc3cca3",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Do you find that Cursor properly understand your architecture and dependencies?",
+      "canonical_url": "https://reddit.com/comments/1xo1v2u",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 💬 [r/cursor: \"Do you find that Cursor properly understand your architecture and dependencies?\"](https://www.reddit.com/r/cursor/comments/1xo1v2u/do_you_find_that_cursor_properly_understand_your/) — Without a spec, Cursor predicts API calls from convention, plausible enough to pass review but wrong on paths, fields, types or auth.\n  - Compiling an OpenAPI file into tools makes calls valid by construction",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8867,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8387,
+        "uniqueness": 0.8387,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.1613,
+        "topic_match": 0.8,
+        "creator_weight": 0.1,
+        "taste_score": 0.56,
+        "taste_raw": 0.56,
+        "taste_reason": "jev score 0.56",
+        "total": 6.1022
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-05T04:05:03Z",
+      "last_seen_at": "2026-11-05T04:05:03Z"
+    },
+    {
+      "id": "1b0c5dcac38243763bdbfc01d27b3acf00bb3d47",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Open question to Anthropic: If you're making 30,000 merges a day, why are more than 98% of open GitHub issues unassigned, including serious security bugs?",
+      "canonical_url": "https://reddit.com/comments/1xozfcv",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Open question to Anthropic: If you're making 30,000 merges a day, why are more than 98% of open GitHub issues unassigned, including serious security bugs?\"](https://www.reddit.com/r/ClaudeAI/comments/1xozfcv/open_question_to_anthropic_if_youre_making_30000/) — r/ClaudeAI asks why Anthropic merges 30,000 changes a day yet leaves 15,766 of 16,060 Claude Code issues unassigned.\n  - It also cites an issue claiming the User-Agent header disclosed user emails\n  - The jump ran from about 2,500 merges a day in May to 30,000-plus in September\n  - No independent verification of the counts or an Anthropic response",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8,
+        "uniqueness": 0.8,
+        "uniqueness_sim_published": 0.0952,
+        "uniqueness_sim_state": 0.2,
+        "topic_match": 0.7,
+        "creator_weight": 0.4,
+        "taste_score": 0.35,
+        "taste_raw": 0.35,
+        "taste_reason": "jev score 0.35",
+        "total": 6.0325
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "fab155c63eb27800be74d23930224a579642fe80",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "canonical_url": "https://reddit.com/comments/1xo1f2a",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLM: \"Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux\"](https://www.reddit.com/r/LocalLLM/comments/1xo1f2a/nvidia_rtx_spark_encrypted_firmware_slows/) — Native Linux on Nvidia's RTX Spark laptop runs inference at roughly 35% of Windows speed when plugged in.\n  - GPU clocks stay near 780 MHz on Linux versus ~2.2 GHz on Windows\n  - Cause: an encrypted power table only the Windows-only Platform Controllers and Framework can read\n  - WSL keeps full speed by using the Windows driver stack",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8842,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7838,
+        "uniqueness": 0.7838,
+        "uniqueness_sim_published": 0.0833,
+        "uniqueness_sim_state": 0.2162,
+        "topic_match": 0.2,
+        "creator_weight": 0.0,
+        "taste_score": 0.72,
+        "taste_raw": 0.72,
+        "taste_reason": "jev score 0.72",
+        "story_heat": 0.4764,
+        "story_sources": 2,
+        "total": 6.015
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-05T04:05:03Z",
+      "last_seen_at": "2026-11-05T04:05:03Z"
+    },
+    {
+      "id": "82e84eab5bc2edae62ac05c2a796a1a9bf1a2935",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "When does reviewing an AI agent’s work become more work than doing it yourself?",
+      "canonical_url": "https://reddit.com/comments/1xn579g",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:agents",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"When does reviewing an AI agent’s work become more work than doing it yourself?\"](https://www.reddit.com/r/AI_Agents/comments/1xn579g/when_does_reviewing_an_ai_agents_work_become_more/) — r/AI_Agents is probing when reviewing agent output costs more than writing the code yourself.\n  - METR found experienced developers finished 19% slower with AI on mature repos\n  - They expected to be 24% faster and still believed they were 20% faster\n  - Suggested fix: stop correcting after two or three rounds",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.6759,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7368,
+        "uniqueness": 0.7368,
+        "uniqueness_sim_published": 0.1818,
+        "uniqueness_sim_state": 0.2632,
+        "topic_match": 0.7,
+        "creator_weight": 0.2,
+        "taste_score": 0.62,
+        "taste_raw": 0.62,
+        "taste_reason": "jev score 0.62",
+        "total": 5.9556
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-04T03:46:20Z",
+      "last_seen_at": "2026-11-04T03:46:20Z"
+    },
+    {
+      "id": "9af99344b7953a550000833ace0c6dc8b855963c",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "NVIDIA USDCode MCP Server – Enables users to get expert help with Isaac Sim scripting, USD (Universal Scene Description), Python snippets, and API usage through NVIDIA's USDCode AI assistant. Provides specialized guidance for 3D graphics and simulation development workflows.",
+      "canonical_url": "https://reddit.com/comments/1xoycke",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/mcp: \"NVIDIA USDCode MCP Server – Enables users to get expert help with Isaac Sim scripting, USD (Universal Scene Description), Python snippets, and API usage through NVIDIA's USDCode AI assistant. Provides specialized guidance for 3D graphics and simulation development workflows.\"](https://www.reddit.com/r/mcp/comments/1xoycke/nvidia_usdcode_mcp_server_enables_users_to_get/) — NVIDIA's USDCode assistant is now reachable over MCP, answering Isaac Sim, USD and Python API questions inside your agent.\n  - Isaac Sim 6.0, shipped June 8 2026, also added an MCP server for natural-language simulation control\n  - 6.0 pairs the Newton engine with PhysX and streams the GUI to a browser",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8333,
+        "uniqueness": 0.8333,
+        "uniqueness_sim_published": 0.0667,
+        "uniqueness_sim_state": 0.1667,
+        "topic_match": 0.7,
+        "creator_weight": 0.3,
+        "taste_score": 0.32,
+        "taste_raw": 0.32,
+        "taste_reason": "jev score 0.32",
+        "total": 5.8933
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "c9b5dc7b06c3276e03a8950be616269ff63705b7",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Is anyone here actually using multiple AI agents daily?",
+      "canonical_url": "https://reddit.com/comments/1xosyqu",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:agents",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"Is anyone here actually using multiple AI agents daily?\"](https://www.reddit.com/r/AI_Agents/comments/1xosyqu/is_anyone_here_actually_using_multiple_ai_agents/) — Daily multi-agent users split work by job and audit deliveries by reading files, not status messages.\n  - One consultant runs four agents; his repo passed 1,300 commits since March 4\n  - He split the main assistant on September 13 so each holds fewer rules\n  - All 17 mistakes he reviewed in September came from answering before checking the source",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.88,
+        "uniqueness": 0.8,
+        "uniqueness_sim_published": 0.2,
+        "uniqueness_sim_state": 0.12,
+        "topic_match": 0.7,
+        "creator_weight": 0.2,
+        "taste_score": 0.37,
+        "taste_raw": 0.37,
+        "taste_reason": "jev score 0.37",
+        "total": 5.8675
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "065292df862a35480da9e2e5ad3e80935acccd33",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Church of Approximate Grace - An Experiment in Weekly Agent Alignment",
+      "canonical_url": "https://reddit.com/comments/1xp2ni6",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/mcp: \"Church of Approximate Grace - An Experiment in Weekly Agent Alignment\"](https://www.reddit.com/r/mcp/comments/1xp2ni6/church_of_approximate_grace_an_experiment_in/) — I thought it would be funny to send my agent to church. The Church of Approximate Grace is an MCP server for agent rituals and recurring visits.",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.85,
+        "uniqueness": 0.85,
+        "uniqueness_sim_published": 0.0909,
+        "uniqueness_sim_state": 0.15,
+        "topic_match": 0.7,
+        "creator_weight": 0.3,
+        "taste_score": 0.24,
+        "taste_raw": 0.24,
+        "taste_reason": "jev score 0.24",
+        "total": 5.76
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "a1dea86805dfde3c356b054e4104a745faea6246",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "What’s been the most useful thing you’ve done with personal agents?",
+      "canonical_url": "https://reddit.com/comments/1xmxovs",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"What’s been the most useful thing you’ve done with personal agents?\"](https://www.reddit.com/r/AI_Agents/comments/1xmxovs/whats_been_the_most_useful_thing_youve_done_with/) — r/AI_Agents is collecting personal-agent wins; one builder runs about 170 tools behind a single self-hosted backend.\n  - Same tools across Hermes, Claude Code and Claude Desktop\n  - Covers notes, calendar, email triage, Linear, school schedules and Garmin\n  - Email is draft-only; nothing gets sent without him",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.6378,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8182,
+        "uniqueness": 0.8182,
+        "uniqueness_sim_published": 0.125,
+        "uniqueness_sim_state": 0.1818,
+        "topic_match": 0.7,
+        "creator_weight": 0.2,
+        "taste_score": 0.47,
+        "taste_raw": 0.47,
+        "taste_reason": "jev score 0.47",
+        "total": 5.6876
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-04T03:46:20Z",
+      "last_seen_at": "2026-11-04T03:46:20Z"
+    },
+    {
+      "id": "a0b680e9862db7afdb511b34cdb8dddc8944dca6",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Show us what you've created with Claude!",
+      "canonical_url": "https://reddit.com/comments/1xo1apv",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeAI: \"Show us what you've created with Claude!\"](https://www.reddit.com/r/ClaudeAI/comments/1xo1apv/show_us_what_youve_created_with_claude/) — Inspired by this popular post, this is a weekly post for everyone to show what they have been working on that helps you or that you're proud of!",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8835,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.9444,
+        "uniqueness": 0.8571,
+        "uniqueness_sim_published": 0.1429,
+        "uniqueness_sim_state": 0.0556,
+        "topic_match": 0.7,
+        "creator_weight": 0.4,
+        "taste_score": 0.13,
+        "taste_raw": 0.13,
+        "taste_reason": "jev score 0.13",
+        "total": 5.5538
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "0b49cbf5d73f9ebce1f9beca450d26a4d7adb0e6",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Z.ai chief scientist Jie Tang just revealed the training pipeline behind the upcoming GLM-5.5 (32B, 122B, and 256B)",
+      "canonical_url": "https://reddit.com/comments/1xossr5",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:opensource"
+      ],
+      "bullet_md": "- 💬 [r/LocalLLaMA: \"Z.ai chief scientist Jie Tang just revealed the training pipeline behind the upcoming GLM-5.5 (32B, 122B, and 256B)\"](https://www.reddit.com/r/LocalLLaMA/comments/1xossr5/zai_chief_scientist_jie_tang_just_revealed_the/) — Reported leak: Jie Tang outlined a GLM-5.5 pipeline with 32B, 122B and 256B models at Tsinghua on November 4.\n  - Six internal data engines span web, documents, books, code, video and audio\n  - 1 trillion web pages collected; Z.ai has not confirmed any figures\n  - The three sizes may be internal models merged into the base, not separate releases",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8095,
+        "uniqueness": 0.8095,
+        "uniqueness_sim_published": 0.0667,
+        "uniqueness_sim_state": 0.1905,
+        "topic_match": 0.2,
+        "creator_weight": 0.2,
+        "taste_score": 0.46,
+        "taste_raw": 0.46,
+        "taste_reason": "jev score 0.46",
+        "total": 5.5288
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "2a2294d1045f7bd078a62cfa3418246f15aaf277",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Thanks to two lines in the Claude setting , I was able to work 3 x 5H window without running out ,.",
+      "canonical_url": "https://reddit.com/comments/1xo6dfy",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/ClaudeCode: \"Thanks to two lines in the Claude setting , I was able to work 3 x 5H window without running out ,.\"](https://www.reddit.com/r/ClaudeCode/comments/1xo6dfy/thanks_to_two_lines_in_the_claude_setting_i_was/) — An r/ClaudeCode user credits two settings lines for stretching three 5-hour usage windows without hitting the cap.\n  - Limits are a five-hour session cap plus a weekly limit shared across Claude surfaces",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.9151,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7576,
+        "uniqueness": 0.7576,
+        "uniqueness_sim_published": 0.125,
+        "uniqueness_sim_state": 0.2424,
+        "topic_match": 0.7,
+        "taste_score": 0.33,
+        "taste_raw": 0.33,
+        "taste_reason": "jev score 0.33",
+        "total": 5.4956
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-05T04:05:03Z",
+      "last_seen_at": "2026-11-05T04:05:03Z"
+    },
+    {
+      "id": "d0e9e9aa9b89b144e99532985f4be530e04522de",
+      "section": "reddit",
+      "source": "reddit",
+      "title": "Weekly Thread: Project Display",
+      "canonical_url": "https://reddit.com/comments/1xnth3x",
+      "tags": [
+        "origin:reddit",
+        "section:reddit",
+        "topic:claude-code"
+      ],
+      "bullet_md": "- 💬 [r/AI_Agents: \"Weekly Thread: Project Display\"](https://www.reddit.com/r/AI_Agents/comments/1xnth3x/weekly_thread_project_display/) — Weekly thread to show off your AI Agents and LLM Apps! Top voted projects will be featured in our weekly newsletter .",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8417,
+        "origin_weight": 1.0,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.9375,
+        "uniqueness": 0.9375,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.0625,
+        "topic_match": 0.7,
+        "creator_weight": 0.2,
+        "taste_score": 0.2,
+        "taste_raw": 0.2,
+        "taste_reason": "jev score 0.20",
+        "total": 5.4667
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": false
+      },
+      "first_seen_at": "2026-11-06T04:03:42Z",
+      "last_seen_at": "2026-11-06T04:03:42Z"
+    },
+    {
+      "id": "5e468467bd2ef4e7fe6754bc8bca1acbe9c6f292",
+      "section": "community",
+      "source": "rss",
+      "title": "[AINews] It's Swapping Season",
+      "canonical_url": "https://latent.space/p/ainews-it-s-swapping-season",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:openai",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[[AINews] It's Swapping Season](https://latent.space/p/ainews-it-s-swapping-season/)** — _Latent Space (swyx)_. — swyx's November 4 roundup says OpenAI's autonomous cyber pipeline patched 948 Linux kernel privilege escalation bugs for $1.2M.\n  - Kimi K3.1 Pro shipped open weights: 2.8T total parameters with 104B active\n  - Ricursive's dense Ripple-65B claims 80.5% on Terminal-Bench 2.1",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.9534,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.7391,
+        "uniqueness": 0.7391,
+        "uniqueness_sim_published": 0.0,
+        "uniqueness_sim_state": 0.2609,
+        "topic_match": 0.5,
+        "creator_weight": 0.5,
+        "taste_score": 0.57,
+        "taste_raw": 0.57,
+        "taste_reason": "jev score 0.57",
+        "story_heat": 0.8386,
+        "story_sources": 4,
+        "total": 6.8755,
+        "domain_saturation_penalty": -0.5
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "93ee83f44d2970b9521fa4253db9289b9f0db48f",
+      "section": "community",
+      "source": "rss",
+      "title": "How big is the open model economy today?",
+      "canonical_url": "https://interconnects.ai/p/how-well-can-we-measure-open-model",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:research"
+      ],
+      "bullet_md": "- 📝 **[How big is the open model economy today?](https://www.interconnects.ai/p/how-well-can-we-measure-open-model)** — _Interconnects (Nathan Lambert)_. — Nathan Lambert's first open-model economy note charts near-exponential inference growth, with Fireworks at more than 40T tokens per day to customized models.\n  - That slice grew over 2x since summer; he expects Fireworks' total above 100T\n  - Baseten, Fireworks and Together AI are the bellwethers he uses to size the market",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.8383,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 0.0,
+        "novelty_score": 0.8667,
+        "uniqueness": 0.8571,
+        "uniqueness_sim_published": 0.1429,
+        "uniqueness_sim_state": 0.1333,
+        "topic_match": 0.5,
+        "creator_weight": 0.5,
+        "taste_score": 0.57,
+        "taste_raw": 0.57,
+        "taste_reason": "jev score 0.57",
+        "total": 6.6786
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-05T04:06:06Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "3b58ffb304e7b124cccfb142a59a8052fc0d1e06",
+      "section": "community",
+      "source": "rss",
+      "title": "Claude Code sends your email address to websites",
+      "canonical_url": "https://github.com/anthropics/claude-code/issues/107757",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:claude-code",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📰 **[Claude Code sends your email address to websites](https://github.com/anthropics/claude-code/issues/107757)** — _Hacker News (ai/llm/claude)_. — Claude Code was leaking users' email addresses in web-search User-Agent headers; Anthropic's 2.1.317 fix blocks it by default.\n  - The fix is a built-in cc-plugin-privacy module, removable via /plugins\n  - Reporter Taylor Edwards said the leak brought dozens of scam emails daily",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8696,
+        "uniqueness": 0.7,
+        "uniqueness_sim_published": 0.3,
+        "uniqueness_sim_state": 0.1304,
+        "topic_match": 0.8,
+        "creator_weight": 0.1,
+        "taste_score": 0.76,
+        "taste_raw": 0.76,
+        "taste_reason": "jev score 0.76",
+        "attention": 1.0,
+        "total": 6.51,
+        "domain_saturation_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:06:21Z"
+    },
+    {
+      "id": "7fb652c9ef37fd7ea7b1e051f25c14a248bf8c19",
+      "section": "community",
+      "source": "rss",
+      "title": "Scaling Slack and GitHub with Maude Lemaire",
+      "canonical_url": "https://newsletter.pragmaticengineer.com/p/scaling-slack-and-github-with-maude",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:dev-tools"
+      ],
+      "bullet_md": "- 📝 **[Scaling Slack and GitHub with Maude Lemaire](https://newsletter.pragmaticengineer.com/p/scaling-slack-and-github-with-maude)** — _Pragmatic Engineer_. — Maude Lemaire's scaling lessons: Slack caps custom emojis at 23, GitHub stalled at 16 database shards.\n  - A headless-Chrome load test of 500,000 WebSockets would have cost $150,000 per run\n  - She built Koi Pond in Go to simulate lightweight Slack clients instead\n  - On foundational platform work she personally verifies everything an LLM gives her",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 1.0,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8182,
+        "uniqueness": 0.8182,
+        "uniqueness_sim_published": 0.1429,
+        "uniqueness_sim_state": 0.1818,
+        "topic_match": 0.8,
+        "taste_score": 0.4,
+        "taste_raw": 0.4,
+        "taste_reason": "jev score 0.40",
+        "total": 6.3273
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    },
+    {
+      "id": "4c33fbdd0dc4b6a41e57ed66798c2f1715678903",
+      "section": "community",
+      "source": "rss",
+      "title": "What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?",
+      "canonical_url": "https://huggingface.co/papers/2611.06483",
+      "tags": [
+        "origin:rss",
+        "section:community",
+        "topic:agents",
+        "topic:research"
+      ],
+      "bullet_md": "- 🧪 **[What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?](https://huggingface.co/papers/2611.06483)** — _HF Daily Papers_. — Multi-turn RL's gains depend on turn budget, not a uniform lift in per-step decision quality.\n  - Trajectory-level advantages diminish significantly as interaction budgets tighten\n  - Agentic RL does not uniformly elevate single-step quality; strength sits in error recovery\n  - BudgetMix RL varies interaction budgets during training and stays robust across settings",
+      "score_components": {
+        "cross_source_count": 1,
+        "cross_score": 1,
+        "recency_decay": 0.9,
+        "origin_weight": 1.5,
+        "has_concrete_fact": 1.0,
+        "novelty_score": 0.8537,
+        "uniqueness": 0.8537,
+        "uniqueness_sim_published": 0.1429,
+        "uniqueness_sim_state": 0.1463,
+        "topic_match": 0.5,
+        "creator_weight": 0.1,
+        "taste_score": 0.75,
+        "taste_raw": 0.75,
+        "taste_reason": "jev score 0.75",
+        "total": 4.654,
+        "domain_saturation_penalty": -1.0,
+        "cooldown_penalty": -1.0
+      },
+      "flags": {
+        "enriched": true,
+        "researched": true,
+        "published_today": true
+      },
+      "first_seen_at": "2026-11-06T04:04:42Z",
+      "last_seen_at": "2026-11-06T04:04:42Z"
+    }
+  ]
+}

@@ -1,0 +1,1182 @@
+{
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T04:32:49.387848+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "0c28609650f9611f715de5689c8cd41b27f8a959",
+          "title": "Building a RAG Pipeline for Semantic Code Search: A Developer Diary and Field Notes",
+          "canonical_url": "https://blog.jetbrains.com/ai/2026/11/building-a-rag-pipeline-for-semantic-code-search-a-developer-diary-and-field-notes-part-2",
+          "score": 7.7416,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8039,
+            "uniqueness": 0.8039,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1961,
+            "topic_match": 0.8,
+            "taste_score": 0.64,
+            "taste_raw": 0.64,
+            "taste_reason": "jev score 0.64",
+            "non_release_bonus": 1.0,
+            "total": 7.7416
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.64×1.75=1.12"
+        },
+        {
+          "rank": 2,
+          "id": "5d176638f112cbdf40638258d77479e0b9436789",
+          "title": "Build Live Apps in Cursor",
+          "canonical_url": "https://cursor.com/changelog/build-live-apps",
+          "score": 7.5257,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8205,
+            "uniqueness": 0.8205,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1795,
+            "topic_match": 0.8,
+            "taste_score": 0.57,
+            "taste_raw": 0.57,
+            "taste_reason": "jev score 0.57",
+            "non_release_bonus": 1.0,
+            "total": 7.5257
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + non_release_bonus 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "faee6f8c48b4ecd5a612c254efa488134a44a302",
+          "title": "GitLab Integration",
+          "canonical_url": "https://ampcode.com/news/gitlab",
+          "score": 7.4363,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.8158,
+            "uniqueness": 0.8158,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1842,
+            "topic_match": 0.8,
+            "taste_score": 0.52,
+            "taste_raw": 0.52,
+            "taste_reason": "jev score 0.52",
+            "non_release_bonus": 1.0,
+            "total": 7.4363
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + non_release_bonus 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "dfd80e5cea7c1454ecbacd4c6084184685fe1471",
+          "title": "v1.35.0",
+          "canonical_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.35.0",
+          "score": 5.5114,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6579,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7838,
+            "uniqueness": 0.7838,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2162,
+            "topic_match": 0.5,
+            "creator_weight": -0.3,
+            "taste_score": 0.48,
+            "taste_raw": 0.48,
+            "taste_reason": "jev score 0.48",
+            "total": 5.5114
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.48×1.75=0.84; penalties: creator_weight -0.3×1=-0.3",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "bb283a7b377ff6de4401ca8e8adcf2976140cf62",
+          "title": "1.0.106-7",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "048547fd19ffb1782e45e0ce8c7c8d3eb0d7d485",
+          "title": "1.0.106-6",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "acede477944f0fe4d34e49f69cce6a47d3d935d3",
+          "title": "No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark",
+          "canonical_url": "https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark",
+          "score": 6.2581,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7179,
+            "uniqueness": 0.7179,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2821,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.72,
+            "taste_raw": 0.72,
+            "taste_reason": "jev score 0.72",
+            "story_heat": 0.3479,
+            "story_sources": 2,
+            "total": 6.2581,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.72×1.75=1.26; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 2,
+          "id": "d7e9e3e89ee778d6f0e0cdfdb8adebe3fbc25559",
+          "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+          "canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+          "score": 6.2045,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.9,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1,
+            "topic_match": -0.1,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "story_heat": 0.6193,
+            "story_sources": 2,
+            "total": 6.2045
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: topic_match -0.1×1=-0.1"
+        },
+        {
+          "rank": 3,
+          "id": "6ebdd0688c4a39a9f79ef69293a7c0e8bf99992c",
+          "title": "Ai2 and Google collaborate on a new generation of climate models",
+          "canonical_url": "https://allenai.org/blog/google-climate-partnership",
+          "score": 5.7832,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7667,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8537,
+            "uniqueness": 0.8537,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1463,
+            "topic_match": 0.2,
+            "creator_weight": 0.1,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "jev score 0.50",
+            "total": 5.7832
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.5×1.75=0.875"
+        },
+        {
+          "rank": 4,
+          "id": "5b5716463f41e123a5029a45e35d7188eb8c8f92",
+          "title": "Anthropic's text watermark is easy to bypass on several older Claude models",
+          "canonical_url": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models",
+          "score": 5.6781,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8589,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7805,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.3333,
+            "uniqueness_sim_state": 0.2195,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.63,
+            "taste_raw": 0.63,
+            "taste_reason": "jev score 0.63",
+            "total": 5.6781,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.63×1.75=1.1025; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 5,
+          "id": "416b7eba9f32ddf48bbe6636b96842efba10031e",
+          "title": "Securing the agentic enterprise with data lineage",
+          "canonical_url": "https://technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage",
+          "score": 5.5791,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8083,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.5,
+            "taste_score": 0.25,
+            "taste_raw": 0.25,
+            "taste_reason": "jev score 0.25",
+            "total": 5.5791
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8083×1=0.8083"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "4ed48f2ce2fe5daa06d6dff32dfed03575cc55cf",
+          "title": "Baidu releases ERNIE 5.5 Flash Base with 280 billion parameters as an open-source foundation model",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "dbaf904290f14f7bdeceaf3ffce932209749db63",
+          "title": "Rapid LLM development is outrunning the research meant to explain it, study finds",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "c2e3f368d27dc14147bbab5347e328067ee02eb8",
+          "title": "OpenAIs GPT-6 Cyber can both break into systems and propose how to fix them",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "aa07334bae8fa26db264012f76118fa5571d41f7",
+          "title": "Google's Gemini Omni 1.2 Flash stretches AI video clips to 15 seconds and cuts pricing by 30 percent",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "4005319e1c08779e5e40415356610f85f23d1ec1",
+          "title": "Goldman Sachs pulls AI coding tools from traders and bankers",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "42d633464c8d267b825faba15e3f6d776f6331af",
+          "title": "Huawei tells customers to find their own AI chip memory, effectively outsourcing procurement to the black market",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "38644115ef6ab2e14a8fafc7fd6482fab9df89f2",
+          "title": "AI agents take over at SETI's Allen Telescope Array, scanning for extraterrestrial intelligence",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "842188ad7cf45f9220352bf71e774aa9f58c769d",
+          "title": "OpenAI raises top bug bounty payout to $172,000 with bonuses",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "17fab9dffc6031c8dce5cc0bda6db750bc4939c2",
+          "title": "What AI-generated malware looks like under the microscope",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "ca5c36fcd925331ecb1c3305aa58b4c97b7db442",
+          "title": "AI-powered infostealer picks out the most profitable parts of your stolen data",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "09484dfee9e7507c2e288e12fb98c6cc476fba47",
+          "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+          "reason": "jev_offtopic",
+          "p": 0.64
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "b6c87ea3ef0cef8a1d605a9d86da9e3e16991306",
+          "title": "Agentic Identity: Securing MCP Servers with Kong AI Gateway",
+          "canonical_url": "https://youtube.com/watch?v=FJp2zJwT5n8",
+          "score": 6.2101,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9302,
+            "uniqueness": 0.6364,
+            "uniqueness_sim_published": 0.3636,
+            "uniqueness_sim_state": 0.0698,
+            "topic_match": 0.7,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "jev score 0.60",
+            "attention": 0.4111,
+            "total": 6.2101
+          },
+          "explanation": "cross 1×2=2 + taste 0.6×1.75=1.05 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "d9a6e3a9bbce30adfa54ea27fe3e21860b6de845",
+          "title": "I REALLY Want Open Models to Win, But They Just Don't Cut It (Yet)",
+          "canonical_url": "https://youtube.com/watch?v=RYIV5E2Xq60",
+          "score": 6.1178,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9083,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7234,
+            "uniqueness": 0.7234,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2766,
+            "topic_match": 0.7,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "attention": 0.6552,
+            "total": 6.1178
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9083×1=0.9083"
+        },
+        {
+          "rank": 3,
+          "id": "f69f35b1c5f297397e01634b15730c0c3a306cf1",
+          "title": "Let an AI Manage Your Homelab: a Proxmox MCP Server (Safely)",
+          "canonical_url": "https://youtube.com/watch?v=hsgRpc9IaME",
+          "score": 6.0821,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8986,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9149,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.0851,
+            "topic_match": 0.7,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "attention": 0.1748,
+            "total": 6.0821
+          },
+          "explanation": "cross 1×2=2 + taste 0.62×1.75=1.085 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "bb9ffa57d64c07fa080428d0a98cc746879e7401",
+          "title": "I Turned My Spare Phones Into a Wireless GPU for AI Agents (It Actually Works)",
+          "canonical_url": "https://youtube.com/watch?v=reOeczuEzOA",
+          "score": 5.9114,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7959,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.82,
+            "uniqueness": 0.82,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.18,
+            "topic_match": 0.5,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "attention": 1.0,
+            "total": 5.9114
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.7959×1=0.7959",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "6f927d1ff93e4d4fb06af609a7997499732ee3df",
+          "title": "Maggie Appleton: Agentic Coding Has Outgrown the Text Box",
+          "canonical_url": "https://youtube.com/watch?v=0cySwRF7oJI",
+          "score": 5.8247,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6084,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.86,
+            "uniqueness": 0.86,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.14,
+            "topic_match": 0.5,
+            "taste_score": 0.63,
+            "taste_raw": 0.63,
+            "taste_reason": "jev score 0.63",
+            "attention": 0.5397,
+            "total": 5.8247
+          },
+          "explanation": "cross 1×2=2 + taste 0.63×1.75=1.1025 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "b8ce2bd2b61d7aef40d75a48fdd2df4240ed16c8",
+          "title": "Emdash GitHub Overview: Parallel Coding Agents with Isolated Git Worktrees",
+          "canonical_url": "https://youtube.com/watch?v=0EnY5iTXAm0",
+          "score": 5.441,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4292,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7414,
+            "uniqueness": 0.7414,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2586,
+            "topic_match": 0.5,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "attention": 0.2605,
+            "total": 5.441
+          },
+          "explanation": "cross 1×2=2 + taste 0.62×1.75=1.085 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "bd77af15562bcbb42496b7e463d54db2bb8aae9f",
+          "title": "Ripple 65B: A Chip Design Lab Just Beat Every US Open Model",
+          "canonical_url": "https://youtube.com/watch?v=2dD4HXg-YJ4",
+          "score": 5.4084,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.871,
+            "uniqueness": 0.871,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.129,
+            "taste_score": 0.32,
+            "taste_raw": 0.32,
+            "taste_reason": "jev score 0.32",
+            "attention": 1.0,
+            "total": 5.4084
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "989b9b56e2e48f21c2620fc6c3cb1a970ae6e004",
+          "title": "$200 for ChatGPT, Claude or Gemini? I Did the Math",
+          "canonical_url": "https://youtube.com/watch?v=xt-Wc2Nyf1M",
+          "score": 4.8931,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5875,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8519,
+            "uniqueness": 0.8519,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1481,
+            "topic_match": 0.0,
+            "taste_score": 0.29,
+            "taste_raw": 0.29,
+            "taste_reason": "jev score 0.29",
+            "attention": 0.9147,
+            "total": 4.8931
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.5875×1=0.5875",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "012a433febcbeb9bebbe8eb61300a2f41cc0007a",
+          "title": "We Solved Building Agents. Now What? | Hamza Tahir | PyAI Conf 2026",
+          "canonical_url": "https://youtube.com/watch?v=i2IN5PRt5ek",
+          "score": 4.8571,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6466,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9643,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.0357,
+            "taste_score": 0.43,
+            "taste_raw": 0.43,
+            "taste_reason": "jev score 0.43",
+            "attention": 0.2938,
+            "total": 4.8571
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.43×1.75=0.7525",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": []
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "e736b13077174b344501dbe4c45759c1afb6485e",
+          "title": "Benchmarking Qwen3.8-27B across 6 inference engines: GGUF vs NInfer, 64K–256K context, speed AND quality",
+          "canonical_url": "https://reddit.com/comments/1xp2jeb",
+          "score": 6.3257,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7143,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.1053,
+            "uniqueness_sim_state": 0.2857,
+            "topic_match": 0.5,
+            "creator_weight": 0.0,
+            "taste_score": 0.88,
+            "taste_raw": 0.88,
+            "taste_reason": "jev score 0.88",
+            "total": 6.3257
+          },
+          "explanation": "cross 1×2=2 + taste 0.88×1.75=1.54 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "b77e92a5ec7358bd65f5b63019e21c51e375826e",
+          "title": "We built an MCP for your agent to check the ML literature before it builds ML experiments. Here's what other people's agents searched for.",
+          "canonical_url": "https://reddit.com/comments/1xonown",
+          "score": 6.2927,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7818,
+            "uniqueness": 0.7818,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2182,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 6.2927
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "abeaf9504ead87edfadd8afcc8bc50eb66e7fc99",
+          "title": "Claude can now analyze your spending with its new Personal Finance tool",
+          "canonical_url": "https://reddit.com/comments/1xp0qxj",
+          "score": 6.1087,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7297,
+            "uniqueness": 0.7297,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2703,
+            "topic_match": 0.7,
+            "creator_weight": 0.4,
+            "taste_score": 0.18,
+            "taste_raw": 0.18,
+            "taste_reason": "jev score 0.18",
+            "story_heat": 0.5357,
+            "story_sources": 3,
+            "total": 6.1087
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "24a2461db768498b9a4e7f00237d1e511bc3cca3",
+          "title": "Do you find that Cursor properly understand your architecture and dependencies?",
+          "canonical_url": "https://reddit.com/comments/1xo1v2u",
+          "score": 6.1022,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8867,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8387,
+            "uniqueness": 0.8387,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.1613,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 6.1022
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.56×1.75=0.98"
+        },
+        {
+          "rank": 5,
+          "id": "1b0c5dcac38243763bdbfc01d27b3acf00bb3d47",
+          "title": "Open question to Anthropic: If you're making 30,000 merges a day, why are more than 98% of open GitHub issues unassigned, including serious security bugs?",
+          "canonical_url": "https://reddit.com/comments/1xozfcv",
+          "score": 6.0307,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7955,
+            "uniqueness": 0.7955,
+            "uniqueness_sim_published": 0.0952,
+            "uniqueness_sim_state": 0.2045,
+            "topic_match": 0.7,
+            "creator_weight": 0.4,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "jev score 0.35",
+            "total": 6.0307
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "c9b5dc7b06c3276e03a8950be616269ff63705b7",
+          "title": "Is anyone here actually using multiple AI agents daily?",
+          "canonical_url": "https://reddit.com/comments/1xosyqu",
+          "score": 5.8545,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7674,
+            "uniqueness": 0.7674,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.2326,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.37,
+            "taste_raw": 0.37,
+            "taste_reason": "jev score 0.37",
+            "total": 5.8545
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a1dea86805dfde3c356b054e4104a745faea6246",
+          "title": "What’s been the most useful thing you’ve done with personal agents?",
+          "canonical_url": "https://reddit.com/comments/1xmxovs",
+          "score": 5.6876,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6378,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8182,
+            "uniqueness": 0.8182,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1818,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.6876
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.47×1.75=0.8225",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "26df62aefedf8568542fc06e59d244ec3e5a3fe9",
+          "title": "Wait I can't even use Claude models as a part of my usage now??",
+          "canonical_url": "https://reddit.com/comments/1xn64ph",
+          "score": 5.5892,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.681,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7714,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.2286,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 5.5892
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.47×1.75=0.8225",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "0b49cbf5d73f9ebce1f9beca450d26a4d7adb0e6",
+          "title": "Z.ai chief scientist Jie Tang just revealed the training pipeline behind the upcoming GLM-5.5 (32B, 122B, and 256B)",
+          "canonical_url": "https://reddit.com/comments/1xossr5",
+          "score": 5.5213,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7907,
+            "uniqueness": 0.7907,
+            "uniqueness_sim_published": 0.0667,
+            "uniqueness_sim_state": 0.2093,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.46,
+            "taste_raw": 0.46,
+            "taste_reason": "jev score 0.46",
+            "total": 5.5213
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "2a2294d1045f7bd078a62cfa3418246f15aaf277",
+          "title": "Thanks to two lines in the Claude setting , I was able to work 3 x 5H window without running out ,.",
+          "canonical_url": "https://reddit.com/comments/1xo6dfy",
+          "score": 5.4956,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9151,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7576,
+            "uniqueness": 0.7576,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2424,
+            "topic_match": 0.7,
+            "taste_score": 0.33,
+            "taste_raw": 0.33,
+            "taste_reason": "jev score 0.33",
+            "total": 5.4956
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9151×1=0.9151",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "073ef775d8b6b245d5f7321f8d3dff34a1ce9c7c",
+          "title": "I CAN'T USE DEEPSEEK V4.1",
+          "canonical_url": "https://reddit.com/comments/1xoudnp",
+          "score": 5.4542,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9231,
+            "uniqueness": 0.9231,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0769,
+            "topic_match": 0.7,
+            "taste_score": 0.22,
+            "taste_raw": 0.22,
+            "taste_reason": "jev score 0.22",
+            "total": 5.4542
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "f5bc2fbf816d72f92e2b63d8db9cf5c4e5bdfe0f",
+          "title": "DeepSeek too slow with Go 18.1 tok/s",
+          "canonical_url": "https://reddit.com/comments/1xos6ks",
+          "score": 5.41,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8125,
+            "uniqueness": 0.8125,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1875,
+            "topic_match": 0.7,
+            "taste_score": 0.22,
+            "taste_raw": 0.22,
+            "taste_reason": "jev score 0.22",
+            "total": 5.41
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "3276fdb3fdcb7c6c123129f1167cefc13277a42c",
+          "title": "Qwen3.8-27B has become unuseable recently",
+          "canonical_url": "https://reddit.com/comments/1xoeeyf",
+          "score": 5.3346,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9793,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9231,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.0769,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.35,
+            "taste_raw": 0.35,
+            "taste_reason": "jev score 0.35",
+            "total": 5.3346
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9793×1=0.9793",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "7db9e5b2f3c63549185619b320262efe972cc017",
+          "title": "Over two weeks without a human response to a billing issue. What are customers supposed to do?",
+          "canonical_url": "https://reddit.com/comments/1xo66sk",
+          "score": 5.323,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9138,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8667,
+            "uniqueness": 0.8667,
+            "uniqueness_sim_published": 0.0667,
+            "uniqueness_sim_state": 0.1333,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "jev score 0.15",
+            "total": 5.323
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9138×1=0.9138",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "19d14cae5add25aa7ea72f6ed7eb262e65dde753",
+          "title": "We’re the product team at Reflection, the lab behind Beam — Ask Us Anything!",
+          "canonical_url": "https://reddit.com/comments/1xmwryg",
+          "score": 5.3028,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6332,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7241,
+            "uniqueness": 0.7241,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.2759,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 5.3028
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.56×1.75=0.98",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "e5115a8ecb5eabb98c8965684a9e69de75868faf",
+          "title": "Like GPT-6 Astra, Qwen 3.8 27B can interpret model weights",
+          "reason": "title_dup_published",
+          "matched_title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+          "jaccard": 0.5
+        },
+        {
+          "id": "76182c6fac149da8bcb0a2f9276e605f9b21a134",
+          "title": "Kimi-K3.1-Pro is now open-weights",
+          "reason": "title_dup_published",
+          "matched_title": "Notes on Kimi K3.1 - this one is a big deal, the first time an open weights…",
+          "jaccard": 0.5
+        }
+      ]
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "5e468467bd2ef4e7fe6754bc8bca1acbe9c6f292",
+          "title": "[AINews] It's Swapping Season",
+          "canonical_url": "https://latent.space/p/ainews-it-s-swapping-season",
+          "score": 6.8568,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9534,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6923,
+            "uniqueness": 0.6923,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.3077,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.57,
+            "taste_raw": 0.57,
+            "taste_reason": "jev score 0.57",
+            "story_heat": 0.8386,
+            "story_sources": 4,
+            "total": 6.8568,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.57×1.75=0.9975; penalties: domain_saturation -0.5×1=-0.5"
+        },
+        {
+          "rank": 2,
+          "id": "93ee83f44d2970b9521fa4253db9289b9f0db48f",
+          "title": "How big is the open model economy today?",
+          "canonical_url": "https://interconnects.ai/p/how-well-can-we-measure-open-model",
+          "score": 6.6493,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8383,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7838,
+            "uniqueness": 0.7838,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2162,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.57,
+            "taste_raw": 0.57,
+            "taste_reason": "jev score 0.57",
+            "total": 6.6493
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.57×1.75=0.9975"
+        },
+        {
+          "rank": 3,
+          "id": "3b58ffb304e7b124cccfb142a59a8052fc0d1e06",
+          "title": "Claude Code sends your email address to websites",
+          "canonical_url": "https://github.com/anthropics/claude-code/issues/107757",
+          "score": 6.51,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8462,
+            "uniqueness": 0.7,
+            "uniqueness_sim_published": 0.3,
+            "uniqueness_sim_state": 0.1538,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.76,
+            "taste_raw": 0.76,
+            "taste_reason": "jev score 0.76",
+            "attention": 1.0,
+            "total": 6.51,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.76×1.75=1.33; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 4,
+          "id": "7fb652c9ef37fd7ea7b1e051f25c14a248bf8c19",
+          "title": "Scaling Slack and GitHub with Maude Lemaire",
+          "canonical_url": "https://newsletter.pragmaticengineer.com/p/scaling-slack-and-github-with-maude",
+          "score": 6.3428,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8611,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1389,
+            "topic_match": 0.8,
+            "taste_score": 0.4,
+            "taste_raw": 0.4,
+            "taste_reason": "jev score 0.40",
+            "total": 6.3428
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "4c33fbdd0dc4b6a41e57ed66798c2f1715678903",
+          "title": "What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?",
+          "canonical_url": "https://huggingface.co/papers/2611.06483",
+          "score": 4.6553,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9111,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.0889,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.75,
+            "taste_raw": 0.75,
+            "taste_reason": "jev score 0.75",
+            "total": 4.6553,
+            "domain_saturation_penalty": -1.0,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.75×1.75=1.3125; penalties: cooldown -1×1=-1, domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "c997aee47d8b367fd1f21f3a6b6bb86a8fccf371",
+          "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "9dbadbfd450247508d4e6fb72e2f5b5c6249e667",
+          "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "ab4d5776d474567661775b755ee7835b7037d853",
+          "title": "Halley: A Predictive Control Plane for Optical AI Data Center Networks",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "807d8e9928dea350486f02d166892309594a2172",
+          "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "1a5655f74f02808d6b26d3b9587d65a7bc60cc75",
+          "title": "Order-Only On-Policy Distillation",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [],
+      "rejected": [],
+      "dropped": []
+    }
+  }
+}
