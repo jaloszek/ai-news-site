@@ -35,7 +35,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-11-04.html"><div class="cal-num">4</div><ul class="cal-highlights"><li>🛠 CC per-developer AWS costs</li><li>✨ Anthropic Message Threads speedup</li><li>💬 Ai2 StateBench long-context tracking</li><li>🛠 OpenClaw backup secret redaction</li><li>✨ Postman auto-installs AI plugins</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-05.html"><div class="cal-num">5</div><ul class="cal-highlights"><li>🛠 Gemini CLI container IDE bridge</li><li>✨ OpenAI patches 948 root exploits</li><li>💬 Mollick flags visual symbol steering</li><li>🛠 Qwen Code model config per session</li><li>✨ Together Compiler retunes open models</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-06.html"><div class="cal-num">6</div><ul class="cal-highlights"><li>🛠 JetBrains Air Context RAG</li><li>✨ Agents fail GDPx job tests</li><li>💬 Fireworks 40T tokens daily</li><li>🛠 Cursor cloud agents host apps</li><li>✨ Gemini Omni 15-second clips</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">7</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-11-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🛠 Amp adds GitLab agents</li><li>✨ Baidu ERNIE 280B open model</li><li>💬 TurnWise per-turn RL credit</li><li>🛠 Copilot CLI /code handoff</li><li>✨ Stanford finds LLM claims expire</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">8</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">9</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">10</div></div>
