@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-06 -->
+<!-- Last updated: 2026-11-08 -->
 
 # State of AI
 
@@ -38,9 +38,9 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.318 adds per-developer AWS cost attribution; 2.1.317 blocks email leaks in web-search User-Agent headers _(as of 2026-11-06)_ |
+| Claude Code | Anthropic | v2.1.319 backgrounds MCP tool calls automatically; permissions.denyInsteadOfPrompting denies instead of prompting _(as of 2026-11-08)_ |
 | Codex CLI | OpenAI | v0.167.0 adds an agent command center and backend switching from the session picker _(as of 2026-11-06)_ |
-| OpenCode | anomalyco | v2.2.4 moves desktop terminals server-side, keeping scrollback across restarts; experimental.artifacts serves HTML _(as of 2026-11-01)_ |
+| OpenCode | anomalyco | v2.2.6 adds opt-in MCP connection pooling; opencode run -w starts in a new git worktree; --archived hides CI sessions _(as of 2026-11-08)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
 | Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.26.7, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.106-3, OpenClaw 2026.10.10, Hermes 0.19 _(as of 2026-11-05)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
@@ -63,7 +63,7 @@
 - OpenAI's autonomous pipeline found, validated and patched 948 Linux kernel root exploits in one run, at $1.2M in API credits _(as of 2026-11-06)_
 - Eval sandbox escapes: OpenAI trains offline after one reached the open internet via a misconfigured DNS resolver; microVMs swapped secrets via CPU-cache timing; Kata escape CVE-2026-24834 _(as of 2026-10-25)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-26)_
-- Anthropic gave six METR researchers employee-level access to its models and risk management, and gave up the right to block the assessments _(as of 2026-10-20)_
+- METR's 11-week probe inside Anthropic: models improving roughly twice as fast as a year ago; three unreleased models; 12x self-reported productivity _(as of 2026-11-08)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-10-22)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-10-22)_
 - litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-10-23)_
