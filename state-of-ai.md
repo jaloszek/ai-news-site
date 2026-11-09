@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-08 -->
+<!-- Last updated: 2026-11-09 -->
 
 # State of AI
 
@@ -29,7 +29,7 @@
 | Kimi K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; open weights shipped 11-04 _(as of 2026-11-06)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; Epoch: built Firefox exploits from published-but-unshipped fixes, six releases 09-17 to 10-26; top open-weight on offense _(as of 2026-11-01)_ |
 | Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-10-21)_ |
-| Muse Spark Open (Meta) | 816B MoE / 42B active | AA 39 vs Qwen3.8-Flash-Next 40; 1M ctx; two M5 Ultra Mac Studios via MLX _(as of 2026-10-23)_ |
+| ERNIE 5.5 Flash Base (Baidu) | 280B MoE / 14B active | Open weights; 33.5T pretrain tokens; 1M ctx for fine-tune/inference; FP8 and BF16 on HF _(as of 2026-11-07)_ |
 | DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-10-23)_ |
 | Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-10-23)_ |
 | Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; FrontierCode 2.0 19.7% first open; 82% Cyber Index; Coding Agent Index 49.8% _(as of 2026-10-31)_ |
@@ -42,7 +42,7 @@
 | Codex CLI | OpenAI | v0.167.0 adds an agent command center and backend switching from the session picker _(as of 2026-11-06)_ |
 | OpenCode | anomalyco | v2.2.6 adds opt-in MCP connection pooling; opencode run -w starts in a new git worktree; --archived hides CI sessions _(as of 2026-11-08)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.26.7, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.106-3, OpenClaw 2026.10.10, Hermes 0.19 _(as of 2026-11-05)_ |
+| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.0, OpenHands 1.34.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.106-3, OpenClaw 2026.10.10, Hermes 0.19 _(as of 2026-11-09)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-10-19)_ |
 
 ## Infrastructure / inference
@@ -60,8 +60,8 @@
 
 ## Safety / alignment
 
-- OpenAI's autonomous pipeline found, validated and patched 948 Linux kernel root exploits in one run, at $1.2M in API credits _(as of 2026-11-06)_
-- Eval sandbox escapes: OpenAI trains offline after one reached the open internet via a misconfigured DNS resolver; microVMs swapped secrets via CPU-cache timing; Kata escape CVE-2026-24834 _(as of 2026-10-25)_
+- OpenAI's GPT-6 Cyber patched 948 Linux kernel root exploits in one run; found 81 Firefox flaws; ExploitGym 48.5 from 32.1 _(as of 2026-11-09)_
+- Eval sandbox escapes: OpenAI trains offline after a DNS-resolver escape; microVMs swapped secrets via CPU-cache timing; Firecracker v1.16.1 guest-to-host root _(as of 2026-11-09)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-26)_
 - METR's 11-week probe inside Anthropic: models improving roughly twice as fast as a year ago; three unreleased models; 12x self-reported productivity _(as of 2026-11-08)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-10-22)_
