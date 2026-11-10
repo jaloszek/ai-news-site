@@ -38,7 +38,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-11-07.html"><div class="cal-num">7</div><ul class="cal-highlights"><li>🛠 Amp adds GitLab agents</li><li>✨ Baidu ERNIE 280B open model</li><li>💬 TurnWise per-turn RL credit</li><li>🛠 Copilot CLI /code handoff</li><li>✨ Stanford finds LLM claims expire</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-08.html"><div class="cal-num">8</div><ul class="cal-highlights"><li>🛠 CC backgrounds MCP calls</li><li>✨ Anthropic measures AI science speedup</li><li>💬 Claude settings leak 1379 secrets</li><li>🛠 OpenCode MCP connection pooling</li><li>✨ METR finds progress doubling</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-09.html"><div class="cal-num">9</div><ul class="cal-highlights"><li>🛠 Qwen Code concurrent child sessions</li><li>✨ Microsoft AI Frontiers group disbanded</li><li>💬 MaxxBench exposes 48-point score gap</li><li>🛠 Spaces</li><li>✨ Co-Design Bench exposes agent gap</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">10</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-11-10.html"><div class="cal-num">10</div><ul class="cal-highlights"><li>🛠 CC defaults to Fable 5.2</li><li>✨ Handshake hits $1B revenue</li><li>💬 METR report signals RSI 2027</li><li>🛠 Qwen Code adds LSP setting</li><li>✨ Meta Muse Ember undercuts rivals</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">11</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">12</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">13</div></div>
