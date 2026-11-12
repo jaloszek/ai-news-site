@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-11 -->
+<!-- Last updated: 2026-11-12 -->
 
 # State of AI
 
@@ -28,7 +28,7 @@
 |---|---|---|
 | Kimi K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; open weights shipped 11-04 _(as of 2026-11-06)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; Epoch: built Firefox exploits from published-but-unshipped fixes, six releases 09-17 to 10-26; top open-weight on offense _(as of 2026-11-01)_ |
-| Qwen3.8-27B | 27B dense | The r/LocalLLaMA local-coding default; ~50 tok/s at 100k ctx on 16GB VRAM; 262K ctx; Unsloth IQ3_S/Dynamic v3 _(as of 2026-10-21)_ |
+| Qwen3.8-27B | 27B dense | Weight edit cuts thinking 27-54%, LiveCodeBench v6 +13.0; Arete cuts propaganda 22% to 1%; DSpine 125 tok/s on RTX 3090 _(as of 2026-11-12)_ |
 | ERNIE 5.5 Flash Base (Baidu) | 280B MoE / 14B active | Open weights; 33.5T pretrain tokens; 1M ctx for fine-tune/inference; FP8 and BF16 on HF _(as of 2026-11-07)_ |
 | DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-10-23)_ |
 | Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-10-23)_ |
@@ -39,16 +39,16 @@
 | Tool | Vendor | Status |
 |---|---|---|
 | Claude Code | Anthropic | v2.1.322 extends Vertex AI fast mode to global/us/eu; v2.1.321 made Fable 5.2 default with 1M ctx, $0.20 cache reads _(as of 2026-11-11)_ |
-| Codex CLI | OpenAI | v0.167.0 adds an agent command center and backend switching from the session picker _(as of 2026-11-06)_ |
+| Codex CLI | OpenAI | v0.167.2 sends tool updates incrementally on Vertex AI by default _(as of 2026-11-12)_ |
 | OpenCode | anomalyco | v2.2.6 adds MCP pooling; Browse drives real tabs/logins via Chromium plus MCP; run -w starts in a new worktree _(as of 2026-11-11)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.1, OpenHands 1.38.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.109, OpenClaw 2026.10.10 _(as of 2026-11-11)_ |
+| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.1, OpenHands 1.38.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.109-1, OpenClaw 2026.10.10; JetBrains Air 2026.3 _(as of 2026-11-12)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
 
 - Nvidia's $12.93B Hugging Face buy faces a DOJ probe over open-model distribution _(as of 2026-10-31)_
-- Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450, Nscale ~$45B, Volta $10B, Riot $9.1B _(as of 2026-10-22)_
+- Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450; Mythos moved Claude to AMD in 3 days _(as of 2026-11-12)_
 
 ## Agent patterns / frameworks
 
