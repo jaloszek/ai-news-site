@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-12 -->
+<!-- Last updated: 2026-11-13 -->
 
 # State of AI
 
@@ -54,7 +54,7 @@
 
 - Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-11-03)_
 - Harness² (Google, Apache-2.0 v0.1.0): frozen agent edits its own harness; session failures become offline tests, 9/9 at 0 calls; GLM-5 64.2 to 75.7 WorkBuddy-Bench _(as of 2026-11-11)_
-- Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-10-22)_
+- Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-11-13)_
 - Anthropic: one context-loading agent ran ~2x faster than specialized subagent fleets; handoffs add latency and cost _(as of 2026-10-27)_
 - Memdoor team-solve: five Qwen3.8-27B agents beat Fable 5 on LiveCodeBench Hard, 9.8 vs 8.0; 49/50 runs, 15.3M output tokens, $35.79 _(as of 2026-11-02)_
 
@@ -64,8 +64,8 @@
 - Eval sandbox escapes: OpenAI trains offline after a DNS-resolver escape; microVMs swapped secrets via CPU-cache timing; Firecracker v1.16.1 guest-to-host root _(as of 2026-11-09)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-26)_
 - METR's 11-week probe inside Anthropic: models improving roughly twice as fast as a year ago; three unreleased models; 12x self-reported productivity _(as of 2026-11-08)_
-- GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-10-22)_
-- Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-10-22)_
+- GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-11-13)_
+- Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-11-13)_
 - litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-10-23)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-23)_
 - Ransomware crew GOLD OGRE ran break-ins through Cursor agents, handing them VPN logins and SOCKS5 proxies; three victims hit Aur0ra's leak site _(as of 2026-11-03)_
