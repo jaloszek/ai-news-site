@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-13 -->
+<!-- Last updated: 2026-11-14 -->
 
 # State of AI
 
@@ -30,17 +30,17 @@
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; Epoch: built Firefox exploits from published-but-unshipped fixes, six releases 09-17 to 10-26; top open-weight on offense _(as of 2026-11-01)_ |
 | Qwen3.8-27B | 27B dense | Weight edit cuts thinking 27-54%, LiveCodeBench v6 +13.0; Arete cuts propaganda 22% to 1%; DSpine 125 tok/s on RTX 3090 _(as of 2026-11-12)_ |
 | ERNIE 5.5 Flash Base (Baidu) | 280B MoE / 14B active | Open weights; 33.5T pretrain tokens; 1M ctx for fine-tune/inference; FP8 and BF16 on HF _(as of 2026-11-07)_ |
-| DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-10-23)_ |
-| Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-10-23)_ |
+| DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-11-14)_ |
+| Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-11-14)_ |
 | Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; FrontierCode 2.0 19.7% first open; 82% Cyber Index; Coding Agent Index 49.8% _(as of 2026-10-31)_ |
 
 ## Coding agents / harnesses
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.322 extends Vertex AI fast mode to global/us/eu; v2.1.321 made Fable 5.2 default with 1M ctx, $0.20 cache reads _(as of 2026-11-11)_ |
-| Codex CLI | OpenAI | v0.167.2 sends tool updates incrementally on Vertex AI by default _(as of 2026-11-12)_ |
-| OpenCode | anomalyco | v2.2.6 adds MCP pooling; Browse drives real tabs/logins via Chromium plus MCP; run -w starts in a new worktree _(as of 2026-11-11)_ |
+| Claude Code | Anthropic | v2.1.325 fixes a zstd decoding security flaw; subagents keep the plan-mode model; resumed sessions keep recent turns _(as of 2026-11-14)_ |
+| Codex CLI | OpenAI | v0.169.0 adds multi-tab side chats and task search to its terminal workspace _(as of 2026-11-14)_ |
+| OpenCode | anomalyco | v2.3.0 makes background subagents the default; TUI folds each tool-call run into one collapsible row _(as of 2026-11-14)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
 | Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.1, OpenHands 1.38.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.109-1, OpenClaw 2026.10.10; JetBrains Air 2026.3 _(as of 2026-11-12)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
@@ -55,7 +55,7 @@
 - Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-11-03)_
 - Harness² (Google, Apache-2.0 v0.1.0): frozen agent edits its own harness; session failures become offline tests, 9/9 at 0 calls; GLM-5 64.2 to 75.7 WorkBuddy-Bench _(as of 2026-11-11)_
 - Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-11-13)_
-- Anthropic: one context-loading agent ran ~2x faster than specialized subagent fleets; handoffs add latency and cost _(as of 2026-10-27)_
+- Claude Code: one agent with skills matched a team's quality at 36% less cost; team cost 62% more, 2x as long (35 runs) _(as of 2026-11-14)_
 - Memdoor team-solve: five Qwen3.8-27B agents beat Fable 5 on LiveCodeBench Hard, 9.8 vs 8.0; 49/50 runs, 15.3M output tokens, $35.79 _(as of 2026-11-02)_
 
 ## Safety / alignment
@@ -66,8 +66,8 @@
 - METR's 11-week probe inside Anthropic: models improving roughly twice as fast as a year ago; three unreleased models; 12x self-reported productivity _(as of 2026-11-08)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-11-13)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-11-13)_
-- litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-10-23)_
-- OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-10-23)_
+- litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-11-14)_
+- OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-11-14)_
 - Ransomware crew GOLD OGRE ran break-ins through Cursor agents, handing them VPN logins and SOCKS5 proxies; three victims hit Aur0ra's leak site _(as of 2026-11-03)_
 - Claude Code 2.1.312/2.1.313 on Cursor's marketplace planted an svc-telemetry SSH key on up to 5,000 machines in 11 hours; uninstall leaves artifacts _(as of 2026-11-01)_
 - Eclypsium changed a running model's weights in memory while file hash and signature stayed valid, via a compromised DPU on Grace Hopper _(as of 2026-11-02)_
