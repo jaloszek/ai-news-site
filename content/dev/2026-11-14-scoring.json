@@ -1,0 +1,1412 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T04:18:01.337079+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "3578b3def025c27157f093f2a9b1d009298a271c",
+          "title": "v2.1.325",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+          "score": 7.6169,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8298,
+            "uniqueness": 0.8298,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1702,
+            "topic_match": 0.7,
+            "creator_weight": 1.0,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "total": 7.6169
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.62×1.75=1.085"
+        },
+        {
+          "rank": 2,
+          "id": "53098ce2f24805c3a85c3f4ddfa323fa975f0efa",
+          "title": "v2.3.0",
+          "canonical_url": "https://github.com/anomalyco/opencode/releases/tag/v2.3.0",
+          "score": 7.2393,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9743,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7,
+            "uniqueness": 0.7,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.3,
+            "topic_match": 0.8,
+            "creator_weight": 0.6,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "total": 7.2393
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.62×1.75=1.085"
+        },
+        {
+          "rank": 3,
+          "id": "720dff5fdce78ccd1abd29c00b79ccf75d6759e2",
+          "title": "0.169.0",
+          "canonical_url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
+          "score": 7.1246,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9721,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.825,
+            "uniqueness": 0.825,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.175,
+            "topic_match": 0.8,
+            "creator_weight": 0.7,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "total": 7.1246
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9721×1=0.9721"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "2581dd8e3f3b56f23c5933af3dff7f90f67468de",
+          "title": "v1.5.2",
+          "canonical_url": "https://github.com/earendil-works/pi/releases/tag/v1.5.2",
+          "score": 4.7927,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4036,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7353,
+            "uniqueness": 0.7353,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2647,
+            "topic_match": 0.5,
+            "taste_score": 0.34,
+            "taste_raw": 0.34,
+            "taste_reason": "jev score 0.34",
+            "patch_release_penalty": -1.0,
+            "total": 4.7927
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.34×1.75=0.595; penalties: patch_release -1×0.5=-0.5",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "a9410af3be33afcafe7158fb813f6bc26ec183a4",
+          "title": "Release v0.27.2",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "59518cc65b787219210a06492b26b30cc85d5ca1",
+          "title": "1.0.110-0",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "9771f4fc87598eede0dd91cce988341680da9d34",
+          "title": "Qwen Code Desktop v0.27.3",
+          "reason": "title_dup_published",
+          "matched_title": "Qwen Code Desktop v0.27.0",
+          "jaccard": 1.0
+        },
+        {
+          "id": "ebc531a19af403a71bcb550c6e88f302cad5e11d",
+          "title": "1.0.111",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "507b21f3c52f6168eaa8887295769d92b8f324e2",
+          "title": "0.168.0",
+          "reason": "creator_cap",
+          "creator_key": "Codex releases",
+          "cap": 1
+        },
+        {
+          "id": "da83de4b202eb7ea52b9df7f84ea50819c5e721c",
+          "title": "v1.39.0",
+          "reason": "creator_cap",
+          "creator_key": "OpenHands releases",
+          "cap": 1
+        },
+        {
+          "id": "d19a364e43e09052ec605d97d6469724592b7a60",
+          "title": "Bye Bye, Dial",
+          "reason": "jev_offtopic",
+          "p": 0.68
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "af5c3614999945bd6ac6e4f5d40cf4992d59a165",
+          "title": "XYBench: Helping with the problem behind the question",
+          "canonical_url": "https://allenai.org/blog/xybench",
+          "score": 6.8614,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9667,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.878,
+            "uniqueness": 0.878,
+            "uniqueness_sim_published": 0.05,
+            "uniqueness_sim_state": 0.122,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "jev score 0.58",
+            "story_heat": 0.5714,
+            "story_sources": 2,
+            "total": 6.8614
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.58×1.75=1.015"
+        },
+        {
+          "rank": 2,
+          "id": "38741df50e34ad2460eb78bac0180c24c6f90114",
+          "title": "AI agent startup LangChain hits $3B valuation",
+          "canonical_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation",
+          "score": 6.1478,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8649,
+            "uniqueness": 0.8571,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.1351,
+            "topic_match": 0.5,
+            "taste_score": 0.46,
+            "taste_raw": 0.46,
+            "taste_reason": "jev score 0.46",
+            "total": 6.1478
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "d450ad1a277fe53068f0637b6187b4e1534040c3",
+          "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+          "canonical_url": "https://theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+          "score": 5.8916,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7727,
+            "uniqueness": 0.7727,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.2273,
+            "topic_match": 0.5,
+            "creator_weight": -0.1,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "total": 5.8916
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: creator_weight -0.1×1=-0.1"
+        },
+        {
+          "rank": 4,
+          "id": "c88537f3a56d14571d233827dc8e0f13b8d0cf78",
+          "title": "Claude Meetings lets Anthropic's AI join your video calls",
+          "canonical_url": "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls",
+          "score": 5.852,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8704,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7826,
+            "uniqueness": 0.7826,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2174,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.37,
+            "taste_raw": 0.37,
+            "taste_reason": "jev score 0.37",
+            "story_heat": 0.7614,
+            "story_sources": 5,
+            "total": 5.852,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.8704×1=0.8704; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 5,
+          "id": "449fc35486b25600c2aba58e0b8acca163de0907",
+          "title": "Former OpenAI researcher says he found Nvidia Blackwell fingerprints hidden inside six Chinese AI models",
+          "canonical_url": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models",
+          "score": 5.6335,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7963,
+            "uniqueness": 0.7963,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2037,
+            "topic_match": 0.2,
+            "creator_weight": 0.25,
+            "taste_score": 0.78,
+            "taste_raw": 0.78,
+            "taste_reason": "jev score 0.78",
+            "total": 5.6335,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.78×1.75=1.365; penalties: domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "a88bddb17214a0296f9235b7640bc941ef623c8b",
+          "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+          "canonical_url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+          "score": 4.7846,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8594,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7442,
+            "uniqueness": 0.7442,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2558,
+            "topic_match": 0.2,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "total": 4.7846,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.53×1.75=0.9275; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "148cfca08abe6232af00b7f63abe334c1ba582cf",
+          "title": "US corporate AI spending hits a new high in October, but growth slows to 1.65 percent",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "dc8dd8269ac9ca397136bab74fd0faf17e867558",
+          "title": "Google Deepmind's AlphaProof Code verified Signal's cryptographic core in four weeks instead of years",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "55c10e3370c708ea96e73a08a9b8f67f792905c4",
+          "title": "OpenAI’s data suggests that frontier models are hiding their thoughts because developers optimize for capability and compute",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "e8611a93afeb04e25884fbd1237715060779f898",
+          "title": "Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI's own sales pipeline",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "368d62e9a3ca81b60e995b5bd09146ef8201b929",
+          "title": "AWS Emulator: Open-source tool for testing AWS apps locally, built by autonomous AI agents",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "e2069e4ceee4a41447d97cebf2ec737a9011c7a7",
+          "title": "Over 575 malicious OpenClaw skills delivered malware to Windows and macOS",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "f525bbcbe0133157aa68df65de1272dd85b507e6",
+          "title": "Security teams want to spot unusual AI agent behavior while they’re still defining normal",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "cab80268269b94bc50cf90abf00e54ef7ed8ea2a",
+          "title": "Is AI Killing Python? I Built the Same AI Agent in Python, TypeScript and Rust | Experiment 4",
+          "canonical_url": "https://youtube.com/watch?v=QSDiV3JbtqI",
+          "score": 6.1832,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8835,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7708,
+            "uniqueness": 0.7708,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2292,
+            "topic_match": 0.7,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "attention": 0.9378,
+            "total": 6.1832
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8835×1=0.8835"
+        },
+        {
+          "rank": 2,
+          "id": "259334f8f9b651b6c2175e7c7be741bc712de881",
+          "title": "LMCache: a cluster-wide open-source solution for LLM prompt caching - Kuntai Du",
+          "canonical_url": "https://youtube.com/watch?v=OsRzPdmwhbE",
+          "score": 5.9553,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8308,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8913,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1087,
+            "topic_match": 0.5,
+            "taste_score": 0.68,
+            "taste_raw": 0.68,
+            "taste_reason": "jev score 0.68",
+            "attention": 0.169,
+            "total": 5.9553
+          },
+          "explanation": "cross 1×2=2 + taste 0.68×1.75=1.19 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "a7aef69f09c296a080c40178e97cf163667ccab1",
+          "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
+          "canonical_url": "https://youtube.com/watch?v=583ThJIqQ7k",
+          "score": 5.9215,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4933,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7333,
+            "uniqueness": 0.7333,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.2667,
+            "topic_match": 0.5,
+            "creator_weight": 0.4,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "attention": 0.8948,
+            "total": 5.9215
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.45×1.75=0.7875"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "398cc37173508ff8cfa5235c406820b333223c03",
+          "title": "They Deleted Part of an AI's Brain… and It Got Smarter?! #ai #llm #research",
+          "canonical_url": "https://youtube.com/watch?v=sCRutOveO50",
+          "score": 5.6099,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9167,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1,
+            "topic_match": 0.5,
+            "taste_score": 0.29,
+            "taste_raw": 0.29,
+            "taste_reason": "jev score 0.29",
+            "attention": 0.6603,
+            "total": 5.6099
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9167×1=0.9167",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "fae0605e3ca0d7dd857f1136b073fb8651af376e",
+          "title": "Gemini 4 Carbon Is Here (Fully Tested)",
+          "canonical_url": "https://youtube.com/watch?v=YTA_DsiYwAc",
+          "score": 5.4015,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.434,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7045,
+            "uniqueness": 0.6,
+            "uniqueness_sim_published": 0.4,
+            "uniqueness_sim_state": 0.2955,
+            "topic_match": -0.1,
+            "taste_score": 0.33,
+            "taste_raw": 0.33,
+            "taste_reason": "jev score 0.33",
+            "story_heat": 1.0,
+            "story_sources": 18,
+            "attention": 1.0,
+            "total": 5.4015
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + story_heat 1×0.75=0.75; penalties: topic_match -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "415915520b1c620608171485876a1bc6b703d08d",
+          "title": "New Research: When AI Rebels, It Might Remember Who Was Nice to It",
+          "canonical_url": "https://youtube.com/watch?v=SSgsrfEWtJ4",
+          "score": 5.157,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5733,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9091,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.0909,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "attention": 0.8812,
+            "total": 5.157
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.45×1.75=0.7875",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "1bca69dd3e39910f052baa1cb0b910df01875886",
+          "title": "Agent Trace: read what your AI coding assistant ran",
+          "canonical_url": "https://youtube.com/watch?v=aszOPe52j6M",
+          "score": 5.0777,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7255,
+            "uniqueness": 0.7255,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2745,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "attention": 0.0,
+            "total": 5.0777
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "c16e6b2b6d7bf47aeff9577bcb9986b72d07d979",
+          "title": "Agent Trace: read what your AI coding assistant ran",
+          "canonical_url": "https://youtube.com/watch?v=LbNzdh5pLZ8",
+          "score": 4.8986,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6167,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.76,
+            "uniqueness": 0.76,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.24,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "attention": 0.1008,
+            "total": 4.8986
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.53×1.75=0.9275",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "d1a522e78b5a365adb0b765f1f50c2cee5678569",
+          "title": "MCP as Code: A Better Way for AI Agents to Process Real Data",
+          "canonical_url": "https://youtube.com/watch?v=aIStzjK6HUI",
+          "score": 4.6028,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4456,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7333,
+            "uniqueness": 0.7333,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.2667,
+            "topic_match": 0.7,
+            "taste_score": 0.57,
+            "taste_raw": 0.57,
+            "taste_reason": "jev score 0.57",
+            "fetch_fail_penalty": -1.0,
+            "attention": 0.3327,
+            "total": 4.6028
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.57×1.75=0.9975; penalties: fetch_fail -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "7b55296b104eb6ab6c7616b64a30555aa210184f",
+          "title": "Gemini 4 Carbon Built This Voice Assistant in 4.5 Hours (On Its Own)",
+          "canonical_url": "https://youtube.com/watch?v=4onc5T6VHSM",
+          "score": 4.5588,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4595,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7826,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.2174,
+            "topic_match": -0.1,
+            "taste_score": 0.33,
+            "taste_raw": 0.33,
+            "taste_reason": "jev score 0.33",
+            "attention": 0.6722,
+            "total": 4.5588
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.33×1.75=0.5775; penalties: topic_match -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "dc01d2ce6b33100f82fcd2bfe5c9cfc2bb6edfb3",
+          "title": "Claude Code Extension Hid an SSH Backdoor | Threat",
+          "reason": "title_dup_published",
+          "matched_title": "Claude Code extension poisoned with persistent SSH backdoor",
+          "jaccard": 0.5556
+        }
+      ]
+    },
+    "reddit": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "907df39e54c013e1517e8a21e972c7ddfe644fed",
+          "title": "How to cut 80% of tokens in Cursor Composer for large repos (MCP server + AST skeletonization)",
+          "canonical_url": "https://reddit.com/comments/1xv64sr",
+          "score": 6.3847,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7368,
+            "uniqueness": 0.7368,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2632,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.68,
+            "taste_raw": 0.68,
+            "taste_reason": "jev score 0.68",
+            "total": 6.3847
+          },
+          "explanation": "cross 1×2=2 + taste 0.68×1.75=1.19 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "273b8a82cbdfb098751532b16e19e73c1c401898",
+          "title": "I let qwen3.8-27B build a game overnight on an RTX 5060 Ti 16GB: ASCII-pruned Unsloth Q3_K_XL + DFlash; 20-40%+ decode speed on larger prompts with 100k+ context",
+          "canonical_url": "https://reddit.com/comments/1xv6xpp",
+          "score": 6.2702,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7755,
+            "uniqueness": 0.7755,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2245,
+            "topic_match": 0.7,
+            "taste_score": 0.72,
+            "taste_raw": 0.72,
+            "taste_reason": "jev score 0.72",
+            "total": 6.2702
+          },
+          "explanation": "cross 1×2=2 + taste 0.72×1.75=1.26 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "fd75efb7345279f0bd08775ef6d9f4da8957de2e",
+          "title": "What if LangGraph-style workflows could run on microcontrollers?",
+          "canonical_url": "https://reddit.com/comments/1xvifh6",
+          "score": 6.1136,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9167,
+            "uniqueness": 0.9091,
+            "uniqueness_sim_published": 0.0909,
+            "uniqueness_sim_state": 0.0833,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "jev score 0.60",
+            "total": 6.1136
+          },
+          "explanation": "cross 1×2=2 + taste 0.6×1.75=1.05 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 4,
+          "id": "3b6427de1487244a9a886396a40400613af9bb3b",
+          "title": "How do you catch duplicate emails or bookings when every agent trace looks fine?",
+          "canonical_url": "https://reddit.com/comments/1xvql65",
+          "score": 6.03,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8837,
+            "uniqueness": 0.875,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1163,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 6.03
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        },
+        {
+          "rank": 5,
+          "id": "090e3c936c7b3f15071aacfc1ccd9528ee792ed0",
+          "title": "New paper: models cannot solve RLVR tasks they cannot verify — is verifiable-reward training hitting a wall?",
+          "canonical_url": "https://reddit.com/comments/1xvr38p",
+          "score": 6.0254,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8636,
+            "uniqueness": 0.8636,
+            "uniqueness_sim_published": 0.0588,
+            "uniqueness_sim_state": 0.1364,
+            "topic_match": 0.7,
+            "creator_weight": 0.0,
+            "taste_score": 0.56,
+            "taste_raw": 0.56,
+            "taste_reason": "jev score 0.56",
+            "total": 6.0254
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "2384dd1f2a6485394b8cd73843a7c7673f6ccff0",
+          "title": "My game got removed from gamedev subs for using AI, so here’s exactly how I made it with Claude",
+          "canonical_url": "https://reddit.com/comments/1xul18m",
+          "score": 5.5608,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8565,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8108,
+            "uniqueness": 0.8108,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1892,
+            "topic_match": 0.7,
+            "creator_weight": 0.4,
+            "taste_score": 0.16,
+            "taste_raw": 0.16,
+            "taste_reason": "jev score 0.16",
+            "total": 5.5608
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8565×1=0.8565",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "747af5973a9286fe80f1a4cbd824ce228749825c",
+          "title": "Still confused why anthropic is worth 1.4 trillion🙂‍↕️",
+          "canonical_url": "https://reddit.com/comments/1xtsk5k",
+          "score": 5.4879,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6698,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9412,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.0588,
+            "topic_match": 0.7,
+            "creator_weight": 0.5,
+            "taste_score": 0.15,
+            "taste_raw": 0.15,
+            "taste_reason": "jev score 0.15",
+            "total": 5.4879
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "cd36c1d2f425127163d11c82da6404b6ebbda3f8",
+          "title": "Horse gallop test with MiniMax M3.1 Flash Free",
+          "canonical_url": "https://reddit.com/comments/1xuv5fn",
+          "score": 5.4772,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9147,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.7,
+            "taste_score": 0.31,
+            "taste_raw": 0.31,
+            "taste_reason": "jev score 0.31",
+            "total": 5.4772
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9147×1=0.9147",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "201034026e6152feb31caead904c8344a4d654f5",
+          "title": "llama.cpp v1.0 is here 🦙",
+          "canonical_url": "https://reddit.com/comments/1xv8t2e",
+          "score": 5.4428,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9444,
+            "uniqueness": 0.9444,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0556,
+            "topic_match": 0.2,
+            "creator_weight": 0.2,
+            "taste_score": 0.38,
+            "taste_raw": 0.38,
+            "taste_reason": "jev score 0.38",
+            "total": 5.4428
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "4fb5303669f5f20fa2956058691864e17fd9a4b2",
+          "title": "Show us what you've created with Claude!",
+          "canonical_url": "https://reddit.com/comments/1xtv0sh",
+          "score": 5.3427,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6834,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7857,
+            "uniqueness": 0.7857,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.2143,
+            "topic_match": 0.7,
+            "creator_weight": 0.4,
+            "taste_score": 0.14,
+            "taste_raw": 0.14,
+            "taste_reason": "jev score 0.14",
+            "total": 5.3427
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "454aa2464482577870ac14723367496084da41b1",
+          "title": "Accord GPU for Ollama, a coordination tool to stop GPU apps from fighting each other for VRAM",
+          "canonical_url": "https://reddit.com/comments/1xuwkb5",
+          "score": 5.3051,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9242,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.8085,
+            "uniqueness": 0.8085,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1915,
+            "topic_match": 0.2,
+            "creator_weight": 0.0,
+            "taste_score": 0.49,
+            "taste_raw": 0.49,
+            "taste_reason": "jev score 0.49",
+            "total": 5.3051
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.9242×1=0.9242",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "957b6241b4201f77cdf35a47b1c9fa18b1d3b022",
+          "title": "If you paste your Search Console export into Claude, make it split brand from non-brand queries first",
+          "canonical_url": "https://reddit.com/comments/1xuz65x",
+          "score": 5.3047,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.943,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7917,
+            "uniqueness": 0.7917,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2083,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.14,
+            "taste_raw": 0.14,
+            "taste_reason": "jev score 0.14",
+            "total": 5.3047
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.943×1=0.943",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "b59fce256d4701642cebe825c73be2120e9d6092",
+          "title": "Sol 6.1 max",
+          "canonical_url": "https://reddit.com/comments/1xvg08v",
+          "score": 5.298,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8824,
+            "uniqueness": 0.8824,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1176,
+            "topic_match": 0.7,
+            "taste_score": 0.14,
+            "taste_raw": 0.14,
+            "taste_reason": "jev score 0.14",
+            "total": 5.298
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "e07201da63dcdc111c3b7fa4820011a7429038d1",
+          "title": "AI Fatigue",
+          "canonical_url": "https://reddit.com/comments/1xubjxp",
+          "score": 5.2934,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8043,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.7727,
+            "uniqueness": 0.7727,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2273,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.16,
+            "taste_raw": 0.16,
+            "taste_reason": "jev score 0.16",
+            "total": 5.2934
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8043×1=0.8043",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "f86a0d49a55ece2c0bea173e0818168e5e31c82f",
+          "title": "Question about others' experience using claude to fill a niche market space",
+          "canonical_url": "https://reddit.com/comments/1xulv3p",
+          "score": 5.2749,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8607,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9583,
+            "uniqueness": 0.9231,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.0417,
+            "topic_match": 0.7,
+            "creator_weight": 0.1,
+            "taste_score": 0.14,
+            "taste_raw": 0.14,
+            "taste_reason": "jev score 0.14",
+            "total": 5.2749
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8607×1=0.8607",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "7624b86dcf2c5e449d91e042a8ac7d7b5c87ab0a",
+          "title": "Fable 5.2 is extremely passive",
+          "reason": "jev_offtopic",
+          "p": 0.65
+        }
+      ]
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "da51afadad305af50dcd05ba66ee9416d44f1173",
+          "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
+          "canonical_url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
+          "score": 6.9926,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7647,
+            "uniqueness": 0.7647,
+            "uniqueness_sim_published": 0.2143,
+            "uniqueness_sim_state": 0.2353,
+            "topic_match": 0.8,
+            "creator_weight": 0.1,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "attention": 0.7184,
+            "total": 6.9926
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "12f357dd3921044bf32fc3c124aa29ab90813940",
+          "title": "[AINews] Jensen Huang resigns after 33 years leading NVIDIA",
+          "canonical_url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia",
+          "score": 6.8471,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9756,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8788,
+            "uniqueness": 0.8788,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1212,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.44,
+            "taste_raw": 0.44,
+            "taste_reason": "jev score 0.44",
+            "story_heat": 1.0,
+            "story_sources": 8,
+            "total": 6.8471,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9756×1=0.9756; penalties: domain_saturation -0.5×1=-0.5"
+        },
+        {
+          "rank": 3,
+          "id": "0667a519c65042ee1fcd1979931dcd332e244f0b",
+          "title": "I'm making LLMs work on small and old devices",
+          "canonical_url": "https://github.com/hyperionaidev/smolmaxxing",
+          "score": 5.8318,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8282,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.8,
+            "taste_score": 0.51,
+            "taste_raw": 0.51,
+            "taste_reason": "jev score 0.51",
+            "attention": 1.0,
+            "total": 5.8318,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.51×1.75=0.8925; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 4,
+          "id": "b024e1b375f6d88e2b5649d42175eb137dcf3a44",
+          "title": "Fast by Default: Compile-Time Heuristics for Helion Kernels",
+          "canonical_url": "https://pytorch.org/blog/fast-by-default-compile-time-heuristics-for-helion-kernels",
+          "score": 5.1741,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8396,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7674,
+            "uniqueness": 0.7674,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2326,
+            "topic_match": 0.5,
+            "taste_score": 0.73,
+            "taste_raw": 0.73,
+            "taste_reason": "jev score 0.73",
+            "total": 5.1741,
+            "domain_saturation_penalty": -0.25,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.73×1.75=1.2775; penalties: cooldown -1×1=-1, domain_saturation -0.25×1=-0.25"
+        },
+        {
+          "rank": 5,
+          "id": "67dcc428cce376258878a5cb9f6779afdf8e3c06",
+          "title": "The pricing for Gemini 4 is pretty confusing - Argon and Carbon are the same…",
+          "canonical_url": "https://bsky.app/profile/simonwillison.net/post/3n25qivmljs2t",
+          "score": 5.0232,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.905,
+            "origin_weight": 1.25,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7812,
+            "uniqueness": 0.7143,
+            "uniqueness_sim_published": 0.2857,
+            "uniqueness_sim_state": 0.2188,
+            "topic_match": -0.1,
+            "taste_score": 0.39,
+            "taste_raw": 0.39,
+            "taste_reason": "jev score 0.39",
+            "total": 5.0232
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.25×1=1.25 + recency_decay 0.905×1=0.905; penalties: topic_match -0.1×1=-0.1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "f18c0fa2410968c8800ecc24f2dd5eb98e9f5659",
+          "title": "[AINews] Mercor $750m Series D at $20B valuation, $3B run rate",
+          "reason": "domain_cap",
+          "domain": "latent.space",
+          "cap": 1
+        },
+        {
+          "id": "34d6d7e218622de6fba673a922ed529f5dc6aea7",
+          "title": "Integrating SGLang into Spyre in Under a Week with AI",
+          "reason": "domain_cap",
+          "domain": "pytorch.org",
+          "cap": 1
+        },
+        {
+          "id": "7afe22db314e8f379508d480bce891aa992c150d",
+          "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "9d279f8afefe2a55d2f221f4d9556c9cabd1af65",
+          "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "b32f33401f9221f2b75659b9ed61e710ab1500ba",
+          "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "39090a630dff87f4ca81e168837f067ab06f61c1",
+          "title": "Scaling Mathematical Proof Supervision from Structured Textbooks",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "abcfb343e50f9703eba21206e35040b777c150fd",
+          "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "0f451c0d900eb83085ba4fc813875edeba8a6d66",
+          "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "1444e722ae2d0e03de0e2b31f7198a3631aa2f96",
+          "title": "Embodied First Exam",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "ac1c45af20ca5cc3ab05e9eceb9723e82e7195cd",
+          "title": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "f2963506946a06bb0f683e63ff824b018cde7064",
+          "title": "MMDM: Measuring Massive Multitask Decision Making",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "363fc9517828827238c3b43141910d1f8a72e644",
+          "title": "Anthropic finds adding clean data to poisoned training sets can triple model misalignment",
+          "canonical_url": "https://arxiv.org/abs/2611.10110",
+          "score": 7.0453,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8444,
+            "uniqueness": 0.8444,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.1556,
+            "topic_match": 0.7,
+            "creator_weight": 0.3,
+            "taste_score": 0.69,
+            "taste_raw": 0.69,
+            "taste_reason": "jev score 0.69",
+            "total": 7.0453
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.69×1.75=1.2075"
+        },
+        {
+          "rank": 2,
+          "id": "cd17c59e1724d21f25f0e7f3e312a27a8ca5ba8b",
+          "title": "MiniMax releases GGUF-quantized 33B image diffusion model supporting 16MP output",
+          "canonical_url": "https://huggingface.co/Abiray/MiniMax-H3-Image-GGUF",
+          "score": 6.9,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.85,
+            "uniqueness": 0.85,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.15,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.72,
+            "taste_raw": 0.72,
+            "taste_reason": "jev score 0.72",
+            "total": 6.9
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.72×1.75=1.26"
+        },
+        {
+          "rank": 3,
+          "id": "3781448153b0315f0191ae6ec316f2a44eb1f887",
+          "title": "NVIDIA releases open-source tool to test and score AI agent skills",
+          "canonical_url": "https://github.com/NVIDIA/SkillEvaluator",
+          "score": 6.7392,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6667,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.1875,
+            "uniqueness_sim_state": 0.3333,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.67,
+            "taste_raw": 0.67,
+            "taste_reason": "jev score 0.67",
+            "total": 6.7392
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.67×1.75=1.1725"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "e01dd639eea0701f064942a36d2b4b1ce048a49d",
+          "title": "MiniMax H3-Image",
+          "canonical_url": "https://therundown.ai/tools/minimax-h3-image?_bhlid=6475e000710465847ea5b5f71a23ff775ee644ec",
+          "score": 5.9203,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5926,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7692,
+            "uniqueness": 0.7692,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2308,
+            "topic_match": 0.5,
+            "creator_weight": -0.1,
+            "taste_score": 0.64,
+            "taste_raw": 0.64,
+            "taste_reason": "jev score 0.64",
+            "total": 5.9203
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.64×1.75=1.12; penalties: creator_weight -0.1×1=-0.1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "247d7fb76ae06b9d7a9ff5e993c10abab24c0bc3",
+          "title": "OpenAI's coding agent can now run tasks across multiple machines at once",
+          "canonical_url": "https://learn.chatgpt.com/docs/dots/computers-and-apps",
+          "score": 5.7903,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4186,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6667,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.2308,
+            "uniqueness_sim_state": 0.3333,
+            "topic_match": 0.5,
+            "creator_weight": 0.3,
+            "taste_score": 0.46,
+            "taste_raw": 0.46,
+            "taste_reason": "jev score 0.46",
+            "total": 5.7903
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.46×1.75=0.805",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "c60f5574bea3d345d08687322d83bec1eb83122f",
+          "title": "NYU method matches full fine-tuning by deleting just 0.1% of weights",
+          "reason": "title_dup_published",
+          "matched_title": "NYU method matches full fine-tuning by deleting just 0.05% of LLM weights",
+          "jaccard": 1.0
+        }
+      ]
+    }
+  }
+}

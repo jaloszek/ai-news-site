@@ -42,7 +42,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-11-11.html"><div class="cal-num">11</div><ul class="cal-highlights"><li>🛠 CC Fast mode on Vertex</li><li>✨ vLLM moves Gemma to Transformers</li><li>💬 Muse Spark Open decode halved</li><li>🛠 Copilot CLI CIDR sandbox rules</li><li>✨ New York opens RAISE Act</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-12.html"><div class="cal-num">12</div><ul class="cal-highlights"><li>🛠 Copilot CLI adds Fable 5.2</li><li>✨ Mythos moves Claude to AMD</li><li>💬 Reframe aligns visual agent training</li><li>🛠 Codex incremental Vertex tool updates</li><li>✨ Gemini Decision 1 batch answers</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-13.html"><div class="cal-num">13</div><ul class="cal-highlights"><li>🛠 CC experimental Code Mode</li><li>✨ Huawei Horinger compute gap</li><li>💬 EUROPA 1T-MoE on JUPITER</li><li>🛠 Qwen Code workflow chips</li><li>✨ Gemini 4 Hydrogen beats Argon</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">14</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-11-14.html"><div class="cal-num">14</div><ul class="cal-highlights"><li>🛠 CC zstd security fix</li><li>✨ Ai2 XYBench tests misconception spotting</li><li>💬 CC Projects coordinator goes proactive</li><li>🛠 OpenCode background subagents default</li><li>✨ LangChain hits $3B valuation</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">15</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">16</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">17</div></div>
