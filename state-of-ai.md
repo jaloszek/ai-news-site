@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-14 -->
+<!-- Last updated: 2026-11-15 -->
 
 # State of AI
 
@@ -16,11 +16,11 @@
 | Anthropic | Claude Fable 5.2 | 2026-11-10 | AA 65; Remote Labor Index 41% vs Opus 5.5 21.25%, Astra 20.83%; $8/$40/M, output 30% faster _(as of 2026-11-11)_ |
 | Anthropic | Claude Opus 5.5 | 2026-09-23 | Matches Fable 5.1, ~40% cheaper than Opus 5 at $4/$20/M; AA 58, behind Fable 5.2's 65; Sonnet 5.5 shipped 09-29 at $2/$10/M, Terminal-Bench 4.0 70.6 _(as of 2026-11-10)_ |
 | Meta | Muse Ember | 2026-11-09 | $0.10/$0.50/M, cheapest Muse; text, image, audio; fourth Muse; Wonder plans, Ember handles volume _(as of 2026-11-11)_ |
-| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M; Epoch ranks it 1st at 169; AA puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-10-24)_ |
+| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M; Epoch ranks it 1st at 169; AA puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-11-15)_ |
 | OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-10-27)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
-| Google | Gemini 4 Carbon | 2026-10-29 | GA; AA 59; leads CursorBench 4.0, WANDR, AutomationBench at <half Fable 5.2's cost; $2/$10 intro _(as of 2026-11-11)_ |
-| Meta | Muse Wonder Full | 2026-10-13 | AA 56 from Spark 1.3's 48; Terminal-Bench 4.0 57% from 33; $4/$20/M; Muse Code subscribers only _(as of 2026-11-04)_ |
+| Google | Gemini 4 Carbon | 2026-10-29 | GA; AA 59; MathArena 85.4% vs Fable 5.2 82.8%; $2/$10 intro _(as of 2026-11-15)_ |
+| Google | Gemini 4 Hydrogen | 2026-11-13 | Replaces 3.8 Flash; AA 51 vs Argon's 50; $1.50/$7.50/M; Terminal-Bench 4.1 57% from 18.2% _(as of 2026-11-15)_ |
 
 ## Open weights / local
 
@@ -75,5 +75,5 @@
 ## Community / industry trends
 
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-11-05)_
-- Anthropic filed an S-1 for a Nasdaq IPO under ticker ANT; price unset _(as of 2026-10-27)_
+- Jensen Huang quit as Nvidia CEO after 33 years; CFO Colette Kress is interim; board accepted Nov 11 _(as of 2026-11-15)_
 - ChatGPT merges Chat and Work in December; Plus, Pro and Business share one ChatGPT-and-Codex token budget; Unlimited Instant exempt _(as of 2026-11-02)_
