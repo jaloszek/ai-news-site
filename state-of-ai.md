@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-15 -->
+<!-- Last updated: 2026-11-16 -->
 
 # State of AI
 
@@ -19,7 +19,7 @@
 | OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M; Epoch ranks it 1st at 169; AA puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-11-15)_ |
 | OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-10-27)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
-| Google | Gemini 4 Carbon | 2026-10-29 | GA; AA 59; MathArena 85.4% vs Fable 5.2 82.8%; $2/$10 intro _(as of 2026-11-15)_ |
+| Google | Gemini 4 Carbon | 2026-10-29 | GA; AA 59; MathArena 85.4% vs Fable 5.2 82.8%; $2/$10 intro, $4/$20 from 12-01 _(as of 2026-11-16)_ |
 | Google | Gemini 4 Hydrogen | 2026-11-13 | Replaces 3.8 Flash; AA 51 vs Argon's 50; $1.50/$7.50/M; Terminal-Bench 4.1 57% from 18.2% _(as of 2026-11-15)_ |
 
 ## Open weights / local
@@ -29,7 +29,7 @@
 | Kimi K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; open weights shipped 11-04 _(as of 2026-11-06)_ |
 | GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; Epoch: built Firefox exploits from published-but-unshipped fixes, six releases 09-17 to 10-26; top open-weight on offense _(as of 2026-11-01)_ |
 | Qwen3.8-27B | 27B dense | Weight edit cuts thinking 27-54%, LiveCodeBench v6 +13.0; Arete cuts propaganda 22% to 1%; DSpine 125 tok/s on RTX 3090 _(as of 2026-11-12)_ |
-| ERNIE 5.5 Flash Base (Baidu) | 280B MoE / 14B active | Open weights; 33.5T pretrain tokens; 1M ctx for fine-tune/inference; FP8 and BF16 on HF _(as of 2026-11-07)_ |
+| LongCat-2.5 (Meituan) | 1.6T MoE | MIT weights; no Nvidia GPU, 194 Huawei Ascend Atlas A2; Terminal-Bench 2.1 88.4 vs Opus 5's 89.1 _(as of 2026-11-16)_ |
 | DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-11-14)_ |
 | Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-11-14)_ |
 | Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; FrontierCode 2.0 19.7% first open; 82% Cyber Index; Coding Agent Index 49.8% _(as of 2026-10-31)_ |
@@ -42,7 +42,7 @@
 | Codex CLI | OpenAI | v0.169.0 adds multi-tab side chats and task search to its terminal workspace _(as of 2026-11-14)_ |
 | OpenCode | anomalyco | v2.3.0 makes background subagents the default; TUI folds each tool-call run into one collapsible row _(as of 2026-11-14)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.1, OpenHands 1.38.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.109-1, OpenClaw 2026.10.10; JetBrains Air 2026.3 _(as of 2026-11-12)_ |
+| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.4, OpenHands 1.40.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.111, OpenClaw 2026.10.10; JetBrains Air 2026.3 _(as of 2026-11-16)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
