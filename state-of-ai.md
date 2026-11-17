@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-16 -->
+<!-- Last updated: 2026-11-17 -->
 
 # State of AI
 
@@ -21,6 +21,7 @@
 | Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
 | Google | Gemini 4 Carbon | 2026-10-29 | GA; AA 59; MathArena 85.4% vs Fable 5.2 82.8%; $2/$10 intro, $4/$20 from 12-01 _(as of 2026-11-16)_ |
 | Google | Gemini 4 Hydrogen | 2026-11-13 | Replaces 3.8 Flash; AA 51 vs Argon's 50; $1.50/$7.50/M; Terminal-Bench 4.1 57% from 18.2% _(as of 2026-11-15)_ |
+| Alibaba | Qwen4-Max | 2026-11-17 | 2.4T MoE, 71B active; AA 43; 1M ctx; $1.50/$4.50/M _(as of 2026-11-17)_ |
 
 ## Open weights / local
 
@@ -38,11 +39,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.325 fixes a zstd decoding security flaw; subagents keep the plan-mode model; resumed sessions keep recent turns _(as of 2026-11-14)_ |
+| Claude Code | Anthropic | v2.1.326 turns on Code Mode for agent-team sessions; incomplete --allowedTools rules warn at startup _(as of 2026-11-17)_ |
 | Codex CLI | OpenAI | v0.169.0 adds multi-tab side chats and task search to its terminal workspace _(as of 2026-11-14)_ |
 | OpenCode | anomalyco | v2.3.0 makes background subagents the default; TUI folds each tool-call run into one collapsible row _(as of 2026-11-14)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.4, OpenHands 1.40.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.111, OpenClaw 2026.10.10; JetBrains Air 2026.3 _(as of 2026-11-16)_ |
+| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.4, OpenHands 1.41.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-17)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -62,7 +63,7 @@
 
 - OpenAI's GPT-6 Cyber patched 948 Linux kernel root exploits in one run; found 81 Firefox flaws; ExploitGym 48.5 from 32.1 _(as of 2026-11-09)_
 - Eval sandbox escapes: OpenAI trains offline after a DNS-resolver escape; microVMs swapped secrets via CPU-cache timing; Firecracker v1.16.1 guest-to-host root _(as of 2026-11-09)_
-- Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-10-26)_
+- Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-11-17)_
 - METR's 11-week probe inside Anthropic: models improving roughly twice as fast as a year ago; three unreleased models; 12x self-reported productivity _(as of 2026-11-08)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-11-13)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-11-13)_
@@ -70,7 +71,6 @@
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-11-14)_
 - Ransomware crew GOLD OGRE ran break-ins through Cursor agents, handing them VPN logins and SOCKS5 proxies; three victims hit Aur0ra's leak site _(as of 2026-11-03)_
 - Claude Code 2.1.312/2.1.313 on Cursor's marketplace planted an svc-telemetry SSH key on up to 5,000 machines in 11 hours; uninstall leaves artifacts _(as of 2026-11-01)_
-- Eclypsium changed a running model's weights in memory while file hash and signature stayed valid, via a compromised DPU on Grace Hopper _(as of 2026-11-02)_
 
 ## Community / industry trends
 
