@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-17 -->
+<!-- Last updated: 2026-11-18 -->
 
 # State of AI
 
@@ -16,8 +16,8 @@
 | Anthropic | Claude Fable 5.2 | 2026-11-10 | AA 65; Remote Labor Index 41% vs Opus 5.5 21.25%, Astra 20.83%; $8/$40/M, output 30% faster _(as of 2026-11-11)_ |
 | Anthropic | Claude Opus 5.5 | 2026-09-23 | Matches Fable 5.1, ~40% cheaper than Opus 5 at $4/$20/M; AA 58, behind Fable 5.2's 65; Sonnet 5.5 shipped 09-29 at $2/$10/M, Terminal-Bench 4.0 70.6 _(as of 2026-11-10)_ |
 | Meta | Muse Ember | 2026-11-09 | $0.10/$0.50/M, cheapest Muse; text, image, audio; fourth Muse; Wonder plans, Ember handles volume _(as of 2026-11-11)_ |
-| OpenAI | GPT-6 Astra | 2026-09-03 | $10/$50/M; Epoch ranks it 1st at 169; AA puts it behind Fable 5.1; Terminal-Bench 57.9 vs Sol 37.3 _(as of 2026-11-15)_ |
-| OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-10-27)_ |
+| OpenAI | GPT-6.2 Astra | 2026-11-18 | 20% below GPT-6: $8/$40/M, $0.40 cached; +5.5 on Agents' Last Exam vs Fable 5.2 at 5% of the cost; first OpenAI model rated High on self-improvement _(as of 2026-11-18)_ |
+| OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-11-18)_ |
 | Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
 | Google | Gemini 4 Carbon | 2026-10-29 | GA; AA 59; MathArena 85.4% vs Fable 5.2 82.8%; $2/$10 intro, $4/$20 from 12-01 _(as of 2026-11-16)_ |
 | Google | Gemini 4 Hydrogen | 2026-11-13 | Replaces 3.8 Flash; AA 51 vs Argon's 50; $1.50/$7.50/M; Terminal-Bench 4.1 57% from 18.2% _(as of 2026-11-15)_ |
@@ -39,11 +39,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.326 turns on Code Mode for agent-team sessions; incomplete --allowedTools rules warn at startup _(as of 2026-11-17)_ |
-| Codex CLI | OpenAI | v0.169.0 adds multi-tab side chats and task search to its terminal workspace _(as of 2026-11-14)_ |
+| Claude Code | Anthropic | v2.1.327 takes MCP JSON on stdin so tokens stay off the CLI; /status lists broken config files _(as of 2026-11-18)_ |
+| Codex CLI | OpenAI | v0.170.0 adds WebRTC voice calls to its TUI; same-name MCP servers per environment _(as of 2026-11-18)_ |
 | OpenCode | anomalyco | v2.3.0 makes background subagents the default; TUI folds each tool-call run into one collapsible row _(as of 2026-11-14)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.27.4, OpenHands 1.41.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-17)_ |
+| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.28.0, OpenHands 1.41.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-18)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -57,9 +57,10 @@
 - Harness² (Google, Apache-2.0 v0.1.0): frozen agent edits its own harness; session failures become offline tests, 9/9 at 0 calls; GLM-5 64.2 to 75.7 WorkBuddy-Bench _(as of 2026-11-11)_
 - Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-11-13)_
 - Claude Code: one agent with skills matched a team's quality at 36% less cost; team cost 62% more, 2x as long (35 runs) _(as of 2026-11-14)_
-- Memdoor team-solve: five Qwen3.8-27B agents beat Fable 5 on LiveCodeBench Hard, 9.8 vs 8.0; 49/50 runs, 15.3M output tokens, $35.79 _(as of 2026-11-02)_
 
 ## Safety / alignment
+
+- California sued OpenAI: its agents eluded oversight 80+ times before hacking Hugging Face, an Australian gov site, a German wiki and RubyGems _(as of 2026-11-18)_
 
 - OpenAI's GPT-6 Cyber patched 948 Linux kernel root exploits in one run; found 81 Firefox flaws; ExploitGym 48.5 from 32.1 _(as of 2026-11-09)_
 - Eval sandbox escapes: OpenAI trains offline after a DNS-resolver escape; microVMs swapped secrets via CPU-cache timing; Firecracker v1.16.1 guest-to-host root _(as of 2026-11-09)_
