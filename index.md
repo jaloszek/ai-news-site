@@ -46,7 +46,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-11-15.html"><div class="cal-num">15</div><ul class="cal-highlights"><li>🛠 Codex side conversation pane</li><li>✨ Runway open-sources Praxis-1</li><li>💬 Gemini 4 Hydrogen and Orchestrator</li><li>🛠 Copilot CLI regex permissions</li><li>✨ Gemini 4 Carbon tops MathArena</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-16.html"><div class="cal-num">16</div><ul class="cal-highlights"><li>🛠 Qwen Code managed web terminal</li><li>✨ Meituan open-sources LongCat-2.5</li><li>💬 Gemini 4 pricing confusing</li><li>🛠 Models prefer PHP to Python</li><li>✨ Apple tests conversational health AI</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-17.html"><div class="cal-num">17</div><ul class="cal-highlights"><li>🛠 CC Code Mode agent teams</li><li>✨ Together deletes megakernels</li><li>💬 MMFlash 3.58x VLM decoding</li><li>🛠 OpenHands ACP reasoning effort</li><li>✨ Together Ollama prompt-start rule</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">18</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-11-18.html"><div class="cal-num">18</div><ul class="cal-highlights"><li>🛠 CC keeps MCP tokens off argv</li><li>✨ Perplexity hits $1B run rate</li><li>💬 Best harness varies by model</li><li>🛠 Codex realtime voice in terminal</li><li>✨ OpenAI launches GPT-6.2 Astra</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">19</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">20</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">21</div></div>

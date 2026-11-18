@@ -4,16 +4,16 @@
 
 # AI News — Stats
 
-_Generated 2026-11-17 06:04 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
+_Generated 2026-11-18 05:33 UTC. Snapshot of the daily ingestion + enrichment + publication pipeline._
 
 ## At a glance
 
-- **Discovery items (in retention window):** 2625
+- **Discovery items (in retention window):** 2601
 - **Enriched:** 666 (25%)
 - **Taste-rated:** 666 (25%)
-- **Researched:** 435 (16%)
-- **Status (candidate / rejected / published / duplicate):** 673 / 1952 / 0 / 0
-- **Published bullets (all-time):** 4165 (last 7d: 178)
+- **Researched:** 449 (17%)
+- **Status (candidate / rejected / published / duplicate):** 656 / 1945 / 0 / 0
+- **Published bullets (all-time):** 4189 (last 7d: 183)
 
 
 ## Ingestion & enrichment (last 7 days)
@@ -22,13 +22,13 @@ Daily throughput from scanners through the pipeline. **Enriched** = body written
 
 | Date | Scanned | Enriched | Taste-rated | Researched |
 |---|---:|---:|---:|---:|
-| 2026-11-17 | 247 | 48 (19%) | 48 (19%) | 28 (11%) |
-| 2026-11-16 | 107 | 35 (32%) | 35 (32%) | 23 (21%) |
+| 2026-11-18 | 191 | 32 (16%) | 32 (16%) | 22 (11%) |
+| 2026-11-17 | 247 | 61 (24%) | 61 (24%) | 46 (18%) |
+| 2026-11-16 | 107 | 35 (32%) | 35 (32%) | 25 (23%) |
 | 2026-11-15 | 111 | 36 (32%) | 36 (32%) | 20 (18%) |
 | 2026-11-14 | 208 | 69 (33%) | 69 (33%) | 43 (20%) |
 | 2026-11-13 | 225 | 71 (31%) | 71 (31%) | 53 (23%) |
 | 2026-11-12 | 203 | 48 (23%) | 48 (23%) | 29 (14%) |
-| 2026-11-11 | 242 | 53 (21%) | 53 (21%) | 35 (14%) |
 
 
 ## Published (last 7 days)
@@ -37,6 +37,7 @@ What the picker actually shipped to the site, by section.
 
 | Date | Coding Agents | AI World | YouTube | Reddit | Community | Newsletters | Total |
 |---|---:|---:|---:|---:|---:|---:|---:|
+| 2026-11-18 | 3 | 5 | 3 | 5 | 5 | 3 | 24 |
 | 2026-11-17 | 2 | 5 | 3 | 5 | 1 | 3 | 19 |
 | 2026-11-16 | 3 | 5 | 3 | 5 | 3 | 3 | 22 |
 | 2026-11-15 | 3 | 5 | 3 | 5 | 5 | 3 | 24 |
@@ -44,7 +45,6 @@ What the picker actually shipped to the site, by section.
 | 2026-11-13 | 3 | 5 | 3 | 5 | 5 | 3 | 24 |
 | 2026-11-12 | 3 | 5 | 3 | 4 | 5 | 3 | 23 |
 | 2026-11-11 | 3 | 5 | 3 | 4 | 5 | 3 | 23 |
-| 2026-11-10 | 3 | 5 | 3 | 4 | 3 | 1 | 19 |
 
 
 ## Top creators (last 30 days)
@@ -53,21 +53,21 @@ Sources contributing the most items into the discovery pool. Subreddits dominate
 
 | Creator | Source | Items (30d) |
 |---|---|---:|
-| TLDR | `email` | 1544 |
-| The Rundown AI | `email` | 389 |
-| TechCrunch AI | `rss` | 283 |
-| The Decoder | `rss` | 215 |
-| Hacker News (points) | `rss` | 198 |
-| The Verge AI | `rss` | 184 |
-| AlphaSignal | `email` | 155 |
-| OpenAI blog | `rss` | 92 |
-| Hermes Agent releases | `rss` | 91 |
-| OpenClaw releases | `rss` | 90 |
-| r/LocalLLaMA | `reddit` | 84 |
-| HF Daily Papers | `rss` | 83 |
-| Codex releases | `rss` | 79 |
-| Qwen Code releases | `rss` | 71 |
-| Help Net Security AI | `rss` | 69 |
+| TLDR | `email` | 1569 |
+| The Rundown AI | `email` | 407 |
+| TechCrunch AI | `rss` | 298 |
+| The Decoder | `rss` | 212 |
+| Hacker News (points) | `rss` | 188 |
+| The Verge AI | `rss` | 187 |
+| AlphaSignal | `email` | 157 |
+| OpenAI blog | `rss` | 98 |
+| OpenClaw releases | `rss` | 93 |
+| Hermes Agent releases | `rss` | 90 |
+| HF Daily Papers | `rss` | 85 |
+| Codex releases | `rss` | 83 |
+| r/LocalLLaMA | `reddit` | 79 |
+| Qwen Code releases | `rss` | 74 |
+| Help Net Security AI | `rss` | 72 |
 
 
 ## Rejection reasons (all-time)
@@ -76,7 +76,7 @@ What got filtered out before reaching the picker. `stale` is the auto-reject for
 
 | Reason | Count |
 |---|---:|
-| `stale` | 69199 |
+| `stale` | 69260 |
 
 
 ---
