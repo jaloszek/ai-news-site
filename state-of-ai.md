@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-18 -->
+<!-- Last updated: 2026-11-19 -->
 
 # State of AI
 
@@ -18,7 +18,7 @@
 | Meta | Muse Ember | 2026-11-09 | $0.10/$0.50/M, cheapest Muse; text, image, audio; fourth Muse; Wonder plans, Ember handles volume _(as of 2026-11-11)_ |
 | OpenAI | GPT-6.2 Astra | 2026-11-18 | 20% below GPT-6: $8/$40/M, $0.40 cached; +5.5 on Agents' Last Exam vs Fable 5.2 at 5% of the cost; first OpenAI model rated High on self-improvement _(as of 2026-11-18)_ |
 | OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-11-18)_ |
-| Google | Gemini 4 Argon | 2026-10-01 | Epoch 166, ties Fable 5.1; DeepSWE 77.9 vs Opus 5.5's 74.2; 1M output; $2/$10 intro; hallucinations down >2/3 _(as of 2026-10-28)_ |
+| Google | Gemini 4 Neon | 2026-11-19 | Replaces Argon in picker; 1M ctx, 4 thinking levels; Carbon-grade at Flash speed; 3rd on AA; $3/$15/M _(as of 2026-11-19)_ |
 | Google | Gemini 4 Carbon | 2026-10-29 | GA; AA 59; MathArena 85.4% vs Fable 5.2 82.8%; $2/$10 intro, $4/$20 from 12-01 _(as of 2026-11-16)_ |
 | Google | Gemini 4 Hydrogen | 2026-11-13 | Replaces 3.8 Flash; AA 51 vs Argon's 50; $1.50/$7.50/M; Terminal-Bench 4.1 57% from 18.2% _(as of 2026-11-15)_ |
 | Alibaba | Qwen4-Max | 2026-11-17 | 2.4T MoE, 71B active; AA 43; 1M ctx; $1.50/$4.50/M _(as of 2026-11-17)_ |
@@ -39,11 +39,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.327 takes MCP JSON on stdin so tokens stay off the CLI; /status lists broken config files _(as of 2026-11-18)_ |
+| Claude Code | Anthropic | v2.1.328 starts no-mode sessions in auto; auto reaches Opus/Sonnet 4.6 on Bedrock, Foundry, gateway _(as of 2026-11-19)_ |
 | Codex CLI | OpenAI | v0.170.0 adds WebRTC voice calls to its TUI; same-name MCP servers per environment _(as of 2026-11-18)_ |
-| OpenCode | anomalyco | v2.3.0 makes background subagents the default; TUI folds each tool-call run into one collapsible row _(as of 2026-11-14)_ |
+| OpenCode | anomalyco | v2.3.2 stops GPT-6.2 re-billing the system prompt each step; uncached input per step fell 14,000 tokens to 3 _(as of 2026-11-19)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.28.0, OpenHands 1.41.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-18)_ |
+| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.28.0, OpenHands 1.42.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-19)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
