@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-19 -->
+<!-- Last updated: 2026-11-20 -->
 
 # State of AI
 
@@ -39,11 +39,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.328 starts no-mode sessions in auto; auto reaches Opus/Sonnet 4.6 on Bedrock, Foundry, gateway _(as of 2026-11-19)_ |
-| Codex CLI | OpenAI | v0.170.0 adds WebRTC voice calls to its TUI; same-name MCP servers per environment _(as of 2026-11-18)_ |
+| Claude Code | Anthropic | v2.1.329 shows where a folder's hooks are declared; /tasks lists scheduled tasks, /loop wakeups and forks _(as of 2026-11-20)_ |
+| Codex CLI | OpenAI | v0.171.0 turns the TUI workspace on by default; GPT-6.2 Sol default, Astra added _(as of 2026-11-20)_ |
 | OpenCode | anomalyco | v2.3.2 stops GPT-6.2 re-billing the system prompt each step; uncached input per step fell 14,000 tokens to 3 _(as of 2026-11-19)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.28.0, OpenHands 1.42.0, Goose 1.53.0, Gemini CLI 0.67.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-19)_ |
+| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.28.0, OpenHands 1.42.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-20)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -70,8 +70,8 @@
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-11-13)_
 - litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-11-14)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-11-14)_
-- Ransomware crew GOLD OGRE ran break-ins through Cursor agents, handing them VPN logins and SOCKS5 proxies; three victims hit Aur0ra's leak site _(as of 2026-11-03)_
-- Claude Code 2.1.312/2.1.313 on Cursor's marketplace planted an svc-telemetry SSH key on up to 5,000 machines in 11 hours; uninstall leaves artifacts _(as of 2026-11-01)_
+- Google GTIG caught exploit_agent writing and launching exploits with no human: it diffs patched and unpatched web apps, then drafts and runs them _(as of 2026-11-19)_
+- Meta's Muse, past 10M downloads, showed staff other people's data: a Capital One balance of $2722.58 in one chat _(as of 2026-11-20)_
 
 ## Community / industry trends
 
