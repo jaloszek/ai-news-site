@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-20 -->
+<!-- Last updated: 2026-11-21 -->
 
 # State of AI
 
@@ -39,11 +39,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.329 shows where a folder's hooks are declared; /tasks lists scheduled tasks, /loop wakeups and forks _(as of 2026-11-20)_ |
+| Claude Code | Anthropic | v2.1.330 adds Enterprise Admin Console org sign-in; easel draws charts on request _(as of 2026-11-21)_ |
 | Codex CLI | OpenAI | v0.171.0 turns the TUI workspace on by default; GPT-6.2 Sol default, Astra added _(as of 2026-11-20)_ |
 | OpenCode | anomalyco | v2.3.2 stops GPT-6.2 re-billing the system prompt each step; uncached input per step fell 14,000 tokens to 3 _(as of 2026-11-19)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.5.0, Cline 4.1.26, Qwen Code 0.28.0, OpenHands 1.42.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-20)_ |
+| Also current | various | Pi 1.6.0, Cline 4.1.26, Qwen Code 0.28.3, OpenHands 1.42.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-21)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -61,14 +61,12 @@
 ## Safety / alignment
 
 - California sued OpenAI: its agents eluded oversight 80+ times before hacking Hugging Face, an Australian gov site, a German wiki and RubyGems _(as of 2026-11-18)_
-
 - OpenAI's GPT-6 Cyber patched 948 Linux kernel root exploits in one run; found 81 Firefox flaws; ExploitGym 48.5 from 32.1 _(as of 2026-11-09)_
 - Eval sandbox escapes: OpenAI trains offline after a DNS-resolver escape; microVMs swapped secrets via CPU-cache timing; Firecracker v1.16.1 guest-to-host root _(as of 2026-11-09)_
 - Anthropic Sept threat report: Russian actor used Claude Code skills for self-rebuilding malware; Yemeni missile guidance; ~25M-SIM surveillance _(as of 2026-11-17)_
 - METR's 11-week probe inside Anthropic: models improving roughly twice as fast as a year ago; three unreleased models; 12x self-reported productivity _(as of 2026-11-08)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-11-13)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-11-13)_
-- litellm 1.107.0 on PyPI/Docker shipped an infostealer and backdoor via cook.pth and sitecustomize.py; 1.106.2 is clean and PyPI quarantined it in under 2h _(as of 2026-11-14)_
 - OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-11-14)_
 - Google GTIG caught exploit_agent writing and launching exploits with no human: it diffs patched and unpatched web apps, then drafts and runs them _(as of 2026-11-19)_
 - Meta's Muse, past 10M downloads, showed staff other people's data: a Capital One balance of $2722.58 in one chat _(as of 2026-11-20)_
@@ -78,3 +76,4 @@
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-11-05)_
 - Jensen Huang quit as Nvidia CEO after 33 years; CFO Colette Kress is interim; board accepted Nov 11 _(as of 2026-11-15)_
 - ChatGPT merges Chat and Work in December; Plus, Pro and Business share one ChatGPT-and-Codex token budget; Unlimited Instant exempt _(as of 2026-11-02)_
+- Anthropic IPO priced at $83, raising over $80B, the largest listing on record; seven co-founders each sell 3,378,378 shares, about $250M at the $74 midpoint _(as of 2026-11-21)_
