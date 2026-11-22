@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-21 -->
+<!-- Last updated: 2026-11-22 -->
 
 # State of AI
 
@@ -28,12 +28,12 @@
 | Model | Size | Notable |
 |---|---|---|
 | Kimi K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; open weights shipped 11-04 _(as of 2026-11-06)_ |
-| GLM-5.3 (Z.ai) | 753B MoE / 40B active | Weights 08-28; Epoch: built Firefox exploits from published-but-unshipped fixes, six releases 09-17 to 10-26; top open-weight on offense _(as of 2026-11-01)_ |
+| Tencent Hy4 | 770B MoE / 49B active | Vision, tool calling, JSON; 1M ctx; $0.83/M input on Together _(as of 2026-11-22)_ |
 | Qwen3.8-27B | 27B dense | Weight edit cuts thinking 27-54%, LiveCodeBench v6 +13.0; Arete cuts propaganda 22% to 1%; DSpine 125 tok/s on RTX 3090 _(as of 2026-11-12)_ |
 | LongCat-2.5 (Meituan) | 1.6T MoE | MIT weights; no Nvidia GPU, 194 Huawei Ascend Atlas A2; Terminal-Bench 2.1 88.4 vs Opus 5's 89.1 _(as of 2026-11-16)_ |
 | DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-11-14)_ |
-| Flint (Recursive) | 40B MoE / 2.5B active | Apache 2.0; 125+ tok/s on an M4 Pro, 150+ on a 64GB RTX Spark; 512K ctx; built in under four months _(as of 2026-11-14)_ |
-| Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; FrontierCode 2.0 19.7% first open; 82% Cyber Index; Coding Agent Index 49.8% _(as of 2026-10-31)_ |
+| Inkling 2 Mini (Thinking Machines) | 26.4B MoE / 3.4B active | Looped middle 12 layers; AA 20.1; leads sub-100B open on DeepSWE v1.1 at 48.2%; 32GB Mac via Ollama _(as of 2026-11-22)_ |
+| Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; FrontierCode 2.0 19.7% first open; 82% Cyber Index; Coding Agent Index 49.8% _(as of 2026-11-22)_ |
 
 ## Coding agents / harnesses
 
@@ -43,12 +43,12 @@
 | Codex CLI | OpenAI | v0.171.0 turns the TUI workspace on by default; GPT-6.2 Sol default, Astra added _(as of 2026-11-20)_ |
 | OpenCode | anomalyco | v2.3.2 stops GPT-6.2 re-billing the system prompt each step; uncached input per step fell 14,000 tokens to 3 _(as of 2026-11-19)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.6.0, Cline 4.1.26, Qwen Code 0.28.3, OpenHands 1.42.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.111, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-21)_ |
+| Also current | various | Pi 1.6.0, Cline 4.1.27, Qwen Code 0.28.3, OpenHands 1.43.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.115-2, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-22)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
 
-- Nvidia's $12.93B Hugging Face buy faces a DOJ probe over open-model distribution _(as of 2026-10-31)_
+- Nvidia's $12.93B Hugging Face buy faces a DOJ probe over open-model distribution _(as of 2026-11-22)_
 - Anthropic compute: $517B in 11 mo, trailing OpenAI's $750B thru 2030; AMD $5B/2GW MI450; Mythos moved Claude to AMD in 3 days _(as of 2026-11-12)_
 
 ## Agent patterns / frameworks
