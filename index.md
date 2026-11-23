@@ -51,7 +51,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-11-20.html"><div class="cal-num">20</div><ul class="cal-highlights"><li>🛠 CC hook visibility and tasks</li><li>✨ Microsoft ONNX Runtime disappears</li><li>💬 Energy-based reasoners know when to stop</li><li>🛠 Codex adds GPT-6.2 Sol</li><li>✨ Agents inherit employee login access</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-21.html"><div class="cal-num">21</div><ul class="cal-highlights"><li>🛠 CC Enterprise Admin Console sign-in</li><li>✨ Codex uses OS-native sandbox</li><li>💬 Healthy code costs agents less</li><li>🛠 Qwen Code adds GitHub channel</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-22.html"><div class="cal-num">22</div><ul class="cal-highlights"><li>🛠 Copilot CLI custom provider models</li><li>✨ AI agents design Frostbite CPU</li><li>💬 Gemini 4 Neon tops index</li><li>🛠 Cline authenticated LM Studio servers</li><li>✨ Inkling 2 Mini thinks in loops</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">23</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-11-23.html"><div class="cal-num">23</div><ul class="cal-highlights"><li>🛠 OpenClaw resumes restarts work</li><li>✨ Coding agents flunk office tasks</li><li>💬 Public benchmarks fail correct answers</li><li>✨ Cheap inference leaks prompts keys</li><li>💬 GPGME fixes critical double free</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">24</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">25</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">26</div></div>
