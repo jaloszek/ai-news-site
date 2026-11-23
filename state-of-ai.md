@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-22 -->
+<!-- Last updated: 2026-11-23 -->
 
 # State of AI
 
@@ -22,6 +22,7 @@
 | Google | Gemini 4 Carbon | 2026-10-29 | GA; AA 59; MathArena 85.4% vs Fable 5.2 82.8%; $2/$10 intro, $4/$20 from 12-01 _(as of 2026-11-16)_ |
 | Google | Gemini 4 Hydrogen | 2026-11-13 | Replaces 3.8 Flash; AA 51 vs Argon's 50; $1.50/$7.50/M; Terminal-Bench 4.1 57% from 18.2% _(as of 2026-11-15)_ |
 | Alibaba | Qwen4-Max | 2026-11-17 | 2.4T MoE, 71B active; AA 43; 1M ctx; $1.50/$4.50/M _(as of 2026-11-17)_ |
+| Microsoft | MAI Code 2 | 2026-11-21 | 98% of GPT-6.1 Sol at 40% of the price; Cyber 2 Flash beats GPT-6 Astra at under 2% cost _(as of 2026-11-23)_ |
 
 ## Open weights / local
 
@@ -43,7 +44,7 @@
 | Codex CLI | OpenAI | v0.171.0 turns the TUI workspace on by default; GPT-6.2 Sol default, Astra added _(as of 2026-11-20)_ |
 | OpenCode | anomalyco | v2.3.2 stops GPT-6.2 re-billing the system prompt each step; uncached input per step fell 14,000 tokens to 3 _(as of 2026-11-19)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.6.0, Cline 4.1.27, Qwen Code 0.28.3, OpenHands 1.43.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.115-2, OpenClaw 2026.11.2; JetBrains Air 2026.3 _(as of 2026-11-22)_ |
+| Also current | various | Pi 1.6.0, Cline 4.1.27, Qwen Code 0.28.3, OpenHands 1.43.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.115-2, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-23)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -67,7 +68,7 @@
 - METR's 11-week probe inside Anthropic: models improving roughly twice as fast as a year ago; three unreleased models; 12x self-reported productivity _(as of 2026-11-08)_
 - GPT-6 Astra is the first model OpenAI rates Critical for cyber; it paused RL training and its largest planned frontier run _(as of 2026-11-13)_
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-11-13)_
-- OpenAI disrupted a coordinated distillation campaign tied to Moonshot AI: operators copied encrypted reasoning and had another model decrypt it, peaking at 16,000 requests from 4,000+ users July 24-25; a 15,000-user cluster shut by July 28 _(as of 2026-11-14)_
+- OpenAI disrupted a Moonshot-tied distillation campaign (16,000 peak requests from 4,000+ users July 24-25); Astra defenses cut extraction 54.0% to 0.2% _(as of 2026-11-23)_
 - Google GTIG caught exploit_agent writing and launching exploits with no human: it diffs patched and unpatched web apps, then drafts and runs them _(as of 2026-11-19)_
 - Meta's Muse, past 10M downloads, showed staff other people's data: a Capital One balance of $2722.58 in one chat _(as of 2026-11-20)_
 
