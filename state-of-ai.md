@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-23 -->
+<!-- Last updated: 2026-11-24 -->
 
 # State of AI
 
@@ -40,11 +40,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.330 adds Enterprise Admin Console org sign-in; easel draws charts on request _(as of 2026-11-21)_ |
-| Codex CLI | OpenAI | v0.171.0 turns the TUI workspace on by default; GPT-6.2 Sol default, Astra added _(as of 2026-11-20)_ |
+| Claude Code | Anthropic | v2.1.331: Code Mode in terminal sessions on Bedrock, Google Cloud, Foundry, AWS _(as of 2026-11-24)_ |
+| Codex CLI | OpenAI | v0.172.0 adds thread links, slash-command Tab completion and task-group navigation _(as of 2026-11-24)_ |
 | OpenCode | anomalyco | v2.3.2 stops GPT-6.2 re-billing the system prompt each step; uncached input per step fell 14,000 tokens to 3 _(as of 2026-11-19)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.6.0, Cline 4.1.27, Qwen Code 0.28.3, OpenHands 1.43.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.115-2, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-23)_ |
+| Also current | various | Pi 1.6.0, Cline 4.1.27, Qwen Code 0.28.4, OpenHands 1.43.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.115-2, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-24)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -76,5 +76,5 @@
 
 - Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-11-05)_
 - Jensen Huang quit as Nvidia CEO after 33 years; CFO Colette Kress is interim; board accepted Nov 11 _(as of 2026-11-15)_
-- ChatGPT merges Chat and Work in December; Plus, Pro and Business share one ChatGPT-and-Codex token budget; Unlimited Instant exempt _(as of 2026-11-02)_
+- ChatGPT merges Chat and Work in December; Plus, Pro and Business share one ChatGPT-and-Codex token budget; Unlimited Instant exempt _(as of 2026-11-24)_
 - Anthropic IPO priced at $83, raising over $80B, the largest listing on record; seven co-founders each sell 3,378,378 shares, about $250M at the $74 midpoint _(as of 2026-11-21)_
