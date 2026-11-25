@@ -1,0 +1,1057 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T06:14:37.522513+00:00",
+  "weights": {
+    "cross_score": 2.0,
+    "recency_decay": 1.0,
+    "origin_weight": 1.0,
+    "taste_score": 1.75,
+    "cooldown_penalty": 1.0,
+    "domain_saturation_penalty": 1.0,
+    "repick_bonus": 5.0,
+    "non_release_bonus": 1.0,
+    "patch_release_penalty": 0.5,
+    "has_concrete_fact": 0.0,
+    "novelty_score": 0.0,
+    "topic_match": 1.0,
+    "creator_weight": 1.0,
+    "uniqueness": 0.4,
+    "topic_importance": 1.25,
+    "fetch_fail_penalty": 1.0,
+    "ungrounded_penalty": 1.75,
+    "broken_newsletter_title_penalty": 2.0,
+    "topic_repeat_penalty": 0.5,
+    "story_heat": 0.75,
+    "attention": 0.5
+  },
+  "weights_overridden": [
+    "taste_score",
+    "topic_importance",
+    "ungrounded_penalty",
+    "uniqueness"
+  ],
+  "section_limits": {
+    "claude-code": 3,
+    "ai-world": 5,
+    "youtube": 3,
+    "reddit": 5,
+    "community": 5,
+    "newsletters": 3
+  },
+  "candidate_multiplier": 1,
+  "sections": {
+    "claude-code": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "15aa96a95483eababc30a1742cd6e033248c68c1",
+          "title": "v2.1.332",
+          "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+          "score": 7.9333,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8333,
+            "uniqueness": 0.8333,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1667,
+            "topic_match": 0.7,
+            "creator_weight": 1.0,
+            "taste_score": 0.8,
+            "taste_raw": 0.8,
+            "taste_reason": "jev score 0.80",
+            "total": 7.9333
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.8×1.75=1.4"
+        },
+        {
+          "rank": 2,
+          "id": "bafeb220788f8597e130f2836985338ebbf9f0c2",
+          "title": "v2.4.0",
+          "canonical_url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.0",
+          "score": 6.7676,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7781,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7551,
+            "uniqueness": 0.7551,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2449,
+            "topic_match": 0.8,
+            "creator_weight": 0.6,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "total": 6.7676
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + topic_match 0.8×1=0.8"
+        },
+        {
+          "rank": 3,
+          "id": "f890d5c0306241c2113159618300e59f6e3f9f7b",
+          "title": "1.0.116-2",
+          "canonical_url": "https://github.com/github/copilot-cli/releases/tag/v1.0.116-2",
+          "score": 6.1467,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8293,
+            "uniqueness": 0.8293,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.1707,
+            "topic_match": 0.8,
+            "taste_score": 0.58,
+            "taste_raw": 0.58,
+            "taste_reason": "jev score 0.58",
+            "patch_release_penalty": -1.0,
+            "total": 6.1467
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.58×1.75=1.015; penalties: patch_release -1×0.5=-0.5"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "f55e55aa8010cc896cd93d9e798090b8b099c076",
+          "title": "openclaw 2026.11.10",
+          "reason": "release_cooldown"
+        },
+        {
+          "id": "1a4c49f79da937233c521a4d96c03e2e9d3dbdec",
+          "title": "v2.4.1",
+          "reason": "creator_cap",
+          "creator_key": "OpenCode releases",
+          "cap": 1
+        },
+        {
+          "id": "6d650f10724c5e5712a1b04e520461dc6dd78d89",
+          "title": "1.0.115",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "54e28abd078ed7131595308a29f016ee6b7f2fca",
+          "title": "1.0.116-1",
+          "reason": "creator_cap",
+          "creator_key": "Copilot CLI releases",
+          "cap": 1
+        },
+        {
+          "id": "7849964b887e31f37dcbd7c359a7c5ca185117e2",
+          "title": "v1.44.0",
+          "reason": "creator_cap",
+          "creator_key": "OpenHands releases",
+          "cap": 1
+        }
+      ]
+    },
+    "ai-world": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "5845ed4863b4926585035e5be53fe505a19610e2",
+          "title": "Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia",
+          "canonical_url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race",
+          "score": 6.1517,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9211,
+            "uniqueness": 0.9167,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.0789,
+            "topic_match": 0.2,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "total": 6.1517
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.62×1.75=1.085"
+        },
+        {
+          "rank": 2,
+          "id": "0f64ef477057f0930193353c0f1f9b8798b3277b",
+          "title": "Anthropic tops 700 million monthly MCP SDK downloads and expands the protocol for more autonomous AI agents",
+          "canonical_url": "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents",
+          "score": 6.0514,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.766,
+            "uniqueness": 0.766,
+            "uniqueness_sim_published": 0.1333,
+            "uniqueness_sim_state": 0.234,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.74,
+            "taste_raw": 0.74,
+            "taste_reason": "jev score 0.74",
+            "total": 6.0514,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.74×1.75=1.295; penalties: domain_saturation -1×1=-1"
+        },
+        {
+          "rank": 3,
+          "id": "07731621ec00c367031f74bfcb82c7563ba4322b",
+          "title": "Elastic puts AI agents to work on the SOC alert backlog",
+          "canonical_url": "https://helpnetsecurity.com/2026/11/24/elastic-security-9-6-features",
+          "score": 5.7237,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7843,
+            "uniqueness": 0.7843,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.2157,
+            "topic_match": 0.5,
+            "taste_score": 0.52,
+            "taste_raw": 0.52,
+            "taste_reason": "jev score 0.52",
+            "total": 5.7237,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -0.5×1=-0.5"
+        },
+        {
+          "rank": 4,
+          "id": "84fb3fd4bc17b8ea3b8c2b6722852c9562deb7e7",
+          "title": "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability.",
+          "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam",
+          "score": 5.6758,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6957,
+            "uniqueness": 0.6957,
+            "uniqueness_sim_published": 0.0714,
+            "uniqueness_sim_state": 0.3043,
+            "topic_match": -0.1,
+            "taste_score": 0.57,
+            "taste_raw": 0.57,
+            "taste_reason": "jev score 0.57",
+            "total": 5.6758
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: topic_match -0.1×1=-0.1"
+        },
+        {
+          "rank": 5,
+          "id": "b362fc1b56221ae5873d5d800147ec4fb5c30cf5",
+          "title": "Google Cloud CISO talks agentic AI security and the future of the SOC",
+          "canonical_url": "https://helpnetsecurity.com/2026/11/24/chris-betz-google-agentic-ai-security",
+          "score": 5.584,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9584,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8889,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1111,
+            "topic_match": 0.5,
+            "taste_score": 0.44,
+            "taste_raw": 0.44,
+            "taste_reason": "jev score 0.44",
+            "total": 5.584,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9584×1=0.9584; penalties: domain_saturation -0.5×1=-0.5"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "f0fb06df1cb45fc8208dc826691c33afcf7f3d53",
+          "title": "Anthropic turns Claude Artifacts into standalone desktop apps for macOS and Windows",
+          "canonical_url": "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows",
+          "score": 5.5575,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.1667,
+            "uniqueness_sim_state": 0.2,
+            "topic_match": 0.7,
+            "creator_weight": 0.25,
+            "taste_score": 0.45,
+            "taste_raw": 0.45,
+            "taste_reason": "jev score 0.45",
+            "total": 5.5575,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "3c6728c1bfd198791155e7911f8c578086a9a218",
+          "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+          "canonical_url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+          "score": 5.5417,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.898,
+            "uniqueness": 0.898,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.102,
+            "topic_match": 0.0,
+            "creator_weight": 0.15,
+            "taste_score": 0.59,
+            "taste_raw": 0.59,
+            "taste_reason": "jev score 0.59",
+            "total": 5.5417,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.59×1.75=1.0325; penalties: domain_saturation -0.5×1=-0.5",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "a9deb156f023a43f2c5b244ef092ef74d35ee4b3",
+          "title": "Antom 3-in-1 Transformer: A Payment Foundation Model",
+          "canonical_url": "https://huggingface.co/papers/2611.25403",
+          "score": 5.3306,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9,
+            "uniqueness": 0.8889,
+            "uniqueness_sim_published": 0.1111,
+            "uniqueness_sim_state": 0.1,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.5,
+            "taste_raw": 0.5,
+            "taste_reason": "jev score 0.50",
+            "total": 5.3306,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 1×1=1; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "4887da3ef3825f0dda8cae02375860ff6e5412dc",
+          "title": "v0.34.1rc0: [Perf][Qwen4Exp] Add SM100 TP=2 and TP=8 skinny GEMM plans (#69529)",
+          "canonical_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.1rc0",
+          "score": 5.0319,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9502,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8293,
+            "uniqueness": 0.8293,
+            "uniqueness_sim_published": 0.0769,
+            "uniqueness_sim_state": 0.1707,
+            "topic_match": 0.2,
+            "taste_score": 0.6,
+            "taste_raw": 0.6,
+            "taste_reason": "jev score 0.60",
+            "total": 5.0319,
+            "domain_saturation_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.6×1.75=1.05; penalties: domain_saturation -1×1=-1",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "0908ebe9dc863b24fc83adfed4a0ae4c655bc09a",
+          "title": "How Jensen Huang ended up as Nvidia CEO again",
+          "reason": "title_dup_published",
+          "matched_title": "Jensen Huang resigns as Nvidia CEO immediately",
+          "jaccard": 0.5714
+        },
+        {
+          "id": "92c709b4dedffefa31dfc1086c16d3d4a34c4cfc",
+          "title": "Anthropic's Claude Ship lets AI agents review, fix, and approve pull requests on their own",
+          "reason": "title_dup_published",
+          "matched_title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+          "jaccard": 0.5385
+        },
+        {
+          "id": "f955d48edeaa52ba356f62cf1aac6ded9cb76603",
+          "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "05744626c0d61baf83b69ad6be7ea5b0c59b36b6",
+          "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "c7ad9cf309e4f6df51904086c8897c06aa53eb6f",
+          "title": "Claude Ship gives AI a seat on both sides of code review",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "bc6b513693d3e77e200bd5fbc8e03161e2c42be3",
+          "title": "GPT-6.2 Astra solved a math theorem no other AI could crack, then invented its own proof strategy",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "fe9a774fba4e4a1be49891d3b5e05e5a372d3fed",
+          "title": "OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "afb5825ea1aa5f61dded3eb0b6ffae032c392966",
+          "title": "OpenAI warns that upcoming AI systems could outpace safety checks and urges rivals to agree on shared limits",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "f3487ac9886e909daaf4f66544d23b111033acd1",
+          "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+          "reason": "domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "9676abc77f083e6d3938daf316ddf0dc1da2c200",
+          "title": "Signal blocks AI assistants from peeking at your private messages",
+          "reason": "domain_cap",
+          "domain": "helpnetsecurity.com",
+          "cap": 2
+        },
+        {
+          "id": "141d3e3e6383c48f73a5e43f0a4bc81ff9fcb04d",
+          "title": "Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "ac3df93f97de43eceb65051dac93b03fc0343fe3",
+          "title": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "0cbda05d55dc00f276ed52d11ed824c39e4ceee0",
+          "title": "GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "f5a6d06d7d43a3a7f9adb1cb5568532674632e91",
+          "title": "Nvidia researchers argue huge AI context windows are a dead end",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "b014e723007fa87f4ba60d0a5636f27bb57babd4",
+          "title": "AI is getting better faster than experts can reliably test whether new systems are safe, METR warns",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "5cfa4f9892b18c174e3301737179c9cd4fef8482",
+          "title": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "62e92effd5b9310b4d557c16fc6a0de2a7469afd",
+          "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions",
+          "reason": "domain_cap",
+          "domain": "the-decoder.com",
+          "cap": 2
+        },
+        {
+          "id": "9d5c4f64f5c79390099b98c493dc3f808680b036",
+          "title": "Claude AI can review pull requests and ship fixes on its own now",
+          "reason": "jev_same_story_published",
+          "p": 0.95
+        },
+        {
+          "id": "914bb147d0bf37ced1c54e2af223a301178e5d83",
+          "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+          "reason": "jev_offtopic",
+          "p": 0.67
+        }
+      ]
+    },
+    "youtube": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "24b97434ebe02cc62836d1a63a66ffc355f8a19c",
+          "title": "How to Ship Millions of Lines of Agent-Written Code — Jarred Sumner, Anthropic",
+          "canonical_url": "https://youtube.com/watch?v=TvsF67C2F54",
+          "score": 6.8942,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8043,
+            "uniqueness": 0.8043,
+            "uniqueness_sim_published": 0.1875,
+            "uniqueness_sim_state": 0.1957,
+            "topic_match": 0.7,
+            "creator_weight": 0.2,
+            "taste_score": 0.67,
+            "taste_raw": 0.67,
+            "taste_reason": "jev score 0.67",
+            "attention": 1.0,
+            "total": 6.3942,
+            "jev_same_story_cross_penalty": -0.5,
+            "jev_same_story_cross_p": 0.72
+          },
+          "explanation": "cross 1×2=2 + taste 0.67×1.75=1.1725 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 2,
+          "id": "965b662389f5168fff6af9defa0913c10f8a39d1",
+          "title": "Connect AI Agents to Google Workspace: Official MCP Servers & CLI",
+          "canonical_url": "https://youtube.com/watch?v=DO77XGujw_A",
+          "score": 6.4589,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.84,
+            "uniqueness": 0.7273,
+            "uniqueness_sim_published": 0.2727,
+            "uniqueness_sim_state": 0.16,
+            "topic_match": 0.7,
+            "taste_score": 0.62,
+            "taste_raw": 0.62,
+            "taste_reason": "jev score 0.62",
+            "attention": 0.7659,
+            "total": 6.4589
+          },
+          "explanation": "cross 1×2=2 + taste 0.62×1.75=1.085 + recency_decay 1×1=1"
+        },
+        {
+          "rank": 3,
+          "id": "e8e56a5117784e0bedef7cfe68a6ba52739f9ff0",
+          "title": "Build the Workshop Before the Software Factory — Armin Ronacher, Earendil",
+          "canonical_url": "https://youtube.com/watch?v=JNexz3Tbiu8",
+          "score": 6.1086,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6667,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8636,
+            "uniqueness": 0.8462,
+            "uniqueness_sim_published": 0.1538,
+            "uniqueness_sim_state": 0.1364,
+            "topic_match": 0.5,
+            "creator_weight": 0.2,
+            "taste_score": 0.52,
+            "taste_raw": 0.52,
+            "taste_reason": "jev score 0.52",
+            "attention": 0.9869,
+            "total": 6.1086
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.52×1.75=0.91"
+        }
+      ],
+      "rejected": [
+        {
+          "id": "6966b3e08beec7b3dc2ff1ddc051ae95dbd09c8c",
+          "title": "My AI Coding Agent Broke a Rule, Then Rewrote CLAUDE.md",
+          "canonical_url": "https://youtube.com/watch?v=DGw2ObWdP1c",
+          "score": 5.7166,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8334,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8214,
+            "uniqueness": 0.625,
+            "uniqueness_sim_published": 0.375,
+            "uniqueness_sim_state": 0.1786,
+            "topic_match": 0.5,
+            "taste_score": 0.48,
+            "taste_raw": 0.48,
+            "taste_reason": "jev score 0.48",
+            "attention": 0.5864,
+            "total": 5.7166
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.48×1.75=0.84",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "86c4e8da2631ea513b55c28c640022a7a91743f7",
+          "title": "Securing AI Agents | Mariane Bekker (1Password) | All Day AI 2026",
+          "canonical_url": "https://youtube.com/watch?v=S6NhGp5GFaQ",
+          "score": 5.6453,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8409,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.1591,
+            "topic_match": 0.5,
+            "taste_score": 0.38,
+            "taste_raw": 0.38,
+            "taste_reason": "jev score 0.38",
+            "attention": 0.3384,
+            "total": 5.6453
+          },
+          "explanation": "cross 1×2=2 + recency_decay 1×1=1 + origin_weight 1×1=1",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "e32f2ed7e1cc903578d8e45bfd18ea4141b99431",
+          "title": "I Beat Jev AI with a Fine-Tuned Open-Source Model",
+          "canonical_url": "https://youtube.com/watch?v=YNal-nlQ5F8",
+          "score": 5.4184,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.7958,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8537,
+            "uniqueness": 0.8,
+            "uniqueness_sim_published": 0.2,
+            "uniqueness_sim_state": 0.1463,
+            "topic_match": 0.2,
+            "taste_score": 0.43,
+            "taste_raw": 0.43,
+            "taste_reason": "jev score 0.43",
+            "attention": 0.7003,
+            "total": 5.4184
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.7958×1=0.7958",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "10ef3531c0c80813840c947c052d690efa81c63a",
+          "title": "MCP Registry: The App Store for AI Agent Tools",
+          "canonical_url": "https://youtube.com/watch?v=Er0ay2ecHw8",
+          "score": 5.2797,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4501,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8108,
+            "uniqueness": 0.8108,
+            "uniqueness_sim_published": 0.125,
+            "uniqueness_sim_state": 0.1892,
+            "topic_match": 0.7,
+            "taste_score": 0.27,
+            "taste_raw": 0.27,
+            "taste_reason": "jev score 0.27",
+            "attention": 0.6655,
+            "total": 5.2797
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + topic_match 0.7×1=0.7",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "95bce5a575b6e4580d5ac1719cab0e88cff6db26",
+          "title": "Open Source LLM Models for Commercial Use (Qwen 3.8 Has a Catch)",
+          "canonical_url": "https://youtube.com/watch?v=FJFgsEkf3aM",
+          "score": 5.2346,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.8767,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8889,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.2222,
+            "uniqueness_sim_state": 0.1111,
+            "topic_match": 0.2,
+            "taste_score": 0.47,
+            "taste_raw": 0.47,
+            "taste_reason": "jev score 0.47",
+            "attention": 0.0486,
+            "total": 5.2346
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.8767×1=0.8767",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "acc3b1396b4a236375ab14dd82fc86e42acba3cc",
+          "title": "Run 400B+ LLM Models on Your 4GB Laptop AirLLM",
+          "canonical_url": "https://youtube.com/watch?v=BhhEhfJ4ao0",
+          "score": 5.1826,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.4292,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8148,
+            "uniqueness": 0.8148,
+            "uniqueness_sim_published": 0.0833,
+            "uniqueness_sim_state": 0.1852,
+            "taste_score": 0.53,
+            "taste_raw": 0.53,
+            "taste_reason": "jev score 0.53",
+            "attention": 1.0,
+            "total": 5.1826
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.53×1.75=0.9275",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "6be29d45757b40651541a58d16e2f6960316944b",
+          "title": "This New AI Architecture Makes Local Models Smarter",
+          "canonical_url": "https://youtube.com/watch?v=TPtfyKEAk6c",
+          "score": 5.0326,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6167,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7027,
+            "uniqueness": 0.7027,
+            "uniqueness_sim_published": 0.1429,
+            "uniqueness_sim_state": 0.2973,
+            "taste_score": 0.42,
+            "taste_raw": 0.42,
+            "taste_reason": "jev score 0.42",
+            "attention": 0.7996,
+            "total": 5.0326
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + taste 0.42×1.75=0.735",
+          "reject_reason": "below_cut"
+        },
+        {
+          "id": "ba5c53e507c7ce6240eaf28d969a4fee0cd9de0b",
+          "title": "Claude Can Now Prove Your Code Works",
+          "canonical_url": "https://youtube.com/watch?v=bQCBfcZZj0Y",
+          "score": 4.8711,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.6418,
+            "origin_weight": 1.0,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8929,
+            "uniqueness": 0.625,
+            "uniqueness_sim_published": 0.375,
+            "uniqueness_sim_state": 0.1071,
+            "taste_score": 0.29,
+            "taste_raw": 0.29,
+            "taste_reason": "jev score 0.29",
+            "attention": 0.9436,
+            "total": 4.8711
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1×1=1 + recency_decay 0.6418×1=0.6418",
+          "reject_reason": "below_cut"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "f09ee4e3934038c1620922684f8bf4d9156d9b19",
+          "title": "Harness Adapters: Train Your Model for Any Coding Agent",
+          "reason": "title_dup_published",
+          "matched_title": "Harness Adapters - Train Your Model to Your Harness",
+          "jaccard": 0.6
+        },
+        {
+          "id": "51a02704ffc75777b9a1193c6b814a3d905372af",
+          "title": "128GB AI Desktops… HUGE Price difference (ACTUALLY Tested)",
+          "reason": "jev_offtopic",
+          "p": 0.69
+        }
+      ]
+    },
+    "reddit": {
+      "picked": [],
+      "rejected": [],
+      "dropped": []
+    },
+    "community": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "190619a69a1b2dacfe31b392811f210450ffe7b4",
+          "title": "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab",
+          "canonical_url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab",
+          "score": 6.9026,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.6667,
+            "uniqueness": 0.6667,
+            "uniqueness_sim_published": 0.1818,
+            "uniqueness_sim_state": 0.3333,
+            "topic_match": 0.5,
+            "creator_weight": 0.5,
+            "taste_score": 0.61,
+            "taste_raw": 0.61,
+            "taste_reason": "jev score 0.61",
+            "story_heat": 0.7579,
+            "story_sources": 5,
+            "total": 6.9026,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.61×1.75=1.0675; penalties: domain_saturation -0.5×1=-0.5"
+        },
+        {
+          "rank": 2,
+          "id": "245eefc7db303c4af858da7686fd3ae1122faad4",
+          "title": "ExecuTorch-TensorRT: PyTorch Robot Policies at NVIDIA TensorRT Speed",
+          "canonical_url": "https://pytorch.org/blog/executorch-tensorrt-pytorch-robot-policies-at-nvidia-tensorrt-speed",
+          "score": 6.4486,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.5,
+            "taste_score": 0.65,
+            "taste_raw": 0.65,
+            "taste_reason": "jev score 0.65",
+            "total": 6.4486
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.65×1.75=1.1375"
+        },
+        {
+          "rank": 3,
+          "id": "9235a4a725944958e61516ced8c47871a169e572",
+          "title": "Armin Ronacher and Mario Zechner on Coding With Agents",
+          "canonical_url": "https://aihero.dev/armin-ronacher-and-mario-zechner-on-coding-with-agents~fn8vd",
+          "score": 6.3789,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9739,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 0.0,
+            "novelty_score": 0.84,
+            "uniqueness": 0.75,
+            "uniqueness_sim_published": 0.25,
+            "uniqueness_sim_state": 0.16,
+            "topic_match": 0.8,
+            "creator_weight": 0.0,
+            "taste_score": 0.46,
+            "taste_raw": 0.46,
+            "taste_reason": "jev score 0.46",
+            "total": 6.3789
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9739×1=0.9739"
+        },
+        {
+          "rank": 4,
+          "id": "de5cd1a6d51dc917ab910942b7b9fe70d73cd78c",
+          "title": "Perplexity and Intelligence",
+          "canonical_url": "https://openai.com/index/perplexity-and-intelligence",
+          "score": 5.2544,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.5,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.9048,
+            "uniqueness": 0.9048,
+            "uniqueness_sim_published": 0.0,
+            "uniqueness_sim_state": 0.0952,
+            "topic_match": 0.0,
+            "creator_weight": 0.15,
+            "taste_score": 0.71,
+            "taste_raw": 0.71,
+            "taste_reason": "jev score 0.71",
+            "total": 5.2544,
+            "domain_saturation_penalty": -0.5
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.71×1.75=1.2425; penalties: domain_saturation -0.5×1=-0.5"
+        },
+        {
+          "rank": 5,
+          "id": "6d4a47c2eb45424ce9f327768d092aacd4096446",
+          "title": "Rewirable Circuits in Transformers with Loom Attention",
+          "canonical_url": "https://huggingface.co/papers/2611.30634",
+          "score": 4.6037,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 1.0,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.8718,
+            "uniqueness": 0.8718,
+            "uniqueness_sim_published": 0.1,
+            "uniqueness_sim_state": 0.1282,
+            "topic_match": 0.5,
+            "creator_weight": 0.1,
+            "taste_score": 0.66,
+            "taste_raw": 0.66,
+            "taste_reason": "jev score 0.66",
+            "total": 4.6037,
+            "domain_saturation_penalty": -1.0,
+            "cooldown_penalty": -1.0
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + taste 0.66×1.75=1.155; penalties: cooldown -1×1=-1, domain_saturation -1×1=-1"
+        }
+      ],
+      "rejected": [],
+      "dropped": [
+        {
+          "id": "a43a2373bab7de333348756e7625bda03ff74ca7",
+          "title": "[AINews] Jensen Is Back! and OpenAI Shows Its Pretraining Curve, joined by Microsoft",
+          "reason": "domain_cap",
+          "domain": "latent.space",
+          "cap": 1
+        },
+        {
+          "id": "95b9273cc84912f4226ebe1fdf9e959913cbbbf5",
+          "title": "ACAP: Asynchronous Coding Agents for Efficient Robot Control",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "fdd45df45b7d7ead543086853d56fb70418136d3",
+          "title": "S-Mind: Internalizing Multi-View Geometry for Spatial Intelligence",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "d03dc3e7aff4873f6ef5909c55afc6921eca29d4",
+          "title": "Plan4D: Generative Plannable 4D Worlds",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "4dd75576157e667379f6a4045ac8bd089105b95d",
+          "title": "A Glimpse of Training VLMs as Foundation Models for Robotic Manipulation",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "b7b630b2fe964f7891c8776c82041b39314fd8fd",
+          "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "71d7a8ddbc528130e6cf7fa8ff01c62c0b49e3b8",
+          "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+          "reason": "domain_cap",
+          "domain": "huggingface.co",
+          "cap": 1
+        },
+        {
+          "id": "bed82431ae1f061b2531719f2dd108d5e085f0de",
+          "title": "Why data centers are at the center of the Big Tech backlash",
+          "reason": "issue_domain_cap",
+          "domain": "techcrunch.com",
+          "cap": 2
+        },
+        {
+          "id": "0668141da29d301be56856ebe1a113f47884be79",
+          "title": "I've been trying out the first Ladybird browser alpha release - a from-scratch…",
+          "reason": "jev_same_story_published",
+          "p": 0.93
+        }
+      ]
+    },
+    "newsletters": {
+      "picked": [
+        {
+          "rank": 1,
+          "id": "07196e0ee4a70a3c85ff64b692da89f0605849e0",
+          "title": "Anthropic a public beta of Enterprise Frontier Safeguards, letting businesses keep Claude data in their own cloud while…",
+          "canonical_url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards?_bhlid=05c5ba9f186c7355164698509156b6e3823c03fb",
+          "score": 6.3138,
+          "components": {
+            "cross_source_count": 1,
+            "cross_score": 1,
+            "recency_decay": 0.9927,
+            "origin_weight": 1.5,
+            "has_concrete_fact": 1.0,
+            "novelty_score": 0.7778,
+            "uniqueness": 0.7778,
+            "uniqueness_sim_published": 0.1579,
+            "uniqueness_sim_state": 0.2222,
+            "topic_match": 0.7,
+            "creator_weight": -0.1,
+            "taste_score": 0.52,
+            "taste_raw": 0.52,
+            "taste_reason": "jev score 0.52",
+            "total": 6.3138
+          },
+          "explanation": "cross 1×2=2 + origin_weight 1.5×1=1.5 + recency_decay 0.9927×1=0.9927; penalties: creator_weight -0.1×1=-0.1"
+        }
+      ],
+      "rejected": [],
+      "dropped": []
+    }
+  }
+}
