@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-24 -->
+<!-- Last updated: 2026-11-25 -->
 
 # State of AI
 
@@ -40,11 +40,11 @@
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.331: Code Mode in terminal sessions on Bedrock, Google Cloud, Foundry, AWS _(as of 2026-11-24)_ |
+| Claude Code | Anthropic | v2.1.332: MCP servers ship skills (beta); a hook can refuse a skill's inline shell commands _(as of 2026-11-25)_ |
 | Codex CLI | OpenAI | v0.172.0 adds thread links, slash-command Tab completion and task-group navigation _(as of 2026-11-24)_ |
-| OpenCode | anomalyco | v2.3.2 stops GPT-6.2 re-billing the system prompt each step; uncached input per step fell 14,000 tokens to 3 _(as of 2026-11-19)_ |
+| OpenCode | anomalyco | v2.4.0 adds a built-in browser and timer/cron automations; image tool renamed generate_image _(as of 2026-11-25)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.6.0, Cline 4.1.27, Qwen Code 0.28.4, OpenHands 1.43.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.115-2, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-24)_ |
+| Also current | various | Pi 1.6.0, Cline 4.1.27, Qwen Code 0.28.4, OpenHands 1.45.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.115-2, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-25)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -54,7 +54,7 @@
 
 ## Agent patterns / frameworks
 
-- Dream-RSI (Google DeepMind): an agent reuses its recorded search history as an offline simulator to test exploration policies, cutting iterations up to 2.43x and agent calls up to 162x _(as of 2026-11-03)_
+- Dream-RSI (Google DeepMind): replays recorded discovery logs as an offline simulator to test exploration policies; 1.7x fewer agent calls, up to 162x fewer than SimpleTES _(as of 2026-11-25)_
 - Harness² (Google, Apache-2.0 v0.1.0): frozen agent edits its own harness; session failures become offline tests, 9/9 at 0 calls; GLM-5 64.2 to 75.7 WorkBuddy-Bench _(as of 2026-11-11)_
 - Planner/worker split: Cursor's swarm rebuilt SQLite in Rust from docs; with planners separated from workers every config hit 100% on tests _(as of 2026-11-13)_
 - Claude Code: one agent with skills matched a team's quality at 36% less cost; team cost 62% more, 2x as long (35 runs) _(as of 2026-11-14)_
