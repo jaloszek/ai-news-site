@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-25 -->
+<!-- Last updated: 2026-11-26 -->
 
 # State of AI
 
@@ -15,7 +15,6 @@
 |---|---|---|---|
 | Anthropic | Claude Fable 5.2 | 2026-11-10 | AA 65; Remote Labor Index 41% vs Opus 5.5 21.25%, Astra 20.83%; $8/$40/M, output 30% faster _(as of 2026-11-11)_ |
 | Anthropic | Claude Opus 5.5 | 2026-09-23 | Matches Fable 5.1, ~40% cheaper than Opus 5 at $4/$20/M; AA 58, behind Fable 5.2's 65; Sonnet 5.5 shipped 09-29 at $2/$10/M, Terminal-Bench 4.0 70.6 _(as of 2026-11-10)_ |
-| Meta | Muse Ember | 2026-11-09 | $0.10/$0.50/M, cheapest Muse; text, image, audio; fourth Muse; Wonder plans, Ember handles volume _(as of 2026-11-11)_ |
 | OpenAI | GPT-6.2 Astra | 2026-11-18 | 20% below GPT-6: $8/$40/M, $0.40 cached; +5.5 on Agents' Last Exam vs Fable 5.2 at 5% of the cost; first OpenAI model rated High on self-improvement _(as of 2026-11-18)_ |
 | OpenAI | GPT-6.1 Terra | 2026-10-27 | $1/$5/M, $0.05 cached; AA 48 from 42; Terminal-Bench 4.0 50.3 from 21.5; Sol/Luna keep $2/$10, $0.10/$0.50 _(as of 2026-11-18)_ |
 | Google | Gemini 4 Neon | 2026-11-19 | Replaces Argon in picker; 1M ctx, 4 thinking levels; Carbon-grade at Flash speed; 3rd on AA; $3/$15/M _(as of 2026-11-19)_ |
@@ -23,6 +22,7 @@
 | Google | Gemini 4 Hydrogen | 2026-11-13 | Replaces 3.8 Flash; AA 51 vs Argon's 50; $1.50/$7.50/M; Terminal-Bench 4.1 57% from 18.2% _(as of 2026-11-15)_ |
 | Alibaba | Qwen4-Max | 2026-11-17 | 2.4T MoE, 71B active; AA 43; 1M ctx; $1.50/$4.50/M _(as of 2026-11-17)_ |
 | Microsoft | MAI Code 2 | 2026-11-21 | 98% of GPT-6.1 Sol at 40% of the price; Cyber 2 Flash beats GPT-6 Astra at under 2% cost _(as of 2026-11-23)_ |
+| Z.ai | GLM-5.4 | 2026-11-26 | 750B; 28 layers run twice, claims 2-3T quality; no benchmarks; open weights later _(as of 2026-11-26)_ |
 
 ## Open weights / local
 
@@ -44,7 +44,7 @@
 | Codex CLI | OpenAI | v0.172.0 adds thread links, slash-command Tab completion and task-group navigation _(as of 2026-11-24)_ |
 | OpenCode | anomalyco | v2.4.0 adds a built-in browser and timer/cron automations; image tool renamed generate_image _(as of 2026-11-25)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.6.0, Cline 4.1.27, Qwen Code 0.28.4, OpenHands 1.45.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.115-2, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-25)_ |
+| Also current | various | Pi 1.6.1, Cline 4.1.27, Qwen Code 0.28.4, OpenHands 1.45.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.116, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-26)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -74,7 +74,7 @@
 
 ## Community / industry trends
 
-- Anthropic: Claude now leads 26% of its own model-development work, up from under 1% in February; 30,000 agents run R&D internally; its self-scores matched human raters 59% _(as of 2026-11-05)_
 - Jensen Huang quit as Nvidia CEO after 33 years; CFO Colette Kress is interim; board accepted Nov 11 _(as of 2026-11-15)_
 - ChatGPT merges Chat and Work in December; Plus, Pro and Business share one ChatGPT-and-Codex token budget; Unlimited Instant exempt _(as of 2026-11-24)_
 - Anthropic IPO priced at $83, raising over $80B, the largest listing on record; seven co-founders each sell 3,378,378 shares, about $250M at the $74 midpoint _(as of 2026-11-21)_
+- Claude plugins merge connectors and skills: 10,000+ tools on Free, Pro, Max and Ultra; Team/Enterprise coming _(as of 2026-11-26)_
