@@ -55,7 +55,7 @@ Developer-focused AI news aggregated daily by Claude Code. · [Subscribe via RSS
     <a class="cal-cell cal-filled" href="content/2026-11-24.html"><div class="cal-num">24</div><ul class="cal-highlights"><li>🛠 CC Code Mode in terminals</li><li>✨ RoboTrack exposes tracker gap</li><li>💬 Fast-Anything selective Rust ports</li><li>🛠 Codex thread links</li><li>✨ Claude Ship approves pull requests</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-25.html"><div class="cal-num">25</div><ul class="cal-highlights"><li>🛠 CC MCP server skills</li><li>✨ MCP hits 700M downloads</li><li>💬 ExecuTorch-TensorRT robot policies</li><li>🛠 OpenCode browser and automations</li><li>✨ Amazon buys Decart $7.5B</li></ul></a>
     <a class="cal-cell cal-filled" href="content/2026-11-26.html"><div class="cal-num">26</div><ul class="cal-highlights"><li>🛠 Mellum2.1 drops chain of thought</li><li>✨ Z.ai GLM-5.4 reuses 28 layers</li><li>💬 Anthropic Messages API Rust rewrite</li><li>🛠 Copilot CLI env var inheritance</li><li>✨ PrismML ternary 27B coding model</li></ul></a>
-    <div class="cal-cell cal-empty"><div class="cal-num">27</div></div>
+    <a class="cal-cell cal-filled" href="content/2026-11-27.html"><div class="cal-num">27</div><ul class="cal-highlights"><li>🛠 Qwen Code moves to Harness kernel</li><li>✨ Nvidia pauses Southeast Asia shipments</li><li>💬 llama.cpp AMD fork doubles R9700 speed</li><li>🛠 Hermes Agent scopes cron delivery</li><li>✨ Claude Artifacts become desktop apps</li></ul></a>
     <div class="cal-cell cal-empty"><div class="cal-num">28</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">29</div></div>
     <div class="cal-cell cal-empty"><div class="cal-num">30</div></div>
