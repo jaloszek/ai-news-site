@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-26 -->
+<!-- Last updated: 2026-11-27 -->
 
 # State of AI
 
@@ -35,16 +35,17 @@
 | DeepSeek V4.1-Flash-1017 | 763B, 8B prefill / 16B decode | Open weights, MIT; 1M ctx; Terminal-Bench 4.0 42.3 from 31.2; DeepSWE v1.1 77.0 from 74.2; Maya GGUF 339.5GB IQ2_XXS _(as of 2026-11-14)_ |
 | Inkling 2 Mini (Thinking Machines) | 26.4B MoE / 3.4B active | Looped middle 12 layers; AA 20.1; leads sub-100B open on DeepSWE v1.1 at 48.2%; 32GB Mac via Ollama _(as of 2026-11-22)_ |
 | Le Chonk (Mistral) | 1T MoE / 49B active | Open weights; multimodal text+image; 1M ctx; FrontierCode 2.0 19.7% first open; 82% Cyber Index; Coding Agent Index 49.8% _(as of 2026-11-22)_ |
+| Bonsai 2.5 (PrismML) | 27B ternary, 5.9 GB | Qwen3.8 27B at -1/0/+1; Apache 2.0; SWE-bench Verified 75.6; 204 tok/s RTX 4090 _(as of 2026-11-27)_ |
 
 ## Coding agents / harnesses
 
 | Tool | Vendor | Status |
 |---|---|---|
-| Claude Code | Anthropic | v2.1.332: MCP servers ship skills (beta); a hook can refuse a skill's inline shell commands _(as of 2026-11-25)_ |
+| Claude Code | Anthropic | v2.1.332: MCP servers ship skills (beta); a hook can refuse a skill's inline shell commands; Ship beta fixes and approves PRs (Team/Enterprise, GitHub) _(as of 2026-11-27)_ |
 | Codex CLI | OpenAI | v0.172.0 adds thread links, slash-command Tab completion and task-group navigation _(as of 2026-11-24)_ |
 | OpenCode | anomalyco | v2.4.0 adds a built-in browser and timer/cron automations; image tool renamed generate_image _(as of 2026-11-25)_ |
 | Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.6.1, Cline 4.1.27, Qwen Code 0.28.4, OpenHands 1.45.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.116, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-26)_ |
+| Also current | various | Pi 1.6.1, Cline 4.1.27, Qwen Code 0.28.7, OpenHands 1.45.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.116, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-27)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
@@ -70,7 +71,6 @@
 - Prompt injection: Opus 5 hits 0% across 129 browser scenarios; Astra blocks 99.99% direct but 8.5% of document-embedded vs Opus 5's 4.8% _(as of 2026-11-13)_
 - OpenAI disrupted a Moonshot-tied distillation campaign (16,000 peak requests from 4,000+ users July 24-25); Astra defenses cut extraction 54.0% to 0.2% _(as of 2026-11-23)_
 - Google GTIG caught exploit_agent writing and launching exploits with no human: it diffs patched and unpatched web apps, then drafts and runs them _(as of 2026-11-19)_
-- Meta's Muse, past 10M downloads, showed staff other people's data: a Capital One balance of $2722.58 in one chat _(as of 2026-11-20)_
 
 ## Community / industry trends
 
