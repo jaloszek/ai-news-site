@@ -5,7 +5,7 @@
      the date of the published bullet that grounds/verifies it, or the date it was last
      reviewed and left unchanged. `scripts/db/state_staleness.py` flags rows whose stamp is
      older than 21 days so `/update-state-of-ai` knows which rows are due for a re-check. -->
-<!-- Last updated: 2026-11-27 -->
+<!-- Last updated: 2026-11-28 -->
 
 # State of AI
 
@@ -28,7 +28,7 @@
 
 | Model | Size | Notable |
 |---|---|---|
-| Kimi K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; open weights shipped 11-04 _(as of 2026-11-06)_ |
+| Kimi K3.1 Pro (Moonshot) | 2.8T MoE, 104B active | K3.1 Pro 4th on AA at 55, 3 behind Opus 5.5; 1M ctx; $2/$10, down from $3/$15; open weights shipped 11-04 _(as of 2026-11-28)_ |
 | Tencent Hy4 | 770B MoE / 49B active | Vision, tool calling, JSON; 1M ctx; $0.83/M input on Together _(as of 2026-11-22)_ |
 | Qwen3.8-27B | 27B dense | Weight edit cuts thinking 27-54%, LiveCodeBench v6 +13.0; Arete cuts propaganda 22% to 1%; DSpine 125 tok/s on RTX 3090 _(as of 2026-11-12)_ |
 | LongCat-2.5 (Meituan) | 1.6T MoE | MIT weights; no Nvidia GPU, 194 Huawei Ascend Atlas A2; Terminal-Bench 2.1 88.4 vs Opus 5's 89.1 _(as of 2026-11-16)_ |
@@ -43,9 +43,9 @@
 |---|---|---|
 | Claude Code | Anthropic | v2.1.332: MCP servers ship skills (beta); a hook can refuse a skill's inline shell commands; Ship beta fixes and approves PRs (Team/Enterprise, GitHub) _(as of 2026-11-27)_ |
 | Codex CLI | OpenAI | v0.172.0 adds thread links, slash-command Tab completion and task-group navigation _(as of 2026-11-24)_ |
-| OpenCode | anomalyco | v2.4.0 adds a built-in browser and timer/cron automations; image tool renamed generate_image _(as of 2026-11-25)_ |
-| Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-06)_ |
-| Also current | various | Pi 1.6.1, Cline 4.1.27, Qwen Code 0.28.7, OpenHands 1.45.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.116, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-27)_ |
+| OpenCode | anomalyco | v2.4.2: GPT-6.2 prompt for Sol/Astra, image/video tools in Code Mode; 2.4.0 added a browser and cron automations _(as of 2026-11-28)_ |
+| Cursor | SpaceX | Acquired for $60B; cloud agents scaffold/deploy/host live apps (Postgres, SSO) from Origin or GitHub; OpenAI cuts its models off Nov 12; iOS Remote Control for local agents _(as of 2026-11-28)_ |
+| Also current | various | Pi 1.7.0, Cline 4.1.27, Qwen Code 0.28.7, OpenHands 1.45.0, Goose 1.53.0, Gemini CLI 0.69.0, Copilot CLI 1.0.116, OpenClaw 2026.11.7; JetBrains Air 2026.3 _(as of 2026-11-28)_ |
 | Microsoft Copilot | Microsoft | Split into Home, Code and Autopilot; Autopilot rides OpenClaw with its own cloud computer, billed in Copilot Credits _(as of 2026-11-10)_ |
 
 ## Infrastructure / inference
